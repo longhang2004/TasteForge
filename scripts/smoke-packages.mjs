@@ -44,11 +44,16 @@ try {
       },
     }),
   );
+  // A frozen workspace install populates package content, but not necessarily
+  // registry metadata for resolving the tarballs' public semver dependencies.
+  // Prepare the isolated lock/cache explicitly before proving offline install.
   command(
     'pnpm',
-    ['install', '--offline', '--ignore-scripts', '--no-frozen-lockfile'],
+    ['install', '--lockfile-only', '--ignore-scripts', '--no-frozen-lockfile'],
     installation,
   );
+  command('pnpm', ['fetch', '--prod', '--ignore-scripts'], installation);
+  command('pnpm', ['install', '--offline', '--ignore-scripts', '--frozen-lockfile'], installation);
   const project = path.join(temporary, 'project');
   await mkdir(project);
   const executable = path.join(installation, 'node_modules', '.bin', 'tasteforge');
