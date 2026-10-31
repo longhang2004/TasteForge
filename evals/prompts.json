@@ -1,0 +1,104 @@
+[
+  {
+    "id": "fintech-positions",
+    "industry": "fintech",
+    "prompt": "Build an analyst portfolio screen for comparing 200 positions. Show name, quantity, price, exposure, currency, timestamp, and data-quality exceptions. Support sort and filter, a stale-data state, and keyboard operation. Use realistic explicitly labeled sample data, preserve meaningful density, and work on a 390px viewport.",
+    "primaryTask": "Find the largest stale exposure and explain why it needs review.",
+    "constraints": [
+      "No fabricated performance claims",
+      "Do not encode gains/losses only with color",
+      "Keep units visible"
+    ]
+  },
+  {
+    "id": "fintech-transfer",
+    "industry": "fintech",
+    "prompt": "Create a money-transfer review flow for occasional customers, including recipient, amount, fees, delivery estimate, confirmation, and recoverable failure. Prioritize clarity and confidence. Support long Vietnamese names and keyboard access. Do not imply that the sample app moves real money.",
+    "primaryTask": "Verify the total cost and recipient before confirming a simulated transfer.",
+    "constraints": [
+      "Visible fees before confirmation",
+      "Retain input after errors",
+      "Vietnamese diacritics"
+    ]
+  },
+  {
+    "id": "education-study",
+    "industry": "education",
+    "prompt": "Build a focused study page for adult learners taking a statistics lesson. Include readable teaching content, one practice question, actionable feedback, progress, and optional glossary help. Handle long content, small screens, and reduced motion without gamification obscuring the lesson.",
+    "primaryTask": "Read the example, answer the question, and understand a wrong-answer explanation.",
+    "constraints": [
+      "Feedback explains reasoning",
+      "No meaningless achievement metrics",
+      "Comfortable reading measure"
+    ]
+  },
+  {
+    "id": "education-course-admin",
+    "industry": "education",
+    "prompt": "Create a teacher course-management view with 40 students, assignment statuses, missing submissions, and a bulk reminder preview. Use clearly labeled sample data. Include empty, loading, filtered, and error states. Preserve an existing neutral blue system with a sans-serif type scale; this is refinement, not redesign.",
+    "primaryTask": "Find students missing the latest assignment and preview the reminder recipients.",
+    "constraints": [
+      "Preserve existing design system",
+      "No real messages sent",
+      "Comparable tabular records"
+    ]
+  },
+  {
+    "id": "commerce-craft",
+    "industry": "e-commerce",
+    "prompt": "Create a product page for a handmade ceramic teapot. Provide material, dimensions, care, price, stock, delivery, returns, image descriptions, and accessible variant selection. Express a considered craft identity with real product detail rather than a generic SaaS hero.",
+    "primaryTask": "Choose a glaze and determine total purchase conditions before adding to a simulated cart.",
+    "constraints": [
+      "No fake reviews or scarcity",
+      "Visible practical details",
+      "Works without hover"
+    ]
+  },
+  {
+    "id": "commerce-compare",
+    "industry": "e-commerce",
+    "prompt": "Build a comparison page for three commuter bicycles with prices, sizes, weight, gearing, intended use, and availability. Make differences understandable without overwhelming beginners. Support a small viewport and zoom while preserving comparable relationships. Sample specifications must be labeled illustrative.",
+    "primaryTask": "Find the lightest available bicycle that meets a stated budget and fit requirement.",
+    "constraints": [
+      "Keep units and row labels",
+      "Explain technical terms",
+      "No unsupported product claims"
+    ]
+  },
+  {
+    "id": "portfolio-architect",
+    "industry": "portfolio",
+    "prompt": "Create a small architectural practice portfolio with three explicitly fictional project case studies. Lead with project evidence, locations, scope, and the practice's approach. Use a distinctive but restrained editorial composition. Keep navigation, captions, image alternatives, and contact easy to find.",
+    "primaryTask": "Understand the practice's relevant experience and locate contact information.",
+    "constraints": ["Fictional work labeled", "No autoplay motion", "Readable captions"]
+  },
+  {
+    "id": "portfolio-developer",
+    "industry": "portfolio",
+    "prompt": "Build a developer portfolio around two substantial open-source case studies: the problem, tradeoffs, implementation evidence, and lessons. Convey a technical personality without turning paragraphs into a terminal gimmick. Make source links and project outcomes easy to scan, and explicitly label sample outcomes.",
+    "primaryTask": "Assess one project's technical decisions and find its source link.",
+    "constraints": ["No fabricated impact metrics", "Semantic links", "Body text remains readable"]
+  },
+  {
+    "id": "healthcare-appointment",
+    "industry": "healthcare",
+    "prompt": "Create a simulated clinic appointment request form for patients including older adults. Show appointment type, location, available time, contact preference, privacy expectations, and confirmation. Use plain language, clear focus, recoverable validation, and no medical recommendations. Include a no-times-available path.",
+    "primaryTask": "Request a suitable appointment and understand what happens next.",
+    "constraints": [
+      "No real patient data",
+      "No medical advice",
+      "Visible labels and error recovery"
+    ]
+  },
+  {
+    "id": "healthcare-operations",
+    "industry": "healthcare",
+    "prompt": "Create an illustrative clinic operations dashboard for scheduling staff. Show appointment queues, cancellations, unconfirmed bookings, and data freshness. Use fictional records, meaningful status labels, and accessible comparison. Keep a dense desktop view useful on narrow screens without hiding urgent tasks.",
+    "primaryTask": "Identify an unconfirmed booking needing attention and inspect its scheduling context.",
+    "constraints": [
+      "No real patient records",
+      "No color-only status",
+      "Timestamps and uncertainty visible"
+    ]
+  }
+]

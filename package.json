@@ -1,0 +1,30 @@
+{
+  "name": "tasteforge-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@10.13.1",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck && tsc -p tests/tsconfig.json",
+    "test": "pnpm build && vitest run",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "tasteforge": "node packages/cli/dist/index.js",
+    "pack:smoke": "node scripts/smoke-packages.mjs",
+    "check": "pnpm build && pnpm typecheck && pnpm lint && pnpm format:check && vitest run"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@types/node": "^22.19.0",
+    "eslint": "^9.39.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "vitest": "^3.2.4"
+  }
+}

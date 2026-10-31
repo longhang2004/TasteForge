@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "1.0",
+  "engineVersion": "0.1.0",
+  "knowledgeVersion": "0.1.0",
+  "seed": 42,
+  "direction": {
+    "style": {
+      "id": "data-dense-enterprise",
+      "name": "Data-Dense Enterprise",
+      "summary": "High information density with stable navigation and explicit state.",
+      "productTypes": [
+        "dashboard",
+        "tool",
+        "service"
+      ],
+      "industries": [
+        "fintech",
+        "healthcare",
+        "technology"
+      ],
+      "audienceTags": [
+        "experts",
+        "operators",
+        "professionals"
+      ],
+      "personalities": [
+        "trustworthy",
+        "precise",
+        "neutral"
+      ],
+      "density": "dense",
+      "complexity": "medium",
+      "distinctiveness": 0.3,
+      "fontPairIds": [
+        "inter-inter",
+        "plex-source",
+        "source-source",
+        "system-sans"
+      ],
+      "paletteIds": [
+        "slate-blue",
+        "navy-sand",
+        "mono-light"
+      ],
+      "layout": [
+        "Keep filters adjacent to results.",
+        "Use tables for comparable records."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "guidance": [
+        "Offer density controls if workflows differ.",
+        "Prioritize error prevention over graphic novelty."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    "fontPair": {
+      "id": "source-source",
+      "heading": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Open text shapes for long forms and navigation."
+    },
+    "palette": {
+      "id": "slate-blue",
+      "name": "Slate Blue",
+      "mode": "light",
+      "colors": {
+        "background": "#f8fafc",
+        "foreground": "#172033",
+        "surface": "#ffffff",
+        "muted": "#4b5563",
+        "accent": "#2048a0",
+        "onAccent": "#ffffff",
+        "border": "#94a3b8"
+      },
+      "rationale": "Cool neutrals separate task structure from primary actions."
+    },
+    "score": {
+      "fit": 1,
+      "brand": 1,
+      "usability": 1,
+      "technical": 0.75,
+      "distinctiveness": 0.9,
+      "total": 0.9525
+    },
+    "explanations": [
+      "Data-Dense Enterprise: High information density with stable navigation and explicit state.",
+      "Product/industry matches: 1.00; brand-tag overlap: 1.00. These are editorial heuristics, not validated measurements.",
+      "dense layout supports the audience and goals; implementation complexity is medium.",
+      "Offer density controls if workflows differ.",
+      "Prioritize error prevention over graphic novelty."
+    ],
+    "weights": {
+      "fit": 0.3,
+      "brand": 0.25,
+      "usability": 0.2,
+      "technical": 0.15,
+      "distinctiveness": 0.1
+    },
+    "seed": 42,
+    "engineVersion": "0.1.0",
+    "knowledgeVersion": "0.1.0"
+  },
+  "context": {
+    "schemaVersion": "1.0",
+    "productType": "dashboard",
+    "industry": "fintech",
+    "audience": [
+      "professionals",
+      "operators"
+    ],
+    "goals": [
+      "Compare portfolio positions and monitor data quality"
+    ],
+    "brandPersonality": [
+      "precise",
+      "trustworthy"
+    ],
+    "existingConstraints": {
+      "preserveExisting": true,
+      "excludedDirections": [],
+      "maxComplexity": "medium",
+      "density": "dense",
+      "fontDelivery": "any"
+    },
+    "accessibility": {
+      "languages": [
+        "en",
+        "vi"
+      ],
+      "minContrast": 4.5,
+      "reducedMotion": true
+    },
+    "creativity": 0.2,
+    "seed": 42
+  },
+  "rationale": [
+    "Data-Dense Enterprise: High information density with stable navigation and explicit state.",
+    "Product/industry matches: 1.00; brand-tag overlap: 1.00. These are editorial heuristics, not validated measurements.",
+    "dense layout supports the audience and goals; implementation complexity is medium.",
+    "Offer density controls if workflows differ.",
+    "Prioritize error prevention over graphic novelty."
+  ],
+  "typography": {
+    "heading": "\"Source Sans 3\", Arial, sans-serif",
+    "body": "\"Source Sans 3\", Arial, sans-serif",
+    "lineHeight": 1.6
+  },
+  "colors": {
+    "background": "#f8fafc",
+    "foreground": "#172033",
+    "surface": "#ffffff",
+    "muted": "#4b5563",
+    "accent": "#2048a0",
+    "onAccent": "#ffffff",
+    "border": "#94a3b8"
+  },
+  "spacing": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": [
+    0,
+    2,
+    6
+  ],
+  "layout": [
+    "Keep filters adjacent to results.",
+    "Use tables for comparable records."
+  ],
+  "motion": [
+    "Use short transitions to communicate state changes, not to delay tasks.",
+    "Honor prefers-reduced-motion and provide immediate feedback."
+  ],
+  "accessibility": [
+    "Normal text contrast at least 4.5:1 on prescribed surfaces. Recheck custom combinations.",
+    "Use semantic controls, visible keyboard focus, accessible names, and logical reading order.",
+    "Test zoom, narrow viewports, long content, and Vietnamese diacritics when relevant.",
+    "Honor prefers-reduced-motion; never encode status through color alone."
+  ],
+  "antiPatterns": [
+    "Do not substitute decorative novelty for task clarity.",
+    "Do not apply this direction over an established design system without explicit redesign intent."
+  ],
+  "tokens": {
+    "--tf-font-heading": "\"Source Sans 3\", Arial, sans-serif",
+    "--tf-font-body": "\"Source Sans 3\", Arial, sans-serif",
+    "--tf-font-size-body": "1rem",
+    "--tf-font-size-small": "0.875rem",
+    "--tf-font-size-title": "clamp(2rem, 4vw, 3.5rem)",
+    "--tf-line-height-body": "1.6",
+    "--tf-content-width": "90rem",
+    "--tf-reading-width": "65ch",
+    "--tf-motion-duration": "0ms",
+    "--tf-color-background": "#f8fafc",
+    "--tf-color-foreground": "#172033",
+    "--tf-color-surface": "#ffffff",
+    "--tf-color-muted": "#4b5563",
+    "--tf-color-accent": "#2048a0",
+    "--tf-color-on-accent": "#ffffff",
+    "--tf-color-border": "#94a3b8",
+    "--tf-space-0": "0rem",
+    "--tf-space-1": "0.25rem",
+    "--tf-space-2": "0.5rem",
+    "--tf-space-3": "0.75rem",
+    "--tf-space-4": "1rem",
+    "--tf-space-5": "1.5rem",
+    "--tf-space-6": "2rem",
+    "--tf-space-7": "3rem",
+    "--tf-space-8": "4rem",
+    "--tf-radius-0": "0rem",
+    "--tf-radius-1": "0.125rem",
+    "--tf-radius-2": "0.375rem"
+  }
+}

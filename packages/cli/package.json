@@ -1,0 +1,39 @@
+{
+  "name": "tasteforge",
+  "version": "0.1.0",
+  "description": "Less slop. More taste. Local design intelligence for coding agents.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "bin": {
+    "tasteforge": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "skills"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/prepare.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@tasteforge/core": "workspace:^",
+    "@tasteforge/knowledge": "workspace:^",
+    "commander": "^14.0.1",
+    "zod": "^4.6.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longhang2004/TasteForge.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/longhang2004/TasteForge#readme",
+  "bugs": {
+    "url": "https://github.com/longhang2004/TasteForge/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

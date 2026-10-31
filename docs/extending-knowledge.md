@@ -1,0 +1,13 @@
+# Extending knowledge
+
+Edit `packages/knowledge/src/data/knowledge.json`; there is no engine change required for a new style, pair, palette, principle, or anti-pattern. Follow the schemas in `packages/knowledge/src/schemas.ts`. The catalog is executable-data-free original editorial content.
+
+1. Choose a unique stable lowercase hyphenated ID. Add meaningful context tags, implementation guidance, and compatible font/palette IDs. State the context in which the direction helps; do not claim universal aesthetic superiority.
+2. Use coarse editorial distinctiveness annotations from 0 to 1. They express exploration intent, not a measured quality rating. Add fit/constraint tests when a new case exposes a behavior the engine should preserve.
+3. For fonts, provide a real upstream metadata URL, safe stack with a generic fallback, delivery mode, and explicit supported language evidence for both heading and body. Unknown coverage is a limitation, not a positive compatibility claim. Current web-family sources are the [official Google Fonts catalog](https://github.com/google/fonts); Latin and Vietnamese subset fields were checked on 2026-10-31. No font binaries, licensing grants, or third-party prose are copied here.
+4. For palettes, supply opaque six-digit sRGB semantic colors: background, foreground, surface, muted, accent, onAccent, and border. Check text on both prescribed surfaces and onAccent on accent. Failure at a requested target must remove the combination; the engine must never quietly lighten a background or relax contrast to keep a recommendation.
+5. For principles, explain why, when, and a poor/improved example. For anti-patterns, include acceptable contexts, detection method, alternatives, and confidence limits. Do not convert stylistic preference into a rule banning a color, font, gradient, or card.
+6. Bump the knowledge version for any semantic catalog change. Schema changes also require schema versioning; deterministic algorithm changes require an engine version. Update examples and release notes if output changes.
+7. Run `pnpm check`. Validate each entry and references; test a representative brief with an explicit seed. Rebuild before using the CLI: generated artifacts only accept the bundled catalog version.
+
+The skill's seven references are maintained prose, not automatically synchronized at runtime. Keep relevant examples consistent with catalog philosophy without copying the entire catalog into the entrypoint. Add new sources and licensing notes when needed. For languages beyond en/vi, deliberately extend schemas and coverage validation rather than allowing unknown fonts by default.

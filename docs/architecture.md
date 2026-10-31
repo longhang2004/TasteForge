@@ -1,0 +1,35 @@
+# Architecture and deterministic contract
+
+`@tasteforge/knowledge` contains Zod schemas and a single versioned JSON catalog. `@tasteforge/core` depends on that catalog, Zod, PostCSS/value-parser, and the TypeScript parser. It has no filesystem, network, or CLI dependency. `tasteforge` adds Commander and bounded local I/O. Knowledge entries are data, never executable plugins. All packages are ESM for Node 20.19+.
+
+## Recommendation pipeline
+
+1. Strictly validate the brief, configuration, and catalog, including unique IDs and cross-references.
+2. Filter hard constraints: protected existing system, allowed/excluded directions, density, complexity budget, fixed font/palette IDs, font delivery/language coverage, and contrast for prescribed text/surface and accent pairs.
+3. Rank remaining directions. Product and industry fit is the average of tag affinities. Brand is tag affinity. Affinity is matched catalog tags divided by up to two supplied input tags, capped at one. Matching is lowercase whole tags/words with a small documented alias map (`e-commerce` → `commerce`, `finance` → `fintech`, `clear` → `direct`, `developers` → `experts`, etc.). No semantic model is implied.
+4. Usability is 70% audience affinity and 30% density fit. Goals mentioning comparison, monitoring, analysis, data, or scanning favor dense layouts; other goals weakly favor nondense layouts. Technical score favors lower implementation complexity. Distinctiveness is `1 - abs(creativity - style.distinctiveness)`. Catalog distinctiveness values are coarse editorial annotations, not aesthetic measurements.
+5. Apply configurable weights (default 0.30/0.25/0.20/0.15/0.10), then sort by descending total and ASCII style ID for ties.
+6. Sample without replacement using Mulberry32. Temperature is `0.025 + creativity * 0.5`; weights are `exp((score - maxRemainingScore) / temperature)`. Styles sharing density and complexity with a selected candidate receive a 0.65 diversity factor. High creativity increases exploration, but hard filtering remains unchanged.
+7. Choose a compatible font and palette from sorted candidates using a separate style-ID-derived PRNG stream. This makes `suggest` and `generate` agree on a style's combination for the same context and seed, regardless of requested suggestion count. Tokens are generated coherently from that combination; each token is not randomized independently.
+
+Reproducibility requires the same validated brief, seed (explicit > brief > 42), weights, engine version, and knowledge version. Outputs have no timestamps or machine paths. Stable ordering is independent of OS locale. JSON property order is normalized by schemas. Changes to data, algorithms, normalization, or output structure require versioning and a release note.
+
+## Design DNA
+
+DNA records schema/engine/knowledge versions, seed, validated context, complete direction and weights, rationale, typography, colors, scales, layout/motion/access guidance, anti-pattern guidance, and semantic tokens. `validateDNA` regenerates expected data and rejects drift. DNA v1 is generated data; edit the brief/config and regenerate rather than editing it manually. Custom existing design systems should use the skill refinement workflow instead of pretending to be generated DNA.
+
+The public ranking functions can accept an independently validated catalog. Artifact generation v1 intentionally uses the bundled catalog and rejects mismatched versions or combinations; extending the distributed knowledge requires rebuilding the package. Arbitrary user-supplied catalog files are not loaded by the CLI.
+
+## Static audit
+
+PostCSS parses CSS declaration scopes; TypeScript parses JSX/TSX syntax and literal inline style objects. The implementation never imports or executes audited files. Source findings establish only the stated condition. Literal pairs may be mathematically verified without establishing the effective rendered pair; gradient/card/family counts are contextual heuristics.
+
+The parser does not provide a DOM, full cascade, inherited styles, imported utility definitions, or screen rendering. Unsupported expressions become review items where recognized. All source files are bounded and processed in stable order. The CLI injects generated DNA tokens when available; CSS files can resolve unconditional top-level `:root` declarations in that same file.
+
+## Filesystem reliability
+
+`--project` selects an existing canonical root. Inputs must remain inside it after path and symlink resolution. Source traversal skips symlinks and common dependency/output folders, caps depth at 64, visited entries at 20,000, source files at 5,000, and each input at 2 MB. The engine rejects over-limit source strings as well.
+
+Only five fixed artifact names can be written inside a real `.tasteforge` directory. Linked/nonregular outputs and hardlinks are rejected, even with force. A cooperative exclusive lock serializes CLI writes. Content is staged, flushed, and committed with same-directory atomic rename (force) or exclusive hardlink creation (no-force). Dry runs validate without creating directories. Per-file writes are atomic; a process crash between commits can leave an incomplete bundle, requiring regeneration. This is not a transaction or protection against a malicious process racing directory mutations. Run in a workspace you control.
+
+No knowledge entry can issue commands, load code, or perform network requests. CSS token rendering rejects structural injection and URL values. Repository source remains untrusted input throughout parsing.

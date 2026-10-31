@@ -1,0 +1,5 @@
+/* Deliberately repeated effects: warnings require contextual review. */
+.one { background: linear-gradient(#fff, #eee); padding: 13px; }
+.two { background: radial-gradient(#fff, #eee); }
+.three { background: conic-gradient(#fff, #eee); }
+.label { color: var(--tf-color-unknown); }
