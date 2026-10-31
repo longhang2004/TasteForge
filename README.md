@@ -1,10 +1,27 @@
-# TasteForge
+# TasteForge — UI Design Intelligence for AI Coding Agents
 
 **Less slop. More taste.**
 
-TasteForge is a local design intelligence layer for AI coding agents: a lightweight Agent Skill plus a deterministic TypeScript CLI. It turns a product brief into compatible design directions, explainable recommendations, Design DNA, and semantic CSS tokens. A source audit catches practical implementation issues and identifies questions that need human or rendered review.
+TasteForge is an open-source **Agent Skill and TypeScript CLI for context-aware UI design**. It helps AI coding agents choose design directions, generate CSS design tokens, and audit CSS, JSX, and TSX source. Recommendations use product context, accessibility constraints, and seeded sampling to produce reproducible design decisions with explanations.
 
-This is a working **0.1.0 MVP**, not a component library, prompt dump, visual judge, or accessibility certification tool. No API keys, LLM calls, database, or cloud service are required. Core operations make no network requests.
+The local design intelligence engine turns a product brief into **Design DNA**: a versioned specification of typography, colors, spacing, layout, motion, and accessibility constraints. The bundled skill guides an agent through UI creation, redesign, and refinement while preserving an existing design system when appropriate.
+
+[Documentation](docs/README.md) · [CLI reference](docs/cli.md) · [Agent Skill](skills/tasteforge/SKILL.md) · [Releases](https://github.com/longhang2004/TasteForge/releases)
+
+## TasteForge at a glance
+
+| Property            | Details                                                                                               |
+| ------------------- | ----------------------------------------------------------------------------------------------------- |
+| Purpose             | UI/UX design guidance and reproducible design decisions for AI coding agents                          |
+| Interfaces          | Portable Agent Skill, `tasteforge` CLI, and TypeScript packages                                       |
+| Commands            | `init`, `suggest`, `generate`, `audit`                                                                |
+| Design knowledge    | 20 style profiles, 32 font pairings, and 20 color palettes in versioned JSON                          |
+| Generated artifacts | `design-dna.json`, semantic `tokens.css`, and project `DESIGN.md`                                     |
+| Static audit scope  | CSS declarations and literal JSX/TSX styles; verified source conditions, heuristics, and review items |
+| Runtime             | Node.js 20.19+; pnpm workspace; local filesystem state                                                |
+| License and status  | MIT; working 0.1.0 MVP; available on GitHub, unpublished on npm                                       |
+
+No API keys, external LLM calls, database, or cloud service are required. Core operations make no network requests. Static source checks identify implementation issues and review questions; rendered UI inspection and accessibility testing remain separate work.
 
 ## Quickstart (from source, under five minutes on a normal connection)
 
@@ -81,6 +98,28 @@ The entrypoint is [skills/tasteforge/SKILL.md](skills/tasteforge/SKILL.md). It r
 Copy the whole `skills/tasteforge` folder into the skill discovery location documented by your agent, preserving references and workflows. Then invoke `tasteforge` using the agent's supported skill mechanism or explicitly ask it to follow `SKILL.md`. The CLI package includes the same skill folder for distribution.
 
 Automated verification in this repository covers the skill's frontmatter, reference files, and CLI integration workflow. **End-to-end integration inside Codex, Claude Code, Cursor, or other agent applications has not been certified.** Consult each host's current installation instructions; no universal compatibility claim is made.
+
+## Frequently asked questions
+
+### Does TasteForge require an API key or an internet connection?
+
+The CLI's recommendation, generation, and source-audit operations run locally without API keys or LLM calls. Initial dependency installation may access the package registry. Font delivery is configured separately; TasteForge does not download font files.
+
+### How do I install the CLI or the standalone Agent Skill?
+
+Use the [source quickstart](#quickstart-from-source-under-five-minutes-on-a-normal-connection) for the CLI. For the skill alone, download `tasteforge-skill-v0.1.0.zip` from the [v0.1.0 release](https://github.com/longhang2004/TasteForge/releases/tag/v0.1.0) and follow your agent host's skill installation instructions. The npm package names in this repository are not yet published.
+
+### Can I use TasteForge with Codex, Claude Code, or Cursor?
+
+TasteForge provides a portable `SKILL.md` with references and workflows. Use it through a host's supported skill mechanism or explicitly supply the instructions to your coding agent. Host-specific discovery, installation, and invocation vary; end-to-end integration in these applications has not been certified. See [Agent Skill](#agent-skill) for the current verification scope.
+
+### Will TasteForge preserve my existing design system?
+
+The skill's refinement workflow preserves established tokens and components. If a brief names an existing design system and `preserveExisting` is true, the engine refuses to propose a replacement direction. An authorized redesign can change that setting while retaining fixed constraints. See [brief and design constraints](#brief-and-design-constraints).
+
+### Does TasteForge perform a visual or complete accessibility audit?
+
+The audit parses supported source files and reports evidence about their declarations and structure. It does not inspect screenshots, resolve the complete CSS cascade or utility classes, or test runtime interaction. Contrast findings describe statically resolved color pairs. Review the [audit scope](docs/cli.md#audit-scope) and inspect the rendered interface separately.
 
 ## Audit evidence and exit codes
 
