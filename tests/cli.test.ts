@@ -21,6 +21,49 @@ afterEach(async () => {
 });
 
 describe('CLI integration and exit contract', () => {
+  it('reads the external catalog and samples attributed inspiration without writing project artifacts', async () => {
+    expect(cli('init').status).toBe(0);
+    const files = await readdir(path.join(root, '.tasteforge'));
+    const search = cli(
+      'catalog',
+      '--kind',
+      'style',
+      '--source',
+      'volt',
+      '--limit',
+      '2',
+      '--format',
+      'json',
+    );
+    expect(search.status).toBe(0);
+    expect(JSON.parse(search.stdout).entries).toHaveLength(2);
+    const doc = cli('catalog', 'volt-wise', '--format', 'json');
+    expect(doc.status).toBe(0);
+    expect(JSON.parse(doc.stdout).source.license).toBe('MIT');
+    const sampled = cli('inspire', '--task', 'commerce', '--seed', '42', '--format', 'json');
+    expect(sampled.stderr).toBe('');
+    expect(sampled.status).toBe(0);
+    const result = JSON.parse(sampled.stdout);
+    expect(result.inspirations).toHaveLength(3);
+    expect(result.requiredGates.length).toBeGreaterThanOrEqual(8);
+    expect(
+      result.inspirations.every((p: { template: { tasks: string[] } }) =>
+        p.template.tasks.includes('commerce'),
+      ),
+    ).toBe(true);
+    expect(cli('inspire', '--task', 'commerce', '--seed', '42', '--format', 'json').stdout).toBe(
+      sampled.stdout,
+    );
+    for (const args of [
+      ['catalog', 'missing-id'],
+      ['catalog', '--limit', '0'],
+      ['catalog', '--source', 'missing'],
+      ['inspire', '--task', 'nonsense'],
+      ['inspire', '--task', 'form', '--seed', '-1'],
+    ])
+      expect(cli(...args, '--format', 'json').status).toBe(2);
+    expect(await readdir(path.join(root, '.tasteforge'))).toEqual(files);
+  });
   it('initializes, loads context, suggests, generates, and audits example source', async () => {
     expect(cli('init', '--format', 'json').status).toBe(0);
     const suggestions = cli('suggest', '--seed', '42', '--format', 'json');
@@ -122,7 +165,10 @@ describe('CLI integration and exit contract', () => {
     expect(bad.status).toBe(2);
     expect(JSON.parse(bad.stderr).error).toContain('Invalid JSON');
     expect(cli('--help').status).toBe(0);
-    expect(cli('--version').stdout.trim()).toBe('0.1.0');
+    const packageJson = JSON.parse(
+      await readFile(new URL('../packages/cli/package.json', import.meta.url), 'utf8'),
+    );
+    expect(cli('--version').stdout.trim()).toBe(packageJson.version);
   });
   it('fails on malformed sources and can explicitly report without failing', async () => {
     await writeFile(path.join(root, 'broken.css'), '.x {');

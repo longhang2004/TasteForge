@@ -1,0 +1,23 @@
+{
+  "startedAtUtc": "2026-11-01T07:31:51.652660+00:00",
+  "durationSeconds": 9.061663,
+  "command": [
+    "/mnt/c/Users/hi/AppData/Local/agy/bin/agy.exe",
+    "--model",
+    "gemini-3.8-flash-medium",
+    "--output-format",
+    "json",
+    "--print-timeout",
+    "45s",
+    "--disable-slash-commands",
+    "--settings",
+    "{\"permissions\": {\"deny\": [\"command(*)\", \"write_file(*)\", \"read_file(*)\"]}}",
+    "-p",
+    "Reply exactly READY. Do not read files, use tools, or change anything."
+  ],
+  "workingDirectory": "/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/agy-probe",
+  "exitCode": 0,
+  "stdout": "{\"conversation_id\":\"d7bcc01f-b906-4dfe-90ae-a7894397e29d\",\"status\":\"SUCCESS\",\"response\":\"READY\\n\",\"duration_seconds\":3.113004,\"num_turns\":1,\"usage\":{\"input_tokens\":6818,\"output_tokens\":1,\"thinking_tokens\":0,\"cache_read_tokens\":0,\"total_tokens\":6819}}\n",
+  "stderr": "",
+  "credentialHandling": "Official CLI uses its existing login; operator does not read, copy or export any credential file. No account change, key extraction or provider adapter."
+}

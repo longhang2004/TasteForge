@@ -1,0 +1,14 @@
+Usage: tasteforge catalog [options] [id]
+
+Search offline external references or read one full attributed entry
+
+Options:
+  --kind <kind>      style, rule, or template
+  --task <task>      filter by an indexed task type
+  --source <id>      restrict to a catalog source ID
+  --query <text>     search reference metadata
+  --limit <number>   page size (1–100) (default: 20)
+  --offset <number>  zero-based result offset (default: 0)
+  --include-retired  include upstream retired entries for research (default:
+                     false)
+  -h, --help         display help for command

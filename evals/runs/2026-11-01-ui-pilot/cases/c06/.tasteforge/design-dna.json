@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0",
+  "engineVersion": "0.1.0",
+  "knowledgeVersion": "0.1.0",
+  "seed": 42,
+  "direction": {
+    "style": {
+      "id": "swiss-editorial",
+      "name": "Swiss Editorial",
+      "summary": "A disciplined grid with a decisive typographic lead.",
+      "productTypes": [
+        "publication",
+        "portfolio",
+        "commerce"
+      ],
+      "industries": [
+        "media",
+        "culture",
+        "fashion"
+      ],
+      "audienceTags": [
+        "readers",
+        "professionals"
+      ],
+      "personalities": [
+        "precise",
+        "confident",
+        "restrained"
+      ],
+      "density": "balanced",
+      "complexity": "medium",
+      "distinctiveness": 0.7,
+      "fontPairIds": [
+        "inter-inter",
+        "source-serif-sans",
+        "inter-source",
+        "system-serif"
+      ],
+      "paletteIds": [
+        "ink-paper",
+        "cobalt-chalk",
+        "mono-light"
+      ],
+      "layout": [
+        "Use asymmetric columns with aligned edges.",
+        "Let one headline establish the entry point."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "guidance": [
+        "Use a clear grid rather than decorative containers.",
+        "Use captions and rules to connect related content."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    "fontPair": {
+      "id": "system-serif",
+      "heading": {
+        "family": "serif",
+        "stack": "Georgia, serif",
+        "languages": [
+          "en"
+        ],
+        "source": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
+        "coverageNote": "Generic family selection is OS-dependent. Vietnamese coverage is unverified and excluded from hard language compatibility; validate target systems before extending it."
+      },
+      "body": {
+        "family": "serif",
+        "stack": "Georgia, serif",
+        "languages": [
+          "en"
+        ],
+        "source": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
+        "coverageNote": "Generic family selection is OS-dependent. Vietnamese coverage is unverified and excluded from hard language compatibility; validate target systems before extending it."
+      },
+      "delivery": "system",
+      "rationale": "Use installed fonts without a network or font-file dependency; validate metrics and glyphs on target systems."
+    },
+    "palette": {
+      "id": "cobalt-chalk",
+      "name": "Cobalt and Chalk",
+      "mode": "light",
+      "colors": {
+        "background": "#fffef9",
+        "foreground": "#151515",
+        "surface": "#ffffff",
+        "muted": "#505050",
+        "accent": "#173ca4",
+        "onAccent": "#ffffff",
+        "border": "#a3a3a3"
+      },
+      "rationale": "Strong action contrast against an almost neutral field."
+    },
+    "score": {
+      "fit": 0.5,
+      "brand": 0,
+      "usability": 0.3,
+      "technical": 0.75,
+      "distinctiveness": 0.65,
+      "total": 0.3875
+    },
+    "explanations": [
+      "Swiss Editorial: A disciplined grid with a decisive typographic lead.",
+      "Product/industry matches: 0.50; brand-tag overlap: 0.00. These are editorial heuristics, not validated measurements.",
+      "balanced layout supports the audience and goals; implementation complexity is medium.",
+      "Use a clear grid rather than decorative containers.",
+      "Use captions and rules to connect related content."
+    ],
+    "weights": {
+      "fit": 0.3,
+      "brand": 0.25,
+      "usability": 0.2,
+      "technical": 0.15,
+      "distinctiveness": 0.1
+    },
+    "seed": 42,
+    "engineVersion": "0.1.0",
+    "knowledgeVersion": "0.1.0"
+  },
+  "context": {
+    "schemaVersion": "1.0",
+    "productType": "ecommerce product page",
+    "industry": "handmade ceramics",
+    "audience": [
+      "people choosing a handmade teapot for everyday use"
+    ],
+    "goals": [
+      "Choose a glaze, review purchase conditions, and add the teapot to a simulated cart"
+    ],
+    "brandPersonality": [
+      "considered",
+      "tactile",
+      "practical"
+    ],
+    "existingConstraints": {
+      "preserveExisting": false,
+      "excludedDirections": [],
+      "maxComplexity": "medium",
+      "fontDelivery": "any"
+    },
+    "accessibility": {
+      "languages": [
+        "en"
+      ],
+      "minContrast": 4.5,
+      "reducedMotion": true
+    },
+    "creativity": 0.35
+  },
+  "rationale": [
+    "Swiss Editorial: A disciplined grid with a decisive typographic lead.",
+    "Product/industry matches: 0.50; brand-tag overlap: 0.00. These are editorial heuristics, not validated measurements.",
+    "balanced layout supports the audience and goals; implementation complexity is medium.",
+    "Use a clear grid rather than decorative containers.",
+    "Use captions and rules to connect related content."
+  ],
+  "typography": {
+    "heading": "Georgia, serif",
+    "body": "Georgia, serif",
+    "lineHeight": 1.6
+  },
+  "colors": {
+    "background": "#fffef9",
+    "foreground": "#151515",
+    "surface": "#ffffff",
+    "muted": "#505050",
+    "accent": "#173ca4",
+    "onAccent": "#ffffff",
+    "border": "#a3a3a3"
+  },
+  "spacing": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": [
+    0,
+    2,
+    6
+  ],
+  "layout": [
+    "Use asymmetric columns with aligned edges.",
+    "Let one headline establish the entry point."
+  ],
+  "motion": [
+    "Use short transitions to communicate state changes, not to delay tasks.",
+    "Honor prefers-reduced-motion and provide immediate feedback."
+  ],
+  "accessibility": [
+    "Normal text contrast at least 4.5:1 on prescribed surfaces. Recheck custom combinations.",
+    "Use semantic controls, visible keyboard focus, accessible names, and logical reading order.",
+    "Test zoom, narrow viewports, long content, and Vietnamese diacritics when relevant.",
+    "Honor prefers-reduced-motion; never encode status through color alone."
+  ],
+  "antiPatterns": [
+    "Do not substitute decorative novelty for task clarity.",
+    "Do not apply this direction over an established design system without explicit redesign intent."
+  ],
+  "tokens": {
+    "--tf-font-heading": "Georgia, serif",
+    "--tf-font-body": "Georgia, serif",
+    "--tf-font-size-body": "1rem",
+    "--tf-font-size-small": "0.875rem",
+    "--tf-font-size-title": "clamp(2rem, 4vw, 3.5rem)",
+    "--tf-line-height-body": "1.6",
+    "--tf-content-width": "75rem",
+    "--tf-reading-width": "65ch",
+    "--tf-motion-duration": "0ms",
+    "--tf-color-background": "#fffef9",
+    "--tf-color-foreground": "#151515",
+    "--tf-color-surface": "#ffffff",
+    "--tf-color-muted": "#505050",
+    "--tf-color-accent": "#173ca4",
+    "--tf-color-on-accent": "#ffffff",
+    "--tf-color-border": "#a3a3a3",
+    "--tf-space-0": "0rem",
+    "--tf-space-1": "0.25rem",
+    "--tf-space-2": "0.5rem",
+    "--tf-space-3": "0.75rem",
+    "--tf-space-4": "1rem",
+    "--tf-space-5": "1.5rem",
+    "--tf-space-6": "2rem",
+    "--tf-space-7": "3rem",
+    "--tf-space-8": "4rem",
+    "--tf-radius-0": "0rem",
+    "--tf-radius-1": "0.125rem",
+    "--tf-radius-2": "0.375rem"
+  }
+}

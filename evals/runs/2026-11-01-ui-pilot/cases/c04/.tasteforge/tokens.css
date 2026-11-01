@@ -1,0 +1,35 @@
+/* TasteForge tokens; font files are not fetched or bundled. */
+:root {
+  --tf-font-heading: "Source Serif 4", Georgia, serif;
+  --tf-font-body: "Source Sans 3", Arial, sans-serif;
+  --tf-font-size-body: 1rem;
+  --tf-font-size-small: 0.875rem;
+  --tf-font-size-title: clamp(2rem, 4vw, 3.5rem);
+  --tf-line-height-body: 1.6;
+  --tf-content-width: 75rem;
+  --tf-reading-width: 65ch;
+  --tf-motion-duration: 0ms;
+  --tf-color-background: #f7f4ed;
+  --tf-color-foreground: #162c40;
+  --tf-color-surface: #ffffff;
+  --tf-color-muted: #4f6070;
+  --tf-color-accent: #164e63;
+  --tf-color-on-accent: #ffffff;
+  --tf-color-border: #a2afb8;
+  --tf-space-0: 0rem;
+  --tf-space-1: 0.25rem;
+  --tf-space-2: 0.5rem;
+  --tf-space-3: 0.75rem;
+  --tf-space-4: 1rem;
+  --tf-space-5: 1.5rem;
+  --tf-space-6: 2rem;
+  --tf-space-7: 3rem;
+  --tf-space-8: 4rem;
+  --tf-radius-0: 0rem;
+  --tf-radius-1: 0.125rem;
+  --tf-radius-2: 0.375rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --tf-motion-duration: 0ms; }
+}

@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "1.0",
+  "runId": "2026-11-01-ui-pilot",
+  "createdAtUtc": "2026-10-31T18:11:27.244204+00:00",
+  "sourceRevision": "f975a2e14783e5092e1d0de62a555707b91b28ba",
+  "engineVersion": "0.1.0",
+  "knowledgeVersion": "0.1.0",
+  "type": "exploratory-pilot",
+  "replicatesPerPair": 1,
+  "tasteforgeSeed": 42,
+  "modelGenerationSeed": null,
+  "modelReasoningEffort": "inherited; no explicit override",
+  "modelVersionLimitation": "Requested model IDs are recorded; backend snapshot, token usage, and inference sampling settings are not exposed.",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "cases": [
+    {
+      "id": "c01",
+      "model": "gpt-6-luna",
+      "condition": "baseline",
+      "promptId": "commerce-craft",
+      "generation": "submitted",
+      "agentId": "/root/ui_c01",
+      "taskSha256": "bac15576e771c662dc99524094b06ef6b5185526b037e59cde6331420ee4976b",
+      "fixtureSha256": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "bootstrapDeviation": "Default sandbox denied WSL; resumed same agent after operator supplied require_escalated instruction. No implementation occurred before retry.",
+      "submissionObservedAtUtc": "2026-10-31T18:31:43.606996+00:00"
+    },
+    {
+      "id": "c02",
+      "model": "gpt-6.1-sol",
+      "condition": "tasteforge",
+      "promptId": "fintech-transfer",
+      "generation": "submitted",
+      "agentId": "/root/ui_c02",
+      "taskSha256": "e91adfbe33e0d523ac375cc556e5fa562ebbc2fa484e9793bd21feb02bde830b",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "submissionObservedAtUtc": "2026-10-31T18:31:43.607189+00:00",
+      "direction": "modern-institutional",
+      "fontPair": "noto-serif-vietnam",
+      "palette": "slate-blue",
+      "briefLanguages": [
+        "en"
+      ]
+    },
+    {
+      "id": "c03",
+      "model": "gpt-6.1-sol",
+      "condition": "baseline",
+      "promptId": "commerce-craft",
+      "generation": "submitted",
+      "agentId": "/root/ui_c03",
+      "taskSha256": "bac15576e771c662dc99524094b06ef6b5185526b037e59cde6331420ee4976b",
+      "fixtureSha256": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "submissionObservedAtUtc": "2026-10-31T18:31:43.618133+00:00"
+    },
+    {
+      "id": "c04",
+      "model": "gpt-6-luna",
+      "condition": "tasteforge",
+      "promptId": "fintech-transfer",
+      "generation": "submitted",
+      "agentId": "/root/ui_c04",
+      "taskSha256": "e91adfbe33e0d523ac375cc556e5fa562ebbc2fa484e9793bd21feb02bde830b",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "submissionObservedAtUtc": "2026-10-31T18:31:43.618166+00:00",
+      "direction": "learning-studio",
+      "fontPair": "source-serif-sans",
+      "palette": "navy-sand",
+      "briefLanguages": [
+        "en",
+        "vi"
+      ],
+      "bootstrapDeviation": "Shell quoting difficulty; neutral patch-tool reminder supplied. No design feedback."
+    },
+    {
+      "id": "c05",
+      "model": "gpt-6.1-sol",
+      "condition": "baseline",
+      "promptId": "fintech-transfer",
+      "generation": "submitted",
+      "agentId": "/root/ui_c05",
+      "taskSha256": "e91adfbe33e0d523ac375cc556e5fa562ebbc2fa484e9793bd21feb02bde830b",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "submissionObservedAtUtc": "2026-10-31T18:31:43.629269+00:00"
+    },
+    {
+      "id": "c06",
+      "model": "gpt-6-luna",
+      "condition": "tasteforge",
+      "promptId": "commerce-craft",
+      "generation": "submitted",
+      "agentId": "/root/ui_c06",
+      "taskSha256": "bac15576e771c662dc99524094b06ef6b5185526b037e59cde6331420ee4976b",
+      "fixtureSha256": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "submissionObservedAtUtc": "2026-10-31T18:31:43.629297+00:00",
+      "direction": "swiss-editorial",
+      "fontPair": "system-serif",
+      "palette": "cobalt-chalk",
+      "briefLanguages": [
+        "en"
+      ]
+    },
+    {
+      "id": "c07",
+      "model": "gpt-6-luna",
+      "condition": "baseline",
+      "promptId": "fintech-transfer",
+      "generation": "submitted",
+      "agentId": "/root/ui_c07",
+      "taskSha256": "e91adfbe33e0d523ac375cc556e5fa562ebbc2fa484e9793bd21feb02bde830b",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "submissionObservedAtUtc": "2026-10-31T18:31:43.639351+00:00"
+    },
+    {
+      "id": "c08",
+      "model": "gpt-6.1-sol",
+      "condition": "tasteforge",
+      "promptId": "commerce-craft",
+      "generation": "submitted",
+      "agentId": "/root/ui_c08",
+      "taskSha256": "bac15576e771c662dc99524094b06ef6b5185526b037e59cde6331420ee4976b",
+      "fixtureSha256": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "submissionObservedAtUtc": "2026-10-31T18:31:43.639374+00:00",
+      "direction": "swiss-editorial",
+      "fontPair": "system-serif",
+      "palette": "cobalt-chalk",
+      "briefLanguages": [
+        "en"
+      ]
+    }
+  ],
+  "tools": {
+    "node": "24.22.0",
+    "playwright": "1.64.1",
+    "axePlaywright": "4.14.0",
+    "chromium": "156.0.8078.4",
+    "viewportDeviceScaleFactor": 1,
+    "locale": "en-US",
+    "timezoneId": "Asia/Ho_Chi_Minh",
+    "colorScheme": "light",
+    "reducedMotion": "reduce"
+  },
+  "skillFiles": {
+    "tasteforge/SKILL.md": "3d43ce3c7de70affef24ac3e7a5953c6c7c0bf287c3248894b5800910c44d65b",
+    "tasteforge/references/accessibility.md": "fe0de4a8631dc9bb1ed983477ade2623b0c91e8f0233452f51d28ae919c50927",
+    "tasteforge/references/anti-patterns.md": "eb53ccfca1d9664288175278d3c9bb6adcdc08c57b2015fca1127042ed9993e2",
+    "tasteforge/references/design-principles.md": "8d5d60cec70f462bd9f9d75d3b67185e1cdbda5fe0006abb57d823a59cab756b",
+    "tasteforge/references/interaction-motion.md": "6cf08a1c01e679ee51a51dc16cf0c44d226cef37caccb415abd62541e3d6c666",
+    "tasteforge/references/layout-composition.md": "9b75624e112fe68105b0025dde0ef0294e4adadf5ef9e2a03abbd15ff25da193",
+    "tasteforge/references/typography.md": "7fa0b604aab81da8cb4f462c59c9c3c8ca726a679f728652292035fc29054b45",
+    "tasteforge/references/visual-hierarchy.md": "09bfde3f0a531fa56b545087e1e69e70482921a499efae39033d1a1078393b82",
+    "tasteforge/workflows/audit-ui.md": "7a441ad8fb65b22b700869ed028345fbf10d8898ce6308ac1ff375879539a0ca",
+    "tasteforge/workflows/create-ui.md": "ac2c35f1a36a29e58c432672e257d605f09c7cdad13e5ffca4370e0459810d4d",
+    "tasteforge/workflows/redesign-ui.md": "8bee6697e77b9d37bf77ec443491fe0cfd0f89d002e9811e63aa413baeed2d77"
+  },
+  "knowledgeSha256": "2d64ac326387a12e0cd7f4f386cf5fdb6df7cfe7d0bd3c1bbba286846fa4e703",
+  "blindReviewMapping": {
+    "view-01": "c08",
+    "view-02": "c03",
+    "view-03": "c06",
+    "view-04": "c05",
+    "view-05": "c07",
+    "view-06": "c04",
+    "view-07": "c01",
+    "view-08": "c02"
+  },
+  "reviewOrderSeed": 20261101,
+  "captureHarnessSha256": "75d9302912ef2e9c9a0011388c4f7623cce20d63f85e66bd9281278b9df47471",
+  "sourceHashes": {
+    "c01": {
+      "app.js": "c3b261a4048540c363d8d7aaa7189fba4105fc8f97c10ff66d86d50c96e3b080",
+      "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+      "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "implementation-notes.md": "9da18e75da02cb4b5605c265b2b092309ac967bb592dfdee8804373fa1bb0df9",
+      "index.html": "22a36ea93c10a5c2d0c503ac337ef6edddb64c6f17590a79cc3da06024bf7a61",
+      "styles.css": "1232b58f53a6dbf34e24495fc3ee6767eff7e02a10e6ebf5cb20edbb19d0569f",
+      "task.md": "bac15576e771c662dc99524094b06ef6b5185526b037e59cde6331420ee4976b"
+    },
+    "c02": {
+      ".tasteforge/brief.json": "4f1bc39aba216bda1dfd2a04c236f2da884e29bf09f557ce9f727b0ebe411a56",
+      ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+      ".tasteforge/design-dna.json": "6be7be8dddc9b96359b5d5c4ad972ea572c49417dad6bcb48bc1b734288cd95e",
+      ".tasteforge/DESIGN.md": "564b77bacfc985708492b21a23d92cbb791ab74d67ee944d8caeadd3ba6416cb",
+      ".tasteforge/tokens.css": "31aeea0383d09f5876d1eab3a4bbbbd3cc62b5310538d7ab49c464d5ad0b13f0",
+      "app.js": "c1a8f919485cbf6f6ef8fbf04c016e9321bb5ae20bd661abd85bfae79bc13fdd",
+      "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "implementation-notes.md": "0cc69a80064ebdd1d962388579101c03dbbfc468a7c300333a90f6b9e27942e0",
+      "index.html": "3e8e59527e68593c740db0ba7f29bede9420be5ec82c798d994753d00e52e9ac",
+      "styles.css": "718f872c4a36a7dda306502c3fba8631b38feb6699e4b397ee146ec2ba4c5b2b",
+      "task.md": "e91adfbe33e0d523ac375cc556e5fa562ebbc2fa484e9793bd21feb02bde830b"
+    },
+    "c03": {
+      "app.js": "6ca37056d6af9b0f1c9d3d89ee5852694d3119a22661ecaf74fabf93467c4e77",
+      "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+      "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "implementation-notes.md": "55f45b496bad34411fe00b8c8ca8d171ebe07cc81e1b2fa6f027bff99229c020",
+      "index.html": "29ed02484761219e9f6911114533ce64e2f3e5ff7d67b7bb477eb1254ea7fea6",
+      "styles.css": "226a45c4b9e06c1ea63d18d8438f910faf215df0c4ce1b67d328a30c450b5335",
+      "task.md": "bac15576e771c662dc99524094b06ef6b5185526b037e59cde6331420ee4976b"
+    },
+    "c04": {
+      ".tasteforge/brief.json": "3bb317634aa764ccfb90c3fcca8f85b9c4f178105eddda8e35b47963b114cb80",
+      ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+      ".tasteforge/design-dna.json": "bbb35066ebfb1e1cee94119a8be0e01cc81d768731309ae1ec129c2c64b16913",
+      ".tasteforge/DESIGN.md": "d8a15d51c1027089991fed944aef9599170fe04ec1d9a293c804c0e866fccbf5",
+      ".tasteforge/tokens.css": "1f33d64454b23c16c53255406605c0d07a19f1e851e309a5a69c8569a09cdf1c",
+      "app.js": "81c4668ef5180df94009f7f93609459bc15119c33a6012e357802646c5e61771",
+      "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "implementation-notes.md": "50d9ecdf258ed309afa4d3a5e6d06a6d7735288a5468d753bd4de2f565e33ed4",
+      "index.html": "a41cb0f37705b23cb2af2ccf120c283c6c734d543d7f2caea1e0a6486f76231c",
+      "styles.css": "e0ab5098abc969445d2e082245cf1da9900ec10b69fd542ab24d9409bb051bd0",
+      "task.md": "e91adfbe33e0d523ac375cc556e5fa562ebbc2fa484e9793bd21feb02bde830b"
+    },
+    "c05": {
+      "app.js": "b988c532bbd46f510458298a6629d27ba9635986aa4015064d6fec2bc72dade4",
+      "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "implementation-notes.md": "f9de87caca36197b13df63b0e410f2b6942020328a170b84520cff3a4549c00f",
+      "index.html": "c1253888c7041d7cc5d2b41a68f5a1ad3c290a6530475bf8cc0508d1e71a8d12",
+      "styles.css": "4febcdf196a017ea1998794389b81bf9a6c9b6d2b844b6babb95618606c82802",
+      "task.md": "e91adfbe33e0d523ac375cc556e5fa562ebbc2fa484e9793bd21feb02bde830b"
+    },
+    "c06": {
+      ".tasteforge/brief.json": "ff21d0931b82030de7eda76dbe927626ddb1dab4f01036d1713b9f6ad8314726",
+      ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+      ".tasteforge/design-dna.json": "b7ade9665243bc52fc38d8523f887054903a7e6db391181f860b80c2b8305a44",
+      ".tasteforge/DESIGN.md": "51b644e13d346da543ebf55b4a8087176e3d97e75a9feed5ac00e430b028c328",
+      ".tasteforge/tokens.css": "f37c67db082df2ba02b7dec856f65144e4a00e3866fad829b057218834622347",
+      "app.js": "232736c5ff057a94e276339300ee6cfab5f34432fdef8cc36d5fe8feac4bcd3b",
+      "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+      "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "implementation-notes.md": "96d07f93dd1260024c76e07407242cfec29d3ea1cfab0274ce6d67e2408ed4ec",
+      "index.html": "de1940a7014a32982a21a93030abd85632d035bfc4176dd5d9d3ac9811d42bdb",
+      "styles.css": "5e5ead57da69141b6b107afe1e1569aa6672a5743167a46acd5f279b15d2e6b2",
+      "task.md": "bac15576e771c662dc99524094b06ef6b5185526b037e59cde6331420ee4976b"
+    },
+    "c07": {
+      "app.js": "28551af336eccfb0b0320049fae5415dbc011537f3422afc9a2ad88d42a0dacb",
+      "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "implementation-notes.md": "d19a45d745ec689a6ecde0da4e2c0999a419133fae48948793e0f5b76bd5f805",
+      "index.html": "26b82551cb331eb02c6667ce65e81e3de044eb3124b8f7b3ea26312d2686e8e8",
+      "styles.css": "6e05bfa95b873be5ebf74c9d3e8f4b71fce9660917d7efe3b67115b0b1e01586",
+      "task.md": "e91adfbe33e0d523ac375cc556e5fa562ebbc2fa484e9793bd21feb02bde830b"
+    },
+    "c08": {
+      ".tasteforge/brief.json": "b05cb1533bdba1012b75ae168040cb6f8f108205d848687d163642cefb1f3319",
+      ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+      ".tasteforge/design-dna.json": "ca6e78a8ea80d5132f794a60bf53507ffdcf02d9e1ecab4bd6230ef91ac8eed2",
+      ".tasteforge/DESIGN.md": "351dfc6f06beaa8bcf034e8c5a58935d70f44c74d4896c74fe038bfd2770f815",
+      ".tasteforge/tokens.css": "f37c67db082df2ba02b7dec856f65144e4a00e3866fad829b057218834622347",
+      "app.js": "bf21e2a8a00768889e959e826938142863ecf60d0372a79e678f3eb7cffe4bea",
+      "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+      "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "implementation-notes.md": "5a306a67b6a905de71937d086a2df1053f580488bec76da41c1f936a5cf900c1",
+      "index.html": "862108a27cf1c37584fe70dd40b7fafab3ceca69998b1031ba42a21366e6ce4f",
+      "styles.css": "4edd3516818334c50d72b5ae9f495daa8698609135e4318589e43558d1ee74bb",
+      "task.md": "bac15576e771c662dc99524094b06ef6b5185526b037e59cde6331420ee4976b"
+    }
+  },
+  "reviewers": {
+    "r1": {
+      "model": "gpt-6.1-sol",
+      "agentId": "/root/review_r1",
+      "ratingFileSha256": "ea5f44a9a369da5dfb602aa2e349ae353d45517ffab035737bafb1b9f267f77d"
+    },
+    "r2": {
+      "model": "gpt-6.1-terra",
+      "agentId": "/root/review_r2",
+      "ratingFileSha256": "eab216103f9f610ac92f783187ec0df32dec5a2dc60ec6ac1054010cb621e648"
+    }
+  },
+  "resultsFile": "results.json"
+}

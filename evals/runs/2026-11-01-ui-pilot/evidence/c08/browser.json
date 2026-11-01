@@ -1,0 +1,461 @@
+{
+  "caseId": "c08",
+  "capturedAtUtc": "2026-10-31T18:31:32.705Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    ".tasteforge/brief.json": "b05cb1533bdba1012b75ae168040cb6f8f108205d848687d163642cefb1f3319",
+    ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+    ".tasteforge/design-dna.json": "ca6e78a8ea80d5132f794a60bf53507ffdcf02d9e1ecab4bd6230ef91ac8eed2",
+    ".tasteforge/DESIGN.md": "351dfc6f06beaa8bcf034e8c5a58935d70f44c74d4896c74fe038bfd2770f815",
+    ".tasteforge/tokens.css": "f37c67db082df2ba02b7dec856f65144e4a00e3866fad829b057218834622347",
+    "app.js": "bf21e2a8a00768889e959e826938142863ecf60d0372a79e678f3eb7cffe4bea",
+    "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+    "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+    "implementation-notes.md": "5a306a67b6a905de71937d086a2df1053f580488bec76da41c1f936a5cf900c1",
+    "index.html": "862108a27cf1c37584fe70dd40b7fafab3ceca69998b1031ba42a21366e6ce4f",
+    "styles.css": "4edd3516818334c50d72b5ae9f495daa8698609135e4318589e43558d1ee74bb",
+    "task.md": "bac15576e771c662dc99524094b06ef6b5185526b037e59cde6331420ee4976b"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-cart.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Sand × 2 cart confirmation",
+          "status": "pass",
+          "observation": "Added to simulated cart: 2 × Everyday Teapot in Sand. Total $144 USD, including $8 domestic shipping. No order has been placed.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 total explicitly shown",
+          "status": "pass",
+          "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "Unavailable Ash cannot be purchased",
+          "status": "pass",
+          "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field KilnObjects for the everyday",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Choose your teapot ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "glaze-iron",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "1 piece2 pieces3 pieces4 pieces",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "add-to-cart",
+          "name": "Add to simulated cart ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Back to the piece ↑",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Field KilnObjects for the everydayA fictional ceramics shopChoose your teapot ↗\n",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field KilnObjects for the everyday",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Choose your teapot ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "glaze-iron",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "initialText": "Field Kiln\nObjects for the everyday\nA fictional ceramics shop\nChoose your teapot ↗\nThe collection / Teaware / Everyday Teapot\nFIELD NOTES\n01 / TEAWARE\nEveryday Teapot · Iron glaze shown\n650 ml\n\nOriginal vector illustration of a fictional sample product; not a photograph. Illustration shows Iron; Sand has no separate illustration.\n\nStoneware, simply.\n\nA familiar shape.\nA place in your daily ritual.\n\nHANDMADE CERAMICS / NO. 01\n\nEveryday\nTeapot\n$68 USD / piece\nGlazed stoneware\n\nA handmade stoneware teapot for the small ritual of making tea. A rounded form, a curved handle, and room for 650 ml.\n\n01 Choose a glaze\nIron\n4 in stock\nAsh\nUnavailable\nSand\n7 in stock\n02 Quantity\n1 piece\n2 pieces\n3 pieces\n4 pieces\nPieces 1 × $68\n$68\nDomestic shipping\n$8\nTotal USD\n$76\nAdd to simulated cart\n↗\n\nA local cart demonstration. No payment or order is placed.\n\nDelivery\n\nDispatch in 2 business days; illustrative domestic transit 3–5 business days.\n\nReturns\n\nUnused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.\n\nKNOW YOUR PIECE\n\nMade for tea.\nCare for it simply.\nMaterial\nGlazed stoneware\nDimensions\n16 cm wide × 12 cm high\nCapacity\n650 ml\nCare\nHand wash. Avoid sudden temperature changes. Not for stovetop use.\nField Kiln\n\nFictional shop and illustrative product, price, stock, delivery, and returns.\n\nBack to the piece ↑",
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1638,
+        "title": "Everyday Teapot — Field Kiln",
+        "h1": [
+          "EverydayTeapot"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Georgia, serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-cart.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Sand × 2 cart confirmation",
+          "status": "pass",
+          "observation": "Added to simulated cart: 2 × Everyday Teapot in Sand. Total $144 USD, including $8 domestic shipping. No order has been placed.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 total explicitly shown",
+          "status": "pass",
+          "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "Unavailable Ash cannot be purchased",
+          "status": "pass",
+          "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field KilnObjects for the everyday",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Choose your teapot ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "glaze-iron",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "1 piece2 pieces3 pieces4 pieces",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "add-to-cart",
+          "name": "Add to simulated cart ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Back to the piece ↑",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Field KilnObjects for the everydayA fictional ceramics shopChoose your teapot ↗\n",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field KilnObjects for the everyday",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Choose your teapot ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "glaze-iron",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "initialText": "Field Kiln\nObjects for the everyday\nChoose your teapot ↗\nThe collection / Teaware / Everyday Teapot\nFIELD NOTES\n01 / TEAWARE\nEveryday Teapot · Iron glaze shown\n650 ml\n\nOriginal vector illustration of a fictional sample product; not a photograph. Illustration shows Iron; Sand has no separate illustration.\n\nHANDMADE CERAMICS / NO. 01\n\nEveryday\nTeapot\n$68 USD / piece\nGlazed stoneware\n\nA handmade stoneware teapot for the small ritual of making tea. A rounded form, a curved handle, and room for 650 ml.\n\n01 Choose a glaze\nIron\n4 in stock\nAsh\nUnavailable\nSand\n7 in stock\n02 Quantity\n1 piece\n2 pieces\n3 pieces\n4 pieces\nPieces 1 × $68\n$68\nDomestic shipping\n$8\nTotal USD\n$76\nAdd to simulated cart\n↗\n\nA local cart demonstration. No payment or order is placed.\n\nDelivery\n\nDispatch in 2 business days; illustrative domestic transit 3–5 business days.\n\nReturns\n\nUnused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.\n\nKNOW YOUR PIECE\n\nMade for tea.\nCare for it simply.\nMaterial\nGlazed stoneware\nDimensions\n16 cm wide × 12 cm high\nCapacity\n650 ml\nCare\nHand wash. Avoid sudden temperature changes. Not for stovetop use.\nField Kiln\n\nFictional shop and illustrative product, price, stock, delivery, and returns.\n\nBack to the piece ↑",
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 2241,
+        "title": "Everyday Teapot — Field Kiln",
+        "h1": [
+          "EverydayTeapot"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Georgia, serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      }
+    }
+  }
+}

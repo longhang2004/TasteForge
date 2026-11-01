@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" data-motion="off">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Effect studies · TasteForge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.mjs"></script>
+  </head>
+  <body>
+    <a class="skip" href="#studies">Skip to studies</a>
+    <header>
+      <a class="brand" href="#studies">TasteForge <span>/ Studies 01–03</span></a>
+      <label class="motion-toggle"
+        ><input id="static-preview" type="checkbox" checked disabled data-control /> Static
+        previews</label
+      >
+    </header>
+    <main id="studies">
+      <div class="intro">
+        <p class="kicker">A working notebook</p>
+        <h1>Emphasis.<br />Continuity. Comparison.</h1>
+        <p>Three small studies in how an effect can support what you see and do.</p>
+        <p id="motion-status" role="status">
+          Static previews. Interactive controls become available with JavaScript.
+        </p>
+      </div>
+      <section aria-labelledby="text-heading">
+        <div class="section-heading">
+          <span class="index">01 / Text</span>
+          <h2 id="text-heading">Give one phrase the emphasis.</h2>
+        </div>
+        <div class="text-study">
+          <p class="specimen" lang="vi">Nhìn rõ <em id="marker">điều quan trọng.</em></p>
+          <button id="replay" disabled data-control>Replay highlight</button>
+        </div>
+        <p class="note">
+          The words remain readable. A short marker movement can draw attention; a static highlight
+          carries the same emphasis.
+        </p>
+      </section>
+      <section aria-labelledby="layout-heading">
+        <div class="section-heading">
+          <span class="index">02 / Layout</span>
+          <h2 id="layout-heading">Keep the same work in view.</h2>
+        </div>
+        <div class="view-controls" role="group" aria-label="Study view">
+          <button data-view="grid" aria-pressed="true" disabled data-control>Grid</button>
+          <button data-view="list" aria-pressed="false" disabled data-control>List</button>
+        </div>
+        <ul class="works" data-view="grid">
+          <li data-item="field-notes">
+            <img src="study.svg" width="800" height="600" alt="" />
+            <div>
+              <span class="work-index">01</span>
+              <h3>Field notes</h3>
+              <p>A wider frame for the whole composition.</p>
+            </div>
+          </li>
+          <li data-item="cut-lines">
+            <img src="study.svg" width="800" height="600" alt="" />
+            <div>
+              <span class="work-index">02</span>
+              <h3>Cut lines</h3>
+              <p>A warm mount changes the edge of the print.</p>
+            </div>
+          </li>
+          <li data-item="margins">
+            <img src="study.svg" width="800" height="600" alt="" />
+            <div>
+              <span class="work-index">03</span>
+              <h3>Margins</h3>
+              <p>Space around the image changes its weight.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="note">
+          The same three studies keep their names and order in both views. Position transitions help
+          track them; the view change works immediately with motion disabled. All frames reuse one
+          original illustration.
+        </p>
+      </section>
+      <section aria-labelledby="image-heading">
+        <div class="section-heading">
+          <span class="index">03 / Image</span>
+          <h2 id="image-heading">Compare the treatment.</h2>
+        </div>
+        <div class="comparison-layout">
+          <figure>
+            <div class="comparison" style="--reveal: 50%">
+              <img
+                class="base"
+                src="study.svg"
+                width="800"
+                height="600"
+                alt="Abstract print study: an orange circle, green hillside and fine contour lines. The left portion is in colour; the right is greyscale."
+              />
+              <div class="colour" aria-hidden="true">
+                <img src="study.svg" width="800" height="600" alt="" />
+              </div>
+              <span class="divider" aria-hidden="true"></span>
+            </div>
+            <figcaption>
+              One illustration, two treatments. Move the divider to compare colour and greyscale.
+            </figcaption>
+          </figure>
+          <div class="range-control">
+            <label for="reveal"
+              >Colour reveal <output id="reveal-value" for="reveal">50%</output></label
+            >
+            <input
+              id="reveal"
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              aria-valuetext="50% colour"
+              disabled
+              data-control
+            />
+            <p>
+              Use the slider, touch or arrow keys. This direct comparison remains available with
+              static previews.
+            </p>
+          </div>
+        </div>
+      </section>
+      <noscript
+        ><p class="note">
+          JavaScript is off. Text, images and captions are available; the optional preview controls
+          are disabled.
+        </p></noscript
+      >
+    </main>
+    <footer>
+      Original TasteForge mechanism studies. Not a production template or a user-validation result.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://text-effects.colorion.co/effects/highlighter-text-effect/",
+    "browser": "156.0.8078.4",
+    "inspected": "rendered page with reduced motion, then normal-motion element sampling",
+    "title": "Highlighter Marker Text Effect — Pure CSS, Free Code",
+    "reduced": {
+      "text": "MARKED",
+      "children": 0,
+      "animation": "fx-marker",
+      "duration": "1e-05s",
+      "iterations": "1",
+      "childAnimation": null,
+      "childDuration": null,
+      "childIterations": null
+    },
+    "normal": {
+      "animation": "fx-marker",
+      "duration": "3s",
+      "iterations": "infinite",
+      "childAnimation": null,
+      "childDuration": null,
+      "childIterations": null
+    }
+  },
+  {
+    "url": "https://text-effects.colorion.co/effects/masked-text-reveal-animation/",
+    "browser": "156.0.8078.4",
+    "inspected": "rendered page with reduced motion, then normal-motion element sampling",
+    "title": "Masked Text Reveal Animation — Pure CSS, Free Code",
+    "reduced": {
+      "text": "REVEAL",
+      "children": 6,
+      "animation": "none",
+      "duration": "1e-05s",
+      "iterations": "1",
+      "childAnimation": "none",
+      "childDuration": "1e-05s",
+      "childIterations": "1"
+    },
+    "normal": {
+      "animation": "none",
+      "duration": "0s",
+      "iterations": "1",
+      "childAnimation": "fx-curtain-rise",
+      "childDuration": "4.4s",
+      "childIterations": "infinite"
+    }
+  }
+]

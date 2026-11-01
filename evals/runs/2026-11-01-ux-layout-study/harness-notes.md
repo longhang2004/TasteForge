@@ -1,0 +1,13 @@
+# Operator harness corrections
+
+Before independent review, the first u01 capture exposed two operator assumptions: a visible result row implemented with a `display: contents` wrapper has no own bounding box, and rejecting an invalid quantity by disabling Review is allowed by the task. The initial harness counted only wrapper boxes and attempted to click a disabled action, causing false failures/early termination.
+
+The harness now counts visible child boxes for such wrappers and accepts disabled review controls as prevention, for inventory and transfer alike. Original u01 source is unchanged. The initial trace/screenshots are retained under `evidence/harness-diagnostics/u01-v1/`; the corrected harness is applied uniformly to final case captures. This is a harness correction, not a creator repair or a change to the task contract. No reviewer had received evidence or scores before the correction.
+
+The initial u08 retry trace reached an actual success page, but the wait expression accepted “success” and not the equally valid “succeeded” wording. Added that lexical form uniformly to the transfer wait/check. The original trace is retained under `evidence/harness-diagnostics/u08-v1/`; no UI source or success wording was changed. No independent review had started.
+
+The first u10 no-results trace stopped because two working Clear search controls shared a hook (an inline clear button and the no-results action). The task requires a usable clear action, not a unique number of equivalent controls. The uniform locator now chooses the first visible Clear search action. The duplicate-hook implementation remains unchanged and is a technical ambiguity, not evidence of a user-facing blocker. The original strict-mode trace is retained under `evidence/harness-diagnostics/u10-v1/`.
+
+The next u10 trace completed the flow but missed the edited numeric value because DOM text joined `7` and a separately styled `pieces` span. Match numeric boundaries rather than word boundaries; original trace is retained as `u10-v2`. This does not change UI spacing or text.
+
+u12 genuinely omitted the dedicated selection hook, while exposing a working visible SKU row. Preserve the initial stopped trace as `u12-v1`; the final harness reports the missing hook as a failed technical diagnostic and uses that visible fixture-SKU row to assess the user flow separately. This is a protocol deviation from hook-only automation, not a repair or a claim of hook compliance. All inventory cases use this same fallback policy. Recovery text recognition also accepts “not recorded”/“not saved” as failure and excludes those forms from success. Final counts separate technical diagnostics from user-task checks. No independent review had started before these changes.

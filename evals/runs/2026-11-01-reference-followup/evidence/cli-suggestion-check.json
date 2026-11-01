@@ -1,0 +1,19 @@
+{
+  "operatorReproduction": true,
+  "command": [
+    "node",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/packages/cli/dist/index.js",
+    "suggest",
+    "--count",
+    "3",
+    "--seed",
+    "42",
+    "--format",
+    "json"
+  ],
+  "cwd": "cases/r01",
+  "exitCode": 2,
+  "stdout": "",
+  "stderr": "{\n  \"error\": \"Requested 3 distinct directions, but only 0 satisfy constraints. civic-clarity: No compatible font pair for language, delivery, or fixed font constraints; contemporary-editorial: No compatible font pair for language, delivery, or fixed font constraints; data-dense-enterprise: No compatible font pair for language, delivery, or fixed font constraints; experimental-typography: Exceeds maxComplexity; gallery-led: No compatible font pair for language, delivery, or fixed font constraints; high-contrast-monochrome: No compatible font pair for language, delivery, or fixed font constraints; international-typographic: No compatible font pair for language, delivery, or fixed font constraints; japanese-inspired-minimalism: No compatible font pair for language, delivery, or fixed font constraints; learning-studio: No compatible font pair for language, delivery, or fixed font constraints; modern-institutional: No compatible font pair for language, delivery, or fixed font constraints; neo-brutalism: No compatible font pair for language, delivery, or fixed font constraints; organic-modern: No compatible font pair for language, delivery, or fixed font constraints; playful-modular: No compatible font pair for language, delivery, or fixed font constraints; quiet-luxury: No compatible font pair for language, delivery, or fixed font constraints; retro-computing: No compatible font pair for language, delivery, or fixed font constraints; scientific-instrument: No compatible font pair for language, delivery, or fixed font constraints; soft-utility: No compatible font pair for language, delivery, or fixed font constraints; swiss-editorial: No compatible font pair for language, delivery, or fixed font constraints; technical-minimalism: No compatible font pair for language, delivery, or fixed font constraints; warm-commerce: No compatible font pair for language, delivery, or fixed font constraints\",\n  \"exitCode\": 2\n}\n",
+  "changedSubmittedFiles": false
+}

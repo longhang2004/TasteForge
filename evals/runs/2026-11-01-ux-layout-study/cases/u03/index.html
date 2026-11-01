@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Everyday Teapot — Field Kiln</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="masthead"><a class="brand" href="#">FIELD KILN<span>Objects for everyday rituals</span></a><span class="sample">Fictional studio · Shop simulation</span></header>
+<main id="app">
+<div class="breadcrumb">The collection <span>/</span> Everyday Teapot</div>
+<div class="product-layout">
+<section class="product-evidence" aria-label="Product illustration and details">
+<figure><div class="image-label">FIELD NOTES / 001</div><img src="assets/teapot.svg" alt="Illustration of a round dark green stoneware teapot with a fitted lid, curved handle and short spout."><figcaption>01 — Everyday Teapot, illustrated in Iron</figcaption></figure>
+<p class="image-disclosure">Original vector illustration of a fictional sample product; not a photograph. Illustration shows Iron only.</p>
+<section class="specifications" id="piece-details"><h2>Made for the daily pour.</h2><p>A handmade ceramic teapot in glazed stoneware, with a round body, fitted lid and curved handle.</p><dl><div><dt>Material</dt><dd>Glazed stoneware</dd></div><div><dt>Capacity</dt><dd>650 ml</dd></div><div><dt>Dimensions</dt><dd>16 cm wide × 12 cm high</dd></div></dl><h3>Care for your piece</h3><p>Hand wash. Avoid sudden temperature changes. Not for stovetop use.</p></section>
+</section>
+<section class="purchase" aria-labelledby="product-title"><p class="eyebrow">HANDMADE STONEWARE / 650 ML</p><div class="title-row"><h1 id="product-title">Everyday<br>Teapot</h1><p class="price">$68<span>USD / piece</span></p></div><p class="intro">A quiet companion for your tea ritual.</p>
+<p class="details-link"><a href="#piece-details">Material, dimensions &amp; care <span aria-hidden="true">↓</span></a></p>
+<form id="purchase-form"><fieldset><legend>01 <span>Choose your glaze</span></legend><div class="glazes"><label class="glaze"><input type="radio" name="glaze" value="iron" data-testid="glaze-iron" checked><span class="swatch iron"></span><strong>Iron</strong><small>4 in stock</small></label><label class="glaze unavailable"><input type="radio" name="glaze" value="ash" data-testid="glaze-ash" disabled><span class="swatch ash"></span><strong>Ash</strong><small>Unavailable</small></label><label class="glaze"><input type="radio" name="glaze" value="sand" data-testid="glaze-sand"><span class="swatch sand"></span><strong>Sand</strong><small>7 in stock</small></label></div></fieldset>
+<div class="quantity-row"><label for="quantity"><span class="number">02</span> Quantity</label><select id="quantity" data-testid="quantity" name="quantity"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+<section class="conditions" aria-label="Delivery and return conditions"><div><h2>Delivery</h2><p>$8.00 flat shipping. Dispatch in 2 business days; illustrative domestic transit 3–5 business days.</p></div><div><h2>Returns</h2><p>Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.</p></div></section>
+<div class="order"><div><span id="subtotal-label">1 piece</span><span id="subtotal">USD 68.00</span></div><div><span>Shipping</span><span>USD 8.00</span></div><div class="total"><strong>Total, shipping included</strong><strong id="total">USD 76.00</strong></div></div>
+<button type="submit" data-testid="add-to-cart">Add to simulated cart <span aria-hidden="true">↗</span></button><p class="simulation">A local demonstration. No payment or real order.</p><div data-testid="cart-status" id="cart-status" role="status" aria-live="polite"></div>
+</form></section></div>
+</main><footer><span>FIELD KILN</span><p>Fictional shop and illustrative product, price, stock, delivery, and returns.</p></footer></body>
+</html>

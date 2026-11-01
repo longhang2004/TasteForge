@@ -4,3 +4,12 @@ pnpm-lock.yaml
 coverage
 examples/source
 examples/generated
+evals/runs
+# Preserve raw browser evidence and independent review records.
+examples/inventory-workbench/evidence
+examples/inventory-workbench/reviews
+examples/effects-lab/evidence
+examples/design-gallery/evidence
+packages/knowledge/src/data/references.json
+packages/knowledge/reference-lock.json
+packages/knowledge/third-party

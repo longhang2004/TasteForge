@@ -1,0 +1,14 @@
+/* Diagnostic neutral render. Authored geometry, type scale and display rules
+   remain; replacing font family can change wrapping. Original metrics are
+   collected before injection. This stylesheet is never applied to source. */
+*, *::before, *::after {
+  font-family: Arial, sans-serif !important;
+  color: #161616 !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border-color: #737373 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+img, svg { filter: grayscale(1) !important; }

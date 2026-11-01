@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0",
+  "runId": "2026-11-01-antigravity-inventory",
+  "type": "supplementary-antigravity-host-model-pair",
+  "createdAtUtc": "2026-11-01T07:35:30.940229+00:00",
+  "host": "Antigravity CLI Windows 1.4.12 launched from Ubuntu WSL",
+  "model": "gemini-3.8-flash-medium",
+  "effort": "medium",
+  "cases": [
+    {
+      "id": "a01",
+      "condition": "no-skill",
+      "promptId": "inventory-triage",
+      "model": "gemini-3.8-flash-medium",
+      "effort": "medium",
+      "generation": "submitted",
+      "taskSha256": "d7f90772b3ded3f6901ad738e9758948241604733a727b3b6375b4aadbefa7d1",
+      "fixtureSha256": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+      "startedAtUtc": "2026-11-01T07:53:28.476728+00:00",
+      "finishedAtUtc": "2026-11-01T08:01:19.624726+00:00",
+      "exitCode": 0,
+      "conversationId": "4ad4e199-83e6-4962-99be-fada5d9860a9",
+      "bootstrapAttempts": [
+        {
+          "status": "soft-denied-before-implementation",
+          "conversationId": "9bf7b05c-4e8f-4776-ae5c-27f9c98c7f92",
+          "evidence": "evidence/a01/bootstrap-01/generation.json"
+        }
+      ],
+      "implementedFilesObserved": true,
+      "deniedActions": [],
+      "sourceHashes": {
+        "app.js": "46a6664d9a090ccd494bfe61aa15447628997e3c1d993c1a2d757ccc887841bf",
+        "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+        "implementation-notes.md": "ec105ba479129dfaf874981e2ae2a176a2194b0c864113af9009aba61fff38e5",
+        "index.html": "4380f5344941fbb9afdb9696a23e938634b6a4de9048e2c542a0868d5f29a79e",
+        "styles.css": "9739d1d529c18fc097d4c44b2ced00bb4cdef233ee06e51eb2f747c1862992c8",
+        "task.md": "d7f90772b3ded3f6901ad738e9758948241604733a727b3b6375b4aadbefa7d1"
+      }
+    },
+    {
+      "id": "a02",
+      "condition": "current-skill",
+      "promptId": "inventory-triage",
+      "model": "gemini-3.8-flash-medium",
+      "effort": "medium",
+      "generation": "submitted",
+      "taskSha256": "d7f90772b3ded3f6901ad738e9758948241604733a727b3b6375b4aadbefa7d1",
+      "fixtureSha256": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+      "startedAtUtc": "2026-11-01T07:43:50.514009+00:00",
+      "finishedAtUtc": "2026-11-01T07:53:28.442165+00:00",
+      "exitCode": 0,
+      "conversationId": "c87e82c2-f90e-4302-8653-357960702126",
+      "bootstrapAttempts": [
+        {
+          "status": "soft-denied-before-implementation",
+          "conversationId": "af4f0bac-ea02-418d-8292-40616ed71051",
+          "evidence": "evidence/a02/bootstrap-01/generation.json"
+        }
+      ],
+      "implementedFilesObserved": true,
+      "deniedActions": [],
+      "sourceHashes": {
+        ".tasteforge/brief.json": "7d9e698b9baa89b99f2549f7e99f97cc939dca1776538178b45ee29f45102a1b",
+        ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+        "app.js": "dab7c90d97dfd539f049c5a36751c5e31d50df74a4117df5b8d5167d46664425",
+        "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+        "implementation-notes.md": "1ad70d2cefe8fe353acae3eb2a5acae005c7cfed3dcb4bfdd65b51f65bc13fb1",
+        "index.html": "e9655e16c6bd8d0859e228de72a2d776502a751768000c3e27081863770b5a95",
+        "styles.css": "d76fb8dbdeb4ef7d3feab73a34cc1012389cf0e6ea754c5fb721b059ed0632ca",
+        "task.md": "d7f90772b3ded3f6901ad738e9758948241604733a727b3b6375b4aadbefa7d1",
+        "UX_PLAN.md": "caa104c51be33d112858d96bb9d8589e420fe8abafafcd08fc78dbcfeac8c2f1"
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "catalogVersion": "2026.11.01.2",
+  "tasteforgeSeed": 42,
+  "modelGenerationSeed": null,
+  "skillFiles": {
+    "tasteforge/SKILL.md": "1e1e09a6f3c23f936aa815187cd88563c61a381b50a823a602a9be1696914001",
+    "tasteforge/references/accessibility.md": "fe0de4a8631dc9bb1ed983477ade2623b0c91e8f0233452f51d28ae919c50927",
+    "tasteforge/references/anti-patterns.md": "eb53ccfca1d9664288175278d3c9bb6adcdc08c57b2015fca1127042ed9993e2",
+    "tasteforge/references/catalog-use.md": "046dab97edfbedb096e7bd46cff5fdf8ae706f1204856261abf6e47317cce0b1",
+    "tasteforge/references/design-principles.md": "8d5d60cec70f462bd9f9d75d3b67185e1cdbda5fe0006abb57d823a59cab756b",
+    "tasteforge/references/interaction-motion.md": "6cf08a1c01e679ee51a51dc16cf0c44d226cef37caccb415abd62541e3d6c666",
+    "tasteforge/references/layout-archetypes.md": "5e0ec34161454430c5b1b46e6ab3cd9d57f84b7ecc9f5167db2329c155261a31",
+    "tasteforge/references/layout-composition.md": "c67ca832df627cfbc05eaa373219dfe088e994d480e263bc0cd2190e35a8de33",
+    "tasteforge/references/reference-sources.md": "9c03fd800ae1219d6fda40503d89a3fa7eea9835b6984ecd01d2ef37e2b3a17c",
+    "tasteforge/references/typography.md": "7fa0b604aab81da8cb4f462c59c9c3c8ca726a679f728652292035fc29054b45",
+    "tasteforge/references/ux-plan-template.md": "0284507a90280202dc514f8db0f3ace667d7b0338d60bbd4868501525279075a",
+    "tasteforge/references/visual-hierarchy.md": "09bfde3f0a531fa56b545087e1e69e70482921a499efae39033d1a1078393b82",
+    "tasteforge/workflows/audit-ui.md": "5ef22fb552b296cd467b989e4541b986edbb30ce90e7b393cc94690dec1860e1",
+    "tasteforge/workflows/create-ui.md": "2eb8748e286db9dd84cf2040947aeb6694b7bcfa225b31419599c21037150bce",
+    "tasteforge/workflows/redesign-ui.md": "020642f172b0b791daf8d3e9a0af2ed1ecee5b336d79aaa36947424c25b437a3",
+    "tasteforge/workflows/research-and-plan.md": "29ca4c5e4e070d4b642def3656723452549e3f4137b8b1f8c2be8eaae2c0be6c"
+  },
+  "catalogSha256": "602f13c680fe35fe854ce01a714e60cf32822eb3560500c7317ac84eb7967046",
+  "limitations": [
+    "One pair, one model and one task; no general UX claim or host ranking.",
+    "Native Antigravity settings/system instructions/authenticated host differ from the Codex study. Existing global customizations may affect context and are not silently changed.",
+    "Equal task, starter, tool availability and soft budget within this pair; actual source/tool use and compute can differ.",
+    "CLI model slug and usage metadata are recorded, but exact backend snapshot and inference seed are not controlled.",
+    "Supplemental monochrome CSS preserves transparency/luminance and differs from the original neutralizer; no cross-study score comparison."
+  ],
+  "runOrder": [
+    "a02",
+    "a01"
+  ],
+  "protocolSha256": "6e8c18a198e67a8fbbea9864bdb536352f0b3f7895e48575463135f8bdfce691",
+  "anonymousMapping": {
+    "sample-1": "a02",
+    "sample-2": "a01"
+  },
+  "captureHarnessSha256": "6f036d05df39b376fb3010d162c0b1730a19318222aadd9c94c80d9162142777",
+  "monochromeCSSSha256": "6c422dd108cebece87fe4f623965e5d6d2897a0a752cb9f1db3c1861e4822530",
+  "reviewHashes": {
+    "r1": "5738639d4119ee645f6a43dd6e0d4e9e97cb224823b5c13ebe9a75b2cb99d8d6",
+    "r2": "c7ea801386bb0b3fef095378a3cdba22683ea547ac1e4fd1ccd3a00f804d1f02"
+  },
+  "reviewers": {
+    "r1": {
+      "model": "gpt-6.1-sol",
+      "imagesActuallyInspected": 16,
+      "order": "sample-1 then sample-2; monochrome before authored per sample"
+    },
+    "r2": {
+      "model": "gpt-6.1-terra",
+      "imagesActuallyInspected": 16,
+      "order": "sample-2 then sample-1; monochrome before authored per sample"
+    }
+  },
+  "deviations": [
+    "Both first bootstrap sessions soft-denied the same WSL listing command before implementation; exact attempts retained. Windows regex matcher probe succeeded; fresh sessions restarted with identical scope.",
+    "No-skill creator ran preview.mjs twice and inspected four PNG read events, exceeding the specified single preview invocation. Skill creator ran it once and inspected two PNGs.",
+    "Creator notes claim no unverified requirements; these are self-reports. Only initial self-renders and source checks in the trace were verified by creators; named task interactions/accessibility evidence comes from the later operator harness, with remaining gaps retained."
+  ],
+  "runtimeFilesSha256": {
+    "packages/cli/dist/cli.d.ts": "d1342aa605329e1b720da0bbef7a0add74689818994203d539608e2c41ff53dc",
+    "packages/cli/dist/cli.js": "409701049d35100d2b1ffbea8b0eb33b93cea55db1614c33647335a536efb1bb",
+    "packages/cli/dist/cli.js.map": "e49478d20ceeaeb4ecf50cd40275bdf45359c07b191a827f562ca3c81189c63b",
+    "packages/cli/dist/files.d.ts": "bbd9562e99c7318d782f0fe529880350ee33b4c704e5594c8bc4035a0f804ab4",
+    "packages/cli/dist/files.js": "3756017cfe910e484a8673b3b67bef9bb199fea77e5e4098138a0a7c3f4bb626",
+    "packages/cli/dist/files.js.map": "bf6fc37f3cbba6a84da1a332a70d8e4f9b832e2f3b77ce5af12e8dd85e05b301",
+    "packages/cli/dist/index.d.ts": "43e818adf60173644896298637f47b01d5819b17eda46eaa32d0c7d64724d012",
+    "packages/cli/dist/index.js": "ec1531d343eb05e316fb890ba4f252f483bff90cc1a57475a4fc056495174398",
+    "packages/cli/dist/index.js.map": "a84c3ea7282fa5c19debe586ce2057d811f43c55315f29f066b9d62f88b5e1a4",
+    "packages/core/dist/audit.d.ts": "91f7043dc4377fda26a28ce817a4d2e383bddeeb680beda0a9eedc1f844a4f5d",
+    "packages/core/dist/audit.js": "60cb4d0c8db3dfeffeab3b5f881c710c79180c4317cbdd082e3c976dfb23732b",
+    "packages/core/dist/audit.js.map": "d277ed57819b58d3166f82efb76016b22e7a410aeed1fe2e1e40059a1d9c101e",
+    "packages/core/dist/color.d.ts": "c7cc46ff7c05f72f1ac4795cefc2f9f71fc60a289bbec970e75b8040935606ee",
+    "packages/core/dist/color.js": "b5053eb7248d992f44e0a2607918b7189823613f596f4016a226814e615eb498",
+    "packages/core/dist/color.js.map": "0b5ddcdbab9532ed59a278ee3dcbd92b637bb34420af7db2b8e9781128497d7e",
+    "packages/core/dist/engine.d.ts": "a474bfa1b05c859a4194915131b3bd65f5378c3404f0b383a486dba14b97e52a",
+    "packages/core/dist/engine.js": "690eda6aaa136f0e5ff847c8afbd93c5419d9053f8bd660b7321a2053cfaf770",
+    "packages/core/dist/engine.js.map": "c2ce4582a891c098e42c86926a213fd87ced1c3eea22eac0594cd744ed3f6c94",
+    "packages/core/dist/generate.d.ts": "c5b5124ef056dc74d71e16cdc97ebaef11e8bb3d35d85f477deb9e9e1dd6ebb5",
+    "packages/core/dist/generate.js": "63fa0de55cec6038228a430e4209932b5eda9afd7b438d39354242f450b7d611",
+    "packages/core/dist/generate.js.map": "42259654b0aaee700ce16d6f03c60f399798a40ae643e580b846194aedb35da3",
+    "packages/core/dist/index.d.ts": "dfb479776935f3ee567d81706b4c5d8f42f65d31e86d607d8031e332fa565062",
+    "packages/core/dist/index.js": "2a8f1dce8f286be6d0fc874822119dd5716789ef8dda8ed9f5d41de22260c126",
+    "packages/core/dist/index.js.map": "ea8e3e4f034973113b215da2f25f846b775c6c94f8d8109f177c3ad11b923cf6",
+    "packages/core/dist/random.d.ts": "41edd6bc3d0914a31e7b938eb919cb2e9296039b244f250a75f995ceb9c73b07",
+    "packages/core/dist/random.js": "87874506a775de387743db3f3780c6f5f30e9d5b667e26976f8f3fa89c823fef",
+    "packages/core/dist/random.js.map": "7ebbad07db84b5a2233dd3afcddb8aecf320edfa0ac1ef33e5b4b638cc0aec0c",
+    "packages/core/dist/recommend.d.ts": "44d0a27fa2a18de6f744e13ae78ea39ff7c2d396e46e64d450c2ead2693f68a0",
+    "packages/core/dist/recommend.js": "4f891317325566acdcb6357bb58342e13da693892e95c210eaadeb0d39561890",
+    "packages/core/dist/recommend.js.map": "99a70cd1f6aee0650275c3943e3c2220e589025d56798b34d0133ceffdad47cd",
+    "packages/core/dist/references.d.ts": "712fda7ac12511ae02bf92e0e7ba0efae2ebd9cfd93922eb8f26d2f0d4bff450",
+    "packages/core/dist/references.js": "cc0f7e49cc3b83095abbfb231591903825631d9c354623a0d2e1637bbfd95ea2",
+    "packages/core/dist/references.js.map": "5ec801cf46aa50da48b934f50dc7d6c82f287d25d47023dfc525b61e1111b786",
+    "packages/core/dist/schemas.d.ts": "e94954add6933766a30212590b5021de0d4ba0f70bec6fb9993085b85a49e32a",
+    "packages/core/dist/schemas.js": "57f35b99191b8a847ae0b090cf82c229e6f06b0988f0c046ceb7305b045e53cc",
+    "packages/core/dist/schemas.js.map": "ee58b88cbc090bbd05b19fa08084e2475543c83166ee220952f32aac0f07a0b2",
+    "packages/knowledge/dist/index.d.ts": "35f7b429fb7b886808cbad791b699c978f8de9df88163d0b26b9b4aa567fe022",
+    "packages/knowledge/dist/index.js": "725063f520618986969e7c20ecf5ceb6dccf3f23bd672d9955fd19963f0f489c",
+    "packages/knowledge/dist/index.js.map": "c307a6b8d1f0bf7ea9ce9148cdaa52bcd866025b3985c725ef5ad2d8e519cdd3",
+    "packages/knowledge/dist/reference-schemas.d.ts": "90082ceca99cb0f65ceb8977227938fdcd3ec9313630803a6bd1fb4c32113257",
+    "packages/knowledge/dist/reference-schemas.js": "4280facb239aba255dfebf33287ee1cbc0fe2accf62f1186e2c0d9210a1b7ff1",
+    "packages/knowledge/dist/reference-schemas.js.map": "1553a046fa5fec8e5646243116a648fddeef45ebab341943be53e05dea948874",
+    "packages/knowledge/dist/references.d.ts": "852f09fcc08e3ab5f5681b71a11331c96525887383b87507511e0e6fd6ee0036",
+    "packages/knowledge/dist/references.js": "f4a972c80860c00c1cc0debb824ecd3143a37c6cba3f279c0c02ab572bbf9b91",
+    "packages/knowledge/dist/references.js.map": "a7a1d29e56c3d7fba4555f344a211ba5bce58b1341e217ed7c4e0a480b5319d0",
+    "packages/knowledge/dist/schemas.d.ts": "a83da284d9e83b5e530a62478c8ffac942add2b7ed784380941dc3ddc2cc65ce",
+    "packages/knowledge/dist/schemas.js": "f9283129bcb1b9e33311f0396a82823e79cf2bb318d260635dd332c95b6821b9",
+    "packages/knowledge/dist/schemas.js.map": "f8094cfe16b1b3b0814e51241c5dc44ade82e6ebb2da4451cfe6bbfe1703bb4f",
+    "packages/knowledge/dist/data/knowledge.json": "816722526db94fd150761ab58738224ef944bc359ad6ebb4053b3c4f691ed86f",
+    "packages/knowledge/dist/data/references.json": "be051952e54b86f62cf47b0866d106b0649a5a84f8e84648107e811e7cd55bee"
+  }
+}

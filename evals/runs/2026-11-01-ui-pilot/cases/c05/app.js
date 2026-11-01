@@ -1,0 +1,15 @@
+"use strict";
+const $ = id => document.getElementById(id);
+const usd = n => "$"+n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+const vnd = n => (n*25000).toLocaleString("en-US",{maximumFractionDigits:0})+" VND";
+let transfer={name:"",amount:250}, failed=false;
+function summary(){const n=Number($("amount").value),valid=n>=1&&n<=1000; $("sum-amount").textContent=valid?usd(n)+" USD":"— USD";$("sum-total").textContent=valid?usd(n+2.5)+" USD":"— USD";$("sum-receives").textContent=valid?vnd(n):"— VND";}
+$("amount").addEventListener("input",summary);
+function error(id,text){$(id+"-error").textContent=text;$(id+"-error").hidden=!text;$(id).setAttribute("aria-invalid",String(!!text));}
+$("entry").addEventListener("submit",e=>{e.preventDefault();const name=$("recipient").value.trim(),amount=Number($("amount").value);const ne=name?"":"Enter the recipient’s full name.";const ae=!Number.isFinite(amount)||amount<1||amount>1000?"Enter an amount from $1.00 to $1,000.00 USD.":Math.abs(amount*100-Math.round(amount*100))>0.000001?"Use no more than two decimal places.":"";error("recipient",ne);error("amount",ae);if(ne||ae){$(ne?"recipient":"amount").focus();return;}transfer={name,amount};$("review-name").textContent=name;
+const rows=[["You send",usd(amount)+" USD"],["Transfer fee","$2.50 USD"],["Total debited",usd(amount+2.5)+" USD"],["Recipient receives",vnd(amount)],["Estimated delivery","By 3 November 2026, illustrative estimate"]];
+$("review-details").replaceChildren(...rows.map(([key,value])=>{const div=document.createElement("div"),dt=document.createElement("dt"),dd=document.createElement("dd");dt.textContent=key;dd.textContent=value;div.append(dt,dd);return div;}));$("entry").hidden=true;$("review").hidden=false;$("step1").classList.remove("active");$("step2").classList.add("active");$("review").focus();});
+$("edit").addEventListener("click",()=>{$("review").hidden=true;$("entry").hidden=false;$("step1").classList.add("active");$("step2").classList.remove("active");$("recipient").focus();});
+function success(){$("review").hidden=true;$("success").hidden=false;$("success-text").textContent="Simulated transfer of "+usd(transfer.amount)+" USD to "+transfer.name+". Illustrative recipient amount: "+vnd(transfer.amount)+".";$("feedback").textContent="Simulation complete. No money was moved.";$("feedback").hidden=false;$("success-feedback").append($("feedback"));$("success").focus();}
+$("confirm").addEventListener("click",()=>{if(failed){success();return;}failed=true;$("feedback").textContent="The simulated transfer couldn’t be completed. Your details are saved and no money was moved. Please retry.";$("feedback").hidden=false;$("confirm").hidden=true;$("retry").hidden=false;$("feedback").focus();});
+$("retry").addEventListener("click",success);$("again").addEventListener("click",()=>location.reload());summary();

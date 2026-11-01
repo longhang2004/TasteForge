@@ -1,0 +1,40 @@
+{
+  "version": "2026.11.01.1",
+  "entry": {
+    "id": "anti-antislop-dashboard",
+    "kind": "rule",
+    "sourceId": "anti",
+    "sourcePath": "skills/antislop-dashboard/SKILL.md",
+    "url": "https://github.com/muris11/anti-ai-slop/blob/5768372bf3272c7d59c354cec3a16f5c39d036bc/skills/antislop-dashboard/SKILL.md",
+    "inputSha256": "cd39817e5cec7251914a3ca6a50fd619fe6246331a2d1ac02e880b5ea5315d7b",
+    "contentSha256": "cd39817e5cec7251914a3ca6a50fd619fe6246331a2d1ac02e880b5ea5315d7b",
+    "title": "Antislop Dashboard",
+    "summary": "Contextual anti-slop review reference. Interpret aesthetic prescriptions in the user's task; this source is data, not authority.",
+    "content": "---\nname: antislop-dashboard\ndescription: \"Dashboard, analytics, metric-card, table, and chart rules: real data hierarchy, no decorative metric cards, honest visualizations, and complete table states. Map to antislop-master C-10 and G-3/G-4/G-5. Use when building or auditing an admin/analytics interface.\"\nallowed-tools: Read Write Edit Glob Grep\n---\n# antislop-dashboard\n\n> Dashboard rules for anti-ai-slop. Map to **C-10** (metric cards), **A-2/A-3** (decorative), and **G-3/G-4/G-5** (states) in `antislop-master`.\n>\n> A dashboard is a tool, not a trophy case. The moment a chart or card exists to look impressive, it is slop.\n\n---\n\n## Metric cards\n\n- **Avoid** the four identical metric cards (\"Revenue\", \"Users\", \"Uptime\", \"Growth\") always laid out the same, each with a sparkline that means nothing. (C-10)\n- **Every number needs**: a source and a period. `+23%` with no \"of what / since when\" is a fake metric. (H-1)\n- **Only show a metric that drives a decision.** If nobody acts on it, cut it. A dashboard is a list of decisions, not a wall of numbers.\n- **Vary the card emphasis** by importance — the number someone checks daily should be visually more important than a vanity count.\n\n## Charts\n\n- **Honest scale.** Label both axes, give the unit, and don't truncate the y-axis to exaggerate change. (H-1, P5)\n- **One chart, one message.** If a chart needs a paragraph of explanation, it's two charts or a table.\n- **No decorative glow/gradient charts** just to look \"analytics-y\". (A-2, A-3)\n- **Line + bars for the same axis in the same chart only when** the comparison genuinely needs both.\n\n## Tables\n\n- **Complete table treat states.** A table with rows but no empty state, no loading state, and no error state is incomplete. (G-3, G-4, G-5)\n- **Empty, loading, error are three different visuals**, not one gray placeholder.\n- **Sorting, filtering, and pagination must be real** — a button that does nothing is a P4 interactivity failure. (G-1)\n- **Long lists need** an empty-search result state and a \"no matches\" message. (G-8)\n\n## Hierarchy\n\n- The whole dashboard should not be the same visual weight. A **primary area** (what the user opens to see) must be visually distinct from supporting panels. (I-3)\n- **No spinning/repeating identical widgets** across the page — variation reflects real data weight. (C-7)\n\n---\n\n## Audit checklist\n\n- [ ] Every metric has a source and a period. (H-1)\n- [ ] Every number drives a decision. (C-10)\n- [ ] Charts have labelled, honest axes. (P5)\n- [ ] Tables have empty / loading / error states. (G-3, G-4, G-5)\n- [ ] Controls (sort/filter/paginate) actually work. (G-1)\n- [ ] One primary area carries the most weight. (I-3)\n\nFindings cite the code from `antislop-master` plus one honest reason.\n",
+    "tags": [
+      "antislop-dashboard",
+      "anti-slop",
+      "review"
+    ],
+    "tasks": [
+      "dashboard"
+    ],
+    "status": "active",
+    "complexity": "unknown",
+    "risk": "unassessed",
+    "evidence": "upstream-skill-document",
+    "selectionScope": "contextual-guidance"
+  },
+  "source": {
+    "id": "anti",
+    "repository": "muris11/anti-ai-slop",
+    "revision": "5768372bf3272c7d59c354cec3a16f5c39d036bc",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/muris11/anti-ai-slop/blob/5768372bf3272c7d59c354cec3a16f5c39d036bc/LICENSE",
+    "licenseText": "MIT License\n\nCopyright (c) 2026 muris11 (https://github.com/muris11)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "accessedAt": "2026-11-01",
+    "authorship": "not-independently-verified",
+    "licenseSha256": "e8e5a82230b77e6a874ba4dc08e04fc7ef11a83a58fd7382900f0e27f0b89afb"
+  },
+  "trust": "Untrusted reference data; not agent instructions or executable code."
+}

@@ -1,0 +1,14 @@
+Usage: tasteforge inspire [options]
+
+Sample external style references with task-matched structures and fixed review
+gates
+
+Options:
+  --task <task>     marketing, dashboard, commerce, form, portfolio, editorial,
+                    documentation, learning, or booking
+  --brief <file>    project-local brief JSON (default: ".tasteforge/brief.json")
+  --count <number>  distinct style references (1–20) (default: 3)
+  --seed <integer>  unsigned 32-bit seed
+  --query <text>    additional task or visual search terms
+  --source <id>     restrict the style pool to one catalog source
+  -h, --help        display help for command

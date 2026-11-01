@@ -2,12 +2,14 @@
 
 Global options work before or after the command: `--project <existing-directory>` (default `.`), `--format text|json`, `--version`, `--help`.
 
-| Command    | Options                                                                                  | Output                                                           |
-| ---------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| `init`     | `--force`, `--dry-run`                                                                   | `.tasteforge/brief.json`, `config.json`                          |
-| `suggest`  | `--brief <file>`, `--count 1..20` (3), `--seed 0..4294967295`                            | Compatible directions, full metadata, scores, weights, rationale |
-| `generate` | `--direction <id>` required, `--brief <file>`, `--seed <uint32>`, `--force`, `--dry-run` | DNA, CSS tokens, DESIGN.md                                       |
-| `audit`    | `--path <source>` (`src`), `--fail-on error                                              | warning                                                          | never` | Static source report, locations and evidence categories |
+| Command        | Options                                                                                                                                            | Output                                                                                                         |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `init`         | `--force`, `--dry-run`                                                                                                                             | `.tasteforge/brief.json`, `config.json`                                                                        |
+| `suggest`      | `--brief <file>`, `--count 1..20` (3), `--seed 0..4294967295`                                                                                      | Compatible directions, full metadata, scores, weights, rationale                                               |
+| `catalog [id]` | `--kind style\|rule\|template`, `--task <task>`, `--source <id>`, `--query <text>`, `--limit 1..100` (20), `--offset <n>` (0), `--include-retired` | Metadata search or a complete attributed stored reference                                                      |
+| `inspire`      | `--task <task>` required, `--brief <file>`, `--count 1..20` (3), `--seed <uint32>`, `--query <text>`, `--source <id>`                              | Seeded external style references, task-tagged structures, contextual rules, fixed review gates and limitations |
+| `generate`     | `--direction <id>` required, `--brief <file>`, `--seed <uint32>`, `--force`, `--dry-run`                                                           | DNA, CSS tokens, DESIGN.md                                                                                     |
+| `audit`        | `--path <source>` (`src`), `--fail-on error\|warning\|never`                                                                                       | Static source report, locations and evidence categories                                                        |
 
 Brief paths default to `.tasteforge/brief.json`. Inputs must be project-local; absolute inputs within `--project` are accepted. No interactive prompts are required. Commands never silently overwrite output. Dry runs print planned filenames and validate inputs but do not expose a full rendered artifact preview.
 

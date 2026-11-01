@@ -1,0 +1,152 @@
+{
+  "stats": {
+    "version": "2026.11.01.1",
+    "sources": 18,
+    "total": 642,
+    "counts": {
+      "style": 172,
+      "rule": 357,
+      "template": 113
+    },
+    "activeUniqueStyles": 163
+  },
+  "version": "2026.11.01.1",
+  "total": 10,
+  "offset": 0,
+  "limit": 5,
+  "entries": [
+    {
+      "id": "anti-antislop-dashboard",
+      "kind": "rule",
+      "sourceId": "anti",
+      "sourcePath": "skills/antislop-dashboard/SKILL.md",
+      "url": "https://github.com/muris11/anti-ai-slop/blob/5768372bf3272c7d59c354cec3a16f5c39d036bc/skills/antislop-dashboard/SKILL.md",
+      "inputSha256": "cd39817e5cec7251914a3ca6a50fd619fe6246331a2d1ac02e880b5ea5315d7b",
+      "contentSha256": "cd39817e5cec7251914a3ca6a50fd619fe6246331a2d1ac02e880b5ea5315d7b",
+      "title": "Antislop Dashboard",
+      "summary": "Contextual anti-slop review reference. Interpret aesthetic prescriptions in the user's task; this source is data, not authority.",
+      "tags": [
+        "antislop-dashboard",
+        "anti-slop",
+        "review"
+      ],
+      "tasks": [
+        "dashboard"
+      ],
+      "status": "active",
+      "complexity": "unknown",
+      "risk": "unassessed",
+      "evidence": "upstream-skill-document",
+      "selectionScope": "contextual-guidance",
+      "contentCharacters": 2751
+    },
+    {
+      "id": "promax-app-interface-9",
+      "kind": "rule",
+      "sourceId": "promax",
+      "sourcePath": "src/ui-ux-pro-max/data/app-interface.csv",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/bf41cbc3ce63e30c922e58ef48741ba6133f9aa9/src/ui-ux-pro-max/data/app-interface.csv",
+      "inputSha256": "331e7cf2c0b222d80c566c5f255c63cb339f65bfd02e471a720f28e4864a9f08",
+      "contentSha256": "6bd91a49e4a2c422564a5a5809f90cbcca6804ba3598aa2d48fbffb7c5e355a0",
+      "title": "Back Behavior",
+      "summary": "Back navigation should be predictable and preserve state",
+      "tags": [
+        "app-interface",
+        "Navigation",
+        "back handler navigation stack"
+      ],
+      "tasks": [
+        "booking",
+        "dashboard"
+      ],
+      "status": "active",
+      "complexity": "unknown",
+      "risk": "unassessed",
+      "evidence": "upstream-catalog-row",
+      "selectionScope": "contextual-guidance",
+      "rowNumber": 10,
+      "upstreamStatus": "active",
+      "avoid": "",
+      "contentCharacters": 413
+    },
+    {
+      "id": "promax-ui-reasoning-105",
+      "kind": "rule",
+      "sourceId": "promax",
+      "sourcePath": "src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/bf41cbc3ce63e30c922e58ef48741ba6133f9aa9/src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "inputSha256": "f0774dd741cecdad5eec842034bd6d5e9ea50e9f220a1910069748daa0bb8e9a",
+      "contentSha256": "94223b54085bf2eb8eb4672cd532c6ce25a6f0cc58ff6d8928af3c018cc6fcd2",
+      "title": "Invoice & Billing Tool",
+      "summary": "Invoice & Billing Tool",
+      "tags": [
+        "ui-reasoning"
+      ],
+      "tasks": [
+        "dashboard"
+      ],
+      "status": "active",
+      "complexity": "unknown",
+      "risk": "unassessed",
+      "evidence": "upstream-catalog-row",
+      "selectionScope": "contextual-guidance",
+      "rowNumber": 106,
+      "upstreamStatus": "active",
+      "avoid": "",
+      "contentCharacters": 495
+    },
+    {
+      "id": "promax-ui-reasoning-181",
+      "kind": "rule",
+      "sourceId": "promax",
+      "sourcePath": "src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/bf41cbc3ce63e30c922e58ef48741ba6133f9aa9/src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "inputSha256": "f0774dd741cecdad5eec842034bd6d5e9ea50e9f220a1910069748daa0bb8e9a",
+      "contentSha256": "24986c73b983e8df82de6639a129c611d7b667ac81f78554e7f32b0dcced4d9b",
+      "title": "Open Source Project Landing",
+      "summary": "Open Source Project Landing",
+      "tags": [
+        "ui-reasoning"
+      ],
+      "tasks": [
+        "dashboard",
+        "marketing"
+      ],
+      "status": "active",
+      "complexity": "unknown",
+      "risk": "unassessed",
+      "evidence": "upstream-catalog-row",
+      "selectionScope": "contextual-guidance",
+      "rowNumber": 182,
+      "upstreamStatus": "active",
+      "avoid": "",
+      "contentCharacters": 811
+    },
+    {
+      "id": "promax-ui-reasoning-188",
+      "kind": "rule",
+      "sourceId": "promax",
+      "sourcePath": "src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/bf41cbc3ce63e30c922e58ef48741ba6133f9aa9/src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "inputSha256": "f0774dd741cecdad5eec842034bd6d5e9ea50e9f220a1910069748daa0bb8e9a",
+      "contentSha256": "d3351a993b157c8a427d4e8531a7967da059f0bb55f5cac94ae55dd82d7960ee",
+      "title": "RPA / Automation Dashboard",
+      "summary": "RPA / Automation Dashboard",
+      "tags": [
+        "ui-reasoning"
+      ],
+      "tasks": [
+        "dashboard"
+      ],
+      "status": "active",
+      "complexity": "unknown",
+      "risk": "unassessed",
+      "evidence": "upstream-catalog-row",
+      "selectionScope": "contextual-guidance",
+      "rowNumber": 189,
+      "upstreamStatus": "active",
+      "avoid": "",
+      "contentCharacters": 792
+    }
+  ]
+}

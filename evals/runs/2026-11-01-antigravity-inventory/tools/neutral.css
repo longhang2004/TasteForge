@@ -1,0 +1,10 @@
+/* Supplemental monochrome diagnostic: preserve transparency and original
+   luminance, avoiding the earlier white-overlay artifact. Font replacement
+   may still reflow content. This is not the original study's neutral method. */
+html { filter: grayscale(1) !important; }
+*, *::before, *::after {
+  font-family: Arial, sans-serif !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}

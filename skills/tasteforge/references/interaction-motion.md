@@ -6,4 +6,6 @@ Poor: a form clears its fields after a failed submission. Improved: retain input
 
 Motion is useful for explaining continuity, state, or a user-triggered event. Keep duration proportional to the task; feedback should not wait for decoration. Avoid continuous motion beside reading or precision work. Honor `prefers-reduced-motion`; provide immediate state changes and nonmoving feedback. A zero-duration token helps only if components actually use it.
 
+When art direction or expressive motion is relevant, use [effects and composition](effects-and-composition.md) to research text, image and layout techniques by purpose. Keep the static task intact, inspect interruption and actual reduced-motion behaviour, and preserve input/focus semantics when adapting demos.
+
 Check keyboard focus visibility, tab order, activation, escape/cancel behavior, and focus restoration for dialogs. Hover is supplementary; essential information and actions need keyboard and touch access. Test actual interaction behavior rather than inferring it from a screenshot.

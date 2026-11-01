@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "1.0",
+  "runId": "2026-11-01-ux-layout-study",
+  "type": "exploratory-matched-ux-layout-study",
+  "createdAtUtc": "2026-11-01T05:07:13.114251+00:00",
+  "catalogVersion": "2026.11.01.2",
+  "catalogSha256": "602f13c680fe35fe854ce01a714e60cf32822eb3560500c7317ac84eb7967046",
+  "engineVersion": "0.1.0",
+  "tasteforgeSeed": 42,
+  "modelGenerationSeed": null,
+  "replicatesPerModelTaskCondition": 1,
+  "models": [
+    "gpt-6.1-sol",
+    "gpt-6-luna"
+  ],
+  "cases": [
+    {
+      "id": "u01",
+      "model": "gpt-6.1-sol",
+      "promptId": "inventory-triage",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "taskSha256": "2ac4373937f4e68cb133dfd1d3bd2e57fdf142e3b7f6cf7e10f148a86a4b7021",
+      "fixtureSha256": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+      "agentId": "/root/ux_u01",
+      "submissionObservedAtUtc": "2026-11-01T05:14:02.781388+00:00",
+      "sourceHashes": {
+        "app.js": "817fd579a1827900f1e32f3de22f303d06c626e368a749017cabbbc119f53c2f",
+        "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+        "implementation-notes.md": "086cab8e8ca2be2de4243d32cbf8495a6493f840c01061c529d025bbf1fa1e73",
+        "index.html": "11eb104d93357bb1b57d31b4abf38454d299f34c002cd6553b88a4a42698264c",
+        "styles.css": "94c17869d9a3bbb1e94c5f7cf0d854e968aac4afd9c74e0e42f97264b160c013",
+        "task.md": "2ac4373937f4e68cb133dfd1d3bd2e57fdf142e3b7f6cf7e10f148a86a4b7021"
+      }
+    },
+    {
+      "id": "u02",
+      "model": "gpt-6.1-sol",
+      "promptId": "commerce-craft",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "taskSha256": "c2d2f7154069233e85c7e88e08e41ba920da82ffe3b1f41d79c7c7852c2e040b",
+      "fixtureSha256": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "agentId": "/root/ux_u02",
+      "submissionObservedAtUtc": "2026-11-01T05:15:27.246851+00:00",
+      "sourceHashes": {
+        "app.js": "4a71ff21d07900aa0950cbc7f30cb3c03160b943c94daf62e1854e8622072167",
+        "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+        "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+        "implementation-notes.md": "96ac075febd89c56cb1b6b9e6efdab9f62c6b5d84bfac9294597880a323e31d9",
+        "index.html": "487807d3fa7e4fe3c7dfd29e87816d9c7dc846eb70eb46e3d9de61edd4a31286",
+        "styles.css": "abfe957933b8cc12318576694ee11891f6245fd25c918a0575358c0b02fa4bc0",
+        "task.md": "c2d2f7154069233e85c7e88e08e41ba920da82ffe3b1f41d79c7c7852c2e040b"
+      }
+    },
+    {
+      "id": "u03",
+      "model": "gpt-6.1-sol",
+      "promptId": "commerce-craft",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "taskSha256": "c2d2f7154069233e85c7e88e08e41ba920da82ffe3b1f41d79c7c7852c2e040b",
+      "fixtureSha256": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "agentId": "/root/ux_u03",
+      "submissionObservedAtUtc": "2026-11-01T05:18:18.601881+00:00",
+      "sourceHashes": {
+        ".tasteforge/brief.json": "4d08918710b31bfa52a0da06ad19e046ed3016649c792c426e6a8fc305a6cfb5",
+        ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+        "app.js": "6be414b5331afdbc70f6ca03afa5dc4732e32cac40496bf1faef2a91d17aa6e7",
+        "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+        "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+        "implementation-notes.md": "6504a0519ae70ada25ee4a4149ade4f06aec3aeb2e1239c206d963baec29ea6e",
+        "index.html": "9c7431a9f9bba926e807cafa99fd3ea4898816ed43eca611012a7ea5a5a5c4d8",
+        "styles.css": "2700268de5233ca32d54333d64a1ae51cbd3609b25e2ae49dbb83a120045e8e8",
+        "task.md": "c2d2f7154069233e85c7e88e08e41ba920da82ffe3b1f41d79c7c7852c2e040b",
+        "UX_PLAN.md": "23860d0e3b7bde4bfda67cb8bf692257846067a12387b90f0872d428f4072e59"
+      }
+    },
+    {
+      "id": "u04",
+      "model": "gpt-6-luna",
+      "promptId": "commerce-craft",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "taskSha256": "c2d2f7154069233e85c7e88e08e41ba920da82ffe3b1f41d79c7c7852c2e040b",
+      "fixtureSha256": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "agentId": "/root/ux_u04",
+      "submissionObservedAtUtc": "2026-11-01T05:18:18.601922+00:00",
+      "sourceHashes": {
+        "app.js": "dd490614d8a2834fd91f51a98f20f99c23fc50fc16a8122f080d92ff19dcdcc3",
+        "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+        "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+        "implementation-notes.md": "4da43930457a93025997ee4b5561aafa343cfa632e7778ad0f37922841c537fd",
+        "index.html": "a3028275b7491ca64a269e68136d4bf9ab76db484dc7897a40d4621c478fc454",
+        "styles.css": "e9d1a9c9ec6b3782ac4b83e18a1eecbad43ec5da0f88f6662539242eb9ec62a8",
+        "task.md": "c2d2f7154069233e85c7e88e08e41ba920da82ffe3b1f41d79c7c7852c2e040b",
+        "tasteforge-cli-output.txt": "55a2aa577fa76fdc599b07dd305f4ac75e26d13d63dbce9652a06e8ebded8a5b",
+        "UX_PLAN.md": "fce1e71edad913550d9349bb8749a352f961ff313bd4b9739dd0473a86baf00e"
+      }
+    },
+    {
+      "id": "u05",
+      "model": "gpt-6-luna",
+      "promptId": "commerce-craft",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "taskSha256": "c2d2f7154069233e85c7e88e08e41ba920da82ffe3b1f41d79c7c7852c2e040b",
+      "fixtureSha256": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "agentId": "/root/ux_u05",
+      "submissionObservedAtUtc": "2026-11-01T05:18:18.601927+00:00",
+      "sourceHashes": {
+        "app.js": "fd2921d9e7d4bcaec1d28f0bba1337335cee5d555682055f588262e405c4daa3",
+        "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+        "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+        "implementation-notes.md": "5b8af4915fa9eaf1bb001a072ceca57adab952ebfa4312d4265b738869d52d15",
+        "index.html": "29cf48c94780f3b7bb3c9f7bf9c166d62e4107ab9941f18e677356f91cd777cb",
+        "styles.css": "c0516551439e3aebbea97e7823e0ad2953e36e071041c23acfcd0713553985a1",
+        "task.md": "c2d2f7154069233e85c7e88e08e41ba920da82ffe3b1f41d79c7c7852c2e040b"
+      }
+    },
+    {
+      "id": "u06",
+      "model": "gpt-6-luna",
+      "promptId": "fintech-transfer",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "taskSha256": "6d676ed4ad15df30432c67453dfa368fc5c58b33eede1fe172836c60f1b8dc6c",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "agentId": "/root/ux_u06",
+      "submissionObservedAtUtc": "2026-11-01T05:24:27.188638+00:00",
+      "sourceHashes": {
+        ".tasteforge/brief.json": "b0dadf2cf95af77169588b682856fa0c9951669884908492f094a85da6d2d4f0",
+        ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+        "app.js": "7a191a0bf1f0a146d0bd5e6ae189539d8809e98f2b4c5527313421f141675911",
+        "cli-catalog-output.json": "5851a1f5912dda399a92d52fefe88543280d5b11d1fe9b566e5466ea9817d94f",
+        "cli-inspire-output.json": "617049410f68d38714b5202a5ba85f1b79bb26e8ccf03c0abe743cfe55350e2f",
+        "cli-reference-output.json": "f00d37b19be8379c9f0b9744f53cc1e81c01c6fc4358f802e4823e9e4a7d94ea",
+        "cli-suggest-output.json": "c3a468273f316f276f8b3e319d372584ffbf4a5f04bd2417d359b8e6b7337346",
+        "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+        "implementation-notes.md": "27f91bfac77140caf0d7f9991ae6e18de537d05c5139036c7368ac095d97e6a0",
+        "index.html": "b2a10af18929ed5805d98e24a9354db1ac964a1c5be4c95bf76a0e9664561250",
+        "styles.css": "92054b477b16f03339de8d618210450f42e48e26c93dbcc085278b9abd056795",
+        "task.md": "6d676ed4ad15df30432c67453dfa368fc5c58b33eede1fe172836c60f1b8dc6c",
+        "UX_PLAN.md": "0fe370b29583de89a4ea455baa6be2d00cd3ad9b9dba1a9a9f96b98d27b15f13"
+      }
+    },
+    {
+      "id": "u07",
+      "model": "gpt-6.1-sol",
+      "promptId": "inventory-triage",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "taskSha256": "2ac4373937f4e68cb133dfd1d3bd2e57fdf142e3b7f6cf7e10f148a86a4b7021",
+      "fixtureSha256": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+      "agentId": "/root/ux_u07",
+      "submissionObservedAtUtc": "2026-11-01T05:27:25.862559+00:00",
+      "sourceHashes": {
+        ".tasteforge/brief.json": "aecf7369bba89d016d3390497fe1612d9669b4157866a8a14a346928f53e2ba6",
+        ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+        "app.js": "3f075aecd9dcff16d8ace681a4a598184c758d724a888a8d8ec397262aeb3078",
+        "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+        "implementation-notes.md": "61578c165f2af75f7459866f20532892b004552d282eedb87a29b80987ae8b27",
+        "index.html": "2ba827b44dccd8b0dfbd52c56ff97ceb2847c1bca79e92de891bc35433bce956",
+        "styles.css": "0060ed8205e7585f9b68aca09c939ce3f10e0ba143fad9b711f17f9485f5c080",
+        "task.md": "2ac4373937f4e68cb133dfd1d3bd2e57fdf142e3b7f6cf7e10f148a86a4b7021",
+        "UX_PLAN.md": "19fedfece571cf7e10d455cdb9032408c824a914a61ca23c568347412a748b02"
+      }
+    },
+    {
+      "id": "u08",
+      "model": "gpt-6.1-sol",
+      "promptId": "fintech-transfer",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "taskSha256": "6d676ed4ad15df30432c67453dfa368fc5c58b33eede1fe172836c60f1b8dc6c",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "agentId": "/root/ux_u08",
+      "submissionObservedAtUtc": "2026-11-01T05:24:27.188679+00:00",
+      "sourceHashes": {
+        "app.js": "d34e8e481b9b4e389047a68b580b34971542eea52a927e10acf3753cb5802506",
+        "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+        "implementation-notes.md": "519352b1e9e003386206ad92b5fe81081dcb25bc87d87024e00b5a3bfafdd94b",
+        "index.html": "f7c0a278a3d80f35f083185006e5ce9c864dac7458743d48edafed66431fa329",
+        "styles.css": "d98f7bfca5ffeaa34e79bbdd2cc332c5455e38d63f744046c1f2afbf8b443ba6",
+        "task.md": "6d676ed4ad15df30432c67453dfa368fc5c58b33eede1fe172836c60f1b8dc6c"
+      }
+    },
+    {
+      "id": "u09",
+      "model": "gpt-6-luna",
+      "promptId": "fintech-transfer",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "taskSha256": "6d676ed4ad15df30432c67453dfa368fc5c58b33eede1fe172836c60f1b8dc6c",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "agentId": "/root/ux_u09",
+      "submissionObservedAtUtc": "2026-11-01T05:27:25.862601+00:00",
+      "sourceHashes": {
+        "app.js": "db2cf781a1983efd3fc35118ca12197a1c117b538508e54c7df52bcdbb477b3c",
+        "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+        "implementation-notes.md": "24924740ee8193e80d0588b65a2d08cad4ac39a2aebafc325ec3ef9ffd25ba53",
+        "index.html": "6049e7f07455b015afe1f3968a5e9a85c0652a13bf5cda592f77221f3c589cde",
+        "styles.css": "fd3785fcc37f46d9b1a9f90c6c4f77736d8dab0c49d740e8d23e143bc18e09c6",
+        "task.md": "6d676ed4ad15df30432c67453dfa368fc5c58b33eede1fe172836c60f1b8dc6c"
+      }
+    },
+    {
+      "id": "u10",
+      "model": "gpt-6-luna",
+      "promptId": "inventory-triage",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "taskSha256": "2ac4373937f4e68cb133dfd1d3bd2e57fdf142e3b7f6cf7e10f148a86a4b7021",
+      "fixtureSha256": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+      "agentId": "/root/ux_u10",
+      "submissionObservedAtUtc": "2026-11-01T05:27:25.862606+00:00",
+      "sourceHashes": {
+        "app.js": "3d5c44cebdb851a5321c24f3f6f73c04342e033c1b38ec39352a34a8f52c3e4c",
+        "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+        "implementation-notes.md": "e467ee1f186a35a0b146dd296361ee3149f4a7fa666020eeab4e24d8dfbd46cb",
+        "index.html": "030a4044061532d2da5be1a0f1d74fb76798120377d2c8f288f488e4fe30423a",
+        "styles.css": "fab1d0bce3e7bce8fa782f3fd17337e1b16559a8c4b1252f0f68c27ecd55ce96",
+        "task.md": "2ac4373937f4e68cb133dfd1d3bd2e57fdf142e3b7f6cf7e10f148a86a4b7021"
+      }
+    },
+    {
+      "id": "u11",
+      "model": "gpt-6.1-sol",
+      "promptId": "fintech-transfer",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "taskSha256": "6d676ed4ad15df30432c67453dfa368fc5c58b33eede1fe172836c60f1b8dc6c",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "agentId": "/root/ux_u11",
+      "submissionObservedAtUtc": "2026-11-01T05:34:17.193863+00:00",
+      "sourceHashes": {
+        ".tasteforge/brief.json": "8facd5bc2f35bdfe352c80b7bc508f44489a01d075f4e7bb501f0cc3968b744e",
+        ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+        "app.js": "3ea56c4524e00bf33e8da680f04cb44f22c6f3059d8499e491912654fdca98ca",
+        "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+        "implementation-notes.md": "7c065c29adaae9396f3a22fecd636b108b45bdb58562bb6b9ee8687cc8cb57c0",
+        "index.html": "cb8e316864a236912d98832c8833bd2820ff841645c5d11b77915587eff52529",
+        "styles.css": "ac01071c82d2f329dbafd90d9d938b4694f1fb839c5a749701ca3fc24a386025",
+        "task.md": "6d676ed4ad15df30432c67453dfa368fc5c58b33eede1fe172836c60f1b8dc6c",
+        "UX_PLAN.md": "318f61cfa395b637ca8b7d9b94d1dd9b538dc5cd27b00f0d234081b244ffa36a"
+      }
+    },
+    {
+      "id": "u12",
+      "model": "gpt-6-luna",
+      "promptId": "inventory-triage",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "taskSha256": "2ac4373937f4e68cb133dfd1d3bd2e57fdf142e3b7f6cf7e10f148a86a4b7021",
+      "fixtureSha256": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+      "agentId": "/root/ux_u12",
+      "submissionObservedAtUtc": "2026-11-01T05:31:50.231485+00:00",
+      "sourceHashes": {
+        "app.js": "94f9f28809237f076ca187ff586c8ae4a12b7b55be8909b910942bf671cc7c31",
+        "cli-output.txt": "6ecb1c7e380e94e55e5d8b5d5da623b9dc05ec992aa407233efa0008a990f547",
+        "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+        "implementation-notes.md": "5afbf9c5cc842da37ac87fa4983e54114abfa037a3b264bf22a34d65daa4e68b",
+        "index.html": "290e22b67a8923ff305eb1e53b70252d89129a36b081420f836cc58c7a110e14",
+        "styles.css": "dd9b74b10f92ec89c39f577f0049dec562f51abd280d9c7c97d035c21acd72eb",
+        "task.md": "2ac4373937f4e68cb133dfd1d3bd2e57fdf142e3b7f6cf7e10f148a86a4b7021",
+        "UX_PLAN.md": "f6c1ccaad0f19fadb5439c8ab1ffe03d13ef2021a573ec9cbdf575a28200ba06"
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "skillFiles": {
+    "tasteforge/SKILL.md": "1e1e09a6f3c23f936aa815187cd88563c61a381b50a823a602a9be1696914001",
+    "tasteforge/references/accessibility.md": "fe0de4a8631dc9bb1ed983477ade2623b0c91e8f0233452f51d28ae919c50927",
+    "tasteforge/references/anti-patterns.md": "eb53ccfca1d9664288175278d3c9bb6adcdc08c57b2015fca1127042ed9993e2",
+    "tasteforge/references/catalog-use.md": "046dab97edfbedb096e7bd46cff5fdf8ae706f1204856261abf6e47317cce0b1",
+    "tasteforge/references/design-principles.md": "8d5d60cec70f462bd9f9d75d3b67185e1cdbda5fe0006abb57d823a59cab756b",
+    "tasteforge/references/interaction-motion.md": "6cf08a1c01e679ee51a51dc16cf0c44d226cef37caccb415abd62541e3d6c666",
+    "tasteforge/references/layout-archetypes.md": "5e0ec34161454430c5b1b46e6ab3cd9d57f84b7ecc9f5167db2329c155261a31",
+    "tasteforge/references/layout-composition.md": "c67ca832df627cfbc05eaa373219dfe088e994d480e263bc0cd2190e35a8de33",
+    "tasteforge/references/reference-sources.md": "9c03fd800ae1219d6fda40503d89a3fa7eea9835b6984ecd01d2ef37e2b3a17c",
+    "tasteforge/references/typography.md": "7fa0b604aab81da8cb4f462c59c9c3c8ca726a679f728652292035fc29054b45",
+    "tasteforge/references/ux-plan-template.md": "0284507a90280202dc514f8db0f3ace667d7b0338d60bbd4868501525279075a",
+    "tasteforge/references/visual-hierarchy.md": "09bfde3f0a531fa56b545087e1e69e70482921a499efae39033d1a1078393b82",
+    "tasteforge/workflows/audit-ui.md": "5ef22fb552b296cd467b989e4541b986edbb30ce90e7b393cc94690dec1860e1",
+    "tasteforge/workflows/create-ui.md": "2eb8748e286db9dd84cf2040947aeb6694b7bcfa225b31419599c21037150bce",
+    "tasteforge/workflows/redesign-ui.md": "020642f172b0b791daf8d3e9a0af2ed1ecee5b336d79aaa36947424c25b437a3",
+    "tasteforge/workflows/research-and-plan.md": "29ca4c5e4e070d4b642def3656723452549e3f4137b8b1f8c2be8eaae2c0be6c"
+  },
+  "limitations": [
+    "One generation per model/task/condition; no repeated within-block samples or causal population claim.",
+    "Same CLI/data access for both groups; comparison estimates instruction/workflow differences, not tool availability.",
+    "Soft 12-minute creation target; token usage, exact backend, inference seed and matched compute are not exposed.",
+    "No external browsing; offline references only.",
+    "Neutralized font-family can reflow content; actual-layout measurements use original renders.",
+    "Independent reviewers are AI agents, not representative end users."
+  ],
+  "sourceRevision": "f975a2e14783e5092e1d0de62a555707b91b28ba",
+  "sourceWorkingTree": "unreleased source; exact skill/catalog and tooling hashes frozen",
+  "protocolSha256": "7e0c733364000e46171cc3c226fd75f7cd4aa807f13848a8165b9571042608ba",
+  "tools": {
+    "playwright": "1.64.1",
+    "axePlaywright": "4.14.0",
+    "chromium": "156.0.8078.4",
+    "locale": "en-US",
+    "timezoneId": "Asia/Ho_Chi_Minh",
+    "deviceScaleFactor": 1,
+    "colorScheme": "light",
+    "reducedMotion": "reduce"
+  },
+  "blindReviewMapping": {
+    "view-01": "u10",
+    "view-02": "u08",
+    "view-03": "u04",
+    "view-04": "u07",
+    "view-05": "u12",
+    "view-06": "u02",
+    "view-07": "u01",
+    "view-08": "u11",
+    "view-09": "u09",
+    "view-10": "u03",
+    "view-11": "u05",
+    "view-12": "u06"
+  },
+  "captureHarnessSha256": "534edae529ea2208d0707fbc767f6aa9c919c496247038fe1537e9e801282165",
+  "neutralCSSSha256": "704c6c9cf93369765c80f6f716b30dfb478b16b44b31506f8b139b5ee4d6d508",
+  "reviewStages": {
+    "r2": {
+      "neutral": {
+        "file": "reviews/reviewer-r2.neutral.json",
+        "sha256": "076cb91b7eb33f8339d182bac4aa6b3314cd5e42798582c45eff7f76e3f13c8f",
+        "observedAtUtc": "2026-11-01T05:44:37.292Z"
+      },
+      "authored": {
+        "file": "reviews/reviewer-r2.authored.json",
+        "sha256": "306bfb74019c8cae71d0734182c111c42ac172b846b3a7de481f50e7ed395297",
+        "observedAtUtc": "2026-11-01T06:13:35.757Z"
+      }
+    },
+    "r1": {
+      "neutral": {
+        "file": "reviews/reviewer-r1.neutral.json",
+        "sha256": "b98c885dcd82bde38dd8d6d99176a4edc5e589a32026c94d84f10373dcaa7999",
+        "observedAtUtc": "2026-11-01T06:19:44.920Z"
+      },
+      "authored": {
+        "file": "reviews/reviewer-r1.authored.json",
+        "sha256": "50a2938506c46fcd9ca94988d4d9f66278782fbe0480b375b43777ad97abd30e",
+        "observedAtUtc": "2026-11-01T06:27:53.002Z"
+      }
+    }
+  },
+  "runtimeFilesSha256": {
+    "packages/cli/dist/cli.d.ts": "d1342aa605329e1b720da0bbef7a0add74689818994203d539608e2c41ff53dc",
+    "packages/cli/dist/cli.js": "409701049d35100d2b1ffbea8b0eb33b93cea55db1614c33647335a536efb1bb",
+    "packages/cli/dist/cli.js.map": "e49478d20ceeaeb4ecf50cd40275bdf45359c07b191a827f562ca3c81189c63b",
+    "packages/cli/dist/files.d.ts": "bbd9562e99c7318d782f0fe529880350ee33b4c704e5594c8bc4035a0f804ab4",
+    "packages/cli/dist/files.js": "3756017cfe910e484a8673b3b67bef9bb199fea77e5e4098138a0a7c3f4bb626",
+    "packages/cli/dist/files.js.map": "bf6fc37f3cbba6a84da1a332a70d8e4f9b832e2f3b77ce5af12e8dd85e05b301",
+    "packages/cli/dist/index.d.ts": "43e818adf60173644896298637f47b01d5819b17eda46eaa32d0c7d64724d012",
+    "packages/cli/dist/index.js": "ec1531d343eb05e316fb890ba4f252f483bff90cc1a57475a4fc056495174398",
+    "packages/cli/dist/index.js.map": "a84c3ea7282fa5c19debe586ce2057d811f43c55315f29f066b9d62f88b5e1a4",
+    "packages/core/dist/audit.d.ts": "91f7043dc4377fda26a28ce817a4d2e383bddeeb680beda0a9eedc1f844a4f5d",
+    "packages/core/dist/audit.js": "60cb4d0c8db3dfeffeab3b5f881c710c79180c4317cbdd082e3c976dfb23732b",
+    "packages/core/dist/audit.js.map": "d277ed57819b58d3166f82efb76016b22e7a410aeed1fe2e1e40059a1d9c101e",
+    "packages/core/dist/color.d.ts": "c7cc46ff7c05f72f1ac4795cefc2f9f71fc60a289bbec970e75b8040935606ee",
+    "packages/core/dist/color.js": "b5053eb7248d992f44e0a2607918b7189823613f596f4016a226814e615eb498",
+    "packages/core/dist/color.js.map": "0b5ddcdbab9532ed59a278ee3dcbd92b637bb34420af7db2b8e9781128497d7e",
+    "packages/core/dist/engine.d.ts": "a474bfa1b05c859a4194915131b3bd65f5378c3404f0b383a486dba14b97e52a",
+    "packages/core/dist/engine.js": "690eda6aaa136f0e5ff847c8afbd93c5419d9053f8bd660b7321a2053cfaf770",
+    "packages/core/dist/engine.js.map": "c2ce4582a891c098e42c86926a213fd87ced1c3eea22eac0594cd744ed3f6c94",
+    "packages/core/dist/generate.d.ts": "c5b5124ef056dc74d71e16cdc97ebaef11e8bb3d35d85f477deb9e9e1dd6ebb5",
+    "packages/core/dist/generate.js": "63fa0de55cec6038228a430e4209932b5eda9afd7b438d39354242f450b7d611",
+    "packages/core/dist/generate.js.map": "42259654b0aaee700ce16d6f03c60f399798a40ae643e580b846194aedb35da3",
+    "packages/core/dist/index.d.ts": "dfb479776935f3ee567d81706b4c5d8f42f65d31e86d607d8031e332fa565062",
+    "packages/core/dist/index.js": "2a8f1dce8f286be6d0fc874822119dd5716789ef8dda8ed9f5d41de22260c126",
+    "packages/core/dist/index.js.map": "ea8e3e4f034973113b215da2f25f846b775c6c94f8d8109f177c3ad11b923cf6",
+    "packages/core/dist/random.d.ts": "41edd6bc3d0914a31e7b938eb919cb2e9296039b244f250a75f995ceb9c73b07",
+    "packages/core/dist/random.js": "87874506a775de387743db3f3780c6f5f30e9d5b667e26976f8f3fa89c823fef",
+    "packages/core/dist/random.js.map": "7ebbad07db84b5a2233dd3afcddb8aecf320edfa0ac1ef33e5b4b638cc0aec0c",
+    "packages/core/dist/recommend.d.ts": "44d0a27fa2a18de6f744e13ae78ea39ff7c2d396e46e64d450c2ead2693f68a0",
+    "packages/core/dist/recommend.js": "4f891317325566acdcb6357bb58342e13da693892e95c210eaadeb0d39561890",
+    "packages/core/dist/recommend.js.map": "99a70cd1f6aee0650275c3943e3c2220e589025d56798b34d0133ceffdad47cd",
+    "packages/core/dist/references.d.ts": "712fda7ac12511ae02bf92e0e7ba0efae2ebd9cfd93922eb8f26d2f0d4bff450",
+    "packages/core/dist/references.js": "cc0f7e49cc3b83095abbfb231591903825631d9c354623a0d2e1637bbfd95ea2",
+    "packages/core/dist/references.js.map": "5ec801cf46aa50da48b934f50dc7d6c82f287d25d47023dfc525b61e1111b786",
+    "packages/core/dist/schemas.d.ts": "e94954add6933766a30212590b5021de0d4ba0f70bec6fb9993085b85a49e32a",
+    "packages/core/dist/schemas.js": "57f35b99191b8a847ae0b090cf82c229e6f06b0988f0c046ceb7305b045e53cc",
+    "packages/core/dist/schemas.js.map": "ee58b88cbc090bbd05b19fa08084e2475543c83166ee220952f32aac0f07a0b2",
+    "packages/knowledge/dist/index.d.ts": "35f7b429fb7b886808cbad791b699c978f8de9df88163d0b26b9b4aa567fe022",
+    "packages/knowledge/dist/index.js": "725063f520618986969e7c20ecf5ceb6dccf3f23bd672d9955fd19963f0f489c",
+    "packages/knowledge/dist/index.js.map": "c307a6b8d1f0bf7ea9ce9148cdaa52bcd866025b3985c725ef5ad2d8e519cdd3",
+    "packages/knowledge/dist/reference-schemas.d.ts": "90082ceca99cb0f65ceb8977227938fdcd3ec9313630803a6bd1fb4c32113257",
+    "packages/knowledge/dist/reference-schemas.js": "4280facb239aba255dfebf33287ee1cbc0fe2accf62f1186e2c0d9210a1b7ff1",
+    "packages/knowledge/dist/reference-schemas.js.map": "1553a046fa5fec8e5646243116a648fddeef45ebab341943be53e05dea948874",
+    "packages/knowledge/dist/references.d.ts": "852f09fcc08e3ab5f5681b71a11331c96525887383b87507511e0e6fd6ee0036",
+    "packages/knowledge/dist/references.js": "f4a972c80860c00c1cc0debb824ecd3143a37c6cba3f279c0c02ab572bbf9b91",
+    "packages/knowledge/dist/references.js.map": "a7a1d29e56c3d7fba4555f344a211ba5bce58b1341e217ed7c4e0a480b5319d0",
+    "packages/knowledge/dist/schemas.d.ts": "a83da284d9e83b5e530a62478c8ffac942add2b7ed784380941dc3ddc2cc65ce",
+    "packages/knowledge/dist/schemas.js": "f9283129bcb1b9e33311f0396a82823e79cf2bb318d260635dd332c95b6821b9",
+    "packages/knowledge/dist/schemas.js.map": "f8094cfe16b1b3b0814e51241c5dc44ade82e6ebb2da4451cfe6bbfe1703bb4f",
+    "packages/knowledge/dist/data/knowledge.json": "816722526db94fd150761ab58738224ef944bc359ad6ebb4053b3c4f691ed86f",
+    "packages/knowledge/dist/data/references.json": "be051952e54b86f62cf47b0866d106b0649a5a84f8e84648107e811e7cd55bee"
+  },
+  "reviewers": {
+    "r1": {
+      "model": "gpt-6.1-sol",
+      "neutralImagesInspected": 48,
+      "authoredImagesInspected": 36,
+      "order": "packet"
+    },
+    "r2": {
+      "model": "gpt-6.1-terra",
+      "neutralImagesInspected": 48,
+      "authoredImagesInspected": 36,
+      "order": "reverse-packet"
+    }
+  },
+  "neutralizationCaveat": "u10 target row hidden by injected white background on a previously transparent positioning span; authored row is visible. Raw neutral ratings retained; the entire Luna/inventory block omitted only in labeled post-hoc sensitivity.",
+  "supplementaryOpenCode": {
+    "version": "1.19.3",
+    "requestedModels": [
+      "opencode/deepseek-v4.1-flash-free",
+      "opencode/glm-5.3-flash-free"
+    ],
+    "status": "provider-free-usage-limit-reached",
+    "submissions": 0,
+    "paidFallback": false,
+    "credentialContext": "isolated anonymous probe"
+  }
+}

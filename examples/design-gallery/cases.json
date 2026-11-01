@@ -1,0 +1,289 @@
+{
+  "title": "Decisions, with evidence",
+  "authorship": "TasteForge agent-authored annotations of preserved, agent-authored UI captures",
+  "humanValidation": "not performed",
+  "cases": [
+    {
+      "id": "column-meaning",
+      "title": "Give the stock columns distinct meanings",
+      "kind": "repair",
+      "purpose": "Work: compare stock quantities without guessing which column they belong to.",
+      "evidence": "The 320px entry produced a 327px-wide document. Available and Shortage visually collided in the actual capture.",
+      "change": "Reserve room for numeric headings and use a readable mixed-case treatment at narrow widths.",
+      "keep": "Keep the comparable stock table and explicit units. A table is appropriate for this task.",
+      "limit": "This repairs the named 320px state; it does not establish readability under every font, zoom level or language.",
+      "captures": [
+        {
+          "id": "before",
+          "label": "Before · crowded headings",
+          "file": "../inventory-workbench/evidence/pass-03/selected-320-initial.png",
+          "trace": "../inventory-workbench/evidence/pass-03/browser.json",
+          "collection": "traces",
+          "traceId": "selected-320",
+          "state": "initial",
+          "scope": "full-page",
+          "alt": "Inventory table with Available and Shortage headings crowded together at a 320px viewport.",
+          "region": {
+            "x": 185,
+            "y": 407,
+            "width": 142,
+            "height": 38
+          },
+          "note": "The two headings run together. The image is 327px wide because the page overflows its 320px viewport.",
+          "observed": {
+            "width": 327,
+            "height": 973,
+            "sha256": "3ffe6ee0f668e76a83f4d972bae71101bc652ca1e0a60b24925628d030b5e5e3",
+            "traceSha256": "9e38d14c8755fc215e4a11d859476815a8256f333714e5b02ecfe82d2c7cc6de",
+            "viewport": {
+              "width": 320,
+              "height": 740
+            },
+            "scrollY": 0
+          }
+        },
+        {
+          "id": "after",
+          "label": "After · distinguishable headings",
+          "file": "../inventory-workbench/evidence/pass-06/selected-320-initial.png",
+          "trace": "../inventory-workbench/evidence/pass-06/browser.json",
+          "collection": "traces",
+          "traceId": "selected-320",
+          "state": "initial",
+          "scope": "full-page",
+          "alt": "Revised inventory table with separate Available and Shortage labels aligned above their values.",
+          "region": {
+            "x": 180,
+            "y": 407,
+            "width": 124,
+            "height": 38
+          },
+          "note": "Each quantity has its own visible column label. Recorded document width now matches the 320px viewport.",
+          "observed": {
+            "width": 320,
+            "height": 970,
+            "sha256": "00d084707dca0e57e871def1c43230b6c8d0dde3a43685f56267b30331b18768",
+            "traceSha256": "92dc55465a42fede187d93a6d1834d73e2c316d233f429f3987b76479933f8eb",
+            "viewport": {
+              "width": 320,
+              "height": 740
+            },
+            "scrollY": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "visible-recovery",
+      "title": "Expose the focused recovery action",
+      "kind": "repair",
+      "purpose": "Work: recover from a failed local decision without losing the item or quantity.",
+      "evidence": "Retry was focused but its document bounds were y744–788 while the 740px-high viewport remained at scrollY 0.",
+      "change": "Allow focus to expose Retry, then check its actual viewport bounds after inserting the failure state.",
+      "keep": "Retain the stock evidence, requested quantity, explicit failure text and coloured error rule. Scrolling is acceptable when it exposes recovery with the necessary context.",
+      "limit": "The before image is full-page with a viewport boundary; the after image is an actual viewport capture after scrolling. Their different framing is intentional and labelled.",
+      "captures": [
+        {
+          "id": "before",
+          "label": "Before · focus below the viewport",
+          "file": "../inventory-workbench/evidence/pass-04/selected-320-failure.png",
+          "trace": "../inventory-workbench/evidence/pass-04/browser.json",
+          "collection": "traces",
+          "traceId": "selected-320",
+          "state": "failure",
+          "scope": "full-page",
+          "showViewportBoundary": true,
+          "alt": "Full-page failed-decision capture; Retry is just below the marked 740px viewport boundary.",
+          "region": {
+            "x": 16,
+            "y": 744,
+            "width": 148,
+            "height": 44
+          },
+          "note": "The full image includes Retry, but it was not exposed in the original viewport. Being in a full-page screenshot is not evidence of visibility.",
+          "observed": {
+            "width": 320,
+            "height": 876,
+            "sha256": "4497dbee5e6a6e06ae2ed21dab7f1377d0604297b86e69b8bdf80a8a6e066cbc",
+            "traceSha256": "47522a04838a0f81e1964ad204351457146563d60d961a15484e2b534d7f7373",
+            "viewport": {
+              "width": 320,
+              "height": 740
+            },
+            "scrollY": 0
+          }
+        },
+        {
+          "id": "after",
+          "label": "After · recovery exposed by focus",
+          "file": "../inventory-workbench/evidence/pass-06/selected-320-failure-viewport.png",
+          "trace": "../inventory-workbench/evidence/pass-06/browser.json",
+          "collection": "traces",
+          "traceId": "selected-320",
+          "state": "failure",
+          "scope": "viewport",
+          "alt": "Actual 320 by 740 viewport after scrolling: item, quantity, failure message, Retry and Edit remain visible.",
+          "region": {
+            "x": 16,
+            "y": 608,
+            "width": 148,
+            "height": 44
+          },
+          "note": "At scrollY 136, Retry is around y608–652 within the actual viewport. Identity, consequence, failure and Edit remain visible too.",
+          "observed": {
+            "width": 320,
+            "height": 740,
+            "sha256": "fbf7858918dc25a16f4f5080f1fa0d7c83f8bc08f4fe89831e131cf20cc3fed3",
+            "traceSha256": "92dc55465a42fede187d93a6d1834d73e2c316d233f429f3987b76479933f8eb",
+            "viewport": {
+              "width": 320,
+              "height": 740
+            },
+            "scrollY": 136
+          }
+        }
+      ]
+    },
+    {
+      "id": "retained-context",
+      "title": "Say where Back will take the operator",
+      "kind": "repair",
+      "purpose": "Work: inspect one item and return to the same filtered stock search.",
+      "evidence": "The earlier label said Back to stock. The implementation retained search/filter state, but the label did not communicate that context.",
+      "change": "Use Back to filtered stock when search or filtering is active. Retention behaviour stays intact.",
+      "keep": "Keep a single compact return control. There is no need to repeat the complete list or every filter value above the decision.",
+      "limit": "This is a local clarity improvement supported by screenshots and the supplied return trace, not measured comprehension or speed.",
+      "captures": [
+        {
+          "id": "before",
+          "label": "Before · generic destination",
+          "file": "../inventory-workbench/evidence/pass-04/selected-390-review.png",
+          "trace": "../inventory-workbench/evidence/pass-04/browser.json",
+          "collection": "traces",
+          "traceId": "selected-390",
+          "state": "review",
+          "scope": "full-page",
+          "alt": "Mobile decision review with a Back to stock control.",
+          "region": {
+            "x": 16,
+            "y": 87,
+            "width": 154,
+            "height": 45
+          },
+          "note": "The plain destination gives little cue that the current search and shortage filter will be restored.",
+          "observed": {
+            "width": 390,
+            "height": 844,
+            "sha256": "6fa93ef18bd6d1d34634baec5a97f4ff9d03d1a8d903d86ad559ac6f40e1a5c0",
+            "traceSha256": "47522a04838a0f81e1964ad204351457146563d60d961a15484e2b534d7f7373",
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "scrollY": 0
+          }
+        },
+        {
+          "id": "after",
+          "label": "After · retained context is explicit",
+          "file": "../inventory-workbench/evidence/pass-06/selected-390-review.png",
+          "trace": "../inventory-workbench/evidence/pass-06/browser.json",
+          "collection": "traces",
+          "traceId": "selected-390",
+          "state": "review",
+          "scope": "full-page",
+          "alt": "Mobile decision review with a Back to filtered stock control.",
+          "region": {
+            "x": 16,
+            "y": 87,
+            "width": 205,
+            "height": 45
+          },
+          "note": "The label now names the retained result context. The return trace separately checks the actual query, filter and focus.",
+          "observed": {
+            "width": 390,
+            "height": 844,
+            "sha256": "a00e91ae53a21476610d850f813b4d6b9ea2f3d6fb2c215a60147d76213e7f39",
+            "traceSha256": "92dc55465a42fede187d93a6d1834d73e2c316d233f429f3987b76479933f8eb",
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "scrollY": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "overview-detail",
+      "title": "Choose the overview/detail relationship",
+      "kind": "alternatives",
+      "purpose": "Work: decide on one stock item while retaining a way back to comparison.",
+      "evidence": "Both neutral candidates use the same fixture and behaviour and complete the scripted review/edit/failure/retry path.",
+      "change": "The selected main example focuses detail on mobile while retaining side-by-side comparison on desktop.",
+      "keep": "A continuous overview can be appropriate when repeated cross-item comparison dominates. This choice trades simultaneous mobile comparison for a dedicated task view.",
+      "limit": "These are structural alternatives, not chronological before/after versions, a randomized A/B test or a measured user preference.",
+      "captures": [
+        {
+          "id": "continuous",
+          "label": "A · continuous overview",
+          "file": "../inventory-workbench/evidence/pass-06/continuous-390-review.png",
+          "trace": "../inventory-workbench/evidence/pass-06/browser.json",
+          "collection": "candidates",
+          "traceId": "continuous-390",
+          "state": "review",
+          "scope": "full-page",
+          "showViewportBoundary": true,
+          "alt": "Neutral continuous mobile prototype with five stock rows above the selected item's review.",
+          "region": {
+            "x": 16,
+            "y": 1359,
+            "width": 160,
+            "height": 45
+          },
+          "note": "The full overview remains above the decision. Record is around document y1360; the initial viewport is 844px high.",
+          "observed": {
+            "width": 390,
+            "height": 1436,
+            "sha256": "d412f2d4c20ed13743c26ac0d1da4fcff37bbfcc5519553849dee6272f966d95",
+            "traceSha256": "92dc55465a42fede187d93a6d1834d73e2c316d233f429f3987b76479933f8eb",
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "scrollY": 0
+          }
+        },
+        {
+          "id": "focused",
+          "label": "B · focused detail",
+          "file": "../inventory-workbench/evidence/pass-06/focused-390-review.png",
+          "trace": "../inventory-workbench/evidence/pass-06/browser.json",
+          "collection": "candidates",
+          "traceId": "focused-390",
+          "state": "review",
+          "scope": "full-page",
+          "alt": "Neutral focused mobile prototype with identity, stock evidence, quantity, consequence and actions together.",
+          "region": {
+            "x": 16,
+            "y": 620,
+            "width": 160,
+            "height": 45
+          },
+          "note": "The review is the active view; Back retains list context. Record is around y621. Position alone does not establish ease of use.",
+          "observed": {
+            "width": 390,
+            "height": 844,
+            "sha256": "6255f90888acf3712725221abc7a3a0868efeeda72c5a16bfe643a8eb92198d8",
+            "traceSha256": "92dc55465a42fede187d93a6d1834d73e2c316d233f429f3987b76479933f8eb",
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "scrollY": 0
+          }
+        }
+      ]
+    }
+  ]
+}

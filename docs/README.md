@@ -7,7 +7,12 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 - [Project overview and installation](../README.md): capabilities, requirements, source quickstart, and frequently asked questions.
 - [CLI reference](cli.md): commands, brief fields, hard constraints, scoring configuration, exit codes, and audit rule coverage.
 - [Agent Skill](../skills/tasteforge/SKILL.md): progressive-disclosure instructions for coding agents, with creation, redesign, and refinement workflows. The skill remains useful without the CLI.
+- [Reference-led UX planning](reference-led-design.md): research real product/pattern sources, compare task structures before visual treatments, and understand what the current CLI does and does not automate.
+- [Offline reference catalog](reference-catalog.md): 642 attributed records, seeded external style inspiration, task-tagged template observations, baseline review gates, and reproducible ingestion.
+- [Effect and layout research](effects-research.md): inspected Colorion, Codrops, layout and native-animation sources; purpose-based skill guidance and original runnable studies.
+- [Surface purpose and targeted refinement](impeccable-informed-workflow.md): Impeccable-informed concepts, scoped edits, intentional exceptions, an annotated evidence gallery and a bounded independent forward-test.
 - [GitHub releases](https://github.com/longhang2004/TasteForge/releases): tagged source, built package archives, standalone skill ZIP, checksums, and release notes. The npm packages are not yet published.
+- [0.2.0-beta.1 notes](releases/v0.2.0-beta.1.md): beta scope, compatibility, prepared assets and evidence limits.
 
 ## Use and inspect the outputs
 
@@ -15,13 +20,17 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 - [Generated Design DNA](../examples/generated/design-dna.json): a complete, versioned design specification with its original context, seed, rationale, typography, colors, scales, and tokens.
 - [Generated CSS design tokens](../examples/generated/tokens.css) and [design guidance](../examples/generated/DESIGN.md): actual CLI output for the example brief.
 - [Examples guide](../examples/README.md): reproduction commands and deliberately flawed source fixtures for static audit checks.
+- [Inventory worked composition](../examples/inventory-workbench/README.md): runnable structural alternatives, a focused mobile task, actual render/revision evidence and explicit pending human-review status.
+- [Annotated design gallery](../examples/design-gallery/README.md): four cases with unchanged captures, viewport/full-page distinctions and keyboard-accessible explanatory notes.
 
 ## Understand and extend TasteForge
 
 - [Architecture and determinism](architecture.md): package boundaries, hard filtering, scoring, seeded sampling, DNA consistency, and filesystem reliability.
 - [Knowledge extension guide](extending-knowledge.md): schemas, style compatibility, font language evidence, palette constraints, and versioning.
 - [Contributing](../CONTRIBUTING.md): local development, checks, contribution scope, and source/licensing expectations.
-- [Evaluation methodology](../evals/README.md): ten benchmark prompts and a rubric for comparing actual rendered interfaces. Benchmark improvement results have not been collected.
+- [Evaluation methodology and recorded runs](../evals/README.md): ten benchmark prompts, the full evaluation rubric, and an eight-UI exploratory pilot with screenshots and anonymous AI reviews. A replicated full benchmark has not been completed.
+- [UX/layout study](../evals/runs/2026-11-01-ux-layout-study/README.md): twelve fresh UIs with neutral-first independent reviews, actual task evidence, localized improvements, mobile regressions and an explicit neutralization caveat.
+- [Antigravity inventory pair](../evals/runs/2026-11-01-antigravity-inventory/README.md): actual Gemini 3.8 Flash (Medium) UI generation through native Antigravity CLI, with/without skill, task traces and independent layout reviews.
 - [Release preparation](releasing.md) and [changelog](../CHANGELOG.md): packaging verification, release procedure, and version history.
 
 ## Scope and evidence

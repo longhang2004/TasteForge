@@ -1,0 +1,129 @@
+{
+  "method": "Initial unscrolled viewport, same browser/context settings; positions are descriptive and do not establish task ease or UX quality.",
+  "observations": [
+    {
+      "case": "original-c02",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "controls": {
+        "recipient": {
+          "x": 253,
+          "y": 579.640625,
+          "width": 471.765625,
+          "height": 51.59375,
+          "fullyInInitialViewport": true
+        },
+        "amount": {
+          "x": 254,
+          "y": 719.421875,
+          "width": 420.6875,
+          "height": 61.59375,
+          "fullyInInitialViewport": true
+        },
+        "review-transfer": {
+          "x": 253,
+          "y": 927.59375,
+          "width": 471.765625,
+          "height": 50.390625,
+          "fullyInInitialViewport": true
+        }
+      },
+      "initialScrollY": 0
+    },
+    {
+      "case": "followup-r01",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "controls": {
+        "recipient": {
+          "x": 441,
+          "y": 424.890625,
+          "width": 558,
+          "height": 52,
+          "fullyInInitialViewport": true
+        },
+        "amount": {
+          "x": 441,
+          "y": 554.890625,
+          "width": 558,
+          "height": 65.5,
+          "fullyInInitialViewport": true
+        },
+        "review-transfer": {
+          "x": 441,
+          "y": 883.390625,
+          "width": 558,
+          "height": 50.5,
+          "fullyInInitialViewport": true
+        }
+      },
+      "initialScrollY": 0
+    },
+    {
+      "case": "original-c02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "controls": {
+        "recipient": {
+          "x": 45,
+          "y": 559.015625,
+          "width": 300,
+          "height": 51.59375,
+          "fullyInInitialViewport": true
+        },
+        "amount": {
+          "x": 46,
+          "y": 698.796875,
+          "width": 248.921875,
+          "height": 61.59375,
+          "fullyInInitialViewport": true
+        },
+        "review-transfer": {
+          "x": 45,
+          "y": 906.96875,
+          "width": 300,
+          "height": 50.390625,
+          "fullyInInitialViewport": false
+        }
+      },
+      "initialScrollY": 0
+    },
+    {
+      "case": "followup-r01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "controls": {
+        "recipient": {
+          "x": 37,
+          "y": 408.390625,
+          "width": 316,
+          "height": 52,
+          "fullyInInitialViewport": true
+        },
+        "amount": {
+          "x": 37,
+          "y": 556.390625,
+          "width": 316,
+          "height": 65.5,
+          "fullyInInitialViewport": true
+        },
+        "review-transfer": {
+          "x": 37,
+          "y": 891.890625,
+          "width": 316,
+          "height": 50.5,
+          "fullyInInitialViewport": false
+        }
+      },
+      "initialScrollY": 0
+    }
+  ]
+}

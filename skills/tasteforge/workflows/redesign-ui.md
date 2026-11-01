@@ -4,8 +4,10 @@ Establish what the user has authorized changing: composition, visual system, int
 
 Read [layout](../references/layout-composition.md), [hierarchy](../references/visual-hierarchy.md), and the relevant [anti-patterns](../references/anti-patterns.md). A gradient or card is not evidence of a problem by itself. Connect every proposed change to content, audience, or a demonstrated usability issue.
 
+When composition or a flow is in scope, follow [research and structural planning](research-and-plan.md). Compare the existing task path with viable alternatives using real content; inspect relevant source/product references when available. State which navigation, information relationships, and recovery behavior should change, and which working conventions stay. Three palettes applied to the same container arrangement are not three redesign concepts. Keep references and rejection reasons in internal project guidance.
+
 For a CLI-assisted redesign, describe the existing system in the brief and retain fixed constraints. Set `preserveExisting` to false only within the authorized scope. Compare suggestions, record the selected direction and seed, and review existing DNA before using `--force`. Preview the planned artifacts with `--dry-run`.
 
 Map old tokens and components to the proposed system, then implement a representative task and its edge states before propagating the change. Reuse components where behavior remains correct. Keep labels, data provenance, keyboard access, and error recovery intact.
 
-Validate realistic content, multiple viewport widths, zoom, keyboard navigation, and reduced motion. Compare before and after on the same task. Report source checks separately from rendered inspection and user testing; do not claim evidence you did not collect.
+Use [runnable alternatives and the render/revision pass](structure-and-revise.md) when changing composition. Validate realistic content, multiple viewport widths, zoom, keyboard navigation, and reduced motion. Compare before and after on the same task. Report source checks separately from rendered inspection and user testing; do not claim evidence you did not collect.

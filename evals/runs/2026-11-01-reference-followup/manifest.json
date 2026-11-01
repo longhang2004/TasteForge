@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "runId": "2026-11-01-reference-followup",
+  "type": "qualitative-followup-not-controlled-benchmark",
+  "createdAtUtc": "2026-11-01T03:12:34.586678+00:00",
+  "sourceRevision": "f975a2e14783e5092e1d0de62a555707b91b28ba",
+  "sourceWorkingTree": "Includes unreleased reference-led skill changes; skill file hashes record the actual instructions.",
+  "comparisonCase": "../2026-11-01-ui-pilot/cases/c02",
+  "purpose": "Check whether the revised skill produces explicit task/structure reasoning and a working UI; no rating or causal improvement claim.",
+  "engineVersion": "0.1.0",
+  "knowledgeVersion": "0.1.0",
+  "tasteforgeSeed": 42,
+  "modelGenerationSeed": null,
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "cases": [
+    {
+      "id": "r01",
+      "model": "gpt-6.1-sol",
+      "condition": "reference-led-skill",
+      "promptId": "fintech-transfer",
+      "generation": "submitted",
+      "taskSha256": "e91adfbe33e0d523ac375cc556e5fa562ebbc2fa484e9793bd21feb02bde830b",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "agentId": "/root/reference_followup_r01",
+      "sourceHashes": {
+        ".tasteforge/brief.json": "fd6a408ececbc845713a596f98900b70cd71e07a723e58b70e2aaac79f6bb8e3",
+        ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+        "app.js": "9335c8ee7be4721c4c1fa2ebdb094016ec563acb69244a5d40a5dba3f650d1aa",
+        "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+        "implementation-notes.md": "ad86ff25c1de9152b12871a8ff7eceb91fcdebbcc1cbfffe09d63063f2a6528e",
+        "index.html": "fb5113eba369a1a031c36990fd782c46daa4b3623f96e333fb8cc608825e90a0",
+        "self-check.cjs": "b989811d241fa3f9bbcc2ef4154ee2c7ba5033fd44ebf12e8c85ba2efc9a5679",
+        "source-audit.json": "2c23eeed96c934147fa0de783445c1934b346bc77b31487f7b22736ba4fb7508",
+        "styles.css": "e76171074205bbb9639c35ab66b4d058c11afdb6380f6ca56ae423524c07b219",
+        "suggestions.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "task.md": "e91adfbe33e0d523ac375cc556e5fa562ebbc2fa484e9793bd21feb02bde830b",
+        "UX_PLAN.md": "c54de2a38cc04ed5028db3563cf53c0db6d7208fe0a884ae7169094f8d614f06"
+      },
+      "capturedAtUtc": "2026-11-01T03:18:43.261Z",
+      "visualTreatment": "documented-manual-fallback",
+      "generatedDNA": false,
+      "retainedCLIArtifacts": [
+        ".tasteforge/brief.json",
+        ".tasteforge/config.json"
+      ],
+      "suggestionOutput": "suggestions.json is empty; failed command, not valid JSON",
+      "researchScope": {
+        "inspected": [
+          "VoltAgent collection index",
+          "GOV.UK check-answers documentation and inline HTML",
+          "GOV.UK confirmation-pages documentation and inline HTML"
+        ],
+        "notInspected": [
+          "Exact pinned Wise DESIGN.md (cache miss)",
+          "Rendered external products",
+          "User testing"
+        ]
+      }
+    }
+  ],
+  "skillFiles": {
+    "tasteforge/SKILL.md": "3bdbeaff675daa144f5820af75a530f825986484580163d5d91c84b2532e20d4",
+    "tasteforge/references/accessibility.md": "fe0de4a8631dc9bb1ed983477ade2623b0c91e8f0233452f51d28ae919c50927",
+    "tasteforge/references/anti-patterns.md": "eb53ccfca1d9664288175278d3c9bb6adcdc08c57b2015fca1127042ed9993e2",
+    "tasteforge/references/design-principles.md": "8d5d60cec70f462bd9f9d75d3b67185e1cdbda5fe0006abb57d823a59cab756b",
+    "tasteforge/references/interaction-motion.md": "6cf08a1c01e679ee51a51dc16cf0c44d226cef37caccb415abd62541e3d6c666",
+    "tasteforge/references/layout-archetypes.md": "c1f5f171e36dd4b1469bf4d47943afec18bf7b72eff78dee37776712501df763",
+    "tasteforge/references/layout-composition.md": "c67ca832df627cfbc05eaa373219dfe088e994d480e263bc0cd2190e35a8de33",
+    "tasteforge/references/reference-sources.md": "6260bb14c6ebee199eb45937b967d64b79dfdf74db623e72d1b4e394a0080db9",
+    "tasteforge/references/typography.md": "7fa0b604aab81da8cb4f462c59c9c3c8ca726a679f728652292035fc29054b45",
+    "tasteforge/references/ux-plan-template.md": "666d54ff18e2e9c10f86028275df9cd3b95bddd59d0361d99ccfadd2999e75c3",
+    "tasteforge/references/visual-hierarchy.md": "09bfde3f0a531fa56b545087e1e69e70482921a499efae39033d1a1078393b82",
+    "tasteforge/workflows/audit-ui.md": "5ef22fb552b296cd467b989e4541b986edbb30ce90e7b393cc94690dec1860e1",
+    "tasteforge/workflows/create-ui.md": "2a0329c82fe7c0edd22ab745b0e9e03e71ec4ca4011f7104497562abd5cee970",
+    "tasteforge/workflows/redesign-ui.md": "020642f172b0b791daf8d3e9a0af2ed1ecee5b336d79aaa36947424c25b437a3",
+    "tasteforge/workflows/research-and-plan.md": "0a6934264d22d5645734b964b310e9043d25155e29c930b24685e50c186ab7d7"
+  },
+  "limitations": [
+    "One new generation; existing old condition is reused rather than rerun concurrently.",
+    "Reference research is now permitted through the agent; tool/time context differs from the original pilot.",
+    "No inference sampling seed, exact backend snapshot, token count, or matched-compute control.",
+    "Original pilot remains unchanged; this is workflow demonstration and regression evidence, not comparative benchmark proof."
+  ],
+  "tools": {
+    "node": "24.22.0",
+    "playwright": "1.64.1",
+    "axePlaywright": "4.14.0",
+    "chromium": "156.0.8078.4",
+    "viewportDeviceScaleFactor": 1,
+    "locale": "en-US",
+    "timezoneId": "Asia/Ho_Chi_Minh",
+    "colorScheme": "light",
+    "reducedMotion": "reduce"
+  }
+}

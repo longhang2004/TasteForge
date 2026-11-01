@@ -1,2 +1,9 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Keep hash-bound evidence and generated snapshots byte-identical across checkouts.
+evals/runs/** -text
+evals/runs/**/reviews/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+examples/*/evidence/** -text
+examples/inventory-workbench/reviews/** -text
+examples/generated/** -text
+packages/knowledge/src/data/references.json -text
+packages/knowledge/reference-lock.json -text
+packages/knowledge/third-party/** -text

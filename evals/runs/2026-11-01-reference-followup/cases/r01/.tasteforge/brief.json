@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "productType": "service",
+  "industry": "finance",
+  "audience": [
+    "Occasional customers reviewing a simulated international transfer"
+  ],
+  "goals": [
+    "Verify recipient, fee, total debited and delivery before simulated confirmation; recover without losing input"
+  ],
+  "brandPersonality": [
+    "clear",
+    "trustworthy"
+  ],
+  "existingConstraints": {
+    "preserveExisting": false,
+    "excludedDirections": [],
+    "maxComplexity": "medium",
+    "fontDelivery": "system"
+  },
+  "accessibility": {
+    "languages": [
+      "en", "vi"
+    ],
+    "minContrast": 4.5,
+    "reducedMotion": true
+  },
+  "creativity": 0.35
+}

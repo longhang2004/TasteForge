@@ -1,0 +1,514 @@
+[
+  {
+    "task": "fintech-transfer",
+    "model": "gpt-6.1-sol",
+    "cases": [
+      {
+        "id": "u11",
+        "condition": "current-skill",
+        "files": [
+          "browser.json",
+          "desktop-failure.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-failure.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-neutral-success.png",
+          "desktop-review.png",
+          "desktop-success.png",
+          "mobile-failure.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-failure.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-neutral-success.png",
+          "mobile-review.png",
+          "mobile-success.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "fintech-transfer",
+        "checks": {
+          "desktop": {
+            "passed": 18,
+            "total": 18
+          },
+          "mobile": {
+            "passed": 18,
+            "total": 18
+          }
+        }
+      },
+      {
+        "id": "u08",
+        "condition": "no-skill",
+        "files": [
+          "browser.json",
+          "desktop-failure.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-failure.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-neutral-success.png",
+          "desktop-review.png",
+          "desktop-success.png",
+          "mobile-failure.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-failure.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-neutral-success.png",
+          "mobile-review.png",
+          "mobile-success.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "fintech-transfer",
+        "checks": {
+          "desktop": {
+            "passed": 18,
+            "total": 18
+          },
+          "mobile": {
+            "passed": 18,
+            "total": 18
+          }
+        }
+      }
+    ]
+  },
+  {
+    "task": "fintech-transfer",
+    "model": "gpt-6-luna",
+    "cases": [
+      {
+        "id": "u06",
+        "condition": "current-skill",
+        "files": [
+          "browser.json",
+          "desktop-failure.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-failure.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-neutral-success.png",
+          "desktop-review.png",
+          "desktop-success.png",
+          "mobile-failure.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-failure.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-neutral-success.png",
+          "mobile-review.png",
+          "mobile-success.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "fintech-transfer",
+        "checks": {
+          "desktop": {
+            "passed": 18,
+            "total": 18
+          },
+          "mobile": {
+            "passed": 18,
+            "total": 18
+          }
+        }
+      },
+      {
+        "id": "u09",
+        "condition": "no-skill",
+        "files": [
+          "browser.json",
+          "desktop-failure.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-failure.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-neutral-success.png",
+          "desktop-review.png",
+          "desktop-success.png",
+          "mobile-failure.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-failure.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-neutral-success.png",
+          "mobile-review.png",
+          "mobile-success.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "fintech-transfer",
+        "checks": {
+          "desktop": {
+            "passed": 18,
+            "total": 18
+          },
+          "mobile": {
+            "passed": 18,
+            "total": 18
+          }
+        }
+      }
+    ]
+  },
+  {
+    "task": "commerce-craft",
+    "model": "gpt-6.1-sol",
+    "cases": [
+      {
+        "id": "u02",
+        "condition": "no-skill",
+        "files": [
+          "browser.json",
+          "desktop-cart.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-cart.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-review.png",
+          "mobile-cart.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-cart.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-review.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "commerce-craft",
+        "checks": {
+          "desktop": {
+            "passed": 7,
+            "total": 7
+          },
+          "mobile": {
+            "passed": 7,
+            "total": 7
+          }
+        }
+      },
+      {
+        "id": "u03",
+        "condition": "current-skill",
+        "files": [
+          "browser.json",
+          "desktop-cart.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-cart.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-review.png",
+          "mobile-cart.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-cart.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-review.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "commerce-craft",
+        "checks": {
+          "desktop": {
+            "passed": 7,
+            "total": 7
+          },
+          "mobile": {
+            "passed": 7,
+            "total": 7
+          }
+        }
+      }
+    ]
+  },
+  {
+    "task": "commerce-craft",
+    "model": "gpt-6-luna",
+    "cases": [
+      {
+        "id": "u04",
+        "condition": "current-skill",
+        "files": [
+          "browser.json",
+          "desktop-cart.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-cart.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-review.png",
+          "mobile-cart.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-cart.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-review.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "commerce-craft",
+        "checks": {
+          "desktop": {
+            "passed": 7,
+            "total": 7
+          },
+          "mobile": {
+            "passed": 7,
+            "total": 7
+          }
+        }
+      },
+      {
+        "id": "u05",
+        "condition": "no-skill",
+        "files": [
+          "browser.json",
+          "desktop-cart.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-cart.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-review.png",
+          "mobile-cart.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-cart.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-review.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "commerce-craft",
+        "checks": {
+          "desktop": {
+            "passed": 7,
+            "total": 7
+          },
+          "mobile": {
+            "passed": 7,
+            "total": 7
+          }
+        }
+      }
+    ]
+  },
+  {
+    "task": "inventory-triage",
+    "model": "gpt-6.1-sol",
+    "cases": [
+      {
+        "id": "u01",
+        "condition": "no-skill",
+        "files": [
+          "browser.json",
+          "desktop-detail.png",
+          "desktop-empty.png",
+          "desktop-failure.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-detail.png",
+          "desktop-neutral-failure.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-neutral-success.png",
+          "desktop-review.png",
+          "desktop-success.png",
+          "mobile-detail.png",
+          "mobile-empty.png",
+          "mobile-failure.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-detail.png",
+          "mobile-neutral-failure.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-neutral-success.png",
+          "mobile-review.png",
+          "mobile-success.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "inventory-triage",
+        "checks": {
+          "desktop": {
+            "passed": 19,
+            "total": 19
+          },
+          "mobile": {
+            "passed": 19,
+            "total": 19
+          }
+        }
+      },
+      {
+        "id": "u07",
+        "condition": "current-skill",
+        "files": [
+          "browser.json",
+          "desktop-detail.png",
+          "desktop-empty.png",
+          "desktop-failure.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-detail.png",
+          "desktop-neutral-failure.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-neutral-success.png",
+          "desktop-review.png",
+          "desktop-success.png",
+          "mobile-detail.png",
+          "mobile-empty.png",
+          "mobile-failure.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-detail.png",
+          "mobile-neutral-failure.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-neutral-success.png",
+          "mobile-review.png",
+          "mobile-success.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "inventory-triage",
+        "checks": {
+          "desktop": {
+            "passed": 19,
+            "total": 19
+          },
+          "mobile": {
+            "passed": 19,
+            "total": 19
+          }
+        }
+      }
+    ]
+  },
+  {
+    "task": "inventory-triage",
+    "model": "gpt-6-luna",
+    "cases": [
+      {
+        "id": "u10",
+        "condition": "no-skill",
+        "files": [
+          "browser.json",
+          "desktop-detail.png",
+          "desktop-empty.png",
+          "desktop-failure.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-detail.png",
+          "desktop-neutral-failure.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-neutral-success.png",
+          "desktop-review.png",
+          "desktop-success.png",
+          "mobile-detail.png",
+          "mobile-empty.png",
+          "mobile-failure.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-detail.png",
+          "mobile-neutral-failure.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-neutral-success.png",
+          "mobile-review.png",
+          "mobile-success.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "inventory-triage",
+        "checks": {
+          "desktop": {
+            "passed": 19,
+            "total": 19
+          },
+          "mobile": {
+            "passed": 19,
+            "total": 19
+          }
+        }
+      },
+      {
+        "id": "u12",
+        "condition": "current-skill",
+        "files": [
+          "browser.json",
+          "desktop-detail.png",
+          "desktop-empty.png",
+          "desktop-failure.png",
+          "desktop-full.png",
+          "desktop-initial.png",
+          "desktop-keyboard-focus.png",
+          "desktop-neutral-detail.png",
+          "desktop-neutral-failure.png",
+          "desktop-neutral-full.png",
+          "desktop-neutral-review.png",
+          "desktop-neutral-success.png",
+          "desktop-review.png",
+          "desktop-success.png",
+          "mobile-detail.png",
+          "mobile-empty.png",
+          "mobile-failure.png",
+          "mobile-full.png",
+          "mobile-initial.png",
+          "mobile-keyboard-focus.png",
+          "mobile-neutral-detail.png",
+          "mobile-neutral-failure.png",
+          "mobile-neutral-full.png",
+          "mobile-neutral-review.png",
+          "mobile-neutral-success.png",
+          "mobile-review.png",
+          "mobile-success.png",
+          "narrow320-full.png"
+        ],
+        "promptId": "inventory-triage",
+        "checks": {
+          "desktop": {
+            "passed": 19,
+            "total": 19
+          },
+          "mobile": {
+            "passed": 19,
+            "total": 19
+          }
+        }
+      }
+    ]
+  }
+]

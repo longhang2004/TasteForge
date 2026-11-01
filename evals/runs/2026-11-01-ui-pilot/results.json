@@ -1,0 +1,1617 @@
+{
+  "studyType": "exploratory pilot; not a statistical or causal benchmark",
+  "uiCount": 8,
+  "matchedPairs": 4,
+  "requestedCreatorModels": [
+    "gpt-6.1-sol",
+    "gpt-6-luna"
+  ],
+  "allCasesPassedRequiredTaskChecks": true,
+  "baselineCasesWithInitialContrastFindings": 3,
+  "tasteforgeCasesWithInitialContrastFindings": 0,
+  "reviewers": {
+    "r1": {
+      "model": "gpt-6.1-sol",
+      "agentId": "/root/review_r1",
+      "ratingFileSha256": "ea5f44a9a369da5dfb602aa2e349ae353d45517ffab035737bafb1b9f267f77d"
+    },
+    "r2": {
+      "model": "gpt-6.1-terra",
+      "agentId": "/root/review_r2",
+      "ratingFileSha256": "eab216103f9f610ac92f783187ec0df32dec5a2dc60ec6ac1054010cb621e648"
+    }
+  },
+  "ratingDisagreements": [
+    {
+      "caseId": "c01",
+      "dimension": "hierarchy",
+      "r1": 4,
+      "r2": 3
+    },
+    {
+      "caseId": "c04",
+      "dimension": "taskSuccess",
+      "r1": 5,
+      "r2": 4
+    },
+    {
+      "caseId": "c04",
+      "dimension": "systemCoherence",
+      "r1": 3,
+      "r2": 4
+    },
+    {
+      "caseId": "c05",
+      "dimension": "typographyContent",
+      "r1": 3,
+      "r2": 4
+    },
+    {
+      "caseId": "c05",
+      "dimension": "interactionCompleteness",
+      "r1": 4,
+      "r2": 5
+    },
+    {
+      "caseId": "c06",
+      "dimension": "hierarchy",
+      "r1": 5,
+      "r2": 4
+    },
+    {
+      "caseId": "c06",
+      "dimension": "layoutResponsive",
+      "r1": 5,
+      "r2": 4
+    },
+    {
+      "caseId": "c07",
+      "dimension": "interactionCompleteness",
+      "r1": 3,
+      "r2": 4
+    },
+    {
+      "caseId": "c07",
+      "dimension": "systemCoherence",
+      "r1": 3,
+      "r2": 4
+    }
+  ],
+  "pairs": [
+    {
+      "model": "gpt-6.1-sol",
+      "promptId": "commerce-craft",
+      "baselineCase": "c03",
+      "tasteforgeCase": "c08",
+      "dimensions": [
+        {
+          "dimension": "taskSuccess",
+          "label": "Task success",
+          "baselineMean": 5,
+          "tasteforgeMean": 5,
+          "difference": 0
+        },
+        {
+          "dimension": "hierarchy",
+          "label": "Information hierarchy",
+          "baselineMean": 4,
+          "tasteforgeMean": 5,
+          "difference": 1
+        },
+        {
+          "dimension": "contextIdentity",
+          "label": "Context and identity",
+          "baselineMean": 5,
+          "tasteforgeMean": 5,
+          "difference": 0
+        },
+        {
+          "dimension": "typographyContent",
+          "label": "Typography and content",
+          "baselineMean": 4,
+          "tasteforgeMean": 4,
+          "difference": 0
+        },
+        {
+          "dimension": "layoutResponsive",
+          "label": "Layout and responsiveness",
+          "baselineMean": 4,
+          "tasteforgeMean": 4,
+          "difference": 0
+        },
+        {
+          "dimension": "interactionCompleteness",
+          "label": "Interaction completeness",
+          "baselineMean": 4,
+          "tasteforgeMean": 4,
+          "difference": 0
+        },
+        {
+          "dimension": "accessibility",
+          "label": "Accessibility evidence",
+          "baselineMean": 4,
+          "tasteforgeMean": 4,
+          "difference": 0
+        },
+        {
+          "dimension": "systemCoherence",
+          "label": "System coherence",
+          "baselineMean": 5,
+          "tasteforgeMean": 5,
+          "difference": 0
+        },
+        {
+          "dimension": "evidenceIntegrity",
+          "label": "Evidence integrity",
+          "baselineMean": 5,
+          "tasteforgeMean": 5,
+          "difference": 0
+        }
+      ]
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "promptId": "fintech-transfer",
+      "baselineCase": "c05",
+      "tasteforgeCase": "c02",
+      "dimensions": [
+        {
+          "dimension": "taskSuccess",
+          "label": "Task success",
+          "baselineMean": 5,
+          "tasteforgeMean": 5,
+          "difference": 0
+        },
+        {
+          "dimension": "hierarchy",
+          "label": "Information hierarchy",
+          "baselineMean": 4,
+          "tasteforgeMean": 5,
+          "difference": 1
+        },
+        {
+          "dimension": "contextIdentity",
+          "label": "Context and identity",
+          "baselineMean": 4,
+          "tasteforgeMean": 4,
+          "difference": 0
+        },
+        {
+          "dimension": "typographyContent",
+          "label": "Typography and content",
+          "baselineMean": 3.5,
+          "tasteforgeMean": 5,
+          "difference": 1.5
+        },
+        {
+          "dimension": "layoutResponsive",
+          "label": "Layout and responsiveness",
+          "baselineMean": 4,
+          "tasteforgeMean": 4,
+          "difference": 0
+        },
+        {
+          "dimension": "interactionCompleteness",
+          "label": "Interaction completeness",
+          "baselineMean": 4.5,
+          "tasteforgeMean": 5,
+          "difference": 0.5
+        },
+        {
+          "dimension": "accessibility",
+          "label": "Accessibility evidence",
+          "baselineMean": 2,
+          "tasteforgeMean": 4,
+          "difference": 2
+        },
+        {
+          "dimension": "systemCoherence",
+          "label": "System coherence",
+          "baselineMean": 4,
+          "tasteforgeMean": 5,
+          "difference": 1
+        },
+        {
+          "dimension": "evidenceIntegrity",
+          "label": "Evidence integrity",
+          "baselineMean": 5,
+          "tasteforgeMean": 5,
+          "difference": 0
+        }
+      ]
+    },
+    {
+      "model": "gpt-6-luna",
+      "promptId": "commerce-craft",
+      "baselineCase": "c01",
+      "tasteforgeCase": "c06",
+      "dimensions": [
+        {
+          "dimension": "taskSuccess",
+          "label": "Task success",
+          "baselineMean": 4,
+          "tasteforgeMean": 4,
+          "difference": 0
+        },
+        {
+          "dimension": "hierarchy",
+          "label": "Information hierarchy",
+          "baselineMean": 3.5,
+          "tasteforgeMean": 4.5,
+          "difference": 1.0
+        },
+        {
+          "dimension": "contextIdentity",
+          "label": "Context and identity",
+          "baselineMean": 4,
+          "tasteforgeMean": 5,
+          "difference": 1
+        },
+        {
+          "dimension": "typographyContent",
+          "label": "Typography and content",
+          "baselineMean": 3,
+          "tasteforgeMean": 4,
+          "difference": 1
+        },
+        {
+          "dimension": "layoutResponsive",
+          "label": "Layout and responsiveness",
+          "baselineMean": 4,
+          "tasteforgeMean": 4.5,
+          "difference": 0.5
+        },
+        {
+          "dimension": "interactionCompleteness",
+          "label": "Interaction completeness",
+          "baselineMean": 4,
+          "tasteforgeMean": 4,
+          "difference": 0
+        },
+        {
+          "dimension": "accessibility",
+          "label": "Accessibility evidence",
+          "baselineMean": 2,
+          "tasteforgeMean": 4,
+          "difference": 2
+        },
+        {
+          "dimension": "systemCoherence",
+          "label": "System coherence",
+          "baselineMean": 3,
+          "tasteforgeMean": 5,
+          "difference": 2
+        },
+        {
+          "dimension": "evidenceIntegrity",
+          "label": "Evidence integrity",
+          "baselineMean": 4,
+          "tasteforgeMean": 4,
+          "difference": 0
+        }
+      ]
+    },
+    {
+      "model": "gpt-6-luna",
+      "promptId": "fintech-transfer",
+      "baselineCase": "c07",
+      "tasteforgeCase": "c04",
+      "dimensions": [
+        {
+          "dimension": "taskSuccess",
+          "label": "Task success",
+          "baselineMean": 4,
+          "tasteforgeMean": 4.5,
+          "difference": 0.5
+        },
+        {
+          "dimension": "hierarchy",
+          "label": "Information hierarchy",
+          "baselineMean": 3,
+          "tasteforgeMean": 4,
+          "difference": 1
+        },
+        {
+          "dimension": "contextIdentity",
+          "label": "Context and identity",
+          "baselineMean": 4,
+          "tasteforgeMean": 4,
+          "difference": 0
+        },
+        {
+          "dimension": "typographyContent",
+          "label": "Typography and content",
+          "baselineMean": 3,
+          "tasteforgeMean": 3,
+          "difference": 0
+        },
+        {
+          "dimension": "layoutResponsive",
+          "label": "Layout and responsiveness",
+          "baselineMean": 4,
+          "tasteforgeMean": 3,
+          "difference": -1
+        },
+        {
+          "dimension": "interactionCompleteness",
+          "label": "Interaction completeness",
+          "baselineMean": 3.5,
+          "tasteforgeMean": 4,
+          "difference": 0.5
+        },
+        {
+          "dimension": "accessibility",
+          "label": "Accessibility evidence",
+          "baselineMean": 2,
+          "tasteforgeMean": 4,
+          "difference": 2
+        },
+        {
+          "dimension": "systemCoherence",
+          "label": "System coherence",
+          "baselineMean": 3.5,
+          "tasteforgeMean": 3.5,
+          "difference": 0.0
+        },
+        {
+          "dimension": "evidenceIntegrity",
+          "label": "Evidence integrity",
+          "baselineMean": 4,
+          "tasteforgeMean": 5,
+          "difference": 1
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "c01",
+      "model": "gpt-6-luna",
+      "condition": "baseline",
+      "promptId": "commerce-craft",
+      "anonymousReviewId": "view-07",
+      "viewports": {
+        "desktop": {
+          "requiredPassed": 6,
+          "requiredTotal": 6,
+          "requiredFailures": [],
+          "optionalUnmet": [
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "fail",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            }
+          ],
+          "initialAxeRules": [
+            "color-contrast"
+          ],
+          "initialAxeAffectedElements": 11,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        },
+        "mobile": {
+          "requiredPassed": 6,
+          "requiredTotal": 6,
+          "requiredFailures": [],
+          "optionalUnmet": [
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "fail",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            }
+          ],
+          "initialAxeRules": [
+            "color-contrast"
+          ],
+          "initialAxeAffectedElements": 10,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        }
+      },
+      "reviewerRatings": {
+        "r1": {
+          "id": "view-07",
+          "ratings": {
+            "taskSuccess": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Price, USD8 shipping, materials, care, delivery and return conditions are present; browser checks confirm Sand quantity-two cart and Ash rejection; absent combined total is optional."
+            },
+            "hierarchy": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Large title, nearby price and simple selection/action make purchase easy to locate; exact available stock counts are not visible in the initial interface."
+            },
+            "contextIdentity": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Warm neutral product image and serif title fit a small ceramics shop."
+            },
+            "typographyContent": {
+              "score": 3,
+              "confidence": "high",
+              "evidence": "Body policies are concrete; very small captions/footer and pale sold-out option reduce legibility."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Desktop is compact and mobile stacks coherently without recorded overflow; two mobile detail columns keep care text rather narrow."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Sand selection, bag count increment and inline item/shipping confirmation are visible; sold-out option is marked and rejection is supported by supplied checks."
+            },
+            "accessibility": {
+              "score": 2,
+              "confidence": "medium",
+              "evidence": "Axe records serious contrast findings on 11 desktop and 10 mobile elements; focus uses native auto outlines in the supplied sequence, so full visibility cannot be established."
+            },
+            "systemCoherence": {
+              "score": 3,
+              "confidence": "high",
+              "evidence": "Most typography and rules align; tiny native Bag button and black rather than glaze-colored swatch dots are less integrated with the product controls."
+            },
+            "evidenceIntegrity": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Fictional sample shop, non-photo illustration, simulated bag and illustrative conditions are explicit; USD and shipping cost are clear."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [
+            "Serious supplied axe color-contrast findings; pale unavailable text and tiny footer/disclosure text are visible concerns."
+          ],
+          "unassessed": [
+            "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+            "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+            "Mobile cart-state screenshot was not supplied."
+          ],
+          "blindingConcerns": [],
+          "observation": "Compact product page with complete practical details and cart feedback, but small low-contrast text and uneven control styling."
+        },
+        "r2": {
+          "id": "view-07",
+          "ratings": {
+            "taskSuccess": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Cart confirms two Sand items at $136 plus $8; arithmetic is left to user."
+            },
+            "hierarchy": {
+              "score": 3,
+              "confidence": "medium",
+              "evidence": "Product and action are visible, but stock quantities are not visible in the initial view."
+            },
+            "contextIdentity": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Earthy illustration and ceramic detail suit the product."
+            },
+            "typographyContent": {
+              "score": 3,
+              "confidence": "medium",
+              "evidence": "Practical terms are present; several captions are very small and pale."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Compact mobile stacking is intact with no reported overflow."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Sand selection and simulated bag confirmation shown; unavailable Ash tested."
+            },
+            "accessibility": {
+              "score": 2,
+              "confidence": "medium",
+              "evidence": "Axe reports serious contrast violations on 10–11 elements, with an incomplete check."
+            },
+            "systemCoherence": {
+              "score": 3,
+              "confidence": "medium",
+              "evidence": "Neutral visual system is mostly consistent, but default-looking bag button is discordant."
+            },
+            "evidenceIntegrity": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Fictional shop, illustration and simulated bag disclosed; price and shipping separately stated."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [
+            "Automated axe reports serious color contrast violations; affected elements require remediation and verification."
+          ],
+          "unassessed": [
+            "Screen-reader behavior and complete keyboard interaction",
+            "Pending state and unshown viewport or error states"
+          ],
+          "blindingConcerns": [],
+          "observation": "Cart confirms two Sand items at $136 plus $8; arithmetic is left to user. Practical terms are present; several captions are very small and pale."
+        }
+      }
+    },
+    {
+      "id": "c02",
+      "model": "gpt-6.1-sol",
+      "condition": "tasteforge",
+      "promptId": "fintech-transfer",
+      "anonymousReviewId": "view-08",
+      "viewports": {
+        "desktop": {
+          "requiredPassed": 16,
+          "requiredTotal": 16,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [],
+          "initialAxeAffectedElements": 0,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        },
+        "mobile": {
+          "requiredPassed": 16,
+          "requiredTotal": 16,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [],
+          "initialAxeAffectedElements": 0,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        }
+      },
+      "reviewerRatings": {
+        "r1": {
+          "id": "view-08",
+          "ratings": {
+            "taskSuccess": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Full recipient, USD375 amount, USD2.50 fee, USD377.50 total, VND9,375,000 and estimate are explicit; supplied checks confirm validation, failure input retention and retry completion."
+            },
+            "hierarchy": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Numbered progress, clear step headings, bold totals and repeated recipient/cost review give clear state and primary action."
+            },
+            "contextIdentity": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Restrained navy/blue financial styling, explicit fee explanation and deliberate confirmation fit occasional transfer customers."
+            },
+            "typographyContent": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Vietnamese name and diacritics remain readable, currencies are spelled out, and labels/values have clear text roles."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Desktop columns become a legible mobile stack with no recorded overflow; mobile cost summary follows the initial review action and the overall page is lengthy."
+            },
+            "interactionCompleteness": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Review, edit, failure with saved details and retry, and clear simulated success are visible; failure preserves the review summary and success states recipient and total."
+            },
+            "accessibility": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Supplied controls have 3px focus outlines, one main and English language are recorded; axe has no violations with one incomplete check. No complete keyboard or screen-reader test was performed."
+            },
+            "systemCoherence": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Blue primary actions/progress, navy headings, pale summary blocks and orange error feedback retain stable roles across states."
+            },
+            "evidenceIntegrity": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Simulation/fictional data is prominent; fee addition, recipient amount, USD/VND rate and illustrative delivery conditions are unambiguous."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [],
+          "unassessed": [
+            "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+            "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+            "Mobile review, failure and success screenshots were not supplied; mobile task behavior is supported by packet observations."
+          ],
+          "blindingConcerns": [],
+          "observation": "Clear and complete transfer presentation across supplied states; mobile is long but readable."
+        },
+        "r2": {
+          "id": "view-08",
+          "ratings": {
+            "taskSuccess": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Review and success show full recipient, $377.50 total and 9,375,000 VND; retry succeeds."
+            },
+            "hierarchy": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Clear step labels, form, cost summary and confirmation action."
+            },
+            "contextIdentity": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Straightforward financial presentation fits a review flow."
+            },
+            "typographyContent": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Full Vietnamese name, explicit currencies, fee and delivery estimate are readable."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Mobile stacks summary below form; progress wraps to a second row without reported overflow."
+            },
+            "interactionCompleteness": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Review, recoverable failure, retry and success are visible."
+            },
+            "accessibility": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Focus outlines and no axe violations reported; one check incomplete and AT behavior unassessed."
+            },
+            "systemCoherence": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Blue accents, rules, cards and typography remain consistent across states."
+            },
+            "evidenceIntegrity": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Fictional data, simulation, exchange rate and illustrative delivery are explicit."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [],
+          "unassessed": [
+            "Screen-reader behavior and complete keyboard interaction",
+            "Pending state and unshown viewport or error states"
+          ],
+          "blindingConcerns": [],
+          "observation": "Review and success show full recipient, $377.50 total and 9,375,000 VND; retry succeeds. Full Vietnamese name, explicit currencies, fee and delivery estimate are readable."
+        }
+      }
+    },
+    {
+      "id": "c03",
+      "model": "gpt-6.1-sol",
+      "condition": "baseline",
+      "promptId": "commerce-craft",
+      "anonymousReviewId": "view-02",
+      "viewports": {
+        "desktop": {
+          "requiredPassed": 6,
+          "requiredTotal": 6,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [],
+          "initialAxeAffectedElements": 0,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        },
+        "mobile": {
+          "requiredPassed": 6,
+          "requiredTotal": 6,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [],
+          "initialAxeAffectedElements": 0,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        }
+      },
+      "reviewerRatings": {
+        "r1": {
+          "id": "view-02",
+          "ratings": {
+            "taskSuccess": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Browser observations confirm two Sand pieces total USD144 with shipping and rejection of unavailable Ash; full screenshots include all practical product conditions."
+            },
+            "hierarchy": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Product, price and selection are clear; delivery and return conditions sit below the purchase block, requiring more scanning."
+            },
+            "contextIdentity": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Olive palette, restrained editorial image frame and warm background suit handmade ceramics."
+            },
+            "typographyContent": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Readable body and detailed care/returns copy; small uppercase captions and fine disclosure text demand more effort."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Desktop lower details form columns and mobile stacks them cleanly; mobile headline visibly joins 'form.Thoughtful' and the page is long; no recorded overflow."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Selected/unavailable glaze and calculated totals are visible; cart screenshot reaches only the top edge of its feedback, so confirmation content relies on recorded checks."
+            },
+            "accessibility": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Focus observations include 3px outlines and a native quantity outline, and axe reports no findings; no manual keyboard or assistive technology test was performed."
+            },
+            "systemCoherence": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Consistent dark green text/action roles, subtle separators and repeated small uppercase labels create a coherent system."
+            },
+            "evidenceIntegrity": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Fictional studio, non-photographic Iron illustration, simulation-only cart and illustrative stock/delivery are disclosed with clear costs."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [],
+          "unassessed": [
+            "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+            "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+            "Mobile cart-state screenshot was not supplied."
+          ],
+          "blindingConcerns": [],
+          "observation": "Cohesive ceramics identity and complete purchase information, with small captions and a minor mobile text-spacing defect."
+        },
+        "r2": {
+          "id": "view-02",
+          "ratings": {
+            "taskSuccess": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Browser observations report Sand × 2 and $144 including shipping."
+            },
+            "hierarchy": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Glaze, quantity, total and action grouped; delivery and returns are lower on page."
+            },
+            "contextIdentity": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Muted green palette and illustration suit a ceramics studio."
+            },
+            "typographyContent": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Practical copy is clear; tiny labels and image caption reduce ease of reading."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Mobile stacks sections without reported overflow; caption wraps awkwardly."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Selected Sand and cart feedback shown; unavailable variant tested."
+            },
+            "accessibility": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Focus and zero axe findings reported; semantics and assistive technology not fully tested."
+            },
+            "systemCoherence": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Restrained palette, rules and typography consistently applied."
+            },
+            "evidenceIntegrity": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Fictional sample and vector image disclosed; prices and conditions specified."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [],
+          "unassessed": [
+            "Screen-reader behavior and complete keyboard interaction",
+            "Pending state and unshown viewport or error states"
+          ],
+          "blindingConcerns": [],
+          "observation": "Browser observations report Sand × 2 and $144 including shipping. Practical copy is clear; tiny labels and image caption reduce ease of reading."
+        }
+      }
+    },
+    {
+      "id": "c04",
+      "model": "gpt-6-luna",
+      "condition": "tasteforge",
+      "promptId": "fintech-transfer",
+      "anonymousReviewId": "view-06",
+      "viewports": {
+        "desktop": {
+          "requiredPassed": 16,
+          "requiredTotal": 16,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [],
+          "initialAxeAffectedElements": 0,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        },
+        "mobile": {
+          "requiredPassed": 16,
+          "requiredTotal": 16,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [],
+          "initialAxeAffectedElements": 0,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        }
+      },
+      "reviewerRatings": {
+        "r1": {
+          "id": "view-06",
+          "ratings": {
+            "taskSuccess": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Review gives full recipient, fee, USD377.50 total, VND amount and estimate; supplied checks establish range validation and retry success, with retention evidenced in failure summary."
+            },
+            "hierarchy": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Focused single form and clear review rows organize the task well; failure retains recipient and amount in a prominent summary."
+            },
+            "contextIdentity": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Reserved navy and cream financial service treatment supports a deliberate review flow."
+            },
+            "typographyContent": {
+              "score": 3,
+              "confidence": "high",
+              "evidence": "Desktop type and Vietnamese name are clear; mobile hero visibly reads 'withconfidence.' and typography crowds the mobile header."
+            },
+            "layoutResponsive": {
+              "score": 3,
+              "confidence": "high",
+              "evidence": "Desktop form uses space effectively, but mobile hero joins words, header logo/disclosure crowd each other and the amount field outline appears interrupted; no document overflow was recorded."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Review, edit, failure, retry and success are represented. Success reuses the same red bordered panel as failure, weakening outcome presentation."
+            },
+            "accessibility": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Recorded controls have 3px focus outlines and supplied axe has no violations, with incomplete checks. Mobile text/rendering defects remain visual concerns, not proof of semantic failure."
+            },
+            "systemCoherence": {
+              "score": 3,
+              "confidence": "high",
+              "evidence": "Consistent navy actions and serif headings, but red success feedback reuses an error role and mobile typography spacing is inconsistent."
+            },
+            "evidenceIntegrity": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Demo/fictional and no-money language are prominent. USD fee and review currency are understandable; estimate is explicitly illustrative."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [],
+          "unassessed": [
+            "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+            "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+            "Failure retention is evidenced by the retained summary only; returning to the edit form was not separately exercised.",
+            "Mobile review, failure and success screenshots were not supplied; mobile task behavior is supported by packet observations."
+          ],
+          "blindingConcerns": [],
+          "observation": "Strong task details and recovery, with visible mobile typography/rendering defects and red success feedback."
+        },
+        "r2": {
+          "id": "view-06",
+          "ratings": {
+            "taskSuccess": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Review shows full recipient, fee and total; retry success is reported."
+            },
+            "hierarchy": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Form, review and action are readily identifiable."
+            },
+            "contextIdentity": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Reserved editorial banking treatment suits transfer review."
+            },
+            "typographyContent": {
+              "score": 3,
+              "confidence": "medium",
+              "evidence": "Long Vietnamese name is retained; mobile headline visually joins 'withconfidence'."
+            },
+            "layoutResponsive": {
+              "score": 3,
+              "confidence": "medium",
+              "evidence": "Mobile header crowds the demo label and title words run together; no reported overflow."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Review, failure with retained details, retry and success shown; success uses red error-like panel."
+            },
+            "accessibility": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "No axe violations reported; incomplete checks remain and keyboard/AT audit is incomplete."
+            },
+            "systemCoherence": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Navy typography and controls are consistent, but red success panel suggests failure."
+            },
+            "evidenceIntegrity": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Fictional local simulation and fee are disclosed clearly."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [],
+          "unassessed": [
+            "Screen-reader behavior and complete keyboard interaction",
+            "Pending state and unshown viewport or error states"
+          ],
+          "blindingConcerns": [],
+          "observation": "Review shows full recipient, fee and total; retry success is reported. Long Vietnamese name is retained; mobile headline visually joins 'withconfidence'."
+        }
+      }
+    },
+    {
+      "id": "c05",
+      "model": "gpt-6.1-sol",
+      "condition": "baseline",
+      "promptId": "fintech-transfer",
+      "anonymousReviewId": "view-04",
+      "viewports": {
+        "desktop": {
+          "requiredPassed": 16,
+          "requiredTotal": 16,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [
+            "color-contrast"
+          ],
+          "initialAxeAffectedElements": 22,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        },
+        "mobile": {
+          "requiredPassed": 16,
+          "requiredTotal": 16,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [
+            "color-contrast"
+          ],
+          "initialAxeAffectedElements": 22,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        }
+      },
+      "reviewerRatings": {
+        "r1": {
+          "id": "view-04",
+          "ratings": {
+            "taskSuccess": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Review shows full Vietnamese recipient, USD375, USD2.50 fee, USD377.50 total, VND9,375,000 and delivery; checks confirm validation, failure retention and retry success."
+            },
+            "hierarchy": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Form and side cost summary are clear; review repeats key amounts locally, while mobile places the cost summary after the main form."
+            },
+            "contextIdentity": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Calm green financial service styling and explicit review language fit occasional transfer customers."
+            },
+            "typographyContent": {
+              "score": 3,
+              "confidence": "high",
+              "evidence": "Diacritics and recipient are preserved; muted helper, disclosure and progress text are visibly faint and often small."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Desktop paired panels and mobile stacked cards fit recorded widths without overflow; initial mobile cost summary follows the review button."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Failure clearly explains no money moved and offers retry/edit; success is explicit, but retains an orange warning-like strip with success wording."
+            },
+            "accessibility": {
+              "score": 2,
+              "confidence": "medium",
+              "evidence": "Supplied axe reports serious contrast violations across 22 initial desktop elements and 18 final elements (mobile also affected); 3px focus outlines are recorded, not full keyboard conformance."
+            },
+            "systemCoherence": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Cards, muted green hierarchy and action styling repeat well; warning-colored success message weakens state-color consistency."
+            },
+            "evidenceIntegrity": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Simulation and fictional account/data are repeatedly disclosed; fee handling, USD/VND exchange and illustrative delivery are explicit."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [
+            "Serious color-contrast findings in supplied desktop/mobile axe observations; pale helper and disclosure text is visibly hard to read."
+          ],
+          "unassessed": [
+            "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+            "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+            "Mobile review, failure and success screenshots were not supplied; mobile task behavior is supported by packet observations."
+          ],
+          "blindingConcerns": [],
+          "observation": "Complete and recoverable transfer flow in supplied checks, weakened by low-contrast supporting text and warning styling on success."
+        },
+        "r2": {
+          "id": "view-04",
+          "ratings": {
+            "taskSuccess": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Review shows recipient, $377.50 total and 9,375,000 VND; retry reaches simulated success."
+            },
+            "hierarchy": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Form and summary are distinct; pale supporting labels are less prominent."
+            },
+            "contextIdentity": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Calm bank-like presentation fits occasional transfer customers."
+            },
+            "typographyContent": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Full Vietnamese name, fee and delivery estimate appear; pale small text is difficult."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Mobile stacks form and summary without reported overflow."
+            },
+            "interactionCompleteness": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Review, retained details, retry and success are visible and browser checks pass."
+            },
+            "accessibility": {
+              "score": 2,
+              "confidence": "medium",
+              "evidence": "Axe reports serious contrast violations across 18–22 elements and an incomplete check."
+            },
+            "systemCoherence": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Green cards, type and action styling are cohesive."
+            },
+            "evidenceIntegrity": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Simulation and fictional data disclosures accompany explicit fee and estimate."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [
+            "Automated axe reports serious color contrast violations; affected elements require remediation and verification."
+          ],
+          "unassessed": [
+            "Screen-reader behavior and complete keyboard interaction",
+            "Pending state and unshown viewport or error states"
+          ],
+          "blindingConcerns": [],
+          "observation": "Review shows recipient, $377.50 total and 9,375,000 VND; retry reaches simulated success. Full Vietnamese name, fee and delivery estimate appear; pale small text is difficult."
+        }
+      }
+    },
+    {
+      "id": "c06",
+      "model": "gpt-6-luna",
+      "condition": "tasteforge",
+      "promptId": "commerce-craft",
+      "anonymousReviewId": "view-03",
+      "viewports": {
+        "desktop": {
+          "requiredPassed": 6,
+          "requiredTotal": 6,
+          "requiredFailures": [],
+          "optionalUnmet": [
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "fail",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            }
+          ],
+          "initialAxeRules": [],
+          "initialAxeAffectedElements": 0,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        },
+        "mobile": {
+          "requiredPassed": 6,
+          "requiredTotal": 6,
+          "requiredFailures": [],
+          "optionalUnmet": [
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "fail",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            }
+          ],
+          "initialAxeRules": [],
+          "initialAxeAffectedElements": 0,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        }
+      },
+      "reviewerRatings": {
+        "r1": {
+          "id": "view-03",
+          "ratings": {
+            "taskSuccess": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Unit price and USD8 shipping plus full delivery/return terms support the purchase task; Sand quantity-two cart feedback is recorded and visible. Optional combined total is absent, not a blocker."
+            },
+            "hierarchy": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Title, USD price, availability, glaze selection and blue bag action are strongly ordered."
+            },
+            "contextIdentity": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Serif product storytelling, large form study and material-focused details fit a craft shop."
+            },
+            "typographyContent": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Concrete care and dimensions are readable; small captions and 'shipping calculated at checkout' conflict in emphasis with the already stated fixed shipping charge."
+            },
+            "layoutResponsive": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Balanced desktop columns and a compact mobile stack keep controls legible with no recorded horizontal overflow."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Selected glaze, sold-out Ash, quantity and an inline bag confirmation are visible; supplied checks confirm unavailable option rejection."
+            },
+            "accessibility": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Recorded 3px focus outlines and zero reported axe violations support a favorable limited assessment; one incomplete axe check remains."
+            },
+            "systemCoherence": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Typography, separators, blue action and small uppercase labels are repeated consistently."
+            },
+            "evidenceIntegrity": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Footer calls the shop fictional and illustration sample data; USD price and shipping are clear. The bag CTA/confirmation is less explicit about simulation locally, and shipping wording is inconsistent."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [],
+          "unassessed": [
+            "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+            "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+            "Mobile cart-state screenshot was not supplied."
+          ],
+          "blindingConcerns": [],
+          "observation": "Strong hierarchy and readable responsive composition; cart works in supplied evidence, with some ambiguity in shipping wording."
+        },
+        "r2": {
+          "id": "view-03",
+          "ratings": {
+            "taskSuccess": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Cart confirms two Sand pieces at $136 before $8 shipping; user must add these."
+            },
+            "hierarchy": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Glaze and action are prominent, with shipping separated from item total."
+            },
+            "contextIdentity": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Craft editorial copy and form illustration fit the product."
+            },
+            "typographyContent": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Care, dimensions and return terms are concrete; small captions are less readable."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Mobile order is coherent and browser reports no overflow."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Cart feedback and unavailable Ash observed; calculated shipping-inclusive total absent but optional."
+            },
+            "accessibility": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "No axe violations reported with one incomplete check; focus and semantics need further audit."
+            },
+            "systemCoherence": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Serif titles, fine rules and blue action are consistent."
+            },
+            "evidenceIntegrity": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Illustrative product disclosed; shipping is stated although checkout wording could imply a real checkout."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [],
+          "unassessed": [
+            "Screen-reader behavior and complete keyboard interaction",
+            "Pending state and unshown viewport or error states"
+          ],
+          "blindingConcerns": [],
+          "observation": "Cart confirms two Sand pieces at $136 before $8 shipping; user must add these. Care, dimensions and return terms are concrete; small captions are less readable."
+        }
+      }
+    },
+    {
+      "id": "c07",
+      "model": "gpt-6-luna",
+      "condition": "baseline",
+      "promptId": "fintech-transfer",
+      "anonymousReviewId": "view-05",
+      "viewports": {
+        "desktop": {
+          "requiredPassed": 16,
+          "requiredTotal": 16,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [
+            "color-contrast"
+          ],
+          "initialAxeAffectedElements": 14,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        },
+        "mobile": {
+          "requiredPassed": 16,
+          "requiredTotal": 16,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [
+            "color-contrast"
+          ],
+          "initialAxeAffectedElements": 12,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        }
+      },
+      "reviewerRatings": {
+        "r1": {
+          "id": "view-05",
+          "ratings": {
+            "taskSuccess": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Review exposes recipient, fee, total and delivery, and supplied checks confirm validation, retained inputs and successful retry."
+            },
+            "hierarchy": {
+              "score": 3,
+              "confidence": "high",
+              "evidence": "Initial form says 'Review your transfer' and marks Details complete/Review active before review; success has two Complete steps, confusing state hierarchy."
+            },
+            "contextIdentity": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Conventional calm financial card layout and plain form labels are appropriate to a transfer review task."
+            },
+            "typographyContent": {
+              "score": 3,
+              "confidence": "high",
+              "evidence": "Vietnamese name fits and values are clear, but small pale helper/disclosure text and differently formatted VND/USD values increase reading effort."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Desktop cards become a clean mobile stack without recorded overflow; task controls stay compact and readable."
+            },
+            "interactionCompleteness": {
+              "score": 3,
+              "confidence": "high",
+              "evidence": "Review, recoverable error and success are visible, but error loses the visible recipient/amount summary and duplicate detached status sentences clutter the page; retention is supported by observations."
+            },
+            "accessibility": {
+              "score": 2,
+              "confidence": "medium",
+              "evidence": "Serious axe contrast findings affect 14 initial desktop and 16 final elements (mobile 12/15); amount focus records no outline or box shadow, a concrete focus-visibility concern."
+            },
+            "systemCoherence": {
+              "score": 3,
+              "confidence": "high",
+              "evidence": "Card, button and palette roles mostly repeat; progress labeling and detached status copy are inconsistent across states."
+            },
+            "evidenceIntegrity": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Fictional simulation is disclosed throughout and fee is shown before confirmation. 'Private, secure review' is an unsupported assurance in this packet, though no external requests were recorded."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [
+            "Serious recorded color-contrast violations.",
+            "Amount input focus observation has no outline and no box shadow; actual rendered focus was not directly tested."
+          ],
+          "unassessed": [
+            "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+            "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+            "Mobile review, failure and success screenshots were not supplied; mobile task behavior is supported by packet observations."
+          ],
+          "blindingConcerns": [],
+          "observation": "Task checks pass, but progress state, pale text and amount focus evidence reduce clarity and accessibility confidence."
+        },
+        "r2": {
+          "id": "view-05",
+          "ratings": {
+            "taskSuccess": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Review provides full recipient and $377.50 total; failure and retry success reported."
+            },
+            "hierarchy": {
+              "score": 3,
+              "confidence": "medium",
+              "evidence": "Initial step indicator says Review while input details are still being entered; completion repeats Complete."
+            },
+            "contextIdentity": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Friendly transfer interface suits the task, though secure-review claim is unverified."
+            },
+            "typographyContent": {
+              "score": 3,
+              "confidence": "medium",
+              "evidence": "Name and amounts appear; small pale captions and inconsistent progress text hinder clarity."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Mobile cards stack without reported overflow."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Failure and retry are shown; success state leaves progress indicator inconsistent."
+            },
+            "accessibility": {
+              "score": 2,
+              "confidence": "medium",
+              "evidence": "Axe reports serious contrast violations on 12–16 elements with incomplete checks."
+            },
+            "systemCoherence": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Cards and green controls are consistent, though status text appears detached below the card."
+            },
+            "evidenceIntegrity": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Simulation disclosed, but 'private, secure review' is an unverified assurance."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [
+            "Automated axe reports serious color contrast violations; affected elements require remediation and verification."
+          ],
+          "unassessed": [
+            "Screen-reader behavior and complete keyboard interaction",
+            "Pending state and unshown viewport or error states"
+          ],
+          "blindingConcerns": [],
+          "observation": "Review provides full recipient and $377.50 total; failure and retry success reported. Name and amounts appear; small pale captions and inconsistent progress text hinder clarity."
+        }
+      }
+    },
+    {
+      "id": "c08",
+      "model": "gpt-6.1-sol",
+      "condition": "tasteforge",
+      "promptId": "commerce-craft",
+      "anonymousReviewId": "view-01",
+      "viewports": {
+        "desktop": {
+          "requiredPassed": 6,
+          "requiredTotal": 6,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [],
+          "initialAxeAffectedElements": 0,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        },
+        "mobile": {
+          "requiredPassed": 6,
+          "requiredTotal": 6,
+          "requiredFailures": [],
+          "optionalUnmet": [],
+          "initialAxeRules": [],
+          "initialAxeAffectedElements": 0,
+          "pageErrors": [],
+          "horizontalOverflow": false
+        }
+      },
+      "reviewerRatings": {
+        "r1": {
+          "id": "view-01",
+          "ratings": {
+            "taskSuccess": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Price, shipping, stock, delivery, returns and care are explicit; supplied browser checks confirm Sand quantity two and unavailable Ash rejection."
+            },
+            "hierarchy": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Large product title and price lead directly into numbered glaze and quantity controls, item costs and a prominent cart action."
+            },
+            "contextIdentity": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Quiet serif typography, warm paper color, restrained rules and a large teapot illustration fit a considered ceramics shop."
+            },
+            "typographyContent": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Practical copy and image caption are concrete; some disclosure and policy text is small, and the large title consumes considerable space."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Two desktop columns become a readable mobile stack; mobile reaches 2241px and purchase controls follow a long image/title introduction; no recorded overflow."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "high",
+              "evidence": "Selected and unavailable glazes, quantity recalculation and cart outcome are supported; cart screenshot cuts off before confirmation, whose text is established by observations."
+            },
+            "accessibility": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Recorded controls have solid 3px focus outlines; one main and English language are recorded and axe reports no findings. This supports only a limited accessibility assessment."
+            },
+            "systemCoherence": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Serif roles, thin rules, blue selection/action color and structured pricing remain consistent on both widths."
+            },
+            "evidenceIntegrity": {
+              "score": 5,
+              "confidence": "high",
+              "evidence": "Explicit fictional shop and illustration disclosure, USD units, illustrative delivery and no-order copy; states the image remains Iron when Sand is selected."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [],
+          "unassessed": [
+            "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+            "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+            "Mobile cart-state screenshot was not supplied."
+          ],
+          "blindingConcerns": [],
+          "observation": "Clear craft product presentation with complete practical purchase conditions; mobile is relatively long."
+        },
+        "r2": {
+          "id": "view-01",
+          "ratings": {
+            "taskSuccess": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Sand × 2 and $144 including shipping confirmed in browser observations."
+            },
+            "hierarchy": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Product, glaze, quantity, total and action are clearly ordered."
+            },
+            "contextIdentity": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Editorial ceramic illustration and material detail fit the craft shop."
+            },
+            "typographyContent": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Concrete care and returns; small captions and serif text are somewhat dense."
+            },
+            "layoutResponsive": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Mobile stacks cleanly but purchase controls follow a long illustration."
+            },
+            "interactionCompleteness": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Cart confirmation and unavailable Ash observed; other states not shown."
+            },
+            "accessibility": {
+              "score": 4,
+              "confidence": "medium",
+              "evidence": "Focus outlines and zero axe findings reported; input naming and assistive technology need further verification."
+            },
+            "systemCoherence": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Consistent serif, rules, neutral palette and blue actions."
+            },
+            "evidenceIntegrity": {
+              "score": 5,
+              "confidence": "medium",
+              "evidence": "Fictional shop, vector image, shipping and return conditions explicitly disclosed."
+            }
+          },
+          "taskBlockers": [],
+          "accessibilityBlockers": [],
+          "unassessed": [
+            "Screen-reader behavior and complete keyboard interaction",
+            "Pending state and unshown viewport or error states"
+          ],
+          "blindingConcerns": [],
+          "observation": "Sand × 2 and $144 including shipping confirmed in browser observations. Concrete care and returns; small captions and serif text are somewhat dense."
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "One generation per condition in each pair; only two prompts.",
+    "Model sampling seeds, token usage, backend snapshots, and inference settings are not exposed.",
+    "Tool/bootstrap interventions are disclosed; eight-minute budget was an aim, not an enforced compute limit.",
+    "Isolation was instructed through fresh no-history agents, not enforced by an OS sandbox separating case read access.",
+    "Two AI reviewers in fresh contexts, not independent human users; correlated model judgments are possible.",
+    "Creators did not receive rendered feedback. Operator inspected outputs only after submission and did not repair them.",
+    "Task-state captures follow browser action/scroll behavior; initial top/full-page screenshots share the capture policy.",
+    "Static/browser checks cover the saved states only; no full screen-reader, zoom/reflow, target-size, or accessibility certification.",
+    "The treatment bundles skill instructions, references, CLI, and generated guidance; this pilot does not isolate their individual contributions."
+  ]
+}

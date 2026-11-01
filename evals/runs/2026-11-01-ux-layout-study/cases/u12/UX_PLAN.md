@@ -1,0 +1,9 @@
+# UX plan
+
+- **Audience and task:** warehouse operators reviewing five snapshot records; inspect LIN-115 evidence and record a simulated quantity of 8 pieces.
+- **Structure:** primary-detail workspace. The overview list has scoped search and a shortage-only checkbox; selecting a record opens evidence and a quantity form alongside the list on desktop. On narrow screens the list precedes the detail with an explicit back action. Review is a short check-answers state, followed by visible recoverable failure and retry success.
+- **Information order:** item identity/location → available, reorder point, shortage, incoming (with incoming explicitly separate) → editable quantity and bounds → review of item and requested unit/quantity → no-order consequence → record and outcome.
+- **Alternatives considered:** (1) full-width list then separate full-width detail: simple on mobile but loses surrounding list context on desktop; (2) persistent list/detail workspace (chosen): supports moving among records while preserving filters, with a stacked narrow layout; (3) guided multi-step form: adds navigation for a single quantity and is less useful than an explicit review state.
+- **Visual treatment:** restrained warehouse palette (deep green action, warm neutral canvas, muted evidence labels); system fonts; compact rows allow comparison without invented priorities. No external style references were inspected; offline catalog commands were unavailable in installed CLI 0.1.0.
+- **Acceptance checks:** all five fixture records initially visible; exact shortage-only set; SKU/name search and useful empty state; LIN-115 evidence; integer 1–50 validation; review and edit retain quantity; first simulated save fails, retry succeeds; return preserves list criteria; disclosure remains visible.
+- **Narrow priority:** list and filter first, detail below, clear return control; evidence remains labeled and wraps naturally.

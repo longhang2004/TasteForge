@@ -1,0 +1,29 @@
+timestamp=2026-11-01T06:15:29.721Z level=INFO run=687e1a34 message="creating instance" directory=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe
+timestamp=2026-11-01T06:15:29.725Z level=INFO run=687e1a34 message=fromDirectory directory=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe
+timestamp=2026-11-01T06:15:30.678Z level=INFO run=687e1a34 message=bootstrapping directory=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe
+timestamp=2026-11-01T06:15:30.765Z level=INFO run=687e1a34 message=loading path=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe/deepseek-v4.1-flash-free/config/opencode/config.json
+timestamp=2026-11-01T06:15:30.785Z level=INFO run=687e1a34 message=loading path=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe/deepseek-v4.1-flash-free/config/opencode/opencode.json
+timestamp=2026-11-01T06:15:30.819Z level=INFO run=687e1a34 message=loading path=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe/deepseek-v4.1-flash-free/config/opencode/opencode.jsonc
+timestamp=2026-11-01T06:15:32.305Z level=INFO run=687e1a34 message="all LSPs are disabled"
+timestamp=2026-11-01T06:15:32.308Z level=INFO run=687e1a34 message="all formatters are disabled"
+timestamp=2026-11-01T06:15:32.308Z level=INFO run=687e1a34 message=init
+timestamp=2026-11-01T06:15:33.374Z level=INFO run=687e1a34 message="creating instance" directory=/mnt/c/Users/hi/src/personal_repos/TasteForge
+timestamp=2026-11-01T06:15:33.375Z level=INFO run=687e1a34 message=fromDirectory directory=/mnt/c/Users/hi/src/personal_repos/TasteForge
+timestamp=2026-11-01T06:15:33.918Z level=INFO run=687e1a34 message=bootstrapping directory=/mnt/c/Users/hi/src/personal_repos/TasteForge
+timestamp=2026-11-01T06:15:34.783Z level=INFO run=687e1a34 message="all LSPs are disabled"
+timestamp=2026-11-01T06:15:34.785Z level=INFO run=687e1a34 message="all formatters are disabled"
+timestamp=2026-11-01T06:15:34.785Z level=INFO run=687e1a34 message=init
+timestamp=2026-11-01T06:15:34.796Z level=INFO run=687e1a34 message=created id=ses_e6a403d73ffeB6DWM9u4oj595P slug=crisp-star version=1.19.3 projectID=37566e8cbb86a4fdacd01a8bd03162cc965d2864 directory=/mnt/c/Users/hi/src/personal_repos/TasteForge path="" workspaceID=undefined parentID=undefined title="TasteForge free model availability" agent=undefined model=undefined metadata=undefined permission="[{\"permission\":\"question\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_enter\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_exit\",\"pattern\":\"*\",\"action\":\"deny\"}]" cost=0 tokens.input=0 tokens.output=0 tokens.reasoning=0 tokens.cache.read=0 tokens.cache.write=0 time.created=1793513734796 time.updated=1793513734796
+timestamp=2026-11-01T06:15:34.874Z level=INFO run=687e1a34 message="event connected"
+timestamp=2026-11-01T06:15:35.463Z level=INFO run=687e1a34 message=loop session.id=ses_e6a403d73ffeB6DWM9u4oj595P step=0
+timestamp=2026-11-01T06:15:37.817Z level=INFO run=687e1a34 message="shell tool using shell" shell=/bin/bash
+timestamp=2026-11-01T06:15:38.543Z level=INFO run=687e1a34 message="watcher backend" directory=/mnt/c/Users/hi/src/personal_repos/TasteForge platform=linux backend=inotify
+timestamp=2026-11-01T06:15:38.550Z level=INFO run=687e1a34 message="project copy refresh started" projectID=37566e8cbb86a4fdacd01a8bd03162cc965d2864
+timestamp=2026-11-01T06:15:41.812Z level=INFO run=687e1a34 message="project copy refresh done" projectID=37566e8cbb86a4fdacd01a8bd03162cc965d2864 updated=[] removed=[]
+timestamp=2026-11-01T06:15:41.992Z level=INFO run=687e1a34 message="booting location services" directory=/mnt/c/Users/hi/src/personal_repos/TasteForge workspaceID=undefined
+timestamp=2026-11-01T06:15:42.076Z level=INFO run=687e1a34 message=process session.id=ses_e6a403d73ffeB6DWM9u4oj595P messageID=msg_195bfce1e001DH4TqY1tCfP2Rt
+timestamp=2026-11-01T06:15:42.083Z level=INFO run=687e1a34 message=stream providerID=opencode modelID=deepseek-v4.1-flash-free session.id=ses_e6a403d73ffeB6DWM9u4oj595P small=false agent=build mode=primary
+timestamp=2026-11-01T06:15:42.105Z level=INFO run=687e1a34 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=deepseek-v4.1-flash-free
+timestamp=2026-11-01T06:15:42.870Z level=ERROR run=687e1a34 message="stream error" providerID=opencode modelID=deepseek-v4.1-flash-free session.id=ses_e6a403d73ffeB6DWM9u4oj595P small=false agent=build mode=primary error.error="AI_APICallError: Free usage limit reached. Free models work in OpenCode (https://opencode.ai); subscribe to OpenCode Go to keep going: https://opencode.ai/go"
+timestamp=2026-11-01T06:15:54.245Z level=WARN run=687e1a34 message="background dependency install failed" dir=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe/deepseek-v4.1-flash-free/config/opencode error="Cause([Fail(NpmInstallFailedError (cause: Error: Unsupported engine))])"
+timestamp=2026-11-01T06:16:01.042Z level=WARN run=687e1a34 message="background dependency install failed" dir=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe/deepseek-v4.1-flash-free/config/opencode error="Cause([Fail(NpmInstallFailedError (cause: Error: Unsupported engine))])"

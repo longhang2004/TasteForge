@@ -1,0 +1,366 @@
+{
+  "createdAt": "2026-11-01T09:20:22.364Z",
+  "chromium": "156.0.8078.4",
+  "userTesting": "not performed",
+  "traces": [
+    {
+      "id": "selected-1440",
+      "states": {
+        "initial": {
+          "geometry": {
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "width": 1440,
+            "height": 1000,
+            "scrollY": 0,
+            "visibleRows": 5,
+            "actions": []
+          },
+          "axe": [],
+          "incomplete": []
+        },
+        "detail": {
+          "geometry": {
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "width": 1440,
+            "height": 1000,
+            "scrollY": 0,
+            "visibleRows": 1,
+            "actions": [
+              {
+                "text": "← Back to stock",
+                "top": 214.890625,
+                "bottom": 258.890625
+              },
+              {
+                "text": "Review decision →",
+                "top": 735.265625,
+                "bottom": 779.265625
+              }
+            ]
+          },
+          "axe": [],
+          "incomplete": [
+            "color-contrast"
+          ]
+        },
+        "review": {
+          "geometry": {
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "width": 1440,
+            "height": 1000,
+            "scrollY": 0,
+            "visibleRows": 1,
+            "actions": [
+              {
+                "text": "← Back to stock",
+                "top": 214.890625,
+                "bottom": 258.890625
+              },
+              {
+                "text": "Record decision",
+                "top": 753.953125,
+                "bottom": 797.953125
+              },
+              {
+                "text": "Edit quantity",
+                "top": 753.953125,
+                "bottom": 797.953125
+              }
+            ]
+          },
+          "axe": [],
+          "incomplete": []
+        },
+        "failure": {
+          "geometry": {
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "width": 1440,
+            "height": 1000,
+            "scrollY": 0,
+            "visibleRows": 1,
+            "actions": [
+              {
+                "text": "← Back to stock",
+                "top": 214.890625,
+                "bottom": 258.890625
+              },
+              {
+                "text": "Retry decision",
+                "top": 840.953125,
+                "bottom": 884.953125
+              },
+              {
+                "text": "Edit quantity",
+                "top": 840.953125,
+                "bottom": 884.953125
+              }
+            ]
+          },
+          "axe": [],
+          "incomplete": []
+        },
+        "success": {
+          "geometry": {
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "width": 1440,
+            "height": 1000,
+            "scrollY": 0,
+            "visibleRows": 1,
+            "actions": [
+              {
+                "text": "← Back to stock",
+                "top": 214.890625,
+                "bottom": 258.890625
+              }
+            ]
+          },
+          "axe": [],
+          "incomplete": []
+        }
+      },
+      "checks": [
+        "Initially five rows; no selection",
+        "Shortage filter has exactly three items including incoming stock",
+        "Useful no-results recovery",
+        "Clear retains shortage filter",
+        "Search matches Vietnamese item name",
+        "Keyboard opens item; focus moves to its heading",
+        "Next keyboard stop is the editable quantity",
+        "Stock evidence contains available, reorder point, shortage and incoming",
+        "Initial quantity is shortage",
+        "Rejects invalid quantity \"\"",
+        "Rejects invalid quantity \"0\"",
+        "Rejects invalid quantity \"-1\"",
+        "Rejects invalid quantity \"1.5\"",
+        "Rejects invalid quantity \"51\"",
+        "Return retains query and filter; focus returns to item",
+        "Return retains draft quantity",
+        "Review shows actual edited quantity and no purchase order consequence",
+        "Edit retains quantity and returns focus to input",
+        "First save fails visibly and retains chosen quantity",
+        "Failure focus is on retry",
+        "Failure can return to retained edit value",
+        "Retry succeeds",
+        "Success return retains list context",
+        "No page errors or external requests"
+      ],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "selected-390",
+      "states": {
+        "initial": {
+          "geometry": {
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "width": 390,
+            "height": 853,
+            "scrollY": 0,
+            "visibleRows": 5,
+            "actions": []
+          },
+          "axe": [],
+          "incomplete": []
+        },
+        "detail": {
+          "geometry": {
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "width": 390,
+            "height": 844,
+            "scrollY": 0,
+            "visibleRows": 0,
+            "actions": [
+              {
+                "text": "← Back to stock",
+                "top": 87.5,
+                "bottom": 131.5
+              },
+              {
+                "text": "Review decision →",
+                "top": 582.5,
+                "bottom": 626.5
+              }
+            ]
+          },
+          "axe": [],
+          "incomplete": [
+            "color-contrast"
+          ]
+        },
+        "review": {
+          "geometry": {
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "width": 390,
+            "height": 844,
+            "scrollY": 0,
+            "visibleRows": 0,
+            "actions": [
+              {
+                "text": "← Back to stock",
+                "top": 87.5,
+                "bottom": 131.5
+              },
+              {
+                "text": "Record decision",
+                "top": 620.6875,
+                "bottom": 664.6875
+              },
+              {
+                "text": "Edit quantity",
+                "top": 620.6875,
+                "bottom": 664.6875
+              }
+            ]
+          },
+          "axe": [],
+          "incomplete": []
+        },
+        "failure": {
+          "geometry": {
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "width": 390,
+            "height": 844,
+            "scrollY": 0,
+            "visibleRows": 0,
+            "actions": [
+              {
+                "text": "← Back to stock",
+                "top": 87.5,
+                "bottom": 131.5
+              },
+              {
+                "text": "Retry decision",
+                "top": 707.6875,
+                "bottom": 751.6875
+              },
+              {
+                "text": "Edit quantity",
+                "top": 707.6875,
+                "bottom": 751.6875
+              }
+            ]
+          },
+          "axe": [],
+          "incomplete": []
+        },
+        "success": {
+          "geometry": {
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "width": 390,
+            "height": 844,
+            "scrollY": 0,
+            "visibleRows": 0,
+            "actions": [
+              {
+                "text": "← Back to stock",
+                "top": 87.5,
+                "bottom": 131.5
+              }
+            ]
+          },
+          "axe": [],
+          "incomplete": []
+        }
+      },
+      "checks": [
+        "Initially five rows; no selection",
+        "Shortage filter has exactly three items including incoming stock",
+        "Useful no-results recovery",
+        "Clear retains shortage filter",
+        "Search matches Vietnamese item name",
+        "Keyboard opens item; focus moves to its heading",
+        "Next keyboard stop is the editable quantity",
+        "Stock evidence contains available, reorder point, shortage and incoming",
+        "Initial quantity is shortage",
+        "Mobile focuses detail without list above it",
+        "Rejects invalid quantity \"\"",
+        "Rejects invalid quantity \"0\"",
+        "Rejects invalid quantity \"-1\"",
+        "Rejects invalid quantity \"1.5\"",
+        "Rejects invalid quantity \"51\"",
+        "Return retains query and filter; focus returns to item",
+        "Return retains draft quantity",
+        "Review shows actual edited quantity and no purchase order consequence",
+        "Edit retains quantity and returns focus to input",
+        "First save fails visibly and retains chosen quantity",
+        "Failure focus is on retry",
+        "Failure can return to retained edit value",
+        "Retry succeeds",
+        "Success return retains list context",
+        "No page errors or external requests"
+      ],
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "selected-320",
+      "states": {
+        "initial": {
+          "geometry": {
+            "viewport": {
+              "width": 320,
+              "height": 740
+            },
+            "width": 327,
+            "height": 973,
+            "scrollY": 0,
+            "visibleRows": 5,
+            "actions": []
+          },
+          "axe": [],
+          "incomplete": [
+            "color-contrast"
+          ]
+        }
+      },
+      "checks": [
+        "Initially five rows; no selection"
+      ],
+      "errors": [],
+      "externalRequests": []
+    }
+  ],
+  "candidates": [],
+  "error": "AssertionError [ERR_ASSERTION]: selected-320/initial: horizontal overflow\n    at snapshot (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/check.mjs:60:3)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/check.mjs:100:5",
+  "axeFindings": [],
+  "sources": {
+    "index.html": "5d9ce5d78500227189a7698cec88c8f74eaca7a8931093681c09e48989e8eb5a",
+    "app.mjs": "2c6582cfad80bb9b044fc3ad8ca713f5505f7aa329de92c453f85426666e784e",
+    "styles.css": "fc021eb83c5114b9ce067467a869459f948607272fddd78a973b4cad40eb814d",
+    "prototype.html": "eb9c2996cec18c18c3b344e33f2c7dfb85845fe99ff90abcb55878a7645a2623",
+    "prototype.mjs": "20fb93d92cca5e5233eeb1cb0f9a3c5bbbc985c37da84540d4e34c4e1ccbe3b3",
+    "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+    "tools/check.mjs": "1a3deaa4bec52ed1520cbb72c055cc154b96d9fbcf201d42c235aaa3850e1683",
+    "tools/serve.mjs": "50949b25e1031bb2dfd8ecaa215001a44bfd696a7ae31f93ccee24096b183dad"
+  }
+}

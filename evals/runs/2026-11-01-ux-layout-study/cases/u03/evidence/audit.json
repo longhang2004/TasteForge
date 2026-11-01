@@ -1,0 +1,30 @@
+{
+  "engineVersion": "0.1.0",
+  "mode": "static-source",
+  "files": [
+    "styles.css"
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "review": 1
+  },
+  "findings": [
+    {
+      "ruleId": "contrast-review",
+      "severity": "info",
+      "confidence": "low",
+      "category": "review",
+      "file": "styles.css",
+      "line": 1,
+      "column": 2828,
+      "explanation": "A foreground/background pair could not be resolved to opaque sRGB literals, or has layering effects.",
+      "remediation": "Inspect computed colors and composited backgrounds in a rendered UI."
+    }
+  ],
+  "limitations": [
+    "No screenshots or rendered UI inspected.",
+    "Cascade, imported styles, utility classes, computed values, and component runtime behavior are not resolved.",
+    "A clean report does not establish accessibility conformance or visual quality."
+  ]
+}

@@ -14,18 +14,19 @@ The local design intelligence engine turns a product brief into **Design DNA**: 
 | ------------------- | ----------------------------------------------------------------------------------------------------- |
 | Purpose             | UI/UX design guidance and reproducible design decisions for AI coding agents                          |
 | Interfaces          | Portable Agent Skill, `tasteforge` CLI, and TypeScript packages                                       |
-| Commands            | `init`, `suggest`, `generate`, `audit`                                                                |
+| Commands            | `init`, `suggest`, `generate`, `audit`, `catalog`, `inspire`                                          |
 | Design knowledge    | 20 style profiles, 32 font pairings, and 20 color palettes in versioned JSON                          |
+| External references | 172 style documents/rows, 357 contextual rule records, 113 template/structure records                 |
 | Generated artifacts | `design-dna.json`, semantic `tokens.css`, and project `DESIGN.md`                                     |
 | Static audit scope  | CSS declarations and literal JSX/TSX styles; verified source conditions, heuristics, and review items |
 | Runtime             | Node.js 20.19+; pnpm workspace; local filesystem state                                                |
-| License and status  | MIT; working 0.1.0 MVP; available on GitHub, unpublished on npm                                       |
+| License and status  | MIT; 0.2.0-beta.1 source; npm packages unpublished                                                    |
 
 No API keys, external LLM calls, database, or cloud service are required. Core operations make no network requests. Static source checks identify implementation issues and review questions; rendered UI inspection and accessibility testing remain separate work.
 
-## Quickstart (from source, under five minutes on a normal connection)
+## Quickstart from source
 
-Requires Node **20.19+** and **pnpm 10.13.1**. Node 22 or 24 is recommended for development. Package names are reserved here as the intended release names; a registry release has not been published or verified.
+Requires Node **20.19+** and **pnpm 10.13.1**. Node 22, 24 or 26 LTS is recommended for development; Node 20 is retained for compatibility. Package names are reserved here as the intended release names; a registry release has not been published or verified.
 
 ```bash
 git clone https://github.com/longhang2004/TasteForge.git
@@ -53,6 +54,7 @@ Choose a direction returned for **your** brief; `swiss-editorial` is an example 
 - **`suggest`** validates context, filters hard constraints, ranks compatible styles, and samples distinct candidates using a seed and creativity-dependent temperature. Results include full style guidance, font pair, palette, scoring breakdown, weights, explanations, and engine/knowledge versions.
 - **`generate`** creates `design-dna.json`, `tokens.css`, and `DESIGN.md` from the same context, direction, and seed. The font/palette choice matches `suggest` for that direction. Existing artifacts require `--force`; inspect them before replacing them.
 - **`audit`** parses CSS with PostCSS and JSX/TSX with TypeScript. It reports explicit source conditions, contextual heuristics, and review items separately. If Design DNA is present, its tokens and contrast target inform the audit. CSS-local root tokens are also recognized.
+- **`catalog`** searches 642 attributed offline reference records from 18 pinned sources and reads selected documents with provenance and license notices. **`inspire`** samples distinct external visual references with task-matched structural examples and fixed review gates. These are reference inputs, not additional validated token-generating profiles. See [catalog scope and commands](docs/reference-catalog.md).
 
 Import generated tokens in your app and apply semantic roles:
 
@@ -95,7 +97,15 @@ The initial scoring weights are product/industry 30%, brand 25%, audience/usabil
 
 The entrypoint is [skills/tasteforge/SKILL.md](skills/tasteforge/SKILL.md). It routes creation, redesign, and refinement to focused workflows and loads principles only when relevant. It remains useful without the CLI and preserves established design systems.
 
+For substantial new UI or redesign, the skill now uses [reference-led structural planning](docs/reference-led-design.md) before visual style selection. It can research public designs/repositories or use [the offline catalog](docs/reference-catalog.md), record sources, compare task/layout alternatives, and write a `UX_PLAN.md`. Imported reference IDs do not generate tokens; `suggest`/`generate` retain their validated 20-profile pool. [Worked plans](examples/ux-plans/transfer.md) show the distinction between structural choices and a font/palette change.
+
 Copy the whole `skills/tasteforge` folder into the skill discovery location documented by your agent, preserving references and workflows. Then invoke `tasteforge` using the agent's supported skill mechanism or explicitly ask it to follow `SKILL.md`. The CLI package includes the same skill folder for distribution.
+
+Optional [effect/composition guidance](skills/tasteforge/references/effects-and-composition.md) researches text emphasis, image treatments, responsive layouts and motion by task purpose, with static/reduced-motion and source/reuse checks. [Three original effect studies](examples/effects-lab/README.md) demonstrate these mechanics. This reference list is separate from CLI catalog ingestion and seeded sampling.
+
+[Surface purpose and targeted refinement](docs/impeccable-informed-workflow.md) identify the visitor's success on each screen and guide scoped edits that reduce clutter, clarify meaning, adapt context or adjust emphasis. The [annotated gallery](examples/design-gallery/README.md) explains actual repairs, retained choices and structural tradeoffs using preserved captures. These are skill workflows and authored examples, not new CLI commands or a runtime detector.
+
+For substantial undecided layouts, [the revision workflow](skills/tasteforge/workflows/structure-and-revise.md) compares runnable task slices, then records actual render findings and rechecked edits. The [inventory worked composition](examples/inventory-workbench/README.md) demonstrates this with a compact desktop table and retained mobile detail/review/recovery. It is agent-authored; human design approval and representative-user testing remain pending.
 
 Automated verification in this repository covers the skill's frontmatter, reference files, and CLI integration workflow. **End-to-end integration inside Codex, Claude Code, Cursor, or other agent applications has not been certified.** Consult each host's current installation instructions; no universal compatibility claim is made.
 
@@ -107,7 +117,7 @@ The CLI's recommendation, generation, and source-audit operations run locally wi
 
 ### How do I install the CLI or the standalone Agent Skill?
 
-Use the [source quickstart](#quickstart-from-source-under-five-minutes-on-a-normal-connection) for the CLI. For the skill alone, download `tasteforge-skill-v0.1.0.zip` from the [v0.1.0 release](https://github.com/longhang2004/TasteForge/releases/tag/v0.1.0) and follow your agent host's skill installation instructions. The npm package names in this repository are not yet published.
+Use the [source quickstart](#quickstart-from-source) for the CLI. For the 0.2 beta skill, copy the current `skills/tasteforge` folder or use the matching skill ZIP when published. The [v0.1.0 release](https://github.com/longhang2004/TasteForge/releases/tag/v0.1.0) contains the older four-command MVP and does not include the beta workflows. The npm packages are not yet published.
 
 ### Can I use TasteForge with Codex, Claude Code, or Cursor?
 
@@ -143,6 +153,8 @@ A static audit does **not** inspect screenshots or establish visual quality, ful
 
 ## Repository
 
+An [exploratory UI comparison pilot](evals/runs/2026-11-01-ui-pilot/README.md) preserves eight actual interfaces generated by two models, without and with TasteForge. Inspect its [screenshots](evals/runs/2026-11-01-ui-pilot/screenshots.md), comparison gallery instructions, and [results with limitations](evals/runs/2026-11-01-ui-pilot/report.md). One generation per condition is an example study, not a general improvement claim.
+
 ```text
 packages/
   knowledge/src/          Zod schemas and versioned curated JSON
@@ -150,13 +162,13 @@ packages/
   cli/src/                Commander interface and bounded filesystem operations
 skills/tasteforge/
   SKILL.md                Progressive-disclosure entrypoint
-  references/             Seven focused design references
-  workflows/              Create, redesign, audit/refine
+  references/             Eleven focused design/research references
+  workflows/              Research/plan, create, redesign, audit/refine
 examples/                  Brief, generated artifacts, deliberately flawed source
 tests/                     Unit and end-to-end CLI tests
 evals/                     Ten benchmark prompts and an unscored evaluation rubric
 docs/                      Architecture, CLI, knowledge extension, release guide
-.github/workflows/ci.yml    Build, checks, tests on Node 20/22/24
+.github/workflows/ci.yml    Build, checks, tests on Node 20/22/24/26
 ```
 
 ## Development and troubleshooting
@@ -177,6 +189,6 @@ pnpm format:check
 - **No audit findings:** confirm the path contains `.css`, `.tsx`, or `.jsx`. Dynamic/utility-driven styling may require rendered review. An empty report is not a design-quality score.
 - **Path or symlink rejected:** keep inputs inside `--project` and `.tasteforge` as a real local directory. Intentional external projects can be selected explicitly with `--project`.
 
-See [CONTRIBUTING](CONTRIBUTING.md), [knowledge extension](docs/extending-knowledge.md), [release preparation](docs/releasing.md), and [benchmark methodology](evals/README.md). Original code and prose use the [MIT license](LICENSE); no font binaries or third-party source text are bundled.
+See [CONTRIBUTING](CONTRIBUTING.md), [knowledge extension](docs/extending-knowledge.md), [release preparation](docs/releasing.md), and [benchmark methodology](evals/README.md). Original code and prose use the [MIT license](LICENSE); bundled external reference text retains its upstream MIT notices. Font binaries and third-party image assets are not shipped.
 
-Next priorities: gather real agent-integration evidence, expand AST-aware audit coverage with project token imports, validate more languages, and run the published benchmark methodology with independent reviewers. No benchmark improvement results are claimed.
+Next priorities: gather real agent-integration evidence, expand AST-aware audit coverage with project token imports, validate more languages, and run the published benchmark methodology with independent reviewers. Exploratory results and their limitations are recorded; no general UX improvement is established.

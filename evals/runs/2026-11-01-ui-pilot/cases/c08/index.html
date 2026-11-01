@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Everyday Teapot — Field Kiln</title>
+<link rel="stylesheet" href=".tasteforge/tokens.css">
+<link rel="stylesheet" href="styles.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<header><a class="wordmark" href="index.html">Field Kiln<span>Objects for the everyday</span></a><span class="edition">A fictional ceramics shop</span><a href="#purchase">Choose your teapot ↗</a></header>
+<main>
+<div class="breadcrumb">The collection <span>/</span> Teaware <span>/</span> Everyday Teapot</div>
+<div class="product-grid">
+<section class="gallery" aria-label="Product illustration"><div class="image-label">FIELD NOTES <span>01 / TEAWARE</span></div><figure><img src="assets/teapot.svg" alt="Iron glazed stoneware teapot with a rounded body, curved handle, fitted lid and short spout, on a warm neutral background."><figcaption><span>Everyday Teapot · Iron glaze shown</span><span>650 ml</span></figcaption></figure><p class="image-note">Original vector illustration of a fictional sample product; not a photograph. Illustration shows Iron; Sand has no separate illustration.</p><div class="gallery-bottom"><span>Stoneware, simply.</span><p>A familiar shape.<br>A place in your daily ritual.</p></div></section>
+<section class="product" id="purchase"><p class="eyebrow">HANDMADE CERAMICS / NO. 01</p><h1>Everyday<br>Teapot</h1><div class="price-line"><span>$68 <small>USD / piece</small></span><span>Glazed stoneware</span></div><p class="intro">A handmade stoneware teapot for the small ritual of making tea. A rounded form, a curved handle, and room for 650 ml.</p>
+<form id="order"><fieldset><legend>01 <span>Choose a glaze</span></legend><div class="glazes"><label><input type="radio" name="glaze" value="iron" data-testid="glaze-iron" checked><span class="glaze"><i class="swatch iron"></i><b>Iron</b><small>4 in stock</small></span></label><label class="unavailable"><input type="radio" name="glaze" value="ash" data-testid="glaze-ash" disabled><span class="glaze"><i class="swatch ash"></i><b>Ash</b><small>Unavailable</small></span></label><label><input type="radio" name="glaze" value="sand" data-testid="glaze-sand"><span class="glaze"><i class="swatch sand"></i><b>Sand</b><small>7 in stock</small></span></label></div></fieldset>
+<div class="quantity-row"><label for="quantity"><span class="number">02</span> Quantity</label><select id="quantity" data-testid="quantity"><option value="1">1 piece</option><option value="2">2 pieces</option><option value="3">3 pieces</option><option value="4">4 pieces</option></select></div>
+<div class="order-summary"><div><span>Pieces <span id="calculation">1 × $68</span></span><span id="subtotal">$68</span></div><div><span>Domestic shipping</span><span>$8</span></div><div class="total"><span>Total <small>USD</small></span><strong id="total">$76</strong></div></div>
+<button type="submit" data-testid="add-to-cart">Add to simulated cart <span aria-hidden="true">↗</span></button><p class="simulation">A local cart demonstration. No payment or order is placed.</p><p data-testid="cart-status" id="cart-status" role="status" aria-live="polite"></p>
+</form>
+<div class="practical"><section><h2>Delivery</h2><p>Dispatch in 2 business days; illustrative domestic transit 3–5 business days.</p></section><section><h2>Returns</h2><p>Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.</p></section></div>
+</section></div>
+<section class="details"><div><p class="eyebrow">KNOW YOUR PIECE</p><h2>Made for tea.<br>Care for it simply.</h2></div><dl><div><dt>Material</dt><dd>Glazed stoneware</dd></div><div><dt>Dimensions</dt><dd>16 cm wide × 12 cm high</dd></div><div><dt>Capacity</dt><dd>650 ml</dd></div><div><dt>Care</dt><dd>Hand wash. Avoid sudden temperature changes. Not for stovetop use.</dd></div></dl></section>
+</main><footer><strong>Field Kiln</strong><p>Fictional shop and illustrative product, price, stock, delivery, and returns.</p><a href="#purchase">Back to the piece ↑</a></footer></body>
+</html>

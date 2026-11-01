@@ -1,0 +1,486 @@
+{
+  "reviewer": "r1",
+  "reviewedEvidence": "Independent first assessment, reading only packet/README.md and packet.json and directly viewing all 32 supplied images through view_image: desktop/mobile full screenshots for every view; cart screenshots for views 01,02,03,07; review/failure/success screenshots for views 04,05,06,08. Task fixtures and supplied browser layout, checks, focus computations and axe observations were supporting evidence. No live/manual interaction, implementation inspection, screen-reader testing, or full accessibility audit; zero axe findings are not conformance. Cart screenshots 01 and 02 are viewport-limited and do not display the full confirmation, so its content relies on recorded observations. Model/condition mappings were not sought or inferred.",
+  "cases": [
+    {
+      "id": "view-01",
+      "ratings": {
+        "taskSuccess": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Price, shipping, stock, delivery, returns and care are explicit; supplied browser checks confirm Sand quantity two and unavailable Ash rejection."
+        },
+        "hierarchy": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Large product title and price lead directly into numbered glaze and quantity controls, item costs and a prominent cart action."
+        },
+        "contextIdentity": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Quiet serif typography, warm paper color, restrained rules and a large teapot illustration fit a considered ceramics shop."
+        },
+        "typographyContent": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Practical copy and image caption are concrete; some disclosure and policy text is small, and the large title consumes considerable space."
+        },
+        "layoutResponsive": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Two desktop columns become a readable mobile stack; mobile reaches 2241px and purchase controls follow a long image/title introduction; no recorded overflow."
+        },
+        "interactionCompleteness": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Selected and unavailable glazes, quantity recalculation and cart outcome are supported; cart screenshot cuts off before confirmation, whose text is established by observations."
+        },
+        "accessibility": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": "Recorded controls have solid 3px focus outlines; one main and English language are recorded and axe reports no findings. This supports only a limited accessibility assessment."
+        },
+        "systemCoherence": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Serif roles, thin rules, blue selection/action color and structured pricing remain consistent on both widths."
+        },
+        "evidenceIntegrity": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Explicit fictional shop and illustration disclosure, USD units, illustrative delivery and no-order copy; states the image remains Iron when Sand is selected."
+        }
+      },
+      "taskBlockers": [],
+      "accessibilityBlockers": [],
+      "unassessed": [
+        "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+        "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+        "Mobile cart-state screenshot was not supplied."
+      ],
+      "blindingConcerns": [],
+      "observation": "Clear craft product presentation with complete practical purchase conditions; mobile is relatively long."
+    },
+    {
+      "id": "view-02",
+      "ratings": {
+        "taskSuccess": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Browser observations confirm two Sand pieces total USD144 with shipping and rejection of unavailable Ash; full screenshots include all practical product conditions."
+        },
+        "hierarchy": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Product, price and selection are clear; delivery and return conditions sit below the purchase block, requiring more scanning."
+        },
+        "contextIdentity": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Olive palette, restrained editorial image frame and warm background suit handmade ceramics."
+        },
+        "typographyContent": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Readable body and detailed care/returns copy; small uppercase captions and fine disclosure text demand more effort."
+        },
+        "layoutResponsive": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Desktop lower details form columns and mobile stacks them cleanly; mobile headline visibly joins 'form.Thoughtful' and the page is long; no recorded overflow."
+        },
+        "interactionCompleteness": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Selected/unavailable glaze and calculated totals are visible; cart screenshot reaches only the top edge of its feedback, so confirmation content relies on recorded checks."
+        },
+        "accessibility": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": "Focus observations include 3px outlines and a native quantity outline, and axe reports no findings; no manual keyboard or assistive technology test was performed."
+        },
+        "systemCoherence": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Consistent dark green text/action roles, subtle separators and repeated small uppercase labels create a coherent system."
+        },
+        "evidenceIntegrity": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Fictional studio, non-photographic Iron illustration, simulation-only cart and illustrative stock/delivery are disclosed with clear costs."
+        }
+      },
+      "taskBlockers": [],
+      "accessibilityBlockers": [],
+      "unassessed": [
+        "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+        "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+        "Mobile cart-state screenshot was not supplied."
+      ],
+      "blindingConcerns": [],
+      "observation": "Cohesive ceramics identity and complete purchase information, with small captions and a minor mobile text-spacing defect."
+    },
+    {
+      "id": "view-03",
+      "ratings": {
+        "taskSuccess": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Unit price and USD8 shipping plus full delivery/return terms support the purchase task; Sand quantity-two cart feedback is recorded and visible. Optional combined total is absent, not a blocker."
+        },
+        "hierarchy": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Title, USD price, availability, glaze selection and blue bag action are strongly ordered."
+        },
+        "contextIdentity": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Serif product storytelling, large form study and material-focused details fit a craft shop."
+        },
+        "typographyContent": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Concrete care and dimensions are readable; small captions and 'shipping calculated at checkout' conflict in emphasis with the already stated fixed shipping charge."
+        },
+        "layoutResponsive": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Balanced desktop columns and a compact mobile stack keep controls legible with no recorded horizontal overflow."
+        },
+        "interactionCompleteness": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Selected glaze, sold-out Ash, quantity and an inline bag confirmation are visible; supplied checks confirm unavailable option rejection."
+        },
+        "accessibility": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": "Recorded 3px focus outlines and zero reported axe violations support a favorable limited assessment; one incomplete axe check remains."
+        },
+        "systemCoherence": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Typography, separators, blue action and small uppercase labels are repeated consistently."
+        },
+        "evidenceIntegrity": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Footer calls the shop fictional and illustration sample data; USD price and shipping are clear. The bag CTA/confirmation is less explicit about simulation locally, and shipping wording is inconsistent."
+        }
+      },
+      "taskBlockers": [],
+      "accessibilityBlockers": [],
+      "unassessed": [
+        "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+        "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+        "Mobile cart-state screenshot was not supplied."
+      ],
+      "blindingConcerns": [],
+      "observation": "Strong hierarchy and readable responsive composition; cart works in supplied evidence, with some ambiguity in shipping wording."
+    },
+    {
+      "id": "view-04",
+      "ratings": {
+        "taskSuccess": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Review shows full Vietnamese recipient, USD375, USD2.50 fee, USD377.50 total, VND9,375,000 and delivery; checks confirm validation, failure retention and retry success."
+        },
+        "hierarchy": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Form and side cost summary are clear; review repeats key amounts locally, while mobile places the cost summary after the main form."
+        },
+        "contextIdentity": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Calm green financial service styling and explicit review language fit occasional transfer customers."
+        },
+        "typographyContent": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": "Diacritics and recipient are preserved; muted helper, disclosure and progress text are visibly faint and often small."
+        },
+        "layoutResponsive": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Desktop paired panels and mobile stacked cards fit recorded widths without overflow; initial mobile cost summary follows the review button."
+        },
+        "interactionCompleteness": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Failure clearly explains no money moved and offers retry/edit; success is explicit, but retains an orange warning-like strip with success wording."
+        },
+        "accessibility": {
+          "score": 2,
+          "confidence": "medium",
+          "evidence": "Supplied axe reports serious contrast violations across 22 initial desktop elements and 18 final elements (mobile also affected); 3px focus outlines are recorded, not full keyboard conformance."
+        },
+        "systemCoherence": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Cards, muted green hierarchy and action styling repeat well; warning-colored success message weakens state-color consistency."
+        },
+        "evidenceIntegrity": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Simulation and fictional account/data are repeatedly disclosed; fee handling, USD/VND exchange and illustrative delivery are explicit."
+        }
+      },
+      "taskBlockers": [],
+      "accessibilityBlockers": [
+        "Serious color-contrast findings in supplied desktop/mobile axe observations; pale helper and disclosure text is visibly hard to read."
+      ],
+      "unassessed": [
+        "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+        "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+        "Mobile review, failure and success screenshots were not supplied; mobile task behavior is supported by packet observations."
+      ],
+      "blindingConcerns": [],
+      "observation": "Complete and recoverable transfer flow in supplied checks, weakened by low-contrast supporting text and warning styling on success."
+    },
+    {
+      "id": "view-05",
+      "ratings": {
+        "taskSuccess": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Review exposes recipient, fee, total and delivery, and supplied checks confirm validation, retained inputs and successful retry."
+        },
+        "hierarchy": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": "Initial form says 'Review your transfer' and marks Details complete/Review active before review; success has two Complete steps, confusing state hierarchy."
+        },
+        "contextIdentity": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Conventional calm financial card layout and plain form labels are appropriate to a transfer review task."
+        },
+        "typographyContent": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": "Vietnamese name fits and values are clear, but small pale helper/disclosure text and differently formatted VND/USD values increase reading effort."
+        },
+        "layoutResponsive": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Desktop cards become a clean mobile stack without recorded overflow; task controls stay compact and readable."
+        },
+        "interactionCompleteness": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": "Review, recoverable error and success are visible, but error loses the visible recipient/amount summary and duplicate detached status sentences clutter the page; retention is supported by observations."
+        },
+        "accessibility": {
+          "score": 2,
+          "confidence": "medium",
+          "evidence": "Serious axe contrast findings affect 14 initial desktop and 16 final elements (mobile 12/15); amount focus records no outline or box shadow, a concrete focus-visibility concern."
+        },
+        "systemCoherence": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": "Card, button and palette roles mostly repeat; progress labeling and detached status copy are inconsistent across states."
+        },
+        "evidenceIntegrity": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Fictional simulation is disclosed throughout and fee is shown before confirmation. 'Private, secure review' is an unsupported assurance in this packet, though no external requests were recorded."
+        }
+      },
+      "taskBlockers": [],
+      "accessibilityBlockers": [
+        "Serious recorded color-contrast violations.",
+        "Amount input focus observation has no outline and no box shadow; actual rendered focus was not directly tested."
+      ],
+      "unassessed": [
+        "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+        "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+        "Mobile review, failure and success screenshots were not supplied; mobile task behavior is supported by packet observations."
+      ],
+      "blindingConcerns": [],
+      "observation": "Task checks pass, but progress state, pale text and amount focus evidence reduce clarity and accessibility confidence."
+    },
+    {
+      "id": "view-06",
+      "ratings": {
+        "taskSuccess": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Review gives full recipient, fee, USD377.50 total, VND amount and estimate; supplied checks establish range validation and retry success, with retention evidenced in failure summary."
+        },
+        "hierarchy": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Focused single form and clear review rows organize the task well; failure retains recipient and amount in a prominent summary."
+        },
+        "contextIdentity": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Reserved navy and cream financial service treatment supports a deliberate review flow."
+        },
+        "typographyContent": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": "Desktop type and Vietnamese name are clear; mobile hero visibly reads 'withconfidence.' and typography crowds the mobile header."
+        },
+        "layoutResponsive": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": "Desktop form uses space effectively, but mobile hero joins words, header logo/disclosure crowd each other and the amount field outline appears interrupted; no document overflow was recorded."
+        },
+        "interactionCompleteness": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Review, edit, failure, retry and success are represented. Success reuses the same red bordered panel as failure, weakening outcome presentation."
+        },
+        "accessibility": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": "Recorded controls have 3px focus outlines and supplied axe has no violations, with incomplete checks. Mobile text/rendering defects remain visual concerns, not proof of semantic failure."
+        },
+        "systemCoherence": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": "Consistent navy actions and serif headings, but red success feedback reuses an error role and mobile typography spacing is inconsistent."
+        },
+        "evidenceIntegrity": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Demo/fictional and no-money language are prominent. USD fee and review currency are understandable; estimate is explicitly illustrative."
+        }
+      },
+      "taskBlockers": [],
+      "accessibilityBlockers": [],
+      "unassessed": [
+        "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+        "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+        "Failure retention is evidenced by the retained summary only; returning to the edit form was not separately exercised.",
+        "Mobile review, failure and success screenshots were not supplied; mobile task behavior is supported by packet observations."
+      ],
+      "blindingConcerns": [],
+      "observation": "Strong task details and recovery, with visible mobile typography/rendering defects and red success feedback."
+    },
+    {
+      "id": "view-07",
+      "ratings": {
+        "taskSuccess": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Price, USD8 shipping, materials, care, delivery and return conditions are present; browser checks confirm Sand quantity-two cart and Ash rejection; absent combined total is optional."
+        },
+        "hierarchy": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Large title, nearby price and simple selection/action make purchase easy to locate; exact available stock counts are not visible in the initial interface."
+        },
+        "contextIdentity": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Warm neutral product image and serif title fit a small ceramics shop."
+        },
+        "typographyContent": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": "Body policies are concrete; very small captions/footer and pale sold-out option reduce legibility."
+        },
+        "layoutResponsive": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Desktop is compact and mobile stacks coherently without recorded overflow; two mobile detail columns keep care text rather narrow."
+        },
+        "interactionCompleteness": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Sand selection, bag count increment and inline item/shipping confirmation are visible; sold-out option is marked and rejection is supported by supplied checks."
+        },
+        "accessibility": {
+          "score": 2,
+          "confidence": "medium",
+          "evidence": "Axe records serious contrast findings on 11 desktop and 10 mobile elements; focus uses native auto outlines in the supplied sequence, so full visibility cannot be established."
+        },
+        "systemCoherence": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": "Most typography and rules align; tiny native Bag button and black rather than glaze-colored swatch dots are less integrated with the product controls."
+        },
+        "evidenceIntegrity": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Fictional sample shop, non-photo illustration, simulated bag and illustrative conditions are explicit; USD and shipping cost are clear."
+        }
+      },
+      "taskBlockers": [],
+      "accessibilityBlockers": [
+        "Serious supplied axe color-contrast findings; pale unavailable text and tiny footer/disclosure text are visible concerns."
+      ],
+      "unassessed": [
+        "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+        "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+        "Mobile cart-state screenshot was not supplied."
+      ],
+      "blindingConcerns": [],
+      "observation": "Compact product page with complete practical details and cart feedback, but small low-contrast text and uneven control styling."
+    },
+    {
+      "id": "view-08",
+      "ratings": {
+        "taskSuccess": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Full recipient, USD375 amount, USD2.50 fee, USD377.50 total, VND9,375,000 and estimate are explicit; supplied checks confirm validation, failure input retention and retry completion."
+        },
+        "hierarchy": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Numbered progress, clear step headings, bold totals and repeated recipient/cost review give clear state and primary action."
+        },
+        "contextIdentity": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Restrained navy/blue financial styling, explicit fee explanation and deliberate confirmation fit occasional transfer customers."
+        },
+        "typographyContent": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Vietnamese name and diacritics remain readable, currencies are spelled out, and labels/values have clear text roles."
+        },
+        "layoutResponsive": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": "Desktop columns become a legible mobile stack with no recorded overflow; mobile cost summary follows the initial review action and the overall page is lengthy."
+        },
+        "interactionCompleteness": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Review, edit, failure with saved details and retry, and clear simulated success are visible; failure preserves the review summary and success states recipient and total."
+        },
+        "accessibility": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": "Supplied controls have 3px focus outlines, one main and English language are recorded; axe has no violations with one incomplete check. No complete keyboard or screen-reader test was performed."
+        },
+        "systemCoherence": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Blue primary actions/progress, navy headings, pale summary blocks and orange error feedback retain stable roles across states."
+        },
+        "evidenceIntegrity": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": "Simulation/fictional data is prominent; fee addition, recipient amount, USD/VND rate and illustrative delivery conditions are unambiguous."
+        }
+      },
+      "taskBlockers": [],
+      "accessibilityBlockers": [],
+      "unassessed": [
+        "No manual browser interaction or screen-reader testing; full accessibility conformance and behavior beyond supplied observations are unassessed.",
+        "No supplied pending-state screenshot; timing, announcements and transition focus were not established.",
+        "Mobile review, failure and success screenshots were not supplied; mobile task behavior is supported by packet observations."
+      ],
+      "blindingConcerns": [],
+      "observation": "Clear and complete transfer presentation across supplied states; mobile is long but readable."
+    }
+  ]
+}

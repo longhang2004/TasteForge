@@ -1,0 +1,181 @@
+{
+  "reviewer": "reviewer-r1",
+  "stage": "neutral",
+  "views": [
+    {
+      "view": "view-01",
+      "scores": {"entryPriority": 2, "decisionContext": 4, "narrowContext": 2, "recoveryFlow": 4, "compositionPurpose": 3},
+      "evidence": {
+        "entryPriority": "Search and shortage filter lead directly into a compact stock table, but the LIN-115 row is visually blank in both initial screenshots despite five rows in the trace. The task's target is therefore obscured in this neutral rendering.",
+        "decisionContext": "Review clearly names the full linen item, LIN-115, B-04 and 8 pieces, followed by the no-order/no-stock-change consequence. The selection trace includes available 2, reorder 10, shortage 8 and incoming 4 with an explanation that incoming remains separate; the inspect state itself is not pictured.",
+        "narrowContext": "390px retains search, filter and list above the review, but the target row is blank here too. Review and retry require scrolling past this retained region; original save geometry is y871. The full name wraps legibly in the review.",
+        "recoveryFlow": "Mobile failure explicitly says quantity is kept and offers Try again beside the error, with Edit decision and Back to inventory still visible. Trace exercises retained quantity, invalid quantities, edit, retry success and retained search/filter.",
+        "compositionPurpose": "Master-detail structure usefully pairs inventory with a focused review. The large initial instruction panel offers little beyond selecting a row, while the blank target row materially weakens the useful structure."
+      },
+      "blockers": ["LIN-115 content is not visible in its neutral list row; trace confirms existence but cannot establish visual discoverability."],
+      "unnecessaryRegions": ["Oversized initial choose-an-item panel, particularly below the list on mobile."],
+      "genericityNote": "Conventional master-detail inventory is appropriate; the concern is the observed missing row content, not familiarity. Neutralization may have removed its state contrast."
+    },
+    {
+      "view": "view-02",
+      "scores": {"entryPriority": 4, "decisionContext": 4, "narrowContext": 2, "recoveryFlow": 4, "compositionPurpose": 3},
+      "evidence": {
+        "entryPriority": "Two labeled fields and a clear two-step indicator make entry understandable. The large home-oriented headline occupies substantial space before the task, but recipient, amount and Review are grouped coherently.",
+        "decisionContext": "Desktop review places the full recipient beside a breakdown showing 375 sent, 2.50 fee, 377.50 total, 9,375,000 VND and the illustrative date. Total is bold and simulation is explicit by confirmation.",
+        "narrowContext": "The mobile review/failure puts the confirm/retry area before the entire cost summary below it. The user can act without passing the total debit or delivery estimate; although all content fits 390px, this ordering weakens the central verification task.",
+        "recoveryFlow": "Failure text explains this is a practice error, says details are saved and changes the action to Retry simulated transfer. Edit remains above the error. Trace confirms edits recalculate, bounds reject and retry succeeds; after-error editing was not separately exercised.",
+        "compositionPurpose": "Form plus financial summary supports the task on desktop. On mobile the same columns stack into an action-first sequence, and repeated practice disclosures and the large headline lengthen the route to cost context."
+      },
+      "blockers": [],
+      "unnecessaryRegions": ["Large promotional headline before entry; repeated practice reassurance beneath summary and again in footer."],
+      "genericityNote": "A standard form-and-summary layout fits transfer review, but needs deliberate mobile ordering rather than simply stacking its desktop columns."
+    },
+    {
+      "view": "view-03",
+      "scores": {"entryPriority": 4, "decisionContext": 4, "narrowContext": 3, "recoveryFlow": 4, "compositionPurpose": 4},
+      "evidence": {
+        "entryPriority": "Product illustration and name establish the object immediately, with price, stock, named glazes and quantity grouped in the purchase column. Ash explicitly says Unavailable.",
+        "decisionContext": "Shipping-inclusive 76 initial and 144 at Sand x2 sit immediately above Add. Dispatch is nearby, while dimensions, material, care and full returns are lower down. Selected glaze is stated in text even though neutral swatches look alike.",
+        "narrowContext": "Mobile preserves all controls without horizontal clipping and keeps total directly before Add, but image, disclosure, oversized title and slogan push glaze selection to original y902 and add to y1087. Practical details require further scrolling.",
+        "recoveryFlow": "Cart feedback immediately below Add names 2 Sand teapots, 144 total and simulation. Controls retain Sand and 2; trace confirms Ash cannot be purchased. No removal or cart-edit flow is evidenced.",
+        "compositionPurpose": "Image/purchase split and a factual useful-details table suit a physical craft product. The large lower slogan adds hierarchy but competes somewhat with the actual dimensions and care."
+      },
+      "blockers": [],
+      "unnecessaryRegions": ["Large 'Made to be reached for' heading adds mobile length before practical details."],
+      "genericityNote": "Familiar product-page structure serves this task; specific stock, shipping total, care and returns carry the usefulness rather than novelty."
+    },
+    {
+      "view": "view-04",
+      "scores": {"entryPriority": 4, "decisionContext": 4, "narrowContext": 4, "recoveryFlow": 4, "compositionPurpose": 4},
+      "evidence": {
+        "entryPriority": "Find stock and shortage checkbox precede full readable names/SKUs with available/reorder pairs and explicit shortage quantities. The isolated '3 items' beside an unchecked filter is mildly ambiguous against STOCK ITEMS 5.",
+        "decisionContext": "Review prominently shows full linen name, 8 pieces, LIN-115 and B-04, followed by an explicit no purchase order statement. Trace records complete stock evidence and valid quantity behavior; review does not repeat incoming evidence.",
+        "narrowContext": "Mobile switches to focused detail/review while retaining a text summary of current list count, shortage filter and search, plus Back to stock list. The name and requested location wrap without clipping. Save original y760 remains in the first viewport.",
+        "recoveryFlow": "Failure message says decision was not saved and quantity retained, immediately above Edit and Retry save. Trace confirms returning retains the filtered query, edit keeps quantity and retry records locally.",
+        "compositionPurpose": "Compact operations heading, stock comparison list and focused review all support a concrete decision. Empty desktop inspector uses generous space but explains the next action without unrelated dashboard regions."
+      },
+      "blockers": [],
+      "unnecessaryRegions": [],
+      "genericityNote": "Conventional master-detail composition is well matched to inventory inspection, with a purposeful mobile replacement and retained list context."
+    },
+    {
+      "view": "view-05",
+      "scores": {"entryPriority": 4, "decisionContext": 4, "narrowContext": 3, "recoveryFlow": 3, "compositionPurpose": 4},
+      "evidence": {
+        "entryPriority": "Search, filter and five concise rows are visible with name, SKU/location, available units and shortage. Mobile names use small dense type, but LIN-115 remains readable and identifiable.",
+        "decisionContext": "Review gives item, bin B-04 and requested 8 pieces directly above the no-order/no-stock-change notice. Mobile failure returns to inspect, where a clear 2x2 table shows 2 available, 10 reorder, 8 shortage and 4 incoming with a separation explanation.",
+        "narrowContext": "The filtered list stays above the inspector, preserving query and checkbox visually, but lengthy header/disclosure plus list push the decision down; original save is y844. Dense list text and the wrapped brand/warehouse header reduce scan comfort.",
+        "recoveryFlow": "Trace confirms invalid values, edit retention, list retention and retry success. In the failure screenshot the UI has returned to editable quantity with Review decision still present and a separate small Retry save below it, making the current phase less clear than the desktop review.",
+        "compositionPurpose": "Compact master-detail table gives a useful scan and the stock-evidence grid explains the decision. The substantial empty selection panel and repeated simulation footer contribute less than the working regions."
+      },
+      "blockers": ["Required item-LIN-115 test hook fails on both viewports; visible row selection was used successfully, so this is diagnostic rather than a demonstrated user-task block."],
+      "unnecessaryRegions": ["Tall initial Select an item panel on mobile."],
+      "genericityNote": "A familiar inventory table is appropriate. Small typography and the failure phase transition, rather than generic appearance, are the practical weaknesses."
+    },
+    {
+      "view": "view-06",
+      "scores": {"entryPriority": 4, "decisionContext": 4, "narrowContext": 3, "recoveryFlow": 4, "compositionPurpose": 4},
+      "evidence": {
+        "entryPriority": "Image, product title, price and capacity establish the item; numbered glaze and quantity steps have named stock counts and a check on the selected option. Ash is plainly unavailable.",
+        "decisionContext": "An item subtotal, 8 shipping and prominent order total precede Add; Sand x2 correctly shows 136 plus 8 equals 144. Delivery and full returns sit directly below, with material/dimensions/care farther down. Caption states only Iron is pictured.",
+        "narrowContext": "390px preserves the three glaze options and selected check, total and feedback without clipping. Image-first stacking and description put glazes at original y840 and Add at y1139, requiring a long scroll before task completion.",
+        "recoveryFlow": "Mobile cart count becomes 2 and adjacent feedback states Sand x2, USD144 including shipping and no real order. Selection remains editable; trace confirms unavailable Ash is blocked. No removal/undo evidence is available.",
+        "compositionPurpose": "Purchase facts are grouped around the controls and supplementary facts are clearly labeled. Desktop 'A simple vessel' text below the image contributes atmosphere but little to choosing the glaze or understanding terms."
+      },
+      "blockers": [],
+      "unnecessaryRegions": ["Desktop 'A simple vessel. A little time for tea' region has little task information."],
+      "genericityNote": "Conventional image-and-purchase layout is useful here, with meaningful stock and cost detail; restrained familiarity is not itself a defect."
+    },
+    {
+      "view": "view-07",
+      "scores": {"entryPriority": 4, "decisionContext": 4, "narrowContext": 3, "recoveryFlow": 4, "compositionPurpose": 4},
+      "evidence": {
+        "entryPriority": "Search/filter and snapshot-order list give explicit short quantities, available units, location and incoming on every row. This supports triage directly, though tall rows and header place later stock below the first viewport.",
+        "decisionContext": "Filtered LIN-115 row retains available 2, B-04 and incoming 4 beside the review; review emphasizes 8 pieces and no purchase order. Trace supplies full reorder evidence and quantity validation; review itself does not restate reorder 10.",
+        "narrowContext": "Mobile retains actual query, checked shortage filter and selected row above review, so context is visible. It also repeats the long item name and pushes action to original y1057; all five initial rows plus empty inspector make a lengthy page.",
+        "recoveryFlow": "Failure explicitly states not recorded and quantity retained; Retry save and Edit quantity remain beside each other. Trace confirms edit and return retention, invalid quantity rejection and local retry success.",
+        "compositionPurpose": "Rows use their space for operational facts, not invented metrics, and the review is distinct. The oversized initial inspector and repeated instructions make the page longer than necessary."
+      },
+      "blockers": [],
+      "unnecessaryRegions": ["Large initial Inspect an item panel below the full mobile list."],
+      "genericityNote": "Standard master-detail structure fits the warehouse task; explicit units and incoming values justify the row design, while mobile length is its main tradeoff."
+    },
+    {
+      "view": "view-08",
+      "scores": {"entryPriority": 4, "decisionContext": 5, "narrowContext": 3, "recoveryFlow": 4, "compositionPurpose": 4},
+      "evidence": {
+        "entryPriority": "Direct setup heading and clearly labeled recipient and You send fields lead into a distinct breakdown; the Review action sits beneath the costs rather than before them.",
+        "decisionContext": "Review groups the full recipient with source and Edit, and a financial panel distinguishes sent amount, fee, bold total debit, prominent VND received, exchange rate and illustrative delivery. Confirmation follows this context and explicitly says simulated.",
+        "narrowContext": "At 390px the cost breakdown precedes confirmation/retry and full Vietnamese name wraps well. Large panel gaps require a long scroll, with original confirm y1148. 320 metadata reports scrollWidth342 for width320, an unresolved narrower-width overflow without a screenshot.",
+        "recoveryFlow": "A separate failure box says details saved and no money moved, then offers Retry simulation; Edit stays available above the full cost breakdown. Trace confirms range rejection, recalculating edit and success, with post-error editing not separately exercised.",
+        "compositionPurpose": "Two task-focused panels and cost-before-action ordering suit deliberate verification. Repeated footer simulation text and generous gaps add length without additional decision information."
+      },
+      "blockers": ["320px metadata records 22px horizontal overflow; its affected content is unknown because only 390px mobile images are supplied."],
+      "unnecessaryRegions": ["Duplicate simulation statement in footer after the action disclosure."],
+      "genericityNote": "Common form-and-breakdown composition is particularly well aligned to checking recipient and total; no novelty is needed for that benefit."
+    },
+    {
+      "view": "view-09",
+      "scores": {"entryPriority": 3, "decisionContext": 4, "narrowContext": 3, "recoveryFlow": 2, "compositionPurpose": 3},
+      "evidence": {
+        "entryPriority": "Entry form labels recipient and amount clearly and states the added 2.50 fee before Review. The large confidence headline and source-account block precede the actual fields; a side reassurance region occupies desktop space without showing the cost.",
+        "decisionContext": "Desktop review places recipient, sent amount, fee, total debit, exchange rate, VND received and delivery into one sequential card before confirm. Text is relatively small but labels and separators make the arithmetic identifiable.",
+        "narrowContext": "Entry fits 390px with a full recipient and removes the desktop reassurance sidebar. Failure is compact, but its retained-details line runs labels, 400 USD and recipient together, making narrow-screen verification difficult despite no reported document overflow.",
+        "recoveryFlow": "Failure offers Try again and Edit details and says data are saved; trace confirms retry success. However the stepper highlights Complete while the card says Try again and the retained recipient/amount summary is visually concatenated, undermining confidence in what completed.",
+        "compositionPurpose": "A sequential review card serves the task. The desktop route/reassurance quote adds little evidence, and the oversized persistent marketing headline competes with state-specific headings."
+      },
+      "blockers": ["Failure marks the Complete step while reporting an unsuccessful transfer, and the retained recipient/amount line is difficult to parse visually."],
+      "unnecessaryRegions": ["Desktop 'A little more certainty' route/quote sidebar.", "Large repeated Send with confidence headline during review and error."],
+      "genericityNote": "A familiar stepper and review card would fit well, but the observed Complete/error contradiction and data layout matter more than the generic reassurance styling."
+    },
+    {
+      "view": "view-10",
+      "scores": {"entryPriority": 4, "decisionContext": 5, "narrowContext": 4, "recoveryFlow": 4, "compositionPurpose": 4},
+      "evidence": {
+        "entryPriority": "Product, unit price and three named stock options are immediately clear on desktop. Native selected radio plus stronger border identifies Iron/Sand, while Ash says unavailable; a Material, dimensions & care link makes lower facts discoverable.",
+        "decisionContext": "Delivery and full returns appear before the item/shipping/total breakdown and Add. Sand x2 shows USD136 plus USD8 shipping and bold USD144 before commitment. Illustration explicitly says Iron only, avoiding a false Sand preview.",
+        "narrowContext": "Mobile maintains selected radios, stock labels, link to practical details, full returns and total before Add without clipping. Image-first flow still puts Add at original y1206, but all purchase conditions precede it and the hierarchy remains understandable.",
+        "recoveryFlow": "A bordered cart confirmation directly below action names 2 Everyday Teapot in Sand, total USD144 and no order placed. Controls remain at Sand and 2; trace confirms Ash prevention. Cart removal and undo are unobserved.",
+        "compositionPurpose": "Image and material table balance the purchase column; detail anchor and deliberate terms-before-total ordering connect composition to the decision. Lower descriptive heading is modest and followed by factual material/size/care."
+      },
+      "blockers": [],
+      "unnecessaryRegions": [],
+      "genericityNote": "This conventional product layout earns its clarity through the ordering of terms, explicit selected state and factual detail, not through stylistic novelty."
+    },
+    {
+      "view": "view-11",
+      "scores": {"entryPriority": 4, "decisionContext": 3, "narrowContext": 3, "recoveryFlow": 3, "compositionPurpose": 3},
+      "evidence": {
+        "entryPriority": "Product image, title and price are easy to locate and named glazes precede quantity. Selected glaze is repeated as text and stock, but neutral controls themselves lack a clear selected mark; Ash's unavailable text is very small.",
+        "decisionContext": "Order total including shipping is visible before Add, correctly 144 at Sand x2, with 8 shipping stated. Material and dimensions are visible below; care and delivery/returns are collapsed and no expanded screenshot or trace verifies their contents. Fictional/cart simulation disclosure is mainly in the distant footer until cart feedback.",
+        "narrowContext": "Mobile preserves the full-width three-glaze row and readable title, but image/disclosure/tagline precede controls and quantity/Add are below the first viewport (original Add y953). Accordions reduce length but make essential purchase conditions an extra discovery action.",
+        "recoveryFlow": "Cart feedback names 2 Sand teapots and 144 including shipping, simulated only; selected name and quantity remain visible. Trace confirms unavailable Ash prevention. Initial helper 'Choose a glaze and quantity to see your order total' persists despite an already selected glaze and displayed total, making state guidance less accurate.",
+        "compositionPurpose": "Standard image/purchase split and compact facts are sensible. Multiple collection/form-study/tagline labels consume attention before the controls, while practical terms are visually understated behind collapsed sections."
+      },
+      "blockers": [],
+      "unnecessaryRegions": ["Collection numbering, form-study labels and 'Thrown, glazed, made to be used' line add little purchase information.", "Stale choose-glaze helper despite displayed total."],
+      "genericityNote": "Familiar product composition is suitable, but craft-like labels do not substitute for readily readable delivery, care and returns. Neutralization may obscure selected styling."
+    },
+    {
+      "view": "view-12",
+      "scores": {"entryPriority": 4, "decisionContext": 4, "narrowContext": 4, "recoveryFlow": 4, "compositionPurpose": 3},
+      "evidence": {
+        "entryPriority": "Direct setup heading, recipient label with Vietnamese-marks guidance, amount bounds and Review action make entry straightforward. Desktop live estimate repeats recipient and summarizes costs; mobile moves this estimate below Review.",
+        "decisionContext": "Review keeps full recipient, sent amount, 2.50 fee, bold total debit, VND received and illustrative delivery together above confirm. Edit details sits at the panel heading. Currency is mostly dollar/đ symbols rather than explicit USD/VND labels in the summary, a minor clarity weakness.",
+        "narrowContext": "At 390px entry fields and review action remain readable, and failure becomes a focused saved-details card rather than retaining the whole entry page. Error summary preserves name, 400 sent, 402.50 total and 10,000,000 đ. Retry wraps into three lines but remains recognizable beside Edit; 320 geometry reports no overflow, not complete narrow testing.",
+        "recoveryFlow": "Failure clearly says Transfer not completed, explains saved details, repeats recipient and totals, and offers retry plus edit. Trace confirms range rejection, edit recalculation and simulated success; after-error edit itself is not separately exercised.",
+        "compositionPurpose": "Core form/estimate and focused review/error cards serve the task. The desktop 'What happens next' panel explains the scripted failure implementation and repeats delivery, adding nonessential demonstration mechanics to the customer decision."
+      },
+      "blockers": [],
+      "unnecessaryRegions": ["Review-side explanation that first confirmation is designed to fail, plus duplicated delivery estimate."],
+      "genericityNote": "Conventional panels and edit/review flow work well; implementation-oriented demo explanation is less useful than the actual recipient and cost summary."
+    }
+  ],
+  "limitations": [
+    "Inspected all 48 supplied neutral images using view_image: desktop-full, mobile-full, desktop-review and mobile-failure/cart for each of twelve views, in packet view order. Read only instructions.md, neutral-packet.json and its referenced images before submission.",
+    "Read task/fixture contracts, original initial/decision geometry and desktop/mobile scripted traces. Repeated task texts were checked identical within task families. Geometry describes original placement, not proof of ease or quality.",
+    "No authored styling, axe observations, source code, manifest, gallery, other review or prior study inspected. Neutral CSS can remove color-only states and alter wrapping; blank LIN-115 visuals and subdued selections must be revisited only in the separately released authored stage.",
+    "Screenshots cover 1440px desktop and 390px mobile selected states; 320px provides only width/scrollWidth/pageHeight metadata. No live interaction or full keyboard/accessibility audit performed; scripted passes do not establish comprehension, usability or conformance.",
+    "Inventory inspect evidence and many empty/invalid/success states are primarily trace-backed rather than separately pictured. Commerce care/returns accordions in view-11 were not shown expanded. Transfer traces preserve failure summaries but explicitly do not separately exercise editing after failure."
+  ]
+}

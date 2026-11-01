@@ -1,6 +1,6 @@
 {
   "name": "@tasteforge/knowledge",
-  "version": "0.1.0",
+  "version": "0.2.0-beta.1",
   "description": "Versioned UI design knowledge for TasteForge: styles, font pairings, color palettes, accessibility guidance, and Zod validation.",
   "type": "module",
   "license": "MIT",
@@ -11,10 +11,16 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./references": {
+      "types": "./dist/references.d.ts",
+      "import": "./dist/references.js"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "third-party",
+    "reference-lock.json"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",

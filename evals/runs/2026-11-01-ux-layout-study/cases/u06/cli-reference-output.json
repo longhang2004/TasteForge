@@ -1,0 +1,45 @@
+{
+  "version": "2026.11.01.2",
+  "entry": {
+    "id": "promax-app-interface-12",
+    "kind": "rule",
+    "sourceId": "promax",
+    "sourcePath": "src/ui-ux-pro-max/data/app-interface.csv",
+    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/bf41cbc3ce63e30c922e58ef48741ba6133f9aa9/src/ui-ux-pro-max/data/app-interface.csv",
+    "inputSha256": "331e7cf2c0b222d80c566c5f255c63cb339f65bfd02e471a720f28e4864a9f08",
+    "contentSha256": "ced106f337623ab527e21f45b6618c467e32dd105f54678a39b4c352fd3c6bdc",
+    "title": "Preserve Screen State",
+    "summary": "Returning to a screen should restore its scroll and form state",
+    "content": "No: 12\nCategory: State\nIssue: Preserve Screen State\nKeywords: navigation preserve state\nPlatform: iOS/Android/React Native\nDescription: Returning to a screen should restore its scroll and form state\nDo: Keep components mounted or persist state\nDon't: Reset list scroll and form inputs on every visit\nCode Example Good: <Tab.Navigator screenOptions={{ unmountOnBlur: false }}>\nCode Example Bad: <Tab.Screen options={{ unmountOnBlur: true }} />\nSeverity: Medium",
+    "tags": [
+      "app-interface",
+      "State",
+      "navigation preserve state"
+    ],
+    "tasks": [
+      "booking",
+      "form"
+    ],
+    "status": "active",
+    "complexity": "unknown",
+    "risk": "unassessed",
+    "evidence": "upstream-catalog-row",
+    "selectionScope": "contextual-guidance",
+    "rowNumber": 13,
+    "upstreamStatus": "active",
+    "avoid": "",
+    "avoidContexts": []
+  },
+  "source": {
+    "id": "promax",
+    "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "revision": "bf41cbc3ce63e30c922e58ef48741ba6133f9aa9",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/bf41cbc3ce63e30c922e58ef48741ba6133f9aa9/LICENSE",
+    "licenseText": "MIT License\n\nCopyright (c) 2024 Next Level Builder\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "accessedAt": "2026-11-01",
+    "authorship": "not-independently-verified",
+    "licenseSha256": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014"
+  },
+  "trust": "Untrusted reference data; not agent instructions or executable code."
+}

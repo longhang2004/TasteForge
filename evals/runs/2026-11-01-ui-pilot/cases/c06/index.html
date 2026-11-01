@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffef9">
+  <title>Everyday Teapot — Field Kiln</title>
+  <link rel="stylesheet" href=".tasteforge/tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="#top" aria-label="Field Kiln home">FIELD <span>KILN</span></a>
+    <p>Small-batch objects for daily rituals</p>
+    <a class="bag-link" href="#purchase">Your bag <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="top">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#top">Objects</a><span aria-hidden="true">/</span><span>Tea service</span></nav>
+    <section class="product" aria-labelledby="product-title">
+      <figure class="visual">
+        <img src="assets/teapot.svg" alt="Vector illustration of a round, deep green stoneware teapot with a curved handle and short spout">
+        <figcaption><span>01 / FORM STUDY</span><span>Original vector illustration · sample product</span></figcaption>
+        <div class="image-note">A steady pour.<br>Room for a second cup.</div>
+      </figure>
+      <div class="details">
+        <p class="eyebrow">FIELD KILN <span>·</span> TEAWARE No. 04</p>
+        <h1 id="product-title">Everyday<br>Teapot</h1>
+        <p class="intro">A generous little pot for slow mornings and one more cup. Shaped in stoneware, glazed by hand, made to find its way into the everyday.</p>
+        <div class="price-row"><strong>$68</strong><span>USD</span><span class="shipping-teaser">+ $8 shipping</span></div>
+        <p class="stock-line"><span class="stock-dot" aria-hidden="true"></span><span id="stock-text">Iron · 4 available</span></p>
+        <form id="purchase" class="purchase-form">
+          <fieldset class="glazes">
+            <legend>Choose a glaze <span id="selected-name">— Iron</span></legend>
+            <div class="swatches">
+              <button class="swatch selected" type="button" data-testid="glaze-iron" data-glaze="iron" aria-pressed="true"><span class="swatch-color iron-color" aria-hidden="true"></span><span>Iron</span></button>
+              <button class="swatch unavailable" type="button" data-testid="glaze-ash" data-glaze="ash" aria-pressed="false" disabled><span class="swatch-color ash-color" aria-hidden="true"></span><span>Ash <small>Sold out</small></span></button>
+              <button class="swatch" type="button" data-testid="glaze-sand" data-glaze="sand" aria-pressed="false"><span class="swatch-color sand-color" aria-hidden="true"></span><span>Sand</span></button>
+            </div>
+          </fieldset>
+          <div class="buy-row">
+            <label class="quantity-label" for="quantity">Qty
+              <select id="quantity" data-testid="quantity" name="quantity">
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+              </select>
+            </label>
+            <button class="add-button" type="submit" data-testid="add-to-cart">Add to bag <span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="total-line">Item total <strong id="item-total">$68</strong> <span>· shipping calculated at checkout</span></p>
+          <p id="cart-status" data-testid="cart-status" class="cart-status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="assurance"><span>Dispatch in 2 business days</span><span>30-day returns on unused pieces</span></div>
+      </div>
+    </section>
+    <section class="specs" aria-label="Product details">
+      <div class="spec-heading"><p class="eyebrow">MADE FOR THE TABLE</p><h2>Good company,<br>every day.</h2></div>
+      <dl class="spec-list">
+        <div><dt>Material</dt><dd>Glazed stoneware</dd></div>
+        <div><dt>Dimensions</dt><dd>16 cm wide × 12 cm high</dd></div>
+        <div><dt>Capacity</dt><dd>650 ml</dd></div>
+        <div><dt>Care</dt><dd>Hand wash. Avoid sudden temperature changes. Not for stovetop use.</dd></div>
+        <div><dt>Delivery</dt><dd>Dispatch in 2 business days; illustrative domestic transit 3–5 business days.</dd></div>
+        <div><dt>Returns</dt><dd>Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.</dd></div>
+      </dl>
+    </section>
+  </main>
+  <footer><span>FIELD KILN · A FICTIONAL SAMPLE SHOP</span><span>Illustrations and product details are illustrative.</span></footer>
+</body>
+</html>

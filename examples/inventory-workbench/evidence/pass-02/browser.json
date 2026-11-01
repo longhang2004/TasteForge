@@ -1,0 +1,29 @@
+{
+  "createdAt": "2026-11-01T09:16:34.958Z",
+  "chromium": "156.0.8078.4",
+  "userTesting": "not performed",
+  "traces": [
+    {
+      "id": "selected-1440",
+      "states": {},
+      "checks": [
+        "Initially five rows; no selection"
+      ],
+      "errors": [],
+      "externalRequests": []
+    }
+  ],
+  "candidates": [],
+  "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.mjs:219:13)\n    at async snapshot (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/check.mjs:48:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/check.mjs:99:5",
+  "axeFindings": [],
+  "sources": {
+    "index.html": "5d9ce5d78500227189a7698cec88c8f74eaca7a8931093681c09e48989e8eb5a",
+    "app.mjs": "da326cbcc390a59d08daa445c43fc099d193a5880903f9f0a7c0c66d32634207",
+    "styles.css": "fc021eb83c5114b9ce067467a869459f948607272fddd78a973b4cad40eb814d",
+    "prototype.html": "eb9c2996cec18c18c3b344e33f2c7dfb85845fe99ff90abcb55878a7645a2623",
+    "prototype.mjs": "20fb93d92cca5e5233eeb1cb0f9a3c5bbbc985c37da84540d4e34c4e1ccbe3b3",
+    "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+    "tools/check.mjs": "a51ebfabf3333343273a4fb4c8d8b5282385dd320dd7697130719e291e714d75",
+    "tools/serve.mjs": "50949b25e1031bb2dfd8ecaa215001a44bfd696a7ae31f93ccee24096b183dad"
+  }
+}

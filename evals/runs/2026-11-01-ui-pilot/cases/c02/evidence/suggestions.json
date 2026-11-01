@@ -1,0 +1,367 @@
+{
+  "engineVersion": "0.1.0",
+  "directions": [
+    {
+      "style": {
+        "id": "learning-studio",
+        "name": "Learning Studio",
+        "summary": "Clear progression and focused study regions reduce cognitive load.",
+        "productTypes": [
+          "education",
+          "service",
+          "community"
+        ],
+        "industries": [
+          "education",
+          "science"
+        ],
+        "audienceTags": [
+          "students",
+          "beginners",
+          "teachers"
+        ],
+        "personalities": [
+          "optimistic",
+          "inclusive",
+          "thoughtful"
+        ],
+        "density": "balanced",
+        "complexity": "low",
+        "distinctiveness": 0.5,
+        "fontPairIds": [
+          "vietnam-vietnam",
+          "source-serif-sans",
+          "manrope-source",
+          "system-serif"
+        ],
+        "paletteIds": [
+          "indigo-study",
+          "navy-sand",
+          "forest-mist"
+        ],
+        "layout": [
+          "Separate instruction, practice, and feedback.",
+          "Use a quiet reading column beside optional tools."
+        ],
+        "motion": [
+          "Use short transitions to communicate state changes, not to delay tasks.",
+          "Honor prefers-reduced-motion and provide immediate feedback."
+        ],
+        "guidance": [
+          "Reward understanding with actionable feedback.",
+          "Keep course progress factual."
+        ],
+        "avoid": [
+          "Do not substitute decorative novelty for task clarity.",
+          "Do not apply this direction over an established design system without explicit redesign intent."
+        ]
+      },
+      "fontPair": {
+        "id": "source-serif-sans",
+        "heading": {
+          "family": "Source Serif 4",
+          "stack": "\"Source Serif 4\", Georgia, serif",
+          "languages": [
+            "en",
+            "vi"
+          ],
+          "source": "https://github.com/google/fonts/blob/main/ofl/sourceserif4/METADATA.pb",
+          "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+        },
+        "body": {
+          "family": "Source Sans 3",
+          "stack": "\"Source Sans 3\", Arial, sans-serif",
+          "languages": [
+            "en",
+            "vi"
+          ],
+          "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+          "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+        },
+        "delivery": "optional-web",
+        "rationale": "Editorial headings and practical supporting text."
+      },
+      "palette": {
+        "id": "navy-sand",
+        "name": "Navy and Sand",
+        "mode": "light",
+        "colors": {
+          "background": "#f7f4ed",
+          "foreground": "#162c40",
+          "surface": "#ffffff",
+          "muted": "#4f6070",
+          "accent": "#164e63",
+          "onAccent": "#ffffff",
+          "border": "#a2afb8"
+        },
+        "rationale": "Trust-oriented palette for public and financial services."
+      },
+      "score": {
+        "fit": 0.5,
+        "brand": 0,
+        "usability": 0.3,
+        "technical": 1,
+        "distinctiveness": 0.85,
+        "total": 0.445
+      },
+      "explanations": [
+        "Learning Studio: Clear progression and focused study regions reduce cognitive load.",
+        "Product/industry matches: 0.50; brand-tag overlap: 0.00. These are editorial heuristics, not validated measurements.",
+        "balanced layout supports the audience and goals; implementation complexity is low.",
+        "Reward understanding with actionable feedback.",
+        "Keep course progress factual."
+      ],
+      "weights": {
+        "fit": 0.3,
+        "brand": 0.25,
+        "usability": 0.2,
+        "technical": 0.15,
+        "distinctiveness": 0.1
+      },
+      "seed": 42,
+      "engineVersion": "0.1.0",
+      "knowledgeVersion": "0.1.0"
+    },
+    {
+      "style": {
+        "id": "modern-institutional",
+        "name": "Modern Institutional",
+        "summary": "Clear navigation and measured hierarchy support trustworthy services.",
+        "productTypes": [
+          "service",
+          "publication",
+          "education"
+        ],
+        "industries": [
+          "public",
+          "healthcare",
+          "education"
+        ],
+        "audienceTags": [
+          "general",
+          "seniors",
+          "professionals"
+        ],
+        "personalities": [
+          "trustworthy",
+          "calm",
+          "inclusive"
+        ],
+        "density": "balanced",
+        "complexity": "low",
+        "distinctiveness": 0.4,
+        "fontPairIds": [
+          "noto-serif-sans",
+          "noto-serif-vietnam",
+          "source-source",
+          "system-serif"
+        ],
+        "paletteIds": [
+          "navy-sand",
+          "teal-clinic",
+          "slate-blue"
+        ],
+        "layout": [
+          "Lead with service tasks and eligibility.",
+          "Use descriptive headings and predictable navigation."
+        ],
+        "motion": [
+          "Use short transitions to communicate state changes, not to delay tasks.",
+          "Honor prefers-reduced-motion and provide immediate feedback."
+        ],
+        "guidance": [
+          "Prefer explicit language over brand slogans.",
+          "Make help and error recovery visible."
+        ],
+        "avoid": [
+          "Do not substitute decorative novelty for task clarity.",
+          "Do not apply this direction over an established design system without explicit redesign intent."
+        ]
+      },
+      "fontPair": {
+        "id": "noto-serif-vietnam",
+        "heading": {
+          "family": "Noto Serif",
+          "stack": "\"Noto Serif\", Georgia, serif",
+          "languages": [
+            "en",
+            "vi"
+          ],
+          "source": "https://github.com/google/fonts/blob/main/ofl/notoserif/METADATA.pb",
+          "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+        },
+        "body": {
+          "family": "Be Vietnam Pro",
+          "stack": "\"Be Vietnam Pro\", Arial, sans-serif",
+          "languages": [
+            "en",
+            "vi"
+          ],
+          "source": "https://github.com/google/fonts/blob/main/ofl/bevietnampro/METADATA.pb",
+          "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+        },
+        "delivery": "optional-web",
+        "rationale": "Formal titles with approachable multilingual controls."
+      },
+      "palette": {
+        "id": "slate-blue",
+        "name": "Slate Blue",
+        "mode": "light",
+        "colors": {
+          "background": "#f8fafc",
+          "foreground": "#172033",
+          "surface": "#ffffff",
+          "muted": "#4b5563",
+          "accent": "#2048a0",
+          "onAccent": "#ffffff",
+          "border": "#94a3b8"
+        },
+        "rationale": "Cool neutrals separate task structure from primary actions."
+      },
+      "score": {
+        "fit": 0.5,
+        "brand": 0.5,
+        "usability": 0.3,
+        "technical": 1,
+        "distinctiveness": 0.95,
+        "total": 0.58
+      },
+      "explanations": [
+        "Modern Institutional: Clear navigation and measured hierarchy support trustworthy services.",
+        "Product/industry matches: 0.50; brand-tag overlap: 0.50. These are editorial heuristics, not validated measurements.",
+        "balanced layout supports the audience and goals; implementation complexity is low.",
+        "Prefer explicit language over brand slogans.",
+        "Make help and error recovery visible."
+      ],
+      "weights": {
+        "fit": 0.3,
+        "brand": 0.25,
+        "usability": 0.2,
+        "technical": 0.15,
+        "distinctiveness": 0.1
+      },
+      "seed": 42,
+      "engineVersion": "0.1.0",
+      "knowledgeVersion": "0.1.0"
+    },
+    {
+      "style": {
+        "id": "swiss-editorial",
+        "name": "Swiss Editorial",
+        "summary": "A disciplined grid with a decisive typographic lead.",
+        "productTypes": [
+          "publication",
+          "portfolio",
+          "commerce"
+        ],
+        "industries": [
+          "media",
+          "culture",
+          "fashion"
+        ],
+        "audienceTags": [
+          "readers",
+          "professionals"
+        ],
+        "personalities": [
+          "precise",
+          "confident",
+          "restrained"
+        ],
+        "density": "balanced",
+        "complexity": "medium",
+        "distinctiveness": 0.7,
+        "fontPairIds": [
+          "inter-inter",
+          "source-serif-sans",
+          "inter-source",
+          "system-serif"
+        ],
+        "paletteIds": [
+          "ink-paper",
+          "cobalt-chalk",
+          "mono-light"
+        ],
+        "layout": [
+          "Use asymmetric columns with aligned edges.",
+          "Let one headline establish the entry point."
+        ],
+        "motion": [
+          "Use short transitions to communicate state changes, not to delay tasks.",
+          "Honor prefers-reduced-motion and provide immediate feedback."
+        ],
+        "guidance": [
+          "Use a clear grid rather than decorative containers.",
+          "Use captions and rules to connect related content."
+        ],
+        "avoid": [
+          "Do not substitute decorative novelty for task clarity.",
+          "Do not apply this direction over an established design system without explicit redesign intent."
+        ]
+      },
+      "fontPair": {
+        "id": "system-serif",
+        "heading": {
+          "family": "serif",
+          "stack": "Georgia, serif",
+          "languages": [
+            "en"
+          ],
+          "source": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
+          "coverageNote": "Generic family selection is OS-dependent. Vietnamese coverage is unverified and excluded from hard language compatibility; validate target systems before extending it."
+        },
+        "body": {
+          "family": "serif",
+          "stack": "Georgia, serif",
+          "languages": [
+            "en"
+          ],
+          "source": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
+          "coverageNote": "Generic family selection is OS-dependent. Vietnamese coverage is unverified and excluded from hard language compatibility; validate target systems before extending it."
+        },
+        "delivery": "system",
+        "rationale": "Use installed fonts without a network or font-file dependency; validate metrics and glyphs on target systems."
+      },
+      "palette": {
+        "id": "cobalt-chalk",
+        "name": "Cobalt and Chalk",
+        "mode": "light",
+        "colors": {
+          "background": "#fffef9",
+          "foreground": "#151515",
+          "surface": "#ffffff",
+          "muted": "#505050",
+          "accent": "#173ca4",
+          "onAccent": "#ffffff",
+          "border": "#a3a3a3"
+        },
+        "rationale": "Strong action contrast against an almost neutral field."
+      },
+      "score": {
+        "fit": 0,
+        "brand": 0,
+        "usability": 0.3,
+        "technical": 0.75,
+        "distinctiveness": 0.65,
+        "total": 0.2375
+      },
+      "explanations": [
+        "Swiss Editorial: A disciplined grid with a decisive typographic lead.",
+        "Product/industry matches: 0.00; brand-tag overlap: 0.00. These are editorial heuristics, not validated measurements.",
+        "balanced layout supports the audience and goals; implementation complexity is medium.",
+        "Use a clear grid rather than decorative containers.",
+        "Use captions and rules to connect related content."
+      ],
+      "weights": {
+        "fit": 0.3,
+        "brand": 0.25,
+        "usability": 0.2,
+        "technical": 0.15,
+        "distinctiveness": 0.1
+      },
+      "seed": 42,
+      "engineVersion": "0.1.0",
+      "knowledgeVersion": "0.1.0"
+    }
+  ]
+}

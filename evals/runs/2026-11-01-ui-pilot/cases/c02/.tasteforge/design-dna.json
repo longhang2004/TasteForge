@@ -1,0 +1,243 @@
+{
+  "schemaVersion": "1.0",
+  "engineVersion": "0.1.0",
+  "knowledgeVersion": "0.1.0",
+  "seed": 42,
+  "direction": {
+    "style": {
+      "id": "modern-institutional",
+      "name": "Modern Institutional",
+      "summary": "Clear navigation and measured hierarchy support trustworthy services.",
+      "productTypes": [
+        "service",
+        "publication",
+        "education"
+      ],
+      "industries": [
+        "public",
+        "healthcare",
+        "education"
+      ],
+      "audienceTags": [
+        "general",
+        "seniors",
+        "professionals"
+      ],
+      "personalities": [
+        "trustworthy",
+        "calm",
+        "inclusive"
+      ],
+      "density": "balanced",
+      "complexity": "low",
+      "distinctiveness": 0.4,
+      "fontPairIds": [
+        "noto-serif-sans",
+        "noto-serif-vietnam",
+        "source-source",
+        "system-serif"
+      ],
+      "paletteIds": [
+        "navy-sand",
+        "teal-clinic",
+        "slate-blue"
+      ],
+      "layout": [
+        "Lead with service tasks and eligibility.",
+        "Use descriptive headings and predictable navigation."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "guidance": [
+        "Prefer explicit language over brand slogans.",
+        "Make help and error recovery visible."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    "fontPair": {
+      "id": "noto-serif-vietnam",
+      "heading": {
+        "family": "Noto Serif",
+        "stack": "\"Noto Serif\", Georgia, serif",
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "source": "https://github.com/google/fonts/blob/main/ofl/notoserif/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Be Vietnam Pro",
+        "stack": "\"Be Vietnam Pro\", Arial, sans-serif",
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "source": "https://github.com/google/fonts/blob/main/ofl/bevietnampro/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Formal titles with approachable multilingual controls."
+    },
+    "palette": {
+      "id": "slate-blue",
+      "name": "Slate Blue",
+      "mode": "light",
+      "colors": {
+        "background": "#f8fafc",
+        "foreground": "#172033",
+        "surface": "#ffffff",
+        "muted": "#4b5563",
+        "accent": "#2048a0",
+        "onAccent": "#ffffff",
+        "border": "#94a3b8"
+      },
+      "rationale": "Cool neutrals separate task structure from primary actions."
+    },
+    "score": {
+      "fit": 0.5,
+      "brand": 0.5,
+      "usability": 0.3,
+      "technical": 1,
+      "distinctiveness": 0.95,
+      "total": 0.58
+    },
+    "explanations": [
+      "Modern Institutional: Clear navigation and measured hierarchy support trustworthy services.",
+      "Product/industry matches: 0.50; brand-tag overlap: 0.50. These are editorial heuristics, not validated measurements.",
+      "balanced layout supports the audience and goals; implementation complexity is low.",
+      "Prefer explicit language over brand slogans.",
+      "Make help and error recovery visible."
+    ],
+    "weights": {
+      "fit": 0.3,
+      "brand": 0.25,
+      "usability": 0.2,
+      "technical": 0.15,
+      "distinctiveness": 0.1
+    },
+    "seed": 42,
+    "engineVersion": "0.1.0",
+    "knowledgeVersion": "0.1.0"
+  },
+  "context": {
+    "schemaVersion": "1.0",
+    "productType": "service",
+    "industry": "finance",
+    "audience": [
+      "occasional money-transfer customers"
+    ],
+    "goals": [
+      "Verify recipient and total cost before confirming a simulated transfer",
+      "Recover from failure without losing input"
+    ],
+    "brandPersonality": [
+      "clear",
+      "trustworthy"
+    ],
+    "existingConstraints": {
+      "preserveExisting": false,
+      "excludedDirections": [],
+      "maxComplexity": "medium",
+      "fontDelivery": "any"
+    },
+    "accessibility": {
+      "languages": [
+        "en"
+      ],
+      "minContrast": 4.5,
+      "reducedMotion": true
+    },
+    "creativity": 0.35
+  },
+  "rationale": [
+    "Modern Institutional: Clear navigation and measured hierarchy support trustworthy services.",
+    "Product/industry matches: 0.50; brand-tag overlap: 0.50. These are editorial heuristics, not validated measurements.",
+    "balanced layout supports the audience and goals; implementation complexity is low.",
+    "Prefer explicit language over brand slogans.",
+    "Make help and error recovery visible."
+  ],
+  "typography": {
+    "heading": "\"Noto Serif\", Georgia, serif",
+    "body": "\"Be Vietnam Pro\", Arial, sans-serif",
+    "lineHeight": 1.6
+  },
+  "colors": {
+    "background": "#f8fafc",
+    "foreground": "#172033",
+    "surface": "#ffffff",
+    "muted": "#4b5563",
+    "accent": "#2048a0",
+    "onAccent": "#ffffff",
+    "border": "#94a3b8"
+  },
+  "spacing": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": [
+    0,
+    2,
+    6
+  ],
+  "layout": [
+    "Lead with service tasks and eligibility.",
+    "Use descriptive headings and predictable navigation."
+  ],
+  "motion": [
+    "Use short transitions to communicate state changes, not to delay tasks.",
+    "Honor prefers-reduced-motion and provide immediate feedback."
+  ],
+  "accessibility": [
+    "Normal text contrast at least 4.5:1 on prescribed surfaces. Recheck custom combinations.",
+    "Use semantic controls, visible keyboard focus, accessible names, and logical reading order.",
+    "Test zoom, narrow viewports, long content, and Vietnamese diacritics when relevant.",
+    "Honor prefers-reduced-motion; never encode status through color alone."
+  ],
+  "antiPatterns": [
+    "Do not substitute decorative novelty for task clarity.",
+    "Do not apply this direction over an established design system without explicit redesign intent."
+  ],
+  "tokens": {
+    "--tf-font-heading": "\"Noto Serif\", Georgia, serif",
+    "--tf-font-body": "\"Be Vietnam Pro\", Arial, sans-serif",
+    "--tf-font-size-body": "1rem",
+    "--tf-font-size-small": "0.875rem",
+    "--tf-font-size-title": "clamp(2rem, 4vw, 3.5rem)",
+    "--tf-line-height-body": "1.6",
+    "--tf-content-width": "75rem",
+    "--tf-reading-width": "65ch",
+    "--tf-motion-duration": "0ms",
+    "--tf-color-background": "#f8fafc",
+    "--tf-color-foreground": "#172033",
+    "--tf-color-surface": "#ffffff",
+    "--tf-color-muted": "#4b5563",
+    "--tf-color-accent": "#2048a0",
+    "--tf-color-on-accent": "#ffffff",
+    "--tf-color-border": "#94a3b8",
+    "--tf-space-0": "0rem",
+    "--tf-space-1": "0.25rem",
+    "--tf-space-2": "0.5rem",
+    "--tf-space-3": "0.75rem",
+    "--tf-space-4": "1rem",
+    "--tf-space-5": "1.5rem",
+    "--tf-space-6": "2rem",
+    "--tf-space-7": "3rem",
+    "--tf-space-8": "4rem",
+    "--tf-radius-0": "0rem",
+    "--tf-radius-1": "0.125rem",
+    "--tf-radius-2": "0.375rem"
+  }
+}

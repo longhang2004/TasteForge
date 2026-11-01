@@ -1,0 +1,31 @@
+{
+  "id": "inventory-retained-detail",
+  "status": "candidate-worked-example",
+  "authorship": "agent-authored and revised; repository MIT license",
+  "task": "Compare stock shortages and record one simulated replenishment decision",
+  "entry": "index.html",
+  "plan": "UX_PLAN.md",
+  "review": "DESIGN_REVIEW.md",
+  "browserEvidence": "evidence/pass-06/browser.json",
+  "prototypes": ["prototype.html?layout=focused", "prototype.html?layout=continuous"],
+  "relationships": {
+    "wide": "comparison table beside selected-item stock ledger and decision",
+    "narrow": "list replaced by focused detail/review; return retains filters, search and draft",
+    "commitment": "explicit quantity and no-purchase-order consequence before recording",
+    "recovery": "first save fails; retry/edit retain selected item and quantity"
+  },
+  "reviewStatus": {
+    "agentInspection": {
+      "initial": "reviews/independent-pass-04.md",
+      "followup": "reviews/followup-pass-06.md",
+      "scope": "Independent screenshot and supplied-trace inspection; three findings resolved within that evidence"
+    },
+    "humanDesignApproval": "pending",
+    "representativeUserTesting": "not performed"
+  },
+  "limits": [
+    "Fictional five-item fixture and session-memory simulation",
+    "No claim of human authorship, production readiness, accessibility conformance or measured UX improvement",
+    "Not a new CLI layout generator or a new blinded model comparison"
+  ]
+}

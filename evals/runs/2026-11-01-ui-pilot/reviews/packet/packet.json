@@ -1,0 +1,3492 @@
+{
+  "description": "Eight anonymous UI outputs. Creator models and conditions are intentionally withheld. Rate each output independently using the supplied rubric and actual evidence.",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "cases": [
+    {
+      "id": "view-01",
+      "task": {
+        "id": "commerce-craft",
+        "industry": "e-commerce",
+        "prompt": "Create a product page for a handmade ceramic teapot. Provide material, dimensions, care, price, stock, delivery, returns, image descriptions, and accessible variant selection. Express a considered craft identity with real product detail rather than a generic SaaS hero.",
+        "primaryTask": "Choose a glaze and determine total purchase conditions before adding to a simulated cart.",
+        "constraints": [
+          "No fake reviews or scarcity",
+          "Visible practical details",
+          "Works without hover"
+        ]
+      },
+      "fixture": {
+        "brand": "Field Kiln",
+        "product": "Everyday Teapot",
+        "fictional": true,
+        "priceUSD": 68,
+        "shippingUSD": 8,
+        "capacityMl": 650,
+        "dimensions": "16 cm wide × 12 cm high",
+        "material": "Glazed stoneware",
+        "variants": [
+          {
+            "id": "iron",
+            "name": "Iron",
+            "stock": 4
+          },
+          {
+            "id": "ash",
+            "name": "Ash",
+            "stock": 0
+          },
+          {
+            "id": "sand",
+            "name": "Sand",
+            "stock": 7
+          }
+        ],
+        "care": "Hand wash. Avoid sudden temperature changes. Not for stovetop use.",
+        "delivery": "Dispatch in 2 business days; illustrative domestic transit 3–5 business days.",
+        "returns": "Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.",
+        "imageDisclosure": "Original vector illustrations of a fictional sample product; these are not photographs.",
+        "sampleDataDisclosure": "Fictional shop and illustrative product, price, stock, delivery, and returns."
+      },
+      "screenshots": [
+        {
+          "viewport": "desktop",
+          "state": "full",
+          "path": "images/view-01-desktop-full.png",
+          "sha256": "9141509d1acc2d692312cfd338a9911303336dce50ece277f9de8cba9d6a643d"
+        },
+        {
+          "viewport": "mobile",
+          "state": "full",
+          "path": "images/view-01-mobile-full.png",
+          "sha256": "cdd3fbf0370f839ef23a11ac1b3cedf3f8e5f93e9a76a45c4e9b28a519fea386"
+        },
+        {
+          "viewport": "desktop",
+          "state": "cart",
+          "path": "images/view-01-desktop-cart.png",
+          "sha256": "df55c4084d4f9fcbf6e42f6603a3c0f6ec456e7d0e125e2c3552be53e236b29e"
+        }
+      ],
+      "observations": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "layout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1638,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "1440px document / 1440px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Sand × 2 cart confirmation",
+              "status": "pass",
+              "observation": "Added to simulated cart: 2 × Everyday Teapot in Sand. Total $144 USD, including $8 domestic shipping. No order has been placed.",
+              "kind": "contract"
+            },
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "pass",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            },
+            {
+              "name": "Unavailable Ash cannot be purchased",
+              "status": "pass",
+              "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field KilnObjects for the everyday",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Choose your teapot ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "glaze-iron",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1 piece2 pieces3 pieces4 pieces",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "add-to-cart",
+              "name": "Add to simulated cart ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Back to the piece ↑",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "Field KilnObjects for the everydayA fictional ceramics shopChoose your teapot ↗\n",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field KilnObjects for the everyday",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Choose your teapot ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "glaze-iron",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [],
+              "incompleteChecks": 0
+            },
+            "axeFinal": {
+              "violations": [],
+              "incompleteChecks": 0
+            }
+          },
+          "executionError": null
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "layout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 2241,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "390px document / 390px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Sand × 2 cart confirmation",
+              "status": "pass",
+              "observation": "Added to simulated cart: 2 × Everyday Teapot in Sand. Total $144 USD, including $8 domestic shipping. No order has been placed.",
+              "kind": "contract"
+            },
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "pass",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            },
+            {
+              "name": "Unavailable Ash cannot be purchased",
+              "status": "pass",
+              "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field KilnObjects for the everyday",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Choose your teapot ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "glaze-iron",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1 piece2 pieces3 pieces4 pieces",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "add-to-cart",
+              "name": "Add to simulated cart ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Back to the piece ↑",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "Field KilnObjects for the everydayA fictional ceramics shopChoose your teapot ↗\n",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field KilnObjects for the everyday",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Choose your teapot ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "glaze-iron",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [],
+              "incompleteChecks": 0
+            },
+            "axeFinal": {
+              "violations": [],
+              "incompleteChecks": 0
+            }
+          },
+          "executionError": null
+        }
+      }
+    },
+    {
+      "id": "view-02",
+      "task": {
+        "id": "commerce-craft",
+        "industry": "e-commerce",
+        "prompt": "Create a product page for a handmade ceramic teapot. Provide material, dimensions, care, price, stock, delivery, returns, image descriptions, and accessible variant selection. Express a considered craft identity with real product detail rather than a generic SaaS hero.",
+        "primaryTask": "Choose a glaze and determine total purchase conditions before adding to a simulated cart.",
+        "constraints": [
+          "No fake reviews or scarcity",
+          "Visible practical details",
+          "Works without hover"
+        ]
+      },
+      "fixture": {
+        "brand": "Field Kiln",
+        "product": "Everyday Teapot",
+        "fictional": true,
+        "priceUSD": 68,
+        "shippingUSD": 8,
+        "capacityMl": 650,
+        "dimensions": "16 cm wide × 12 cm high",
+        "material": "Glazed stoneware",
+        "variants": [
+          {
+            "id": "iron",
+            "name": "Iron",
+            "stock": 4
+          },
+          {
+            "id": "ash",
+            "name": "Ash",
+            "stock": 0
+          },
+          {
+            "id": "sand",
+            "name": "Sand",
+            "stock": 7
+          }
+        ],
+        "care": "Hand wash. Avoid sudden temperature changes. Not for stovetop use.",
+        "delivery": "Dispatch in 2 business days; illustrative domestic transit 3–5 business days.",
+        "returns": "Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.",
+        "imageDisclosure": "Original vector illustrations of a fictional sample product; these are not photographs.",
+        "sampleDataDisclosure": "Fictional shop and illustrative product, price, stock, delivery, and returns."
+      },
+      "screenshots": [
+        {
+          "viewport": "desktop",
+          "state": "full",
+          "path": "images/view-02-desktop-full.png",
+          "sha256": "88af1a52ec98afb2947d45703ca3968920d47635b488db342416fe3d8b2f3883"
+        },
+        {
+          "viewport": "mobile",
+          "state": "full",
+          "path": "images/view-02-mobile-full.png",
+          "sha256": "3b6e1d96ced85c6b68b0c4bdfa708d94806fc7fe1bf7412fb29ee4552593b634"
+        },
+        {
+          "viewport": "desktop",
+          "state": "cart",
+          "path": "images/view-02-desktop-cart.png",
+          "sha256": "88dade9a6c0a1dca20d8872662d9e0807b7627fe61206a37946a1ff7e90adef8"
+        }
+      ],
+      "observations": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "layout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1465,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "1440px document / 1440px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Sand × 2 cart confirmation",
+              "status": "pass",
+              "observation": "Added to simulated cart: 2 × Everyday Teapot in Sand. Total $144 USD including $8 shipping. No order has been placed.",
+              "kind": "contract"
+            },
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "pass",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            },
+            {
+              "name": "Unavailable Ash cannot be purchased",
+              "status": "pass",
+              "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field KilnOBJECTS FOR EVERY DAY",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "The collection ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "glaze-iron",
+              "name": "",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1234",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "add-to-cart",
+              "name": "Add to simulated cart ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "Field KilnOBJECTS FOR EVERY DAYA fictional ceramics studioThe collection ↗COLLEC",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field KilnOBJECTS FOR EVERY DAY",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "The collection ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "glaze-iron",
+              "name": "",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1234",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [],
+              "incompleteChecks": 0
+            },
+            "axeFinal": {
+              "violations": [],
+              "incompleteChecks": 0
+            }
+          },
+          "executionError": null
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "layout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 2309,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "390px document / 390px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Sand × 2 cart confirmation",
+              "status": "pass",
+              "observation": "Added to simulated cart: 2 × Everyday Teapot in Sand. Total $144 USD including $8 shipping. No order has been placed.",
+              "kind": "contract"
+            },
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "pass",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            },
+            {
+              "name": "Unavailable Ash cannot be purchased",
+              "status": "pass",
+              "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field KilnOBJECTS FOR EVERY DAY",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "The collection ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "glaze-iron",
+              "name": "",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1234",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "add-to-cart",
+              "name": "Add to simulated cart ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "Field KilnOBJECTS FOR EVERY DAYA fictional ceramics studioThe collection ↗COLLEC",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field KilnOBJECTS FOR EVERY DAY",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "The collection ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "glaze-iron",
+              "name": "",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1234",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [],
+              "incompleteChecks": 0
+            },
+            "axeFinal": {
+              "violations": [],
+              "incompleteChecks": 0
+            }
+          },
+          "executionError": null
+        }
+      }
+    },
+    {
+      "id": "view-03",
+      "task": {
+        "id": "commerce-craft",
+        "industry": "e-commerce",
+        "prompt": "Create a product page for a handmade ceramic teapot. Provide material, dimensions, care, price, stock, delivery, returns, image descriptions, and accessible variant selection. Express a considered craft identity with real product detail rather than a generic SaaS hero.",
+        "primaryTask": "Choose a glaze and determine total purchase conditions before adding to a simulated cart.",
+        "constraints": [
+          "No fake reviews or scarcity",
+          "Visible practical details",
+          "Works without hover"
+        ]
+      },
+      "fixture": {
+        "brand": "Field Kiln",
+        "product": "Everyday Teapot",
+        "fictional": true,
+        "priceUSD": 68,
+        "shippingUSD": 8,
+        "capacityMl": 650,
+        "dimensions": "16 cm wide × 12 cm high",
+        "material": "Glazed stoneware",
+        "variants": [
+          {
+            "id": "iron",
+            "name": "Iron",
+            "stock": 4
+          },
+          {
+            "id": "ash",
+            "name": "Ash",
+            "stock": 0
+          },
+          {
+            "id": "sand",
+            "name": "Sand",
+            "stock": 7
+          }
+        ],
+        "care": "Hand wash. Avoid sudden temperature changes. Not for stovetop use.",
+        "delivery": "Dispatch in 2 business days; illustrative domestic transit 3–5 business days.",
+        "returns": "Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.",
+        "imageDisclosure": "Original vector illustrations of a fictional sample product; these are not photographs.",
+        "sampleDataDisclosure": "Fictional shop and illustrative product, price, stock, delivery, and returns."
+      },
+      "screenshots": [
+        {
+          "viewport": "desktop",
+          "state": "full",
+          "path": "images/view-03-desktop-full.png",
+          "sha256": "5d8f4fd9565f7844aa0f1cef40dc0f0235bd2fc8ae423d645d3a543f97845446"
+        },
+        {
+          "viewport": "mobile",
+          "state": "full",
+          "path": "images/view-03-mobile-full.png",
+          "sha256": "b81cfb066e546b8e41c5308c8a6bd7135fbaacde6929ba1cfb87955bff967858"
+        },
+        {
+          "viewport": "desktop",
+          "state": "cart",
+          "path": "images/view-03-desktop-cart.png",
+          "sha256": "03eb7ce53352a9eeb4b8555fc29aeff7d582e2a7255317db8cde3f8dc68e3576"
+        }
+      ],
+      "observations": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "layout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1338,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "1440px document / 1440px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Sand × 2 cart confirmation",
+              "status": "pass",
+              "observation": "Added to your bag: 2 Sand teapots · $136 before $8 shipping.",
+              "kind": "contract"
+            },
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "fail",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            },
+            {
+              "name": "Unavailable Ash cannot be purchased",
+              "status": "pass",
+              "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field Kiln home",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Your bag ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Objects",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-iron",
+              "name": "Iron",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-sand",
+              "name": "Sand",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1234",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "add-to-cart",
+              "name": "Add to bag ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "FIELD KILN\n    Small-batch objects for daily rituals\n    Your bag ↗\n  \n  \n    Ob",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field Kiln home",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Your bag ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [],
+              "incompleteChecks": 1
+            },
+            "axeFinal": {
+              "violations": [],
+              "incompleteChecks": 1
+            }
+          },
+          "executionError": null
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "layout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1987,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "390px document / 390px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Sand × 2 cart confirmation",
+              "status": "pass",
+              "observation": "Added to your bag: 2 Sand teapots · $136 before $8 shipping.",
+              "kind": "contract"
+            },
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "fail",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            },
+            {
+              "name": "Unavailable Ash cannot be purchased",
+              "status": "pass",
+              "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field Kiln home",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Your bag ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Objects",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-iron",
+              "name": "Iron",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-sand",
+              "name": "Sand",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1234",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "add-to-cart",
+              "name": "Add to bag ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "FIELD KILN\n    Small-batch objects for daily rituals\n    Your bag ↗\n  \n  \n    Ob",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Field Kiln home",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Your bag ↗",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [],
+              "incompleteChecks": 1
+            },
+            "axeFinal": {
+              "violations": [],
+              "incompleteChecks": 1
+            }
+          },
+          "executionError": null
+        }
+      }
+    },
+    {
+      "id": "view-04",
+      "task": {
+        "id": "fintech-transfer",
+        "industry": "fintech",
+        "prompt": "Create a money-transfer review flow for occasional customers, including recipient, amount, fees, delivery estimate, confirmation, and recoverable failure. Prioritize clarity and confidence. Support long Vietnamese names and keyboard access. Do not imply that the sample app moves real money.",
+        "primaryTask": "Verify the total cost and recipient before confirming a simulated transfer.",
+        "constraints": [
+          "Visible fees before confirmation",
+          "Retain input after errors",
+          "Vietnamese diacritics"
+        ]
+      },
+      "fixture": {
+        "brand": "Northline Transfer",
+        "fictional": true,
+        "referenceDate": "2026-11-01",
+        "sender": "Alex Morgan",
+        "sourceAccount": "Everyday USD ••1042",
+        "recipient": "Nguyễn Thị Minh Anh Trường",
+        "destination": "Việt Nam",
+        "sendCurrency": "USD",
+        "receiveCurrency": "VND",
+        "initialAmount": 250,
+        "feeUSD": 2.5,
+        "exchangeRateVNDPerUSD": 25000,
+        "minimumUSD": 1,
+        "maximumUSD": 1000,
+        "deliveryEstimate": "By 3 November 2026, illustrative estimate",
+        "failureScenario": "The first simulated confirmation fails recoverably. Retrying succeeds. Preserve the entered recipient and amount.",
+        "sampleDataDisclosure": "Simulation with fictional data. No money is moved and no real account is connected."
+      },
+      "screenshots": [
+        {
+          "viewport": "desktop",
+          "state": "full",
+          "path": "images/view-04-desktop-full.png",
+          "sha256": "e0d75bbf8753c5778b7b49a116e1913fb1f533b11f9a87e174dc13803bc7270b"
+        },
+        {
+          "viewport": "mobile",
+          "state": "full",
+          "path": "images/view-04-mobile-full.png",
+          "sha256": "d193dac55f8ae8d52fb578c0f667e0aed4f043d1f89ad532cd634d28b666751d"
+        },
+        {
+          "viewport": "desktop",
+          "state": "review",
+          "path": "images/view-04-desktop-review.png",
+          "sha256": "830ac4cc5ca649f6ab7cd0ee743db206d2868af441c4c182b6992f52e1885fd6"
+        },
+        {
+          "viewport": "desktop",
+          "state": "failure",
+          "path": "images/view-04-desktop-failure.png",
+          "sha256": "04b3bac1831c492088266374cbe0faf43fc1e53362bed57fc4be6503c2e9a3cc"
+        },
+        {
+          "viewport": "desktop",
+          "state": "success",
+          "path": "images/view-04-desktop-success.png",
+          "sha256": "1a4a57093d31d45c16f86f8c4fec5eb75f267623162d9cc1ed379aebc87cdf4a"
+        }
+      ],
+      "observations": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "layout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1000,
+            "title": "Northline Transfer",
+            "h1": [
+              "A little closer to home."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "1440px document / 1440px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 0",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 1001",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Review retains full Vietnamese recipient",
+              "status": "pass",
+              "observation": "Nguyễn Thị Minh Anh Trường",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 375 amount",
+              "status": "pass",
+              "observation": "Changed the original amount to exercise recalculation.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 2.50 fee",
+              "status": "pass",
+              "observation": "Flat fee from the shared fixture.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 377.50 total",
+              "status": "pass",
+              "observation": "USD 375 + USD 2.50 fee.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows VND 9,375,000 received",
+              "status": "pass",
+              "observation": "USD 375 × 25,000 VND/USD.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows delivery estimate",
+              "status": "pass",
+              "observation": "Fixture estimate; no current banking or delivery guarantee.",
+              "kind": "contract"
+            },
+            {
+              "name": "First confirmation reports recoverable failure",
+              "status": "pass",
+              "observation": "The simulated transfer couldn’t be completed. Your details are saved and no money was moved. Please retry.",
+              "kind": "contract"
+            },
+            {
+              "name": "Failure retains recipient and amount",
+              "status": "pass",
+              "observation": "{\"amount\":\"375\",\"recipient\":\"Nguyễn Thị Minh Anh Trường\",\"method\":\"retained input elements\"}",
+              "kind": "contract"
+            },
+            {
+              "name": "Retry reaches a visible success outcome",
+              "status": "pass",
+              "observation": "Simulation complete. No money was moved.",
+              "kind": "contract"
+            },
+            {
+              "name": "Success remains clearly simulated",
+              "status": "pass",
+              "observation": "Success-state page text inspected.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "n↗ Northline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "n↗ Northline TransferDEMO WORKSPACEAM Alex MorganINTERNATIONAL TRANSFERA little ",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "n↗ Northline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "n↗ Northline TransferDEMO WORKSPACEAM Alex MorganINTERNATIONAL TRANSFERA little ",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 22
+                }
+              ],
+              "incompleteChecks": 1
+            },
+            "axeFailure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 20
+                }
+              ],
+              "incompleteChecks": 1
+            },
+            "axeFinal": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 18
+                }
+              ],
+              "incompleteChecks": 1
+            }
+          },
+          "executionError": null
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "layout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1591,
+            "title": "Northline Transfer",
+            "h1": [
+              "A little closer to home."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "390px document / 390px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 0",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 1001",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Review retains full Vietnamese recipient",
+              "status": "pass",
+              "observation": "Nguyễn Thị Minh Anh Trường",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 375 amount",
+              "status": "pass",
+              "observation": "Changed the original amount to exercise recalculation.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 2.50 fee",
+              "status": "pass",
+              "observation": "Flat fee from the shared fixture.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 377.50 total",
+              "status": "pass",
+              "observation": "USD 375 + USD 2.50 fee.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows VND 9,375,000 received",
+              "status": "pass",
+              "observation": "USD 375 × 25,000 VND/USD.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows delivery estimate",
+              "status": "pass",
+              "observation": "Fixture estimate; no current banking or delivery guarantee.",
+              "kind": "contract"
+            },
+            {
+              "name": "First confirmation reports recoverable failure",
+              "status": "pass",
+              "observation": "The simulated transfer couldn’t be completed. Your details are saved and no money was moved. Please retry.",
+              "kind": "contract"
+            },
+            {
+              "name": "Failure retains recipient and amount",
+              "status": "pass",
+              "observation": "{\"amount\":\"375\",\"recipient\":\"Nguyễn Thị Minh Anh Trường\",\"method\":\"retained input elements\"}",
+              "kind": "contract"
+            },
+            {
+              "name": "Retry reaches a visible success outcome",
+              "status": "pass",
+              "observation": "Simulation complete. No money was moved.",
+              "kind": "contract"
+            },
+            {
+              "name": "Success remains clearly simulated",
+              "status": "pass",
+              "observation": "Success-state page text inspected.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "n↗ Northline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "n↗ Northline TransferDEMO WORKSPACEAM Alex MorganINTERNATIONAL TRANSFERA little ",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "n↗ Northline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "n↗ Northline TransferDEMO WORKSPACEAM Alex MorganINTERNATIONAL TRANSFERA little ",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 22
+                }
+              ],
+              "incompleteChecks": 1
+            },
+            "axeFailure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 20
+                }
+              ],
+              "incompleteChecks": 1
+            },
+            "axeFinal": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 18
+                }
+              ],
+              "incompleteChecks": 1
+            }
+          },
+          "executionError": null
+        }
+      }
+    },
+    {
+      "id": "view-05",
+      "task": {
+        "id": "fintech-transfer",
+        "industry": "fintech",
+        "prompt": "Create a money-transfer review flow for occasional customers, including recipient, amount, fees, delivery estimate, confirmation, and recoverable failure. Prioritize clarity and confidence. Support long Vietnamese names and keyboard access. Do not imply that the sample app moves real money.",
+        "primaryTask": "Verify the total cost and recipient before confirming a simulated transfer.",
+        "constraints": [
+          "Visible fees before confirmation",
+          "Retain input after errors",
+          "Vietnamese diacritics"
+        ]
+      },
+      "fixture": {
+        "brand": "Northline Transfer",
+        "fictional": true,
+        "referenceDate": "2026-11-01",
+        "sender": "Alex Morgan",
+        "sourceAccount": "Everyday USD ••1042",
+        "recipient": "Nguyễn Thị Minh Anh Trường",
+        "destination": "Việt Nam",
+        "sendCurrency": "USD",
+        "receiveCurrency": "VND",
+        "initialAmount": 250,
+        "feeUSD": 2.5,
+        "exchangeRateVNDPerUSD": 25000,
+        "minimumUSD": 1,
+        "maximumUSD": 1000,
+        "deliveryEstimate": "By 3 November 2026, illustrative estimate",
+        "failureScenario": "The first simulated confirmation fails recoverably. Retrying succeeds. Preserve the entered recipient and amount.",
+        "sampleDataDisclosure": "Simulation with fictional data. No money is moved and no real account is connected."
+      },
+      "screenshots": [
+        {
+          "viewport": "desktop",
+          "state": "full",
+          "path": "images/view-05-desktop-full.png",
+          "sha256": "1a1d82485590aa892ce7fe0dd8abdcaa474da6315f30519e3bf8a66896c1c0c3"
+        },
+        {
+          "viewport": "mobile",
+          "state": "full",
+          "path": "images/view-05-mobile-full.png",
+          "sha256": "98fa56604f1042817e35be6918311177b7b56feb0723a35bd8cc44a2f11f4897"
+        },
+        {
+          "viewport": "desktop",
+          "state": "review",
+          "path": "images/view-05-desktop-review.png",
+          "sha256": "d57f2aa946c7ff446423f48526e0af551116544fffca9b40a950d8c6234a3592"
+        },
+        {
+          "viewport": "desktop",
+          "state": "failure",
+          "path": "images/view-05-desktop-failure.png",
+          "sha256": "7c9c0c74e771a72dd82bcf8698a8b7a766ebf859b156c2febfd1ab1a051982b0"
+        },
+        {
+          "viewport": "desktop",
+          "state": "success",
+          "path": "images/view-05-desktop-success.png",
+          "sha256": "959c9fd479e08fa1e25de2b43f71711ab020f1fe229cb4e63f8a37ed8f57d2d5"
+        }
+      ],
+      "observations": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "layout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1000,
+            "title": "Review a transfer · Northline",
+            "h1": [
+              "Review your transfer"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "1440px document / 1440px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 0",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 1001",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Review retains full Vietnamese recipient",
+              "status": "pass",
+              "observation": "Nguyễn Thị Minh Anh Trường",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 375 amount",
+              "status": "pass",
+              "observation": "Changed the original amount to exercise recalculation.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 2.50 fee",
+              "status": "pass",
+              "observation": "Flat fee from the shared fixture.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 377.50 total",
+              "status": "pass",
+              "observation": "USD 375 + USD 2.50 fee.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows VND 9,375,000 received",
+              "status": "pass",
+              "observation": "USD 375 × 25,000 VND/USD.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows delivery estimate",
+              "status": "pass",
+              "observation": "Fixture estimate; no current banking or delivery guarantee.",
+              "kind": "contract"
+            },
+            {
+              "name": "First confirmation reports recoverable failure",
+              "status": "pass",
+              "observation": "Simulated confirmation failed. Your details are saved; no money was moved. Retry is available.",
+              "kind": "contract"
+            },
+            {
+              "name": "Failure retains recipient and amount",
+              "status": "pass",
+              "observation": "{\"amount\":\"375\",\"recipient\":\"Nguyễn Thị Minh Anh Trường\",\"method\":\"retained input elements\"}",
+              "kind": "contract"
+            },
+            {
+              "name": "Retry reaches a visible success outcome",
+              "status": "pass",
+              "observation": "Simulated transfer confirmed. No money was moved.",
+              "kind": "contract"
+            },
+            {
+              "name": "Success remains clearly simulated",
+              "status": "pass",
+              "observation": "Success-state page text inspected.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Northline Transfer home",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "none 3px",
+              "boxShadow": "rgb(216, 238, 229) 0px 0px 0px 3px"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "none 0px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "Nnorthline transfer◆ Private, secure review\n  \n    SEND MONEY · VIỆT NAMReview y",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Northline Transfer home",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "none 3px",
+              "boxShadow": "rgb(216, 238, 229) 0px 0px 0px 3px"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "none 0px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "Nnorthline transfer◆ Private, secure review\n  \n    SEND MONEY · VIỆT NAMReview y",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 14
+                }
+              ],
+              "incompleteChecks": 2
+            },
+            "axeFailure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 13
+                }
+              ],
+              "incompleteChecks": 2
+            },
+            "axeFinal": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 16
+                }
+              ],
+              "incompleteChecks": 2
+            }
+          },
+          "executionError": null
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "layout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1056,
+            "title": "Review a transfer · Northline",
+            "h1": [
+              "Review your transfer"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "390px document / 390px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 0",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 1001",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Review retains full Vietnamese recipient",
+              "status": "pass",
+              "observation": "Nguyễn Thị Minh Anh Trường",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 375 amount",
+              "status": "pass",
+              "observation": "Changed the original amount to exercise recalculation.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 2.50 fee",
+              "status": "pass",
+              "observation": "Flat fee from the shared fixture.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 377.50 total",
+              "status": "pass",
+              "observation": "USD 375 + USD 2.50 fee.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows VND 9,375,000 received",
+              "status": "pass",
+              "observation": "USD 375 × 25,000 VND/USD.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows delivery estimate",
+              "status": "pass",
+              "observation": "Fixture estimate; no current banking or delivery guarantee.",
+              "kind": "contract"
+            },
+            {
+              "name": "First confirmation reports recoverable failure",
+              "status": "pass",
+              "observation": "Simulated confirmation failed. Your details are saved; no money was moved. Retry is available.",
+              "kind": "contract"
+            },
+            {
+              "name": "Failure retains recipient and amount",
+              "status": "pass",
+              "observation": "{\"amount\":\"375\",\"recipient\":\"Nguyễn Thị Minh Anh Trường\",\"method\":\"retained input elements\"}",
+              "kind": "contract"
+            },
+            {
+              "name": "Retry reaches a visible success outcome",
+              "status": "pass",
+              "observation": "Simulated transfer confirmed. No money was moved.",
+              "kind": "contract"
+            },
+            {
+              "name": "Success remains clearly simulated",
+              "status": "pass",
+              "observation": "Success-state page text inspected.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Northline Transfer home",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "none 3px",
+              "boxShadow": "rgb(216, 238, 229) 0px 0px 0px 3px"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "none 0px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "Nnorthline transfer◆ Private, secure review\n  \n    SEND MONEY · VIỆT NAMReview y",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "Northline Transfer home",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "none 3px",
+              "boxShadow": "rgb(216, 238, 229) 0px 0px 0px 3px"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "none 0px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "Nnorthline transfer◆ Private, secure review\n  \n    SEND MONEY · VIỆT NAMReview y",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 12
+                }
+              ],
+              "incompleteChecks": 2
+            },
+            "axeFailure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 12
+                }
+              ],
+              "incompleteChecks": 2
+            },
+            "axeFinal": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 15
+                }
+              ],
+              "incompleteChecks": 2
+            }
+          },
+          "executionError": null
+        }
+      }
+    },
+    {
+      "id": "view-06",
+      "task": {
+        "id": "fintech-transfer",
+        "industry": "fintech",
+        "prompt": "Create a money-transfer review flow for occasional customers, including recipient, amount, fees, delivery estimate, confirmation, and recoverable failure. Prioritize clarity and confidence. Support long Vietnamese names and keyboard access. Do not imply that the sample app moves real money.",
+        "primaryTask": "Verify the total cost and recipient before confirming a simulated transfer.",
+        "constraints": [
+          "Visible fees before confirmation",
+          "Retain input after errors",
+          "Vietnamese diacritics"
+        ]
+      },
+      "fixture": {
+        "brand": "Northline Transfer",
+        "fictional": true,
+        "referenceDate": "2026-11-01",
+        "sender": "Alex Morgan",
+        "sourceAccount": "Everyday USD ••1042",
+        "recipient": "Nguyễn Thị Minh Anh Trường",
+        "destination": "Việt Nam",
+        "sendCurrency": "USD",
+        "receiveCurrency": "VND",
+        "initialAmount": 250,
+        "feeUSD": 2.5,
+        "exchangeRateVNDPerUSD": 25000,
+        "minimumUSD": 1,
+        "maximumUSD": 1000,
+        "deliveryEstimate": "By 3 November 2026, illustrative estimate",
+        "failureScenario": "The first simulated confirmation fails recoverably. Retrying succeeds. Preserve the entered recipient and amount.",
+        "sampleDataDisclosure": "Simulation with fictional data. No money is moved and no real account is connected."
+      },
+      "screenshots": [
+        {
+          "viewport": "desktop",
+          "state": "full",
+          "path": "images/view-06-desktop-full.png",
+          "sha256": "8df9d9a3e28139f133e528248afe3218729c0cb2db90f7890fe8981236e64027"
+        },
+        {
+          "viewport": "mobile",
+          "state": "full",
+          "path": "images/view-06-mobile-full.png",
+          "sha256": "3843d9331cd5f09f2e62afef2d8ff6af8c26af1292fdffef45e45eb8acca207b"
+        },
+        {
+          "viewport": "desktop",
+          "state": "review",
+          "path": "images/view-06-desktop-review.png",
+          "sha256": "7ee39a6bdd238d98df29d796faff518f403d0b3168363d61d3ba8699b2a958f4"
+        },
+        {
+          "viewport": "desktop",
+          "state": "failure",
+          "path": "images/view-06-desktop-failure.png",
+          "sha256": "60c52d75cf6fac4c57563eb9c27e48370a8dc25f8ee3c6e15d43ed0d645368b9"
+        },
+        {
+          "viewport": "desktop",
+          "state": "success",
+          "path": "images/view-06-desktop-success.png",
+          "sha256": "255c0b3b1bc7e757868e8e29c6b54651718a48976e2a399a315d56d61673ea24"
+        }
+      ],
+      "observations": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "layout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1000,
+            "title": "Northline Transfer · Review a transfer",
+            "h1": [
+              "Send withconfidence."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "1440px document / 1440px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 0",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 1001",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Review retains full Vietnamese recipient",
+              "status": "pass",
+              "observation": "Nguyễn Thị Minh Anh Trường",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 375 amount",
+              "status": "pass",
+              "observation": "Changed the original amount to exercise recalculation.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 2.50 fee",
+              "status": "pass",
+              "observation": "Flat fee from the shared fixture.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 377.50 total",
+              "status": "pass",
+              "observation": "USD 375 + USD 2.50 fee.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows VND 9,375,000 received",
+              "status": "pass",
+              "observation": "USD 375 × 25,000 VND/USD.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows delivery estimate",
+              "status": "pass",
+              "observation": "Fixture estimate; no current banking or delivery guarantee.",
+              "kind": "contract"
+            },
+            {
+              "name": "First confirmation reports recoverable failure",
+              "status": "pass",
+              "observation": "No money was moved\nNguyễn Thị Minh Anh Trường · $375.00 USD",
+              "kind": "contract"
+            },
+            {
+              "name": "Failure retains recipient and amount",
+              "status": "pass",
+              "observation": "{\"amount\":null,\"recipient\":null,\"method\":\"retained failure summary; edit form not separately exercised\"}",
+              "kind": "contract"
+            },
+            {
+              "name": "Retry reaches a visible success outcome",
+              "status": "pass",
+              "observation": "Simulation complete\nNguyễn Thị Minh Anh Trường · $375.00 USD",
+              "kind": "contract"
+            },
+            {
+              "name": "Success remains clearly simulated",
+              "status": "pass",
+              "observation": "Success-state page text inspected.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "NNorthline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "See how this works",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "NNorthline Transfer● DEMO · FICTIONALA considered way to sendSend withconfidence",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "NNorthline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [],
+              "incompleteChecks": 1
+            },
+            "axeFailure": {
+              "violations": [],
+              "incompleteChecks": 1
+            },
+            "axeFinal": {
+              "violations": [],
+              "incompleteChecks": 1
+            }
+          },
+          "executionError": null
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "layout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1045,
+            "title": "Northline Transfer · Review a transfer",
+            "h1": [
+              "Send withconfidence."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "390px document / 390px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 0",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 1001",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Review retains full Vietnamese recipient",
+              "status": "pass",
+              "observation": "Nguyễn Thị Minh Anh Trường",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 375 amount",
+              "status": "pass",
+              "observation": "Changed the original amount to exercise recalculation.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 2.50 fee",
+              "status": "pass",
+              "observation": "Flat fee from the shared fixture.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 377.50 total",
+              "status": "pass",
+              "observation": "USD 375 + USD 2.50 fee.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows VND 9,375,000 received",
+              "status": "pass",
+              "observation": "USD 375 × 25,000 VND/USD.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows delivery estimate",
+              "status": "pass",
+              "observation": "Fixture estimate; no current banking or delivery guarantee.",
+              "kind": "contract"
+            },
+            {
+              "name": "First confirmation reports recoverable failure",
+              "status": "pass",
+              "observation": "No money was moved\nNguyễn Thị Minh Anh Trường · $375.00 USD",
+              "kind": "contract"
+            },
+            {
+              "name": "Failure retains recipient and amount",
+              "status": "pass",
+              "observation": "{\"amount\":null,\"recipient\":null,\"method\":\"retained failure summary; edit form not separately exercised\"}",
+              "kind": "contract"
+            },
+            {
+              "name": "Retry reaches a visible success outcome",
+              "status": "pass",
+              "observation": "Simulation complete\nNguyễn Thị Minh Anh Trường · $375.00 USD",
+              "kind": "contract"
+            },
+            {
+              "name": "Success remains clearly simulated",
+              "status": "pass",
+              "observation": "Success-state page text inspected.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "NNorthline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "See how this works",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "NNorthline Transfer● DEMO · FICTIONALA considered way to sendSend withconfidence",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "NNorthline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [],
+              "incompleteChecks": 1
+            },
+            "axeFailure": {
+              "violations": [],
+              "incompleteChecks": 0
+            },
+            "axeFinal": {
+              "violations": [],
+              "incompleteChecks": 1
+            }
+          },
+          "executionError": null
+        }
+      }
+    },
+    {
+      "id": "view-07",
+      "task": {
+        "id": "commerce-craft",
+        "industry": "e-commerce",
+        "prompt": "Create a product page for a handmade ceramic teapot. Provide material, dimensions, care, price, stock, delivery, returns, image descriptions, and accessible variant selection. Express a considered craft identity with real product detail rather than a generic SaaS hero.",
+        "primaryTask": "Choose a glaze and determine total purchase conditions before adding to a simulated cart.",
+        "constraints": [
+          "No fake reviews or scarcity",
+          "Visible practical details",
+          "Works without hover"
+        ]
+      },
+      "fixture": {
+        "brand": "Field Kiln",
+        "product": "Everyday Teapot",
+        "fictional": true,
+        "priceUSD": 68,
+        "shippingUSD": 8,
+        "capacityMl": 650,
+        "dimensions": "16 cm wide × 12 cm high",
+        "material": "Glazed stoneware",
+        "variants": [
+          {
+            "id": "iron",
+            "name": "Iron",
+            "stock": 4
+          },
+          {
+            "id": "ash",
+            "name": "Ash",
+            "stock": 0
+          },
+          {
+            "id": "sand",
+            "name": "Sand",
+            "stock": 7
+          }
+        ],
+        "care": "Hand wash. Avoid sudden temperature changes. Not for stovetop use.",
+        "delivery": "Dispatch in 2 business days; illustrative domestic transit 3–5 business days.",
+        "returns": "Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.",
+        "imageDisclosure": "Original vector illustrations of a fictional sample product; these are not photographs.",
+        "sampleDataDisclosure": "Fictional shop and illustrative product, price, stock, delivery, and returns."
+      },
+      "screenshots": [
+        {
+          "viewport": "desktop",
+          "state": "full",
+          "path": "images/view-07-desktop-full.png",
+          "sha256": "fa994cb8bf7e6350f7647de4e89f2f8c502950a1db7879bcfe6ae2a56a865a28"
+        },
+        {
+          "viewport": "mobile",
+          "state": "full",
+          "path": "images/view-07-mobile-full.png",
+          "sha256": "14b265abd857c5960e6e94b9ecd0aa29615740796eec59df023ba35a305ee2bf"
+        },
+        {
+          "viewport": "desktop",
+          "state": "cart",
+          "path": "images/view-07-desktop-cart.png",
+          "sha256": "8043a629934bb867417fb32bf4e094a399b7657c42e7b2851c855fc1d10777c9"
+        }
+      ],
+      "observations": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "layout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1000,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "1440px document / 1440px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Sand × 2 cart confirmation",
+              "status": "pass",
+              "observation": "2 Sand teapots added. Item total $136; shipping $8. Simulated bag only.",
+              "kind": "contract"
+            },
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "fail",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            },
+            {
+              "name": "Unavailable Ash cannot be purchased",
+              "status": "pass",
+              "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "BUTTON",
+              "testId": null,
+              "name": "Bag 0",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-iron",
+              "name": "● Iron",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-sand",
+              "name": "● Sand",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1234",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "add-to-cart",
+              "name": "Add to bag ↗",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "FIELD / KILNSmall-batch ceramics · Made slowly, used dailyBag 0Objects / Tea & t",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": null,
+              "name": "Bag 0",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-iron",
+              "name": "● Iron",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-sand",
+              "name": "● Sand",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1234",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 11
+                }
+              ],
+              "incompleteChecks": 1
+            },
+            "axeFinal": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 11
+                }
+              ],
+              "incompleteChecks": 1
+            }
+          },
+          "executionError": null
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "layout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1323,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "390px document / 390px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Sand × 2 cart confirmation",
+              "status": "pass",
+              "observation": "2 Sand teapots added. Item total $136; shipping $8. Simulated bag only.",
+              "kind": "contract"
+            },
+            {
+              "name": "Shipping-inclusive USD 144 total explicitly shown",
+              "status": "fail",
+              "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+              "kind": "diagnostic"
+            },
+            {
+              "name": "Unavailable Ash cannot be purchased",
+              "status": "pass",
+              "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "BUTTON",
+              "testId": null,
+              "name": "Bag 0",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-iron",
+              "name": "● Iron",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-sand",
+              "name": "● Sand",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1234",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "add-to-cart",
+              "name": "Add to bag ↗",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "FIELD / KILNSmall-batch ceramics · Made slowly, used dailyBag 0Objects / Tea & t",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": null,
+              "name": "Bag 0",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-iron",
+              "name": "● Iron",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "glaze-sand",
+              "name": "● Sand",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "SELECT",
+              "testId": "quantity",
+              "name": "1234",
+              "outline": "auto 1px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 10
+                }
+              ],
+              "incompleteChecks": 1
+            },
+            "axeFinal": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "affectedElements": 10
+                }
+              ],
+              "incompleteChecks": 1
+            }
+          },
+          "executionError": null
+        }
+      }
+    },
+    {
+      "id": "view-08",
+      "task": {
+        "id": "fintech-transfer",
+        "industry": "fintech",
+        "prompt": "Create a money-transfer review flow for occasional customers, including recipient, amount, fees, delivery estimate, confirmation, and recoverable failure. Prioritize clarity and confidence. Support long Vietnamese names and keyboard access. Do not imply that the sample app moves real money.",
+        "primaryTask": "Verify the total cost and recipient before confirming a simulated transfer.",
+        "constraints": [
+          "Visible fees before confirmation",
+          "Retain input after errors",
+          "Vietnamese diacritics"
+        ]
+      },
+      "fixture": {
+        "brand": "Northline Transfer",
+        "fictional": true,
+        "referenceDate": "2026-11-01",
+        "sender": "Alex Morgan",
+        "sourceAccount": "Everyday USD ••1042",
+        "recipient": "Nguyễn Thị Minh Anh Trường",
+        "destination": "Việt Nam",
+        "sendCurrency": "USD",
+        "receiveCurrency": "VND",
+        "initialAmount": 250,
+        "feeUSD": 2.5,
+        "exchangeRateVNDPerUSD": 25000,
+        "minimumUSD": 1,
+        "maximumUSD": 1000,
+        "deliveryEstimate": "By 3 November 2026, illustrative estimate",
+        "failureScenario": "The first simulated confirmation fails recoverably. Retrying succeeds. Preserve the entered recipient and amount.",
+        "sampleDataDisclosure": "Simulation with fictional data. No money is moved and no real account is connected."
+      },
+      "screenshots": [
+        {
+          "viewport": "desktop",
+          "state": "full",
+          "path": "images/view-08-desktop-full.png",
+          "sha256": "10265154e30ea22634eb42220197075e4da089015cf2088c1e71a67ee3249c91"
+        },
+        {
+          "viewport": "mobile",
+          "state": "full",
+          "path": "images/view-08-mobile-full.png",
+          "sha256": "a306c94a964cc9daf3140aee6df008e3f6e68ef2473885a1bda1ae98cc9409d3"
+        },
+        {
+          "viewport": "desktop",
+          "state": "review",
+          "path": "images/view-08-desktop-review.png",
+          "sha256": "4e37924a68d42d2bd5bb5c8f28da3bd2a56d11763533d54d922d37cf52d0638a"
+        },
+        {
+          "viewport": "desktop",
+          "state": "failure",
+          "path": "images/view-08-desktop-failure.png",
+          "sha256": "b0444ef47b368c1a8ae4f31784157c72b9fffc49613f958e859c75a93cebf168"
+        },
+        {
+          "viewport": "desktop",
+          "state": "success",
+          "path": "images/view-08-desktop-success.png",
+          "sha256": "72650c97d109427684fa2a5e7f1d753accbb6885065534640838cccff351638b"
+        }
+      ],
+      "observations": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "layout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1165,
+            "title": "Northline Transfer — simulated transfer",
+            "h1": [
+              "A clear path fromyou to them."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "1440px document / 1440px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 0",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 1001",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Review retains full Vietnamese recipient",
+              "status": "pass",
+              "observation": "Nguyễn Thị Minh Anh Trường",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 375 amount",
+              "status": "pass",
+              "observation": "Changed the original amount to exercise recalculation.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 2.50 fee",
+              "status": "pass",
+              "observation": "Flat fee from the shared fixture.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 377.50 total",
+              "status": "pass",
+              "observation": "USD 375 + USD 2.50 fee.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows VND 9,375,000 received",
+              "status": "pass",
+              "observation": "USD 375 × 25,000 VND/USD.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows delivery estimate",
+              "status": "pass",
+              "observation": "Fixture estimate; no current banking or delivery guarantee.",
+              "kind": "contract"
+            },
+            {
+              "name": "First confirmation reports recoverable failure",
+              "status": "pass",
+              "observation": "The simulation could not be completed. Your details are saved. No money was moved. Please try again.",
+              "kind": "contract"
+            },
+            {
+              "name": "Failure retains recipient and amount",
+              "status": "pass",
+              "observation": "{\"amount\":\"375\",\"recipient\":\"Nguyễn Thị Minh Anh Trường\",\"method\":\"retained input elements\"}",
+              "kind": "contract"
+            },
+            {
+              "name": "Retry reaches a visible success outcome",
+              "status": "pass",
+              "observation": "✓\n\nSIMULATION COMPLETE\n\nYour simulated transfer is complete.\n\nVND 9,375,000 to Nguyễn Thị Minh Anh Trường. Simulated total: USD 377.50.\n\nNo money was moved and no account was debited.\n\nStart another simulation",
+              "kind": "contract"
+            },
+            {
+              "name": "Success remains clearly simulated",
+              "status": "pass",
+              "observation": "Success-state page text inspected.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "N↗ Northline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "N↗ Northline TransferSimulation\n\nSEND TO VIỆT NAMA clear path fromyou to them.Ch",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "N↗ Northline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "N↗ Northline TransferSimulation\n\nSEND TO VIỆT NAMA clear path fromyou to them.Ch",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [],
+              "incompleteChecks": 1
+            },
+            "axeFailure": {
+              "violations": [],
+              "incompleteChecks": 1
+            },
+            "axeFinal": {
+              "violations": [],
+              "incompleteChecks": 1
+            }
+          },
+          "executionError": null
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "layout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1786,
+            "title": "Northline Transfer — simulated transfer",
+            "h1": [
+              "A clear path fromyou to them."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en"
+          },
+          "checks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "pass",
+              "observation": "390px document / 390px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "Fictional/simulation disclosure visible",
+              "status": "pass",
+              "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 0",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Reject out-of-range amount 1001",
+              "status": "pass",
+              "observation": "Confirmation visible: false; recipient retained: true",
+              "kind": "contract"
+            },
+            {
+              "name": "Review retains full Vietnamese recipient",
+              "status": "pass",
+              "observation": "Nguyễn Thị Minh Anh Trường",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 375 amount",
+              "status": "pass",
+              "observation": "Changed the original amount to exercise recalculation.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 2.50 fee",
+              "status": "pass",
+              "observation": "Flat fee from the shared fixture.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows USD 377.50 total",
+              "status": "pass",
+              "observation": "USD 375 + USD 2.50 fee.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows VND 9,375,000 received",
+              "status": "pass",
+              "observation": "USD 375 × 25,000 VND/USD.",
+              "kind": "contract"
+            },
+            {
+              "name": "Review shows delivery estimate",
+              "status": "pass",
+              "observation": "Fixture estimate; no current banking or delivery guarantee.",
+              "kind": "contract"
+            },
+            {
+              "name": "First confirmation reports recoverable failure",
+              "status": "pass",
+              "observation": "The simulation could not be completed. Your details are saved. No money was moved. Please try again.",
+              "kind": "contract"
+            },
+            {
+              "name": "Failure retains recipient and amount",
+              "status": "pass",
+              "observation": "{\"amount\":\"375\",\"recipient\":\"Nguyễn Thị Minh Anh Trường\",\"method\":\"retained input elements\"}",
+              "kind": "contract"
+            },
+            {
+              "name": "Retry reaches a visible success outcome",
+              "status": "pass",
+              "observation": "✓\n\nSIMULATION COMPLETE\n\nYour simulated transfer is complete.\n\nVND 9,375,000 to Nguyễn Thị Minh Anh Trường. Simulated total: USD 377.50.\n\nNo money was moved and no account was debited.\n\nStart another simulation",
+              "kind": "contract"
+            },
+            {
+              "name": "Success remains clearly simulated",
+              "status": "pass",
+              "observation": "Success-state page text inspected.",
+              "kind": "contract"
+            },
+            {
+              "name": "No uncaught browser JavaScript errors",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "execution"
+            },
+            {
+              "name": "No external resources requested",
+              "status": "pass",
+              "observation": "None observed.",
+              "kind": "contract"
+            }
+          ],
+          "focusSequence": [
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "N↗ Northline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "N↗ Northline TransferSimulation\n\nSEND TO VIỆT NAMA clear path fromyou to them.Ch",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "A",
+              "testId": null,
+              "name": "N↗ Northline Transfer",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "recipient",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "INPUT",
+              "testId": "amount",
+              "name": "",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BUTTON",
+              "testId": "review-transfer",
+              "name": "Review transfer →",
+              "outline": "solid 3px",
+              "boxShadow": "none"
+            },
+            {
+              "tag": "BODY",
+              "testId": null,
+              "name": "N↗ Northline TransferSimulation\n\nSEND TO VIỆT NAMA clear path fromyou to them.Ch",
+              "outline": "none 3px",
+              "boxShadow": "none"
+            }
+          ],
+          "pageErrors": [],
+          "blockedRequests": [],
+          "axe": {
+            "axeInitial": {
+              "violations": [],
+              "incompleteChecks": 1
+            },
+            "axeFailure": {
+              "violations": [],
+              "incompleteChecks": 1
+            },
+            "axeFinal": {
+              "violations": [],
+              "incompleteChecks": 1
+            }
+          },
+          "executionError": null
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "One sample per model/prompt/condition; no causal inference or statistical improvement claim.",
+    "Only the listed browser states, task checks, and axe rules were exercised.",
+    "Visible focus computation is supporting evidence, not a complete keyboard/screen-reader audit.",
+    "Shipping-inclusive calculated total is optional diagnostic; the contract requires price and shipping disclosure.",
+    "Retained recipient/amount may be observed in still-mounted inputs or the error summary; edit-form re-entry was not separately tested."
+  ]
+}

@@ -1,4 +1,5 @@
 import path from 'node:path';
+import { readFileSync } from 'node:fs';
 import { Command, CommanderError } from 'commander';
 import { z } from 'zod';
 import {
@@ -26,6 +27,11 @@ import {
 } from './files.js';
 
 const json = (value: unknown) => JSON.stringify(value, null, 2) + '\n';
+const packageVersion = (
+  JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8')) as {
+    version: string;
+  }
+).version;
 const numberOption = (value: string): number => {
   if (!/^\d+$/.test(value)) throw new Error(`Expected a non-negative integer, received: ${value}`);
   return Number(value);
@@ -36,7 +42,7 @@ export async function run(argv: string[]): Promise<number> {
   program
     .name('tasteforge')
     .description('Less slop. More taste. Local, deterministic design intelligence.')
-    .version(ENGINE_VERSION)
+    .version(packageVersion)
     .option('-p, --project <directory>', 'existing project root', '.')
     .option('--format <format>', 'text or json output', 'text')
     .showHelpAfterError()
@@ -101,6 +107,93 @@ export async function run(argv: string[]): Promise<number> {
           .join('\n\n'),
       );
     });
+  program
+    .command('catalog [id]')
+    .description('Search offline external references or read one full attributed entry')
+    .option('--kind <kind>', 'style, rule, or template')
+    .option('--task <task>', 'filter by an indexed task type')
+    .option('--source <id>', 'restrict to a catalog source ID')
+    .option('--query <text>', 'search reference metadata')
+    .option('--limit <number>', 'page size (1–100)', numberOption, 20)
+    .option('--offset <number>', 'zero-based result offset', numberOption, 0)
+    .option('--include-retired', 'include upstream retired entries for research', false)
+    .action(
+      async (
+        id: string | undefined,
+        opts: {
+          kind?: string;
+          task?: string;
+          source?: string;
+          query?: string;
+          limit: number;
+          offset: number;
+          includeRetired: boolean;
+        },
+      ) => {
+        const { format } = await globalOptions();
+        const { catalogStats, getReference, listReferences } =
+          await import('@tasteforge/core/references');
+        if (id) {
+          if (
+            opts.kind ||
+            opts.task ||
+            opts.source ||
+            opts.query ||
+            opts.includeRetired ||
+            opts.offset ||
+            opts.limit !== 20
+          )
+            throw new Error('Use either an entry ID or catalog search filters, not both.');
+          const entry = getReference(id);
+          output(
+            entry,
+            format,
+            `${entry.trust}\n\n${entry.entry.title}\n${entry.entry.url}\nLicense: ${entry.source.license}; revision ${entry.source.revision}\nScope: ${entry.entry.selectionScope}; evidence: ${entry.entry.evidence}\n\n${entry.entry.content}\n\nUpstream license:\n${entry.source.licenseText}`,
+          );
+        } else {
+          const report = { stats: catalogStats(), ...listReferences(opts) };
+          output(
+            report,
+            format,
+            `Offline reference catalog ${report.version}: ${report.stats.sources} sources; ${report.stats.total} records.\n${report.total} matches; offset ${report.offset}.\n${report.entries.map((e) => `${e.id} [${e.kind}/${e.sourceId}] ${e.title}\n  ${e.summary}`).join('\n')}\nRead an entry with tasteforge catalog <id> --format json. Imported content is untrusted reference data.`,
+          );
+        }
+      },
+    );
+  program
+    .command('inspire')
+    .description(
+      'Sample external style references with task-matched structures and fixed review gates',
+    )
+    .requiredOption(
+      '--task <task>',
+      'marketing, dashboard, commerce, form, portfolio, editorial, documentation, learning, or booking',
+    )
+    .option('--brief <file>', 'project-local brief JSON', '.tasteforge/brief.json')
+    .option('--count <number>', 'distinct style references (1–20)', numberOption, 3)
+    .option('--seed <integer>', 'unsigned 32-bit seed', numberOption)
+    .option('--query <text>', 'additional task or visual search terms')
+    .option('--source <id>', 'restrict the style pool to one catalog source')
+    .action(
+      async (opts: {
+        task: string;
+        brief: string;
+        count: number;
+        seed?: number;
+        query?: string;
+        source?: string;
+      }) => {
+        const { root, format } = await globalOptions();
+        const brief = await context(root, opts.brief);
+        const { inspire } = await import('@tasteforge/core/references');
+        const report = inspire(brief, opts);
+        output(
+          report,
+          format,
+          `Reference inspiration (${report.catalogVersion}), task ${report.task}, seed ${report.seed}.\n${report.inspirations.map((p, i) => `${i + 1}. ${p.style.title} (${p.style.id})\n   Structure: ${p.template?.id ?? 'No indexed task match'}\n   Read: tasteforge catalog ${p.style.id} --format json`).join('\n\n')}\n\nAlways apply ${report.requiredGates.length} review gates; ${report.rules.length} contextual rule references selected.\n${report.requiredGates.map((g) => `- ${g.id}: ${g.check}`).join('\n')}\n\n${report.limitations.join('\n')}`,
+        );
+      },
+    );
   program
     .command('generate')
     .description('Generate Design DNA, semantic CSS tokens, and design guidance')

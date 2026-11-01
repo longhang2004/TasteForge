@@ -1,0 +1,14 @@
+# Supplemental Antigravity inventory pair
+
+Recorded before creation. This is a separate host/model experiment, not extra samples added to the twelve-UI Codex study.
+
+- Two fresh sessions, one per condition: no skill / frozen current TasteForge skill.
+- Native Windows Antigravity CLI 1.4.12 launched from Ubuntu WSL. Pin `gemini-3.8-flash-medium`, effort `medium`; no model fallback, account switching or credential extraction. A no-tools availability probe already returned READY successfully.
+- Identical fictional inventory task, fixture, bare HTML/CSS/JS starter, system-font/local-resource constraints, optional offline CLI/catalog access, preview helper and soft twelve-minute budget. Actual tool/compute use may differ. Sessions have no prior comparison output or target layout.
+- Session-scoped accept-edits settings permit writing the assigned case, reading permitted skill only for treatment, and the task's WSL command prefix. Explicitly deny fixture/task replacement, other case reads, web access and MCP. Do not change global settings or skip all permissions. Global host customizations may still contribute context; disclose that limitation.
+- Run order is shuffled once with seed 20261101. CLI starts a new project/session per case; logs record actual initialization/context, tool calls, outputs, terminal status, duration and token usage if exposed. A terminal SUCCESS envelope is not accepted as proof that files/behavior exist.
+- Save source untouched after submission. If a tool/permission/host limitation prevents self-review or CLI use, record it as a deviation; do not repair the UI, fabricate evidence, or broaden permissions silently.
+- Render/test final submissions with the shared Chromium harness at 1440×1000 and 390×844, plus supporting 320px initial capture. Preserve task failures, observed contrast findings, edit/context retention and first-failure/retry behavior. A technical hook fallback is labeled separately from a user-task result.
+- The supplemental monochrome view preserves transparency/luminance, removing colors through grayscale plus display font family/radius/shadows. It avoids the earlier forced-white overlay artifact but can still reflow text. It is not the earlier study's neutral method and has no cross-study score meaning.
+- Inspect task regions, useful work priority, decision information, narrow context and recovery on actual renders. Any independent review is anonymized to the two conditions and must record unknowns; one pair cannot establish general skill benefit or a host/model ranking. Raw scripted pass counts do not establish comprehension or ease.
+- Complete a comparison viewer and report with exact source/skill/input/runtime hashes. Keep all prior runs unchanged. No Git publish, account/plan purchase or external product deployment is part of this trial.

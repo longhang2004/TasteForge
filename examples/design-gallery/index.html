@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Decisions, with evidence · TasteForge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.mjs"></script>
+  </head>
+  <body>
+    <a class="skip" href="#comparison">Skip to comparison</a>
+    <header>
+      <span class="brand">TasteForge / Design notes</span
+      ><label><input id="annotations" type="checkbox" checked /> Show annotations</label>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>Decisions, with evidence.</h1>
+        <p>
+          Three repairs and one structural tradeoff, using actual inventory captures. Annotations
+          explain the evidence; they were authored by an agent, not produced by a detector.
+          Human/user validation is pending.
+        </p>
+      </div>
+      <div class="reader">
+        <nav id="cases" aria-label="Evidence cases">
+          <h2>Choose a case</h2>
+          <div id="case-list"></div>
+        </nav>
+        <article id="comparison" tabindex="-1" aria-labelledby="case-heading">
+          <p role="status">Loading preserved captures…</p>
+        </article>
+      </div>
+      <noscript
+        ><p>
+          JavaScript is needed for the comparison controls. Read
+          <a href="README.md">the gallery guide</a> for direct source/evidence links.
+        </p></noscript
+      >
+    </main>
+    <footer>
+      Conventional tables, dense information, system fonts and coloured error indicators can serve a
+      task. These cases explain specific decisions, not universal aesthetic bans.
+    </footer>
+  </body>
+</html>

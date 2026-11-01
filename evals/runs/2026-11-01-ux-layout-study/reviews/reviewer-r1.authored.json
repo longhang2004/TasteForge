@@ -1,0 +1,95 @@
+{
+  "reviewer": "reviewer-r1",
+  "stage": "authored",
+  "views": [
+    {
+      "view": "view-01",
+      "effect": "mixed",
+      "evidence": "Authored screenshots restore the visible LIN-115 row, materially improving target discovery versus the blank neutral row. Orange Short badges and green Healthy badges supplement text, the selected row has a green edge/tint, and the filled Record decision button separates commit from return. However small pale item names, units, headings and simulation notes are harder to read than in neutral. Mobile truncates the long item name in the list; full review name is readable.",
+      "observedAccessibilityIssues": ["Axe reports serious color-contrast violations on both viewports across supplied states: table headings 2.85:1, subtitle 3.63:1, units about 3.09:1 and many secondary labels/footer elements. Some contrast checks remain incomplete, including overlapped content; these are not confirmed passes."],
+      "neutralJudgmentCaveat": "The blank target row was a neutral-rendering artifact: LIN-115 text, available 2 and Short 8 are visible in authored initial and selected screenshots. Neutralization also hid selected-row tint and primary-button emphasis; original neutral scores remain unchanged."
+    },
+    {
+      "view": "view-02",
+      "effect": "mixed",
+      "evidence": "Filled green Review/Confirm actions are more clearly actionable than neutral text, and pale green summary with a white received-amount inset separates cost context from editing. Recipient, debit and received values remain legible. Mobile still stacks the summary after Review, so styling does not resolve verification order. Small muted delivery qualifier and simulation/helper text lose reading strength.",
+      "observedAccessibilityIssues": ["Axe reports color-contrast violations on desktop/mobile: amount help 4.4:1, inactive step 3.61:1, rate 4.14:1, illustrative-estimate qualifier 3.56:1 and footer 3.79:1. aria-prohibited-attr and contrast also have incomplete checks, not established violations beyond the reported ones."],
+      "neutralJudgmentCaveat": "Neutralization removed the filled primary actions and financial-summary background but did not materially change content order or long-name wrapping."
+    },
+    {
+      "view": "view-03",
+      "effect": "helps",
+      "evidence": "Named colored glaze swatches, a dark selected border/background and hatched unavailable Ash make variant selection easier to interpret. Dark filled Add clearly follows the visible shipping-inclusive total. Serif headings change the craft character without reducing practical detail readability; mobile purchase controls remain far down the image-first page. The teapot illustration remains Iron-looking when Sand is selected, so swatch state is the useful cue rather than a product preview.",
+      "observedAccessibilityIssues": ["No axe violations or incomplete checks reported in supplied desktop/mobile initial/final observations; this is limited automated evidence, not accessibility conformance."],
+      "neutralJudgmentCaveat": "Neutralization removed swatch colors, selected border/background differentiation and Ash hatching; it understated practical selection and disabled-state clarity."
+    },
+    {
+      "view": "view-04",
+      "effect": "helps",
+      "evidence": "The selected LIN-115 row gains a blue edge and pale fill, shortage quantities use orange text while retaining explicit labels, and blue Save is clearly primary beside outlined Edit. Text and original mobile wrapping remain readable. The unexplained '3 items' beside the filter still competes with the list count; styling does not settle that meaning.",
+      "observedAccessibilityIssues": ["No violations or incomplete checks reported by supplied axe observations on either viewport; no full keyboard or screen-reader audit was performed."],
+      "neutralJudgmentCaveat": "Neutralization flattened selected-row and primary-action hierarchy. The structural assessment and retained-context observation otherwise carry over."
+    },
+    {
+      "view": "view-05",
+      "effect": "mixed",
+      "evidence": "Green selected-row edge/fill, orange short badges and dark filled Record improve state and action scanning. The no-order notice has a distinct pale panel. Against these gains, small SKU/bin/unit text and column headings become faint, especially on mobile, where density and wrapped brand header remain. Authored screenshots do not show the failure phase transition separately.",
+      "observedAccessibilityIssues": ["Axe reports color-contrast violations on desktop/mobile: heading label 3.57:1, column labels 3.16:1 and row secondary text about 3.31:1. Additional contrast checks are incomplete."],
+      "neutralJudgmentCaveat": "Neutralization hid badge, selected-row and primary-action distinctions but made muted operational labels darker. Missing selection test hook remains a trace diagnostic, not a color/font issue."
+    },
+    {
+      "view": "view-06",
+      "effect": "helps",
+      "evidence": "Strong selected option border plus check, named colored swatches and faded unavailable Ash clarify the glaze state. A dark full-width Add visibly completes the subtotal/shipping/total sequence. Serif title changes presentation without changing the task hierarchy; small returns/care text and long mobile route remain essentially the same.",
+      "observedAccessibilityIssues": ["Axe flags stock-count small text under available glaze options at 4.47:1 on both viewports, just below its 4.5 threshold; contrast also has incomplete checks. Disabled Ash text is visibly faint, though disabled controls require separate interpretation."],
+      "neutralJudgmentCaveat": "Neutral rendering retained the check but removed colored swatches, selection fill and strong primary-action background. It therefore understated action/variant clarity."
+    },
+    {
+      "view": "view-07",
+      "effect": "mixed",
+      "evidence": "Orange/green status badges and a green edge/tint on the selected row improve rapid scanning without replacing labels. Review quantity is isolated in a tinted panel and dark Record is primary beside Edit. Muted explanatory text and operational metadata are lighter than neutral; mobile retains the same long list-before-review structure.",
+      "observedAccessibilityIssues": ["Axe reports contrast violations on both viewports, including intro 4.32:1, list explanation 4.14:1, item-bottom label about 4.09:1 and footer 3.51:1. Some contrast checks remain incomplete."],
+      "neutralJudgmentCaveat": "Neutralization concealed selected-row tint and filled action, but also removed the authored low-contrast secondary text. Layout priorities do not materially change."
+    },
+    {
+      "view": "view-08",
+      "effect": "helps",
+      "evidence": "Dark filled Review/Confirm actions and outlined Edit establish an unambiguous action hierarchy. The VND amount sits in a green-tinted inset, giving the received value a stronger separate reading target while total debit remains bold above. Recipient text and mobile cost-before-action order remain clear; authored styling does not remove long scrolling or establish 320px success.",
+      "observedAccessibilityIssues": ["No axe violations or incomplete checks reported in supplied observations. The prior 320px overflow metadata remains a separate narrow-layout concern; no authored 320px screenshot is available."],
+      "neutralJudgmentCaveat": "Neutralization removed the received-amount inset and primary/secondary action contrast; no material content reflow is evident in these images."
+    },
+    {
+      "view": "view-09",
+      "effect": "mixed",
+      "evidence": "Filled green actions and tinted fee/received-value regions make the next step and monetary sections easier to find. Serif confidence text changes tone but does not reduce the large headline/sidebar footprint. Small pale hints, summary labels and simulation footer become harder to read. No authored failure screenshot is supplied to establish whether the neutral Complete/error contradiction or concatenated retained details looks different with styling.",
+      "observedAccessibilityIssues": ["Axe reports critical label failures for both recipient and amount inputs on desktop/mobile: nearby visible labels are not programmatically associated according to the supplied observation.", "Contrast violations include hint text about 3.26:1 and inactive step text about 3.63:1; further contrast checks are incomplete."],
+      "neutralJudgmentCaveat": "Neutralization removed financial insets and filled buttons while making pale secondary text darker. The authored packet lacks failure images, so no visual correction to that state's neutral evidence is inferred."
+    },
+    {
+      "view": "view-10",
+      "effect": "helps",
+      "evidence": "Selected glaze now combines radio, heavy border and tinted background with named colored swatches; Ash is visibly unavailable. Filled Add is a clear endpoint after delivery, returns and bold shipping-inclusive total. Serif headline retains the same readable product/price relationship on mobile. The long image-first page and lower material/care position remain unchanged.",
+      "observedAccessibilityIssues": ["No axe violations reported in supplied desktop/mobile observations, but contrast checks include incomplete results. This does not establish full conformance."],
+      "neutralJudgmentCaveat": "Neutralization retained native radio selection but removed the tinted selection fill, swatch colors and filled Add action; its selection assessment was directionally sound but understated these redundant cues."
+    },
+    {
+      "view": "view-11",
+      "effect": "mixed",
+      "evidence": "Dark selected glaze border and colored named swatches resolve the weak neutral selected-option appearance, and filled Add becomes easy to identify. However small uppercase glaze/selected-name labels and stock details are pale; delivery/care remain collapsed and their disclosure glyphs still look like tiny unresolved marks. Visual craft character changes more than purchase-condition discoverability.",
+      "observedAccessibilityIssues": ["Axe reports color-contrast violations on both viewports: glaze label and selected name about 3.37:1, image note/price caption about 4.06:1, and eyebrow 3.95:1. Contrast checks also include incomplete results.", "Care/returns disclosure indicators remain visually tiny/unclear in the supplied screenshots; expanded content and keyboard operation are not visually established."],
+      "neutralJudgmentCaveat": "Neutralization hid the selected border styling and swatch colors, so its weak-selection observation does not describe the authored controls. It did not create the collapsed practical-detail sections or stale initial helper."
+    },
+    {
+      "view": "view-12",
+      "effect": "helps",
+      "evidence": "Filled navy Review/Confirm actions clearly separate commitment from the underlined Edit link. Tinted recipient and blue received-amount panels aid scan order while total debit stays distinct. Mobile name and monetary values remain legible; currency-prefix spacing and the nonessential demo-mechanics sidebar remain as observed structurally. No authored failure image is provided.",
+      "observedAccessibilityIssues": ["Axe reports eyebrow contrast 4.03:1 on both viewports; contrast also has incomplete checks. Other visible core form/action text is substantially darker, but that is not a full accessibility audit."],
+      "neutralJudgmentCaveat": "Neutralization flattened recipient/received-value grouping and erased filled primary actions; it did not materially change the review content sequence."
+    }
+  ],
+  "limitations": [
+    "Inspected all 36 authored images using view_image in packet order: desktop-full, mobile-full and desktop-review for each of twelve views. Read authored-packet.json image references and axe observations only within the released scope; no source, manifest, gallery, creator notes, other reviewer or prior studies accessed.",
+    "No authored failure/cart screenshot or 320px screenshot was supplied. Error/success accessibility observations are automated packet evidence, not visual inspection of those authored states. Incomplete axe results are unresolved, and empty violations are not a conformance claim.",
+    "Neutral file was not edited. Effects describe practical changes from authored styling without new scores or an aggregate winner; visual appeal alone does not establish better UX."
+  ]
+}

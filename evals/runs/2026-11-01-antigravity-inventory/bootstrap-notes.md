@@ -1,0 +1,9 @@
+# Native Windows command-rule correction
+
+The initial a02 and a01 sessions read their task (and the permitted skill in a02), then attempted the same WSL `ls -la` command. Both were soft-denied because the native Windows CLI did not match the literal, quoted command prefix. They exited zero with `status: SUCCESS`, empty response and `denied_actions`, but **created no UI**. They are bootstrap-blocked attempts, not successful submissions or poor UI designs. Original event streams, stderr, result envelopes and session settings are preserved under each case's `bootstrap-01/` evidence.
+
+The [official CLI permission reference](https://antigravity.google/docs/permissions?tab=cli) explicitly documents regex matching for Windows commands that cannot be cleanly tokenized. A small separate read-only probe changed only the scoped command prefix from literal to that documented regex form. It ran the exact same WSL `ls -la` action successfully and returned READY; see `evidence/availability/command-rule.json`. This did not enable `--dangerously-skip-permissions`, change global permissions, switch shell, or relax task constraints.
+
+Both case settings receive the same matching correction. Neither starter had changed, so fresh creation sessions restart in the same preregistered order and condition. Original task/fixture remain unchanged and no design feedback is supplied. The interrupted bootstrap reasoning/token use is recorded separately rather than counted as implementation time. This extra attempt is an operational deviation and limits budget comparability; it is not hidden in the final report.
+
+The runner now checks actual implementation files and `denied_actions` as well as the terminal status. A zero exit or SUCCESS envelope alone cannot establish that an interface exists. All later creator outputs will be kept unchanged, including failures.

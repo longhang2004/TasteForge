@@ -1,0 +1,29 @@
+timestamp=2026-11-01T06:16:59.568Z level=INFO run=cde2a736 message="creating instance" directory=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe
+timestamp=2026-11-01T06:16:59.574Z level=INFO run=cde2a736 message=fromDirectory directory=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe
+timestamp=2026-11-01T06:17:00.097Z level=INFO run=cde2a736 message=bootstrapping directory=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe
+timestamp=2026-11-01T06:17:00.118Z level=INFO run=cde2a736 message=loading path=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe/glm-5.3-flash-free/config/opencode/config.json
+timestamp=2026-11-01T06:17:00.141Z level=INFO run=cde2a736 message=loading path=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe/glm-5.3-flash-free/config/opencode/opencode.json
+timestamp=2026-11-01T06:17:00.156Z level=INFO run=cde2a736 message=loading path=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe/glm-5.3-flash-free/config/opencode/opencode.jsonc
+timestamp=2026-11-01T06:17:01.779Z level=INFO run=cde2a736 message="all LSPs are disabled"
+timestamp=2026-11-01T06:17:01.781Z level=INFO run=cde2a736 message="all formatters are disabled"
+timestamp=2026-11-01T06:17:01.781Z level=INFO run=cde2a736 message=init
+timestamp=2026-11-01T06:17:02.397Z level=INFO run=cde2a736 message="creating instance" directory=/mnt/c/Users/hi/src/personal_repos/TasteForge
+timestamp=2026-11-01T06:17:02.398Z level=INFO run=cde2a736 message=fromDirectory directory=/mnt/c/Users/hi/src/personal_repos/TasteForge
+timestamp=2026-11-01T06:17:02.926Z level=INFO run=cde2a736 message=bootstrapping directory=/mnt/c/Users/hi/src/personal_repos/TasteForge
+timestamp=2026-11-01T06:17:04.935Z level=INFO run=cde2a736 message="all LSPs are disabled"
+timestamp=2026-11-01T06:17:04.937Z level=INFO run=cde2a736 message="all formatters are disabled"
+timestamp=2026-11-01T06:17:04.937Z level=INFO run=cde2a736 message=init
+timestamp=2026-11-01T06:17:04.954Z level=INFO run=cde2a736 message=created id=ses_e6a3edd46ffefzvBcNIFTDIdi1 slug=playful-otter version=1.19.3 projectID=37566e8cbb86a4fdacd01a8bd03162cc965d2864 directory=/mnt/c/Users/hi/src/personal_repos/TasteForge path="" workspaceID=undefined parentID=undefined title="TasteForge free model availability" agent=undefined model=undefined metadata=undefined permission="[{\"permission\":\"question\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_enter\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_exit\",\"pattern\":\"*\",\"action\":\"deny\"}]" cost=0 tokens.input=0 tokens.output=0 tokens.reasoning=0 tokens.cache.read=0 tokens.cache.write=0 time.created=1793513824954 time.updated=1793513824954
+timestamp=2026-11-01T06:17:05.047Z level=INFO run=cde2a736 message="event connected"
+timestamp=2026-11-01T06:17:05.736Z level=INFO run=cde2a736 message=loop session.id=ses_e6a3edd46ffefzvBcNIFTDIdi1 step=0
+timestamp=2026-11-01T06:17:09.380Z level=INFO run=cde2a736 message="shell tool using shell" shell=/bin/bash
+timestamp=2026-11-01T06:17:10.799Z level=INFO run=cde2a736 message="watcher backend" directory=/mnt/c/Users/hi/src/personal_repos/TasteForge platform=linux backend=inotify
+timestamp=2026-11-01T06:17:10.814Z level=INFO run=cde2a736 message="project copy refresh started" projectID=37566e8cbb86a4fdacd01a8bd03162cc965d2864
+timestamp=2026-11-01T06:17:17.634Z level=INFO run=cde2a736 message="project copy refresh done" projectID=37566e8cbb86a4fdacd01a8bd03162cc965d2864 updated=[] removed=[]
+timestamp=2026-11-01T06:17:17.995Z level=INFO run=cde2a736 message="booting location services" directory=/mnt/c/Users/hi/src/personal_repos/TasteForge workspaceID=undefined
+timestamp=2026-11-01T06:17:18.080Z level=WARN run=cde2a736 message="background dependency install failed" dir=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe/glm-5.3-flash-free/config/opencode error="Cause([Fail(NpmInstallFailedError (cause: Error: Unsupported engine))])"
+timestamp=2026-11-01T06:17:18.088Z level=INFO run=cde2a736 message=process session.id=ses_e6a3edd46ffefzvBcNIFTDIdi1 messageID=msg_195c133a8001vNbLQJLlJ6BG0u
+timestamp=2026-11-01T06:17:18.099Z level=INFO run=cde2a736 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_e6a3edd46ffefzvBcNIFTDIdi1 small=false agent=build mode=primary
+timestamp=2026-11-01T06:17:18.127Z level=INFO run=cde2a736 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-11-01T06:17:18.936Z level=ERROR run=cde2a736 message="stream error" providerID=opencode modelID=glm-5.3-flash-free session.id=ses_e6a3edd46ffefzvBcNIFTDIdi1 small=false agent=build mode=primary error.error="AI_APICallError: Free usage limit reached. Free models work in OpenCode (https://opencode.ai); subscribe to OpenCode Go to keep going: https://opencode.ai/go"
+timestamp=2026-11-01T06:17:23.220Z level=WARN run=cde2a736 message="background dependency install failed" dir=/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/opencode-probe/glm-5.3-flash-free/config/opencode error="Cause([Fail(NpmInstallFailedError (cause: Error: Unsupported engine))])"

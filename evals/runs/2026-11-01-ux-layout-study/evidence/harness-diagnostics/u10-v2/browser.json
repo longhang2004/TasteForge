@@ -1,0 +1,3441 @@
+{
+  "caseId": "u10",
+  "capturedAtUtc": "2026-11-01T05:31:54.327Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    "app.js": "3d5c44cebdb851a5321c24f3f6f73c04342e033c1b38ec39352a34a8f52c3e4c",
+    "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+    "implementation-notes.md": "e467ee1f186a35a0b146dd296361ee3149f4a7fa666020eeab4e24d8dfbd46cb",
+    "index.html": "030a4044061532d2da5be1a0f1d74fb76798120377d2c8f288f488e4fe30423a",
+    "styles.css": "fab1d0bce3e7bce8fa782f3fd17337e1b16559a8c4b1252f0f68c27ecd55ce96",
+    "task.md": "2ac4373937f4e68cb133dfd1d3bd2e57fdf142e3b7f6cf7e10f148a86a4b7021"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-neutral-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-empty.png",
+        "desktop-detail.png",
+        "desktop-neutral-detail.png",
+        "desktop-review.png",
+        "desktop-neutral-review.png",
+        "desktop-failure.png",
+        "desktop-neutral-failure.png",
+        "desktop-success.png",
+        "desktop-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Initial list contains all five fixture items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"GLS-031\",\"LIN-115\",\"PPR-010\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Shortage filter shows precisely the three shortage items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "No matches has zero rows and explicit feedback",
+          "status": "pass",
+          "observation": "Unmatched query, visible-page text and row count; qualitative clarity assessed separately.",
+          "kind": "contract"
+        },
+        {
+          "name": "Clear search restores filtered list",
+          "status": "pass",
+          "observation": "Shortage-only remains active.",
+          "kind": "contract"
+        },
+        {
+          "name": "Selected item evidence includes full name and location",
+          "status": "pass",
+          "observation": "N\nnorthline\nSTOCKROOM\nWarehouse A\nOP\nINVENTORY / OVERVIEW\nStockroom\n\nA clear view of what’s on hand and what needs attention.\n\n◷\nSnapshot\n1 Nov 2026 · 09:00 ICT\ni\nFictional snapshot · Not live inventory. Decisions here are simulated and won’t place an order.\nWAREHOUSE A\nAll inventory 1\n5 items\n⌕\n×\nShortage only\nITEM\nAVAILABLE\nSTATUS\nLIN\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n2\npieces\nShort 8\nBelow reorder point\nShowing 1 of 5\n← All inventory\nITEM DETAILS\nLIN\nShort 8\nLIN-115 · LOCATION B-04\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n\nStock evidence for this item at the snapshot time.\n\nStock position\nUNIT: PIECES\nAvailable\n2 pieces\nReorder point\n10 pieces\nShortage\n8 pieces\nIncoming stock\n4 pieces\n4 incoming pieces are shown separately; this item remains below its reorder point.\n↗\nReplenishment decision\nChoose an amount to record locally.\nRequested quantity · pieces\n−\n+\nEnter a whole number from 1 to 50.\nReview decision\n→\nNorthline Stockroom\nLocal simulation · No live warehouse connection",
+          "kind": "contract"
+        },
+        {
+          "name": "Returning retains search and shortage filter",
+          "status": "pass",
+          "observation": "[\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 0",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 51",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 1.5",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review exposes item, quantity/unit and simulated consequence",
+          "status": "pass",
+          "observation": "N\nnorthline\nSTOCKROOM\nWarehouse A\nOP\nINVENTORY / OVERVIEW\nStockroom\n\nA clear view of what’s on hand and what needs attention.\n\n◷\nSnapshot\n1 Nov 2026 · 09:00 ICT\ni\nFictional snapshot · Not live inventory. Decisions here are simulated and won’t place an order.\nWAREHOUSE A\nAll inventory 1\n5 items\n⌕\n×\nShortage only\nITEM\nAVAILABLE\nSTATUS\nLIN\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n2\npieces\nShort 8\nBelow reorder point\nShowing 1 of 5\n← Edit decision\nSTEP 2 OF 2\nREVIEW DECISION\nReady to record?\n\nReview the replenishment decision before saving it.\n\nITEM\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nLIN-115 · B-04\nREQUESTED REPLENISHMENT\n8pieces\ni\nThis records a decision only.\nNo purchase order will be placed and stock won’t change.\nRecord decision\n→\nBack to inventory\nNorthline Stockroom\nLocal simulation · No live warehouse connection",
+          "kind": "contract"
+        },
+        {
+          "name": "Editing retains decision quantity",
+          "status": "pass",
+          "observation": "8",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited quantity reaches review",
+          "status": "fail",
+          "observation": "Changed quantity, then restoring primary-task quantity 8.",
+          "kind": "contract"
+        },
+        {
+          "name": "First save has recoverable failure",
+          "status": "pass",
+          "observation": "!\nCould not save decision\nA temporary issue interrupted the save. Your quantity is kept.\nTry again",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains selected item and quantity",
+          "status": "pass",
+          "observation": "Input value or retained review summary inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Retry reports recorded simulation outcome",
+          "status": "pass",
+          "observation": "✓\nDecision recorded\nLIN-115 · 8 pieces · Local simulation",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Stockroom home",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "inventory-search",
+          "name": "Search SKU or item name",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "shortage-only",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "Inspect CER-204 Everyday Teapot — Sand",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "Inspect LIN-115 Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "Inspect GLS-031 Drinking glass — Clear",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "Inspect CER-120 Breakfast bowl — Iron",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "Inspect PPR-010 Gift wrap — Ochre",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "NnorthlineSTOCKROOMWarehouse AOP\n  INVENTORY / OVERVIEWStockroomA clear view of ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Stockroom home",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 181,
+            "y": 323.5,
+            "width": 288,
+            "height": 15,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 501,
+            "y": 330.5,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER\nCER-204\nEveryday Teapot — Sand\n3\npieces\nShort 9",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n2\npieces\nShort 8",
+            "x": 150,
+            "y": 445,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 150,
+            "y": 445,
+            "width": 622.609375,
+            "height": 64,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS\nGLS-031\nDrinking glass — Clear\n24\npieces\nHealthy",
+            "x": 150,
+            "y": 510,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER\nCER-120\nBreakfast bowl — Iron\n4\npieces\nShort 4",
+            "x": 150,
+            "y": 575,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR\nPPR-010\nGift wrap — Ochre\n18\nsheets\nHealthy",
+            "x": 150,
+            "y": 640,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "full": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 181,
+            "y": 323.5,
+            "width": 288,
+            "height": 15,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 501,
+            "y": 330.5,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER\nCER-204\nEveryday Teapot — Sand\n3\npieces\nShort 9",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n2\npieces\nShort 8",
+            "x": 150,
+            "y": 445,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 150,
+            "y": 445,
+            "width": 622.609375,
+            "height": 64,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS\nGLS-031\nDrinking glass — Clear\n24\npieces\nHealthy",
+            "x": 150,
+            "y": 510,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER\nCER-120\nBreakfast bowl — Iron\n4\npieces\nShort 4",
+            "x": 150,
+            "y": 575,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR\nPPR-010\nGift wrap — Ochre\n18\nsheets\nHealthy",
+            "x": 150,
+            "y": 640,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 181,
+            "y": 323.5,
+            "width": 288,
+            "height": 15,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 501,
+            "y": 330.5,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER\nCER-204\nEveryday Teapot — Sand\n3\npieces\nShort 9",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n2\npieces\nShort 8",
+            "x": 150,
+            "y": 445,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 150,
+            "y": 445,
+            "width": 622.609375,
+            "height": 64,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS\nGLS-031\nDrinking glass — Clear\n24\npieces\nHealthy",
+            "x": 150,
+            "y": 510,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER\nCER-120\nBreakfast bowl — Iron\n4\npieces\nShort 4",
+            "x": 150,
+            "y": 575,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR\nPPR-010\nGift wrap — Ochre\n18\nsheets\nHealthy",
+            "x": 150,
+            "y": 640,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "empty": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 181,
+            "y": 323.5,
+            "width": 262.90625,
+            "height": 15,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "×",
+            "x": 451.90625,
+            "y": 320.5,
+            "width": 17.09375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 501,
+            "y": 330.5,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "Clear search",
+            "x": 426.015625,
+            "y": 532,
+            "width": 70.5625,
+            "height": 19,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "detail": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 181,
+            "y": 323.5,
+            "width": 262.90625,
+            "height": 15,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "×",
+            "x": 451.90625,
+            "y": 320.5,
+            "width": 17.09375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 501,
+            "y": 330.5,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n2\npieces\nShort 8",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 64,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← All inventory",
+            "x": 830.609375,
+            "y": 255.5,
+            "width": 74.734375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-quantity",
+            "text": "",
+            "x": 866.90625,
+            "y": 725.203125,
+            "width": 386.796875,
+            "height": 35,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "review-decision",
+            "text": "Review decision\n→",
+            "x": 832.609375,
+            "y": 790.203125,
+            "width": 455.390625,
+            "height": 39,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "review": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 181,
+            "y": 323.5,
+            "width": 262.90625,
+            "height": 15,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "×",
+            "x": 451.90625,
+            "y": 320.5,
+            "width": 17.09375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 501,
+            "y": 330.5,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n2\npieces\nShort 8",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 64,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "← Edit decision",
+            "x": 830.609375,
+            "y": 255.5,
+            "width": 75.328125,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "save-decision",
+            "text": "Record decision\n→",
+            "x": 832.609375,
+            "y": 615.46875,
+            "width": 455.390625,
+            "height": 39,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "Back to inventory",
+            "x": 832.609375,
+            "y": 662.46875,
+            "width": 455.390625,
+            "height": 39,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "failure": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 181,
+            "y": 323.5,
+            "width": 262.90625,
+            "height": 15,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "×",
+            "x": 451.90625,
+            "y": 320.5,
+            "width": 17.09375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 501,
+            "y": 330.5,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n2\npieces\nShort 8",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 64,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "← Edit decision",
+            "x": 830.609375,
+            "y": 255.5,
+            "width": 75.328125,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "save-decision",
+            "text": "Record decision\n→",
+            "x": 832.609375,
+            "y": 615.46875,
+            "width": 455.390625,
+            "height": 39,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-status",
+            "text": "!\nCould not save decision\nA temporary issue interrupted the save. Your quantity is kept.\nTry again",
+            "x": 832.609375,
+            "y": 664.46875,
+            "width": 455.390625,
+            "height": 46.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "retry-decision",
+            "text": "Try again",
+            "x": 1223.984375,
+            "y": 681.5625,
+            "width": 53.015625,
+            "height": 12,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "Back to inventory",
+            "x": 832.609375,
+            "y": 718.65625,
+            "width": 455.390625,
+            "height": 39,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "success": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 181,
+            "y": 323.5,
+            "width": 262.90625,
+            "height": 15,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "×",
+            "x": 451.90625,
+            "y": 320.5,
+            "width": 17.09375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 501,
+            "y": 330.5,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n2\npieces\nShort 8",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 65,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 150,
+            "y": 380,
+            "width": 622.609375,
+            "height": 64,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "← Edit decision",
+            "x": 830.609375,
+            "y": 255.5,
+            "width": 75.328125,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "save-decision",
+            "text": "Record decision\n→",
+            "x": 832.609375,
+            "y": 615.46875,
+            "width": 455.390625,
+            "height": 39,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-status",
+            "text": "✓\nDecision recorded\nLIN-115 · 8 pieces · Local simulation",
+            "x": 832.609375,
+            "y": 664.46875,
+            "width": 455.390625,
+            "height": 46.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "Back to inventory",
+            "x": 832.609375,
+            "y": 718.65625,
+            "width": 455.390625,
+            "height": 39,
+            "fullyInFirstViewport": true
+          }
+        ]
+      },
+      "initialText": "N\nnorthline\nSTOCKROOM\nWarehouse A\nOP\nINVENTORY / OVERVIEW\nStockroom\n\nA clear view of what’s on hand and what needs attention.\n\n◷\nSnapshot\n1 Nov 2026 · 09:00 ICT\ni\nFictional snapshot · Not live inventory. Decisions here are simulated and won’t place an order.\nWAREHOUSE A\nAll inventory 5\n5 items\n⌕\nShortage only\nITEM\nAVAILABLE\nSTATUS\nCER\nCER-204\nEveryday Teapot — Sand\n3\npieces\nShort 9\nLIN\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n2\npieces\nShort 8\nGLS\nGLS-031\nDrinking glass — Clear\n24\npieces\nHealthy\nCER\nCER-120\nBreakfast bowl — Iron\n4\npieces\nShort 4\nPPR\nPPR-010\nGift wrap — Ochre\n18\nsheets\nHealthy\nBelow reorder point\nShowing 5 of 5\n↗▤\nITEM DETAILS\nChoose an item\n\nSelect any row to see its stock evidence and record a replenishment decision.\n\n↳\nStart with an item marked\nShort\nNorthline Stockroom\nLocal simulation · No live warehouse connection",
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1000,
+        "title": "Northline Stockroom — Inventory",
+        "h1": [
+          "Stockroom"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"brand-sub\">STOCKROOM</span>",
+                "target": [
+                  ".brand-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #77817c, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">INVENTORY / OVERVIEW</div>",
+                "target": [
+                  ".intro > div:nth-child(1) > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #818a84, background color: #f4f5f1, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"subtitle\">A clear view of what’s on hand and what needs attention.</p>",
+                "target": [
+                  ".subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #78827c, background color: #f4f5f1, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">WAREHOUSE A</div>",
+                "target": [
+                  ".list-heading > div > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"inventory-total\">5 items</span>",
+                "target": [
+                  ".inventory-total"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #88918b, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>ITEM</span>",
+                "target": [
+                  ".table-head > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>AVAILABLE</span>",
+                "target": [
+                  ".table-head > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>STATUS</span>",
+                "target": [
+                  ".table-head > span:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"item-code\">CER</span>",
+                "target": [
+                  "button[data-sku=\"CER-204\"] > .item-cell > .item-code"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.41 (foreground color: #78867c, background color: #f1f3ef, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Everyday Teapot — Sand</span>",
+                "target": [
+                  "button[data-sku=\"CER-204\"] > .item-cell > .item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #77827b, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  "button[data-sku=\"CER-204\"] > .quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #8b958e, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"item-code\">GLS</span>",
+                "target": [
+                  "button[data-sku=\"GLS-031\"] > .item-cell > .item-code"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.41 (foreground color: #78867c, background color: #f1f3ef, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Drinking glass — Clear</span>",
+                "target": [
+                  "button[data-sku=\"GLS-031\"] > .item-cell > .item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #77827b, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  "button[data-sku=\"GLS-031\"] > .quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #8b958e, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"pill healthy\"><i></i>Healthy</span>",
+                "target": [
+                  "button[data-sku=\"GLS-031\"] > .status-cell > .healthy.pill"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.48 (foreground color: #55775e, background color: #edf4ed, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"item-code\">CER</span>",
+                "target": [
+                  "button[data-sku=\"CER-120\"] > .item-cell > .item-code"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.41 (foreground color: #78867c, background color: #f1f3ef, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Breakfast bowl — Iron</span>",
+                "target": [
+                  "button[data-sku=\"CER-120\"] > .item-cell > .item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #77827b, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  "button[data-sku=\"CER-120\"] > .quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #8b958e, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"item-code\">PPR</span>",
+                "target": [
+                  "button[data-sku=\"PPR-010\"] > .item-cell > .item-code"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.41 (foreground color: #78867c, background color: #f1f3ef, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Gift wrap — Ochre</span>",
+                "target": [
+                  "button[data-sku=\"PPR-010\"] > .item-cell > .item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #77827b, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>sheets</small>",
+                "target": [
+                  "button[data-sku=\"PPR-010\"] > .quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #8b958e, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"pill healthy\"><i></i>Healthy</span>",
+                "target": [
+                  "button[data-sku=\"PPR-010\"] > .status-cell > .healthy.pill"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.48 (foreground color: #55775e, background color: #edf4ed, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span><span class=\"legend-dot\"></span>Below reorder point</span>",
+                "target": [
+                  ".list-foot > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Showing 5 of 5</span>",
+                "target": [
+                  ".list-foot > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">ITEM DETAILS</div>",
+                "target": [
+                  ".detail-empty > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Select any row to see its stock evidence and record a replenishment decision.</p>",
+                "target": [
+                  ".detail-empty > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"tip\"><span>↳</span> Start with an item marked <span class=\"pill shortage\"><i></i>Short</span></div>",
+                "target": [
+                  ".tip"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b867f, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Northline Stockroom</span>",
+                "target": [
+                  "footer > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Local simulation · No live warehouse connection</span>",
+                "target": [
+                  "footer > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"snapshot-icon\">◷</span>",
+                "target": [
+                  ".snapshot-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"info-icon\">i</span>",
+                "target": [
+                  ".info-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"count\">5</span>",
+                "target": [
+                  ".count"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"search-icon\" aria-hidden=\"true\">⌕</span>",
+                "target": [
+                  ".search-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"item-code\">LIN</span>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .item-cell > .item-code"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<strong>LIN-115</strong>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .item-cell > .item-copy > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>Khăn bàn Nguyễn Thị Minh Anh — Natural linen</span>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .item-cell > .item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<strong>2</strong>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .quantity-cell > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span class=\"pill shortage\"><i></i>Short 8</span>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .status-cell > .shortage.pill"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>▤</span>",
+                "target": [
+                  ".empty-art > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span>↳</span>",
+                "target": [
+                  ".tip > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"brand-sub\">STOCKROOM</span>",
+                "target": [
+                  ".brand-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #77817c, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">INVENTORY / OVERVIEW</div>",
+                "target": [
+                  ".intro > div:nth-child(1) > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #818a84, background color: #f4f5f1, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"subtitle\">A clear view of what’s on hand and what needs attention.</p>",
+                "target": [
+                  ".subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #78827c, background color: #f4f5f1, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">WAREHOUSE A</div>",
+                "target": [
+                  ".list-heading > div > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"inventory-total\">5 items</span>",
+                "target": [
+                  ".inventory-total"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #88918b, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>ITEM</span>",
+                "target": [
+                  ".table-head > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>AVAILABLE</span>",
+                "target": [
+                  ".table-head > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>STATUS</span>",
+                "target": [
+                  ".table-head > span:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span><span class=\"legend-dot\"></span>Below reorder point</span>",
+                "target": [
+                  ".list-foot > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Showing 1 of 5</span>",
+                "target": [
+                  ".list-foot > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"step\">STEP 2 OF 2</span>",
+                "target": [
+                  ".step"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.69 (foreground color: #96a099, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">REVIEW DECISION</div>",
+                "target": [
+                  ".detail-content > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"detail-lede\">Review the replenishment decision before saving it.</p>",
+                "target": [
+                  ".detail-lede"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.62 (foreground color: #7e8982, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">ITEM</div>",
+                "target": [
+                  ".review-label:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #89948d, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"review-sku\">LIN-115 · B-04</span>",
+                "target": [
+                  ".review-sku"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.62 (foreground color: #7e8982, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">REQUESTED REPLENISHMENT</div>",
+                "target": [
+                  ".review-label:nth-child(5)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #89948d, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>pieces</span>",
+                "target": [
+                  ".review-amount > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.17 (foreground color: #737f77, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span><strong>This records a decision only.</strong><br>No purchase order will be placed and stock won’t change.</span>",
+                "target": [
+                  ".no-order > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #69786f, background color: #f1f5f0, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>A temporary issue interrupted the save. Your quantity is kept.</small>",
+                "target": [
+                  "div > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.66 (foreground color: #78837c, background color: #fff5ee, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<button class=\"button button-quiet\" data-testid=\"back-to-list\">Back to inventory</button>",
+                "target": [
+                  ".button-quiet"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #6e7b73, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Northline Stockroom</span>",
+                "target": [
+                  "footer > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Local simulation · No live warehouse connection</span>",
+                "target": [
+                  "footer > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"snapshot-icon\">◷</span>",
+                "target": [
+                  ".snapshot-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"info-icon\">i</span>",
+                "target": [
+                  ".info-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"count\">1</span>",
+                "target": [
+                  ".count"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"search-icon\" aria-hidden=\"true\">⌕</span>",
+                "target": [
+                  ".search-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<button class=\"search-clear\" data-testid=\"clear-search\" aria-label=\"Clear search\">×</button>",
+                "target": [
+                  ".search-clear"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"item-code\">LIN</span>",
+                "target": [
+                  ".item-code"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<strong>LIN-115</strong>",
+                "target": [
+                  ".item-copy > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>Khăn bàn Nguyễn Thị Minh Anh — Natural linen</span>",
+                "target": [
+                  ".item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<strong>2</strong>",
+                "target": [
+                  ".quantity-cell > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  ".quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span class=\"pill shortage\"><i></i>Short 8</span>",
+                "target": [
+                  ".pill"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>→</span>",
+                "target": [
+                  ".button-primary > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"brand-sub\">STOCKROOM</span>",
+                "target": [
+                  ".brand-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #77817c, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">INVENTORY / OVERVIEW</div>",
+                "target": [
+                  ".intro > div:nth-child(1) > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #818a84, background color: #f4f5f1, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"subtitle\">A clear view of what’s on hand and what needs attention.</p>",
+                "target": [
+                  ".subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #78827c, background color: #f4f5f1, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">WAREHOUSE A</div>",
+                "target": [
+                  ".list-heading > div > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"inventory-total\">5 items</span>",
+                "target": [
+                  ".inventory-total"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #88918b, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>ITEM</span>",
+                "target": [
+                  ".table-head > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>AVAILABLE</span>",
+                "target": [
+                  ".table-head > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>STATUS</span>",
+                "target": [
+                  ".table-head > span:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span><span class=\"legend-dot\"></span>Below reorder point</span>",
+                "target": [
+                  ".list-foot > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Showing 1 of 5</span>",
+                "target": [
+                  ".list-foot > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"step\">STEP 2 OF 2</span>",
+                "target": [
+                  ".step"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.69 (foreground color: #96a099, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">REVIEW DECISION</div>",
+                "target": [
+                  ".detail-content > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"detail-lede\">Review the replenishment decision before saving it.</p>",
+                "target": [
+                  ".detail-lede"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.62 (foreground color: #7e8982, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">ITEM</div>",
+                "target": [
+                  ".review-label:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #89948d, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"review-sku\">LIN-115 · B-04</span>",
+                "target": [
+                  ".review-sku"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.62 (foreground color: #7e8982, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">REQUESTED REPLENISHMENT</div>",
+                "target": [
+                  ".review-label:nth-child(5)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #89948d, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>pieces</span>",
+                "target": [
+                  ".review-amount > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.17 (foreground color: #737f77, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span><strong>This records a decision only.</strong><br>No purchase order will be placed and stock won’t change.</span>",
+                "target": [
+                  ".no-order > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #69786f, background color: #f1f5f0, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>LIN-115 · 8 pieces · Local simulation</small>",
+                "target": [
+                  "div > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #78837c, background color: #edf5ee, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<button class=\"button button-quiet\" data-testid=\"back-to-list\">Back to inventory</button>",
+                "target": [
+                  ".button-quiet"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #6e7b73, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Northline Stockroom</span>",
+                "target": [
+                  "footer > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Local simulation · No live warehouse connection</span>",
+                "target": [
+                  "footer > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"snapshot-icon\">◷</span>",
+                "target": [
+                  ".snapshot-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"info-icon\">i</span>",
+                "target": [
+                  ".info-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"count\">1</span>",
+                "target": [
+                  ".count"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"search-icon\" aria-hidden=\"true\">⌕</span>",
+                "target": [
+                  ".search-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<button class=\"search-clear\" data-testid=\"clear-search\" aria-label=\"Clear search\">×</button>",
+                "target": [
+                  ".search-clear"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"item-code\">LIN</span>",
+                "target": [
+                  ".item-code"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<strong>LIN-115</strong>",
+                "target": [
+                  ".item-copy > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>Khăn bàn Nguyễn Thị Minh Anh — Natural linen</span>",
+                "target": [
+                  ".item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<strong>2</strong>",
+                "target": [
+                  ".quantity-cell > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  ".quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span class=\"pill shortage\"><i></i>Short 8</span>",
+                "target": [
+                  ".pill"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>→</span>",
+                "target": [
+                  ".button-primary > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  ".feedback > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-neutral-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-empty.png",
+        "mobile-detail.png",
+        "mobile-neutral-detail.png",
+        "mobile-review.png",
+        "mobile-neutral-review.png",
+        "mobile-failure.png",
+        "mobile-neutral-failure.png",
+        "mobile-success.png",
+        "mobile-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Initial list contains all five fixture items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"GLS-031\",\"LIN-115\",\"PPR-010\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Shortage filter shows precisely the three shortage items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "No matches has zero rows and explicit feedback",
+          "status": "pass",
+          "observation": "Unmatched query, visible-page text and row count; qualitative clarity assessed separately.",
+          "kind": "contract"
+        },
+        {
+          "name": "Clear search restores filtered list",
+          "status": "pass",
+          "observation": "Shortage-only remains active.",
+          "kind": "contract"
+        },
+        {
+          "name": "Selected item evidence includes full name and location",
+          "status": "pass",
+          "observation": "N\nnorthline\nSTOCKROOM\nWarehouse A\nOP\nINVENTORY / OVERVIEW\nStockroom\n\nA clear view of what’s on hand and what needs attention.\n\n◷\nSnapshot\n1 Nov 2026 · 09:00 ICT\ni\nFictional snapshot · Not live inventory. Decisions here are simulated and won’t place an order.\nWAREHOUSE A\nAll inventory 1\n5 items\n⌕\n×\nShortage only\nITEM\nAVAILABLE\nSTATUS\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n›\n2\npieces\nShort 8\nBelow reorder point\nShowing 1 of 5\n← All inventory\nITEM DETAILS\nLIN\nShort 8\nLIN-115 · LOCATION B-04\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n\nStock evidence for this item at the snapshot time.\n\nStock position\nUNIT: PIECES\nAvailable\n2 pieces\nReorder point\n10 pieces\nShortage\n8 pieces\nIncoming stock\n4 pieces\n4 incoming pieces are shown separately; this item remains below its reorder point.\n↗\nReplenishment decision\nChoose an amount to record locally.\nRequested quantity · pieces\n−\n+\nEnter a whole number from 1 to 50.\nReview decision\n→\nNorthline Stockroom\nLocal simulation · No live warehouse connection",
+          "kind": "contract"
+        },
+        {
+          "name": "Returning retains search and shortage filter",
+          "status": "pass",
+          "observation": "[\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 0",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 51",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 1.5",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review exposes item, quantity/unit and simulated consequence",
+          "status": "pass",
+          "observation": "N\nnorthline\nSTOCKROOM\nWarehouse A\nOP\nINVENTORY / OVERVIEW\nStockroom\n\nA clear view of what’s on hand and what needs attention.\n\n◷\nSnapshot\n1 Nov 2026 · 09:00 ICT\ni\nFictional snapshot · Not live inventory. Decisions here are simulated and won’t place an order.\nWAREHOUSE A\nAll inventory 1\n5 items\n⌕\n×\nShortage only\nITEM\nAVAILABLE\nSTATUS\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n›\n2\npieces\nShort 8\nBelow reorder point\nShowing 1 of 5\n← Edit decision\nSTEP 2 OF 2\nREVIEW DECISION\nReady to record?\n\nReview the replenishment decision before saving it.\n\nITEM\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nLIN-115 · B-04\nREQUESTED REPLENISHMENT\n8pieces\ni\nThis records a decision only.\nNo purchase order will be placed and stock won’t change.\nRecord decision\n→\nBack to inventory\nNorthline Stockroom\nLocal simulation · No live warehouse connection",
+          "kind": "contract"
+        },
+        {
+          "name": "Editing retains decision quantity",
+          "status": "pass",
+          "observation": "8",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited quantity reaches review",
+          "status": "fail",
+          "observation": "Changed quantity, then restoring primary-task quantity 8.",
+          "kind": "contract"
+        },
+        {
+          "name": "First save has recoverable failure",
+          "status": "pass",
+          "observation": "!\nCould not save decision\nA temporary issue interrupted the save. Your quantity is kept.\nTry again",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains selected item and quantity",
+          "status": "pass",
+          "observation": "Input value or retained review summary inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Retry reports recorded simulation outcome",
+          "status": "pass",
+          "observation": "✓\nDecision recorded\nLIN-115 · 8 pieces · Local simulation",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Stockroom home",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "inventory-search",
+          "name": "Search SKU or item name",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "shortage-only",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "Inspect CER-204 Everyday Teapot — Sand",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "Inspect LIN-115 Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "Inspect GLS-031 Drinking glass — Clear",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "Inspect CER-120 Breakfast bowl — Iron",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "Inspect PPR-010 Gift wrap — Ochre",
+          "outline": "none 0px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "NnorthlineSTOCKROOMWarehouse AOP\n  INVENTORY / OVERVIEWStockroomA clear view of ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Stockroom home",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 56,
+            "y": 323.5625,
+            "width": 203.171875,
+            "height": 13,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 284.171875,
+            "y": 329.5625,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\nEveryday Teapot — Sand\n›\n3\npieces\nShort 9",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n›\n2\npieces\nShort 8",
+            "x": 27,
+            "y": 439.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 27,
+            "y": 439.5625,
+            "width": 336,
+            "height": 60,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nDrinking glass — Clear\n›\n24\npieces\nHealthy",
+            "x": 27,
+            "y": 500.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\nBreakfast bowl — Iron\n›\n4\npieces\nShort 4",
+            "x": 27,
+            "y": 561.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nGift wrap — Ochre\n›\n18\nsheets\nHealthy",
+            "x": 27,
+            "y": 622.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "full": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 56,
+            "y": 323.5625,
+            "width": 203.171875,
+            "height": 13,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 284.171875,
+            "y": 329.5625,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\nEveryday Teapot — Sand\n›\n3\npieces\nShort 9",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n›\n2\npieces\nShort 8",
+            "x": 27,
+            "y": 439.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 27,
+            "y": 439.5625,
+            "width": 336,
+            "height": 60,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nDrinking glass — Clear\n›\n24\npieces\nHealthy",
+            "x": 27,
+            "y": 500.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\nBreakfast bowl — Iron\n›\n4\npieces\nShort 4",
+            "x": 27,
+            "y": 561.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nGift wrap — Ochre\n›\n18\nsheets\nHealthy",
+            "x": 27,
+            "y": 622.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 56,
+            "y": 323.5625,
+            "width": 203.171875,
+            "height": 13,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 284.171875,
+            "y": 329.5625,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\nEveryday Teapot — Sand\n›\n3\npieces\nShort 9",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n›\n2\npieces\nShort 8",
+            "x": 27,
+            "y": 439.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 27,
+            "y": 439.5625,
+            "width": 336,
+            "height": 60,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nDrinking glass — Clear\n›\n24\npieces\nHealthy",
+            "x": 27,
+            "y": 500.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\nBreakfast bowl — Iron\n›\n4\npieces\nShort 4",
+            "x": 27,
+            "y": 561.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nGift wrap — Ochre\n›\n18\nsheets\nHealthy",
+            "x": 27,
+            "y": 622.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "empty": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 56,
+            "y": 323.5625,
+            "width": 178.078125,
+            "height": 13,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "×",
+            "x": 242.078125,
+            "y": 319.5625,
+            "width": 17.09375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 284.171875,
+            "y": 329.5625,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "Clear search",
+            "x": 159.71875,
+            "y": 530.5625,
+            "width": 70.5625,
+            "height": 19,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "detail": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 56,
+            "y": 323.5625,
+            "width": 178.078125,
+            "height": 13,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "×",
+            "x": 242.078125,
+            "y": 319.5625,
+            "width": 17.09375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 284.171875,
+            "y": 329.5625,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n›\n2\npieces\nShort 8",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 60,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← All inventory",
+            "x": 31,
+            "y": 503.0625,
+            "width": 74.734375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-quantity",
+            "text": "",
+            "x": 64.03125,
+            "y": 975.15625,
+            "width": 261.9375,
+            "height": 35,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "review-decision",
+            "text": "Review decision\n→",
+            "x": 31,
+            "y": 1040.15625,
+            "width": 328,
+            "height": 39,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "review": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 56,
+            "y": 323.5625,
+            "width": 178.078125,
+            "height": 13,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "×",
+            "x": 242.078125,
+            "y": 319.5625,
+            "width": 17.09375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 284.171875,
+            "y": 329.5625,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n›\n2\npieces\nShort 8",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 60,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "← Edit decision",
+            "x": 31,
+            "y": 503.0625,
+            "width": 75.328125,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "save-decision",
+            "text": "Record decision\n→",
+            "x": 31,
+            "y": 871.09375,
+            "width": 328,
+            "height": 39,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "back-to-list",
+            "text": "Back to inventory",
+            "x": 31,
+            "y": 918.09375,
+            "width": 328,
+            "height": 39,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "failure": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 56,
+            "y": 323.5625,
+            "width": 178.078125,
+            "height": 13,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "×",
+            "x": 242.078125,
+            "y": 319.5625,
+            "width": 17.09375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 284.171875,
+            "y": 329.5625,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n›\n2\npieces\nShort 8",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 60,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "← Edit decision",
+            "x": 31,
+            "y": 503.0625,
+            "width": 75.328125,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "save-decision",
+            "text": "Record decision\n→",
+            "x": 31,
+            "y": 871.09375,
+            "width": 328,
+            "height": 39,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "decision-status",
+            "text": "!\nCould not save decision\nA temporary issue interrupted the save. Your quantity is kept.\nTry again",
+            "x": 31,
+            "y": 920.09375,
+            "width": 328,
+            "height": 57.375,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "retry-decision",
+            "text": "Try again",
+            "x": 294.984375,
+            "y": 942.78125,
+            "width": 53.015625,
+            "height": 12,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "back-to-list",
+            "text": "Back to inventory",
+            "x": 31,
+            "y": 985.46875,
+            "width": 328,
+            "height": 39,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "success": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 56,
+            "y": 323.5625,
+            "width": 178.078125,
+            "height": 13,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "×",
+            "x": 242.078125,
+            "y": 319.5625,
+            "width": 17.09375,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 284.171875,
+            "y": 329.5625,
+            "width": 1,
+            "height": 1,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n›\n2\npieces\nShort 8",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 61,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "",
+            "x": 27,
+            "y": 378.5625,
+            "width": 336,
+            "height": 60,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "← Edit decision",
+            "x": 31,
+            "y": 503.0625,
+            "width": 75.328125,
+            "height": 21,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "save-decision",
+            "text": "Record decision\n→",
+            "x": 31,
+            "y": 871.09375,
+            "width": 328,
+            "height": 39,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "decision-status",
+            "text": "✓\nDecision recorded\nLIN-115 · 8 pieces · Local simulation",
+            "x": 31,
+            "y": 920.09375,
+            "width": 328,
+            "height": 46.1875,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "back-to-list",
+            "text": "Back to inventory",
+            "x": 31,
+            "y": 974.28125,
+            "width": 328,
+            "height": 39,
+            "fullyInFirstViewport": false
+          }
+        ]
+      },
+      "initialText": "N\nnorthline\nSTOCKROOM\nWarehouse A\nOP\nINVENTORY / OVERVIEW\nStockroom\n\nA clear view of what’s on hand and what needs attention.\n\n◷\nSnapshot\n1 Nov 2026 · 09:00 ICT\ni\nFictional snapshot · Not live inventory. Decisions here are simulated and won’t place an order.\nWAREHOUSE A\nAll inventory 5\n5 items\n⌕\nShortage only\nITEM\nAVAILABLE\nSTATUS\nCER-204\nEveryday Teapot — Sand\n›\n3\npieces\nShort 9\nLIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n›\n2\npieces\nShort 8\nGLS-031\nDrinking glass — Clear\n›\n24\npieces\nHealthy\nCER-120\nBreakfast bowl — Iron\n›\n4\npieces\nShort 4\nPPR-010\nGift wrap — Ochre\n›\n18\nsheets\nHealthy\nBelow reorder point\nShowing 5 of 5\n↗▤\nITEM DETAILS\nChoose an item\n\nSelect any row to see its stock evidence and record a replenishment decision.\n\n↳\nStart with an item marked\nShort\nNorthline Stockroom\nLocal simulation · No live warehouse connection",
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 1082,
+        "title": "Northline Stockroom — Inventory",
+        "h1": [
+          "Stockroom"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"brand-sub\">STOCKROOM</span>",
+                "target": [
+                  ".brand-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #77817c, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">INVENTORY / OVERVIEW</div>",
+                "target": [
+                  ".intro > div:nth-child(1) > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #818a84, background color: #f4f5f1, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"subtitle\">A clear view of what’s on hand and what needs attention.</p>",
+                "target": [
+                  ".subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #78827c, background color: #f4f5f1, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">WAREHOUSE A</div>",
+                "target": [
+                  ".list-heading > div > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"inventory-total\">5 items</span>",
+                "target": [
+                  ".inventory-total"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #88918b, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>ITEM</span>",
+                "target": [
+                  ".table-head > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>AVAILABLE</span>",
+                "target": [
+                  ".table-head > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>STATUS</span>",
+                "target": [
+                  ".table-head > span:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Everyday Teapot — Sand</span>",
+                "target": [
+                  "button[data-sku=\"CER-204\"] > .item-cell > .item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #77827b, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  "button[data-sku=\"CER-204\"] > .quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #8b958e, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Drinking glass — Clear</span>",
+                "target": [
+                  "button[data-sku=\"GLS-031\"] > .item-cell > .item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #77827b, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  "button[data-sku=\"GLS-031\"] > .quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #8b958e, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"pill healthy\"><i></i>Healthy</span>",
+                "target": [
+                  "button[data-sku=\"GLS-031\"] > .status-cell > .healthy.pill"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.48 (foreground color: #55775e, background color: #edf4ed, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Breakfast bowl — Iron</span>",
+                "target": [
+                  "button[data-sku=\"CER-120\"] > .item-cell > .item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #77827b, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  "button[data-sku=\"CER-120\"] > .quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #8b958e, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Gift wrap — Ochre</span>",
+                "target": [
+                  "button[data-sku=\"PPR-010\"] > .item-cell > .item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #77827b, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>sheets</small>",
+                "target": [
+                  "button[data-sku=\"PPR-010\"] > .quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #8b958e, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"pill healthy\"><i></i>Healthy</span>",
+                "target": [
+                  "button[data-sku=\"PPR-010\"] > .status-cell > .healthy.pill"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.48 (foreground color: #55775e, background color: #edf4ed, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span><span class=\"legend-dot\"></span>Below reorder point</span>",
+                "target": [
+                  ".list-foot > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Showing 5 of 5</span>",
+                "target": [
+                  ".list-foot > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">ITEM DETAILS</div>",
+                "target": [
+                  ".detail-empty > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Select any row to see its stock evidence and record a replenishment decision.</p>",
+                "target": [
+                  ".detail-empty > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"tip\"><span>↳</span> Start with an item marked <span class=\"pill shortage\"><i></i>Short</span></div>",
+                "target": [
+                  ".tip"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b867f, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Northline Stockroom</span>",
+                "target": [
+                  "footer > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Local simulation · No live warehouse connection</span>",
+                "target": [
+                  "footer > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"snapshot-icon\">◷</span>",
+                "target": [
+                  ".snapshot-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"info-icon\">i</span>",
+                "target": [
+                  ".info-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"count\">5</span>",
+                "target": [
+                  ".count"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"search-icon\" aria-hidden=\"true\">⌕</span>",
+                "target": [
+                  ".search-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<strong>LIN-115</strong>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .item-cell > .item-copy > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>Khăn bàn Nguyễn Thị Minh Anh — Natural linen</span>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .item-cell > .item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<strong>2</strong>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .quantity-cell > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span class=\"pill shortage\"><i></i>Short 8</span>",
+                "target": [
+                  "button[data-sku=\"LIN-115\"] > .status-cell > .shortage.pill"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>▤</span>",
+                "target": [
+                  ".empty-art > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span>↳</span>",
+                "target": [
+                  ".tip > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"brand-sub\">STOCKROOM</span>",
+                "target": [
+                  ".brand-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #77817c, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">INVENTORY / OVERVIEW</div>",
+                "target": [
+                  ".intro > div:nth-child(1) > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #818a84, background color: #f4f5f1, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"subtitle\">A clear view of what’s on hand and what needs attention.</p>",
+                "target": [
+                  ".subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #78827c, background color: #f4f5f1, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">WAREHOUSE A</div>",
+                "target": [
+                  ".list-heading > div > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"inventory-total\">5 items</span>",
+                "target": [
+                  ".inventory-total"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #88918b, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>ITEM</span>",
+                "target": [
+                  ".table-head > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>AVAILABLE</span>",
+                "target": [
+                  ".table-head > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>STATUS</span>",
+                "target": [
+                  ".table-head > span:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span><span class=\"legend-dot\"></span>Below reorder point</span>",
+                "target": [
+                  ".list-foot > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Showing 1 of 5</span>",
+                "target": [
+                  ".list-foot > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"step\">STEP 2 OF 2</span>",
+                "target": [
+                  ".step"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.69 (foreground color: #96a099, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">REVIEW DECISION</div>",
+                "target": [
+                  ".detail-content > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"detail-lede\">Review the replenishment decision before saving it.</p>",
+                "target": [
+                  ".detail-lede"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.62 (foreground color: #7e8982, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">ITEM</div>",
+                "target": [
+                  ".review-label:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #89948d, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"review-sku\">LIN-115 · B-04</span>",
+                "target": [
+                  ".review-sku"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.62 (foreground color: #7e8982, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">REQUESTED REPLENISHMENT</div>",
+                "target": [
+                  ".review-label:nth-child(5)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #89948d, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>pieces</span>",
+                "target": [
+                  ".review-amount > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.17 (foreground color: #737f77, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span><strong>This records a decision only.</strong><br>No purchase order will be placed and stock won’t change.</span>",
+                "target": [
+                  ".no-order > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #69786f, background color: #f1f5f0, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>A temporary issue interrupted the save. Your quantity is kept.</small>",
+                "target": [
+                  "div > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.66 (foreground color: #78837c, background color: #fff5ee, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<button class=\"button button-quiet\" data-testid=\"back-to-list\">Back to inventory</button>",
+                "target": [
+                  ".button-quiet"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #6e7b73, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Northline Stockroom</span>",
+                "target": [
+                  "footer > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Local simulation · No live warehouse connection</span>",
+                "target": [
+                  "footer > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"snapshot-icon\">◷</span>",
+                "target": [
+                  ".snapshot-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"info-icon\">i</span>",
+                "target": [
+                  ".info-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"count\">1</span>",
+                "target": [
+                  ".count"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"search-icon\" aria-hidden=\"true\">⌕</span>",
+                "target": [
+                  ".search-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<button class=\"search-clear\" data-testid=\"clear-search\" aria-label=\"Clear search\">×</button>",
+                "target": [
+                  ".search-clear"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<strong>LIN-115</strong>",
+                "target": [
+                  ".item-copy > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>Khăn bàn Nguyễn Thị Minh Anh — Natural linen</span>",
+                "target": [
+                  ".item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<strong>2</strong>",
+                "target": [
+                  ".quantity-cell > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  ".quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span class=\"pill shortage\"><i></i>Short 8</span>",
+                "target": [
+                  ".pill"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>→</span>",
+                "target": [
+                  ".button-primary > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"brand-sub\">STOCKROOM</span>",
+                "target": [
+                  ".brand-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #77817c, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">INVENTORY / OVERVIEW</div>",
+                "target": [
+                  ".intro > div:nth-child(1) > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #818a84, background color: #f4f5f1, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"subtitle\">A clear view of what’s on hand and what needs attention.</p>",
+                "target": [
+                  ".subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #78827c, background color: #f4f5f1, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">WAREHOUSE A</div>",
+                "target": [
+                  ".list-heading > div > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"inventory-total\">5 items</span>",
+                "target": [
+                  ".inventory-total"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #88918b, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>ITEM</span>",
+                "target": [
+                  ".table-head > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>AVAILABLE</span>",
+                "target": [
+                  ".table-head > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>STATUS</span>",
+                "target": [
+                  ".table-head > span:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #929b95, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span><span class=\"legend-dot\"></span>Below reorder point</span>",
+                "target": [
+                  ".list-foot > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Showing 1 of 5</span>",
+                "target": [
+                  ".list-foot > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #87918b, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"step\">STEP 2 OF 2</span>",
+                "target": [
+                  ".step"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.69 (foreground color: #96a099, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"eyebrow\">REVIEW DECISION</div>",
+                "target": [
+                  ".detail-content > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.55 (foreground color: #818a84, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"detail-lede\">Review the replenishment decision before saving it.</p>",
+                "target": [
+                  ".detail-lede"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.62 (foreground color: #7e8982, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">ITEM</div>",
+                "target": [
+                  ".review-label:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #89948d, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"review-sku\">LIN-115 · B-04</span>",
+                "target": [
+                  ".review-sku"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.62 (foreground color: #7e8982, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">REQUESTED REPLENISHMENT</div>",
+                "target": [
+                  ".review-label:nth-child(5)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #89948d, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>pieces</span>",
+                "target": [
+                  ".review-amount > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.17 (foreground color: #737f77, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span><strong>This records a decision only.</strong><br>No purchase order will be placed and stock won’t change.</span>",
+                "target": [
+                  ".no-order > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #69786f, background color: #f1f5f0, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>LIN-115 · 8 pieces · Local simulation</small>",
+                "target": [
+                  "div > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #78837c, background color: #edf5ee, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<button class=\"button button-quiet\" data-testid=\"back-to-list\">Back to inventory</button>",
+                "target": [
+                  ".button-quiet"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #6e7b73, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Northline Stockroom</span>",
+                "target": [
+                  "footer > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Local simulation · No live warehouse connection</span>",
+                "target": [
+                  "footer > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #929b95, background color: #f4f5f1, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"snapshot-icon\">◷</span>",
+                "target": [
+                  ".snapshot-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"info-icon\">i</span>",
+                "target": [
+                  ".info-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"count\">1</span>",
+                "target": [
+                  ".count"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"search-icon\" aria-hidden=\"true\">⌕</span>",
+                "target": [
+                  ".search-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<button class=\"search-clear\" data-testid=\"clear-search\" aria-label=\"Clear search\">×</button>",
+                "target": [
+                  ".search-clear"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<strong>LIN-115</strong>",
+                "target": [
+                  ".item-copy > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>Khăn bàn Nguyễn Thị Minh Anh — Natural linen</span>",
+                "target": [
+                  ".item-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<strong>2</strong>",
+                "target": [
+                  ".quantity-cell > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<small>pieces</small>",
+                "target": [
+                  ".quantity-cell > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span class=\"pill shortage\"><i></i>Short 8</span>",
+                "target": [
+                  ".pill"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "html": "<span>→</span>",
+                "target": [
+                  ".button-primary > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  ".feedback > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    }
+  },
+  "supportingNarrow320": {
+    "width": 320,
+    "scrollWidth": 320,
+    "pageHeight": 1086
+  }
+}

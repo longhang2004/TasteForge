@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Replenishment decisions · Northline Stockroom</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.mjs"></script>
+  </head>
+  <body>
+    <a class="skip" href="#workspace">Skip to stock workspace</a>
+    <header class="masthead">
+      <span class="wordmark">Northline <span>/ Stockroom</span></span>
+      <span class="warehouse">Warehouse A</span>
+    </header>
+    <main id="workspace" tabindex="-1">
+      <div class="page-intro">
+        <p class="eyebrow">Stock operations</p>
+        <h1>Replenishment decisions</h1>
+      </div>
+      <p class="snapshot">Fictional snapshot · 1 Nov 2026, 09:00 ICT · Not live inventory</p>
+      <div class="workspace">
+        <section class="stock-list" aria-labelledby="stock-heading">
+          <div class="list-heading">
+            <h2 id="stock-heading">Stock</h2>
+            <span id="result-count" role="status" aria-live="polite"></span>
+          </div>
+          <div class="filters">
+            <div class="search-field">
+              <label for="stock-search">Find an item</label>
+              <input
+                id="stock-search"
+                type="search"
+                placeholder="SKU or item name"
+                data-testid="inventory-search"
+              />
+            </div>
+            <label class="checkbox"
+              ><input type="checkbox" data-testid="shortage-only" /> Shortages only</label
+            >
+          </div>
+          <div id="stock-results"></div>
+          <p class="list-hint">Select an item to inspect its stock and record a decision.</p>
+        </section>
+        <section
+          id="decision-panel"
+          class="decision-panel"
+          aria-labelledby="item-heading"
+          hidden
+        ></section>
+      </div>
+      <noscript
+        >This local workspace needs JavaScript to filter stock and record simulated
+        decisions.</noscript
+      >
+    </main>
+  </body>
+</html>

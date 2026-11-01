@@ -1,0 +1,9 @@
+# Implementation notes
+
+- Built a plain HTML/CSS/JavaScript transfer simulation with no dependencies, remote requests, or external assets. Copied the supplied fictional fixture values locally; task.md and fixture.json were not changed.
+- Used forest green, warm neutral surfaces, restrained typography, and a separate cost card to emphasize the recipient, flat additional fee, total paid, received VND, and illustrative delivery date. Desktop uses two columns; mobile stacks the cards.
+- Entry starts with the supplied Vietnamese recipient and USD 250. Review offers Edit details; editing preserves the recipient and amount and recalculates the summary. Range validation preserves inputs. First confirmation returns a recoverable simulated failure, and retry succeeds. Simulation disclosures appear throughout.
+- Used native inputs/buttons, explicit labels, visible keyboard focus, a focusable heading after transitions, alert/status feedback, escaped recipient output, and the requested data-testid attributes. Review names wrap rather than truncate.
+- Actual checks: ran the common preview helper exactly once, producing desktop and mobile images under evidence/self-review. Inspected both images using view_image. Found missing decorative flag/info glyphs and made one review iteration replacing those with a CSS-styled flag and a basic letter. The saved previews precede that small correction.
+- Did not use TasteForge CLI/catalog, skills, external references, browsing, packages, or delegated agents.
+- Limitations: interactive behavior, keyboard navigation, validation boundaries, retry flow, and assistive technology announcements were checked by code review only, not by additional browser experiments. No claims of real transfer capability are made. Monetary display rounds to two decimal places; the amount control requests cent increments.

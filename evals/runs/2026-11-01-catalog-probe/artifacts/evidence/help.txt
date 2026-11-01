@@ -1,0 +1,23 @@
+Usage: tasteforge [options] [command]
+
+Less slop. More taste. Local, deterministic design intelligence.
+
+Options:
+  -V, --version              output the version number
+  -p, --project <directory>  existing project root (default: ".")
+  --format <format>          text or json output (default: "text")
+  -h, --help                 display help for command
+
+Commands:
+  init [options]             Create a safe starting brief and scoring
+                             configuration
+  suggest [options]          Rank and sample compatible design directions
+  catalog [options] [id]     Search offline external references or read one full
+                             attributed entry
+  inspire [options]          Sample external style references with task-matched
+                             structures and fixed review gates
+  generate [options]         Generate Design DNA, semantic CSS tokens, and
+                             design guidance
+  audit [options]            Run static source checks; does not inspect a
+                             rendered UI
+  help [command]             display help for command

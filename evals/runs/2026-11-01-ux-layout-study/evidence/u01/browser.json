@@ -1,0 +1,1950 @@
+{
+  "caseId": "u01",
+  "capturedAtUtc": "2026-11-01T05:37:48.101Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    "app.js": "817fd579a1827900f1e32f3de22f303d06c626e368a749017cabbbc119f53c2f",
+    "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+    "implementation-notes.md": "086cab8e8ca2be2de4243d32cbf8495a6493f840c01061c529d025bbf1fa1e73",
+    "index.html": "11eb104d93357bb1b57d31b4abf38454d299f34c002cd6553b88a4a42698264c",
+    "styles.css": "94c17869d9a3bbb1e94c5f7cf0d854e968aac4afd9c74e0e42f97264b160c013",
+    "task.md": "2ac4373937f4e68cb133dfd1d3bd2e57fdf142e3b7f6cf7e10f148a86a4b7021"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-neutral-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-empty.png",
+        "desktop-detail.png",
+        "desktop-neutral-detail.png",
+        "desktop-review.png",
+        "desktop-neutral-review.png",
+        "desktop-failure.png",
+        "desktop-neutral-failure.png",
+        "desktop-success.png",
+        "desktop-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Initial list contains all five fixture items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"GLS-031\",\"LIN-115\",\"PPR-010\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Shortage filter shows precisely the three shortage items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "No matches has zero rows and explicit feedback",
+          "status": "pass",
+          "observation": "Unmatched query, visible-page text and row count; qualitative clarity assessed separately.",
+          "kind": "contract"
+        },
+        {
+          "name": "Clear search restores filtered list",
+          "status": "pass",
+          "observation": "Shortage-only remains active.",
+          "kind": "contract"
+        },
+        {
+          "name": "Required item selection hook exists",
+          "status": "pass",
+          "observation": "Technical hook diagnostic; when missing, select the visible fixture-SKU row to assess the actual user task separately.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "Selected item evidence includes full name and location",
+          "status": "pass",
+          "observation": "Northline Stockroom\nINVENTORY WORKSPACE\nWarehouse A\nSTOCK CONTROL\nInventory\n\nFind stock gaps. Check the evidence. Record your next decision.\n\nFictional snapshot1 November 2026, 09:00 ICT · Not live inventory\nStock list\nAll quantities are in each item's stated unit.\nShow shortages only\n1 OF 5 ITEMS\nSNAPSHOT ORDER\nLIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4\n← Back to stock list\nITEM EVIDENCE · LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable stock\n2\npieces\nReorder point\n10\npieces\nShortage\n8\npieces below reorder point\nIncoming\n4\npieces\n\nShortage = reorder point − available stock, minimum 0. Incoming stock is shown separately and does not reduce this snapshot's shortage.\n\nStorage location\nB-04 · Warehouse A\nReplenishment quantity\npieces\n\nEnter a whole number from 1 to 50.\n\nReview decision →\n\nRecords a local decision only. No purchase order is placed.\n\nLocal simulation · Decisions do not update a real warehouse.",
+          "kind": "contract"
+        },
+        {
+          "name": "Returning retains search and shortage filter",
+          "status": "pass",
+          "observation": "[\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 0",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 51",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 1.5",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review exposes item, quantity/unit and simulated consequence",
+          "status": "pass",
+          "observation": "Northline Stockroom\nINVENTORY WORKSPACE\nWarehouse A\nSTOCK CONTROL\nInventory\n\nFind stock gaps. Check the evidence. Record your next decision.\n\nFictional snapshot1 November 2026, 09:00 ICT · Not live inventory\nStock list\nAll quantities are in each item's stated unit.\nShow shortages only\n1 OF 5 ITEMS\nSNAPSHOT ORDER\nLIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4\n← Back to stock list\nREVIEW DECISION · LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nRequested replenishment · LIN-115\n8 pieces\n\nRecording this simulated decision places no purchase order and does not change real inventory.\n\nRecord decision\nEdit quantity\nLocal simulation · Decisions do not update a real warehouse.",
+          "kind": "contract"
+        },
+        {
+          "name": "Editing retains decision quantity",
+          "status": "pass",
+          "observation": "8",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited quantity reaches review",
+          "status": "pass",
+          "observation": "Changed quantity, then restoring primary-task quantity 8. Numeric token may be adjacent to a separately styled unit.",
+          "kind": "contract"
+        },
+        {
+          "name": "First save has recoverable failure",
+          "status": "pass",
+          "observation": "Simulated save failed. Your decision has not been recorded. Your quantity is retained; try again.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains selected item and quantity",
+          "status": "pass",
+          "observation": "Input value or retained review summary inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Retry reports recorded simulation outcome",
+          "status": "pass",
+          "observation": "Decision recorded locally for LIN-115: 8 pieces. No purchase order was placed.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "INPUT",
+          "testId": "inventory-search",
+          "name": "Search SKU or item name",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "shortage-only",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "CER-2049 pieces shortEveryday Teapot — SandAvailable 3 piecesLocation A-02Incomi",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-LIN-115",
+          "name": "LIN-1158 pieces shortKhăn bàn Nguyễn Thị Minh Anh — Natural linenAvailable 2 pie",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "GLS-031At reorder point or aboveDrinking glass — ClearAvailable 24 piecesLocatio",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "CER-1204 pieces shortBreakfast bowl — IronAvailable 4 piecesLocation A-05Incomin",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "PPR-010At reorder point or aboveGift wrap — OchreAvailable 18 sheetsLocation D-0",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Northline StockroomInventory workspaceWarehouse AStock controlInventoryFind stoc",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "inventory-search",
+          "name": "Search SKU or item name",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "shortage-only",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 101.59375,
+            "y": 393.6875,
+            "width": 653.5625,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 105.59375,
+            "y": 453.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\n9 pieces short\nEveryday Teapot — Sand\nAvailable 3 pieces\nLocation A-02\nIncoming 0",
+            "x": 78.59375,
+            "y": 530.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 78.59375,
+            "y": 643.1875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nAt reorder point or above\nDrinking glass — Clear\nAvailable 24 pieces\nLocation C-01\nIncoming 0",
+            "x": 78.59375,
+            "y": 755.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\n4 pieces short\nBreakfast bowl — Iron\nAvailable 4 pieces\nLocation A-05\nIncoming 2",
+            "x": 78.59375,
+            "y": 868.1875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nAt reorder point or above\nGift wrap — Ochre\nAvailable 18 sheets\nLocation D-02\nIncoming 0",
+            "x": 78.59375,
+            "y": 980.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "full": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 101.59375,
+            "y": 393.6875,
+            "width": 653.5625,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 105.59375,
+            "y": 453.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\n9 pieces short\nEveryday Teapot — Sand\nAvailable 3 pieces\nLocation A-02\nIncoming 0",
+            "x": 78.59375,
+            "y": 530.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 78.59375,
+            "y": 643.1875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nAt reorder point or above\nDrinking glass — Clear\nAvailable 24 pieces\nLocation C-01\nIncoming 0",
+            "x": 78.59375,
+            "y": 755.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\n4 pieces short\nBreakfast bowl — Iron\nAvailable 4 pieces\nLocation A-05\nIncoming 2",
+            "x": 78.59375,
+            "y": 868.1875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nAt reorder point or above\nGift wrap — Ochre\nAvailable 18 sheets\nLocation D-02\nIncoming 0",
+            "x": 78.59375,
+            "y": 980.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 101.59375,
+            "y": 393.6875,
+            "width": 653.5625,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 105.59375,
+            "y": 453.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\n9 pieces short\nEveryday Teapot — Sand\nAvailable 3 pieces\nLocation A-02\nIncoming 0",
+            "x": 78.59375,
+            "y": 530.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 78.59375,
+            "y": 643.1875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nAt reorder point or above\nDrinking glass — Clear\nAvailable 24 pieces\nLocation C-01\nIncoming 0",
+            "x": 78.59375,
+            "y": 755.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\n4 pieces short\nBreakfast bowl — Iron\nAvailable 4 pieces\nLocation A-05\nIncoming 2",
+            "x": 78.59375,
+            "y": 868.1875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nAt reorder point or above\nGift wrap — Ochre\nAvailable 18 sheets\nLocation D-02\nIncoming 0",
+            "x": 78.59375,
+            "y": 980.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "empty": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 101.59375,
+            "y": 393.6875,
+            "width": 653.5625,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 105.59375,
+            "y": 453.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "Clear search",
+            "x": 101.59375,
+            "y": 633.1875,
+            "width": 115.328125,
+            "height": 39,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "detail": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 101.59375,
+            "y": 393.6875,
+            "width": 653.5625,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 105.59375,
+            "y": 453.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 78.59375,
+            "y": 530.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to stock list",
+            "x": 825.15625,
+            "y": 333.1875,
+            "width": 115.96875,
+            "height": 14,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-quantity",
+            "text": "",
+            "x": 825.15625,
+            "y": 850.65625,
+            "width": 110,
+            "height": 43,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "review-decision",
+            "text": "Review decision →",
+            "x": 825.15625,
+            "y": 937.65625,
+            "width": 169.203125,
+            "height": 39,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "review": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 101.59375,
+            "y": 393.6875,
+            "width": 653.5625,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 105.59375,
+            "y": 453.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 78.59375,
+            "y": 530.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to stock list",
+            "x": 825.15625,
+            "y": 333.1875,
+            "width": 115.96875,
+            "height": 14,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "save-decision",
+            "text": "Record decision",
+            "x": 825.15625,
+            "y": 654.375,
+            "width": 152.375,
+            "height": 39,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "Edit quantity",
+            "x": 987.53125,
+            "y": 654.375,
+            "width": 117.515625,
+            "height": 39,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "failure": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 101.59375,
+            "y": 393.6875,
+            "width": 653.5625,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 105.59375,
+            "y": 453.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 78.59375,
+            "y": 530.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to stock list",
+            "x": 825.15625,
+            "y": 333.1875,
+            "width": 115.96875,
+            "height": 14,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-status",
+            "text": "Simulated save failed. Your decision has not been recorded. Your quantity is retained; try again.",
+            "x": 825.15625,
+            "y": 659.375,
+            "width": 513.25,
+            "height": 71.59375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "retry-decision",
+            "text": "Retry save",
+            "x": 825.15625,
+            "y": 748.96875,
+            "width": 114.265625,
+            "height": 39,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "Edit quantity",
+            "x": 949.421875,
+            "y": 748.96875,
+            "width": 117.515625,
+            "height": 39,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "success": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 101.59375,
+            "y": 393.6875,
+            "width": 653.5625,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 105.59375,
+            "y": 453.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 78.59375,
+            "y": 530.6875,
+            "width": 699.5625,
+            "height": 112.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to stock list",
+            "x": 825.15625,
+            "y": 333.1875,
+            "width": 115.96875,
+            "height": 14,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-status",
+            "text": "Decision recorded locally for LIN-115: 8 pieces. No purchase order was placed.",
+            "x": 825.15625,
+            "y": 659.375,
+            "width": 513.25,
+            "height": 71.59375,
+            "fullyInFirstViewport": true
+          }
+        ]
+      },
+      "initialText": "Northline Stockroom\nINVENTORY WORKSPACE\nWarehouse A\nSTOCK CONTROL\nInventory\n\nFind stock gaps. Check the evidence. Record your next decision.\n\nFictional snapshot1 November 2026, 09:00 ICT · Not live inventory\nStock list\nAll quantities are in each item's stated unit.\nShow shortages only\n5 OF 5 ITEMS\nSNAPSHOT ORDER\nCER-204\n9 pieces short\nEveryday Teapot — Sand\nAvailable 3 pieces\nLocation A-02\nIncoming 0\nLIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4\nGLS-031\nAt reorder point or above\nDrinking glass — Clear\nAvailable 24 pieces\nLocation C-01\nIncoming 0\nCER-120\n4 pieces short\nBreakfast bowl — Iron\nAvailable 4 pieces\nLocation A-05\nIncoming 2\nPPR-010\nAt reorder point or above\nGift wrap — Ochre\nAvailable 18 sheets\nLocation D-02\nIncoming 0\n▤\nInspect an item\n\nSelect an item from the stock list to see its quantities and record a replenishment decision.\n\nLocal simulation · Decisions do not update a real warehouse.",
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1164,
+        "title": "Inventory · Northline Stockroom",
+        "h1": [
+          "Inventory"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">Stock control</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #64756c, background color: #f4f5ef, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"intro\">Find stock gaps. Check the evidence. Record your next decision.</p>",
+                "target": [
+                  ".intro"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #66776f, background color: #f4f5ef, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"muted\">All quantities are in each item's stated unit.</div>",
+                "target": [
+                  ".muted"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #718078, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Select an item from the stock list to see its quantities and record a replenishment decision.</p>",
+                "target": [
+                  ".empty-detail > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #768075, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Local simulation · Decisions do not update a real warehouse.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #7a8578, background color: #f4f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"empty-icon\" aria-hidden=\"true\">▤</div>",
+                "target": [
+                  ".empty-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">Stock control</div>",
+                "target": [
+                  ".page > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #64756c, background color: #f4f5ef, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"intro\">Find stock gaps. Check the evidence. Record your next decision.</p>",
+                "target": [
+                  ".intro"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #66776f, background color: #f4f5ef, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"muted\">All quantities are in each item's stated unit.</div>",
+                "target": [
+                  ".panel-head > .muted"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #718078, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Available <strong>2 pieces</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Location <strong>B-04</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Incoming <strong>4</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"muted\">Requested replenishment · LIN-115</span>",
+                "target": [
+                  ".review-box > .muted"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.71 (foreground color: #718078, background color: #f0f4e9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Local simulation · Decisions do not update a real warehouse.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #7a8578, background color: #f4f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">Stock control</div>",
+                "target": [
+                  ".page > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #64756c, background color: #f4f5ef, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"intro\">Find stock gaps. Check the evidence. Record your next decision.</p>",
+                "target": [
+                  ".intro"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #66776f, background color: #f4f5ef, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"muted\">All quantities are in each item's stated unit.</div>",
+                "target": [
+                  ".panel-head > .muted"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #718078, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Available <strong>2 pieces</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Location <strong>B-04</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Incoming <strong>4</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"muted\">Requested replenishment · LIN-115</span>",
+                "target": [
+                  ".review-box > .muted"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.71 (foreground color: #718078, background color: #f0f4e9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Local simulation · Decisions do not update a real warehouse.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #7a8578, background color: #f4f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-neutral-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-empty.png",
+        "mobile-detail.png",
+        "mobile-neutral-detail.png",
+        "mobile-review.png",
+        "mobile-neutral-review.png",
+        "mobile-failure.png",
+        "mobile-neutral-failure.png",
+        "mobile-success.png",
+        "mobile-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Initial list contains all five fixture items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"GLS-031\",\"LIN-115\",\"PPR-010\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Shortage filter shows precisely the three shortage items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "No matches has zero rows and explicit feedback",
+          "status": "pass",
+          "observation": "Unmatched query, visible-page text and row count; qualitative clarity assessed separately.",
+          "kind": "contract"
+        },
+        {
+          "name": "Clear search restores filtered list",
+          "status": "pass",
+          "observation": "Shortage-only remains active.",
+          "kind": "contract"
+        },
+        {
+          "name": "Required item selection hook exists",
+          "status": "pass",
+          "observation": "Technical hook diagnostic; when missing, select the visible fixture-SKU row to assess the actual user task separately.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "Selected item evidence includes full name and location",
+          "status": "pass",
+          "observation": "Northline Stockroom\nINVENTORY WORKSPACE\nWarehouse A\nSTOCK CONTROL\nInventory\n\nFind stock gaps. Check the evidence. Record your next decision.\n\nFictional snapshot1 November 2026, 09:00 ICT · Not live inventory\nStock list\nAll quantities are in each item's stated unit.\nShow shortages only\n1 OF 5 ITEMS\nSNAPSHOT ORDER\nLIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4\n← Back to stock list\nITEM EVIDENCE · LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable stock\n2\npieces\nReorder point\n10\npieces\nShortage\n8\npieces below reorder point\nIncoming\n4\npieces\n\nShortage = reorder point − available stock, minimum 0. Incoming stock is shown separately and does not reduce this snapshot's shortage.\n\nStorage location\nB-04 · Warehouse A\nReplenishment quantity\npieces\n\nEnter a whole number from 1 to 50.\n\nReview decision →\n\nRecords a local decision only. No purchase order is placed.\n\nLocal simulation · Decisions do not update a real warehouse.",
+          "kind": "contract"
+        },
+        {
+          "name": "Returning retains search and shortage filter",
+          "status": "pass",
+          "observation": "[\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 0",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 51",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 1.5",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review exposes item, quantity/unit and simulated consequence",
+          "status": "pass",
+          "observation": "Northline Stockroom\nINVENTORY WORKSPACE\nWarehouse A\nSTOCK CONTROL\nInventory\n\nFind stock gaps. Check the evidence. Record your next decision.\n\nFictional snapshot1 November 2026, 09:00 ICT · Not live inventory\nStock list\nAll quantities are in each item's stated unit.\nShow shortages only\n1 OF 5 ITEMS\nSNAPSHOT ORDER\nLIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4\n← Back to stock list\nREVIEW DECISION · LIN-115\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nRequested replenishment · LIN-115\n8 pieces\n\nRecording this simulated decision places no purchase order and does not change real inventory.\n\nRecord decision\nEdit quantity\nLocal simulation · Decisions do not update a real warehouse.",
+          "kind": "contract"
+        },
+        {
+          "name": "Editing retains decision quantity",
+          "status": "pass",
+          "observation": "8",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited quantity reaches review",
+          "status": "pass",
+          "observation": "Changed quantity, then restoring primary-task quantity 8. Numeric token may be adjacent to a separately styled unit.",
+          "kind": "contract"
+        },
+        {
+          "name": "First save has recoverable failure",
+          "status": "pass",
+          "observation": "Simulated save failed. Your decision has not been recorded. Your quantity is retained; try again.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains selected item and quantity",
+          "status": "pass",
+          "observation": "Input value or retained review summary inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Retry reports recorded simulation outcome",
+          "status": "pass",
+          "observation": "Decision recorded locally for LIN-115: 8 pieces. No purchase order was placed.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "INPUT",
+          "testId": "inventory-search",
+          "name": "Search SKU or item name",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "shortage-only",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "CER-2049 pieces shortEveryday Teapot — SandAvailable 3 piecesLocation A-02Incomi",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-LIN-115",
+          "name": "LIN-1158 pieces shortKhăn bàn Nguyễn Thị Minh Anh — Natural linenAvailable 2 pie",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "GLS-031At reorder point or aboveDrinking glass — ClearAvailable 24 piecesLocatio",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "CER-1204 pieces shortBreakfast bowl — IronAvailable 4 piecesLocation A-05Incomin",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "inventory-row",
+          "name": "PPR-010At reorder point or aboveGift wrap — OchreAvailable 18 sheetsLocation D-0",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Northline StockroomInventory workspaceWarehouse AStock controlInventoryFind stoc",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "inventory-search",
+          "name": "Search SKU or item name",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "shortage-only",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 39,
+            "y": 406.6875,
+            "width": 312,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 43,
+            "y": 466.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\n9 pieces short\nEveryday Teapot — Sand\nAvailable 3 pieces\nLocation A-02\nIncoming 0",
+            "x": 19,
+            "y": 545.6875,
+            "width": 352,
+            "height": 108.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 19,
+            "y": 654.1875,
+            "width": 352,
+            "height": 131,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nAt reorder point or above\nDrinking glass — Clear\nAvailable 24 pieces\nLocation C-01\nIncoming 0",
+            "x": 19,
+            "y": 785.1875,
+            "width": 352,
+            "height": 108.5,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\n4 pieces short\nBreakfast bowl — Iron\nAvailable 4 pieces\nLocation A-05\nIncoming 2",
+            "x": 19,
+            "y": 893.6875,
+            "width": 352,
+            "height": 108.5,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nAt reorder point or above\nGift wrap — Ochre\nAvailable 18 sheets\nLocation D-02\nIncoming 0",
+            "x": 19,
+            "y": 1002.1875,
+            "width": 352,
+            "height": 140.5,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "full": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 39,
+            "y": 406.6875,
+            "width": 312,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 43,
+            "y": 466.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\n9 pieces short\nEveryday Teapot — Sand\nAvailable 3 pieces\nLocation A-02\nIncoming 0",
+            "x": 19,
+            "y": 545.6875,
+            "width": 352,
+            "height": 108.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 19,
+            "y": 654.1875,
+            "width": 352,
+            "height": 131,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nAt reorder point or above\nDrinking glass — Clear\nAvailable 24 pieces\nLocation C-01\nIncoming 0",
+            "x": 19,
+            "y": 785.1875,
+            "width": 352,
+            "height": 108.5,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\n4 pieces short\nBreakfast bowl — Iron\nAvailable 4 pieces\nLocation A-05\nIncoming 2",
+            "x": 19,
+            "y": 893.6875,
+            "width": 352,
+            "height": 108.5,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nAt reorder point or above\nGift wrap — Ochre\nAvailable 18 sheets\nLocation D-02\nIncoming 0",
+            "x": 19,
+            "y": 1002.1875,
+            "width": 352,
+            "height": 140.5,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 39,
+            "y": 406.6875,
+            "width": 312,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 43,
+            "y": 466.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\n9 pieces short\nEveryday Teapot — Sand\nAvailable 3 pieces\nLocation A-02\nIncoming 0",
+            "x": 19,
+            "y": 545.6875,
+            "width": 352,
+            "height": 108.5,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 19,
+            "y": 654.1875,
+            "width": 352,
+            "height": 131,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nAt reorder point or above\nDrinking glass — Clear\nAvailable 24 pieces\nLocation C-01\nIncoming 0",
+            "x": 19,
+            "y": 785.1875,
+            "width": 352,
+            "height": 108.5,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\n4 pieces short\nBreakfast bowl — Iron\nAvailable 4 pieces\nLocation A-05\nIncoming 2",
+            "x": 19,
+            "y": 893.6875,
+            "width": 352,
+            "height": 108.5,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nAt reorder point or above\nGift wrap — Ochre\nAvailable 18 sheets\nLocation D-02\nIncoming 0",
+            "x": 19,
+            "y": 1002.1875,
+            "width": 352,
+            "height": 140.5,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "empty": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 39,
+            "y": 406.6875,
+            "width": 312,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 43,
+            "y": 466.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "Clear search",
+            "x": 42,
+            "y": 667.6875,
+            "width": 115.328125,
+            "height": 39,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "detail": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 39,
+            "y": 371.6875,
+            "width": 312,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 43,
+            "y": 431.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 19,
+            "y": 510.6875,
+            "width": 352,
+            "height": 131,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to stock list",
+            "x": 39,
+            "y": 685.6875,
+            "width": 115.96875,
+            "height": 14,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-quantity",
+            "text": "",
+            "x": 39,
+            "y": 1235.9375,
+            "width": 110,
+            "height": 43,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "review-decision",
+            "text": "Review decision →",
+            "x": 39,
+            "y": 1322.9375,
+            "width": 169.203125,
+            "height": 39,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "review": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 39,
+            "y": 406.6875,
+            "width": 312,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 43,
+            "y": 466.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 19,
+            "y": 545.6875,
+            "width": 352,
+            "height": 131,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to stock list",
+            "x": 39,
+            "y": 720.6875,
+            "width": 115.96875,
+            "height": 14,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "save-decision",
+            "text": "Record decision",
+            "x": 39,
+            "y": 1057.265625,
+            "width": 152.375,
+            "height": 39,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "edit-decision",
+            "text": "Edit quantity",
+            "x": 201.375,
+            "y": 1057.265625,
+            "width": 117.515625,
+            "height": 39,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "failure": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 39,
+            "y": 403.6875,
+            "width": 312,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 43,
+            "y": 463.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 19,
+            "y": 542.6875,
+            "width": 352,
+            "height": 131,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to stock list",
+            "x": 39,
+            "y": 717.6875,
+            "width": 115.96875,
+            "height": 14,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-status",
+            "text": "Simulated save failed. Your decision has not been recorded. Your quantity is retained; try again.",
+            "x": 39,
+            "y": 1059.265625,
+            "width": 312,
+            "height": 92.390625,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "retry-decision",
+            "text": "Retry save",
+            "x": 39,
+            "y": 1169.65625,
+            "width": 114.265625,
+            "height": 39,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "edit-decision",
+            "text": "Edit quantity",
+            "x": 163.265625,
+            "y": 1169.65625,
+            "width": 117.515625,
+            "height": 39,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "success": [
+          {
+            "testId": "inventory-search",
+            "text": "Search SKU or item name",
+            "x": 39,
+            "y": 406.6875,
+            "width": 312,
+            "height": 45,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 43,
+            "y": 466.6875,
+            "width": 16,
+            "height": 16,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "LIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4",
+            "x": 19,
+            "y": 545.6875,
+            "width": 352,
+            "height": 131,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to stock list",
+            "x": 39,
+            "y": 720.6875,
+            "width": 115.96875,
+            "height": 14,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-status",
+            "text": "Decision recorded locally for LIN-115: 8 pieces. No purchase order was placed.",
+            "x": 39,
+            "y": 1062.265625,
+            "width": 312,
+            "height": 71.59375,
+            "fullyInFirstViewport": false
+          }
+        ]
+      },
+      "initialText": "Northline Stockroom\nINVENTORY WORKSPACE\nWarehouse A\nSTOCK CONTROL\nInventory\n\nFind stock gaps. Check the evidence. Record your next decision.\n\nFictional snapshot1 November 2026, 09:00 ICT · Not live inventory\nStock list\nAll quantities are in each item's stated unit.\nShow shortages only\n5 OF 5 ITEMS\nSNAPSHOT ORDER\nCER-204\n9 pieces short\nEveryday Teapot — Sand\nAvailable 3 pieces\nLocation A-02\nIncoming 0\nLIN-115\n8 pieces short\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAvailable 2 pieces\nLocation B-04\nIncoming 4\nGLS-031\nAt reorder point or above\nDrinking glass — Clear\nAvailable 24 pieces\nLocation C-01\nIncoming 0\nCER-120\n4 pieces short\nBreakfast bowl — Iron\nAvailable 4 pieces\nLocation A-05\nIncoming 2\nPPR-010\nAt reorder point or above\nGift wrap — Ochre\nAvailable 18 sheets\nLocation D-02\nIncoming 0\n▤\nInspect an item\n\nSelect an item from the stock list to see its quantities and record a replenishment decision.\n\nLocal simulation · Decisions do not update a real warehouse.",
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 1467,
+        "title": "Inventory · Northline Stockroom",
+        "h1": [
+          "Inventory"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">Stock control</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #64756c, background color: #f4f5ef, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"intro\">Find stock gaps. Check the evidence. Record your next decision.</p>",
+                "target": [
+                  ".intro"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #66776f, background color: #f4f5ef, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"muted\">All quantities are in each item's stated unit.</div>",
+                "target": [
+                  ".muted"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #718078, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Select an item from the stock list to see its quantities and record a replenishment decision.</p>",
+                "target": [
+                  ".empty-detail > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #768075, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Local simulation · Decisions do not update a real warehouse.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #7a8578, background color: #f4f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"empty-icon\" aria-hidden=\"true\">▤</div>",
+                "target": [
+                  ".empty-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">Stock control</div>",
+                "target": [
+                  ".page > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #64756c, background color: #f4f5ef, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"intro\">Find stock gaps. Check the evidence. Record your next decision.</p>",
+                "target": [
+                  ".intro"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #66776f, background color: #f4f5ef, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"muted\">All quantities are in each item's stated unit.</div>",
+                "target": [
+                  ".panel-head > .muted"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #718078, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Available <strong>2 pieces</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Location <strong>B-04</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Incoming <strong>4</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"muted\">Requested replenishment · LIN-115</span>",
+                "target": [
+                  ".review-box > .muted"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.71 (foreground color: #718078, background color: #f0f4e9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Local simulation · Decisions do not update a real warehouse.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #7a8578, background color: #f4f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">Stock control</div>",
+                "target": [
+                  ".page > .eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #64756c, background color: #f4f5ef, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"intro\">Find stock gaps. Check the evidence. Record your next decision.</p>",
+                "target": [
+                  ".intro"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #66776f, background color: #f4f5ef, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"muted\">All quantities are in each item's stated unit.</div>",
+                "target": [
+                  ".panel-head > .muted"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #718078, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Available <strong>2 pieces</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Location <strong>B-04</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Incoming <strong>4</strong></span>",
+                "target": [
+                  ".item-bottom > span:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #6a796f, background color: #edf4ea, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"muted\">Requested replenishment · LIN-115</span>",
+                "target": [
+                  ".review-box > .muted"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.71 (foreground color: #718078, background color: #f0f4e9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Local simulation · Decisions do not update a real warehouse.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #7a8578, background color: #f4f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "color-contrast",
+          "document-title",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    }
+  },
+  "supportingNarrow320": {
+    "width": 320,
+    "scrollWidth": 320,
+    "pageHeight": 1649
+  }
+}

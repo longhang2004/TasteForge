@@ -1,0 +1,11 @@
+# Implementation notes
+
+Built a local dependency-free warehouse inventory workspace in index.html, styles.css and app.js. The original task.md and fixture.json were preserved. Fixture values are copied into JavaScript; ordering follows the supplied snapshot, with no derived ranking, forecast or supplier action.
+
+Desktop uses a persistent stock list and adjacent evidence panel. Mobile stacks both panels so list context remains in the document. The review iteration adds scrolling to the evidence after selecting on a narrow screen; Back to stock list returns focus and viewport to search while retaining the selected item, quantity and filters. Native controls, visible focus outlines and textual stock labels support keyboard use and comprehension.
+
+Implemented SKU/name search, a native shortage-only checkbox, an empty result state with Clear search, item selection, all five stock evidence fields, integer quantity validation from 1 to 50, review and edit, a recoverable first-save failure, retry success and local simulation disclosures. Incoming stock is explicitly separate from shortage. A successful record exists only in page memory; refreshing resets the simulation.
+
+Actual checks: ran the supplied preview.mjs helper once for u01, producing desktop.png and mobile.png in evidence/self-review. Inspected both PNGs with view_image. Both initial renders display five items, an empty search, an unchecked shortage checkbox, no selected item, the fictional snapshot disclosure and an empty evidence panel. The Vietnamese name wraps on mobile without clipping. One post-render review iteration added mobile evidence scrolling; this change was not rendered again under the bounded review rules.
+
+The final app.js also passed node --check through WSL. No skills, CLI/catalog, external assets, packages, network access or additional browser experiments were used. No interactive browser testing was performed; search/filter, validation, review/edit, simulated save/retry and post-selection responsive behavior are implemented but remain unverified by interaction tests. One attempted WSL launcher command had a quoting error and did not run the intended edit or preview; edits were instead made with apply_patch, and the subsequent simple WSL preview command succeeded.

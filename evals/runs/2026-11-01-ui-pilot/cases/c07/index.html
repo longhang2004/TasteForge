@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f7f4">
+<title>Review a transfer · Northline</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#" aria-label="Northline Transfer home"><span class="brand-mark" aria-hidden="true">N</span><span>northline<span class="brand-light"> transfer</span></span></a><span class="secure"><span aria-hidden="true">◆</span> Private, secure review</span></header>
+  <main id="app" class="page">
+    <div class="intro"><p class="eyebrow">SEND MONEY <span>·</span> VIỆT NAM</p><h1>Review your transfer</h1><p class="subhead">Take a moment to make sure everything looks right.</p></div>
+    <div class="steps" aria-label="Transfer progress"><span class="step done"><i>✓</i> Details</span><span class="step-line"></span><span class="step active"><i>2</i> Review</span><span class="step-line"></span><span class="step"><i>3</i> Complete</span></div>
+    <div class="layout">
+      <section class="card" aria-labelledby="card-title">
+        <div class="card-head"><div><p class="eyebrow" id="step-label">YOUR DETAILS</p><h2 id="card-title">Where should it go?</h2></div><span class="round-icon" aria-hidden="true">↗</span></div>
+        <div id="entry-panel">
+          <form id="transfer-form" novalidate>
+            <label for="recipient">Recipient’s full name</label>
+            <input id="recipient" data-testid="recipient" name="recipient" autocomplete="name" required>
+            <p class="field-hint">Enter the name as it appears on their bank account.</p>
+            <label for="amount" class="amount-label">You send</label>
+            <div class="amount-wrap"><span class="currency">USD</span><input id="amount" data-testid="amount" name="amount" type="number" inputmode="decimal" min="1" max="1000" step="0.01" aria-describedby="amount-hint error-message"><span class="currency-code">US dollars</span></div>
+            <p id="amount-hint" class="field-hint">Between $1 and $1,000 per transfer.</p>
+            <p id="error-message" class="error" role="alert" hidden></p>
+            <button class="primary" type="submit" data-testid="review-transfer">Review transfer <span aria-hidden="true">→</span></button>
+          </form>
+        </div>
+        <div id="review-panel" hidden>
+          <div class="recipient-box"><span class="avatar" aria-hidden="true">MA</span><div><span class="label-muted">SENDING TO</span><strong id="review-recipient"></strong><span class="place">Vietnam · VND account</span></div><button class="text-button" id="edit-transfer" type="button">Edit</button></div>
+          <div class="amount-summary"><div><span class="label-muted">THEY RECEIVE</span><strong id="receive-amount"></strong></div><span class="currency-token">VND</span></div>
+          <dl class="breakdown"><div><dt>You send</dt><dd id="send-amount"></dd></div><div><dt>Transfer fee</dt><dd id="fee-amount"></dd></div><div class="total"><dt>Total debited</dt><dd id="total-amount"></dd></div></dl>
+          <div class="delivery"><span class="delivery-icon" aria-hidden="true">◷</span><span><b>Estimated delivery</b><small id="delivery-estimate"></small></span></div>
+          <button class="primary" type="button" id="confirm" data-testid="confirm-transfer">Confirm transfer <span aria-hidden="true">→</span></button>
+          <button class="back-button" id="back-to-edit" type="button">← Back to details</button>
+        </div>
+        <div id="result-panel" hidden aria-live="polite">
+          <div id="failure-result" hidden><div class="result-icon failed" aria-hidden="true">!</div><h2>We couldn’t confirm this transfer</h2><p class="result-copy">Something interrupted this simulated attempt. Your details are saved, and no money was moved.</p><button class="primary" id="retry" type="button" data-testid="retry-transfer">Try again <span aria-hidden="true">→</span></button><button class="back-button" id="return-review" type="button">Review details</button></div>
+          <div id="success-result" hidden><div class="result-icon success" aria-hidden="true">✓</div><p class="eyebrow">SIMULATION COMPLETE</p><h2>Transfer confirmed</h2><p class="result-copy">This is a sample confirmation. No money was moved and no real account was connected.</p><div class="success-details"><span>Recipient</span><strong id="success-recipient"></strong><span>Total shown</span><strong id="success-total"></strong></div><button class="back-button" id="start-over" type="button">Start another transfer</button></div>
+        </div>
+      </section>
+      <aside class="side-card"><div class="side-top"><span class="side-icon" aria-hidden="true">✳</span><div><p class="eyebrow">CLEAR FROM THE START</p><h2>No surprises.</h2></div></div><p class="side-copy">Your recipient gets the amount shown. The transfer fee is added to what you pay.</p><div class="rate-row"><span>Exchange rate</span><strong>1 USD = 25,000 VND</strong></div><div class="trust-note"><span aria-hidden="true">ⓘ</span><p><strong>Sample transfer only</strong><br>This is a simulation with fictional data. No money is moved and no real account is connected.</p></div></aside>
+    </div>
+    <p class="footer-note"><span aria-hidden="true">◈</span> Your transfer details stay on this device.</p>
+    <div id="status" class="status-banner" role="status" data-testid="transfer-status" aria-live="polite" hidden></div>
+  </main>
+  <footer>Northline Transfer is a fictional sample experience <span>·</span> USD → VND</footer>
+</body>
+</html>

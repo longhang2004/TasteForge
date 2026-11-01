@@ -1,0 +1,38 @@
+{
+  "reviewer": "r2",
+  "samples": [
+    {
+      "view": "sample-1",
+      "scores": {"entryPriority": 4, "decisionContext": 4, "narrowContext": 3, "recoveryFlow": 4, "compositionPurpose": 4},
+      "evidence": {
+        "entryPriority": "Search and shortage filter precede the inventory, with explicit shortage quantities and Inspect actions on each row. LIN-115 is the second row and its 2 available, 10 reorder, 8 short and 4 incoming are visible together; the tall repeated rows make scanning the full set slower than a compact table.",
+        "decisionContext": "The desktop review keeps the filtered selected row beside a detail panel containing all five requested facts, selected item, 8 pieces and a prominent no-purchase-order notice. The row and evidence panel repeat much of the same information, but the relationship to the decision remains clear.",
+        "narrowContext": "The mobile failure capture retains the search, active filter, selected row and detailed evidence above the error; the two-column metrics remain readable. This continuity costs substantial scrolling: the recorded mobile review save is at y=1754, below the first viewport, and the long name wraps tightly beside Back to list. At 320px there is no recorded document overflow.",
+        "recoveryFlow": "The failure visibly names a simulated save error, retains LIN-115 and 8 pieces, and provides Retry decision and Edit quantity. The trace records successful retry and retained edit quantity; it does not establish how easily a person finds the actions after scrolling.",
+        "compositionPurpose": "The list/detail arrangement supports finding and inspecting stock, and the operator guide explains that incoming does not erase the shortage. The persistent snapshot notice and repeated stock evidence take considerable space, especially on mobile."
+      },
+      "blockers": [],
+      "unnecessaryRegions": ["The empty detail panel's lengthy introduction and repeated simulation explanation occupy substantial space; the incoming-stock explanation is useful.", "The selected row and detail panel repeat all four metrics, extending the mobile path to recovery actions."],
+      "genericityNote": "A conventional list/detail workspace is appropriate to this task; the large empty instructional panel and nested metric cards remain generic dashboard composition rather than additional operational context.",
+      "monochromeCaveat": "Font replacement can reflow the long name and the transformation removes radius and shadows; the tight mobile name wrapping and lengthy stack are also visible in the authored capture."
+    },
+    {
+      "view": "sample-2",
+      "scores": {"entryPriority": 4, "decisionContext": 4, "narrowContext": 2, "recoveryFlow": 4, "compositionPurpose": 3},
+      "evidence": {
+        "entryPriority": "The desktop table places all five items, quantities, filter, search and Inspect controls in one compact view. LIN-115 is directly comparable with other rows, though shortage is shown as -8 while the fixture describes a positive shortage of 8 and incoming as +4.",
+        "decisionContext": "The review shows selected LIN-115, location, available 2, shortage 8, incoming 4, requested 8 pieces and the no-order disclosure; reorder 10 remains visible in the adjacent selected row rather than the summary. The trace confirms editing preserves quantity and invalid quantities cannot commit.",
+        "narrowContext": "Mobile retains the selected list row and filter above the decision, but an unexplained large blank gap separates search and filter and each initial row occupies about 312px. The LIN-115 Inspect control begins at y=1049.5 and review Save at y=1275, both below the first viewport. At 320px recorded scroll width equals viewport width.",
+        "recoveryFlow": "The mobile failure explicitly says the simulated save failed and the entered 8 pieces were preserved; the summary, Retry, Edit and Back actions are present. The scripted retry succeeds, but the long preceding list and summary mean success of the path is not evidence of low effort.",
+        "compositionPurpose": "The compact desktop table and adjacent decision panel directly support comparison and inspection. On mobile, the blank search/filter region and individually separated metric lines consume space without adding information, and the empty detail panel repeats selection instructions."
+      },
+      "blockers": [],
+      "unnecessaryRegions": ["Large blank vertical area between mobile search and shortage filter.", "Empty detail panel's tip repeats the instruction to inspect an item; mobile metric lines and separators are disproportionately tall."],
+      "genericityNote": "The familiar table/detail arrangement suits the inventory task; its placeholder card, badges and bordered summary are conventional and add limited task-specific guidance beyond the stock data.",
+      "monochromeCaveat": "Font replacement can change wrapping and radius/shadows are removed; the mobile gap, long row stack and recovery placement also appear in the authored captures."
+    }
+  ],
+  "comparison": "Sample-2 makes desktop comparison and reaching review controls more compact; sample-1 makes shortage units explicit and keeps the full evidence set together in review. Both preserve list context and provide a recoverable failure, but both require mobile scrolling. Sample-1's mobile rows are denser, while sample-2's unusually large search/filter gap and tall rows delay selection. Both use familiar list/detail composition, appropriately for the task.",
+  "limitations": ["Sixteen supplied captures inspected; only the depicted initial, desktop review and mobile failure states are visually available. Scripted checks are observations, not proof of ease or comprehension.", "All recorded contract checks passed in the supplied trace; hook and automation compliance are separate from usability judgments.", "Axe reported color-contrast violations in failure/final states for both samples, and target-size violations for sample-2's Clear control. Initial scans had no reported violations; incomplete checks and untested accessibility concerns remain outside a pass claim.", "Monochrome is a diagnostic transformation, not an exact wireframe. Geometry refers to the original recorded captures; 320px checks report no horizontal document overflow but do not establish usability at every width."] ,
+  "imagesActuallyInspected": 16
+}

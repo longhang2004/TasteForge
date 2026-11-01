@@ -1,0 +1,31 @@
+{
+  "purpose": "Operator-transcribed summary of initial harness run before shared corrections; full original browser JSON was replaced by the corrected uniform recapture.",
+  "cases": {
+    "c01": {
+      "desktop": "6/7",
+      "mobile": "6/7",
+      "failed": [
+        "Calculated USD144 total not explicitly shown; reclassified optional diagnostic."
+      ]
+    },
+    "c02": {
+      "desktop": "16/16",
+      "mobile": "16/16",
+      "failed": []
+    },
+    "c03": {
+      "desktop": "7/7",
+      "mobile": "7/7",
+      "failed": []
+    },
+    "c04": {
+      "desktop": "14/16",
+      "mobile": "14/16",
+      "failed": [
+        "Failure detection inspected status region but missed visible failure heading.",
+        "Input-retention check assumed input elements stay mounted; failure summary actually retained values."
+      ]
+    }
+  },
+  "resolution": "Harness criteria corrected for all cases without editing UI implementations; see protocol.md."
+}

@@ -1,0 +1,1584 @@
+{
+  "caseId": "u08",
+  "capturedAtUtc": "2026-11-01T05:29:48.040Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    "app.js": "d34e8e481b9b4e389047a68b580b34971542eea52a927e10acf3753cb5802506",
+    "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+    "implementation-notes.md": "519352b1e9e003386206ad92b5fe81081dcb25bc87d87024e00b5a3bfafdd94b",
+    "index.html": "f7c0a278a3d80f35f083185006e5ce9c864dac7458743d48edafed66431fa329",
+    "styles.css": "d98f7bfca5ffeaa34e79bbdd2cc332c5455e38d63f744046c1f2afbf8b443ba6",
+    "task.md": "6d676ed4ad15df30432c67453dfa368fc5c58b33eede1fe172836c60f1b8dc6c"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-neutral-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-review.png",
+        "desktop-neutral-review.png",
+        "desktop-failure.png",
+        "desktop-neutral-failure.png",
+        "desktop-success.png",
+        "desktop-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "The simulated transfer didn’t go through.\nYour details are saved. This is a practice error; retry to complete the simulation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":null,\"recipient\":null,\"method\":\"retained failure summary; edit form not separately exercised\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "No real money was moved.\nThis practice transfer succeeded. No real account is connected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "n↗NorthlineTransfer",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "n↗NorthlineTransferSIMULATIONUSD → VND · Việt NamA little closer to home.Start w",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "n↗NorthlineTransfer",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "n↗NorthlineTransferSIMULATIONUSD → VND · Việt NamA little closer to home.Start w",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": [
+          {
+            "testId": "recipient",
+            "text": "",
+            "x": 215,
+            "y": 393.1875,
+            "width": 517.03125,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "amount",
+            "text": "",
+            "x": 215,
+            "y": 517.578125,
+            "width": 517.03125,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "review-transfer",
+            "text": "Review transfer\n→",
+            "x": 215,
+            "y": 720.15625,
+            "width": 517.03125,
+            "height": 50,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "full": [
+          {
+            "testId": "recipient",
+            "text": "",
+            "x": 215,
+            "y": 393.1875,
+            "width": 517.03125,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "amount",
+            "text": "",
+            "x": 215,
+            "y": 517.578125,
+            "width": 517.03125,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "review-transfer",
+            "text": "Review transfer\n→",
+            "x": 215,
+            "y": 720.15625,
+            "width": 517.03125,
+            "height": 50,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "testId": "recipient",
+            "text": "",
+            "x": 215,
+            "y": 393.1875,
+            "width": 517.03125,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "amount",
+            "text": "",
+            "x": 215,
+            "y": 517.578125,
+            "width": 517.03125,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "review-transfer",
+            "text": "Review transfer\n→",
+            "x": 215,
+            "y": 720.15625,
+            "width": 517.03125,
+            "height": 50,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "review": [
+          {
+            "testId": "edit-transfer",
+            "text": "Edit details",
+            "x": 215,
+            "y": 632.53125,
+            "width": 72.625,
+            "height": 19,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "confirm-transfer",
+            "text": "Confirm simulated transfer\n→",
+            "x": 215,
+            "y": 677.53125,
+            "width": 517.03125,
+            "height": 50,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "failure": [
+          {
+            "testId": "edit-transfer",
+            "text": "Edit details",
+            "x": 215,
+            "y": 632.53125,
+            "width": 72.625,
+            "height": 19,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "transfer-status",
+            "text": "The simulated transfer didn’t go through.\nYour details are saved. This is a practice error; retry to complete the simulation.",
+            "x": 215,
+            "y": 671.53125,
+            "width": 517.03125,
+            "height": 101.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "retry-transfer",
+            "text": "Retry simulated transfer\n→",
+            "x": 215,
+            "y": 798.921875,
+            "width": 517.03125,
+            "height": 50,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "success": [
+          {
+            "testId": "transfer-status",
+            "text": "No real money was moved.\nThis practice transfer succeeded. No real account is connected.",
+            "x": 215,
+            "y": 437.1875,
+            "width": 517.03125,
+            "height": 80.59375,
+            "fullyInFirstViewport": true
+          }
+        ]
+      },
+      "initialText": "n↗\nNorthline\nTransfer\nSIMULATION\nUSD → VND · VIỆT NAM\nA little closer to home.\n\nStart with the details. See every cost before you confirm.\n\n1\nDetails\n2\nReview & confirm\n↗\nTransfer details\nRecipient’s full name\n🇻🇳\nReceiving in Việt Nam · VND\nAmount you send\nUSD\nYou can send USD 1–1,000. A USD 2.50 fee is added.\nFrom your sample account\nEveryday USD ••1042\nAlex Morgan\nReview transfer\n→\nYou’ll confirm on the next step.\nYour transfer, at a glance\nYou send\n250.00 USD\nTransfer fee · flat\n2.50 USD\nTotal you pay\n252.50 USD\nRecipient receives\n6,250,000VND\nExchange rate · 1 USD = 25,000 VND\n◷\nEstimated arrival\nBy 3 November 2026\nIllustrative estimate\n\nⓘ\nPractice with confidence. This is a fictional transfer using sample data.\n\nSimulation with fictional data. No money is moved and no real account is connected.",
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1000,
+        "title": "Northline Transfer · Transfer simulation",
+        "h1": [
+          "A little closer to home."
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Arial, Helvetica, sans-serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<li class=\"\"><span>2</span>Review &amp; confirm</li>",
+                "target": [
+                  "li:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #76837b, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"helper\" id=\"amount-help\">You can send USD 1–1,000. A USD 2.50 fee is added.</div>",
+                "target": [
+                  "#amount-help"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #6d7c71, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>From your sample account</small>",
+                "target": [
+                  ".account > div > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #6c7d70, background color: #f6f7f1, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"owner\">Alex Morgan</span>",
+                "target": [
+                  ".owner"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #68766a, background color: #f6f7f1, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"button-note\">You’ll confirm on the next step.</div>",
+                "target": [
+                  ".button-note"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #748074, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"rate\">Exchange rate · 1 USD = 25,000 VND</div>",
+                "target": [
+                  ".rate"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #71816d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>Illustrative estimate</small>",
+                "target": [
+                  ".delivery > div > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #73816d, background color: #edf0df, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Simulation with fictional data. No money is moved and no real account is connected.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #738071, background color: #f5f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-label=\"flat fee\">· flat</span>",
+                "target": [
+                  "span[aria-label=\"flat fee\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>2</span>",
+                "target": [
+                  "li:nth-child(2) > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"arrow\" aria-hidden=\"true\">→</span>",
+                "target": [
+                  ".arrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "avoid-inline-spacing",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<li class=\"\"><span>1</span>Details</li>",
+                "target": [
+                  "li:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #76837b, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">Sending to</div>",
+                "target": [
+                  ".review-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #728071, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"button-note\">Simulation only. No money will be moved.</div>",
+                "target": [
+                  ".button-note"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #748074, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"rate\">Exchange rate · 1 USD = 25,000 VND</div>",
+                "target": [
+                  ".rate"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #71816d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>Illustrative estimate</small>",
+                "target": [
+                  "small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #73816d, background color: #edf0df, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Simulation with fictional data. No money is moved and no real account is connected.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #738071, background color: #f5f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-label=\"flat fee\">· flat</span>",
+                "target": [
+                  "span[aria-label=\"flat fee\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>1</span>",
+                "target": [
+                  "li:nth-child(1) > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"small-icon\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".small-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"arrow\" aria-hidden=\"true\">→</span>",
+                "target": [
+                  ".arrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<li class=\"\"><span>1</span>Details</li>",
+                "target": [
+                  "li:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #76837b, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">Recipient</div>",
+                "target": [
+                  ".review-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #728071, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"rate\">Exchange rate · 1 USD = 25,000 VND</div>",
+                "target": [
+                  ".rate"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #71816d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>Illustrative estimate</small>",
+                "target": [
+                  "small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #73816d, background color: #edf0df, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Simulation with fictional data. No money is moved and no real account is connected.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #738071, background color: #f5f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-label=\"flat fee\">· flat</span>",
+                "target": [
+                  "span[aria-label=\"flat fee\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>1</span>",
+                "target": [
+                  "li:nth-child(1) > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<div class=\"success-icon\" aria-hidden=\"true\">✓</div>",
+                "target": [
+                  ".success-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "target-size"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-neutral-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-review.png",
+        "mobile-neutral-review.png",
+        "mobile-failure.png",
+        "mobile-neutral-failure.png",
+        "mobile-success.png",
+        "mobile-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "The simulated transfer didn’t go through.\nYour details are saved. This is a practice error; retry to complete the simulation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":null,\"recipient\":null,\"method\":\"retained failure summary; edit form not separately exercised\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "No real money was moved.\nThis practice transfer succeeded. No real account is connected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "n↗NorthlineTransfer",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "n↗NorthlineTransferSIMULATIONUSD → VND · Việt NamA little closer to home.Start w",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "n↗NorthlineTransfer",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "n↗NorthlineTransferSIMULATIONUSD → VND · Việt NamA little closer to home.Start w",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": [
+          {
+            "testId": "recipient",
+            "text": "",
+            "x": 42,
+            "y": 404.171875,
+            "width": 306,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "amount",
+            "text": "",
+            "x": 42,
+            "y": 528.5625,
+            "width": 306,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "review-transfer",
+            "text": "Review transfer\n→",
+            "x": 42,
+            "y": 750.328125,
+            "width": 306,
+            "height": 50,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "full": [
+          {
+            "testId": "recipient",
+            "text": "",
+            "x": 42,
+            "y": 404.171875,
+            "width": 306,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "amount",
+            "text": "",
+            "x": 42,
+            "y": 528.5625,
+            "width": 306,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "review-transfer",
+            "text": "Review transfer\n→",
+            "x": 42,
+            "y": 750.328125,
+            "width": 306,
+            "height": 50,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "testId": "recipient",
+            "text": "",
+            "x": 42,
+            "y": 404.171875,
+            "width": 306,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "amount",
+            "text": "",
+            "x": 42,
+            "y": 528.5625,
+            "width": 306,
+            "height": 54.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "review-transfer",
+            "text": "Review transfer\n→",
+            "x": 42,
+            "y": 750.328125,
+            "width": 306,
+            "height": 50,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "review": [
+          {
+            "testId": "edit-transfer",
+            "text": "Edit details",
+            "x": 42,
+            "y": 709.34375,
+            "width": 72.625,
+            "height": 19,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "confirm-transfer",
+            "text": "Confirm simulated transfer\n→",
+            "x": 42,
+            "y": 754.34375,
+            "width": 306,
+            "height": 50,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "failure": [
+          {
+            "testId": "edit-transfer",
+            "text": "Edit details",
+            "x": 42,
+            "y": 709.34375,
+            "width": 72.625,
+            "height": 19,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "transfer-status",
+            "text": "The simulated transfer didn’t go through.\nYour details are saved. This is a practice error; retry to complete the simulation.",
+            "x": 42,
+            "y": 748.34375,
+            "width": 306,
+            "height": 122.1875,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "retry-transfer",
+            "text": "Retry simulated transfer\n→",
+            "x": 42,
+            "y": 896.53125,
+            "width": 306,
+            "height": 50,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "success": [
+          {
+            "testId": "transfer-status",
+            "text": "No real money was moved.\nThis practice transfer succeeded. No real account is connected.",
+            "x": 42,
+            "y": 518.5625,
+            "width": 306,
+            "height": 101.390625,
+            "fullyInFirstViewport": true
+          }
+        ]
+      },
+      "initialText": "n↗\nNorthline\nSIMULATION\nUSD → VND · VIỆT NAM\nA little closer to home.\n\nStart with the details. See every cost before you confirm.\n\n1\nDetails\n2\nReview & confirm\n↗\nTransfer details\nRecipient’s full name\n🇻🇳\nReceiving in Việt Nam · VND\nAmount you send\nUSD\nYou can send USD 1–1,000. A USD 2.50 fee is added.\nFrom your sample account\nEveryday USD ••1042\nAlex Morgan\nReview transfer\n→\nYou’ll confirm on the next step.\nYour transfer, at a glance\nYou send\n250.00 USD\nTransfer fee · flat\n2.50 USD\nTotal you pay\n252.50 USD\nRecipient receives\n6,250,000VND\nExchange rate · 1 USD = 25,000 VND\n◷\nEstimated arrival\nBy 3 November 2026\nIllustrative estimate\n\nⓘ\nPractice with confidence. This is a fictional transfer using sample data.\n\nSimulation with fictional data. No money is moved and no real account is connected.",
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 1512,
+        "title": "Northline Transfer · Transfer simulation",
+        "h1": [
+          "A little closer to home."
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Arial, Helvetica, sans-serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<li class=\"\"><span>2</span>Review &amp; confirm</li>",
+                "target": [
+                  "li:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #76837b, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"helper\" id=\"amount-help\">You can send USD 1–1,000. A USD 2.50 fee is added.</div>",
+                "target": [
+                  "#amount-help"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #6d7c71, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>From your sample account</small>",
+                "target": [
+                  ".account > div > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #6c7d70, background color: #f6f7f1, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"owner\">Alex Morgan</span>",
+                "target": [
+                  ".owner"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #68766a, background color: #f6f7f1, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"button-note\">You’ll confirm on the next step.</div>",
+                "target": [
+                  ".button-note"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #748074, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"rate\">Exchange rate · 1 USD = 25,000 VND</div>",
+                "target": [
+                  ".rate"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #71816d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>Illustrative estimate</small>",
+                "target": [
+                  ".delivery > div > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #73816d, background color: #edf0df, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Simulation with fictional data. No money is moved and no real account is connected.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #738071, background color: #f5f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-label=\"flat fee\">· flat</span>",
+                "target": [
+                  "span[aria-label=\"flat fee\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>2</span>",
+                "target": [
+                  "li:nth-child(2) > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"arrow\" aria-hidden=\"true\">→</span>",
+                "target": [
+                  ".arrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "avoid-inline-spacing",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<li class=\"\"><span>1</span>Details</li>",
+                "target": [
+                  "li:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #76837b, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">Sending to</div>",
+                "target": [
+                  ".review-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #728071, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"button-note\">Simulation only. No money will be moved.</div>",
+                "target": [
+                  ".button-note"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #748074, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"rate\">Exchange rate · 1 USD = 25,000 VND</div>",
+                "target": [
+                  ".rate"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #71816d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>Illustrative estimate</small>",
+                "target": [
+                  "small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #73816d, background color: #edf0df, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Simulation with fictional data. No money is moved and no real account is connected.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #738071, background color: #f5f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-label=\"flat fee\">· flat</span>",
+                "target": [
+                  "span[aria-label=\"flat fee\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>1</span>",
+                "target": [
+                  "li:nth-child(1) > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"small-icon\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".small-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"arrow\" aria-hidden=\"true\">→</span>",
+                "target": [
+                  ".arrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<li class=\"\"><span>1</span>Details</li>",
+                "target": [
+                  "li:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #76837b, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"review-label\">Recipient</div>",
+                "target": [
+                  ".review-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #728071, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<div class=\"rate\">Exchange rate · 1 USD = 25,000 VND</div>",
+                "target": [
+                  ".rate"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.14 (foreground color: #71816d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<small>Illustrative estimate</small>",
+                "target": [
+                  "small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #73816d, background color: #edf0df, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<footer>Simulation with fictional data. No money is moved and no real account is connected.</footer>",
+                "target": [
+                  "footer"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #738071, background color: #f5f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-label=\"flat fee\">· flat</span>",
+                "target": [
+                  "span[aria-label=\"flat fee\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>1</span>",
+                "target": [
+                  "li:nth-child(1) > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<div class=\"success-icon\" aria-hidden=\"true\">✓</div>",
+                "target": [
+                  ".success-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "target-size"
+        ]
+      }
+    }
+  },
+  "supportingNarrow320": {
+    "width": 320,
+    "scrollWidth": 320,
+    "pageHeight": 1619
+  }
+}

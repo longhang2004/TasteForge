@@ -1,0 +1,25 @@
+{
+  "requestedModel": "opencode/glm-5.3-flash-free",
+  "cliVersion": "1.19.3",
+  "startedAtUtc": "2026-11-01T06:16:55.859827+00:00",
+  "durationSeconds": 90.225108,
+  "exitCode": "timeout-90s",
+  "stdout": "",
+  "stderr": "",
+  "events": [],
+  "config": {
+    "$schema": "https://opencode.ai/config.json",
+    "autoupdate": false,
+    "share": "disabled",
+    "snapshot": false,
+    "formatter": false,
+    "lsp": false,
+    "enabled_providers": [
+      "opencode"
+    ],
+    "model": "opencode/glm-5.3-flash-free",
+    "small_model": "opencode/glm-5.3-flash-free",
+    "permission": "deny"
+  },
+  "credentialContext": "isolated XDG directories and API-key/token env variables removed; no existing credential file read"
+}

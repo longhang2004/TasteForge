@@ -1,0 +1,2121 @@
+{
+  "caseId": "a02",
+  "capturedAtUtc": "2026-11-01T07:56:31.569Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    ".tasteforge/brief.json": "7d9e698b9baa89b99f2549f7e99f97cc939dca1776538178b45ee29f45102a1b",
+    ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+    "app.js": "dab7c90d97dfd539f049c5a36751c5e31d50df74a4117df5b8d5167d46664425",
+    "fixture.json": "a24a385923fd3e7a19ed694cc58b78d4b4b3f9aa5d43efe59b59734de4260bc2",
+    "implementation-notes.md": "1ad70d2cefe8fe353acae3eb2a5acae005c7cfed3dcb4bfdd65b51f65bc13fb1",
+    "index.html": "e9655e16c6bd8d0859e228de72a2d776502a751768000c3e27081863770b5a95",
+    "styles.css": "d76fb8dbdeb4ef7d3feab73a34cc1012389cf0e6ea754c5fb721b059ed0632ca",
+    "task.md": "d7f90772b3ded3f6901ad738e9758948241604733a727b3b6375b4aadbefa7d1",
+    "UX_PLAN.md": "caa104c51be33d112858d96bb9d8589e420fe8abafafcd08fc78dbcfeac8c2f1"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-neutral-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-empty.png",
+        "desktop-detail.png",
+        "desktop-neutral-detail.png",
+        "desktop-review.png",
+        "desktop-neutral-review.png",
+        "desktop-failure.png",
+        "desktop-neutral-failure.png",
+        "desktop-success.png",
+        "desktop-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Initial list contains all five fixture items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"GLS-031\",\"LIN-115\",\"PPR-010\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Shortage filter shows precisely the three shortage items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "No matches has zero rows and explicit feedback",
+          "status": "pass",
+          "observation": "Unmatched query, visible-page text and row count; qualitative clarity assessed separately.",
+          "kind": "contract"
+        },
+        {
+          "name": "Clear search restores filtered list",
+          "status": "pass",
+          "observation": "Shortage-only remains active.",
+          "kind": "contract"
+        },
+        {
+          "name": "Required item selection hook exists",
+          "status": "pass",
+          "observation": "Technical hook diagnostic; when missing, select the visible fixture-SKU row to assess the actual user task separately.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "Selected item evidence includes full name and location",
+          "status": "pass",
+          "observation": "WAREHOUSE A\nNorthline Stockroom\n\nWarehouse Replenishment Decision Workspace\n\nSIMULATED ENVIRONMENT\nSnapshot: 1 November 2026, 09:00 ICT — fictional snapshot, not live inventory\nLocal decision simulation only. No purchase orders are placed and live warehouse stock is not modified.\nSearch items\nShortages only (shortage > 0)\nStock Inventory (1 of 5)\nFilter: Shortage > 0\nLIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\nINCOMING\n4 pieces\nLIN-115\nLocation: B-04\nShortage: 8 pieces\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n← Back to list\nPHYSICAL STOCK EVIDENCE\nAVAILABLE STOCK\n2 pieces\nREORDER POINT\n10 pieces\nCURRENT SHORTAGE\n8 pieces\nINCOMING QUANTITY\n4 pieces\nBIN LOCATION\nB-04\nINVENTORY UNIT\npieces\nRecord Replenishment Decision\nReplenishment Quantity (pieces)\n\nAllowed range: whole integer from 1 to 50 pieces.\n\nReview decision\nBack to list",
+          "kind": "contract"
+        },
+        {
+          "name": "Returning retains search and shortage filter",
+          "status": "pass",
+          "observation": "[\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 0",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 51",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 1.5",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review exposes item, quantity/unit and simulated consequence",
+          "status": "pass",
+          "observation": "WAREHOUSE A\nNorthline Stockroom\n\nWarehouse Replenishment Decision Workspace\n\nSIMULATED ENVIRONMENT\nSnapshot: 1 November 2026, 09:00 ICT — fictional snapshot, not live inventory\nLocal decision simulation only. No purchase orders are placed and live warehouse stock is not modified.\nSearch items\nShortages only (shortage > 0)\nStock Inventory (1 of 5)\nFilter: Shortage > 0\nLIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\nINCOMING\n4 pieces\nLIN-115\nLocation: B-04\nShortage: 8 pieces\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n← Back to list\nPHYSICAL STOCK EVIDENCE\nAVAILABLE STOCK\n2 pieces\nREORDER POINT\n10 pieces\nCURRENT SHORTAGE\n8 pieces\nINCOMING QUANTITY\n4 pieces\nBIN LOCATION\nB-04\nINVENTORY UNIT\npieces\nReview Decision Before Committing\nSelected Item:\nLIN-115 — Khăn bàn Nguyễn Thị Minh Anh — Natural linen\nRequested Replenishment:\n8 pieces\nBin Location:\nB-04\nOperational Notice:\n\nRecording this decision is an internal stock planning simulation only. This places no purchase order and will not generate external supplier actions.\n\nEdit quantity\nSave decision",
+          "kind": "contract"
+        },
+        {
+          "name": "Editing retains decision quantity",
+          "status": "pass",
+          "observation": "8",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited quantity reaches review",
+          "status": "pass",
+          "observation": "Changed quantity, then restoring primary-task quantity 8. Numeric token may be adjacent to a separately styled unit.",
+          "kind": "contract"
+        },
+        {
+          "name": "First save has recoverable failure",
+          "status": "pass",
+          "observation": "⚠️\nSimulated Save Error: Synchronization with the stockroom decision ledger failed. Please retry your submission.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains selected item and quantity",
+          "status": "pass",
+          "observation": "Input value or retained review summary inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Retry reports recorded simulation outcome",
+          "status": "pass",
+          "observation": "✓\nDecision Recorded: Replenishment decision of 8 pieces recorded for LIN-115. Note: Recording a decision places no purchase order.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "INPUT",
+          "testId": "inventory-search",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "shortage-only",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-CER-204",
+          "name": "Inspect CER-204",
+          "outline": "auto 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-LIN-115",
+          "name": "Inspect LIN-115",
+          "outline": "auto 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-GLS-031",
+          "name": "Inspect GLS-031",
+          "outline": "auto 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-CER-120",
+          "name": "Inspect CER-120",
+          "outline": "auto 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-PPR-010",
+          "name": "Inspect PPR-010",
+          "outline": "auto 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Warehouse A\n          Northline Stockroom\n        \n        Warehouse Replenishme",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "inventory-search",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(37, 99, 235, 0.098) 0px 0px 0px 1.96195px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "shortage-only",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 45,
+            "y": 179.171875,
+            "width": 416.984375,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 489.984375,
+            "y": 189.5625,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\nLoc: A-02\n9 pieces shortage\nInspect\nEveryday Teapot — Sand\nAVAILABLE\n3 pieces\nREORDER PT\n12\nSHORTAGE\n9 pieces\nINCOMING\n0 pieces",
+            "x": 25,
+            "y": 285.546875,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-CER-204",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 300.734375,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspect\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\n",
+            "x": 25,
+            "y": 438.65625,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 453.84375,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nLoc: C-01\nIn stock\nInspect\nDrinking glass — Clear\nAVAILABLE\n24 pieces\nREORDER PT\n12\nSHORTAGE\n0 pieces\nINCOMING\n0 pieces",
+            "x": 25,
+            "y": 591.765625,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-GLS-031",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 606.953125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\nLoc: A-05\n4 pieces shortage\nInspect\nBreakfast bowl — Iron\nAVAILABLE\n4 pieces\nREORDER PT\n8\nSHORTAGE\n4 pieces\nINCOMING\n2 pieces",
+            "x": 25,
+            "y": 744.875,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-CER-120",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 760.0625,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nLoc: D-02\nIn stock\nInspect\nGift wrap — Ochre\nAVAILABLE\n18 sheets\nREORDER PT\n8\nSHORTAGE\n0 sheets\nINCOMING\n0 sheets",
+            "x": 25,
+            "y": 897.984375,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-PPR-010",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 913.171875,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "full": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 45,
+            "y": 179.171875,
+            "width": 416.984375,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 489.984375,
+            "y": 189.5625,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\nLoc: A-02\n9 pieces shortage\nInspect\nEveryday Teapot — Sand\nAVAILABLE\n3 pieces\nREORDER PT\n12\nSHORTAGE\n9 pieces\nINCOMING\n0 pieces",
+            "x": 25,
+            "y": 285.546875,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-CER-204",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 300.734375,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspect\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\n",
+            "x": 25,
+            "y": 438.65625,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 453.84375,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nLoc: C-01\nIn stock\nInspect\nDrinking glass — Clear\nAVAILABLE\n24 pieces\nREORDER PT\n12\nSHORTAGE\n0 pieces\nINCOMING\n0 pieces",
+            "x": 25,
+            "y": 591.765625,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-GLS-031",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 606.953125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\nLoc: A-05\n4 pieces shortage\nInspect\nBreakfast bowl — Iron\nAVAILABLE\n4 pieces\nREORDER PT\n8\nSHORTAGE\n4 pieces\nINCOMING\n2 pieces",
+            "x": 25,
+            "y": 744.875,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-CER-120",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 760.0625,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nLoc: D-02\nIn stock\nInspect\nGift wrap — Ochre\nAVAILABLE\n18 sheets\nREORDER PT\n8\nSHORTAGE\n0 sheets\nINCOMING\n0 sheets",
+            "x": 25,
+            "y": 897.984375,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-PPR-010",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 913.171875,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 45,
+            "y": 179.171875,
+            "width": 416.984375,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 489.984375,
+            "y": 189.5625,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\nLoc: A-02\n9 pieces shortage\nInspect\nEveryday Teapot — Sand\nAVAILABLE\n3 pieces\nREORDER PT\n12\nSHORTAGE\n9 pieces\nINCOMING\n0 pieces",
+            "x": 25,
+            "y": 285.546875,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-CER-204",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 300.734375,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspect\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\n",
+            "x": 25,
+            "y": 438.65625,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 453.84375,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nLoc: C-01\nIn stock\nInspect\nDrinking glass — Clear\nAVAILABLE\n24 pieces\nREORDER PT\n12\nSHORTAGE\n0 pieces\nINCOMING\n0 pieces",
+            "x": 25,
+            "y": 591.765625,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-GLS-031",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 606.953125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\nLoc: A-05\n4 pieces shortage\nInspect\nBreakfast bowl — Iron\nAVAILABLE\n4 pieces\nREORDER PT\n8\nSHORTAGE\n4 pieces\nINCOMING\n2 pieces",
+            "x": 25,
+            "y": 744.875,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-CER-120",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 760.0625,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nLoc: D-02\nIn stock\nInspect\nGift wrap — Ochre\nAVAILABLE\n18 sheets\nREORDER PT\n8\nSHORTAGE\n0 sheets\nINCOMING\n0 sheets",
+            "x": 25,
+            "y": 897.984375,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-PPR-010",
+            "text": "Inspect",
+            "x": 666.953125,
+            "y": 913.171875,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "empty": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 45,
+            "y": 179.171875,
+            "width": 416.984375,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 489.984375,
+            "y": 189.5625,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "Clear search",
+            "x": 328.5625,
+            "y": 373.53125,
+            "width": 137.03125,
+            "height": 40,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "detail": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 45,
+            "y": 179.171875,
+            "width": 416.984375,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 489.984375,
+            "y": 189.5625,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 piec",
+            "x": 25,
+            "y": 286.734375,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspecting",
+            "x": 644.28125,
+            "y": 301.921875,
+            "width": 104.890625,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to list",
+            "x": 1266.078125,
+            "y": 183.171875,
+            "width": 124.921875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-quantity",
+            "text": "",
+            "x": 819.171875,
+            "y": 644.0625,
+            "width": 140,
+            "height": 44.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "review-decision",
+            "text": "Review decision",
+            "x": 819.171875,
+            "y": 708.84375,
+            "width": 165.625,
+            "height": 40,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "Back to list",
+            "x": 995.1875,
+            "y": 708.84375,
+            "width": 127.203125,
+            "height": 40,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "review": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 45,
+            "y": 179.171875,
+            "width": 416.984375,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 489.984375,
+            "y": 189.5625,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 piec",
+            "x": 25,
+            "y": 286.734375,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspecting",
+            "x": 644.28125,
+            "y": 301.921875,
+            "width": 104.890625,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to list",
+            "x": 1266.078125,
+            "y": 183.171875,
+            "width": 124.921875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "Edit quantity",
+            "x": 819.171875,
+            "y": 844.59375,
+            "width": 141.453125,
+            "height": 40,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "save-decision",
+            "text": "Save decision",
+            "x": 971.015625,
+            "y": 844.59375,
+            "width": 147.140625,
+            "height": 40,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "failure": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 45,
+            "y": 179.171875,
+            "width": 416.984375,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 489.984375,
+            "y": 189.5625,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 piec",
+            "x": 25,
+            "y": 286.734375,
+            "width": 744.171875,
+            "height": 153.109375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspecting",
+            "x": 644.28125,
+            "y": 301.921875,
+            "width": 104.890625,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to list",
+            "x": 1266.078125,
+            "y": 183.171875,
+            "width": 124.921875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-status",
+            "text": "⚠️\nSimulated Save Error: Synchronization with the stockroom decision ledger failed. Please retry your submission.",
+            "x": 819.171875,
+            "y": 555.265625,
+            "width": 571.828125,
+            "height": 71.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "retry-decision",
+            "text": "Retry decision",
+            "x": 819.171875,
+            "y": 753.828125,
+            "width": 151.984375,
+            "height": 40,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "Edit quantity",
+            "x": 981.546875,
+            "y": 753.828125,
+            "width": 141.453125,
+            "height": 40,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "success": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 45,
+            "y": 179.171875,
+            "width": 416.984375,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 489.984375,
+            "y": 189.5625,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nReplenishment Planned: 8 pieces\nAVAILABLE\n2 piec",
+            "x": 25,
+            "y": 286.734375,
+            "width": 744.171875,
+            "height": 178.75,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspecting",
+            "x": 644.28125,
+            "y": 301.921875,
+            "width": 104.890625,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to list",
+            "x": 1266.078125,
+            "y": 183.171875,
+            "width": 124.921875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-status",
+            "text": "✓\nDecision Recorded: Replenishment decision of 8 pieces recorded for LIN-115. Note: Recording a decision places no purchase order.",
+            "x": 819.171875,
+            "y": 555.265625,
+            "width": 571.828125,
+            "height": 71.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "Edit quantity",
+            "x": 819.171875,
+            "y": 824.390625,
+            "width": 141.453125,
+            "height": 40,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "Back to list",
+            "x": 971.015625,
+            "y": 824.390625,
+            "width": 127.203125,
+            "height": 40,
+            "fullyInFirstViewport": true
+          }
+        ]
+      },
+      "initialText": "WAREHOUSE A\nNorthline Stockroom\n\nWarehouse Replenishment Decision Workspace\n\nSIMULATED ENVIRONMENT\nSnapshot: 1 November 2026, 09:00 ICT — fictional snapshot, not live inventory\nLocal decision simulation only. No purchase orders are placed and live warehouse stock is not modified.\nSearch items\nShortages only (shortage > 0)\nStock Inventory (5 of 5)\nCER-204\nLoc: A-02\n9 pieces shortage\nInspect\nEveryday Teapot — Sand\nAVAILABLE\n3 pieces\nREORDER PT\n12\nSHORTAGE\n9 pieces\nINCOMING\n0 pieces\nLIN-115\nLoc: B-04\n8 pieces shortage\nInspect\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\nINCOMING\n4 pieces\nGLS-031\nLoc: C-01\nIn stock\nInspect\nDrinking glass — Clear\nAVAILABLE\n24 pieces\nREORDER PT\n12\nSHORTAGE\n0 pieces\nINCOMING\n0 pieces\nCER-120\nLoc: A-05\n4 pieces shortage\nInspect\nBreakfast bowl — Iron\nAVAILABLE\n4 pieces\nREORDER PT\n8\nSHORTAGE\n4 pieces\nINCOMING\n2 pieces\nPPR-010\nLoc: D-02\nIn stock\nInspect\nGift wrap — Ochre\nAVAILABLE\n18 sheets\nREORDER PT\n8\nSHORTAGE\n0 sheets\nINCOMING\n0 sheets\nStock Evidence & Replenishment\n\nSelect any item from the inventory list to inspect physical stock evidence, reorder metrics, bin location, and record a simulated replenishment decision.\n\nOperator Guide:\nItems with shortage > 0 require replenishment attention.\nIncoming stock does not zero out calculated shortage in this fixture.\nDecisions are local simulations; no purchase orders are triggered.",
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1100,
+        "title": "Northline Stockroom — Warehouse Inventory Workspace",
+        "h1": [
+          "Northline Stockroom"
+        ],
+        "mainCount": 0,
+        "htmlLang": "en",
+        "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-required-children",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "color-contrast",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "backToListControlsObserved": 2,
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<dt>Current Shortage</dt>",
+                "target": [
+                  ".highlight-shortage > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #64748b, background color: #fef2f2, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"unit-label\">pieces</span>",
+                "target": [
+                  ".highlight-shortage > dd > .unit-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #64748b, background color: #fef2f2, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-required-children",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<dt>Current Shortage</dt>",
+                "target": [
+                  ".highlight-shortage > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #64748b, background color: #fef2f2, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"unit-label\">pieces</span>",
+                "target": [
+                  ".highlight-shortage > dd > .unit-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #64748b, background color: #fef2f2, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"status-icon\">✓</div>",
+                "target": [
+                  ".status-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-required-children",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-neutral-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-empty.png",
+        "mobile-detail.png",
+        "mobile-neutral-detail.png",
+        "mobile-review.png",
+        "mobile-neutral-review.png",
+        "mobile-failure.png",
+        "mobile-neutral-failure.png",
+        "mobile-success.png",
+        "mobile-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Initial list contains all five fixture items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"GLS-031\",\"LIN-115\",\"PPR-010\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Shortage filter shows precisely the three shortage items",
+          "status": "pass",
+          "observation": "[\"CER-120\",\"CER-204\",\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "No matches has zero rows and explicit feedback",
+          "status": "pass",
+          "observation": "Unmatched query, visible-page text and row count; qualitative clarity assessed separately.",
+          "kind": "contract"
+        },
+        {
+          "name": "Clear search restores filtered list",
+          "status": "pass",
+          "observation": "Shortage-only remains active.",
+          "kind": "contract"
+        },
+        {
+          "name": "Required item selection hook exists",
+          "status": "pass",
+          "observation": "Technical hook diagnostic; when missing, select the visible fixture-SKU row to assess the actual user task separately.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "Selected item evidence includes full name and location",
+          "status": "pass",
+          "observation": "WAREHOUSE A\nNorthline Stockroom\n\nWarehouse Replenishment Decision Workspace\n\nSIMULATED ENVIRONMENT\nSnapshot: 1 November 2026, 09:00 ICT — fictional snapshot, not live inventory\nLocal decision simulation only. No purchase orders are placed and live warehouse stock is not modified.\nSearch items\nShortages only (shortage > 0)\nStock Inventory (1 of 5)\nFilter: Shortage > 0\nLIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\nINCOMING\n4 pieces\nLIN-115\nLocation: B-04\nShortage: 8 pieces\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n← Back to list\nPHYSICAL STOCK EVIDENCE\nAVAILABLE STOCK\n2 pieces\nREORDER POINT\n10 pieces\nCURRENT SHORTAGE\n8 pieces\nINCOMING QUANTITY\n4 pieces\nBIN LOCATION\nB-04\nINVENTORY UNIT\npieces\nRecord Replenishment Decision\nReplenishment Quantity (pieces)\n\nAllowed range: whole integer from 1 to 50 pieces.\n\nReview decision\nBack to list",
+          "kind": "contract"
+        },
+        {
+          "name": "Returning retains search and shortage filter",
+          "status": "pass",
+          "observation": "[\"LIN-115\"]",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 0",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 51",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject invalid decision quantity 1.5",
+          "status": "pass",
+          "observation": "Save action must not be available from an invalid quantity.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review exposes item, quantity/unit and simulated consequence",
+          "status": "pass",
+          "observation": "WAREHOUSE A\nNorthline Stockroom\n\nWarehouse Replenishment Decision Workspace\n\nSIMULATED ENVIRONMENT\nSnapshot: 1 November 2026, 09:00 ICT — fictional snapshot, not live inventory\nLocal decision simulation only. No purchase orders are placed and live warehouse stock is not modified.\nSearch items\nShortages only (shortage > 0)\nStock Inventory (1 of 5)\nFilter: Shortage > 0\nLIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\nINCOMING\n4 pieces\nLIN-115\nLocation: B-04\nShortage: 8 pieces\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\n← Back to list\nPHYSICAL STOCK EVIDENCE\nAVAILABLE STOCK\n2 pieces\nREORDER POINT\n10 pieces\nCURRENT SHORTAGE\n8 pieces\nINCOMING QUANTITY\n4 pieces\nBIN LOCATION\nB-04\nINVENTORY UNIT\npieces\nReview Decision Before Committing\nSelected Item:\nLIN-115 — Khăn bàn Nguyễn Thị Minh Anh — Natural linen\nRequested Replenishment:\n8 pieces\nBin Location:\nB-04\nOperational Notice:\n\nRecording this decision is an internal stock planning simulation only. This places no purchase order and will not generate external supplier actions.\n\nEdit quantity\nSave decision",
+          "kind": "contract"
+        },
+        {
+          "name": "Editing retains decision quantity",
+          "status": "pass",
+          "observation": "8",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited quantity reaches review",
+          "status": "pass",
+          "observation": "Changed quantity, then restoring primary-task quantity 8. Numeric token may be adjacent to a separately styled unit.",
+          "kind": "contract"
+        },
+        {
+          "name": "First save has recoverable failure",
+          "status": "pass",
+          "observation": "⚠️\nSimulated Save Error: Synchronization with the stockroom decision ledger failed. Please retry your submission.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains selected item and quantity",
+          "status": "pass",
+          "observation": "Input value or retained review summary inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Retry reports recorded simulation outcome",
+          "status": "pass",
+          "observation": "✓\nDecision Recorded: Replenishment decision of 8 pieces recorded for LIN-115. Note: Recording a decision places no purchase order.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "INPUT",
+          "testId": "inventory-search",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "shortage-only",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-CER-204",
+          "name": "Inspect CER-204",
+          "outline": "auto 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-LIN-115",
+          "name": "Inspect LIN-115",
+          "outline": "auto 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-GLS-031",
+          "name": "Inspect GLS-031",
+          "outline": "auto 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-CER-120",
+          "name": "Inspect CER-120",
+          "outline": "auto 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "item-PPR-010",
+          "name": "Inspect PPR-010",
+          "outline": "auto 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Warehouse A\n          Northline Stockroom\n        \n        Warehouse Replenishme",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "inventory-search",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(37, 99, 235, 0.098) 0px 0px 0px 1.96159px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "shortage-only",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 33,
+            "y": 313.78125,
+            "width": 324,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 45,
+            "y": 378.359375,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\nLoc: A-02\n9 pieces shortage\nInspect\nEveryday Teapot — Sand\nAVAILABLE\n3 pieces\nREORDER PT\n12\nSHORTAGE\n9 pieces\nINCOMING\n0 pieces",
+            "x": 17,
+            "y": 470.921875,
+            "width": 356,
+            "height": 229.484375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-CER-204",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 501.9375,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspect\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\n",
+            "x": 17,
+            "y": 700.40625,
+            "width": 356,
+            "height": 250.765625,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 731.421875,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nLoc: C-01\nIn stock\nInspect\nDrinking glass — Clear\nAVAILABLE\n24 pieces\nREORDER PT\n12\nSHORTAGE\n0 pieces\nINCOMING\n0 pieces",
+            "x": 17,
+            "y": 951.171875,
+            "width": 356,
+            "height": 228.765625,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-GLS-031",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 981.828125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\nLoc: A-05\n4 pieces shortage\nInspect\nBreakfast bowl — Iron\nAVAILABLE\n4 pieces\nREORDER PT\n8\nSHORTAGE\n4 pieces\nINCOMING\n2 pieces",
+            "x": 17,
+            "y": 1179.9375,
+            "width": 356,
+            "height": 229.484375,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-CER-120",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 1210.953125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nLoc: D-02\nIn stock\nInspect\nGift wrap — Ochre\nAVAILABLE\n18 sheets\nREORDER PT\n8\nSHORTAGE\n0 sheets\nINCOMING\n0 sheets",
+            "x": 17,
+            "y": 1409.421875,
+            "width": 356,
+            "height": 228.765625,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-PPR-010",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 1440.078125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "full": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 33,
+            "y": 313.78125,
+            "width": 324,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 45,
+            "y": 378.359375,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\nLoc: A-02\n9 pieces shortage\nInspect\nEveryday Teapot — Sand\nAVAILABLE\n3 pieces\nREORDER PT\n12\nSHORTAGE\n9 pieces\nINCOMING\n0 pieces",
+            "x": 17,
+            "y": 470.921875,
+            "width": 356,
+            "height": 229.484375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-CER-204",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 501.9375,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspect\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\n",
+            "x": 17,
+            "y": 700.40625,
+            "width": 356,
+            "height": 250.765625,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 731.421875,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nLoc: C-01\nIn stock\nInspect\nDrinking glass — Clear\nAVAILABLE\n24 pieces\nREORDER PT\n12\nSHORTAGE\n0 pieces\nINCOMING\n0 pieces",
+            "x": 17,
+            "y": 951.171875,
+            "width": 356,
+            "height": 228.765625,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-GLS-031",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 981.828125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\nLoc: A-05\n4 pieces shortage\nInspect\nBreakfast bowl — Iron\nAVAILABLE\n4 pieces\nREORDER PT\n8\nSHORTAGE\n4 pieces\nINCOMING\n2 pieces",
+            "x": 17,
+            "y": 1179.9375,
+            "width": 356,
+            "height": 229.484375,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-CER-120",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 1210.953125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nLoc: D-02\nIn stock\nInspect\nGift wrap — Ochre\nAVAILABLE\n18 sheets\nREORDER PT\n8\nSHORTAGE\n0 sheets\nINCOMING\n0 sheets",
+            "x": 17,
+            "y": 1409.421875,
+            "width": 356,
+            "height": 228.765625,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-PPR-010",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 1440.078125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 33,
+            "y": 313.78125,
+            "width": 324,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 45,
+            "y": 378.359375,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-204\nLoc: A-02\n9 pieces shortage\nInspect\nEveryday Teapot — Sand\nAVAILABLE\n3 pieces\nREORDER PT\n12\nSHORTAGE\n9 pieces\nINCOMING\n0 pieces",
+            "x": 17,
+            "y": 470.921875,
+            "width": 356,
+            "height": 229.484375,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-CER-204",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 501.9375,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspect\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\n",
+            "x": 17,
+            "y": 700.40625,
+            "width": 356,
+            "height": 250.765625,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 731.421875,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "GLS-031\nLoc: C-01\nIn stock\nInspect\nDrinking glass — Clear\nAVAILABLE\n24 pieces\nREORDER PT\n12\nSHORTAGE\n0 pieces\nINCOMING\n0 pieces",
+            "x": 17,
+            "y": 951.171875,
+            "width": 356,
+            "height": 228.765625,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-GLS-031",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 981.828125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "CER-120\nLoc: A-05\n4 pieces shortage\nInspect\nBreakfast bowl — Iron\nAVAILABLE\n4 pieces\nREORDER PT\n8\nSHORTAGE\n4 pieces\nINCOMING\n2 pieces",
+            "x": 17,
+            "y": 1179.9375,
+            "width": 356,
+            "height": 229.484375,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-CER-120",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 1210.953125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "inventory-row",
+            "text": "PPR-010\nLoc: D-02\nIn stock\nInspect\nGift wrap — Ochre\nAVAILABLE\n18 sheets\nREORDER PT\n8\nSHORTAGE\n0 sheets\nINCOMING\n0 sheets",
+            "x": 17,
+            "y": 1409.421875,
+            "width": 356,
+            "height": 228.765625,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "item-PPR-010",
+            "text": "Inspect",
+            "x": 270.78125,
+            "y": 1440.078125,
+            "width": 82.21875,
+            "height": 29.78125,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "empty": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 33,
+            "y": 313.78125,
+            "width": 324,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 45,
+            "y": 378.359375,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "clear-search",
+            "text": "Clear search",
+            "x": 126.484375,
+            "y": 605.703125,
+            "width": 137.03125,
+            "height": 40,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "detail": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 33,
+            "y": 272.78125,
+            "width": 324,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 45,
+            "y": 337.359375,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 piec",
+            "x": 17,
+            "y": 455.109375,
+            "width": 356,
+            "height": 250.765625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspecting",
+            "x": 248.109375,
+            "y": 486.125,
+            "width": 104.890625,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to list",
+            "x": 232.078125,
+            "y": 743.875,
+            "width": 124.921875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-quantity",
+            "text": "",
+            "x": 33,
+            "y": 1452.078125,
+            "width": 140,
+            "height": 44.78125,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "review-decision",
+            "text": "Review decision",
+            "x": 33,
+            "y": 1516.859375,
+            "width": 165.625,
+            "height": 40,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "back-to-list",
+            "text": "Back to list",
+            "x": 209.015625,
+            "y": 1516.859375,
+            "width": 127.203125,
+            "height": 40,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "review": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 33,
+            "y": 313.78125,
+            "width": 324,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 45,
+            "y": 378.359375,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 piec",
+            "x": 17,
+            "y": 496.109375,
+            "width": 356,
+            "height": 250.765625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspecting",
+            "x": 248.109375,
+            "y": 527.125,
+            "width": 104.890625,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to list",
+            "x": 232.078125,
+            "y": 784.875,
+            "width": 124.921875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "edit-decision",
+            "text": "Edit quantity",
+            "x": 33,
+            "y": 1754.203125,
+            "width": 141.453125,
+            "height": 40,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "save-decision",
+            "text": "Save decision",
+            "x": 184.84375,
+            "y": 1754.203125,
+            "width": 147.140625,
+            "height": 40,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "failure": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 33,
+            "y": 313.78125,
+            "width": 324,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 45,
+            "y": 378.359375,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 piec",
+            "x": 17,
+            "y": 496.109375,
+            "width": 356,
+            "height": 250.765625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspecting",
+            "x": 248.109375,
+            "y": 527.125,
+            "width": 104.890625,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to list",
+            "x": 232.078125,
+            "y": 784.875,
+            "width": 124.921875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-status",
+            "text": "⚠️\nSimulated Save Error: Synchronization with the stockroom decision ledger failed. Please retry your submission.",
+            "x": 33,
+            "y": 1404.28125,
+            "width": 324,
+            "height": 113.1875,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "retry-decision",
+            "text": "Retry decision",
+            "x": 33,
+            "y": 1665.84375,
+            "width": 151.984375,
+            "height": 40,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "edit-decision",
+            "text": "Edit quantity",
+            "x": 195.375,
+            "y": 1665.84375,
+            "width": 141.453125,
+            "height": 40,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "success": [
+          {
+            "testId": "inventory-search",
+            "text": "",
+            "x": 33,
+            "y": 313.78125,
+            "width": 324,
+            "height": 39.1875,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "shortage-only",
+            "text": "",
+            "x": 45,
+            "y": 378.359375,
+            "width": 18.390625,
+            "height": 18.390625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "inventory-row",
+            "text": "LIN-115\nLoc: B-04\n8 pieces shortage\nInspecting\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nReplenishment Planned: 8 pieces\nAVAILABLE\n2 piec",
+            "x": 17,
+            "y": 496.109375,
+            "width": 356,
+            "height": 276.40625,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "item-LIN-115",
+            "text": "Inspecting",
+            "x": 248.109375,
+            "y": 527.125,
+            "width": 104.890625,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "back-to-list",
+            "text": "← Back to list",
+            "x": 232.078125,
+            "y": 810.515625,
+            "width": 124.921875,
+            "height": 29.78125,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "decision-status",
+            "text": "✓\nDecision Recorded: Replenishment decision of 8 pieces recorded for LIN-115. Note: Recording a decision places no purchase order.",
+            "x": 33,
+            "y": 1429.921875,
+            "width": 324,
+            "height": 134.1875,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "edit-decision",
+            "text": "Edit quantity",
+            "x": 33,
+            "y": 1783.046875,
+            "width": 141.453125,
+            "height": 40,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "back-to-list",
+            "text": "Back to list",
+            "x": 184.84375,
+            "y": 1783.046875,
+            "width": 127.203125,
+            "height": 40,
+            "fullyInFirstViewport": false
+          }
+        ]
+      },
+      "initialText": "WAREHOUSE A\nNorthline Stockroom\n\nWarehouse Replenishment Decision Workspace\n\nSIMULATED ENVIRONMENT\nSnapshot: 1 November 2026, 09:00 ICT — fictional snapshot, not live inventory\nLocal decision simulation only. No purchase orders are placed and live warehouse stock is not modified.\nSearch items\nShortages only (shortage > 0)\nStock Inventory (5 of 5)\nCER-204\nLoc: A-02\n9 pieces shortage\nInspect\nEveryday Teapot — Sand\nAVAILABLE\n3 pieces\nREORDER PT\n12\nSHORTAGE\n9 pieces\nINCOMING\n0 pieces\nLIN-115\nLoc: B-04\n8 pieces shortage\nInspect\nKhăn bàn Nguyễn Thị Minh Anh — Natural linen\nAVAILABLE\n2 pieces\nREORDER PT\n10\nSHORTAGE\n8 pieces\nINCOMING\n4 pieces\nGLS-031\nLoc: C-01\nIn stock\nInspect\nDrinking glass — Clear\nAVAILABLE\n24 pieces\nREORDER PT\n12\nSHORTAGE\n0 pieces\nINCOMING\n0 pieces\nCER-120\nLoc: A-05\n4 pieces shortage\nInspect\nBreakfast bowl — Iron\nAVAILABLE\n4 pieces\nREORDER PT\n8\nSHORTAGE\n4 pieces\nINCOMING\n2 pieces\nPPR-010\nLoc: D-02\nIn stock\nInspect\nGift wrap — Ochre\nAVAILABLE\n18 sheets\nREORDER PT\n8\nSHORTAGE\n0 sheets\nINCOMING\n0 sheets\nStock Evidence & Replenishment\n\nSelect any item from the inventory list to inspect physical stock evidence, reorder metrics, bin location, and record a simulated replenishment decision.\n\nOperator Guide:\nItems with shortage > 0 require replenishment attention.\nIncoming stock does not zero out calculated shortage in this fixture.\nDecisions are local simulations; no purchase orders are triggered.",
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 2105,
+        "title": "Northline Stockroom — Warehouse Inventory Workspace",
+        "h1": [
+          "Northline Stockroom"
+        ],
+        "mainCount": 0,
+        "htmlLang": "en",
+        "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-required-children",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "color-contrast",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "backToListControlsObserved": 2,
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<dt>Current Shortage</dt>",
+                "target": [
+                  ".highlight-shortage > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #64748b, background color: #fef2f2, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"unit-label\">pieces</span>",
+                "target": [
+                  ".highlight-shortage > dd > .unit-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #64748b, background color: #fef2f2, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-required-children",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<dt>Current Shortage</dt>",
+                "target": [
+                  ".highlight-shortage > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #64748b, background color: #fef2f2, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"unit-label\">pieces</span>",
+                "target": [
+                  ".highlight-shortage > dd > .unit-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #64748b, background color: #fef2f2, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"status-icon\">✓</div>",
+                "target": [
+                  ".status-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-required-children",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    }
+  },
+  "supportingNarrow320": {
+    "width": 320,
+    "scrollWidth": 320,
+    "pageHeight": 2430
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-01-antigravity-inventory/cases/a01)",
+      "write_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-01-antigravity-inventory/cases/a01)",
+      "command(wsl.exe --distribution Ubuntu --cd /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-01-antigravity-inventory/cases/a01 --exec bash -lc)"
+    ],
+    "deny": [
+      "read_url(*)",
+      "execute_url(*)",
+      "mcp(*)",
+      "write_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-01-antigravity-inventory/cases/a01/task.md)",
+      "write_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-01-antigravity-inventory/cases/a01/fixture.json)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-01-antigravity-inventory/treatment/tasteforge)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-01-antigravity-inventory/cases/a02)"
+    ]
+  }
+}

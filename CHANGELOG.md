@@ -1,5 +1,35 @@
 # Changelog
 
+## Unreleased
+
+## 0.2.0-beta.1 — preparation for pre-release
+
+- Coordinate all package versions at `0.2.0-beta.1`; report CLI package version separately from the unchanged `0.1.0` generator engine/knowledge so existing DNA remains valid.
+- Add a local release-artifact builder, recorded validation metadata, source-commit manifests and checksums; extend the compatibility matrix to Node 20/22/24/26. GitHub/npm publication remains a separate action.
+- Preserve hash-bound evidence and generated snapshots byte-for-byte across Git checkouts, including the original CRLF CSV ratings.
+
+- Add surface-level visitor-purpose planning and targeted refinement guidance informed by Impeccable, with original wording, source attribution and contextual exceptions rather than universal aesthetic bans.
+- Add an annotated gallery of three actual inventory repairs and one structural tradeoff, preserving original captures and verifying image/trace hashes and screenshot scope; retain a source-only independent forward-test of the revised skill.
+
+- Add purpose-based text, image, layout and interaction effect research to the skill, with inspected sources, reuse boundaries, static/reduced-motion behaviour and original runnable studies. Keep the CLI reference catalog and sampling unchanged.
+
+- Add a runnable inventory worked composition with two shared-content structural prototypes, retained mobile detail/review/recovery, browser evidence and an explicit pending human-review/user-study status. Preserve the original benchmark cases.
+- Add bounded runnable-layout comparison and render/critique/revision guidance to substantial skill creation/redesign; retain a scoped path for small refinements and established structures.
+
+- Preserve an actual native Antigravity CLI 1.4.12 inventory pair using pinned Gemini 3.8 Flash (Medium), including both UIs, task/recovery captures, anonymous independent reviews, resource metadata and operational deviations. Findings show a local mobile-grouping advantage, not a general removal of AI slop.
+
+- Preserve a twelve-UI exploratory UX/layout comparison with neutral-first independent AI reviews, authored-stage caveats, actual task/recovery evidence, per-dimension paired results, and a documented neutralizer defect. Localized improvements do not establish reliable removal of generic composition.
+- Record actual quota-blocked availability attempts for the requested OpenCode DeepSeek V4.1 Flash Free and GLM-5.3-Flash Free models; no supplemental UIs or paid fallback are claimed.
+
+- Add an offline attributed reference catalog from 18 pinned MIT-licensed sources: 172 style records, 357 contextual rule records, and 113 template/structure records, with scoped ingestion, Git blob/hash verification and complete notices.
+- Add `catalog` search/read and `inspire` task-aware seeded exploration with source-size balancing, retired/high-risk filtering, task-matched structures and ten baseline gates that are never sampled away. Imported references remain separate from validated token generation.
+- Preserve an independent planning-only catalog probe and correct its demonstrated task-routing/operational-avoid failures in catalog `2026.11.01.2`; do not rewrite its original outputs or claim measured UX improvement.
+
+- Add reference-led task/structure planning to the Agent Skill before visual style selection, with bounded web research, provenance, and explicit untrusted-source/reuse boundaries.
+- Add task archetypes, a UX plan template, reviewed source pointers including awesome-design-md, and worked transfer/product plans.
+- Strengthen language-constraint handling and task-architecture review; keep current CLI visual-generation behavior and the original pilot snapshot unchanged.
+- Preserve one qualitative forward-test of the revised workflow, including its UX plan, actual browser evidence, comparison viewer, and unresolved issues. This is not a controlled improvement benchmark.
+
 ## 0.1.0 — 2026-10-31
 
 First public MVP of TasteForge: local design intelligence for AI coding agents.

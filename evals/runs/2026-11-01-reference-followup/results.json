@@ -1,0 +1,309 @@
+{
+  "type": "qualitative-followup-not-controlled-benchmark",
+  "original": {
+    "case": "c02",
+    "model": "gpt-6.1-sol",
+    "checks": {
+      "desktop": {
+        "checksPassed": 16,
+        "checksTotal": 16,
+        "failedChecks": [],
+        "axe": {
+          "axeInitial": {
+            "violations": 0,
+            "incompleteRules": [
+              "color-contrast"
+            ]
+          },
+          "axeFailure": {
+            "violations": 0,
+            "incompleteRules": [
+              "color-contrast"
+            ]
+          },
+          "axeFinal": {
+            "violations": 0,
+            "incompleteRules": [
+              "color-contrast"
+            ]
+          }
+        },
+        "pageErrors": [],
+        "blockedRequests": []
+      },
+      "mobile": {
+        "checksPassed": 16,
+        "checksTotal": 16,
+        "failedChecks": [],
+        "axe": {
+          "axeInitial": {
+            "violations": 0,
+            "incompleteRules": [
+              "color-contrast"
+            ]
+          },
+          "axeFailure": {
+            "violations": 0,
+            "incompleteRules": [
+              "color-contrast"
+            ]
+          },
+          "axeFinal": {
+            "violations": 0,
+            "incompleteRules": [
+              "color-contrast"
+            ]
+          }
+        },
+        "pageErrors": [],
+        "blockedRequests": []
+      }
+    }
+  },
+  "followup": {
+    "case": "r01",
+    "model": "gpt-6.1-sol",
+    "checks": {
+      "desktop": {
+        "checksPassed": 16,
+        "checksTotal": 16,
+        "failedChecks": [],
+        "axe": {
+          "axeInitial": {
+            "violations": 0,
+            "incompleteRules": [
+              "aria-prohibited-attr",
+              "color-contrast"
+            ]
+          },
+          "axeFailure": {
+            "violations": 0,
+            "incompleteRules": [
+              "color-contrast"
+            ]
+          },
+          "axeFinal": {
+            "violations": 0,
+            "incompleteRules": [
+              "color-contrast"
+            ]
+          }
+        },
+        "pageErrors": [],
+        "blockedRequests": []
+      },
+      "mobile": {
+        "checksPassed": 16,
+        "checksTotal": 16,
+        "failedChecks": [],
+        "axe": {
+          "axeInitial": {
+            "violations": 0,
+            "incompleteRules": [
+              "aria-prohibited-attr",
+              "color-contrast"
+            ]
+          },
+          "axeFailure": {
+            "violations": 0,
+            "incompleteRules": [
+              "color-contrast"
+            ]
+          },
+          "axeFinal": {
+            "violations": 0,
+            "incompleteRules": [
+              "color-contrast"
+            ]
+          }
+        },
+        "pageErrors": [],
+        "blockedRequests": []
+      }
+    }
+  },
+  "sameTaskAndFixture": true,
+  "originalScreenshotCopies": [
+    {
+      "source": "../2026-11-01-ui-pilot/evidence/c02/desktop-initial.png",
+      "destination": "comparison/original-c02-desktop-initial.png",
+      "sha256": "01734db4d943795b4809ba5b4e0b5a93c2d80d75875f671ab8c2d7ebc23660e9"
+    },
+    {
+      "source": "../2026-11-01-ui-pilot/evidence/c02/desktop-full.png",
+      "destination": "comparison/original-c02-desktop-full.png",
+      "sha256": "10265154e30ea22634eb42220197075e4da089015cf2088c1e71a67ee3249c91"
+    },
+    {
+      "source": "../2026-11-01-ui-pilot/evidence/c02/desktop-review.png",
+      "destination": "comparison/original-c02-desktop-review.png",
+      "sha256": "4e37924a68d42d2bd5bb5c8f28da3bd2a56d11763533d54d922d37cf52d0638a"
+    },
+    {
+      "source": "../2026-11-01-ui-pilot/evidence/c02/desktop-failure.png",
+      "destination": "comparison/original-c02-desktop-failure.png",
+      "sha256": "b0444ef47b368c1a8ae4f31784157c72b9fffc49613f958e859c75a93cebf168"
+    },
+    {
+      "source": "../2026-11-01-ui-pilot/evidence/c02/desktop-success.png",
+      "destination": "comparison/original-c02-desktop-success.png",
+      "sha256": "72650c97d109427684fa2a5e7f1d753accbb6885065534640838cccff351638b"
+    },
+    {
+      "source": "../2026-11-01-ui-pilot/evidence/c02/mobile-initial.png",
+      "destination": "comparison/original-c02-mobile-initial.png",
+      "sha256": "8dba985a4895daca0410b777adb31b7423b5616db744f7538636f431d34843d0"
+    },
+    {
+      "source": "../2026-11-01-ui-pilot/evidence/c02/mobile-full.png",
+      "destination": "comparison/original-c02-mobile-full.png",
+      "sha256": "a306c94a964cc9daf3140aee6df008e3f6e68ef2473885a1bda1ae98cc9409d3"
+    },
+    {
+      "source": "../2026-11-01-ui-pilot/evidence/c02/mobile-review.png",
+      "destination": "comparison/original-c02-mobile-review.png",
+      "sha256": "12a73d602e76f01464e41f5c34397bd09dc960eacba7ab98bb53a2ccba9cd4f7"
+    },
+    {
+      "source": "../2026-11-01-ui-pilot/evidence/c02/mobile-failure.png",
+      "destination": "comparison/original-c02-mobile-failure.png",
+      "sha256": "3b2ce10045d7a8f1bba0bde8a83958f00b192ecbf24047d52706e928b1a21995"
+    },
+    {
+      "source": "../2026-11-01-ui-pilot/evidence/c02/mobile-success.png",
+      "destination": "comparison/original-c02-mobile-success.png",
+      "sha256": "7a2090b26f1e268916aaa2cab4846239b602b5354dfad2637f2ae89dbfd5556b"
+    }
+  ],
+  "foldObservations": {
+    "method": "Initial unscrolled viewport, same browser/context settings; positions are descriptive and do not establish task ease or UX quality.",
+    "observations": [
+      {
+        "case": "original-c02",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "controls": {
+          "recipient": {
+            "x": 253,
+            "y": 579.640625,
+            "width": 471.765625,
+            "height": 51.59375,
+            "fullyInInitialViewport": true
+          },
+          "amount": {
+            "x": 254,
+            "y": 719.421875,
+            "width": 420.6875,
+            "height": 61.59375,
+            "fullyInInitialViewport": true
+          },
+          "review-transfer": {
+            "x": 253,
+            "y": 927.59375,
+            "width": 471.765625,
+            "height": 50.390625,
+            "fullyInInitialViewport": true
+          }
+        },
+        "initialScrollY": 0
+      },
+      {
+        "case": "followup-r01",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "controls": {
+          "recipient": {
+            "x": 441,
+            "y": 424.890625,
+            "width": 558,
+            "height": 52,
+            "fullyInInitialViewport": true
+          },
+          "amount": {
+            "x": 441,
+            "y": 554.890625,
+            "width": 558,
+            "height": 65.5,
+            "fullyInInitialViewport": true
+          },
+          "review-transfer": {
+            "x": 441,
+            "y": 883.390625,
+            "width": 558,
+            "height": 50.5,
+            "fullyInInitialViewport": true
+          }
+        },
+        "initialScrollY": 0
+      },
+      {
+        "case": "original-c02",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "controls": {
+          "recipient": {
+            "x": 45,
+            "y": 559.015625,
+            "width": 300,
+            "height": 51.59375,
+            "fullyInInitialViewport": true
+          },
+          "amount": {
+            "x": 46,
+            "y": 698.796875,
+            "width": 248.921875,
+            "height": 61.59375,
+            "fullyInInitialViewport": true
+          },
+          "review-transfer": {
+            "x": 45,
+            "y": 906.96875,
+            "width": 300,
+            "height": 50.390625,
+            "fullyInInitialViewport": false
+          }
+        },
+        "initialScrollY": 0
+      },
+      {
+        "case": "followup-r01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "controls": {
+          "recipient": {
+            "x": 37,
+            "y": 408.390625,
+            "width": 316,
+            "height": 52,
+            "fullyInInitialViewport": true
+          },
+          "amount": {
+            "x": 37,
+            "y": 556.390625,
+            "width": 316,
+            "height": 65.5,
+            "fullyInInitialViewport": true
+          },
+          "review-transfer": {
+            "x": 37,
+            "y": 891.890625,
+            "width": 316,
+            "height": 50.5,
+            "fullyInInitialViewport": false
+          }
+        },
+        "initialScrollY": 0
+      }
+    ]
+  },
+  "conclusion": "A different documented task structure was produced. Neither automated metrics nor this one unmatched generation establish better UX.",
+  "newReviewerRatings": null
+}

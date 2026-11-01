@@ -1,0 +1,367 @@
+{
+  "engineVersion": "0.1.0",
+  "directions": [
+    {
+      "style": {
+        "id": "soft-utility",
+        "name": "Soft Utility",
+        "summary": "Gentle surfaces and clear task order make everyday work approachable.",
+        "productTypes": [
+          "service",
+          "education",
+          "dashboard"
+        ],
+        "industries": [
+          "healthcare",
+          "education",
+          "wellness"
+        ],
+        "audienceTags": [
+          "general",
+          "beginners",
+          "seniors"
+        ],
+        "personalities": [
+          "calm",
+          "warm",
+          "inclusive"
+        ],
+        "density": "balanced",
+        "complexity": "low",
+        "distinctiveness": 0.3,
+        "fontPairIds": [
+          "vietnam-vietnam",
+          "noto-noto",
+          "manrope-noto",
+          "system-sans"
+        ],
+        "paletteIds": [
+          "teal-clinic",
+          "slate-blue",
+          "rose-stone"
+        ],
+        "layout": [
+          "Show one primary action per task group.",
+          "Use proximity before adding containers."
+        ],
+        "motion": [
+          "Use short transitions to communicate state changes, not to delay tasks.",
+          "Honor prefers-reduced-motion and provide immediate feedback."
+        ],
+        "guidance": [
+          "Make validation clear and recoverable.",
+          "Do not use softness as a reason for weak contrast."
+        ],
+        "avoid": [
+          "Do not substitute decorative novelty for task clarity.",
+          "Do not apply this direction over an established design system without explicit redesign intent."
+        ]
+      },
+      "fontPair": {
+        "id": "noto-noto",
+        "heading": {
+          "family": "Noto Sans",
+          "stack": "\"Noto Sans\", Arial, sans-serif",
+          "languages": [
+            "en",
+            "vi"
+          ],
+          "source": "https://github.com/google/fonts/blob/main/ofl/notosans/METADATA.pb",
+          "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+        },
+        "body": {
+          "family": "Noto Sans",
+          "stack": "\"Noto Sans\", Arial, sans-serif",
+          "languages": [
+            "en",
+            "vi"
+          ],
+          "source": "https://github.com/google/fonts/blob/main/ofl/notosans/METADATA.pb",
+          "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+        },
+        "delivery": "optional-web",
+        "rationale": "Consistent text and controls with explicit subset selection."
+      },
+      "palette": {
+        "id": "slate-blue",
+        "name": "Slate Blue",
+        "mode": "light",
+        "colors": {
+          "background": "#f8fafc",
+          "foreground": "#172033",
+          "surface": "#ffffff",
+          "muted": "#4b5563",
+          "accent": "#2048a0",
+          "onAccent": "#ffffff",
+          "border": "#94a3b8"
+        },
+        "rationale": "Cool neutrals separate task structure from primary actions."
+      },
+      "score": {
+        "fit": 0,
+        "brand": 0,
+        "usability": 0.3,
+        "technical": 1,
+        "distinctiveness": 0.95,
+        "total": 0.305
+      },
+      "explanations": [
+        "Soft Utility: Gentle surfaces and clear task order make everyday work approachable.",
+        "Product/industry matches: 0.00; brand-tag overlap: 0.00. These are editorial heuristics, not validated measurements.",
+        "balanced layout supports the audience and goals; implementation complexity is low.",
+        "Make validation clear and recoverable.",
+        "Do not use softness as a reason for weak contrast."
+      ],
+      "weights": {
+        "fit": 0.3,
+        "brand": 0.25,
+        "usability": 0.2,
+        "technical": 0.15,
+        "distinctiveness": 0.1
+      },
+      "seed": 42,
+      "engineVersion": "0.1.0",
+      "knowledgeVersion": "0.1.0"
+    },
+    {
+      "style": {
+        "id": "swiss-editorial",
+        "name": "Swiss Editorial",
+        "summary": "A disciplined grid with a decisive typographic lead.",
+        "productTypes": [
+          "publication",
+          "portfolio",
+          "commerce"
+        ],
+        "industries": [
+          "media",
+          "culture",
+          "fashion"
+        ],
+        "audienceTags": [
+          "readers",
+          "professionals"
+        ],
+        "personalities": [
+          "precise",
+          "confident",
+          "restrained"
+        ],
+        "density": "balanced",
+        "complexity": "medium",
+        "distinctiveness": 0.7,
+        "fontPairIds": [
+          "inter-inter",
+          "source-serif-sans",
+          "inter-source",
+          "system-serif"
+        ],
+        "paletteIds": [
+          "ink-paper",
+          "cobalt-chalk",
+          "mono-light"
+        ],
+        "layout": [
+          "Use asymmetric columns with aligned edges.",
+          "Let one headline establish the entry point."
+        ],
+        "motion": [
+          "Use short transitions to communicate state changes, not to delay tasks.",
+          "Honor prefers-reduced-motion and provide immediate feedback."
+        ],
+        "guidance": [
+          "Use a clear grid rather than decorative containers.",
+          "Use captions and rules to connect related content."
+        ],
+        "avoid": [
+          "Do not substitute decorative novelty for task clarity.",
+          "Do not apply this direction over an established design system without explicit redesign intent."
+        ]
+      },
+      "fontPair": {
+        "id": "system-serif",
+        "heading": {
+          "family": "serif",
+          "stack": "Georgia, serif",
+          "languages": [
+            "en"
+          ],
+          "source": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
+          "coverageNote": "Generic family selection is OS-dependent. Vietnamese coverage is unverified and excluded from hard language compatibility; validate target systems before extending it."
+        },
+        "body": {
+          "family": "serif",
+          "stack": "Georgia, serif",
+          "languages": [
+            "en"
+          ],
+          "source": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
+          "coverageNote": "Generic family selection is OS-dependent. Vietnamese coverage is unverified and excluded from hard language compatibility; validate target systems before extending it."
+        },
+        "delivery": "system",
+        "rationale": "Use installed fonts without a network or font-file dependency; validate metrics and glyphs on target systems."
+      },
+      "palette": {
+        "id": "cobalt-chalk",
+        "name": "Cobalt and Chalk",
+        "mode": "light",
+        "colors": {
+          "background": "#fffef9",
+          "foreground": "#151515",
+          "surface": "#ffffff",
+          "muted": "#505050",
+          "accent": "#173ca4",
+          "onAccent": "#ffffff",
+          "border": "#a3a3a3"
+        },
+        "rationale": "Strong action contrast against an almost neutral field."
+      },
+      "score": {
+        "fit": 0.5,
+        "brand": 0,
+        "usability": 0.3,
+        "technical": 0.75,
+        "distinctiveness": 0.65,
+        "total": 0.3875
+      },
+      "explanations": [
+        "Swiss Editorial: A disciplined grid with a decisive typographic lead.",
+        "Product/industry matches: 0.50; brand-tag overlap: 0.00. These are editorial heuristics, not validated measurements.",
+        "balanced layout supports the audience and goals; implementation complexity is medium.",
+        "Use a clear grid rather than decorative containers.",
+        "Use captions and rules to connect related content."
+      ],
+      "weights": {
+        "fit": 0.3,
+        "brand": 0.25,
+        "usability": 0.2,
+        "technical": 0.15,
+        "distinctiveness": 0.1
+      },
+      "seed": 42,
+      "engineVersion": "0.1.0",
+      "knowledgeVersion": "0.1.0"
+    },
+    {
+      "style": {
+        "id": "contemporary-editorial",
+        "name": "Contemporary Editorial",
+        "summary": "A flexible publication rhythm alternates feature and supporting material.",
+        "productTypes": [
+          "publication",
+          "portfolio",
+          "marketing"
+        ],
+        "industries": [
+          "media",
+          "culture",
+          "education"
+        ],
+        "audienceTags": [
+          "readers",
+          "creators"
+        ],
+        "personalities": [
+          "expressive",
+          "thoughtful",
+          "confident"
+        ],
+        "density": "balanced",
+        "complexity": "medium",
+        "distinctiveness": 0.8,
+        "fontPairIds": [
+          "source-serif-inter",
+          "lora-source",
+          "literata-source",
+          "system-serif"
+        ],
+        "paletteIds": [
+          "plum-cream",
+          "ink-paper",
+          "berry-snow"
+        ],
+        "layout": [
+          "Alternate feature and compact story blocks.",
+          "Maintain a stable reading measure."
+        ],
+        "motion": [
+          "Use short transitions to communicate state changes, not to delay tasks.",
+          "Honor prefers-reduced-motion and provide immediate feedback."
+        ],
+        "guidance": [
+          "Make content priorities explicit.",
+          "Use art direction to explain stories rather than fill space."
+        ],
+        "avoid": [
+          "Do not substitute decorative novelty for task clarity.",
+          "Do not apply this direction over an established design system without explicit redesign intent."
+        ]
+      },
+      "fontPair": {
+        "id": "source-serif-inter",
+        "heading": {
+          "family": "Source Serif 4",
+          "stack": "\"Source Serif 4\", Georgia, serif",
+          "languages": [
+            "en",
+            "vi"
+          ],
+          "source": "https://github.com/google/fonts/blob/main/ofl/sourceserif4/METADATA.pb",
+          "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+        },
+        "body": {
+          "family": "Inter",
+          "stack": "\"Inter\", Arial, sans-serif",
+          "languages": [
+            "en",
+            "vi"
+          ],
+          "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+          "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+        },
+        "delivery": "optional-web",
+        "rationale": "Contrast between publication tone and utility text."
+      },
+      "palette": {
+        "id": "ink-paper",
+        "name": "Ink on Paper",
+        "mode": "light",
+        "colors": {
+          "background": "#faf9f6",
+          "foreground": "#20201e",
+          "surface": "#ffffff",
+          "muted": "#585851",
+          "accent": "#234734",
+          "onAccent": "#ffffff",
+          "border": "#b5b5ac"
+        },
+        "rationale": "Warm paper and forest accents support publication hierarchy."
+      },
+      "score": {
+        "fit": 0,
+        "brand": 0,
+        "usability": 0.3,
+        "technical": 0.75,
+        "distinctiveness": 0.5499999999999999,
+        "total": 0.22749999999999998
+      },
+      "explanations": [
+        "Contemporary Editorial: A flexible publication rhythm alternates feature and supporting material.",
+        "Product/industry matches: 0.00; brand-tag overlap: 0.00. These are editorial heuristics, not validated measurements.",
+        "balanced layout supports the audience and goals; implementation complexity is medium.",
+        "Make content priorities explicit.",
+        "Use art direction to explain stories rather than fill space."
+      ],
+      "weights": {
+        "fit": 0.3,
+        "brand": 0.25,
+        "usability": 0.2,
+        "technical": 0.15,
+        "distinctiveness": 0.1
+      },
+      "seed": 42,
+      "engineVersion": "0.1.0",
+      "knowledgeVersion": "0.1.0"
+    }
+  ]
+}

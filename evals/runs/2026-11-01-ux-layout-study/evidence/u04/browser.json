@@ -1,0 +1,967 @@
+{
+  "caseId": "u04",
+  "capturedAtUtc": "2026-11-01T05:18:59.851Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    "app.js": "dd490614d8a2834fd91f51a98f20f99c23fc50fc16a8122f080d92ff19dcdcc3",
+    "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+    "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+    "implementation-notes.md": "4da43930457a93025997ee4b5561aafa343cfa632e7778ad0f37922841c537fd",
+    "index.html": "a3028275b7491ca64a269e68136d4bf9ab76db484dc7897a40d4621c478fc454",
+    "styles.css": "e9d1a9c9ec6b3782ac4b83e18a1eecbad43ec5da0f88f6662539242eb9ec62a8",
+    "task.md": "c2d2f7154069233e85c7e88e08e41ba920da82ffe3b1f41d79c7c7852c2e040b",
+    "tasteforge-cli-output.txt": "55a2aa577fa76fdc599b07dd305f4ac75e26d13d63dbce9652a06e8ebded8a5b",
+    "UX_PLAN.md": "fce1e71edad913550d9349bb8749a352f961ff313bd4b9739dd0473a86baf00e"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-neutral-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-review.png",
+        "desktop-neutral-review.png",
+        "desktop-cart.png",
+        "desktop-neutral-cart.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 shown before commitment",
+          "status": "pass",
+          "observation": "Required in this new task: USD 68 × 2 + USD 8 shipping; presence alone does not establish good placement.",
+          "kind": "contract"
+        },
+        {
+          "name": "Sand × 2 cart confirmation",
+          "status": "pass",
+          "observation": "2 Sand teapots added to your selection. Order total: $144.00. This is a simulation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 total explicitly shown",
+          "status": "pass",
+          "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "Unavailable Ash cannot be purchased",
+          "status": "pass",
+          "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Your selection ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Objects",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-iron",
+          "name": "Iron",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-sand",
+          "name": "Sand",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "1234",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "add-to-cart",
+          "name": "Add to your selection ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "FIELD KILN",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Choose a glaze ↑",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "FIELD KILN\n    A small fictional pottery shop · Gốm thủ công\n    Your selection ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": [
+          {
+            "testId": "glaze-iron",
+            "text": "Iron",
+            "x": 864.84375,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "glaze-ash",
+            "text": "Ash\nUnavailable",
+            "x": 1011.890625,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "glaze-sand",
+            "text": "Sand",
+            "x": 1158.9375,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "quantity",
+            "text": "1\n2\n3\n4",
+            "x": 935.640625,
+            "y": 629.21875,
+            "width": 64,
+            "height": 33,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "add-to-cart",
+            "text": "Add to your selection\n↗",
+            "x": 864.84375,
+            "y": 740.21875,
+            "width": 433.15625,
+            "height": 49,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "full": [
+          {
+            "testId": "glaze-iron",
+            "text": "Iron",
+            "x": 864.84375,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "glaze-ash",
+            "text": "Ash\nUnavailable",
+            "x": 1011.890625,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "glaze-sand",
+            "text": "Sand",
+            "x": 1158.9375,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "quantity",
+            "text": "1\n2\n3\n4",
+            "x": 935.640625,
+            "y": 629.21875,
+            "width": 64,
+            "height": 33,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "add-to-cart",
+            "text": "Add to your selection\n↗",
+            "x": 864.84375,
+            "y": 740.21875,
+            "width": 433.15625,
+            "height": 49,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "testId": "glaze-iron",
+            "text": "Iron",
+            "x": 864.84375,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "glaze-ash",
+            "text": "Ash\nUnavailable",
+            "x": 1011.890625,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "glaze-sand",
+            "text": "Sand",
+            "x": 1158.9375,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "quantity",
+            "text": "1\n2\n3\n4",
+            "x": 935.640625,
+            "y": 629.21875,
+            "width": 64,
+            "height": 33,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "add-to-cart",
+            "text": "Add to your selection\n↗",
+            "x": 864.84375,
+            "y": 740.21875,
+            "width": 433.15625,
+            "height": 49,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "review": [
+          {
+            "testId": "glaze-iron",
+            "text": "Iron",
+            "x": 864.84375,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "glaze-ash",
+            "text": "Ash\nUnavailable",
+            "x": 1011.890625,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "glaze-sand",
+            "text": "Sand",
+            "x": 1158.9375,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "quantity",
+            "text": "1\n2\n3\n4",
+            "x": 935.640625,
+            "y": 629.21875,
+            "width": 64,
+            "height": 33,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "add-to-cart",
+            "text": "Add to your selection\n↗",
+            "x": 864.84375,
+            "y": 740.21875,
+            "width": 433.15625,
+            "height": 49,
+            "fullyInFirstViewport": true
+          }
+        ],
+        "cart": [
+          {
+            "testId": "glaze-iron",
+            "text": "Iron",
+            "x": 864.84375,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "glaze-ash",
+            "text": "Ash\nUnavailable",
+            "x": 1011.890625,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "glaze-sand",
+            "text": "Sand",
+            "x": 1158.9375,
+            "y": 557.21875,
+            "width": 139.046875,
+            "height": 54,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "quantity",
+            "text": "1\n2\n3\n4",
+            "x": 935.640625,
+            "y": 629.21875,
+            "width": 64,
+            "height": 33,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "add-to-cart",
+            "text": "Add to your selection\n↗",
+            "x": 864.84375,
+            "y": 740.21875,
+            "width": 433.15625,
+            "height": 49,
+            "fullyInFirstViewport": true
+          },
+          {
+            "testId": "cart-status",
+            "text": "2 Sand teapots added to your selection. Order total: $144.00. This is a simulation.",
+            "x": 864.84375,
+            "y": 825.21875,
+            "width": 433.15625,
+            "height": 60,
+            "fullyInFirstViewport": true
+          }
+        ]
+      },
+      "initialText": "FIELD KILN\n\nA small fictional pottery shop · Gốm thủ công\n\nYour selection ↗\nObjects\n/\nEveryday Teapot\n01 / FORM STUDY\n650 ML · STONEWARE\n\nOriginal vector illustration of a fictional sample product; not a photograph.\n\nFIELD KILN — EVERYDAY OBJECTS\n\nEveryday\nTeapot\n\nA familiar shape for the everyday pour.\n\n$68.00\nUSD · one piece\n\n4 available in Iron\n\nFictional shop and illustrative product, price, stock, delivery, and returns.\n\nChoose a glaze Iron\nIron\nAsh\nUnavailable\nSand\nQuantity\n1\n2\n3\n4\nUp to 4 per order\nOrder total\nIncludes $8.00 illustrative shipping\n$76.00\nAdd to your selection\n↗\n\nSimulated cart · no purchase or payment is made.\n\n✳\n\nDispatch in 2 business days\nIllustrative domestic transit: 3–5 business days.\n\nTHE USEFUL DETAILS\n\nMade to be\nreached for.\n\nClear facts for choosing a piece that fits your table and routine.\n\nMaterial\nGlazed stoneware\nCapacity\n650 ml\nDimensions\n16 cm wide × 12 cm high\nCare\nHand wash. Avoid sudden temperature changes. Not for stovetop use.\nDelivery\n\nDispatch in 2 business days; illustrative domestic transit 3–5 business days.\n\nReturns\n\nUnused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.\n\nFIELD KILN\n\nSample product page · all shop information is fictional.\n\nChoose a glaze ↑",
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1319,
+        "title": "Everyday Teapot — Field Kiln",
+        "h1": [
+          "EverydayTeapot"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Arial, Helvetica, sans-serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size",
+          "valid-lang"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size",
+          "valid-lang"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-neutral-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-review.png",
+        "mobile-neutral-review.png",
+        "mobile-cart.png",
+        "mobile-neutral-cart.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 shown before commitment",
+          "status": "pass",
+          "observation": "Required in this new task: USD 68 × 2 + USD 8 shipping; presence alone does not establish good placement.",
+          "kind": "contract"
+        },
+        {
+          "name": "Sand × 2 cart confirmation",
+          "status": "pass",
+          "observation": "2 Sand teapots added to your selection. Order total: $144.00. This is a simulation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 total explicitly shown",
+          "status": "pass",
+          "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "Unavailable Ash cannot be purchased",
+          "status": "pass",
+          "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Your selection ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Objects",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-iron",
+          "name": "Iron",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-sand",
+          "name": "Sand",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "1234",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "add-to-cart",
+          "name": "Add to your selection ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "FIELD KILN",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Choose a glaze ↑",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "FIELD KILN\n    A small fictional pottery shop · Gốm thủ công\n    Your selection ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": [
+          {
+            "testId": "glaze-iron",
+            "text": "Iron",
+            "x": 17,
+            "y": 901.875,
+            "width": 114.65625,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "glaze-ash",
+            "text": "Ash\nUnavailable",
+            "x": 137.65625,
+            "y": 901.875,
+            "width": 114.671875,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "glaze-sand",
+            "text": "Sand",
+            "x": 258.328125,
+            "y": 901.875,
+            "width": 114.65625,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "quantity",
+            "text": "1\n2\n3\n4",
+            "x": 87.796875,
+            "y": 975.875,
+            "width": 64,
+            "height": 33,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "add-to-cart",
+            "text": "Add to your selection\n↗",
+            "x": 17,
+            "y": 1086.875,
+            "width": 356,
+            "height": 49,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "full": [
+          {
+            "testId": "glaze-iron",
+            "text": "Iron",
+            "x": 17,
+            "y": 901.875,
+            "width": 114.65625,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "glaze-ash",
+            "text": "Ash\nUnavailable",
+            "x": 137.65625,
+            "y": 901.875,
+            "width": 114.671875,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "glaze-sand",
+            "text": "Sand",
+            "x": 258.328125,
+            "y": 901.875,
+            "width": 114.65625,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "quantity",
+            "text": "1\n2\n3\n4",
+            "x": 87.796875,
+            "y": 975.875,
+            "width": 64,
+            "height": 33,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "add-to-cart",
+            "text": "Add to your selection\n↗",
+            "x": 17,
+            "y": 1086.875,
+            "width": 356,
+            "height": 49,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "testId": "glaze-iron",
+            "text": "Iron",
+            "x": 17,
+            "y": 901.875,
+            "width": 114.65625,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "glaze-ash",
+            "text": "Ash\nUnavailable",
+            "x": 137.65625,
+            "y": 901.875,
+            "width": 114.671875,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "glaze-sand",
+            "text": "Sand",
+            "x": 258.328125,
+            "y": 901.875,
+            "width": 114.65625,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "quantity",
+            "text": "1\n2\n3\n4",
+            "x": 87.796875,
+            "y": 975.875,
+            "width": 64,
+            "height": 33,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "add-to-cart",
+            "text": "Add to your selection\n↗",
+            "x": 17,
+            "y": 1086.875,
+            "width": 356,
+            "height": 49,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "review": [
+          {
+            "testId": "glaze-iron",
+            "text": "Iron",
+            "x": 17,
+            "y": 901.875,
+            "width": 114.65625,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "glaze-ash",
+            "text": "Ash\nUnavailable",
+            "x": 137.65625,
+            "y": 901.875,
+            "width": 114.671875,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "glaze-sand",
+            "text": "Sand",
+            "x": 258.328125,
+            "y": 901.875,
+            "width": 114.65625,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "quantity",
+            "text": "1\n2\n3\n4",
+            "x": 87.796875,
+            "y": 975.875,
+            "width": 64,
+            "height": 33,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "add-to-cart",
+            "text": "Add to your selection\n↗",
+            "x": 17,
+            "y": 1086.875,
+            "width": 356,
+            "height": 49,
+            "fullyInFirstViewport": false
+          }
+        ],
+        "cart": [
+          {
+            "testId": "glaze-iron",
+            "text": "Iron",
+            "x": 17,
+            "y": 901.875,
+            "width": 114.65625,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "glaze-ash",
+            "text": "Ash\nUnavailable",
+            "x": 137.65625,
+            "y": 901.875,
+            "width": 114.671875,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "glaze-sand",
+            "text": "Sand",
+            "x": 258.328125,
+            "y": 901.875,
+            "width": 114.65625,
+            "height": 56,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "quantity",
+            "text": "1\n2\n3\n4",
+            "x": 87.796875,
+            "y": 975.875,
+            "width": 64,
+            "height": 33,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "add-to-cart",
+            "text": "Add to your selection\n↗",
+            "x": 17,
+            "y": 1086.875,
+            "width": 356,
+            "height": 49,
+            "fullyInFirstViewport": false
+          },
+          {
+            "testId": "cart-status",
+            "text": "2 Sand teapots added to your selection. Order total: $144.00. This is a simulation.",
+            "x": 17,
+            "y": 1171.875,
+            "width": 356,
+            "height": 60,
+            "fullyInFirstViewport": false
+          }
+        ]
+      },
+      "initialText": "FIELD KILN\nYour selection ↗\nObjects\n/\nEveryday Teapot\n01 / FORM STUDY\n650 ML · STONEWARE\n\nOriginal vector illustration of a fictional sample product; not a photograph.\n\nFIELD KILN — EVERYDAY OBJECTS\n\nEveryday\nTeapot\n\nA familiar shape for the everyday pour.\n\n$68.00\nUSD · one piece\n\n4 available in Iron\n\nFictional shop and illustrative product, price, stock, delivery, and returns.\n\nChoose a glaze Iron\nIron\nAsh\nUnavailable\nSand\nQuantity\n1\n2\n3\n4\nUp to 4 per order\nOrder total\nIncludes $8.00 illustrative shipping\n$76.00\nAdd to your selection\n↗\n\nSimulated cart · no purchase or payment is made.\n\n✳\n\nDispatch in 2 business days\nIllustrative domestic transit: 3–5 business days.\n\nTHE USEFUL DETAILS\n\nMade to be\nreached for.\n\nClear facts for choosing a piece that fits your table and routine.\n\nMaterial\nGlazed stoneware\nCapacity\n650 ml\nDimensions\n16 cm wide × 12 cm high\nCare\nHand wash. Avoid sudden temperature changes. Not for stovetop use.\nDelivery\n\nDispatch in 2 business days; illustrative domestic transit 3–5 business days.\n\nReturns\n\nUnused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.\n\nFIELD KILN\n\nSample product page · all shop information is fictional.\n\nChoose a glaze ↑",
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 1901,
+        "title": "Everyday Teapot — Field Kiln",
+        "h1": [
+          "EverydayTeapot"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Arial, Helvetica, sans-serif"
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      }
+    }
+  },
+  "supportingNarrow320": {
+    "width": 320,
+    "scrollWidth": 320,
+    "pageHeight": 1915
+  }
+}

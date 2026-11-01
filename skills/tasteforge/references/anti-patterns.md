@@ -2,6 +2,8 @@
 
 Effects, fonts, cards, gradients, and colors are tools. Investigate appropriateness and repetition, not mere presence. Only a subset of these patterns has static CLI rules; detection below may require human review.
 
+For a real finding, name the target/state, evidence and consequence for the [surface's visitor](surface-purpose.md). Record whether to keep, adapt or remove the pattern and why; an intentional exception is a valid outcome. Use [targeted refinement](../workflows/targeted-refinement.md) for the smallest relevant edit. Annotated examples are teaching evidence, not proof of a universal style rule or measured user improvement.
+
 ## Generic SaaS composition
 
 Interchangeable hero, logo strip, cards, and CTA regardless of product.

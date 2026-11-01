@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northline Transfer · Simulation</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html" aria-label="Northline Transfer home"><span class="brand-mark" aria-hidden="true">N↗</span> Northline <span>Transfer</span></a><span class="demo-tag">SIMULATION</span></header>
+<main id="app">
+<div class="disclosure"><span aria-hidden="true">ⓘ</span><p>Simulation with fictional data. No money is moved and no real account is connected.</p></div>
+<ol class="steps" aria-label="Transfer progress"><li id="step-one" aria-current="step"><span>1</span> Transfer details</li><li id="step-two"><span>2</span> Review & confirm</li></ol>
+<section id="entry" class="sheet" aria-labelledby="entry-title">
+<div class="section-top"><p class="eyebrow">USD → VND</p><span class="small-label">To Việt Nam</span></div>
+<h1 id="entry-title" tabindex="-1">Set up your transfer</h1><p class="intro">Start with the details. You’ll check everything before confirming.</p>
+<form id="transfer-form" novalidate>
+<label for="recipient">Recipient’s full name</label><input id="recipient" data-testid="recipient" name="recipient" autocomplete="name" value="Nguyễn Thị Minh Anh Trường" aria-describedby="recipient-help recipient-error" required><p class="hint" id="recipient-help">Check that the name matches your intended recipient.</p><p class="field-error" id="recipient-error" hidden></p>
+<label for="amount">You send</label><div class="amount-field"><input id="amount" data-testid="amount" name="amount" type="number" inputmode="decimal" min="1" max="1000" step="0.01" value="250" aria-describedby="amount-help amount-error" required><span>USD</span></div><p class="hint" id="amount-help">From USD 1.00 to USD 1,000.00</p><p class="field-error" id="amount-error" hidden></p>
+<div class="quote" aria-label="Transfer cost estimate"><dl><div><dt>Transfer fee <span class="hint">· added to amount</span></dt><dd>USD 2.50</dd></div><div class="quote-total"><dt>Total debited</dt><dd id="entry-total">USD 252.50</dd></div></dl><div class="receive-preview"><span>Recipient receives</span><strong id="entry-receive">6,250,000 VND</strong></div><p class="hint">Exchange rate: 1 USD = 25,000 VND</p></div>
+<button class="primary" type="submit" data-testid="review-transfer">Review transfer <span aria-hidden="true">→</span></button><p class="action-note">Nothing is confirmed on this step.</p>
+</form></section>
+<section id="review" class="sheet" aria-labelledby="review-title" hidden>
+<div class="section-top"><p class="eyebrow">YOUR TRANSFER SUMMARY</p><span class="small-label">USD → VND</span></div>
+<h1 id="review-title" tabindex="-1">Check before you confirm</h1><p class="intro">Make sure the recipient and total cost are right.</p>
+<div class="recipient-block"><span class="hint">To · Việt Nam</span><h2 id="review-recipient" lang="vi"></h2><button class="text-button" id="edit-recipient" type="button">Edit recipient</button></div>
+<dl class="summary"><div><dt>From</dt><dd>Alex Morgan<br><span class="hint">Everyday USD ••1042</span></dd></div><div><dt>You send</dt><dd id="review-amount"></dd></div><div><dt>Transfer fee</dt><dd>USD 2.50</dd></div><div class="total-row"><dt>Total debited</dt><dd id="review-total"></dd></div></dl>
+<div class="destination"><span>Recipient receives</span><strong id="review-receive"></strong><p>1 USD = 25,000 VND</p><div class="delivery"><span aria-hidden="true">◷</span><p><b>Delivery estimate</b><br>By 3 November 2026, illustrative estimate</p></div></div>
+<div id="transfer-status" data-testid="transfer-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+<div id="review-actions"><p class="confirm-note">Confirming runs a simulation only. Your account will not be charged.</p><button type="button" id="confirm" class="primary" data-testid="confirm-transfer">Confirm simulated transfer <span aria-hidden="true">→</span></button><button type="button" id="retry" class="primary" data-testid="retry-transfer" hidden>Retry simulated transfer <span aria-hidden="true">↻</span></button><button type="button" id="edit" class="secondary">Edit transfer details</button></div>
+<button type="button" id="restart" class="secondary" hidden>Set up another simulation</button>
+</section>
+<footer>Northline Transfer <span aria-hidden="true">·</span> Fictional transfer experience</footer>
+</main></body>
+</html>
