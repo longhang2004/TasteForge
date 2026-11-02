@@ -1,0 +1,35 @@
+import { createRequire } from 'node:module';
+import { serve } from '../examples/composition-studies/tools/serve.mjs';
+const require = createRequire(new URL('../examples/inventory-workbench/tools/package.json', import.meta.url));
+const { chromium } = require('playwright');
+const AxeBuilder = require('@axe-core/playwright').default;
+const { server, url } = await serve();
+const browser = await chromium.launch();
+try {
+ for (const width of [320, 390, 1440]) for(const condition of ['conventional','adapted']) {
+  const page = await browser.newPage({viewport:{width,height:844}});
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto(`${url}/examples/composition-studies/study.html?case=operational&condition=${condition}`);
+  await page.locator('#op-search').fill('LIN');
+  await page.locator('#op-shortage').check();
+  await page.locator('[data-sku="LIN-115"]').click();
+  await page.locator('#op-quantity').fill('1.5');await page.locator('#op-review').click();
+  if(!(await page.locator('#op-error').innerText()).includes('whole'))throw Error('validation');
+  await page.locator('#op-quantity').fill('8');await page.locator('#op-review').click();
+  await page.locator('#op-edit').click();if(await page.locator('#op-quantity').inputValue()!=='8')throw Error('draft');
+  await page.locator('#op-review').click();await page.locator('#op-save').click();await page.locator('#op-retry').click();
+  const opAxe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
+  const opSize=await page.evaluate(()=>({vw:innerWidth,sw:document.documentElement.scrollWidth}));
+  await page.locator('#op-back').click();
+  if(await page.locator('#op-search').inputValue()!=='LIN')throw Error('retention');
+  await page.goto(`${url}/examples/composition-studies/study.html?case=commerce&condition=${condition}`);
+  await page.locator('#co-glaze').selectOption('Ash');if(!await page.locator('#co-add').isDisabled())throw Error('unavailable');
+  await page.locator('#co-glaze').selectOption('Iron');await page.locator('#co-quantity').fill('3');await page.locator('#co-add').click();
+  if(!(await page.locator('#co-feedback').innerText()).includes('1 to 2'))throw Error('stock');
+  await page.locator('#co-glaze').selectOption('Sand');await page.locator('#co-quantity').fill('2');await page.locator('#co-add').click();await page.locator('#co-retry').click();
+  const coAxe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
+  const coSize=await page.evaluate(()=>({vw:innerWidth,sw:document.documentElement.scrollWidth}));
+  console.log(JSON.stringify({width,condition,errors,opSize,coSize,opAxe:opAxe.violations.map(v=>v.id),coAxe:coAxe.violations.map(v=>v.id)}));
+  await page.close();
+ }
+} finally {await browser.close();server.close();}

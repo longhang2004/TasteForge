@@ -2,6 +2,10 @@
 evals/runs/** -text
 evals/runs/**/reviews/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 examples/*/evidence/** -text
+examples/composition-studies/brief-freeze.json -text
+examples/composition-studies/briefs.md -text
+examples/composition-studies/fixtures.json -text
+examples/composition-studies/assets/** -text
 examples/inventory-workbench/reviews/** -text
 examples/generated/** -text
 packages/knowledge/src/data/references.json -text

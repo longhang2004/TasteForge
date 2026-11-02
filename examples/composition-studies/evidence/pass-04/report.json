@@ -1,0 +1,3571 @@
+{
+  "startedAt": "2026-11-02T08:13:22.512Z",
+  "chromium": "156.0.8078.4",
+  "sources": {
+    "app.mjs": "5acd74dff1f4959c23fc8a8c337de3bf980250b0c502fd2a04b208585850edcf",
+    "brief-freeze.json": "5e02b8082403b5d2a124b04aaabb140c82501a29073f85b1ad792b302c836156",
+    "collection.css": "615db2a283d8b73aa95d891efa06d69a86c9ec15d5e63fce6e07a004740f4f83",
+    "collection.mjs": "40fe534d4d0efea5a495efdfa9d0a808d06719c8b63cf8acb80fbbbb8c9d3298",
+    "commerce.css": "aed87b3b985cd754d1f166abafdaefb3dee94cdce41a6939e1e08386e28d3487",
+    "commerce.mjs": "4d8e6b8a192690a4464dc31e88a70554ccc19505cf4168be196b99a07fb4cc4f",
+    "editorial.css": "9cf1819b7177b7ee0c7a76ca38a5c6d488ad50b399029cc6a381b266c4ba1e6a",
+    "editorial.mjs": "ebc1f10bc48578378e1971a2e2b4861c12ec4ea5ed83e93b30a3536e726823d9",
+    "fixtures.json": "50d5ddc6746918e5a7235b138ae0ba977018eb0b1c77274d2121dc5e940806f2",
+    "gallery.css": "7e78a0850de5ca25f06f1b4717a38b99989b3d55b626ad44e8210772f5950736",
+    "index.html": "6615e63160367d97c785336c21b047f81cf74aa746570ea7bf14f32dabb63fe4",
+    "operational.css": "042f659dbcb38c1178d632ea94ea2bbe7c51d3ee3762f568471e9160ff21ea93",
+    "operational.mjs": "66d11770727838cec8fe7e7670102ca45136b1510ed13587b2776ea0739ed433",
+    "shared.css": "458ba4391de4dac0b8dbc89e4571ac0da0f3182260875b9e27f1d4579e2a4bb7",
+    "study.html": "d66fdb091d2458f58357e7cf9de06d146ffd7d69ba95560eec4a43c05b4a2a55",
+    "assets/fold-study.svg": "2a553410188ab77ad347f83fe290e2bb63b99452d7e0a32a23d5b854bbabfbd0",
+    "assets/grid-study.svg": "3f55ca69e9ccbe9e464b15d98012b970cce7e7682ee71ab6a587f28b722a7943",
+    "assets/joint-comparison.svg": "1a0bd05b63ebe7739d5133c072be4b013817a394cc870f07d18a894792572c47",
+    "assets/joint-observation.svg": "c53271b3f378feb238eb9d4a526f66adfa38451dca64c51df895a6ea9f46a45d",
+    "assets/loop-weight.svg": "94b7ad8840e4887dc7f34c8b1b9ccf796f695c3227352696fd751601b0ad5ce0",
+    "assets/pouring-cup.svg": "1139015b08409b6d6fdaa1a78a9b69722b9049d3050ff868b41e554ee1b2ee00",
+    "assets/ridge-vessel.svg": "2c5f1cd38f2361b630b50c5c3c870cbe5592d50cd8720805ab22ecf5509e0c6f"
+  },
+  "traces": [
+    {
+      "id": "operational-conventional-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-conventional-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1267,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "detail",
+          "file": "operational-conventional-320-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1594,
+            "scrollX": 0,
+            "scrollY": 625,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 325.140625,
+              "bottom": 415.140625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-conventional-320-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1714,
+            "scrollX": 0,
+            "scrollY": 854,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 523.71875,
+              "bottom": 569.71875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-conventional-320-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1732,
+            "scrollX": 0,
+            "scrollY": 854,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 96.140625,
+              "bottom": 186.140625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-conventional-320-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1891,
+            "scrollX": 0,
+            "scrollY": 951,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 595.015625,
+              "bottom": 740.203125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-conventional-320-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1707,
+            "scrollX": 0,
+            "scrollY": 967,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 579.015625,
+              "bottom": 660.015625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-conventional-320-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 860,
+            "scrollX": 0,
+            "scrollY": 54,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 628.171875,
+              "bottom": 739.953125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-conventional-320-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 889,
+            "scrollX": 0,
+            "scrollY": 54,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 406.109375,
+              "bottom": 447.109375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "operational-conventional-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-conventional-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1172,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "detail",
+          "file": "operational-conventional-390-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1556,
+            "scrollX": 0,
+            "scrollY": 535,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 376.921875,
+              "bottom": 466.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-conventional-390-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1650,
+            "scrollX": 0,
+            "scrollY": 712,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 627.5,
+              "bottom": 673.5
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-conventional-390-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1638,
+            "scrollX": 0,
+            "scrollY": 712,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 199.921875,
+              "bottom": 289.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-conventional-390-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1778,
+            "scrollX": 0,
+            "scrollY": 790,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 717.796875,
+              "bottom": 843.984375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-conventional-390-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1650,
+            "scrollX": 0,
+            "scrollY": 806,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 701.796875,
+              "bottom": 763.796875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-conventional-390-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 844,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 662.984375,
+              "bottom": 755.734375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-conventional-390-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 870,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 440.921875,
+              "bottom": 481.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "operational-conventional-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-conventional-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": [],
+          "optionalFullPage": "operational-conventional-1440-entry-full.png"
+        },
+        {
+          "state": "detail",
+          "file": "operational-conventional-1440-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1269,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 714.15625,
+              "bottom": 744.15625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-conventional-1440-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1338,
+            "scrollX": 0,
+            "scrollY": 269,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 771.796875,
+              "bottom": 817.796875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-conventional-1440-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1308,
+            "scrollX": 0,
+            "scrollY": 269,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 445.15625,
+              "bottom": 475.15625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-conventional-1440-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1422,
+            "scrollX": 0,
+            "scrollY": 269,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 896.59375,
+              "bottom": 997.1875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-conventional-1440-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1301,
+            "scrollX": 0,
+            "scrollY": 301,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 864.59375,
+              "bottom": 907.59375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-conventional-1440-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 478.40625,
+              "bottom": 553.96875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-conventional-1440-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 326.34375,
+              "bottom": 367.34375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "operational-adapted-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-adapted-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1267,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "detail",
+          "file": "operational-adapted-320-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1165,
+            "scrollX": 0,
+            "scrollY": 54,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 467.03125,
+              "bottom": 557.03125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-adapted-320-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1285,
+            "scrollX": 0,
+            "scrollY": 425,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 523.609375,
+              "bottom": 569.609375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-adapted-320-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1303,
+            "scrollX": 0,
+            "scrollY": 425,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 96.03125,
+              "bottom": 186.03125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-adapted-320-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1462,
+            "scrollX": 0,
+            "scrollY": 522,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 594.90625,
+              "bottom": 740.09375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-adapted-320-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1278,
+            "scrollX": 0,
+            "scrollY": 538,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 578.90625,
+              "bottom": 659.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-adapted-320-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 860,
+            "scrollX": 0,
+            "scrollY": 54,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 628.171875,
+              "bottom": 739.953125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-adapted-320-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 889,
+            "scrollX": 0,
+            "scrollY": 54,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 406.109375,
+              "bottom": 447.109375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "operational-adapted-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-adapted-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1172,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "detail",
+          "file": "operational-adapted-390-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1145,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 501.84375,
+              "bottom": 591.84375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-adapted-390-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1240,
+            "scrollX": 0,
+            "scrollY": 301,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 628.421875,
+              "bottom": 674.421875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-adapted-390-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1228,
+            "scrollX": 0,
+            "scrollY": 301,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 200.84375,
+              "bottom": 290.84375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-adapted-390-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1368,
+            "scrollX": 0,
+            "scrollY": 380,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 717.71875,
+              "bottom": 843.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-adapted-390-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1240,
+            "scrollX": 0,
+            "scrollY": 396,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 701.71875,
+              "bottom": 763.71875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-adapted-390-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 844,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 662.984375,
+              "bottom": 755.734375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-adapted-390-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 870,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 440.921875,
+              "bottom": 481.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "operational-adapted-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-adapted-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": [],
+          "optionalFullPage": "operational-adapted-1440-entry-full.png"
+        },
+        {
+          "state": "detail",
+          "file": "operational-adapted-1440-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 391.265625,
+              "bottom": 451.265625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-adapted-1440-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1065,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 768.375,
+              "bottom": 814.375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-adapted-1440-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1057,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 391.265625,
+              "bottom": 451.265625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-adapted-1440-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1172,
+            "scrollX": 0,
+            "scrollY": 16,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 898.921875,
+              "bottom": 999.515625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-adapted-1440-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1069,
+            "scrollX": 0,
+            "scrollY": 69,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 845.921875,
+              "bottom": 907.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-adapted-1440-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 478.40625,
+              "bottom": 553.96875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-adapted-1440-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 326.34375,
+              "bottom": 367.34375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-conventional-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-conventional-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1794,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-conventional-320-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1809,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-conventional-320-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1823,
+            "scrollX": 0,
+            "scrollY": 887,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 102.6875,
+              "bottom": 140.6875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-conventional-320-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1751,
+            "scrollX": 0,
+            "scrollY": 887,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 102.6875,
+              "bottom": 140.6875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-conventional-320-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1890,
+            "scrollX": 0,
+            "scrollY": 887,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 347.71875,
+              "bottom": 471.25
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-conventional-320-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1890,
+            "scrollX": 0,
+            "scrollY": 887,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 347.71875,
+              "bottom": 471.25
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-conventional-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-conventional-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1797,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-conventional-390-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1797,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-conventional-390-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1826,
+            "scrollX": 0,
+            "scrollY": 838,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 154.671875,
+              "bottom": 192.671875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-conventional-390-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1754,
+            "scrollX": 0,
+            "scrollY": 838,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 154.671875,
+              "bottom": 192.671875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-conventional-390-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1870,
+            "scrollX": 0,
+            "scrollY": 838,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 399.703125,
+              "bottom": 500.1875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-conventional-390-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1893,
+            "scrollX": 0,
+            "scrollY": 838,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 399.703125,
+              "bottom": 523.234375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-conventional-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-conventional-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1233,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": [],
+          "optionalFullPage": "commerce-conventional-1440-entry-full.png"
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-conventional-1440-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1233,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-conventional-1440-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1246,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 592.3125,
+              "bottom": 630.3125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-conventional-1440-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1190,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 592.3125,
+              "bottom": 630.3125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-conventional-1440-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1307,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 837.34375,
+              "bottom": 937.828125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-conventional-1440-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1307,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 837.34375,
+              "bottom": 937.828125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-adapted-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-adapted-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1827,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-adapted-320-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1842,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-adapted-320-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1856,
+            "scrollX": 0,
+            "scrollY": 933,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 103.421875,
+              "bottom": 141.421875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-adapted-320-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1784,
+            "scrollX": 0,
+            "scrollY": 933,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 103.421875,
+              "bottom": 141.421875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-adapted-320-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1924,
+            "scrollX": 0,
+            "scrollY": 933,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 348.453125,
+              "bottom": 471.984375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-adapted-320-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1924,
+            "scrollX": 0,
+            "scrollY": 933,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 348.453125,
+              "bottom": 471.984375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-adapted-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-adapted-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1830,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-adapted-390-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1830,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-adapted-390-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1859,
+            "scrollX": 0,
+            "scrollY": 884,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 155.40625,
+              "bottom": 193.40625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-adapted-390-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1787,
+            "scrollX": 0,
+            "scrollY": 884,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 155.40625,
+              "bottom": 193.40625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-adapted-390-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1904,
+            "scrollX": 0,
+            "scrollY": 884,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 400.4375,
+              "bottom": 500.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-adapted-390-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1927,
+            "scrollX": 0,
+            "scrollY": 884,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 400.4375,
+              "bottom": 523.96875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-adapted-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-adapted-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1230,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": [],
+          "optionalFullPage": "commerce-adapted-1440-entry-full.png"
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-adapted-1440-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1230,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-adapted-1440-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1197,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 457.171875,
+              "bottom": 495.171875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-adapted-1440-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1187,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 457.171875,
+              "bottom": 495.171875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-adapted-1440-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1258,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 702.203125,
+              "bottom": 802.6875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-adapted-1440-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1258,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 702.203125,
+              "bottom": 802.6875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-conventional-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-conventional-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4122,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "section",
+          "file": "editorial-conventional-320-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4079,
+            "scrollX": 0,
+            "scrollY": 1849,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 23.6875,
+              "bottom": 89.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-conventional-320-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4079,
+            "scrollX": 0,
+            "scrollY": 1849,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 23.6875,
+              "bottom": 89.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-conventional-320-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4102,
+            "scrollX": 0,
+            "scrollY": 2763,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 24.140625,
+              "bottom": 90.359375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-conventional-320-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4079,
+            "scrollX": 0,
+            "scrollY": 560,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 50.046875,
+              "bottom": 69.046875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-conventional-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-conventional-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3894,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "section",
+          "file": "editorial-conventional-390-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3851,
+            "scrollX": 0,
+            "scrollY": 1795,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.234375,
+              "bottom": 57.34375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-conventional-390-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3851,
+            "scrollX": 0,
+            "scrollY": 1795,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.234375,
+              "bottom": 57.34375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-conventional-390-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3851,
+            "scrollX": 0,
+            "scrollY": 2631,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 24.03125,
+              "bottom": 90.25
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-conventional-390-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3851,
+            "scrollX": 0,
+            "scrollY": 443,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 125.59375,
+              "bottom": 144.59375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-conventional-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-conventional-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 3473,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": [],
+          "optionalFullPage": "editorial-conventional-1440-entry-full.png"
+        },
+        {
+          "state": "section",
+          "file": "editorial-conventional-1440-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 3430,
+            "scrollX": 0,
+            "scrollY": 1590,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.46875,
+              "bottom": 70.828125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-conventional-1440-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 3430,
+            "scrollX": 0,
+            "scrollY": 1590,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.46875,
+              "bottom": 70.828125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-conventional-1440-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 3430,
+            "scrollX": 0,
+            "scrollY": 2430,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 34.21875,
+              "bottom": 80.578125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-conventional-1440-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 3430,
+            "scrollX": 0,
+            "scrollY": 118,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 447.75,
+              "bottom": 466.75
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-adapted-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-adapted-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4050,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "section",
+          "file": "editorial-adapted-320-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4007,
+            "scrollX": 0,
+            "scrollY": 1987,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.203125,
+              "bottom": 90.421875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-adapted-320-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4007,
+            "scrollX": 0,
+            "scrollY": 1987,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.203125,
+              "bottom": 90.421875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-adapted-320-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4030,
+            "scrollX": 0,
+            "scrollY": 3040,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 24.171875,
+              "bottom": 90.390625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-adapted-320-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4007,
+            "scrollX": 0,
+            "scrollY": 560,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 50.046875,
+              "bottom": 69.046875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-adapted-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-adapted-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3766,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "section",
+          "file": "editorial-adapted-390-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3723,
+            "scrollX": 0,
+            "scrollY": 1878,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 23.75,
+              "bottom": 56.859375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-adapted-390-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3723,
+            "scrollX": 0,
+            "scrollY": 1878,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 23.75,
+              "bottom": 56.859375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-adapted-390-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3723,
+            "scrollX": 0,
+            "scrollY": 2852,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 24.0625,
+              "bottom": 90.28125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-adapted-390-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3723,
+            "scrollX": 0,
+            "scrollY": 387,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 125.59375,
+              "bottom": 144.59375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-adapted-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-adapted-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 2754,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": [],
+          "optionalFullPage": "editorial-adapted-1440-entry-full.png"
+        },
+        {
+          "state": "section",
+          "file": "editorial-adapted-1440-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 2711,
+            "scrollX": 0,
+            "scrollY": 1419,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.171875,
+              "bottom": 70.53125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-adapted-1440-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 2711,
+            "scrollX": 0,
+            "scrollY": 1419,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.171875,
+              "bottom": 70.53125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-adapted-1440-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 2711,
+            "scrollX": 0,
+            "scrollY": 1711,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 410.625,
+              "bottom": 503.34375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-adapted-1440-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 2711,
+            "scrollX": 0,
+            "scrollY": 118,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 447.75,
+              "bottom": 466.75
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-conventional-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-conventional-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 2187,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "detail",
+          "file": "collection-conventional-320-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1588,
+            "scrollX": 0,
+            "scrollY": 396,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 635.9375,
+              "bottom": 739.578125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-conventional-320-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1103,
+            "scrollX": 0,
+            "scrollY": 363,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 603.203125,
+              "bottom": 667.828125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-conventional-320-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1032,
+            "scrollX": 0,
+            "scrollY": 292,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 215.5,
+              "bottom": 256.5
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-conventional-320-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 2144,
+            "scrollX": 0,
+            "scrollY": 292,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 215.5,
+              "bottom": 256.5
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-conventional-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-conventional-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 2162,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "detail",
+          "file": "collection-conventional-390-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1625,
+            "scrollX": 0,
+            "scrollY": 328,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 740.59375,
+              "bottom": 844.234375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-conventional-390-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1077,
+            "scrollX": 0,
+            "scrollY": 233,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 707.609375,
+              "bottom": 772.234375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-conventional-390-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 980,
+            "scrollX": 0,
+            "scrollY": 136,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 345.90625,
+              "bottom": 386.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-conventional-390-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 2119,
+            "scrollX": 0,
+            "scrollY": 136,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 345.90625,
+              "bottom": 386.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-conventional-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-conventional-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1060,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": [],
+          "optionalFullPage": "collection-conventional-1440-entry-full.png"
+        },
+        {
+          "state": "detail",
+          "file": "collection-conventional-1440-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1572,
+            "scrollX": 0,
+            "scrollY": 572,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 469.8125,
+              "bottom": 580.375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-conventional-1440-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1017,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 880.578125,
+              "bottom": 945.203125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-conventional-1440-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 475.875,
+              "bottom": 516.875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-conventional-1440-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1017,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 475.875,
+              "bottom": 516.875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-adapted-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-adapted-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1865,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "detail",
+          "file": "collection-adapted-320-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1588,
+            "scrollX": 0,
+            "scrollY": 396,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 635.9375,
+              "bottom": 739.578125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-adapted-320-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1057,
+            "scrollX": 0,
+            "scrollY": 317,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 433.203125,
+              "bottom": 525.140625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-adapted-320-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1032,
+            "scrollX": 0,
+            "scrollY": 292,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 215.5,
+              "bottom": 256.5
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-adapted-320-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1822,
+            "scrollX": 0,
+            "scrollY": 292,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 215.5,
+              "bottom": 256.5
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-adapted-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-adapted-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1757,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "detail",
+          "file": "collection-adapted-390-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1569,
+            "scrollX": 0,
+            "scrollY": 642,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 370.59375,
+              "bottom": 474.234375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-adapted-390-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 976,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 668.609375,
+              "bottom": 760.546875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-adapted-390-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 924,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 425.90625,
+              "bottom": 466.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-adapted-390-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1714,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 425.90625,
+              "bottom": 466.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-adapted-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-adapted-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1509,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": [],
+          "optionalFullPage": "collection-adapted-1440-entry-full.png"
+        },
+        {
+          "state": "detail",
+          "file": "collection-adapted-1440-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1151,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 566.0625,
+              "bottom": 731.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-adapted-1440-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 646.578125,
+              "bottom": 690.578125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-adapted-1440-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 475.875,
+              "bottom": 516.875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-adapted-1440-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1466,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 475.875,
+              "bottom": 516.875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  ],
+  "failures": [],
+  "scope": "Automated task assertions, axe and natural viewport evidence; no human tests or conformance claim.",
+  "finishedAt": "2026-11-02T08:16:37.899Z",
+  "checkCount": 144,
+  "stateCount": 144
+}

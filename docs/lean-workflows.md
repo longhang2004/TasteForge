@@ -1,5 +1,7 @@
 # Proportional UI workflows
 
+The [UI quality / art-direction increment](ui-quality-art-direction.md) adds optional task-indexed teaching pairs and product-content guidance while preserving these effort levels. Its fresh pilot reports quality, specificity and full-cycle coverage separately.
+
 The current source makes TasteForge effort proportional to the task. The default uses one creator, a compact decision record and one focused correction/recheck. Additional research, prototypes or review are justified by an unresolved decision or demonstrated blocker. These effort levels are skill guidance, not CLI flags, new brief/DNA fields, global host settings or a resource guarantee.
 
 ## Choose the work

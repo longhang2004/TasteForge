@@ -1,0 +1,79 @@
+{
+  "createdAt": "2026-11-02T08:07:34.156Z",
+  "traces": [
+    {
+      "id": "editorial-adapted-320",
+      "states": {
+        "entry": {
+          "width": 320,
+          "scrollWidth": 320,
+          "scrollY": 0,
+          "focus": null,
+          "violations": [],
+          "incomplete": []
+        },
+        "resume": {
+          "width": 320,
+          "scrollWidth": 320,
+          "scrollY": 1929,
+          "focus": "compare",
+          "violations": [],
+          "incomplete": []
+        },
+        "clear": {
+          "width": 320,
+          "scrollWidth": 320,
+          "scrollY": 424,
+          "focus": null,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    },
+    {
+      "id": "collection-adapted-320",
+      "states": {
+        "entry": {
+          "width": 320,
+          "scrollWidth": 320,
+          "scrollY": 0,
+          "focus": null,
+          "violations": [],
+          "incomplete": []
+        },
+        "detail": {
+          "width": 320,
+          "scrollWidth": 320,
+          "scrollY": 601,
+          "focus": "cl-detail-title",
+          "violations": [],
+          "incomplete": []
+        },
+        "return": {
+          "width": 320,
+          "scrollWidth": 320,
+          "scrollY": 19,
+          "focus": "FI-03",
+          "violations": [],
+          "incomplete": []
+        },
+        "empty": {
+          "width": 320,
+          "scrollWidth": 320,
+          "scrollY": 19,
+          "focus": "cl-search",
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "sources": {
+    "editorial.mjs": "ebc1f10bc48578378e1971a2e2b4861c12ec4ea5ed83e93b30a3536e726823d9",
+    "editorial.css": "9cf1819b7177b7ee0c7a76ca38a5c6d488ad50b399029cc6a381b266c4ba1e6a",
+    "collection.mjs": "40fe534d4d0efea5a495efdfa9d0a808d06719c8b63cf8acb80fbbbb8c9d3298",
+    "collection.css": "615db2a283d8b73aa95d891efa06d69a86c9ec15d5e63fce6e07a004740f4f83",
+    "tools/serve.mjs": "d452a5b354fd527f91332b1d21ddffe31f46ff04a8b29d9cf261185d405be198"
+  }
+}

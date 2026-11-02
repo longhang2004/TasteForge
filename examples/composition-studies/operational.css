@@ -1,0 +1,237 @@
+.op-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 48px;
+  justify-content: space-between;
+  border-bottom: 2px solid #345242;
+  margin-bottom: 26px;
+}
+.op-header h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 12px 0;
+}
+.op-header p {
+  margin-top: 0;
+}
+.op-snapshot {
+  max-width: 260px;
+  align-self: end;
+  font-size: 0.8rem;
+  color: #4e5f55;
+}
+.op-workspace {
+  display: grid;
+  gap: 32px;
+  align-items: start;
+}
+.op-overview,
+.op-panel {
+  min-width: 0;
+}
+.op-overview h2 {
+  font-size: 1.15rem;
+  margin-top: 0;
+}
+.op-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 16px 22px;
+}
+.op-toolbar label:first-child {
+  flex: 1 1 210px;
+}
+.op-toolbar input[type='search'] {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+}
+.op-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-size: 0.9rem;
+}
+#op-count {
+  font-size: 0.8rem;
+}
+.op-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  table-layout: fixed;
+}
+.op-table caption {
+  text-align: left;
+  font-size: 0.78rem;
+  color: #4e5f55;
+  margin-bottom: 12px;
+}
+.op-table th {
+  text-align: left;
+}
+.op-table thead {
+  background: #e7ebe3;
+  font-size: 0.7rem;
+}
+.op-table thead th {
+  padding: 12px 8px;
+  font-weight: 600;
+}
+.op-table th:first-child {
+  width: 60%;
+}
+.op-table th:not(:first-child),
+.op-table td {
+  text-align: right;
+}
+.op-table td {
+  padding: 16px 8px;
+  vertical-align: top;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.op-table tbody tr {
+  border-bottom: 1px solid #b8c3b8;
+}
+.op-table small {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #4e5f55;
+}
+.op-item {
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 16px 8px;
+  width: 100%;
+  border-radius: 0;
+  font-weight: 600;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.op-item span {
+  display: block;
+  font-size: 0.72rem;
+  color: #4e5f55;
+  font-weight: 400;
+  margin-top: 6px;
+}
+.op-table .is-selected {
+  background: #e4ecdf;
+}
+.op-short {
+  color: #743e16;
+}
+.op-panel {
+  border-top: 3px solid #345242;
+  padding: 20px 24px 28px;
+  background: #fffef9;
+}
+.op-panel h2 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin: 16px 0 24px;
+}
+.op-panel .eyebrow {
+  margin: 24px 0 0;
+}
+.op-panel #op-back {
+  padding: 8px 10px;
+  font-size: 0.85rem;
+}
+.op-evidence {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.op-evidence div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #c6cdbf;
+}
+.op-evidence dd {
+  margin: 0;
+  font-weight: 650;
+}
+.op-shortage-line {
+  color: #743e16;
+}
+.op-policy {
+  font-size: 0.8rem;
+  color: #4e5f55;
+  margin-bottom: 26px;
+}
+#op-quantity {
+  display: block;
+  width: 120px;
+  margin-top: 8px;
+  font-size: 1.25rem;
+  font-variant-numeric: tabular-nums;
+}
+#op-help {
+  font-size: 0.8rem;
+}
+#op-error:empty {
+  display: none;
+}
+.op-amount {
+  font-size: 2.8rem;
+  margin: 12px 0;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+.op-amount span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.op-commit > p:not(.eyebrow):not(.op-amount) {
+  font-size: 0.85rem;
+}
+.op-empty {
+  padding: 24px 0;
+}
+.operational.conventional .op-panel {
+  max-width: 760px;
+}
+.operational.adapted.op-selected .op-workspace {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+}
+@media (max-width: 760px) {
+  .op-header {
+    gap: 4px;
+    margin-bottom: 22px;
+  }
+  .op-snapshot {
+    max-width: none;
+  }
+  .op-panel {
+    padding: 16px;
+  }
+  .op-table {
+    font-size: 0.82rem;
+  }
+  .op-table th:first-child {
+    width: 57%;
+  }
+  .op-table thead th {
+    padding: 10px 4px;
+    font-size: 0.65rem;
+  }
+  .op-table td {
+    padding: 16px 4px;
+  }
+  .op-item {
+    padding: 16px 4px;
+  }
+  .operational.adapted.op-selected .op-workspace {
+    display: block;
+  }
+  .operational.adapted.op-selected .op-overview {
+    display: none;
+  }
+}

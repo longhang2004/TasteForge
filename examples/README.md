@@ -1,5 +1,7 @@
 # Examples
 
+[Composition studies](composition-studies/README.md) provides four runnable conventional/adapted pairs: operational work, commerce decision, editorial reading and collection exploration. Each uses shared declared fixtures, original licensed diagrams, natural-state evidence and explicit tradeoffs. These authored teaching cases are separate from the [fresh quality/identity pilot](../evals/runs/2026-11-02-quality-identity-forward-test/README.md).
+
 [Annotated design gallery](design-gallery/README.md) presents three actual inventory repairs and one structural tradeoff, with authored notes, original-image/trace links and scope/hash checks. It illustrates context-sensitive decisions rather than aesthetic bans.
 
 [Effect studies](effects-lab/README.md) explores original text emphasis, grid/list position continuity and image comparison, with keyboard/touch, reduced-motion and no-JS evidence. Source research and task-fit guidance live in the skill; these studies do not add effects to the CLI sampler.

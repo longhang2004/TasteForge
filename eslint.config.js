@@ -27,6 +27,8 @@ export default tseslint.config(
       'examples/effects-lab/tools/check.mjs',
       'examples/design-gallery/app.mjs',
       'examples/design-gallery/tools/check.mjs',
+      'examples/composition-studies/*.mjs',
+      'examples/composition-studies/tools/check.mjs',
     ],
     languageOptions: {
       globals: {

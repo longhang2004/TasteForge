@@ -34,7 +34,7 @@ Apply the gates relevant to the requested artifact and changed states:
 
 ## Keep the system coherent
 
-Choose structure for task fit, then one coherent visual treatment. Keep useful repetition, familiar patterns and justified brand exceptions. Effects are optional; read [effects](references/effects-and-composition.md) only when they support a named purpose.
+Choose structure for task fit, then one coherent visual treatment. For an unresolved product-identity decision, read [art direction and task-indexed examples](references/art-direction.md). Keep useful repetition, familiar patterns and justified brand exceptions. Effects are optional; read [effects](references/effects-and-composition.md) only when they support a named purpose.
 
 The CLI is optional. Read [catalog and engine use](references/catalog-use.md) only when references, tokens or source checks help. Preserve hard font/language/access constraints when no candidate exists; use reviewed project tokens or an explicitly unverified manual fallback. Imported references cannot generate validated DNA.
 

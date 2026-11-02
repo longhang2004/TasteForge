@@ -1,0 +1,180 @@
+{
+  "operational": {
+    "source": "../inventory-workbench/fixture.json",
+    "brand": "Northline Stockroom",
+    "fictional": true,
+    "warehouse": "Warehouse A",
+    "snapshot": "1 November 2026, 09:00 ICT — fictional snapshot, not live inventory",
+    "items": [
+      {
+        "sku": "CER-204",
+        "name": "Everyday Teapot — Sand",
+        "available": 3,
+        "reorderPoint": 12,
+        "shortage": 9,
+        "unit": "pieces",
+        "location": "A-02",
+        "incoming": 0
+      },
+      {
+        "sku": "LIN-115",
+        "name": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+        "available": 2,
+        "reorderPoint": 10,
+        "shortage": 8,
+        "unit": "pieces",
+        "location": "B-04",
+        "incoming": 4
+      },
+      {
+        "sku": "GLS-031",
+        "name": "Drinking glass — Clear",
+        "available": 24,
+        "reorderPoint": 12,
+        "shortage": 0,
+        "unit": "pieces",
+        "location": "C-01",
+        "incoming": 0
+      },
+      {
+        "sku": "CER-120",
+        "name": "Breakfast bowl — Iron",
+        "available": 4,
+        "reorderPoint": 8,
+        "shortage": 4,
+        "unit": "pieces",
+        "location": "A-05",
+        "incoming": 2
+      },
+      {
+        "sku": "PPR-010",
+        "name": "Gift wrap — Ochre",
+        "available": 18,
+        "reorderPoint": 8,
+        "shortage": 0,
+        "unit": "sheets",
+        "location": "D-02",
+        "incoming": 0
+      }
+    ],
+    "behavior": "Record a replenishment decision locally; this does not place an order or update a real warehouse. First save fails recoverably; retry succeeds. Retain selected item, entered quantity, search and shortage filter across return/error.",
+    "quantityMin": 1,
+    "quantityMax": 50
+  },
+  "commerce": {
+    "brand": "Kiln Notes",
+    "fictional": true,
+    "name": "Pouring cup",
+    "description": "A handleless pouring cup with a small spout.",
+    "price": 42,
+    "currency": "USD",
+    "capacity": "280 ml",
+    "dimensions": "9 cm wide × 8 cm tall",
+    "material": "Stoneware",
+    "care": "Hand-wash; do not use on a stovetop.",
+    "shipping": 6,
+    "delivery": "Flat USD 6 shipping in this fictional checkout; no delivery date is promised.",
+    "returns": "Unused items may be returned within 14 days; buyer pays return postage.",
+    "quantityMin": 1,
+    "quantityMax": 4,
+    "variants": [
+      { "name": "Sand", "stock": 4, "color": "#c7a77b" },
+      { "name": "Iron", "stock": 2, "color": "#61574e" },
+      { "name": "Ash", "stock": 0, "color": "#a5aaa2" }
+    ],
+    "asset": "assets/pouring-cup.svg",
+    "caption": "Original schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.",
+    "behavior": "Choose a glaze and whole quantity within 1–4 and available stock. Show item subtotal, shipping and total beside Add to simulated cart. First valid add fails recoverably; retry succeeds without losing choices. Success identifies glaze, quantity and total. No payment or real order."
+  },
+  "editorial": {
+    "brand": "Bench Notes",
+    "fictional": true,
+    "title": "Read a chair-joint inspection",
+    "subtitle": "A fictional field-note example about connecting an observation to its record.",
+    "disclaimer": "Illustrative records and diagrams, not repair instructions or a safety assessment.",
+    "sections": [
+      {
+        "id": "observe",
+        "title": "Observe the gap",
+        "text": "Note A records a visible line at the rear rail joint. The diagram marks the observed location; it does not show movement or establish a cause. Keep the location and the observation together so the next reader can distinguish what was seen from what was inferred.",
+        "artifact": "Note A · rear rail",
+        "asset": "assets/joint-observation.svg",
+        "caption": "Figure 1. Original schematic: the numbered line marks the rear rail location described in Note A. It is deliberately enlarged for reading and is not a measured gap.",
+        "note": "Recorded observation: visible line at rear rail. Cause: unknown."
+      },
+      {
+        "id": "compare",
+        "title": "Compare the record",
+        "text": "Note B shows the same location in a second drawing. The two drawings use matching labels, allowing the record to be compared without implying that an inspection or repair took place. A differently cropped picture would not by itself establish a change in condition.",
+        "artifact": "Note B · matching view",
+        "asset": "assets/joint-comparison.svg",
+        "caption": "Figure 2. Original schematic comparison with the same rear rail label. Both drawings are fictional artifacts; no before-and-after performance claim is made.",
+        "note": "Comparison limit: drawings share a label, not a measured inspection result."
+      },
+      {
+        "id": "record",
+        "title": "Record what remains unknown",
+        "text": "A useful note preserves the object location, the observed feature and its uncertainty. In this example the cause, dimensions and structural condition remain unknown. A reader can save this section as a reading place and return to its exact heading rather than treating completion of the article as approval of the object.",
+        "artifact": "Record · scope",
+        "asset": null,
+        "caption": null,
+        "note": "Object: example chair. Location: rear rail. Feature: visible line. Cause and structural condition: unknown."
+      }
+    ],
+    "behavior": "Navigate to each section with ordinary anchors and focus its heading. Save or replace a reading place for a section in local page memory, resume it, and clear it. Keep source note, artifact and caption associated with the section. No remote save, repair recommendation or fabricated outcome."
+  },
+  "collection": {
+    "brand": "Form Index",
+    "fictional": true,
+    "title": "Studies in paper and clay",
+    "description": "Four fictional catalog records with original schematic images. Dates describe the fixtures, not historical objects.",
+    "types": ["Print", "Object"],
+    "items": [
+      {
+        "id": "FI-01",
+        "name": "Fold study",
+        "type": "Print",
+        "year": 2024,
+        "material": "Two-color screenprint on paper",
+        "dimensions": "30 × 40 cm",
+        "description": "Two ochre planes meet along an offset fold line.",
+        "asset": "assets/fold-study.svg",
+        "caption": "Original geometric schematic for fictional record FI-01; not a reproduction of an existing artwork."
+      },
+      {
+        "id": "FI-02",
+        "name": "Ridge vessel",
+        "type": "Object",
+        "year": 2025,
+        "material": "Unglazed clay",
+        "dimensions": "18 × 12 × 12 cm",
+        "description": "A narrow vessel is described by three vertical ridges.",
+        "asset": "assets/ridge-vessel.svg",
+        "caption": "Original vessel schematic for fictional record FI-02; surface and scale are illustrative."
+      },
+      {
+        "id": "FI-03",
+        "name": "Grid after rain — Nguyễn Thị Minh Anh study",
+        "type": "Print",
+        "year": 2023,
+        "material": "Ink on paper",
+        "dimensions": "42 × 59.4 cm",
+        "description": "Interrupted blue lines form a loose rectangular grid.",
+        "asset": "assets/grid-study.svg",
+        "caption": "Original geometric schematic for fictional record FI-03; the name and maker reference are fictional."
+      },
+      {
+        "id": "FI-04",
+        "name": "Loop weight",
+        "type": "Object",
+        "year": 2024,
+        "material": "Glazed stoneware",
+        "dimensions": "8 × 8 × 4 cm",
+        "description": "An open clay loop rests on a flat base.",
+        "asset": "assets/loop-weight.svg",
+        "caption": "Original loop schematic for fictional record FI-04; not a photograph or an availability claim."
+      }
+    ],
+    "behavior": "Search titles/materials and filter by All/Print/Object. Show count and a clear reset for empty results. Open detail with full metadata/caption, then return retaining query, filter, result order and triggering-item focus. No purchase, favorites, real holdings or historical attribution."
+  }
+}

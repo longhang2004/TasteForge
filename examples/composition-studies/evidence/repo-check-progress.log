@@ -1,0 +1,43 @@
+
+> tasteforge-workspace@0.2.0-beta.1 check /mnt/c/Users/hi/src/personal_repos/TasteForge
+> pnpm build && pnpm typecheck && pnpm lint && pnpm format:check && vitest run
+
+
+> tasteforge-workspace@0.2.0-beta.1 build /mnt/c/Users/hi/src/personal_repos/TasteForge
+> pnpm -r build
+
+Scope: 3 of 4 workspace projects
+packages/knowledge build$ tsc -p tsconfig.json
+packages/knowledge build: Done
+packages/core build$ tsc -p tsconfig.json
+packages/core build: Done
+packages/cli build$ tsc -p tsconfig.json && node scripts/prepare.mjs
+packages/cli build: Done
+
+> tasteforge-workspace@0.2.0-beta.1 typecheck /mnt/c/Users/hi/src/personal_repos/TasteForge
+> pnpm -r typecheck && tsc -p tests/tsconfig.json
+
+Scope: 3 of 4 workspace projects
+packages/knowledge typecheck$ tsc -p tsconfig.json --noEmit
+packages/knowledge typecheck: Done
+packages/core typecheck$ tsc -p tsconfig.json --noEmit
+packages/core typecheck: Done
+packages/cli typecheck$ tsc -p tsconfig.json --noEmit
+packages/cli typecheck: Done
+
+> tasteforge-workspace@0.2.0-beta.1 lint /mnt/c/Users/hi/src/personal_repos/TasteForge
+> eslint . --max-warnings 0
+
+
+> tasteforge-workspace@0.2.0-beta.1 format:check /mnt/c/Users/hi/src/personal_repos/TasteForge
+> prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!
+
+ RUN  v3.2.7 /mnt/c/Users/hi/src/personal_repos/TasteForge
+
+ ✓ tests/references.test.ts (9 tests) 1286ms
+   ✓ attributed offline reference catalog > binds every entry to a pinned licensed input and verifies content and notices  315ms
+ ✓ tests/core.test.ts (16 tests) 1180ms
+   ✓ deterministic controlled exploration > low creativity concentrates on more relevant candidates across seeds  711ms

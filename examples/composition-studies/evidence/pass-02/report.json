@@ -1,0 +1,300 @@
+{
+  "startedAt": "2026-11-02T08:07:10.717Z",
+  "chromium": "156.0.8078.4",
+  "sources": {
+    "app.mjs": "5acd74dff1f4959c23fc8a8c337de3bf980250b0c502fd2a04b208585850edcf",
+    "brief-freeze.json": "5e02b8082403b5d2a124b04aaabb140c82501a29073f85b1ad792b302c836156",
+    "collection.css": "615db2a283d8b73aa95d891efa06d69a86c9ec15d5e63fce6e07a004740f4f83",
+    "collection.mjs": "40fe534d4d0efea5a495efdfa9d0a808d06719c8b63cf8acb80fbbbb8c9d3298",
+    "commerce.css": "aed87b3b985cd754d1f166abafdaefb3dee94cdce41a6939e1e08386e28d3487",
+    "commerce.mjs": "4d8e6b8a192690a4464dc31e88a70554ccc19505cf4168be196b99a07fb4cc4f",
+    "editorial.css": "9cf1819b7177b7ee0c7a76ca38a5c6d488ad50b399029cc6a381b266c4ba1e6a",
+    "editorial.mjs": "ebc1f10bc48578378e1971a2e2b4861c12ec4ea5ed83e93b30a3536e726823d9",
+    "fixtures.json": "50d5ddc6746918e5a7235b138ae0ba977018eb0b1c77274d2121dc5e940806f2",
+    "gallery.css": "7e78a0850de5ca25f06f1b4717a38b99989b3d55b626ad44e8210772f5950736",
+    "index.html": "6615e63160367d97c785336c21b047f81cf74aa746570ea7bf14f32dabb63fe4",
+    "operational.css": "042f659dbcb38c1178d632ea94ea2bbe7c51d3ee3762f568471e9160ff21ea93",
+    "operational.mjs": "66d11770727838cec8fe7e7670102ca45136b1510ed13587b2776ea0739ed433",
+    "shared.css": "5552bb78c8f05be4ca56deebd730d354c21945c0ec8ec386cbe8314627cc5366",
+    "study.html": "d66fdb091d2458f58357e7cf9de06d146ffd7d69ba95560eec4a43c05b4a2a55",
+    "assets/fold-study.svg": "2a553410188ab77ad347f83fe290e2bb63b99452d7e0a32a23d5b854bbabfbd0",
+    "assets/grid-study.svg": "3f55ca69e9ccbe9e464b15d98012b970cce7e7682ee71ab6a587f28b722a7943",
+    "assets/joint-comparison.svg": "1a0bd05b63ebe7739d5133c072be4b013817a394cc870f07d18a894792572c47",
+    "assets/joint-observation.svg": "c53271b3f378feb238eb9d4a526f66adfa38451dca64c51df895a6ea9f46a45d",
+    "assets/loop-weight.svg": "94b7ad8840e4887dc7f34c8b1b9ccf796f695c3227352696fd751601b0ad5ce0",
+    "assets/pouring-cup.svg": "1139015b08409b6d6fdaa1a78a9b69722b9049d3050ff868b41e554ee1b2ee00",
+    "assets/ridge-vessel.svg": "2c5f1cd38f2361b630b50c5c3c870cbe5592d50cd8720805ab22ecf5509e0c6f"
+  },
+  "traces": [
+    {
+      "id": "operational-conventional-320",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "operational-conventional-390",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "operational-conventional-1440",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "operational-adapted-320",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "operational-adapted-390",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "operational-adapted-1440",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "commerce-conventional-320",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "commerce-conventional-390",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "commerce-conventional-1440",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "commerce-adapted-320",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "commerce-adapted-390",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "commerce-adapted-1440",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "editorial-conventional-320",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "editorial-conventional-390",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "editorial-conventional-1440",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "editorial-adapted-320",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "editorial-adapted-390",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "editorial-adapted-1440",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "collection-conventional-320",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "collection-conventional-390",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "collection-conventional-1440",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "collection-adapted-320",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "collection-adapted-390",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    },
+    {
+      "id": "collection-adapted-1440",
+      "states": [],
+      "checks": [
+        "first keyboard stop is skip link"
+      ],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md\n    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)\n    at async capture (file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:65:15)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/examples/composition-studies/tools/check.mjs:280:11"
+    }
+  ],
+  "failures": [
+    "operational-conventional-320: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "operational-conventional-390: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "operational-conventional-1440: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "operational-adapted-320: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "operational-adapted-390: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "operational-adapted-1440: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "commerce-conventional-320: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "commerce-conventional-390: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "commerce-conventional-1440: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "commerce-adapted-320: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "commerce-adapted-390: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "commerce-adapted-1440: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "editorial-conventional-320: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "editorial-conventional-390: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "editorial-conventional-1440: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "editorial-adapted-320: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "editorial-adapted-390: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "editorial-adapted-1440: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "collection-conventional-320: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "collection-conventional-390: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "collection-conventional-1440: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "collection-adapted-320: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "collection-adapted-390: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md",
+    "collection-adapted-1440: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md"
+  ],
+  "scope": "Automated task assertions, axe and natural viewport evidence; no human tests or conformance claim.",
+  "finishedAt": "2026-11-02T08:07:47.278Z",
+  "checkCount": 24,
+  "stateCount": 0
+}
