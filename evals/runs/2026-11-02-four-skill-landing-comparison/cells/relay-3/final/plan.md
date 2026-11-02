@@ -1,0 +1,11 @@
+# Landing page plan before implementation
+
+1. Page outline: floating navigation; hero, CTA and static editor illustration; three benefits; three workflow steps and static email draft; separate two line tagline reveal; six FAQs; plan and demo form; supplied local privacy and terms.
+2. Hero: “Your Markdown notes. A release email draft.” Subheadline: “A drafting workspace for small open source teams. Paste your change notes, arrange the sections and prepare an email draft.” CTA: “Start a demo workspace”. Proof: “See the supplied Canal Docs example below. Static illustration, with fictional change records.”
+3. Benefits: Keep your Markdown as the starting point; Give every change a place using arranged sections; Choose a workspace plan for up to 3 editors with exact billing.
+4. How it works: Paste Markdown change notes; Arrange the sections; Prepare an email draft.
+5. FAQ: Works with Markdown? The supplied workflow starts by pasting Markdown. Git connection? No live integration implemented or promised. Email sending? No actual sending. Editors? Up to 3 in both plans. Trial? Fictional 14 day offer; local demo asks for no card and activates no trial. Cancellation/refund? No real policy supplied beyond demo.
+6. SEO / AEO: noindex this local fictional prototype. Title: Relay Notes — release drafts from Markdown. Meta description: Prepare release email drafts from Markdown notes. Compare workspace billing for up to 3 editors and try the local Relay Notes demo.
+7. Layout A, classic hero plus sections. The supplied static illustration explains the product. Calm light surfaces, a single Manrope typeface and restrained violet accent give the dense product artifact space. No unsupported social proof is substituted; the artifact provides evidence of the fictional workflow only.
+
+Overrides and scope: One creator, code first, supplied local media, no network/helpers/image generation/installs. No real editor/backend/account/payment/email. One bounded HTML landing page; custom 404 routing is outside this static slice. No analytics/cookies required. Existing supplied fixed prices override the skill's suggestion to invent irregular sample numbers. Fixture records retain their exact identifiers.

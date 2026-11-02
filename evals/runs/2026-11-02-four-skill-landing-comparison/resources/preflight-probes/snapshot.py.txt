@@ -1,0 +1,71 @@
+from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone
+import hashlib
+import json
+import subprocess
+import urllib.request
+
+repo = Path('/mnt/c/Users/hi/src/personal_repos/TasteForge')
+run = repo / 'evals/runs/2026-11-02-four-skill-landing-comparison'
+resources = run / 'resources'
+resources.mkdir(parents=True, exist_ok=True)
+assert not (run / 'resource-manifest.json').exists(), 'Do not overwrite frozen manifest'
+specs = [
+    ('tasteforge', 'longhang2004/TasteForge', '78aab5826b672f4a6a30773a5ae35dd4b0faf286', 'skills/tasteforge/'),
+    ('promax', 'nextlevelbuilder/ui-ux-pro-max-skill', '3a13158ff1f32156cbe144108de48eda2ecaed9a', '.claude/skills/ui-ux-pro-max/'),
+    ('elaya', 'elayadesign/ai-design-skills', '456d9e0d3e2d84c748bb143c6ca3d90c45e16213', 'skills/landing-page-design/'),
+    ('impeccable', 'pbakaus/impeccable', 'e89e3ada3e875a89ac2c5d33d11e65ebef6fe285', '.agents/skills/impeccable/'),
+]
+manifest = {'createdAt': datetime.now(timezone.utc).isoformat(), 'scope': 'Pinned source skill bundles, complete runtime data/references, excluding upstream tests and marketing/assets outside those bundles. No global host installation or discovery certification.', 'arms': {}}
+sha = lambda data: hashlib.sha256(data).hexdigest()
+def fetch(url):
+    request = urllib.request.Request(url, headers={'User-Agent': 'TasteForge-resource-preflight'})
+    return urllib.request.urlopen(request, timeout=35).read()
+for label, upstream, revision, prefix in specs:
+    destination = resources / label
+    destination.mkdir(exist_ok=True)
+    record = {'repository': f'https://github.com/{upstream}', 'revision': revision, 'sourcePrefix': prefix, 'entrypoint': f'resources/{label}/skill/SKILL.md', 'files': {}, 'excluded': []}
+    tasks = []
+    if label == 'tasteforge':
+        paths = subprocess.check_output(['git', 'ls-tree', '-r', '--name-only', revision, prefix], cwd=repo, text=True).splitlines()
+        for source in paths:
+            data = subprocess.check_output(['git', 'show', f'{revision}:{source}'], cwd=repo)
+            relative = 'skill/' + source[len(prefix):]
+            tasks.append((source, relative, data))
+        tasks.append(('LICENSE', 'LICENSE', subprocess.check_output(['git', 'show', f'{revision}:LICENSE'], cwd=repo)))
+    else:
+        tree = json.loads((repo / '.tmp/comparison-runtime' / (upstream.split('/')[0] + '-tree.json')).read_text())['tree']
+        selected = []
+        for item in tree:
+            source = item['path']
+            if item['type'] != 'blob' or not source.startswith(prefix):
+                continue
+            assert item['mode'] != '120000', f'Unresolved symlink: {source}'
+            relative = source[len(prefix):]
+            if relative.startswith('scripts/tests/') or relative.startswith('__pycache__/'):
+                record['excluded'].append(source)
+                continue
+            assert not relative.lower().endswith(('.exe', '.dll', '.dylib', '.so')), source
+            selected.append((source, 'skill/' + relative))
+        selected.append(('LICENSE', 'LICENSE'))
+        if label == 'impeccable':
+            selected.extend([('NOTICE.md', 'NOTICE.md'), ('ENGINE_VERSION', 'ENGINE_VERSION')])
+        def get_one(pair):
+            source, relative = pair
+            url = f'https://raw.githubusercontent.com/{upstream}/{revision}/{source}'
+            return source, relative, fetch(url)
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            tasks = list(pool.map(get_one, selected))
+    for source, relative, data in tasks:
+        target = destination / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        assert not target.exists(), f'Refuse overwrite: {target}'
+        target.write_bytes(data)
+        if source.endswith('/scripts/impeccable'):
+            target.chmod(0o755)
+        record['files'][relative] = {'sourcePath': source, 'url': f'https://github.com/{upstream}/blob/{revision}/{source}', 'sha256': sha(data), 'bytes': len(data), 'words': len(data.decode().split()) if relative.endswith('.md') else None}
+    manifest['arms'][label] = record
+    print(label, 'files', len(record['files']), 'bytes', sum(v['bytes'] for v in record['files'].values()), flush=True)
+(run / 'resource-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
+print('Resource source freeze complete', sha((run / 'resource-manifest.json').read_bytes()), flush=True)

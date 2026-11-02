@@ -1,0 +1,82 @@
+{
+  "status": "invalid-attempt-01-not-scored",
+  "invalidatedByRoot": "Startup invalid: first implementation authored before complete PRODUCT.md intake; subsequent workspace-amendment read exposed the condition lineup. Root ordered stop before any UI correction or quality review.",
+  "observedUTC": {
+    "start": "2026-11-02T14:24:10Z",
+    "startBasis": "clock.curr_time called at first available tool step before any input read",
+    "initialWSLInputRead": "2026-11-02T14:24:31Z",
+    "inputsReadyAcknowledged": "2026-11-02T14:28:53Z",
+    "productRead": "2026-11-02T14:28:58Z",
+    "firstRunnableSaved": "2026-11-02T14:28:39.9550108Z",
+    "firstRunnablePreserved": "2026-11-02T14:28:59.1050294Z",
+    "checksScriptSaved": "2026-11-02T14:29:51.1838768Z",
+    "checksReachedMissingAxe": "2026-11-02T14:30:04.0254695Z",
+    "stoppedAndHashed": "2026-11-02T14:31:10Z",
+    "setupIntervalSecondsToReadyAcknowledgement": 283,
+    "creationClockAmendment": "Root had amended workspace before first HTML save; creator had not yet received/read the ready-input message when HTML was authored. Original observations are retained; this attempt is invalid, not a fresh creation."
+  },
+  "workspace": {
+    "original": "/tmp/tasteforge-four-skill-fold-1",
+    "persistent": "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-1",
+    "firstSavedBridge": "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/cells/fold-1/creator-evidence/staging-index.html",
+    "discovery": "Only assigned cell, explicitly supplied common paths, PRODUCT candidate path and assigned skill references were inspected. No repository native root discovery was used."
+  },
+  "loadedPaths": [
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/operator.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/SKILL.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/references/pro-rules.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/references/quick-reference.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/common/fixtures.json",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/common/fonts.css",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/common/assets/field-fold-map.svg (first 600 bytes)",
+    "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-1/PRODUCT.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/workspace-amendment.json"
+  ],
+  "protocolDeviations": [
+    "The first WSL command was sandbox-denied; escalation succeeded.",
+    "Original /tmp project was absent. A newly created directory disappeared across WSL calls. Root replaced it with persistent outside-Git storage.",
+    "Implementation used supplied common fixture facts, operator and skill before PRODUCT.md became available. First HTML was saved 18.999 seconds before PRODUCT was read.",
+    "Reading root-supplied workspace-amendment.json unexpectedly exposed all cell/skill assignments. No other cell output, quality, probe log, or old UI was read.",
+    "Initial parent message guessed the first-save wall time as approximately 14:31; tool clock/stat corrected it to 14:28:39.955Z before any further work.",
+    "No quality interpretation or visual screenshot inspection occurred before root invalidated this attempt."
+  ],
+  "nativeCalls": [
+    {
+      "cwd": "/tmp/tasteforge-four-skill-fold-1",
+      "environment": "PYTHONDONTWRITEBYTECODE=1",
+      "command": "python3 /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/scripts/search.py \"printed map kit ecommerce editorial\" --design-system -p \"Field Fold\"",
+      "outcome": "Exit 0. Feature-Rich Showcase; Vibrant & Block-based; green/orange retail palette; Rubik/Nunito Sans. Retail product fit verified; fonts unavailable in common, so used supplied DM Sans. Did not implement unsupported social proof, external fonts, animated patterns or urgency. No persistence requested. Tool result chunk a8a89b retains returned search stream."
+    },
+    {
+      "cwd": "/tmp/tasteforge-four-skill-fold-1",
+      "environment": "PYTHONDONTWRITEBYTECODE=1",
+      "command": "python3 /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/scripts/search.py \"error summary validation\" --domain ux -n 3",
+      "outcome": "Exit 0. Three relevant matches: focusable linked error summary, announced errors, inline field errors. Implemented all three. Tool result chunk a8a89b retains returned search stream."
+    }
+  ],
+  "implementation": {
+    "author": "single assigned creator agent; no delegation",
+    "stack": "plain HTML with inline CSS/JS, required by operator; no framework/stack assumption or install",
+    "rationale": "Adapt the native retail feature-showcase and block palette to a tangible schematic kit: green paper-like field, orange artwork panel, large DM Sans headings, visible edition availability, real supplied contents and form with item/shipping/total before email.",
+    "tradeoff": "Bounded factual product story instead of unsupported native-template social proof; native recommended font pair replaced with a supplied local face. Motion limited to hover and anchor scrolling with reduced-motion override.",
+    "nativeWorkflowOverrides": "Controlled code-first one-creator supplied-media experiment; no image generation, no helper agent, no network or package installation. pro-rules checklist is native/mobile scoped; quick-reference web guidance read. No full workflow-compliance claim.",
+    "first": {"path": "versions/00.html", "sha256": "5bb763de7fcbee183b1e8ff7791c81af4933c6a561cb76f7307fd25160eef3ff", "bytes": 20005, "originalSaveUTC": "2026-11-02T14:28:39.9550108Z"},
+    "submittedForScoring": null,
+    "lastRetained": {"path": "index.html", "sha256": "5bb763de7fcbee183b1e8ff7791c81af4933c6a561cb76f7307fd25160eef3ff"},
+    "corrections": [],
+    "correctionPassCount": 0
+  },
+  "checks": {
+    "script": {"path": "check.cjs", "sha256": "157c269726c5ccd8d131590e738f8a01f97f6076c4f9effe9c4eeb72d84d4a26"},
+    "execution": "node check.cjs /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/cells/fold-1/creator-evidence/attempt-00 > .../attempt-00/stdout.log 2>&1",
+    "status": "Partial execution; no pass asserted. Chromium screenshots prove the script reached initial widths 320/390/1440 and failure/success captures. Script then threw loading missing axe-core/axe.min.js before report.json was written; accumulated functional observations remained in process memory and were lost. Browser/node process stopped after root invalidation. No rerun, UI edit, or visual QA.",
+    "rawFailure": "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/cells/fold-1/creator-evidence/attempt-00/stdout.log",
+    "screenshots": ["attempt-00/initial-320.png", "attempt-00/initial-390.png", "attempt-00/initial-1440.png", "attempt-00/failure-390.png", "attempt-00/success-390.png"],
+    "unassessed": ["Any human usability or acceptance", "Screenshot visual quality", "Persisted responsive-overflow results", "Persisted functional assertions", "Keyboard traversal", "Axe accessibility result", "Contrast", "Landscape orientation", "Dynamic type"],
+    "rawSetupToolChunks": ["9c5591 (WSL E_ACCESSDENIED)", "91a500 (missing original project and PRODUCT/common)", "caaceb (project absent)", "3db685 (project absent again)", "87cd88 (project absent again)"],
+    "rawSetupFile": null,
+    "rawSetupNote": "Setup failure streams exist in tool conversation only; no local raw byte stream was captured, and none has been fabricated."
+  },
+  "modelUsage": {"provider": null, "model": null, "inputTokens": null, "outputTokens": null, "thinkingTokens": null, "cacheTokens": null, "billing": null, "toolCount": null},
+  "modelUsageBasis": "Not exposed to this creator as measured usage metadata. No estimates derived from words."
+}

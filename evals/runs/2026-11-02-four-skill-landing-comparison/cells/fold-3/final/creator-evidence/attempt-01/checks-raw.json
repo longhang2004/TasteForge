@@ -1,0 +1,419 @@
+{
+  "startedUTC": "2026-11-02T16:28:58.757Z",
+  "checks": [
+    {
+      "name": "no horizontal overflow at 1440",
+      "pass": true
+    },
+    {
+      "name": "CTA focuses edition at 1440",
+      "pass": true,
+      "detail": {
+        "scrollY": 1078,
+        "focus": "edition",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "scrollWidth": 1440,
+        "feedback": null
+      }
+    },
+    {
+      "name": "required email feedback 1440",
+      "pass": true,
+      "detail": {
+        "scrollY": 1078,
+        "focus": "feedback",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "scrollWidth": 1440,
+        "feedback": "Enter a valid email address, such as you@example.com. Your edition and quantity have been kept; no data has been sent.\n\nRetry reservation"
+      }
+    },
+    {
+      "name": "no horizontal overflow at 390",
+      "pass": true
+    },
+    {
+      "name": "CTA focuses edition at 390",
+      "pass": true,
+      "detail": {
+        "scrollY": 2655,
+        "focus": "edition",
+        "viewport": {
+          "width": 390,
+          "height": 900
+        },
+        "scrollWidth": 390,
+        "feedback": null
+      }
+    },
+    {
+      "name": "required email feedback 390",
+      "pass": true,
+      "detail": {
+        "scrollY": 2699,
+        "focus": "feedback",
+        "viewport": {
+          "width": 390,
+          "height": 900
+        },
+        "scrollWidth": 390,
+        "feedback": "Enter a valid email address, such as you@example.com. Your edition and quantity have been kept; no data has been sent.\n\nRetry reservation"
+      }
+    },
+    {
+      "name": "no horizontal overflow at 320",
+      "pass": true
+    },
+    {
+      "name": "CTA focuses edition at 320",
+      "pass": true,
+      "detail": {
+        "scrollY": 2702,
+        "focus": "edition",
+        "viewport": {
+          "width": 320,
+          "height": 900
+        },
+        "scrollWidth": 320,
+        "feedback": null
+      }
+    },
+    {
+      "name": "required email feedback 320",
+      "pass": true,
+      "detail": {
+        "scrollY": 2809,
+        "focus": "feedback",
+        "viewport": {
+          "width": 320,
+          "height": 900
+        },
+        "scrollWidth": 320,
+        "feedback": "Enter a valid email address, such as you@example.com. Your edition and quantity have been kept; no data has been sent.\n\nRetry reservation"
+      }
+    },
+    {
+      "name": "Ridge quantity 3 invalid",
+      "pass": true,
+      "detail": {
+        "scrollY": 2809,
+        "focus": "feedback",
+        "viewport": {
+          "width": 320,
+          "height": 900
+        },
+        "scrollWidth": 320,
+        "feedback": "Choose a whole quantity from 1 to 2 for Ridge. Ridge has 2 kits available. Your selection has been kept.\n\nRetry reservation"
+      }
+    },
+    {
+      "name": "Night option disabled",
+      "pass": true
+    },
+    {
+      "name": "Harbor 2 subtotal",
+      "pass": true
+    },
+    {
+      "name": "Harbor 2 total",
+      "pass": true
+    },
+    {
+      "name": "first valid failure",
+      "pass": true,
+      "detail": {
+        "scrollY": 2832,
+        "focus": "feedback",
+        "viewport": {
+          "width": 320,
+          "height": 900
+        },
+        "scrollWidth": 320,
+        "feedback": "The simulated reservation could not be completed. Your Harbor selection, quantity 2 and email are still here. No order, payment or email was sent. Please retry.\n\nRetry reservation"
+      }
+    },
+    {
+      "name": "failure retains values",
+      "pass": true
+    },
+    {
+      "name": "retry exact success",
+      "pass": true,
+      "detail": {
+        "scrollY": 2854,
+        "focus": "feedback",
+        "viewport": {
+          "width": 320,
+          "height": 900
+        },
+        "scrollWidth": 320,
+        "feedback": "Demo reservation successful: Harbor × 2, total USD 111 (items USD 106 + shipping USD 5). No real reservation or order was created; no payment or email was sent. You can edit your selection above.\n\nRetry reservation"
+      }
+    },
+    {
+      "name": "success no overflow",
+      "pass": true,
+      "detail": {
+        "scrollY": 2854,
+        "focus": "feedback",
+        "viewport": {
+          "width": 320,
+          "height": 900
+        },
+        "scrollWidth": 320,
+        "feedback": "Demo reservation successful: Harbor × 2, total USD 111 (items USD 106 + shipping USD 5). No real reservation or order was created; no payment or email was sent. You can edit your selection above.\n\nRetry reservation"
+      }
+    },
+    {
+      "name": "edit clears stale feedback",
+      "pass": true
+    },
+    {
+      "name": "edit updates total",
+      "pass": true
+    },
+    {
+      "name": "invalid email blocked",
+      "pass": true
+    },
+    {
+      "name": "keyboard skip link",
+      "pass": true
+    },
+    {
+      "name": "axe zero violations",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no runtime errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "local requests only",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:36859/index.html",
+        "http://127.0.0.1:36859/common/fonts.css",
+        "http://127.0.0.1:36859/common/assets/field-fold-map.svg",
+        "http://127.0.0.1:36859/common/assets/field-fold-contents.svg",
+        "http://127.0.0.1:36859/common/fonts/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+        "http://127.0.0.1:36859/common/fonts/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf",
+        "http://127.0.0.1:36859/index.html",
+        "http://127.0.0.1:36859/common/fonts.css",
+        "http://127.0.0.1:36859/common/assets/field-fold-map.svg",
+        "http://127.0.0.1:36859/common/assets/field-fold-contents.svg",
+        "http://127.0.0.1:36859/common/fonts/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+        "http://127.0.0.1:36859/common/fonts/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf",
+        "http://127.0.0.1:36859/index.html",
+        "http://127.0.0.1:36859/common/fonts.css",
+        "http://127.0.0.1:36859/common/assets/field-fold-map.svg",
+        "http://127.0.0.1:36859/common/assets/field-fold-contents.svg",
+        "http://127.0.0.1:36859/common/fonts/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+        "http://127.0.0.1:36859/common/fonts/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf",
+        "http://127.0.0.1:36859/index.html",
+        "http://127.0.0.1:36859/common/fonts.css",
+        "http://127.0.0.1:36859/common/assets/field-fold-map.svg",
+        "http://127.0.0.1:36859/common/assets/field-fold-contents.svg",
+        "http://127.0.0.1:36859/common/fonts/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+        "http://127.0.0.1:36859/common/fonts/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf"
+      ]
+    }
+  ],
+  "snapshots": [
+    {
+      "name": "initial-1440",
+      "fullPage": true,
+      "scrollY": 0,
+      "focus": "BODY",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "feedback": null
+    },
+    {
+      "name": "cta-natural-1440",
+      "fullPage": false,
+      "scrollY": 1078,
+      "focus": "edition",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "feedback": null
+    },
+    {
+      "name": "required-email-1440",
+      "fullPage": false,
+      "scrollY": 1078,
+      "focus": "feedback",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "feedback": "Enter a valid email address, such as you@example.com. Your edition and quantity have been kept; no data has been sent.\n\nRetry reservation"
+    },
+    {
+      "name": "initial-390",
+      "fullPage": true,
+      "scrollY": 0,
+      "focus": "BODY",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "scrollWidth": 390,
+      "feedback": null
+    },
+    {
+      "name": "cta-natural-390",
+      "fullPage": false,
+      "scrollY": 2655,
+      "focus": "edition",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "scrollWidth": 390,
+      "feedback": null
+    },
+    {
+      "name": "required-email-390",
+      "fullPage": false,
+      "scrollY": 2699,
+      "focus": "feedback",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "scrollWidth": 390,
+      "feedback": "Enter a valid email address, such as you@example.com. Your edition and quantity have been kept; no data has been sent.\n\nRetry reservation"
+    },
+    {
+      "name": "initial-320",
+      "fullPage": true,
+      "scrollY": 0,
+      "focus": "BODY",
+      "viewport": {
+        "width": 320,
+        "height": 900
+      },
+      "scrollWidth": 320,
+      "feedback": null
+    },
+    {
+      "name": "cta-natural-320",
+      "fullPage": false,
+      "scrollY": 2702,
+      "focus": "edition",
+      "viewport": {
+        "width": 320,
+        "height": 900
+      },
+      "scrollWidth": 320,
+      "feedback": null
+    },
+    {
+      "name": "required-email-320",
+      "fullPage": false,
+      "scrollY": 2809,
+      "focus": "feedback",
+      "viewport": {
+        "width": 320,
+        "height": 900
+      },
+      "scrollWidth": 320,
+      "feedback": "Enter a valid email address, such as you@example.com. Your edition and quantity have been kept; no data has been sent.\n\nRetry reservation"
+    },
+    {
+      "name": "ridge-stock-invalid-320",
+      "fullPage": false,
+      "scrollY": 2809,
+      "focus": "feedback",
+      "viewport": {
+        "width": 320,
+        "height": 900
+      },
+      "scrollWidth": 320,
+      "feedback": "Choose a whole quantity from 1 to 2 for Ridge. Ridge has 2 kits available. Your selection has been kept.\n\nRetry reservation"
+    },
+    {
+      "name": "failure-natural-320",
+      "fullPage": false,
+      "scrollY": 2832,
+      "focus": "feedback",
+      "viewport": {
+        "width": 320,
+        "height": 900
+      },
+      "scrollWidth": 320,
+      "feedback": "The simulated reservation could not be completed. Your Harbor selection, quantity 2 and email are still here. No order, payment or email was sent. Please retry.\n\nRetry reservation"
+    },
+    {
+      "name": "success-natural-320",
+      "fullPage": false,
+      "scrollY": 2854,
+      "focus": "feedback",
+      "viewport": {
+        "width": 320,
+        "height": 900
+      },
+      "scrollWidth": 320,
+      "feedback": "Demo reservation successful: Harbor × 2, total USD 111 (items USD 106 + shipping USD 5). No real reservation or order was created; no payment or email was sent. You can edit your selection above.\n\nRetry reservation"
+    },
+    {
+      "name": "invalid-email-320",
+      "fullPage": false,
+      "scrollY": 2854,
+      "focus": "feedback",
+      "viewport": {
+        "width": 320,
+        "height": 900
+      },
+      "scrollWidth": 320,
+      "feedback": "Enter a valid email address, such as you@example.com. Your edition and quantity have been kept; no data has been sent.\n\nRetry reservation"
+    }
+  ],
+  "consoleErrors": [],
+  "requests": [
+    "http://127.0.0.1:36859/index.html",
+    "http://127.0.0.1:36859/common/fonts.css",
+    "http://127.0.0.1:36859/common/assets/field-fold-map.svg",
+    "http://127.0.0.1:36859/common/assets/field-fold-contents.svg",
+    "http://127.0.0.1:36859/common/fonts/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+    "http://127.0.0.1:36859/common/fonts/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf",
+    "http://127.0.0.1:36859/index.html",
+    "http://127.0.0.1:36859/common/fonts.css",
+    "http://127.0.0.1:36859/common/assets/field-fold-map.svg",
+    "http://127.0.0.1:36859/common/assets/field-fold-contents.svg",
+    "http://127.0.0.1:36859/common/fonts/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+    "http://127.0.0.1:36859/common/fonts/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf",
+    "http://127.0.0.1:36859/index.html",
+    "http://127.0.0.1:36859/common/fonts.css",
+    "http://127.0.0.1:36859/common/assets/field-fold-map.svg",
+    "http://127.0.0.1:36859/common/assets/field-fold-contents.svg",
+    "http://127.0.0.1:36859/common/fonts/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+    "http://127.0.0.1:36859/common/fonts/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf",
+    "http://127.0.0.1:36859/index.html",
+    "http://127.0.0.1:36859/common/fonts.css",
+    "http://127.0.0.1:36859/common/assets/field-fold-map.svg",
+    "http://127.0.0.1:36859/common/assets/field-fold-contents.svg",
+    "http://127.0.0.1:36859/common/fonts/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+    "http://127.0.0.1:36859/common/fonts/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf"
+  ],
+  "violations": [],
+  "keyboardFirstFocus": "Skip to content",
+  "keyboardNextFocus": "<a class=\"button\" href=\"#reservation\">Reserve a kit <span aria-hidden=\"true\">↗</span></a>",
+  "completed": true,
+  "endedUTC": "2026-11-02T16:29:04.195Z"
+}

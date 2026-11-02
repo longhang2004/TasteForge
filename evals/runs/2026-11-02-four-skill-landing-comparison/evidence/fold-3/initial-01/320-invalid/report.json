@@ -1,0 +1,94 @@
+{
+  "label": "320-invalid",
+  "capturedAtUtc": "2026-11-02T16:33:14.152Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 320,
+    "height": 740
+  },
+  "scroll": {
+    "x": 0,
+    "y": 1825
+  },
+  "document": {
+    "width": 320,
+    "height": 3327
+  },
+  "activeElement": {
+    "tag": "DIV",
+    "id": "feedback",
+    "testId": null,
+    "rect": {
+      "x": 41,
+      "y": 571.46875,
+      "width": 238,
+      "height": 123.5625,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "#feedback",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 41,
+          "y": 571.46875,
+          "width": 238,
+          "height": 123.5625,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "#reserve",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 41,
+          "y": 493.875,
+          "width": 238,
+          "height": 57.59375,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "#start",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "#retry",
+      "matches": 1,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 1825
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 1825
+  }
+}

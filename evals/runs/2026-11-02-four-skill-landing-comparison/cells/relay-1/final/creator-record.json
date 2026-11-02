@@ -1,0 +1,269 @@
+{
+  "cell": "relay-1",
+  "artifact": "index.html",
+  "projectPathLinux": "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/relay-1-r2",
+  "projectPathWindows": "C:\\Users\\hi\\.codex\\visualizations\\2026\\11\\02\\01a19b3e-944d-71f3-aad3-5bb52e595e71\\tasteforge-four-skill-projects\\relay-1-r2",
+  "utcStart": "2026-11-02T14:46:00Z",
+  "startBasis": "First available tool call clock.curr_time; immediately followed by attempted complete input load. Initial WSL access was denied, then successfully escalated.",
+  "utcEnd": "2026-11-02T16:23:29.346970Z",
+  "availability": {
+    "resumeUtc": "2026-11-02T16:20:29Z",
+    "externalQuotaInterruption": {
+      "lastKnownActiveMutationUtc": "2026-11-02T14:51:54Z",
+      "resumeUtc": "2026-11-02T16:20:29Z",
+      "exactOnsetUtc": null,
+      "basis": "Parent reported provider quota interruption. Last creator mutation time is a boundary proxy, not a measured quota onset. Browser subprocess completed during the unavailable interval. No artistic restart or reroll on resume."
+    },
+    "activeDurationSeconds": null,
+    "durationReason": "Exact quota onset unavailable; wall elapsed includes long external provider outage and is not attributed to active creation."
+  },
+  "assignedSkill": "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/SKILL.md",
+  "loadedPaths": [
+    "PRODUCT.md",
+    "common/fixtures.json (relay-notes factual contract; full JSON emitted)",
+    "common/fonts.css",
+    "common/assets/LICENSE",
+    "common/assets/relay-notes-editor.svg",
+    "common/assets/relay-notes-draft.svg",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/operator.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/SKILL.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/reference/new-work.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/reference/craft-floor.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/reference/degraded/finish-reviewer.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/reference/degraded/documenter.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/reference/document.md"
+  ],
+  "nativeRuntime": {
+    "binary": "/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/comparison-runtime/bin/0.1.18/impeccable-linux-x64",
+    "home": "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/relay-1-r2/native-home",
+    "skillDir": "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill",
+    "environmentEveryCall": {
+      "IMPECCABLE_API_TIMEOUT": "0",
+      "IMPECCABLE_NO_TELEMETRY": "1",
+      "DO_NOT_TRACK": "1",
+      "IMPECCABLE_API_URL": "http://127.0.0.1:9"
+    },
+    "calls": [
+      {
+        "command": "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/scripts/impeccable context --target index.html",
+        "log": "native-logs/context.txt",
+        "outcome": "Resolved isolated project and PRODUCT.md; target absent; manual detector required. PRODUCT schema legacy warning reported; no repair made.",
+        "nativeExitCode": null
+      },
+      {
+        "command": "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/scripts/impeccable concept-seed --scope direction --mode persuade",
+        "log": "native-logs/concept-seed.txt",
+        "outcome": "Degraded offline roll; assigned index 7; seed:ec9d0b34b8f6ca1a; no challengers or quality-bar boards. No network-enabled retry because explicit controlled offline restriction.",
+        "nativeExitCode": null
+      },
+      {
+        "command": "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/scripts/impeccable detect --json index.html",
+        "log": "native-logs/detect.txt",
+        "outcome": "Ran once after first implementation. Three warnings: cramped-padding FAQ; overused Fraunces; cream palette. Visual/source review finds 47px/34px FAQ top padding. Familiarity cautions retained.",
+        "nativeExitCode": null
+      }
+    ],
+    "exitCodeNote": "Per-command native exit codes were not separately persisted; raw output is retained. No fake helper or API success is claimed."
+  },
+  "workflowLimits": [
+    "Controlled code-first single-creator supplied-media experiment overrides image comps and separate finisher/documenter.",
+    "No helper agents, image generation, installations, network assets or global configuration edits.",
+    "As a briefed subagent, inferred visual direction without attended decision-page interaction.",
+    "Grounded candidate list was recorded after the native roll rather than frozen before it; assignment 7 still honored.",
+    "Creator self-review and documentation performed inline; no independent review or human acceptance.",
+    "Native PRODUCT schema drift left intact, with init as owner of any future repair."
+  ],
+  "versions": [
+    {
+      "version": "00",
+      "path": "versions/00.html",
+      "utc": "2026-11-02T14:49:57Z",
+      "sha256": "309516df3ccd8338465d8becbde544f1335487ce50375fcc0730c12482e6152f",
+      "author": "creator",
+      "finding": "First runnable HTML preserved before detector or browser checks."
+    },
+    {
+      "version": "01",
+      "path": "versions/01.html",
+      "utc": "2026-11-02T14:51:54Z",
+      "sha256": "3718cbcd52430bca05dba54ad986cacba98c71c172643e5bd3382a8e06d7809a",
+      "author": "creator",
+      "finding": "Single focused correction after initial render: mobile heading occupied excessive space before the form action; small static illustrations needed full-size access. Compact mobile title and add local source links. No further artifact correction."
+    }
+  ],
+  "submittedSha256": "3718cbcd52430bca05dba54ad986cacba98c71c172643e5bd3382a8e06d7809a",
+  "submittedMatchesVersion": "01",
+  "rationale": "A flat correspondence-sheet system puts the actual demo decision near the opening, follows notes through two truthful static examples, and keeps billing/integration objections explicit.",
+  "tradeoffs": [
+    "Editorial Fraunces and warm paper are familiar ingredients; no uniqueness claim.",
+    "Mobile images are overview-sized; readable source opens locally in a new tab.",
+    "The mobile action lies near the first viewport lower edge and full conditions require scrolling.",
+    "No user-tested usability, independent finish verdict or catalog-board comparison available."
+  ],
+  "checks": [
+    {
+      "attempt": 0,
+      "command": "node check.cjs evidence/attempt-00",
+      "rawReport": "evidence/attempt-00/report.json",
+      "stdout": "evidence/attempt-00/check.stdout",
+      "stderr": "evidence/attempt-00/check.stderr",
+      "outcome": {
+        "views": [
+          {
+            "width": 320,
+            "documentWidth": 320,
+            "violations": []
+          },
+          {
+            "width": 390,
+            "documentWidth": 390,
+            "violations": []
+          },
+          {
+            "width": 1440,
+            "documentWidth": 1440,
+            "violations": []
+          }
+        ],
+        "browserErrors": [],
+        "externalRequests": [],
+        "faqKeyboardOpened": true
+      },
+      "scope": "Widths 320,390,1440; document overflow; axe; empty/invalid fields; retained first valid failure; Annual retry exact amount/period; edit clears stale success; long Monthly success; keyboard order and native FAQ keyboard toggle; reduced-motion media enabled."
+    },
+    {
+      "attempt": 1,
+      "command": "node check.cjs evidence/attempt-01",
+      "rawReport": "evidence/attempt-01/report.json",
+      "stdout": "evidence/attempt-01/check.stdout",
+      "stderr": "evidence/attempt-01/check.stderr",
+      "outcome": {
+        "views": [
+          {
+            "width": 320,
+            "documentWidth": 320,
+            "violations": []
+          },
+          {
+            "width": 390,
+            "documentWidth": 390,
+            "violations": []
+          },
+          {
+            "width": 1440,
+            "documentWidth": 1440,
+            "violations": []
+          }
+        ],
+        "browserErrors": [],
+        "externalRequests": [],
+        "faqKeyboardOpened": true
+      },
+      "scope": "Widths 320,390,1440; document overflow; axe; empty/invalid fields; retained first valid failure; Annual retry exact amount/period; edit clears stale success; long Monthly success; keyboard order and native FAQ keyboard toggle; reduced-motion media enabled."
+    },
+    {
+      "command": "node postaction.cjs",
+      "rawReport": "evidence/attempt-01/postaction/report.json",
+      "stdout": "evidence/attempt-01/postaction.stdout",
+      "stderr": "evidence/attempt-01/postaction.stderr",
+      "scope": "Supplement inside final inspection: actual 390x844 failure and success viewport screenshots without resetting scroll, focus and bounds; full-size editor link opens actual local SVG.",
+      "outcome": {
+        "utc": "2026-11-02T16:22:22.858Z",
+        "failure": {
+          "focus": "feedback",
+          "scrollY": 674,
+          "feedback": {
+            "x": 21,
+            "y": 317.625,
+            "width": 348,
+            "height": 253.375,
+            "top": 317.625,
+            "right": 369,
+            "bottom": 571,
+            "left": 21
+          }
+        },
+        "success": {
+          "focus": "feedback",
+          "scrollY": 674,
+          "feedback": {
+            "x": 21,
+            "y": 317.625,
+            "width": 348,
+            "height": 265.171875,
+            "top": 317.625,
+            "right": 369,
+            "bottom": 582.796875,
+            "left": 21
+          }
+        },
+        "illustrationPopup": {
+          "url": "http://127.0.0.1:8337/common/assets/relay-notes-editor.svg",
+          "svgCount": 1
+        },
+        "notes": "Viewport screenshots captured directly after actions, without scroll reset. Adds evidence for unresolved actual viewport behavior; no artifact edits."
+      }
+    }
+  ],
+  "rawFailures": [
+    {
+      "operation": "First sandboxed wsl.exe launcher",
+      "outcome": "Access denied Wsl/E_ACCESSDENIED",
+      "evidence": "Original tool response in conversation; subsequently authorized escalation succeeded."
+    },
+    {
+      "operation": "Native concept service",
+      "outcome": "Explicit offline API endpoint unavailable; documented degraded local roll",
+      "evidence": "native-logs/concept-seed.txt"
+    },
+    {
+      "operation": "First valid form submission",
+      "outcome": "Required simulated recoverable failure, retained values",
+      "evidence": "evidence/attempt-01/report.json"
+    }
+  ],
+  "visualInspection": {
+    "firstRoundOpened": [
+      "initial-1440.png",
+      "initial-390.png",
+      "initial-320.png",
+      "failure-390.png",
+      "success-390.png",
+      "long-monthly-320.png"
+    ],
+    "finalRoundOpened": [
+      "initial-1440.png",
+      "initial-390.png",
+      "initial-320.png",
+      "failure-320.png",
+      "success-1440.png",
+      "long-monthly-390.png"
+    ],
+    "scope": "Creator sampled renders; no independent reviewer. Remaining raw captures retained. Viewport supplement separately records actual post-action state."
+  },
+  "documentation": [
+    "DESIGN.md",
+    ".impeccable/design.json",
+    "surface-brief.md",
+    "self-finish.md"
+  ],
+  "unassessed": [
+    "Human usability and preference",
+    "Independent native finish review",
+    "Native concept catalog quality-bar boards",
+    "Screen reader live-announcement behavior",
+    "Firefox/Safari/real-device behavior",
+    "Real editor, Git integration, account, payment, email or backend behavior (outside supplied slice)"
+  ],
+  "metrics": {
+    "provider": null,
+    "model": null,
+    "inputTokens": null,
+    "outputTokens": null,
+    "thinkingTokens": null,
+    "cacheTokens": null,
+    "billingCost": null,
+    "toolCount": null
+  },
+  "metricsBasis": "Not exposed as measured task telemetry; no estimates from words or tool transcript."
+}

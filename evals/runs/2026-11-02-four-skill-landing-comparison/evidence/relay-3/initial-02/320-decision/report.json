@@ -1,0 +1,85 @@
+{
+  "label": "320-decision",
+  "capturedAtUtc": "2026-11-02T16:42:38.388Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 320,
+    "height": 740
+  },
+  "scroll": {
+    "x": 0,
+    "y": 5142
+  },
+  "document": {
+    "width": 320,
+    "height": 6516
+  },
+  "activeElement": {
+    "tag": "INPUT",
+    "id": "email",
+    "testId": null,
+    "rect": {
+      "x": 41,
+      "y": 82.515625,
+      "width": 238,
+      "height": 50,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "#feedback",
+      "matches": 1,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "#reserve",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "#start",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 41,
+          "y": 546.515625,
+          "width": 238,
+          "height": 42,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "#retry",
+      "matches": 1,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 5142
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 5142
+  }
+}

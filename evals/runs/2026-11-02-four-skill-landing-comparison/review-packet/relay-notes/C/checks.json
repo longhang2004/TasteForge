@@ -1,0 +1,723 @@
+{
+  "scope": "Matched scripted task/width/access and natural viewport evidence; no human tests",
+  "checks": 27,
+  "states": 16,
+  "failures": [],
+  "traces": [
+    {
+      "width": 320,
+      "reduced": false,
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocks commitment",
+          "pass": true
+        },
+        {
+          "name": "annual amount120/year and conditions present",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains workspace email billing",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact plan and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "billing edit updates price and clears visible stale annual success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 6515.515625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 5450
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 376.515625,
+              "width": 238,
+              "height": 82,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "decision",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 5142
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 82.515625,
+              "width": 238,
+              "height": 50,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 5337
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 489.515625,
+              "width": 238,
+              "height": 250,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 5696
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 130.515625,
+              "width": 238,
+              "height": 322,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocks commitment",
+          "pass": true
+        },
+        {
+          "name": "annual amount120/year and conditions present",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains workspace email billing",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact plan and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "billing edit updates price and clears visible stale annual success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 5800.234375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 4421
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 730.234375,
+              "width": 308,
+              "height": 82,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "decision",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 4421
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 216.234375,
+              "width": 308,
+              "height": 50,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 4485
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 666.234375,
+              "width": 308,
+              "height": 178,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 4896
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 255.234375,
+              "width": 308,
+              "height": 226,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "reduced": false,
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocks commitment",
+          "pass": true
+        },
+        {
+          "name": "annual amount120/year and conditions present",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains workspace email billing",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact plan and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "billing edit updates price and clears visible stale annual success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 4498.75,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3203
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 785,
+              "y": 896.75,
+              "width": 478,
+              "height": 58,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "decision",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3203
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 785,
+              "y": 430.75,
+              "width": 478,
+              "height": 50,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3230
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 785,
+              "y": 869.75,
+              "width": 478,
+              "height": 130,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3677
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 785,
+              "y": 422.75,
+              "width": 478,
+              "height": 154,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "checks": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 5800.234375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#hero-title"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

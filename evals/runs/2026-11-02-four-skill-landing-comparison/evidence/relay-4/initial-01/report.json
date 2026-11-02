@@ -1,0 +1,778 @@
+{
+  "cell": "relay-4",
+  "stage": "initial",
+  "pass": "initial-01",
+  "startedAt": "2026-11-02T16:44:00.422Z",
+  "sourceSha256": "97b2f028e8ce30a466ea6b70bc36263da674733ae533de9f84011729d708ba29",
+  "harnessSha256": "3f54144d8babdcc780745acb0d210c52ab61f4d862bae0112149433c9973c56e",
+  "traces": [
+    {
+      "id": "320",
+      "width": 320,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/relay-4/initial-01/320-entry/viewport.png",
+          "report": "evidence/relay-4/initial-01/320-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 5569.3125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "viewport": "evidence/relay-4/initial-01/320-invalid/viewport.png",
+          "report": "evidence/relay-4/initial-01/320-invalid/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3438
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 36,
+              "y": 314.671875,
+              "width": 248,
+              "height": 190.34375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "decision",
+          "viewport": "evidence/relay-4/initial-01/320-decision/viewport.png",
+          "report": "evidence/relay-4/initial-01/320-decision/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3438
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 36,
+              "y": 443.453125,
+              "width": 248,
+              "height": 50,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "viewport": "evidence/relay-4/initial-01/320-failure/viewport.png",
+          "report": "evidence/relay-4/initial-01/320-failure/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3494
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 36,
+              "y": 258.671875,
+              "width": 248,
+              "height": 247.515625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "viewport": "evidence/relay-4/initial-01/320-success/viewport.png",
+          "report": "evidence/relay-4/initial-01/320-success/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3517
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 36,
+              "y": 235.671875,
+              "width": 248,
+              "height": 292.296875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocks commitment",
+          "pass": true
+        },
+        {
+          "name": "annual amount120/year and conditions present",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains workspace email billing",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact plan and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "billing edit updates price and clears visible stale annual success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": [],
+      "journey": "primary CTA link"
+    },
+    {
+      "id": "390",
+      "width": 390,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/relay-4/initial-01/390-entry/viewport.png",
+          "report": "evidence/relay-4/initial-01/390-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 5430.65625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "viewport": "evidence/relay-4/initial-01/390-invalid/viewport.png",
+          "report": "evidence/relay-4/initial-01/390-invalid/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3328
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 44,
+              "y": 377.46875,
+              "width": 302,
+              "height": 167.953125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "decision",
+          "viewport": "evidence/relay-4/initial-01/390-decision/viewport.png",
+          "report": "evidence/relay-4/initial-01/390-decision/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3328
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 44,
+              "y": 506.25,
+              "width": 302,
+              "height": 50,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "viewport": "evidence/relay-4/initial-01/390-failure/viewport.png",
+          "report": "evidence/relay-4/initial-01/390-failure/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3373
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 44,
+              "y": 332.46875,
+              "width": 302,
+              "height": 202.734375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "viewport": "evidence/relay-4/initial-01/390-success/viewport.png",
+          "report": "evidence/relay-4/initial-01/390-success/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 3395
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 44,
+              "y": 310.46875,
+              "width": 302,
+              "height": 247.515625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocks commitment",
+          "pass": true
+        },
+        {
+          "name": "annual amount120/year and conditions present",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains workspace email billing",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact plan and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "billing edit updates price and clears visible stale annual success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": [],
+      "journey": "primary CTA link"
+    },
+    {
+      "id": "1440",
+      "width": 1440,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/relay-4/initial-01/1440-entry/viewport.png",
+          "report": "evidence/relay-4/initial-01/1440-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 3716.53125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "viewport": "evidence/relay-4/initial-01/1440-invalid/viewport.png",
+          "report": "evidence/relay-4/initial-01/1440-invalid/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1884
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 778.71875,
+              "y": 457.984375,
+              "width": 529.28125,
+              "height": 123.171875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "decision",
+          "viewport": "evidence/relay-4/initial-01/1440-decision/viewport.png",
+          "report": "evidence/relay-4/initial-01/1440-decision/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1884
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 778.71875,
+              "y": 586.765625,
+              "width": 529.28125,
+              "height": 50,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "viewport": "evidence/relay-4/initial-01/1440-failure/viewport.png",
+          "report": "evidence/relay-4/initial-01/1440-failure/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1884
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 778.71875,
+              "y": 457.984375,
+              "width": 529.28125,
+              "height": 135.5625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "viewport": "evidence/relay-4/initial-01/1440-success/viewport.png",
+          "report": "evidence/relay-4/initial-01/1440-success/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1909
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 778.71875,
+              "y": 432.984375,
+              "width": 529.28125,
+              "height": 157.953125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocks commitment",
+          "pass": true
+        },
+        {
+          "name": "annual amount120/year and conditions present",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains workspace email billing",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact plan and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "billing edit updates price and clears visible stale annual success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": [],
+      "journey": "primary CTA link"
+    },
+    {
+      "id": "390-reduced",
+      "width": 390,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/relay-4/initial-01/390-reduced-entry/viewport.png",
+          "report": "evidence/relay-4/initial-01/390-reduced-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 5430.65625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href$=\"#workflow\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": []
+    }
+  ],
+  "failures": [],
+  "scope": "Matched scripted task/width/access and natural viewport evidence; no human tests",
+  "chromium": "156.0.8078.4",
+  "finishedAt": "2026-11-02T16:44:41.377Z",
+  "checkCount": 27,
+  "stateCount": 16
+}

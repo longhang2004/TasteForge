@@ -1,0 +1,103 @@
+{
+  "label": "1440-failure",
+  "capturedAtUtc": "2026-11-02T16:43:11.618Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "scroll": {
+    "x": 0,
+    "y": 3230
+  },
+  "document": {
+    "width": 1440,
+    "height": 4711
+  },
+  "activeElement": {
+    "tag": "DIV",
+    "id": "feedback",
+    "testId": null,
+    "rect": {
+      "x": 785,
+      "y": 869.75,
+      "width": 478,
+      "height": 130,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "#feedback",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 785,
+          "y": 869.75,
+          "width": 478,
+          "height": 130,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "#reserve",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "#start",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 785,
+          "y": 751.75,
+          "width": 478,
+          "height": 42,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "#retry",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 785,
+          "y": 1015.75,
+          "width": 164,
+          "height": 42,
+          "intersectsViewport": false,
+          "fullyInViewport": false
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 3230
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 3230
+  }
+}

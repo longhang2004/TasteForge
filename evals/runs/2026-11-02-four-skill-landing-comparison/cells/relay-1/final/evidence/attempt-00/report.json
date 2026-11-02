@@ -1,0 +1,220 @@
+{
+  "utc": "2026-11-02T14:50:37.269Z",
+  "views": [
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "violations": []
+    }
+  ],
+  "checks": [
+    {
+      "width": 320,
+      "case": "empty workspace",
+      "text": "Add a workspace name.\n\nEnter a name for your demo workspace, such as Canal Docs. Your other entries are still here.",
+      "focus": "feedback",
+      "scroll": 714
+    },
+    {
+      "width": 320,
+      "case": "invalid email",
+      "text": "Enter a valid email address.\n\nUse an address such as mai@example.com. Your workspace name and billing choice are still here. No email will be sent.",
+      "focus": "feedback",
+      "scroll": 675
+    },
+    {
+      "width": 320,
+      "case": "first valid failure",
+      "text": "Demo setup paused. Your details are saved on this page.\n\nThis is a simulated connection failure. Retry below to complete the local demo with the same workspace, email and billing choice. Nothing was transmitted.\n\nRetry demo setup",
+      "workspace": "Canal Docs",
+      "email": "mai@example.com",
+      "billing": "annual",
+      "focus": "feedback",
+      "scroll": 675
+    },
+    {
+      "width": 320,
+      "case": "annual retry success",
+      "text": "Your demo workspace is ready.\n\nCanal Docs · mai@example.com. Selected plan: Annual — USD 120 per workspace, billed once yearly, with up to 3 editors. The fictional offer includes a 14-day trial. This local demo activates no real trial or billing agreement and creates no real account, payment or email. No money is taken.",
+      "exactAnnual": true,
+      "focus": "feedback",
+      "scroll": 675
+    },
+    {
+      "width": 320,
+      "case": "edit clears stale feedback",
+      "clear": true,
+      "price": "USD 12 per workspace each month"
+    },
+    {
+      "width": 320,
+      "case": "long monthly success",
+      "text": "Your demo workspace is ready.\n\nCanal Docs — release documentation and contributor correspondence workspace with a deliberately long descriptive project name · mai@example.com. Selected plan: Monthly — USD 12 per workspace each month, with up to 3 editors. The fictional offer includes a 14-day trial. This local demo activates no real trial or billing agreement and creates no real account, payment or email. No money is taken.",
+      "overflow": false,
+      "focus": "feedback",
+      "scroll": 675
+    },
+    {
+      "width": 390,
+      "case": "empty workspace",
+      "text": "Add a workspace name.\n\nEnter a name for your demo workspace, such as Canal Docs. Your other entries are still here.",
+      "focus": "feedback",
+      "scroll": 674
+    },
+    {
+      "width": 390,
+      "case": "invalid email",
+      "text": "Enter a valid email address.\n\nUse an address such as mai@example.com. Your workspace name and billing choice are still here. No email will be sent.",
+      "focus": "feedback",
+      "scroll": 674
+    },
+    {
+      "width": 390,
+      "case": "first valid failure",
+      "text": "Demo setup paused. Your details are saved on this page.\n\nThis is a simulated connection failure. Retry below to complete the local demo with the same workspace, email and billing choice. Nothing was transmitted.\n\nRetry demo setup",
+      "workspace": "Canal Docs",
+      "email": "mai@example.com",
+      "billing": "annual",
+      "focus": "feedback",
+      "scroll": 674
+    },
+    {
+      "width": 390,
+      "case": "annual retry success",
+      "text": "Your demo workspace is ready.\n\nCanal Docs · mai@example.com. Selected plan: Annual — USD 120 per workspace, billed once yearly, with up to 3 editors. The fictional offer includes a 14-day trial. This local demo activates no real trial or billing agreement and creates no real account, payment or email. No money is taken.",
+      "exactAnnual": true,
+      "focus": "feedback",
+      "scroll": 674
+    },
+    {
+      "width": 390,
+      "case": "edit clears stale feedback",
+      "clear": true,
+      "price": "USD 12 per workspace each month"
+    },
+    {
+      "width": 390,
+      "case": "long monthly success",
+      "text": "Your demo workspace is ready.\n\nCanal Docs — release documentation and contributor correspondence workspace with a deliberately long descriptive project name · mai@example.com. Selected plan: Monthly — USD 12 per workspace each month, with up to 3 editors. The fictional offer includes a 14-day trial. This local demo activates no real trial or billing agreement and creates no real account, payment or email. No money is taken.",
+      "overflow": false,
+      "focus": "feedback",
+      "scroll": 674
+    },
+    {
+      "width": 1440,
+      "case": "empty workspace",
+      "text": "Add a workspace name.\n\nEnter a name for your demo workspace, such as Canal Docs. Your other entries are still here.",
+      "focus": "feedback",
+      "scroll": 0
+    },
+    {
+      "width": 1440,
+      "case": "invalid email",
+      "text": "Enter a valid email address.\n\nUse an address such as mai@example.com. Your workspace name and billing choice are still here. No email will be sent.",
+      "focus": "feedback",
+      "scroll": 0
+    },
+    {
+      "width": 1440,
+      "case": "first valid failure",
+      "text": "Demo setup paused. Your details are saved on this page.\n\nThis is a simulated connection failure. Retry below to complete the local demo with the same workspace, email and billing choice. Nothing was transmitted.\n\nRetry demo setup",
+      "workspace": "Canal Docs",
+      "email": "mai@example.com",
+      "billing": "annual",
+      "focus": "feedback",
+      "scroll": 0
+    },
+    {
+      "width": 1440,
+      "case": "annual retry success",
+      "text": "Your demo workspace is ready.\n\nCanal Docs · mai@example.com. Selected plan: Annual — USD 120 per workspace, billed once yearly, with up to 3 editors. The fictional offer includes a 14-day trial. This local demo activates no real trial or billing agreement and creates no real account, payment or email. No money is taken.",
+      "exactAnnual": true,
+      "focus": "feedback",
+      "scroll": 0
+    },
+    {
+      "width": 1440,
+      "case": "edit clears stale feedback",
+      "clear": true,
+      "price": "USD 12 per workspace each month"
+    },
+    {
+      "width": 1440,
+      "case": "long monthly success",
+      "text": "Your demo workspace is ready.\n\nCanal Docs — release documentation and contributor correspondence workspace with a deliberately long descriptive project name · mai@example.com. Selected plan: Monthly — USD 12 per workspace each month, with up to 3 editors. The fictional offer includes a 14-day trial. This local demo activates no real trial or billing agreement and creates no real account, payment or email. No money is taken.",
+      "overflow": false,
+      "focus": "feedback",
+      "scroll": 0
+    }
+  ],
+  "errors": [],
+  "requests": [],
+  "keyboardOrder": [
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Skip to content"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Relay Notes"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Questions"
+    },
+    {
+      "tag": "INPUT",
+      "id": "workspace",
+      "text": ""
+    },
+    {
+      "tag": "INPUT",
+      "id": "email",
+      "text": ""
+    },
+    {
+      "tag": "SELECT",
+      "id": "billing",
+      "text": "Monthly · USD 12Annual · USD 120"
+    },
+    {
+      "tag": "BUTTON",
+      "id": "start",
+      "text": "Start a demo workspace"
+    },
+    {
+      "tag": "SUMMARY",
+      "id": "",
+      "text": "Will this fit our Markdown workflow?"
+    },
+    {
+      "tag": "SUMMARY",
+      "id": "",
+      "text": "What does one workspace include?"
+    },
+    {
+      "tag": "SUMMARY",
+      "id": "",
+      "text": "Does the demo connect to Git or send email?"
+    },
+    {
+      "tag": "SUMMARY",
+      "id": "",
+      "text": "What are the cancellation and refund terms?"
+    }
+  ],
+  "faqKeyboardOpened": true
+}

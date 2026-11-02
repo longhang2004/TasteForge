@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T16:23:29.346970Z",
+  "title": "Design System: Relay Notes",
+  "extensions": {
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "html": "<button class=\"ds-button\">Start a demo workspace</button>",
+      "css": ".ds-button{background:#214e3d;color:#fffcf5;border:0;border-radius:4px;padding:14px 17px;min-height:52px;font:600 16px/1.35 \"DM Sans\",sans-serif;cursor:pointer}.ds-button:hover{background:#12392b}.ds-button:focus-visible{outline:3px solid #ad4c24;outline-offset:5px}"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "html": "<label class=\"ds-label\">Workspace name<input class=\"ds-input\" placeholder=\"e.g. Canal Docs\"></label>",
+      "css": ".ds-label{display:block;font:600 13px \"DM Sans\",sans-serif;color:#193e32}.ds-input{display:block;margin-top:7px;background:#fffcf5;color:#193e32;border:1px solid #879985;border-radius:4px;padding:12px;font:16px \"DM Sans\",sans-serif;caret-color:#214e3d}.ds-input:focus-visible{outline:3px solid #ad4c24;outline-offset:5px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "html": "<nav class=\"ds-nav\"><a href=\"#workflow\">The workflow</a><a href=\"#questions\">Questions</a></nav>",
+      "css": ".ds-nav{display:flex;gap:30px;font:14px \"DM Sans\",sans-serif}.ds-nav a{color:#193e32;text-decoration:none}.ds-nav a:hover{color:#456d3d;text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid #ad4c24;outline-offset:5px}"
+    },
+    {
+      "name": "Feedback",
+      "kind": "custom",
+      "html": "<div class=\"ds-feedback\" role=\"status\">Your demo workspace is ready.</div>",
+      "css": ".ds-feedback{background:#e6ebdf;color:#193e32;border:1px solid #b9c3b5;border-radius:4px;padding:18px 20px;font:16px/1.55 \"DM Sans\",sans-serif;overflow-wrap:anywhere}"
+    },
+    {
+      "name": "Disclosure",
+      "kind": "custom",
+      "html": "<details class=\"ds-details\"><summary>Before you start</summary><p>The demonstration stays on this page.</p></details>",
+      "css": ".ds-details{border-bottom:1px solid #b9c3b5;padding:18px 0;color:#193e32;font:16px/1.55 \"DM Sans\",sans-serif}.ds-details summary{font-weight:600;cursor:pointer}.ds-details summary:focus-visible{outline:3px solid #ad4c24;outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Correspondence Sheet",
+    "overview": "An editorial voice and practical forms share a flat reading surface. Rules separate decisions and examples; typography carries emphasis. This is the creator’s inferred direction under an offline controlled brief, rather than a human-approved brand identity.",
+    "keyCharacteristics": [
+      "Forest ink, warm paper, pale fields.",
+      "Serif headings and direct sans-serif controls.",
+      "Flat divisions with readable local feedback."
+    ],
+    "rules": [],
+    "dos": [
+      "Do keep complete billing conditions with the decision.",
+      "Do label static media and provide access to its full-size local file.",
+      "Do keep the page flat and use typography before decoration."
+    ],
+    "donts": [
+      "Don’t describe the creator’s inferred direction as human approved.",
+      "Don’t treat supplied editor illustrations as working product controls."
+    ]
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "started": "2026-11-02T14:44:13.355Z",
+  "checks": [
+    {
+      "name": "320: no initial overflow",
+      "ok": true
+    },
+    {
+      "name": "320: local images loaded",
+      "ok": true
+    },
+    {
+      "name": "320: CTA focuses workspace",
+      "ok": true
+    },
+    {
+      "name": "320: keyboard follows to email",
+      "ok": true
+    },
+    {
+      "name": "320: empty validation announced and focused",
+      "ok": true
+    },
+    {
+      "name": "320: invalid email blocks",
+      "ok": true
+    },
+    {
+      "name": "320: Annual exact cost",
+      "ok": true
+    },
+    {
+      "name": "320: first valid submission fails",
+      "ok": true
+    },
+    {
+      "name": "320: failure retains values",
+      "ok": true
+    },
+    {
+      "name": "320: success exact decision",
+      "ok": true
+    },
+    {
+      "name": "320: natural success feedback visible",
+      "ok": true
+    },
+    {
+      "name": "320: edited plan clears stale feedback",
+      "ok": true
+    },
+    {
+      "name": "320: long feedback wraps",
+      "ok": true
+    },
+    {
+      "name": "320: axe violations",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "390: no initial overflow",
+      "ok": true
+    },
+    {
+      "name": "390: local images loaded",
+      "ok": true
+    },
+    {
+      "name": "390: CTA focuses workspace",
+      "ok": true
+    },
+    {
+      "name": "390: keyboard follows to email",
+      "ok": true
+    },
+    {
+      "name": "390: empty validation announced and focused",
+      "ok": true
+    },
+    {
+      "name": "390: invalid email blocks",
+      "ok": true
+    },
+    {
+      "name": "390: Annual exact cost",
+      "ok": true
+    },
+    {
+      "name": "390: first valid submission fails",
+      "ok": true
+    },
+    {
+      "name": "390: failure retains values",
+      "ok": true
+    },
+    {
+      "name": "390: success exact decision",
+      "ok": true
+    },
+    {
+      "name": "390: natural success feedback visible",
+      "ok": true
+    },
+    {
+      "name": "390: edited plan clears stale feedback",
+      "ok": true
+    },
+    {
+      "name": "390: long feedback wraps",
+      "ok": true
+    },
+    {
+      "name": "390: axe violations",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "1440: no initial overflow",
+      "ok": true
+    },
+    {
+      "name": "1440: local images loaded",
+      "ok": true
+    },
+    {
+      "name": "1440: CTA focuses workspace",
+      "ok": true
+    },
+    {
+      "name": "1440: keyboard follows to email",
+      "ok": true
+    },
+    {
+      "name": "1440: empty validation announced and focused",
+      "ok": true
+    },
+    {
+      "name": "1440: invalid email blocks",
+      "ok": true
+    },
+    {
+      "name": "1440: Annual exact cost",
+      "ok": true
+    },
+    {
+      "name": "1440: first valid submission fails",
+      "ok": true
+    },
+    {
+      "name": "1440: failure retains values",
+      "ok": true
+    },
+    {
+      "name": "1440: success exact decision",
+      "ok": true
+    },
+    {
+      "name": "1440: natural success feedback visible",
+      "ok": true
+    },
+    {
+      "name": "1440: edited plan clears stale feedback",
+      "ok": true
+    },
+    {
+      "name": "1440: long feedback wraps",
+      "ok": true
+    },
+    {
+      "name": "1440: axe violations",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "no uncaught page errors",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "no external requests",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "widths": [
+    {
+      "width": 320,
+      "axeIncomplete": [
+        "aria-prohibited-attr"
+      ],
+      "naturalSuccess": {
+        "scroll": {
+          "x": 0,
+          "y": 4094
+        },
+        "focus": "feedback",
+        "width": 320,
+        "documentWidth": 320,
+        "feedback": {
+          "hidden": false,
+          "text": "Demo workspace ready: Canal Docs for mai@example.com. Annual — USD 120 per workspace billed once yearly, with up to 3 editors. The fictional offer includes a 14-day trial; no card is required. This local simulation created no real trial, account, subscription, payment or email.",
+          "rect": {
+            "top": 670.1875,
+            "bottom": 883.359375,
+            "left": 35,
+            "right": 285
+          },
+          "withinViewport": true
+        }
+      },
+      "longFeedback": {
+        "scroll": {
+          "x": 0,
+          "y": 4140
+        },
+        "focus": "feedback",
+        "width": 320,
+        "documentWidth": 320,
+        "feedback": {
+          "hidden": false,
+          "text": "Demo workspace ready: Canal Docs — a very long workspace name for a small open-source documentation team preparing a detailed release draft with multiple contributors for mai@example.com. Monthly — USD 12 per workspace each month, with up to 3 editors. The fictional offer includes a 14-day trial; no card is required. This local simulation created no real trial, account, subscription, payment or email.",
+          "rect": {
+            "top": 624.1875,
+            "bottom": 899.75,
+            "left": 35,
+            "right": 285
+          },
+          "withinViewport": true
+        }
+      }
+    },
+    {
+      "width": 390,
+      "axeIncomplete": [
+        "aria-prohibited-attr"
+      ],
+      "naturalSuccess": {
+        "scroll": {
+          "x": 0,
+          "y": 3964
+        },
+        "focus": "feedback",
+        "width": 390,
+        "documentWidth": 390,
+        "feedback": {
+          "hidden": false,
+          "text": "Demo workspace ready: Canal Docs for mai@example.com. Annual — USD 120 per workspace billed once yearly, with up to 3 editors. The fictional offer includes a 14-day trial; no card is required. This local simulation created no real trial, account, subscription, payment or email.",
+          "rect": {
+            "top": 658.4375,
+            "bottom": 830.015625,
+            "left": 44,
+            "right": 346
+          },
+          "withinViewport": true
+        }
+      },
+      "longFeedback": {
+        "scroll": {
+          "x": 0,
+          "y": 3964
+        },
+        "focus": "feedback",
+        "width": 390,
+        "documentWidth": 390,
+        "feedback": {
+          "hidden": false,
+          "text": "Demo workspace ready: Canal Docs — a very long workspace name for a small open-source documentation team preparing a detailed release draft with multiple contributors for mai@example.com. Monthly — USD 12 per workspace each month, with up to 3 editors. The fictional offer includes a 14-day trial; no card is required. This local simulation created no real trial, account, subscription, payment or email.",
+          "rect": {
+            "top": 637.4375,
+            "bottom": 871.40625,
+            "left": 44,
+            "right": 346
+          },
+          "withinViewport": true
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "axeIncomplete": [
+        "aria-prohibited-attr"
+      ],
+      "naturalSuccess": {
+        "scroll": {
+          "x": 0,
+          "y": 2599
+        },
+        "focus": "feedback",
+        "width": 1440,
+        "documentWidth": 1440,
+        "feedback": {
+          "hidden": false,
+          "text": "Demo workspace ready: Canal Docs for mai@example.com. Annual — USD 120 per workspace billed once yearly, with up to 3 editors. The fictional offer includes a 14-day trial; no card is required. This local simulation created no real trial, account, subscription, payment or email.",
+          "rect": {
+            "top": 584.53125,
+            "bottom": 693.71875,
+            "left": 799,
+            "right": 1311
+          },
+          "withinViewport": true
+        }
+      },
+      "longFeedback": {
+        "scroll": {
+          "x": 0,
+          "y": 2599
+        },
+        "focus": "feedback",
+        "width": 1440,
+        "documentWidth": 1440,
+        "feedback": {
+          "hidden": false,
+          "text": "Demo workspace ready: Canal Docs — a very long workspace name for a small open-source documentation team preparing a detailed release draft with multiple contributors for mai@example.com. Monthly — USD 12 per workspace each month, with up to 3 editors. The fictional offer includes a 14-day trial; no card is required. This local simulation created no real trial, account, subscription, payment or email.",
+          "rect": {
+            "top": 584.53125,
+            "bottom": 735.3125,
+            "left": 799,
+            "right": 1311
+          },
+          "withinViewport": true
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "requests": [],
+  "ended": "2026-11-02T14:44:25.644Z"
+}

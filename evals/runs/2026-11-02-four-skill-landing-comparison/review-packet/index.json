@@ -1,0 +1,888 @@
+{
+  "createdAt": "2026-11-02T16:49:15.563429+00:00",
+  "scope": "Final scoped accepted UIs, normal natural viewports, no creator/treatment notes",
+  "cases": {
+    "field-fold": {
+      "task": "field-fold/task.md",
+      "variants": {
+        "A": {
+          "source": "field-fold/A/index.html",
+          "checks": "field-fold/A/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/A/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/A/320-invalid.png"
+            },
+            {
+              "width": 320,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/A/320-decision.png"
+            },
+            {
+              "width": 320,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/A/320-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/A/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/A/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/A/390-invalid.png"
+            },
+            {
+              "width": 390,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/A/390-decision.png"
+            },
+            {
+              "width": 390,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/A/390-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/A/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/A/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "reduced": false,
+              "scope": "Optional full page, not natural post-action visibility",
+              "file": "field-fold/A/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/A/1440-invalid.png"
+            },
+            {
+              "width": 1440,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/A/1440-decision.png"
+            },
+            {
+              "width": 1440,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/A/1440-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/A/1440-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": true,
+              "file": "field-fold/A/390-reduced-entry.png"
+            }
+          ]
+        },
+        "B": {
+          "source": "field-fold/B/index.html",
+          "checks": "field-fold/B/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/B/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/B/320-invalid.png"
+            },
+            {
+              "width": 320,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/B/320-decision.png"
+            },
+            {
+              "width": 320,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/B/320-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/B/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/B/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/B/390-invalid.png"
+            },
+            {
+              "width": 390,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/B/390-decision.png"
+            },
+            {
+              "width": 390,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/B/390-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/B/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/B/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "reduced": false,
+              "scope": "Optional full page, not natural post-action visibility",
+              "file": "field-fold/B/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/B/1440-invalid.png"
+            },
+            {
+              "width": 1440,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/B/1440-decision.png"
+            },
+            {
+              "width": 1440,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/B/1440-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/B/1440-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": true,
+              "file": "field-fold/B/390-reduced-entry.png"
+            }
+          ]
+        },
+        "C": {
+          "source": "field-fold/C/index.html",
+          "checks": "field-fold/C/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/C/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/C/320-invalid.png"
+            },
+            {
+              "width": 320,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/C/320-decision.png"
+            },
+            {
+              "width": 320,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/C/320-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/C/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/C/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/C/390-invalid.png"
+            },
+            {
+              "width": 390,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/C/390-decision.png"
+            },
+            {
+              "width": 390,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/C/390-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/C/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/C/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "reduced": false,
+              "scope": "Optional full page, not natural post-action visibility",
+              "file": "field-fold/C/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/C/1440-invalid.png"
+            },
+            {
+              "width": 1440,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/C/1440-decision.png"
+            },
+            {
+              "width": 1440,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/C/1440-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/C/1440-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": true,
+              "file": "field-fold/C/390-reduced-entry.png"
+            }
+          ]
+        },
+        "D": {
+          "source": "field-fold/D/index.html",
+          "checks": "field-fold/D/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/D/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/D/320-invalid.png"
+            },
+            {
+              "width": 320,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/D/320-decision.png"
+            },
+            {
+              "width": 320,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/D/320-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/D/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/D/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/D/390-invalid.png"
+            },
+            {
+              "width": 390,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/D/390-decision.png"
+            },
+            {
+              "width": 390,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/D/390-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/D/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "reduced": false,
+              "file": "field-fold/D/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "reduced": false,
+              "scope": "Optional full page, not natural post-action visibility",
+              "file": "field-fold/D/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "invalid",
+              "reduced": false,
+              "file": "field-fold/D/1440-invalid.png"
+            },
+            {
+              "width": 1440,
+              "state": "decision",
+              "reduced": false,
+              "file": "field-fold/D/1440-decision.png"
+            },
+            {
+              "width": 1440,
+              "state": "failure",
+              "reduced": false,
+              "file": "field-fold/D/1440-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "reduced": false,
+              "file": "field-fold/D/1440-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": true,
+              "file": "field-fold/D/390-reduced-entry.png"
+            }
+          ]
+        }
+      }
+    },
+    "relay-notes": {
+      "task": "relay-notes/task.md",
+      "variants": {
+        "A": {
+          "source": "relay-notes/A/index.html",
+          "checks": "relay-notes/A/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/A/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/A/320-invalid.png"
+            },
+            {
+              "width": 320,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/A/320-decision.png"
+            },
+            {
+              "width": 320,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/A/320-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/A/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/A/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/A/390-invalid.png"
+            },
+            {
+              "width": 390,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/A/390-decision.png"
+            },
+            {
+              "width": 390,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/A/390-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/A/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/A/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "reduced": false,
+              "scope": "Optional full page, not natural post-action visibility",
+              "file": "relay-notes/A/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/A/1440-invalid.png"
+            },
+            {
+              "width": 1440,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/A/1440-decision.png"
+            },
+            {
+              "width": 1440,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/A/1440-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/A/1440-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": true,
+              "file": "relay-notes/A/390-reduced-entry.png"
+            }
+          ]
+        },
+        "B": {
+          "source": "relay-notes/B/index.html",
+          "checks": "relay-notes/B/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/B/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/B/320-invalid.png"
+            },
+            {
+              "width": 320,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/B/320-decision.png"
+            },
+            {
+              "width": 320,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/B/320-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/B/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/B/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/B/390-invalid.png"
+            },
+            {
+              "width": 390,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/B/390-decision.png"
+            },
+            {
+              "width": 390,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/B/390-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/B/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/B/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "reduced": false,
+              "scope": "Optional full page, not natural post-action visibility",
+              "file": "relay-notes/B/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/B/1440-invalid.png"
+            },
+            {
+              "width": 1440,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/B/1440-decision.png"
+            },
+            {
+              "width": 1440,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/B/1440-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/B/1440-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": true,
+              "file": "relay-notes/B/390-reduced-entry.png"
+            }
+          ]
+        },
+        "C": {
+          "source": "relay-notes/C/index.html",
+          "checks": "relay-notes/C/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/C/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/C/320-invalid.png"
+            },
+            {
+              "width": 320,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/C/320-decision.png"
+            },
+            {
+              "width": 320,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/C/320-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/C/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/C/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/C/390-invalid.png"
+            },
+            {
+              "width": 390,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/C/390-decision.png"
+            },
+            {
+              "width": 390,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/C/390-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/C/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/C/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "reduced": false,
+              "scope": "Optional full page, not natural post-action visibility",
+              "file": "relay-notes/C/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/C/1440-invalid.png"
+            },
+            {
+              "width": 1440,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/C/1440-decision.png"
+            },
+            {
+              "width": 1440,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/C/1440-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/C/1440-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": true,
+              "file": "relay-notes/C/390-reduced-entry.png"
+            }
+          ]
+        },
+        "D": {
+          "source": "relay-notes/D/index.html",
+          "checks": "relay-notes/D/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/D/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/D/320-invalid.png"
+            },
+            {
+              "width": 320,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/D/320-decision.png"
+            },
+            {
+              "width": 320,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/D/320-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/D/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/D/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/D/390-invalid.png"
+            },
+            {
+              "width": 390,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/D/390-decision.png"
+            },
+            {
+              "width": 390,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/D/390-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/D/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "reduced": false,
+              "file": "relay-notes/D/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "reduced": false,
+              "scope": "Optional full page, not natural post-action visibility",
+              "file": "relay-notes/D/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "invalid",
+              "reduced": false,
+              "file": "relay-notes/D/1440-invalid.png"
+            },
+            {
+              "width": 1440,
+              "state": "decision",
+              "reduced": false,
+              "file": "relay-notes/D/1440-decision.png"
+            },
+            {
+              "width": 1440,
+              "state": "failure",
+              "reduced": false,
+              "file": "relay-notes/D/1440-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "reduced": false,
+              "file": "relay-notes/D/1440-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "reduced": true,
+              "file": "relay-notes/D/390-reduced-entry.png"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

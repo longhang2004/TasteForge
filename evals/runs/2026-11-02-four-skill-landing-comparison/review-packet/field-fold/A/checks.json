@@ -1,0 +1,783 @@
+{
+  "scope": "Matched scripted task/width/access and natural viewport evidence; no human tests",
+  "checks": 42,
+  "states": 16,
+  "failures": [],
+  "traces": [
+    {
+      "width": 320,
+      "reduced": false,
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "unavailable Night option cannot be selected",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "Ridge quantity3 blocked by stock2",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 0 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 1.5 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 4 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocked",
+          "pass": true
+        },
+        {
+          "name": "complete selected cost106+5=111",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains edition quantity email",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact choice and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "changed selection does not retain stale Harbor success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 5018.9375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2700
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 300.53125,
+              "width": 238,
+              "height": 163.15625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "decision",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2809
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 493.078125,
+              "width": 238,
+              "height": 52,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2727
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 273.53125,
+              "width": 238,
+              "height": 216.328125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2760
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 41,
+              "y": 240.53125,
+              "width": 238,
+              "height": 283.5,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "unavailable Night option cannot be selected",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "Ridge quantity3 blocked by stock2",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 0 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 1.5 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 4 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocked",
+          "pass": true
+        },
+        {
+          "name": "complete selected cost106+5=111",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains edition quantity email",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact choice and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "changed selection does not retain stale Harbor success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 4633.25,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2559
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 45,
+              "y": 309.390625,
+              "width": 300,
+              "height": 135.96875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "decision",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2559
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 45,
+              "y": 492.546875,
+              "width": 300,
+              "height": 52,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2559
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 45,
+              "y": 309.390625,
+              "width": 300,
+              "height": 193.9375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2540
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 45,
+              "y": 328.390625,
+              "width": 300,
+              "height": 211.53125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "reduced": false,
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "unavailable Night option cannot be selected",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "Ridge quantity3 blocked by stock2",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 0 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 1.5 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 4 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocked",
+          "pass": true
+        },
+        {
+          "name": "complete selected cost106+5=111",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains edition quantity email",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact choice and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "changed selection does not retain stale Harbor success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 3498.34375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1620
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 749.796875,
+              "y": 249.265625,
+              "width": 569.203125,
+              "height": 113.578125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "decision",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1620
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 749.796875,
+              "y": 413.234375,
+              "width": 569.203125,
+              "height": 52,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1620
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 749.796875,
+              "y": 249.265625,
+              "width": 569.203125,
+              "height": 121.96875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1645
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 749.796875,
+              "y": 224.265625,
+              "width": 569.203125,
+              "height": 144.359375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "checks": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 4633.25,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "nodes": [
+                [
+                  ".stock"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

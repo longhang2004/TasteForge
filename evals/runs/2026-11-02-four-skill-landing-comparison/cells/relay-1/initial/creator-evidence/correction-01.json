@@ -1,0 +1,8 @@
+{
+  "author": "creator self-inspection",
+  "time": "2026-11-02T14:34:56.624491+00:00",
+  "finding": "Opening wrapper closes across main landmark; move wrapper boundary so all content remains in main.",
+  "beforeSha256": "e78c13f532bfffc528bbf9330864c4a8a01967ff3983d1e5a700f64c066065a1",
+  "scope": "One focused semantic correction, no visual restyling. Detector cramped-padding warnings reviewed against screenshots; actual inner .wrap insets are 80px desktop and 20px mobile.",
+  "afterSha256": "a629eb51d2d056023805584b46e428a0827bb3d929af60c4245fdd0039bb2faa"
+}

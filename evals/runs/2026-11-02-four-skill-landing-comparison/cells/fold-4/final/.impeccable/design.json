@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T16:40:16.571559Z",
+  "title": "Design System: Field Fold",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Wine ink",
+        "tonalRamp": [
+          "oklch(15% 0.02 30)",
+          "oklch(26% 0.02 30)",
+          "oklch(37% 0.02 30)",
+          "oklch(48% 0.02 30)",
+          "oklch(59% 0.02 30)",
+          "oklch(70% 0.02 30)",
+          "oklch(82% 0.02 30)",
+          "oklch(95% 0.02 30)"
+        ],
+        "rampBasis": "Synthesized display ramp; not page runtime colors."
+      },
+      "primary-deep": {
+        "role": "primary",
+        "displayName": "Deep wine",
+        "tonalRamp": [
+          "oklch(15% 0.02 30)",
+          "oklch(26% 0.02 30)",
+          "oklch(37% 0.02 30)",
+          "oklch(48% 0.02 30)",
+          "oklch(59% 0.02 30)",
+          "oklch(70% 0.02 30)",
+          "oklch(82% 0.02 30)",
+          "oklch(95% 0.02 30)"
+        ],
+        "rampBasis": "Synthesized display ramp; not page runtime colors."
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Exhibition paper",
+        "tonalRamp": [
+          "oklch(15% 0.02 85)",
+          "oklch(26% 0.02 85)",
+          "oklch(37% 0.02 85)",
+          "oklch(48% 0.02 85)",
+          "oklch(59% 0.02 85)",
+          "oklch(70% 0.02 85)",
+          "oklch(82% 0.02 85)",
+          "oklch(95% 0.02 85)"
+        ],
+        "rampBasis": "Synthesized display ramp; not page runtime colors."
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Brown ink",
+        "tonalRamp": [
+          "oklch(15% 0.02 75)",
+          "oklch(26% 0.02 75)",
+          "oklch(37% 0.02 75)",
+          "oklch(48% 0.02 75)",
+          "oklch(59% 0.02 75)",
+          "oklch(70% 0.02 75)",
+          "oklch(82% 0.02 75)",
+          "oklch(95% 0.02 75)"
+        ],
+        "rampBasis": "Synthesized display ramp; not page runtime colors."
+      },
+      "secondary-ink": {
+        "role": "neutral",
+        "displayName": "Secondary brown ink",
+        "tonalRamp": [
+          "oklch(15% 0.02 75)",
+          "oklch(26% 0.02 75)",
+          "oklch(37% 0.02 75)",
+          "oklch(48% 0.02 75)",
+          "oklch(59% 0.02 75)",
+          "oklch(70% 0.02 75)",
+          "oklch(82% 0.02 75)",
+          "oklch(95% 0.02 75)"
+        ],
+        "rampBasis": "Synthesized display ramp; not page runtime colors."
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Pale rule",
+        "tonalRamp": [
+          "oklch(15% 0.02 85)",
+          "oklch(26% 0.02 85)",
+          "oklch(37% 0.02 85)",
+          "oklch(48% 0.02 85)",
+          "oklch(59% 0.02 85)",
+          "oklch(70% 0.02 85)",
+          "oklch(82% 0.02 85)",
+          "oklch(95% 0.02 85)"
+        ],
+        "rampBasis": "Synthesized display ramp; not page runtime colors."
+      },
+      "feedback-ground": {
+        "role": "neutral",
+        "displayName": "Ledger feedback ground",
+        "tonalRamp": [
+          "oklch(15% 0.02 85)",
+          "oklch(26% 0.02 85)",
+          "oklch(37% 0.02 85)",
+          "oklch(48% 0.02 85)",
+          "oklch(59% 0.02 85)",
+          "oklch(70% 0.02 85)",
+          "oklch(82% 0.02 85)",
+          "oklch(95% 0.02 85)"
+        ],
+        "rampBasis": "Synthesized display ramp; not page runtime colors."
+      },
+      "field-ground": {
+        "role": "neutral",
+        "displayName": "Field paper",
+        "tonalRamp": [
+          "oklch(15% 0.02 85)",
+          "oklch(26% 0.02 85)",
+          "oklch(37% 0.02 85)",
+          "oklch(48% 0.02 85)",
+          "oklch(59% 0.02 85)",
+          "oklch(70% 0.02 85)",
+          "oklch(82% 0.02 85)",
+          "oklch(95% 0.02 85)"
+        ],
+        "rampBasis": "Synthesized display ramp; not page runtime colors."
+      },
+      "error": {
+        "role": "semantic",
+        "displayName": "Error ink",
+        "tonalRamp": [
+          "oklch(15% 0.02 25)",
+          "oklch(26% 0.02 25)",
+          "oklch(37% 0.02 25)",
+          "oklch(48% 0.02 25)",
+          "oklch(59% 0.02 25)",
+          "oklch(70% 0.02 25)",
+          "oklch(82% 0.02 25)",
+          "oklch(95% 0.02 25)"
+        ],
+        "rampBasis": "Synthesized display ramp; not page runtime colors."
+      },
+      "success": {
+        "role": "semantic",
+        "displayName": "Success ink",
+        "tonalRamp": [
+          "oklch(15% 0.02 155)",
+          "oklch(26% 0.02 155)",
+          "oklch(37% 0.02 155)",
+          "oklch(48% 0.02 155)",
+          "oklch(59% 0.02 155)",
+          "oklch(70% 0.02 155)",
+          "oklch(82% 0.02 155)",
+          "oklch(95% 0.02 155)"
+        ],
+        "rampBasis": "Synthesized display ramp; not page runtime colors."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Fraunces display",
+        "purpose": "Title and large section headings."
+      },
+      "body": {
+        "displayName": "DM Sans body",
+        "purpose": "Controls and reading."
+      }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "900px"
+      },
+      {
+        "name": "stacked",
+        "value": "700px"
+      },
+      {
+        "name": "small-phone",
+        "value": "350px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary action extracted from the implemented page.",
+      "html": "<button class=\"ds-primary\">Reserve a kit</button>",
+      "css": ".ds-primary{background:#7a3025;color:#fffdf8;padding:12px 16px;border:1px solid #7a3025;border-radius:0;min-height:52px;font:600 16px \"DM Sans\",sans-serif;cursor:pointer}.ds-primary:hover{background:#59231c}.ds-primary:focus-visible{outline:3px solid #7a3025;outline-offset:4px}"
+    },
+    {
+      "name": "Retry action",
+      "kind": "button",
+      "refersTo": "button-retry",
+      "description": "Retry action extracted from the implemented page.",
+      "html": "<button class=\"ds-retry\">Retry reservation</button>",
+      "css": ".ds-retry{background:#302d28;color:#fffdf8;padding:12px 16px;border:1px solid #302d28;min-height:52px;font:600 16px \"DM Sans\",sans-serif}.ds-retry:hover{background:#59231c}.ds-retry:focus-visible{outline:3px solid #7a3025;outline-offset:4px}"
+    },
+    {
+      "name": "Email field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Email field extracted from the implemented page.",
+      "html": "<label class=\"ds-label\" for=\"ds-email\">Email address</label><input class=\"ds-input\" id=\"ds-email\" type=\"email\" placeholder=\"you@example.com\">",
+      "css": ".ds-label{display:block;font:600 14px \"DM Sans\",sans-serif;margin-bottom:7px}.ds-input{font:16px \"DM Sans\",sans-serif;background:#fffdf8;color:#302d28;border:1px solid #847968;border-radius:0;min-height:48px;padding:10px 12px;caret-color:#7a3025}.ds-input:focus-visible{outline:3px solid #7a3025;outline-offset:4px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Navigation extracted from the implemented page.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#contents\">Inside the kit</a><a href=\"#reservation\">Reserve a kit</a></nav>",
+      "css": ".ds-nav{display:flex;gap:28px;font:14px \"DM Sans\",sans-serif}.ds-nav a{color:#302d28;text-underline-offset:4px}.ds-nav a:hover{color:#7a3025}.ds-nav a:focus-visible{outline:3px solid #7a3025;outline-offset:4px}"
+    },
+    {
+      "name": "Cost ledger",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Cost ledger extracted from the implemented page.",
+      "html": "<dl class=\"ds-ledger\"><div><dt>Items</dt><dd>USD 106</dd></div><div><dt>Shipping</dt><dd>USD 5</dd></div><div class=\"ds-total\"><dt>Total</dt><dd>USD 111</dd></div></dl>",
+      "css": ".ds-ledger{font:14px/1.5 \"DM Sans\",sans-serif;font-variant-numeric:tabular-nums;color:#302d28;border-top:1px solid #b4aa98;padding-top:12px}.ds-ledger div{display:flex;justify-content:space-between;gap:20px}.ds-ledger dd{margin:0}.ds-total{margin-top:12px;padding-top:12px;border-top:1px solid #b4aa98;font-size:21px;font-weight:600}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The exhibition registration desk",
+    "overview": "The implemented system uses a flat warm field, dark rules and a serif display voice. Artifact imagery and native form controls remain legible as themselves. Wine-colored actions distinguish commitment from browsing.",
+    "keyCharacteristics": [
+      "Ruled surfaces",
+      "Large serif display type",
+      "Precise sans-serif controls",
+      "Explicit inventory and cost"
+    ],
+    "rules": [
+      {
+        "name": "The Ink Rule",
+        "body": "Dark rules separate major surfaces; the lighter rule separates related ledger rows.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do use rules and spacing to group related information.",
+      "Do preserve visible keyboard focus and specific text feedback."
+    ],
+    "donts": [
+      "Don't infer edition-specific artwork from the common schematic illustration."
+    ]
+  }
+}

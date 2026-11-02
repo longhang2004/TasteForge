@@ -1,0 +1,142 @@
+{
+  "cell": "relay-2",
+  "product": "Relay Notes",
+  "utcStart": "2026-11-02T14:39:53Z",
+  "utcEnd": "2026-11-02T14:47:49.351Z",
+  "startBasis": "UTC printed at the first successful terminal tool before any assigned input read. The initial sandboxed WSL invocation was denied before its date command ran; no inputs were read by that invocation.",
+  "project": "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/relay-2",
+  "creationMode": "one creator, code-first, supplied media; no helper agents, image generation, network access, installation or global settings changes",
+  "pinnedSkill": "tasteforge",
+  "pinnedSource": "78aab (provided task provenance; no source-revision inspection performed)",
+  "loadedPaths": [
+    "PRODUCT.md (complete)",
+    "common/fixtures.json (complete, relay-notes used as factual contract)",
+    "common/fonts.css",
+    "common/assets/LICENSE",
+    "common/assets/relay-notes-editor.svg (source beginning and complete rendered image)",
+    "common/assets/relay-notes-draft.svg (source beginning and complete rendered image)",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/operator.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/tasteforge/skill/SKILL.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/tasteforge/skill/workflows/create-ui.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/tasteforge/skill/references/art-direction.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/tasteforge/skill/references/render-checks.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/tasteforge/skill/workflows/structure-and-revise.md"
+  ],
+  "nativeCalls": [
+    {
+      "command": "TasteForge optional CLI",
+      "outcome": "not invoked; supplied task/media resolved the structure and visual system without a catalog or token search"
+    },
+    {
+      "command": "python3 -m http.server 4412 --bind 127.0.0.1",
+      "outcome": "served own isolated project for loopback browser checks"
+    },
+    {
+      "command": "node check.cjs creator-evidence/attempt-01",
+      "outcome": "44 scripted checks passed; rendered inspection found fixed image-height issue"
+    },
+    {
+      "command": "node check.cjs creator-evidence/attempt-02",
+      "outcome": "44 scripted checks passed after one focused correction; zero axe violations with incomplete findings retained"
+    }
+  ],
+  "workflowCompliance": "Assigned create workflow read and applied with local context, task structure, coherent visual system, implementation, rendered task inspection and one focused correction. Controlled code-first/one-creator/supplied-media boundary observed. No independent approval is claimed.",
+  "rationale": "Numbered release-note structure connects Markdown input, arranged sections and the supplied draft. Static editor is paired with the opening task statement, draft with the workflow. Native billing choice and exact cost, editor limit, trial and demo consequence are grouped immediately before commitment. Local DM Sans, Fraunces and IBM Plex Mono create a calm documentation-oriented hierarchy.",
+  "tradeoffs": [
+    "Workflow explanation precedes the form, increasing scroll for ready-to-start readers; direct CTAs scroll to and focus workspace input.",
+    "Supplied SVG text is small at narrow widths; HTML workflow explanation and explicit static captions remain readable.",
+    "A deliberately long workspace name makes the 320px success feedback extend beyond one viewport. It wraps without horizontal overflow and is scrollable; ordinary Canal Docs success feedback fits at tested widths."
+  ],
+  "versions": [
+    {
+      "file": "versions/00.html",
+      "utc": "2026-11-02T14:43:13Z",
+      "sha256": "6eaf6ee39d1fe6e3568757a725fdbbc43b84fba931365f59265bdc5df39cde71",
+      "author": "creator",
+      "basis": "first runnable HTML preserved before checks or edits"
+    },
+    {
+      "file": "versions/01.html",
+      "utc": "2026-11-02T14:45:33Z",
+      "sha256": "39368b18f6a2b17802d5e4380aefb6a2a98d32bf448ad27df1ef8ae052427d56",
+      "author": "creator",
+      "finding": "Rendered initial-1440.png and initial-320.png showed SVG elements retaining fixed HTML heights after width scaling, causing large blank areas; narrow select labels also clipped.",
+      "correction": "Set supplied image height:auto and shorten visible select option labels while keeping exact complete selected terms immediately below.",
+      "evidence": "creator-evidence/attempt-01",
+      "recheck": "creator-evidence/attempt-02"
+    }
+  ],
+  "submittedFile": "index.html",
+  "submittedSha256": "39368b18f6a2b17802d5e4380aefb6a2a98d32bf448ad27df1ef8ae052427d56",
+  "checks": {
+    "runtime": "installed Playwright Chromium and @axe-core/playwright at the supplied inventory-workbench tools/node_modules path; browser.newContext and context.newPage used",
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "viewportHeight": 900,
+    "motion": "No animation or smooth scrolling implemented; browser checks used reducedMotion:reduce",
+    "executed": [
+      "Initial document width and local-image load",
+      "Hero CTA scroll/focus to workspace; keyboard Tab from workspace to email",
+      "Empty fields and invalid email block submission with meaningful focused feedback",
+      "Annual USD 120 once-yearly selected amount",
+      "First valid submit recoverable failure and retained workspace/email/plan",
+      "Retry success with Canal Docs, mai@example.com, selected Annual terms, 3-editor limit, 14-day fictional offer and no-real-account/payment/email consequence",
+      "Natural post-action screenshots and scroll/focus/feedback geometry for CTA, validation, failure, success and long success",
+      "Plan editing clears stale status and updates Monthly amount",
+      "Long workspace success feedback wrapping",
+      "Axe scans at all three widths; zero violations",
+      "No uncaught page errors or external runtime requests observed"
+    ],
+    "initial": {
+      "report": "creator-evidence/attempt-01/report.json",
+      "checkCount": 44,
+      "scriptedFailures": [],
+      "renderedFinding": "SVG height mismatch, fixed in version 01"
+    },
+    "final": {
+      "report": "creator-evidence/attempt-02/report.json",
+      "checkCount": 44,
+      "scriptedFailures": []
+    },
+    "imagesInspected": [
+      "attempt-01/initial-1440.png",
+      "attempt-01/initial-320.png",
+      "attempt-01/success-320.png",
+      "attempt-02/initial-1440.png",
+      "attempt-02/initial-320.png",
+      "attempt-02/failure-320.png",
+      "attempt-02/long-success-320.png"
+    ],
+    "axeIncomplete": "aria-prohibited-attr on generic .limits and .plan-compare div aria-label attributes at all widths. No accessibility conformance claim; manual review remains.",
+    "unassessed": [
+      "Human usability or preference",
+      "Independent review",
+      "Screen-reader announcements",
+      "Full keyboard traversal and browser-native select popup on every platform",
+      "FAQ and footer anchor interaction automation",
+      "Comprehensive WCAG conformance",
+      "Cross-browser testing beyond installed Chromium",
+      "Privacy/security outcomes beyond source and observed request behavior"
+    ],
+    "rawFailurePaths": [
+      "creator-evidence/tool-failures.json",
+      "creator-evidence/attempt-01",
+      "creator-evidence/attempt-02"
+    ]
+  },
+  "usage": {
+    "provider": null,
+    "model": null,
+    "inputTokens": null,
+    "outputTokens": null,
+    "thinkingTokens": null,
+    "cacheTokens": null,
+    "cost": null,
+    "toolCount": null,
+    "basis": "No per-cell provider/model/usage/billing telemetry exposed; no token or cost estimate inferred."
+  },
+  "humanAcceptance": "not assessed"
+}

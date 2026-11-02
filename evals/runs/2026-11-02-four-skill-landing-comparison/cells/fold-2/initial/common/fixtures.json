@@ -1,0 +1,73 @@
+{
+  "field-fold": {
+    "fictional": true,
+    "name": "Field Fold",
+    "offer": "A printed-map kit for urban sketchers",
+    "audience": "Urban sketchers arriving from a sketch-club email who already understand sketch walks and are deciding whether this kit fits their next outing.",
+    "problem": "They need to understand the kit contents, choose an available edition and see the complete reservation cost before sharing an email address.",
+    "objections": ["What is actually included?", "Is the edition I want available?", "What is the total and what happens after I reserve?"],
+    "traffic": "A high-intent sketch-club email describing a printed-map kit; no unprovided ad promise.",
+    "voice": "Precise, inviting and observant; concrete product language.",
+    "primaryAction": "Reserve a kit",
+    "conversion": "A successful local simulated reservation after edition, quantity and email have been validated; no real order, payment or email.",
+    "currency": "USD",
+    "price": 53,
+    "contents": ["Two original A3 foldout schematic prints", "One paper sleeve", "Numbered route-note cards"],
+    "editions": [{"name":"Harbor","stock":4},{"name":"Ridge","stock":2},{"name":"Night","stock":0}],
+    "quantityMin": 1,
+    "quantityMax": 3,
+    "shipping": 5,
+    "delivery": "USD 5 shipping per order. No delivery date is supplied or promised.",
+    "returns": "Unused kits may be returned within 14 days; the buyer pays return postage.",
+    "assetFacts": "The original kit/map illustrations are schematic, not photographs, real navigation maps, print-quality evidence or previews of unprovided edition differences. Edition-specific design, color and route differences are not supplied; all editions share the listed contents and price.",
+    "assets": [
+      {"file":"assets/field-fold-map.svg","caption":"Original schematic map illustration for this fictional kit; not a real navigation map or photograph."},
+      {"file":"assets/field-fold-contents.svg","caption":"Original schematic kit-contents illustration. All editions share the listed contents; this is not a photograph or evidence of print finish."}
+    ],
+    "proof": "Only the supplied schematic contents/artifacts and explicit fixture facts are available. No customer logos, testimonials, measured outcomes or manufacturing claims are supplied.",
+    "behavior": "The primary CTA reaches a local form. Choose an edition, whole quantity 1–3 within stock, and a required valid email. Display item subtotal, USD 5 shipping and total with the reservation decision. Night cannot be reserved; Ridge quantity 3 is invalid. First valid submission fails recoverably; retry retains all values and succeeds with exact edition, quantity and total. No order, payment or email is sent. No backend, external form request or reload persistence.",
+    "exampleDecision": {"edition":"Harbor","quantity":2,"email":"mai@example.com","subtotal":106,"shipping":5,"total":111},
+    "privacy": "Demo privacy: entered values stay in current-page memory. This prototype does not transmit the reservation, process payment or send email. No reload persistence, analytics or cookies are required.",
+    "terms": "Demo terms: fictional product, stock and policies; local simulation only. No real reservation, order or payment is created. Do not invent additional guarantees, sustainability/material/production claims or real navigation accuracy."
+  },
+  "relay-notes": {
+    "fictional": true,
+    "name": "Relay Notes",
+    "offer": "A release-email drafting workspace for small open-source maintainers",
+    "audience": "Maintainers of small open-source projects arriving from an article or email and comparing whether the drafting workflow fits their team.",
+    "problem": "They have Markdown change notes but need to understand the preparation workflow, collaboration limit and billing choice before starting a demo workspace.",
+    "objections": ["Does this work with my existing Markdown notes?", "What is included for my team and chosen billing period?", "Does the demo connect to Git, send email or start billing?"],
+    "traffic": "An organic article or email about preparing release-email drafts, with no unprovided performance promise.",
+    "voice": "Clear, practical and calm; concrete workflow and cost language.",
+    "primaryAction": "Start a demo workspace",
+    "conversion": "A successful local simulated workspace setup after workspace name, email and billing choice validation; no real account, payment, trial activation or email.",
+    "workflow": ["Paste Markdown change notes", "Arrange the sections", "Prepare an email draft"],
+    "integrationLimits": "No live Git integration or actual sending is implemented or promised in this slice. No AI quality, time-saving, security or privacy outcome guarantee is supplied.",
+    "currency": "USD",
+    "editorLimit": 3,
+    "trialDays": 14,
+    "plans": [
+      {"id":"monthly","name":"Monthly","amount":12,"period":"per workspace per month","condition":"USD 12 per workspace each month, with up to 3 editors."},
+      {"id":"annual","name":"Annual","amount":120,"period":"per workspace per year, billed once yearly","condition":"USD 120 per workspace billed once yearly, with up to 3 editors."}
+    ],
+    "trial": "The fictional offer includes a 14-day trial. The demo asks for no card and does not start a real trial, account or billing agreement.",
+    "billingLimits": "No real subscription, payment or cancellation is processed. No real cancellation/refund policy beyond this demo is supplied; do not invent one or imply cancel-anytime terms.",
+    "artifactProject": "Canal Docs",
+    "artifactTitle": "Canal Docs release draft",
+    "changeNotes": [
+      {"id":"CN-142","section":"Added","text":"Release draft headings can be renamed before copying.","credit":"Anika Rao"},
+      {"id":"CN-143","section":"Changed","text":"Search keeps its query when a result is opened and closed.","credit":"Mai Nguyễn"},
+      {"id":"CN-145","section":"Fixed","text":"Export uses the currently selected date range.","credit":"Luca Moretti"}
+    ],
+    "changeNoteScope": "These are supplied fictional Canal Docs change records and contributor names used inside a static example artifact. They are not Relay Notes performance claims, real release history or customer testimonials.",
+    "assets": [
+      {"file":"assets/relay-notes-editor.svg","caption":"Original static product illustration using fictional Canal Docs change records. The editor controls are not implemented in this landing-page slice."},
+      {"file":"assets/relay-notes-draft.svg","caption":"Original static email-draft illustration with supplied fictional records and credits; no email is sent and no measured outcome is implied."}
+    ],
+    "proof": "Only the supplied original static artifacts, concrete example records and fixture facts are available. No customer logos, testimonials, user counts, efficiency metrics or security certification are supplied.",
+    "behavior": "The primary CTA reaches a local form. Workspace name and valid email are required; choose Monthly or Annual. Display the selected amount, billing period, up-to-3-editor limit, 14-day trial and no-real-account/payment/email consequence with the decision. First valid submission fails recoverably; retry preserves workspace, email and plan and succeeds with the exact selected plan/conditions. The artifact is illustrative, not an implemented editor. No backend, external form request or reload persistence.",
+    "exampleDecision": {"workspace":"Canal Docs","email":"mai@example.com","plan":"annual","amount":120,"period":"billed once yearly"},
+    "privacy": "Demo privacy: entered values stay in current-page memory. This prototype does not transmit form data, create an account, process payment or send email. No reload persistence, analytics or cookies are required.",
+    "terms": "Demo terms: fictional product, workspace offer and change records; local simulation only. No real trial, account, subscription, payment or email is created. Do not invent integrations, guarantees, testimonials or measurable outcomes."
+  }
+}

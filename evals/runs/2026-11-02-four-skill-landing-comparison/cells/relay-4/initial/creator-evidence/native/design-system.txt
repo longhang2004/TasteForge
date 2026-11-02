@@ -1,0 +1,64 @@
+╔═════════════════════════════════════════════════════════════════════════════════════════╗
+║  TARGET: Relay Notes - RECOMMENDED DESIGN SYSTEM                                        ║
+╚═════════════════════════════════════════════════════════════════════════════════════════╝
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+├─── PATTERN ─────────────────────────────────────────────────────────────────────────────┤
+│  Name: Newsletter / Content First                                                       │
+│     Conversion: Keep the form to the fields actually required and link to a sample      │
+│     issue. Show a subscriber count only when it is current, verified, and dated;        │
+│     otherwise use qualitative social proof.                                             │
+│     CTA: Hero inline form + Sticky header form                                          │
+│     Sections:                                                                           │
+│       1. Hero (Value Prop + Form)                                                       │
+│       2. Recent Issues/Archives                                                         │
+│       3. Social Proof (Subscriber count)                                                │
+│       4. About Author                                                                   │
+├─── STYLE ───────────────────────────────────────────────────────────────────────────────┤
+│  Name: Minimalism & Swiss Style                                                         │
+│     Mode Support: Light supported | Dark supported                                      │
+│     Keywords: Clean, simple, spacious, functional, white space, high contrast,          │
+│     geometric, sans-serif, grid-based, essential                                        │
+│     Best For: Enterprise apps, dashboards, documentation sites, SaaS platforms,         │
+│     professional tools                                                                  │
+│     Performance: cost:low|drivers:none | Accessibility:                                 │
+│     risk:low|requires:contrast-text-4.5,keyboard,visible-focus,reduced-motion           │
+├─── COLORS ──────────────────────────────────────────────────────────────────────────────┤
+│     Primary:           #475569    (--color-primary)                                     │
+│     On Primary:        #FFFFFF    (--color-on-primary)                                  │
+│     Secondary:         #64748B    (--color-secondary)                                   │
+│     On Secondary:      #FFFFFF    (--color-on-secondary)                                │
+│     Accent/CTA:        #059669    (--color-accent)                                      │
+│     On Accent/CTA:     #000000    (--color-on-accent)                                   │
+│     Background:        #F8FAFC    (--color-background)                                  │
+│     Foreground:        #1E293B    (--color-foreground)                                  │
+│     Card:              #FFFFFF    (--color-card)                                        │
+│     Card Foreground:   #1E293B    (--color-card-foreground)                             │
+│     Muted:             #EAEFF3    (--color-muted)                                       │
+│     Muted Foreground:  #475569    (--color-muted-foreground)                            │
+│     Border:            #E2E8F0    (--color-border)                                      │
+│     Destructive:       #DC2626    (--color-destructive)                                 │
+│     On Destructive:    #FFFFFF    (--color-on-destructive)                              │
+│     Ring:              #475569    (--color-ring)                                        │
+│     Notes: Feature green + fix blue + breaking red badges                               │
+├─── TYPOGRAPHY ──────────────────────────────────────────────────────────────────────────┤
+│  Lora / Raleway                                                                         │
+│     Mood: calm, wellness, health, relaxing, natural, organic                            │
+│     Best For: Health apps, wellness, spa, meditation, yoga, organic brands              │
+│     Google Fonts:                                                                       │
+│     https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:  │
+│     wght@300;400;500;600;700&display=swap                                               │
+│     CSS Import: @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400...  │
+├─── KEY EFFECTS ─────────────────────────────────────────────────────────────────────────┤
+│     Subtle hover (200-250ms), smooth transitions, sharp shadows if any, clear type      │
+│     hierarchy, fast loading                                                             │
+├─── AVOID ───────────────────────────────────────────────────────────────────────────────┤
+│     No chronological order + no version tags + noisy marketing copy                     │
+├─── PRE-DELIVERY CHECKLIST ──────────────────────────────────────────────────────────────┤
+│     [ ] No emojis as icons (use SVG: Heroicons/Lucide)                                  │
+│     [ ] cursor-pointer on all clickable elements                                        │
+│     [ ] Hover states with smooth transitions (150-300ms)                                │
+│     [ ] Light mode: text contrast 4.5:1 minimum                                         │
+│     [ ] Focus states visible for keyboard nav                                           │
+│     [ ] prefers-reduced-motion respected                                                │
+│     [ ] Responsive: 375px, 768px, 1024px, 1440px                                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘

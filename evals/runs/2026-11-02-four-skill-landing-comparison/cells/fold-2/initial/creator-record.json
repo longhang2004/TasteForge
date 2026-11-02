@@ -1,0 +1,175 @@
+{
+  "cell": "fold-2",
+  "product": "Field Fold",
+  "projectLinux": "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-2",
+  "projectWindows": "C:\\Users\\hi\\.codex\\visualizations\\2026\\11\\02\\01a19b3e-944d-71f3-aad3-5bb52e595e71\\tasteforge-four-skill-projects\\fold-2",
+  "utcStart": "2026-11-02T14:48:45Z",
+  "startBasis": "First available tool was clock__curr_time, before input reads.",
+  "utcEnd": "2026-11-02T16:24:34.048318+00:00",
+  "interruption": {
+    "reason": "External provider quota interruption reported by parent; user authorized continuation. No new design budget or artistic reroll.",
+    "lastKnownSourceWriteUtc": "2026-11-02T14:52:02.3671628Z",
+    "resumeUtc": "2026-11-02T16:20:17Z",
+    "unavailableStartUtc": null,
+    "unavailableEndUtc": null,
+    "intervalUncertainty": "Exact provider unavailable interval is not exposed. Last known source write and first resume time bound the inactive gap; do not treat the entire gap as observed active creation.",
+    "rootCheckpointSha256": "4a6fb4c18e304c59887368555174a006095262ab04416fe11c23cc87dd88fab2"
+  },
+  "inputsLoaded": [
+    "PRODUCT.md (complete)",
+    "common/fixtures.json (complete; only field-fold used)",
+    "common/fonts.css",
+    "common/assets/LICENSE",
+    "common/assets/field-fold-map.svg",
+    "common/assets/field-fold-contents.svg",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/operator.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/elaya/skill/SKILL.md (complete)"
+  ],
+  "nativeCalls": [
+    {
+      "call": "clock__curr_time({})",
+      "outcome": "UTC start observed before inputs"
+    },
+    {
+      "call": "wsl.exe --distribution Ubuntu --cd <projectLinux> --exec bash -lc <local command>",
+      "outcome": "Initial non-escalated invocation failed Wsl/E_ACCESSDENIED. Subsequent escalated Ubuntu calls succeeded; no native Windows file operations."
+    },
+    {
+      "call": "cat PRODUCT.md; cat common/fixtures.json; cat common/assets/LICENSE; cat common/fonts.css; cat common/assets/field-fold-map.svg; cat common/assets/field-fold-contents.svg",
+      "outcome": "All supplied facts and media source read before code"
+    },
+    {
+      "call": "find common/fonts -maxdepth 2 -type f | sort",
+      "outcome": "Supplied Manrope and Poppins verified, no installation"
+    },
+    {
+      "call": "apply_patch index.html",
+      "outcome": "Created initial source with inline CSS and JS"
+    },
+    {
+      "call": "cp -p index.html versions/00.html; sha256sum versions/00.html",
+      "outcome": "Preserved earliest available source bytes after resume and before all checks"
+    },
+    {
+      "call": "node creator-evidence/check.mjs > creator-evidence/attempt-01/terminal.log 2>&1",
+      "outcome": "Browser checks complete; initial axe failures retained"
+    },
+    {
+      "call": "python3 local replacement and version preservation",
+      "outcome": "Single focused accessibility correction; versions/01-record.json"
+    },
+    {
+      "call": "node creator-evidence/check-02.mjs > creator-evidence/attempt-02/terminal.log 2>&1",
+      "outcome": "Repeated relevant checks after correction, zero axe violations on observed success mobile and settled desktop states"
+    },
+    {
+      "call": "view_image initial-1440.png, success-390.png, settled-1440.png, initial-390.png",
+      "outcome": "Creator visual inspection only, no independent review"
+    }
+  ],
+  "workflow": {
+    "mode": "One creator, code first, supplied media",
+    "skill": "landing-page-design (assigned elaya bundle)",
+    "strategyBeforeCode": "Published the seven required strategy items in commentary before source writing.",
+    "layout": "C, minimal conversion page for high intent visitors",
+    "overrides": [
+      "No helpers or image generation per controlled experiment",
+      "No invented social proof, guarantees or additional claims; fixture truth overrides template social proof/risk rules",
+      "Single landing slice; no custom 404 route",
+      "Persistent assigned project replaces operator original /tmp location"
+    ],
+    "skillGeneratedMetadata": [],
+    "commonModified": false
+  },
+  "versions": [
+    {
+      "path": "versions/00.html",
+      "sha256": "4a6fb4c18e304c59887368555174a006095262ab04416fe11c23cc87dd88fab2",
+      "sourceMtimeUtc": "2026-11-02T14:52:02.3671628Z",
+      "preservedUtc": null,
+      "preservationWindowUtc": [
+        "2026-11-02T16:20:24Z",
+        "2026-11-02T16:21:33.902Z"
+      ],
+      "basis": "No earlier version file existed on resume. Earliest available checkpoint was copied byte for byte before any creator browser checks; timestamp intentionally not backdated. Equal to parent interruption checkpoint hash.",
+      "runnableVerificationUtc": "2026-11-02T16:21:33.902Z"
+    },
+    {
+      "path": "versions/01.html",
+      "author": "creator",
+      "utc": "2026-11-02T16:22:35.628473+00:00",
+      "finding": "attempt-01 axe: unavailable stock badge contrast and brand-link label-content-name mismatch",
+      "changes": [
+        "Darkened unavailable badge text",
+        "Removed redundant brand aria-label so its visible name supplies the accessible name"
+      ],
+      "sha256": "7dca1dc6c8ccb3b004e0a3f6536904fab2cf42ba76f05bd7d57afd3a952e935e"
+    }
+  ],
+  "submitted": {
+    "path": "index.html",
+    "sha256": "7dca1dc6c8ccb3b004e0a3f6536904fab2cf42ba76f05bd7d57afd3a952e935e",
+    "utc": "2026-11-02T16:24:34.048318+00:00"
+  },
+  "rationale": "Manrope and warm paper colors echo the supplied schematic palette. The hero names the object and audience directly, contents illustration carries factual proof, stock and costs sit beside a native form, and a large separate tagline follows the contents argument.",
+  "tradeoff": "The supplied skill adds a tagline and six FAQs to an otherwise compact conversion offer, making the mobile page longer. Section reveals require ordinary scrolling; initial full-page captures show offscreen reveal content muted or hidden. The CTA scrolls to the reservation section, with product facts above the form on mobile; post-action scroll/focus is recorded without resetting it.",
+  "checks": {
+    "attempt01": {
+      "raw": "creator-evidence/attempt-01/checks.json",
+      "start": "2026-11-02T16:21:33.902Z",
+      "end": "2026-11-02T16:21:43.578Z",
+      "failures": [
+        "axe color-contrast: unavailable badge, plus initial animated/muted reveal states",
+        "axe label-content-name-mismatch: brand link"
+      ]
+    },
+    "attempt02": {
+      "raw": "creator-evidence/attempt-02/checks.json",
+      "start": "2026-11-02T16:23:00.973Z",
+      "end": "2026-11-02T16:23:16.892Z",
+      "outcomes": [
+        "No horizontal overflow at 320, 390, 1440",
+        "Primary hero CTA within first 390px viewport",
+        "First Tab reaches skip link",
+        "CTA real scroll and feedback focus captured",
+        "Required email blocked",
+        "Ridge quantity 3 blocked",
+        "Night option disabled",
+        "Harbor quantity 2 costs USD 106 + USD 5 = USD 111",
+        "First valid submit recoverably fails and preserves values",
+        "Retry success names exact edition, quantity, email and total with no real order/payment/email",
+        "Changing quantity clears success and updates cost",
+        "axe success-390 zero violations",
+        "axe settled desktop zero violations after explicitly scrolling reveals and returning to top",
+        "Reduced motion shows final words, zero transition and auto scroll",
+        "No browser console or page errors"
+      ]
+    },
+    "rawEvidenceDirectories": [
+      "creator-evidence/attempt-01",
+      "creator-evidence/attempt-02"
+    ],
+    "selfCorrectionCount": 1,
+    "independentReview": false,
+    "humanAcceptance": false
+  },
+  "unassessed": [
+    "Human usability, uniqueness and preference",
+    "Exhaustive keyboard traversal and screen reader behavior",
+    "All invalid email, decimal, zero and over-3 quantity permutations (implemented validation, not each exercised)",
+    "Contrast of transient muted tagline state remains intentionally low per assigned skill; settled and reduced motion states checked",
+    "No production backend, payment, email, hosting, real navigation-map accuracy or print quality"
+  ],
+  "usage": {
+    "provider": null,
+    "exactModel": null,
+    "inputTokens": null,
+    "outputTokens": null,
+    "thinkingTokens": null,
+    "cacheTokens": null,
+    "billing": null,
+    "cost": null,
+    "toolCount": null,
+    "basis": "Exact provider/model/token/cache/cost/tool-usage metering was not exposed; no estimates substituted."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T14:37:38.549641+00:00",
+  "title": "Design System: Relay Notes",
+  "extensions": {
+    "motion": [],
+    "shadows": [],
+    "breakpoints": [
+      {
+        "name": "medium",
+        "value": "900px"
+      },
+      {
+        "name": "small",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "html": "<button class=\"ds-primary\">Start demo workspace</button>",
+      "css": ".ds-primary{background:#243fbd;color:white;border:0;border-radius:2px;padding:14px 18px;min-height:52px;font:700 14px Manrope,sans-serif;cursor:pointer}.ds-primary:hover{background:#172b8b}.ds-primary:focus-visible{outline:3px solid #f3b433;outline-offset:5px}"
+    },
+    {
+      "name": "Retry button",
+      "kind": "button",
+      "html": "<button class=\"ds-retry\">Retry setup</button>",
+      "css": ".ds-retry{background:transparent;border:1px solid #243fbd;color:#243fbd;padding:8px 18px;font:700 16px Manrope,sans-serif;cursor:pointer}.ds-retry:hover{background:#dbe5ff}.ds-retry:focus-visible{outline:3px solid #f3b433;outline-offset:5px}"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "html": "<label class=\"ds-label\" for=\"ds-workspace\">Workspace name</label><input id=\"ds-workspace\" class=\"ds-field\" placeholder=\"e.g. Canal Docs\">",
+      "css": ".ds-label{display:block;font:750 13px Manrope,sans-serif;margin-bottom:7px;color:#14234d}.ds-field{border:1px solid #8798c4;border-radius:2px;padding:13px 12px;background:white;color:#14234d;font:16px Manrope,sans-serif}.ds-field:focus-visible{outline:3px solid #f3b433;outline-offset:5px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "html": "<nav class=\"ds-nav\"><a href=\"#workflow\">How it works</a><a href=\"#demo\">Start a demo</a></nav>",
+      "css": ".ds-nav{display:flex;gap:30px;background:#243fbd;padding:20px;color:white;font:600 14px Manrope,sans-serif}.ds-nav a{color:inherit;text-decoration:none;text-underline-offset:5px}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid #f3b433;outline-offset:5px}"
+    },
+    {
+      "name": "Disclosure",
+      "kind": "custom",
+      "html": "<details class=\"ds-faq\"><summary>What does a workspace include?</summary><p>Up to 3 editors.</p></details>",
+      "css": ".ds-faq{border-top:1px solid #bec9ec;padding:22px 0;color:#14234d;font:16px/1.6 Manrope,sans-serif}.ds-faq summary{font-weight:700;cursor:pointer}.ds-faq summary:focus-visible{outline:3px solid #f3b433;outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Community Program",
+    "overview": "Broad cobalt fields and clear pale lanes give the release workspace the directness of a conference program. Strong, left-aligned type carries the message; the offer remains practical and the artifacts remain visibly illustrative.",
+    "keyCharacteristics": [
+      "Full-width color regions.",
+      "Open rows and explicit labels.",
+      "Flat surfaces with generous content insets."
+    ],
+    "rules": [
+      {
+        "name": "The Region Rule",
+        "body": "Blue owns whole regions, rather than becoming scattered decorative accents.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do keep costs, periods and consequences near the decision.",
+      "Do preserve visible static-artifact captions.",
+      "Do retain native controls and explicit text outcomes."
+    ],
+    "donts": [
+      "Don\u2019t turn supplied illustrations into pretend editor controls.",
+      "Don\u2019t introduce ornamental depth into the open-row system."
+    ]
+  }
+}
