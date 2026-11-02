@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f1e9">
+<title>Everyday Teapot — Field Kiln</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#product">Skip to product</a>
+<header class="site-header">
+  <a class="brand" href="#" aria-label="Field Kiln home"><span class="brand-mark" aria-hidden="true">f<span>k</span></span><span>FIELD KILN<small>Objects for everyday rituals</small></span></a>
+  <nav aria-label="Page navigation"><a href="#product">The teapot</a><a href="#details">The details</a></nav>
+  <span class="sample-label">A fictional ceramic shop</span>
+</header>
+<main id="app">
+  <div class="eyebrow page-intro"><span>THE EVERYDAY COLLECTION</span><span>01 / STONEWARE</span></div>
+  <section class="product-layout" id="product" aria-labelledby="product-name">
+    <div class="product-visual">
+      <figure>
+        <div class="image-wrap"><span class="image-note">A quiet moment, poured.</span><img src="assets/teapot.svg" alt="Illustration of the Everyday Teapot in dark green Iron glaze: a rounded body, curved handle, fitted lid, and short spout." width="900" height="700"><span class="image-index">FIG. 01 — IRON GLAZE</span></div>
+        <figcaption><span>Everyday Teapot · Iron illustration</span><span>650 ml / 16 × 12 cm</span></figcaption>
+      </figure>
+      <div class="visual-note"><span class="small-star" aria-hidden="true">✳</span><p>Made for the pause.<br><span>A familiar shape for the daily tea ritual.</span></p></div>
+      <p class="image-disclosure">Original vector illustrations of a fictional sample product; these are not photographs. The illustration shows Iron; Sand and Ash are represented by the glaze swatches.</p>
+    </div>
+    <div class="product-info">
+      <p class="eyebrow product-kicker">HANDMADE CERAMICS / NO. 01</p>
+      <h1 id="product-name">Everyday<br>Teapot</h1>
+      <div class="price-line"><p class="price">$68.00 <span>USD</span></p><span>Glazed stoneware · 650 ml</span></div>
+      <p class="description">A rounded stoneware teapot with a curved handle and a simple, fitted lid. An everyday piece for taking your time.</p>
+      <form id="purchase-form">
+        <fieldset class="glazes"><legend>01 <span>Choose your glaze</span></legend>
+          <div class="glaze-options">
+            <label class="glaze-option"><input type="radio" name="glaze" value="iron" data-testid="glaze-iron" checked><span class="glaze-card"><span class="swatch iron" aria-hidden="true"></span><span class="glaze-name">Iron</span><small>4 in stock</small><span class="selected-mark" aria-hidden="true">✓</span></span></label>
+            <label class="glaze-option unavailable"><input type="radio" name="glaze" value="ash" data-testid="glaze-ash" disabled><span class="glaze-card"><span class="swatch ash" aria-hidden="true"></span><span class="glaze-name">Ash</span><small>Unavailable</small></span></label>
+            <label class="glaze-option"><input type="radio" name="glaze" value="sand" data-testid="glaze-sand"><span class="glaze-card"><span class="swatch sand" aria-hidden="true"></span><span class="glaze-name">Sand</span><small>7 in stock</small><span class="selected-mark" aria-hidden="true">✓</span></span></label>
+          </div>
+        </fieldset>
+        <div class="quantity-row"><label for="quantity"><span class="step-number">02</span> Quantity</label><select id="quantity" name="quantity" data-testid="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select><span class="quantity-note">1–4 pieces per order</span></div>
+        <div class="order-summary" aria-label="Order summary">
+          <div><span id="item-description">Iron × 1</span><span id="subtotal">$68.00</span></div>
+          <div><span>Domestic shipping <small>per order</small></span><span>$8.00</span></div>
+          <div class="total-line"><strong>Order total</strong><strong id="order-total" aria-live="polite">USD 76.00</strong></div>
+        </div>
+        <button type="submit" class="add-button" data-testid="add-to-cart"><span>Add to simulated cart</span><span aria-hidden="true">↗</span></button>
+        <div class="cart-status" data-testid="cart-status" role="status" aria-live="polite"></div>
+        <p class="simulation-note">A sample shopping experience. No payment or real order.</p>
+      </form>
+      <div class="purchase-conditions"><p><strong>Dispatch in 2 business days</strong><br>Illustrative domestic transit: 3–5 business days.</p><p><strong>30-day returns on unused pieces</strong><br>Customer pays return shipping. Original shipping is nonrefundable.</p></div>
+    </div>
+  </section>
+  <section class="details" id="details" aria-labelledby="detail-heading">
+    <div class="details-heading"><p class="eyebrow">A CLOSER LOOK</p><h2 id="detail-heading">Good things, in the details.</h2></div>
+    <div class="detail-grid"><article><span class="detail-number">01 / THE PIECE</span><h3>Form & material</h3><dl><div><dt>Material</dt><dd>Glazed stoneware</dd></div><div><dt>Capacity</dt><dd>650 ml</dd></div><div><dt>Dimensions</dt><dd>16 cm wide × 12 cm high</dd></div></dl></article><article><span class="detail-number">02 / THE EVERYDAY</span><h3>Care for your teapot</h3><p>Hand wash. Avoid sudden temperature changes. Not for stovetop use.</p></article><article><span class="detail-number">03 / THE JOURNEY</span><h3>Delivery & returns</h3><p>Shipping is USD 8.00 per order. Dispatch in 2 business days; illustrative domestic transit 3–5 business days.</p><p>Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.</p></article></div>
+  </section>
+</main>
+<footer><span class="footer-brand">Field Kiln</span><p>Fictional shop and illustrative product, price, stock, delivery, and returns.</p><a href="#product">Back to the teapot ↑</a></footer>
+</body>
+</html>

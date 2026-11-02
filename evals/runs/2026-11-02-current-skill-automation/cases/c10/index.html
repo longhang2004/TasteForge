@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northline Transfer — Money Transfer Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="simulation-banner" role="region" aria-label="Simulation Notice">
+    <div class="banner-inner">
+      <span class="badge">Simulation</span>
+      <span class="banner-text">Simulation with fictional data. No money is moved and no real account is connected.</span>
+    </div>
+  </div>
+
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <svg class="brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">Northline Transfer</span>
+      </div>
+      <div class="account-pill" title="Simulated source account">
+        <span class="account-dot" aria-hidden="true"></span>
+        <span class="account-label">Everyday USD ••1042</span>
+        <span class="account-holder">(Alex Morgan)</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="main-content" aria-live="polite">
+    <!-- Rendered dynamically by app.js -->
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <p>Northline Transfer Prototype &bull; Fictional remittance simulation for design review</p>
+      <p class="footer-subtext">No real transaction capability &bull; Reference date: 1 November 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+{
+  "reviewer": "r1",
+  "batch": "b",
+  "scope": "independent AI screenshot review",
+  "views": [
+    {
+      "id": "b-01",
+      "task": "product",
+      "scores": {
+        "entry_priority": {"score": 4, "note": "Desktop b-01-03 exposes illustration, product name, $68 unit price and $8 shipping, followed by a clear glaze/quantity/total/add panel within 1000px. Narrow b-01-04 leads with image/disclosure and specification tiles before name/price; it contains no buying controls or total in the first 844px."},
+        "information_grouping": {"score": 4, "note": "b-01-03/06 group explicit stock, sold-out Ash, quantity, item/shipping/total, dispatch and add action in a single panel. Full-page b-01-06 separately groups Product Specifications, Delivery & Returns and disclosures. Familiar commerce structure is useful, though duplicated spec tiles/table and the right-only lower column lengthen the page while the left stays empty."},
+        "decision_context": {"score": 3, "note": "b-01-06 provides initial Iron ×1 $68 + $8 = USD76, stock, dimensions/material/care, transit and complete return costs. Description additionally asserts wheel-thrown construction, durable mineral glaze and an integrated interior strainer, which the supplied fixture does not establish. Returns/care are below the add action in reading order. Sand ×2 pricing and cart confirmation are not visible."},
+        "narrow_context": {"score": 2, "note": "b-01-04 fits image, title and unit/shipping prices without horizontal clipping, but three specification tiles wrap material/dimensions and consume space before selection. Neutral full-page b-01-02 shows a long stacked buying panel and lower reference tables; no glaze, quantity, total or action appears in the authored 844px initial viewport."},
+        "recovery_evidence": {"score": null, "note": "Cart-labeled b-01-05 shows the same page-top content as b-01-04 without visible confirmation or error/recovery controls. Every state capture explicitly resets to page top; this is unshown feedback, not evidence of missing feedback or poor real post-click focus/scroll behavior."},
+        "composition_purpose": {"score": 3, "note": "b-01-06 uses the object illustration, warm ground and serif title for a modest craft identity, backed by practical specifications. Image/options split and ledger have direct buying purposes. Numerous repeated boxed fact rows and large blank left region make the composition longer and more form-like than necessary; no unrelated SaaS section grid is visible."}
+      },
+      "authoredRevisionsToNeutral": "Frozen notes remain unchanged. Warm colors, serif headings and softer borders in b-01-03/06 provide more craft identity than neutral suggested, so the identity observation is moderated; the repeated panels and narrow pre-control length remain. Actual narrow b-01-04 confirms only unit/shipping prices, not selection or total, within the first screen. The forced-top cart capture supplies no visible outcome and remains unassessed. Unsupported descriptive claims identified in neutral are still present.",
+      "evidenceImages": ["neutral/b-01-01.png", "neutral/b-01-02.png", "authored/b-01-03.png", "authored/b-01-04.png", "authored/b-01-05.png", "authored/b-01-06.png"]
+    },
+    {
+      "id": "b-02",
+      "task": "product",
+      "scores": {
+        "entry_priority": {"score": 4, "note": "b-02-03 clearly exposes object image, title/price, three labeled glazes, quantity, shipping-inclusive total and add action in the desktop viewport. Narrow b-02-04 spends all 844px on demonstration banner, framed illustration/disclosure and material/care; even product name/price are below the initial viewport."},
+        "information_grouping": {"score": 4, "note": "b-02-06 separates image and craft/material/care facts on the left from variant/quantity/cost/action and delivery/returns on the right. Clear unavailable Ash0 and Iron4/Sand7 labels plus a subtotal/shipping/total ledger support selection. Large outer panel, nested image frame and margins consume narrow width; shipping/returns sit after the add action."},
+        "decision_context": {"score": 4, "note": "b-02-06 shows material, capacity, dimensions, care, $68 unit, stock, $8 shipping, USD76 total, dispatch/transit and full return costs, with explicit fictional-product and illustration disclosures. No Sand ×2 updated ledger or confirmation is visible; 'updated live' is interface copy, not demonstrated recalculation. Complete return terms require scrolling beyond initial desktop viewport."},
+        "narrow_context": {"score": 2, "note": "b-02-04 fits the content without horizontal clipping, but nested insets leave a narrow practical-text column, wrapping dimensions/care and placing title/price and every buying control below 844px. Neutral b-02-02 shows orderly stacked options/ledger/action later on the full page; that does not make them initially visible."},
+        "recovery_evidence": {"score": null, "note": "b-02-05 is the same visible page-top scope as initial b-02-04, with no confirmation or corrective/error state shown. Forced page-top capture means recovery and post-action feedback are unassessed, with no inference about behavior or natural landing position."},
+        "composition_purpose": {"score": 3, "note": "b-02-06's familiar object/specification and purchase-column structure is directly useful. Authored serif typography and warm illustration add craft identity. Heavy nested framing, a dominant 'DEMONSTRATION ARTIFACT' label and 'updated live' implementation phrasing take space without improving glaze/conditions decisions; no unrelated marketing grid is visible."}
+      },
+      "authoredRevisionsToNeutral": "Authored b-02-03 places the serif title on one desktop line, unlike the neutral two-line reflow, moving the cost/action and delivery upward. This corrects the neutral impression of desktop title height; initial frozen observations remain for traceability. Warm color/serif type also improve perceived craft identity. Narrow b-02-04 still has no title/price/control in view, and b-02-05 supplies no visible feedback in the explicitly reset-to-top capture.",
+      "evidenceImages": ["neutral/b-02-01.png", "neutral/b-02-02.png", "authored/b-02-03.png", "authored/b-02-04.png", "authored/b-02-05.png", "authored/b-02-06.png"]
+    },
+    {
+      "id": "b-03",
+      "task": "transfer",
+      "scores": {
+        "entry_priority": {"score": 4, "note": "b-03-03 uses a prominent simulation banner, concise progress, labeled recipient/amount, full initial ledger and a green Continue to Review action within desktop height. Narrow b-03-04 includes complete name, USD250 and fee, then only the upper ledger, leaving total/action below the initial screen."},
+        "information_grouping": {"score": 4, "note": "b-03-03's centered form puts funding source, inputs/limits/fee, ledger and action in a coherent linear sequence. b-03-05 groups recipient/destination/source, cost breakdown and delivery/conversion into clearly separated sections. Header and panel repeat source information; name and source wrap in narrow review but remain complete."},
+        "decision_context": {"score": 3, "note": "b-03-03 shows USD250 + USD2.50 = USD252.50, 6,250,000VND, rate and date. b-03-05 shows full recipient/source and USD375 + USD2.50 = USD377.50 with 9,375,000VND at the viewport bottom. 'Guaranteed rate' and review 'guaranteed payout' are not established by the illustrative fixture; review date/rate/Edit/confirm are outside shown scope. The visible simulation banner helps scope but does not substantiate a guarantee."},
+        "narrow_context": {"score": 3, "note": "b-03-04 keeps the full input name, currency and fee legible, but complete ledger/action require scrolling. b-03-05 wraps full name/source cleanly and shows fee/debit/received amount, while other verification/action context is below 844px. b-03-06 visibly adds a tall clear alert; assessment is of the forced page-top state only, not the actual post-click landing."},
+        "recovery_evidence": {"score": null, "note": "b-03-06 visibly reports 'Transfer could not be processed,' a simulated connection timeout, no funds debited, preserved details and permission to retry/edit. Recipient/source are shown below. Actual retry/Edit controls and success are outside this top-of-page viewport, so recovery is unassessed rather than scored weak for offscreen content. The snapshot cannot prove input retention or controls working."},
+        "composition_purpose": {"score": 4, "note": "b-03-03/05/06 use conventional form, ledger, green debit/action emphasis and a red text/icon failure alert for concrete transaction roles. These familiar patterns are useful. Repeated account display and reassurance/guarantee wording add some overhead, but no unrelated generic content grid competes with the task."}
+      },
+      "authoredRevisionsToNeutral": "Authored green action and debit emphasis reinforce the neutral grouping judgment. b-03-05 newly supplies visible review recipient/source and recalculated ledger evidence, while b-03-06 supplies a distinct textual error explanation. Recovery stays null because retry/edit controls are unshown in a forced-top viewport; no behavioral absence or landing inference is made. New review 'guaranteed payout' wording extends the unsupported-guarantee concern already observed in neutral. Frozen notes remain unchanged.",
+      "evidenceImages": ["neutral/b-03-01.png", "neutral/b-03-02.png", "authored/b-03-03.png", "authored/b-03-04.png", "authored/b-03-05.png", "authored/b-03-06.png"]
+    },
+    {
+      "id": "b-04",
+      "task": "transfer",
+      "scores": {
+        "entry_priority": {"score": 3, "note": "b-04-03 clearly labels recipient/amount and exposes the initial ledger, but demo banner, brand/account header and large stepper add substantial overhead; review action is below desktop 1000px. b-04-04 spends roughly 300px before the form and includes no initial total or action in 844px."},
+        "information_grouping": {"score": 4, "note": "b-04-03 groups source, recipient/destination, amount/fee and an itemized fee/exchange summary in a centered card. b-04-05 creates a verification-summary section with recipient, destination and cost rows. Familiar workflow structure has a concrete purpose, though repeated sender/source, a pending-verification badge and tall wrapped headings add density in narrow review."},
+        "decision_context": {"score": 3, "note": "b-04-03 shows complete recipient, USD250, USD2.50 fee, USD252.50 debit, 6,250,000VND, rate and explicitly illustrative date. b-04-05 shows wrapped complete recipient and USD375/2.50/377.50, but receive/rate/date/Edit/confirm remain outside the top viewport. 'Guaranteed exchange rates' and guaranteed-rate badge overstate the supplied illustrative fixture."},
+        "narrow_context": {"score": 3, "note": "b-04-04 fits the complete name and amount but header/step wrapping and broad insets delay ledger/action. b-04-05 keeps name and costs readable yet only reaches the total at the lower edge, with several label wraps. b-04-06 does fit failure explanation, recipient/amount and Retry Transfer within 844px. These are top-of-page captures and do not show natural focus/scroll behavior."},
+        "recovery_evidence": {"score": 4, "note": "b-04-06 visibly distinguishes a red failure panel, says simulated timeout, no funds debited, and preserves the full recipient plus $400 amount in the explanation; a prominent Retry Transfer control is visible. This is concrete recovery presentation evidence, not proof of retention or retry success. 'SIMULATED FAILURE (RECOVERABLE)' and 'simulation gateway timeout' add implementation-heavy wording; no success state is shown."},
+        "composition_purpose": {"score": 3, "note": "b-04-03/05/06 give conventional forms, itemized ledger, blue total emphasis and red failure/action roles a practical purpose. Large demo/header/step areas, repeated guarantee labels, a pending-verification badge and verbose failure terminology add overhead without additional cost/recipient facts. Useful familiar transaction structure is not itself a defect."}
+      },
+      "authoredRevisionsToNeutral": "Authored blue total/step emphasis and green received-amount strip reinforce the initial ledger grouping. b-04-05 adds review recipient/cost evidence but not the whole review within its top viewport. b-04-06 changes recovery from neutral unassessed to visibly evidenced because it includes an explicit outcome, no-debit explanation, full recipient/$400 summary and Retry Transfer control. This is a scope-limited visual judgment; no retry success or retention behavior is inferred. Frozen initial notes are unchanged.",
+      "evidenceImages": ["neutral/b-04-01.png", "neutral/b-04-02.png", "authored/b-04-03.png", "authored/b-04-04.png", "authored/b-04-05.png", "authored/b-04-06.png"]
+    }
+  ],
+  "inspectedImages": [
+    "neutral/b-01-01.png", "neutral/b-01-02.png", "neutral/b-02-01.png", "neutral/b-02-02.png",
+    "neutral/b-03-01.png", "neutral/b-03-02.png", "neutral/b-04-01.png", "neutral/b-04-02.png",
+    "authored/b-01-03.png", "authored/b-01-04.png", "authored/b-01-05.png", "authored/b-01-06.png",
+    "authored/b-02-03.png", "authored/b-02-04.png", "authored/b-02-05.png", "authored/b-02-06.png",
+    "authored/b-03-03.png", "authored/b-03-04.png", "authored/b-03-05.png", "authored/b-03-06.png",
+    "authored/b-04-03.png", "authored/b-04-04.png", "authored/b-04-05.png", "authored/b-04-06.png"
+  ],
+  "limitations": [
+    "Independent AI screenshot review only, not representative-user research, a human-usability claim or broad UX/conformance certification. All eight neutral and sixteen authored files were actually opened with image viewing. No condition/model inference was attempted.",
+    "Only packet-b instructions, task briefs/fixtures, neutral/authored inventories and their images were inspected for this batch. No private maps, creator source/notes, task results, other reviewers or other runs were opened. Batch A outputs were not modified or used for cross-batch comparison.",
+    "r1-b-neutral.md was written and frozen after eight neutral images and before authored inventory/images. Neutral font replacement can reflow content; grayscale and removed radius/shadow are diagnostic. Authored interpretation changes explicitly preserve initial observations.",
+    "All state screenshots explicitly reset scrollTo(0,0) before capture. Authored actual viewport images therefore show page-top scope, not natural post-click scroll/focus landings. Offscreen feedback/recovery remains null/unassessed, not evidence of missing behavior, weak focus management or real-user placement.",
+    "Neutral images are full-page. Authored -03 are 1440×1000 actual desktop viewports; -04/-05 are 390×844 actual viewports. Product -06 is full-page initial; transfer -06 is 390×844 actual failure viewport. Full-page evidence includes below-fold material and does not establish initial visibility.",
+    "Screenshots cannot prove working controls, unavailable-stock prevention, live recalculation, keyboard/AT access, selection semantics, focus handling, input retention/editing, validation, contrast certification, cart success or successful retry/transfer behavior.",
+    "Product cart-labeled captures b-01-05/b-02-05 show the same page-top content as their initial captures, without visible confirmation. Confirmation can be outside the captured scope; no task-success or failure claim follows.",
+    "b-03 failure visibly explains the outcome but actual retry/edit controls are unshown, so recovery is null. b-04 shows explicit failure, preserved-looking recipient/amount and Retry Transfer, permitting a visual recovery-presentation judgment only. No success or invalid-amount capture is supplied.",
+    "Transfer review snapshots use USD375 and failure uses USD400; distinct state amounts do not establish an exact retention/edit sequence. Behavioral descriptions in interface copy, such as live updates or preserved details, are not treated as proven by the text alone.",
+    "Six dimensions are scored separately, 1 weak/blocking through 3 usable with material issues to 5 consistently strong within shown scope; null means unassessed. There is no overall slop/quality total. Familiar commerce/form/ledger structures are assessed by concrete purpose, not penalized merely for familiarity."
+  ]
+}

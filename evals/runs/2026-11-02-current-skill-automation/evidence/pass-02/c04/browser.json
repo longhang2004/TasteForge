@@ -1,0 +1,2159 @@
+{
+  "captureVersion": "2.0",
+  "evidencePass": "pass-02",
+  "caseId": "c04",
+  "capturedAtUtc": "2026-11-01T18:41:20.518Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    ".tasteforge/brief.json": "59bff358a76944fc4b65e4527a3a994be7359c7cdc7abb8eef453afd296049f3",
+    ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+    "app.js": "2966aa392563153af59ef5ba22bb89c3256c7428d48436af2f60d8e748cbdf72",
+    "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+    "DESIGN_REVIEW.md": "e5d0f23701a11ef56affda512378f7f4228098f15d4cd183954851124e6a5866",
+    "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+    "implementation-notes.md": "b5022fbee2a10231f8274059c15862ff5cf0c4c339b1cc8a5da76177a92aad9d",
+    "index.html": "935937370bf4efea4f8ed3deb97964a9644bbd03f1fbe91d9c26e68cb381bf6a",
+    "styles.css": "95912c805d6d78a47296acb8e091cc68eaafbee36333925d0972009e38b54473",
+    "task.md": "ecb0203e9cce81d75cd11ff164e8d5b67aed8a2ba6898a343f8f491a9515e826",
+    "UX_PLAN.md": "fee4d4c49003c6a690090f300691cd8caf61fde966f1b8ec5e8e310239714acd"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-neutral-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-review.png",
+        "desktop-review-viewport.png",
+        "desktop-neutral-review.png",
+        "desktop-cart.png",
+        "desktop-cart-viewport.png",
+        "desktop-neutral-cart.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 shown before commitment",
+          "status": "pass",
+          "observation": "Required in this new task: USD 68 × 2 + USD 8 shipping; presence alone does not establish good placement.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Sand × 2 cart confirmation",
+          "status": "pass",
+          "observation": "Added to simulated cart: 2 × Everyday Teapot, Sand glaze. Order total USD 144.00, shipping included. No payment taken.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 total explicitly shown",
+          "status": "pass",
+          "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "No horizontal overflow in cart",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Unavailable Ash cannot be purchased",
+          "status": "pass",
+          "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Skip to product options",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "glaze-iron",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "1 piece2 pieces3 pieces4 pieces",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "add-to-cart",
+          "name": "Add to simulated cart↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Skip to product options\nfkField Kiln•Objects for everyday ritualsFictional shop\n",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Skip to product options",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "glaze-iron",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "1 piece2 pieces3 pieces4 pieces",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 801.359375,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 993.5625,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 1185.765625,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 1247.984375,
+              "y": 678,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 801.359375,
+              "y": 1020.5,
+              "width": 566.625,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Choose a glaze and quantity to add a piece.",
+              "x": 801.359375,
+              "y": 1119,
+              "width": 566.625,
+              "height": 34,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1307,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 801.359375,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 993.5625,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 1185.765625,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 1247.984375,
+              "y": 678,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 801.359375,
+              "y": 1020.5,
+              "width": 566.625,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Choose a glaze and quantity to add a piece.",
+              "x": 801.359375,
+              "y": 1119,
+              "width": 566.625,
+              "height": 34,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1307,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 801.359375,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 993.5625,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 1185.765625,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 1247.984375,
+              "y": 678,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 801.359375,
+              "y": 1020.5,
+              "width": 566.625,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Choose a glaze and quantity to add a piece.",
+              "x": 801.359375,
+              "y": 1119,
+              "width": 566.625,
+              "height": 34,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1307,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 801.359375,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 993.5625,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 1185.765625,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 1247.984375,
+              "y": 678,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 801.359375,
+              "y": 1020.5,
+              "width": 566.625,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Sand glaze selected · 7 in stock. Review the total before adding.",
+              "x": 801.359375,
+              "y": 1119,
+              "width": 566.625,
+              "height": 34,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1307,
+          "scrollY": 0
+        },
+        "cart": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 801.359375,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 993.5625,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 1185.765625,
+              "y": 550,
+              "width": 182.203125,
+              "height": 111,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 1247.984375,
+              "y": 678,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 801.359375,
+              "y": 1020.5,
+              "width": 566.625,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Added to simulated cart: 2 × Everyday Teapot, Sand glaze. Order total USD 144.00, shipping included. No payment taken.",
+              "x": 801.359375,
+              "y": 1119,
+              "width": 566.625,
+              "height": 49,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1322,
+          "scrollY": 0
+        }
+      },
+      "initialText": "Skip to product options\nfk\nField Kiln\n•\nObjects for everyday rituals\nFICTIONAL SHOP\nStoneware collection\n/\nEveryday Teapot\nFIELD NOTES\n№ 01\nEveryday Teapot · Iron glaze shown\nOriginal vector illustration of a fictional sample product; this is not a photograph. Glaze swatches are illustrative.\nMADE FOR THE DAILY POUR\n\nA rounded form, a quiet glaze.\nA place in your everyday ritual.\n\n650ml\nFIELD KILN / GLAZED STONEWARE\nEveryday\nTeapot\nUSD 68.00\nper piece\n\nA handmade ceramic teapot for the everyday table. Choose the glaze that feels at home.\n\nMaterial\nGlazed stoneware\nCapacity\n650 ml\nDimensions\n16 cm wide × 12 cm high\n01 Choose your glaze\nIron\n4 in stock\n✓\nAsh\nUnavailable\nSand\n7 in stock\n02 Quantity\n1 piece\n2 pieces\n3 pieces\n4 pieces\nDelivery\n\nDispatch in 2 business days; illustrative domestic transit 3–5 business days.\n\nReturns\n\nUnused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.\n\nCare\n\nHand wash. Avoid sudden temperature changes. Not for stovetop use.\n\n1 × Iron\nUSD 68.00\nShipping · domestic\nUSD 8.00\nOrder total\nShipping included\nUSD 76.00\nAdd to simulated cart\n↗\n\nA local demonstration. No checkout or payment.\n\nChoose a glaze and quantity to add a piece.\nField Kiln\n\nFictional shop and illustrative product, price, stock, delivery, and returns.\n\nA slower kind of everyday.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1307,
+        "title": "Everyday Teapot — Field Kiln",
+        "h1": [
+          "EverydayTeapot"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Arial, \"Segoe UI\", sans-serif"
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "full": {},
+        "keyboard-focus": {},
+        "review": {},
+        "cart": {}
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "cart": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"plate-label\">FIELD NOTES <span>№ 01</span></span>",
+                "target": [
+                  ".plate-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span>№ 01</span>",
+                "target": [
+                  ".plate-label > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"image-label\">Everyday Teapot · Iron glaze shown</span>",
+                "target": [
+                  ".image-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"selected-mark\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".glaze:nth-child(1) > .glaze-card > .selected-mark[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"plate-label\">FIELD NOTES <span>№ 01</span></span>",
+                "target": [
+                  ".plate-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span>№ 01</span>",
+                "target": [
+                  ".plate-label > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"image-label\">Everyday Teapot · Iron glaze shown</span>",
+                "target": [
+                  ".image-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"selected-mark\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".glaze:nth-child(3) > .glaze-card > .selected-mark[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-neutral-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-review.png",
+        "mobile-review-viewport.png",
+        "mobile-neutral-review.png",
+        "mobile-cart.png",
+        "mobile-cart-viewport.png",
+        "mobile-neutral-cart.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 shown before commitment",
+          "status": "pass",
+          "observation": "Required in this new task: USD 68 × 2 + USD 8 shipping; presence alone does not establish good placement.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Sand × 2 cart confirmation",
+          "status": "pass",
+          "observation": "Added to simulated cart: 2 × Everyday Teapot, Sand glaze. Order total USD 144.00, shipping included. No payment taken.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 total explicitly shown",
+          "status": "pass",
+          "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "No horizontal overflow in cart",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Unavailable Ash cannot be purchased",
+          "status": "pass",
+          "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Skip to product options",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "glaze-iron",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "1 piece2 pieces3 pieces4 pieces",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "add-to-cart",
+          "name": "Add to simulated cart↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Skip to product options\nfkField Kiln•Objects for everyday ritualsFictional shop\n",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Skip to product options",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "glaze-iron",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "1 piece2 pieces3 pieces4 pieces",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 23.390625,
+              "y": 864.40625,
+              "width": 107.734375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 141.125,
+              "y": 864.40625,
+              "width": 107.734375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 258.859375,
+              "y": 864.40625,
+              "width": 107.75,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 246.609375,
+              "y": 995.40625,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 23.390625,
+              "y": 1395.90625,
+              "width": 343.21875,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Choose a glaze and quantity to add a piece.",
+              "x": 23.390625,
+              "y": 1495.90625,
+              "width": 343.21875,
+              "height": 34,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1658,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 23.390625,
+              "y": 864.40625,
+              "width": 107.734375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 141.125,
+              "y": 864.40625,
+              "width": 107.734375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 258.859375,
+              "y": 864.40625,
+              "width": 107.75,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 246.609375,
+              "y": 995.40625,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 23.390625,
+              "y": 1395.90625,
+              "width": 343.21875,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Choose a glaze and quantity to add a piece.",
+              "x": 23.390625,
+              "y": 1495.90625,
+              "width": 343.21875,
+              "height": 34,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1658,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 23.390625,
+              "y": 864.40625,
+              "width": 107.734375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 141.125,
+              "y": 864.40625,
+              "width": 107.734375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 258.859375,
+              "y": 864.40625,
+              "width": 107.75,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 246.609375,
+              "y": 995.40625,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 23.390625,
+              "y": 1395.90625,
+              "width": 343.21875,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Choose a glaze and quantity to add a piece.",
+              "x": 23.390625,
+              "y": 1495.90625,
+              "width": 343.21875,
+              "height": 34,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1658,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 23.390625,
+              "y": 864.40625,
+              "width": 107.734375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 141.125,
+              "y": 864.40625,
+              "width": 107.734375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 258.859375,
+              "y": 864.40625,
+              "width": 107.75,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 246.609375,
+              "y": 995.40625,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 23.390625,
+              "y": 1395.90625,
+              "width": 343.21875,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Sand glaze selected · 7 in stock. Review the total before adding.",
+              "x": 23.390625,
+              "y": 1495.90625,
+              "width": 343.21875,
+              "height": 49,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1673,
+          "scrollY": 0
+        },
+        "cart": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 23.390625,
+              "y": 864.40625,
+              "width": 107.734375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 141.125,
+              "y": 864.40625,
+              "width": 107.734375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 258.859375,
+              "y": 864.40625,
+              "width": 107.75,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 246.609375,
+              "y": 995.40625,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 23.390625,
+              "y": 1395.90625,
+              "width": 343.21875,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Added to simulated cart: 2 × Everyday Teapot, Sand glaze. Order total USD 144.00, shipping included. No payment taken.",
+              "x": 23.390625,
+              "y": 1495.90625,
+              "width": 343.21875,
+              "height": 67,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1691,
+          "scrollY": 0
+        }
+      },
+      "initialText": "Skip to product options\nfk\nField Kiln\n•\nFICTIONAL SHOP\nStoneware collection\n/\nEveryday Teapot\nFIELD NOTES\n№ 01\nEveryday Teapot · Iron glaze shown\nOriginal vector illustration of a fictional sample product; this is not a photograph. Glaze swatches are illustrative.\nFIELD KILN / GLAZED STONEWARE\nEveryday\nTeapot\nUSD 68.00\nper piece\n\nA handmade ceramic teapot for the everyday table. Choose the glaze that feels at home.\n\nMaterial\nGlazed stoneware\nCapacity\n650 ml\nDimensions\n16 cm wide × 12 cm high\n01 Choose your glaze\nIron\n4 in stock\n✓\nAsh\nUnavailable\nSand\n7 in stock\n02 Quantity\n1 piece\n2 pieces\n3 pieces\n4 pieces\nDelivery\n\nDispatch in 2 business days; illustrative domestic transit 3–5 business days.\n\nReturns\n\nUnused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.\n\nCare\n\nHand wash. Avoid sudden temperature changes. Not for stovetop use.\n\n1 × Iron\nUSD 68.00\nShipping · domestic\nUSD 8.00\nOrder total\nShipping included\nUSD 76.00\nAdd to simulated cart\n↗\n\nA local demonstration. No checkout or payment.\n\nChoose a glaze and quantity to add a piece.\nField Kiln\n\nFictional shop and illustrative product, price, stock, delivery, and returns.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 1658,
+        "title": "Everyday Teapot — Field Kiln",
+        "h1": [
+          "EverydayTeapot"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Arial, \"Segoe UI\", sans-serif"
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "full": {},
+        "keyboard-focus": {},
+        "review": {},
+        "cart": {}
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "cart": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"plate-label\">FIELD NOTES <span>№ 01</span></span>",
+                "target": [
+                  ".plate-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span>№ 01</span>",
+                "target": [
+                  ".plate-label > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"image-label\">Everyday Teapot · Iron glaze shown</span>",
+                "target": [
+                  ".image-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"selected-mark\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".glaze:nth-child(1) > .glaze-card > .selected-mark[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"plate-label\">FIELD NOTES <span>№ 01</span></span>",
+                "target": [
+                  ".plate-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span>№ 01</span>",
+                "target": [
+                  ".plate-label > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"image-label\">Everyday Teapot · Iron glaze shown</span>",
+                "target": [
+                  ".image-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"selected-mark\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".glaze:nth-child(3) > .glaze-card > .selected-mark[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      }
+    },
+    "narrow320": {
+      "viewport": {
+        "name": "narrow320",
+        "width": 320,
+        "height": 740
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "narrow320-initial.png",
+        "narrow320-full.png",
+        "narrow320-neutral-full.png",
+        "narrow320-keyboard-focus.png",
+        "narrow320-review.png",
+        "narrow320-review-viewport.png",
+        "narrow320-neutral-review.png",
+        "narrow320-cart.png",
+        "narrow320-cart-viewport.png",
+        "narrow320-neutral-cart.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "fail",
+          "observation": "339px document / 320px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 shown before commitment",
+          "status": "pass",
+          "observation": "Required in this new task: USD 68 × 2 + USD 8 shipping; presence alone does not establish good placement.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "fail",
+          "observation": "339px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Sand × 2 cart confirmation",
+          "status": "pass",
+          "observation": "Added to simulated cart: 2 × Everyday Teapot, Sand glaze. Order total USD 144.00, shipping included. No payment taken.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 total explicitly shown",
+          "status": "pass",
+          "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "No horizontal overflow in cart",
+          "status": "fail",
+          "observation": "339px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Unavailable Ash cannot be purchased",
+          "status": "pass",
+          "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Skip to product options",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "glaze-iron",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "1 piece2 pieces3 pieces4 pieces",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "add-to-cart",
+          "name": "Add to simulated cart↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Skip to product options\nfkField Kiln•Objects for everyday ritualsFictional shop\n",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Skip to product options",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "glaze-iron",
+          "name": "",
+          "outline": "auto 1px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "1 piece2 pieces3 pieces4 pieces",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 19.1875,
+              "y": 864.40625,
+              "width": 100.09375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 129.28125,
+              "y": 864.40625,
+              "width": 100.09375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 239.375,
+              "y": 864.40625,
+              "width": 100.109375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 219.484375,
+              "y": 995.40625,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 19.1875,
+              "y": 1395.90625,
+              "width": 320.296875,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Choose a glaze and quantity to add a piece.",
+              "x": 19.1875,
+              "y": 1495.90625,
+              "width": 320.296875,
+              "height": 34,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 339,
+          "pageHeight": 1696,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 19.1875,
+              "y": 864.40625,
+              "width": 100.09375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 129.28125,
+              "y": 864.40625,
+              "width": 100.09375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 239.375,
+              "y": 864.40625,
+              "width": 100.109375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 219.484375,
+              "y": 995.40625,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 19.1875,
+              "y": 1395.90625,
+              "width": 320.296875,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Choose a glaze and quantity to add a piece.",
+              "x": 19.1875,
+              "y": 1495.90625,
+              "width": 320.296875,
+              "height": 34,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 339,
+          "pageHeight": 1696,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 19.1875,
+              "y": 864.40625,
+              "width": 100.09375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 129.28125,
+              "y": 864.40625,
+              "width": 100.09375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 239.375,
+              "y": 864.40625,
+              "width": 100.109375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 219.484375,
+              "y": 995.40625,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 19.1875,
+              "y": 1395.90625,
+              "width": 320.296875,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Choose a glaze and quantity to add a piece.",
+              "x": 19.1875,
+              "y": 1495.90625,
+              "width": 320.296875,
+              "height": 34,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 339,
+          "pageHeight": 1696,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 19.1875,
+              "y": 864.40625,
+              "width": 100.09375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 129.28125,
+              "y": 864.40625,
+              "width": 100.09375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 239.375,
+              "y": 864.40625,
+              "width": 100.109375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 219.484375,
+              "y": 995.40625,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 19.1875,
+              "y": 1395.90625,
+              "width": 320.296875,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Sand glaze selected · 7 in stock. Review the total before adding.",
+              "x": 19.1875,
+              "y": 1495.90625,
+              "width": 320.296875,
+              "height": 49,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 339,
+          "pageHeight": 1711,
+          "scrollY": 0
+        },
+        "cart": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "",
+              "x": 19.1875,
+              "y": 864.40625,
+              "width": 100.09375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "",
+              "x": 129.28125,
+              "y": 864.40625,
+              "width": 100.09375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "",
+              "x": 239.375,
+              "y": 864.40625,
+              "width": 100.109375,
+              "height": 114,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "1 piece\n2 pieces\n3 pieces\n4 pieces",
+              "x": 219.484375,
+              "y": 995.40625,
+              "width": 120,
+              "height": 42,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to simulated cart\n↗",
+              "x": 19.1875,
+              "y": 1395.90625,
+              "width": 320.296875,
+              "height": 60.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Added to simulated cart: 2 × Everyday Teapot, Sand glaze. Order total USD 144.00, shipping included. No payment taken.",
+              "x": 19.1875,
+              "y": 1495.90625,
+              "width": 320.296875,
+              "height": 67,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 339,
+          "pageHeight": 1729,
+          "scrollY": 0
+        }
+      },
+      "initialText": "Skip to product options\nfk\nField Kiln\n•\nFICTIONAL SHOP\nStoneware collection\n/\nEveryday Teapot\nFIELD NOTES\n№ 01\nEveryday Teapot · Iron glaze shown\nOriginal vector illustration of a fictional sample product; this is not a photograph. Glaze swatches are illustrative.\nFIELD KILN / GLAZED STONEWARE\nEveryday\nTeapot\nUSD 68.00\nper piece\n\nA handmade ceramic teapot for the everyday table. Choose the glaze that feels at home.\n\nMaterial\nGlazed stoneware\nCapacity\n650 ml\nDimensions\n16 cm wide × 12 cm high\n01 Choose your glaze\nIron\n4 in stock\n✓\nAsh\nUnavailable\nSand\n7 in stock\n02 Quantity\n1 piece\n2 pieces\n3 pieces\n4 pieces\nDelivery\n\nDispatch in 2 business days; illustrative domestic transit 3–5 business days.\n\nReturns\n\nUnused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.\n\nCare\n\nHand wash. Avoid sudden temperature changes. Not for stovetop use.\n\n1 × Iron\nUSD 68.00\nShipping · domestic\nUSD 8.00\nOrder total\nShipping included\nUSD 76.00\nAdd to simulated cart\n↗\n\nA local demonstration. No checkout or payment.\n\nChoose a glaze and quantity to add a piece.\nField Kiln\n\nFictional shop and illustrative product, price, stock, delivery, and returns.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 320,
+        "scrollWidth": 339,
+        "pageHeight": 1696,
+        "title": "Everyday Teapot — Field Kiln",
+        "h1": [
+          "EverydayTeapot"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Arial, \"Segoe UI\", sans-serif"
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "full": {},
+        "keyboard-focus": {},
+        "review": {},
+        "cart": {}
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "cart": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"plate-label\">FIELD NOTES <span>№ 01</span></span>",
+                "target": [
+                  ".plate-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span>№ 01</span>",
+                "target": [
+                  ".plate-label > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"image-label\">Everyday Teapot · Iron glaze shown</span>",
+                "target": [
+                  ".image-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<figcaption>Original vector illustration of a fictional sample product; this is not a photograph. Glaze swatches are illustrative.</figcaption>",
+                "target": [
+                  "figcaption"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<span class=\"price\">USD 68.00<span>per piece</span></span>",
+                "target": [
+                  ".price"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<span>per piece</span>",
+                "target": [
+                  ".price > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<p class=\"intro\">A handmade ceramic teapot for the everyday table. Choose the glaze that feels at home.</p>",
+                "target": [
+                  ".intro"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<dd>Glazed stoneware</dd>",
+                "target": [
+                  "div:nth-child(1) > dd"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<dd>650 ml</dd>",
+                "target": [
+                  "div:nth-child(2) > dd"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<dd>16 cm wide × 12 cm high</dd>",
+                "target": [
+                  "div:nth-child(3) > dd"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<span class=\"selected-mark\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".glaze:nth-child(1) > .glaze-card > .selected-mark[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<p>Dispatch in 2 business days; illustrative domestic transit 3–5 business days.</p>",
+                "target": [
+                  "div:nth-child(1) > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<p>Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.</p>",
+                "target": [
+                  ".conditions > div:nth-child(2) > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<p>Hand wash. Avoid sudden temperature changes. Not for stovetop use.</p>",
+                "target": [
+                  "div:nth-child(3) > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"plate-label\">FIELD NOTES <span>№ 01</span></span>",
+                "target": [
+                  ".plate-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span>№ 01</span>",
+                "target": [
+                  ".plate-label > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"image-label\">Everyday Teapot · Iron glaze shown</span>",
+                "target": [
+                  ".image-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<figcaption>Original vector illustration of a fictional sample product; this is not a photograph. Glaze swatches are illustrative.</figcaption>",
+                "target": [
+                  "figcaption"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<span class=\"price\">USD 68.00<span>per piece</span></span>",
+                "target": [
+                  ".price"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<span>per piece</span>",
+                "target": [
+                  ".price > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<p class=\"intro\">A handmade ceramic teapot for the everyday table. Choose the glaze that feels at home.</p>",
+                "target": [
+                  ".intro"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<dd>Glazed stoneware</dd>",
+                "target": [
+                  "div:nth-child(1) > dd"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<dd>650 ml</dd>",
+                "target": [
+                  "div:nth-child(2) > dd"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<dd>16 cm wide × 12 cm high</dd>",
+                "target": [
+                  "div:nth-child(3) > dd"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<span class=\"selected-mark\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".glaze:nth-child(3) > .glaze-card > .selected-mark[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<p>Dispatch in 2 business days; illustrative domestic transit 3–5 business days.</p>",
+                "target": [
+                  "div:nth-child(1) > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<p>Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.</p>",
+                "target": [
+                  ".conditions > div:nth-child(2) > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<p>Hand wash. Avoid sudden temperature changes. Not for stovetop use.</p>",
+                "target": [
+                  "div:nth-child(3) > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "html": "<div class=\"cart-status success\" data-testid=\"cart-status\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\">Added to simulated cart: 2 × Everyday Teapot, Sand glaze. Order total USD 144.00, shipping included. No payment taken.</div>",
+                "target": [
+                  ".cart-status"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      }
+    }
+  },
+  "supportingNarrow320": {
+    "viewportWidth": 320,
+    "scrollWidth": 339,
+    "pageHeight": 1696,
+    "title": "Everyday Teapot — Field Kiln",
+    "h1": [
+      "EverydayTeapot"
+    ],
+    "mainCount": 1,
+    "htmlLang": "en",
+    "bodyFont": "Arial, \"Segoe UI\", sans-serif",
+    "scope": "Full task trace at 320×740 is recorded under viewports.narrow320; not merely an initial-page screenshot."
+  }
+}

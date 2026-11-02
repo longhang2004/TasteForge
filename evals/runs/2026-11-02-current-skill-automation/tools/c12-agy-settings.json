@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c12)",
+      "write_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c12)",
+      "command(regex:wsl\\.exe --distribution Ubuntu --cd /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c12 --exec bash -lc .*)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/treatment/tasteforge)"
+    ],
+    "deny": [
+      "read_url(*)",
+      "execute_url(*)",
+      "mcp(*)",
+      "write_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c12/task.md)",
+      "write_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c12/fixture.json)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c01)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c02)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c03)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c04)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c05)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c06)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c07)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c08)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c09)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c10)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c11)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c13)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c14)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c15)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c16)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c17)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c18)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c19)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-current-skill-automation/cases/c20)"
+    ]
+  }
+}

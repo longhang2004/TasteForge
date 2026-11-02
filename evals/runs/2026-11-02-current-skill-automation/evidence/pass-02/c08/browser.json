@@ -1,0 +1,2191 @@
+{
+  "captureVersion": "2.0",
+  "evidencePass": "pass-02",
+  "caseId": "c08",
+  "capturedAtUtc": "2026-11-01T18:42:50.651Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    "app.js": "3cc6ba08074321c94003ff38c3c25ac62647f28c597722b0716067cf9548b550",
+    "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+    "catalog-inspire.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "catalog-templates.json": "e70d97e4d549a225b6d05c057494b46db531780b3a16fc48dca04f24095c721f",
+    "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+    "implementation-notes.md": "824d3da6a194a8f7416d3e1470016fe0259caf26fd75e736d767ddd996ade637",
+    "index.html": "04721104d0302c699815a521c777ccf2705966a7e0ffe804c25f1a8a7197314d",
+    "selected-template.json": "7cbcbab87e8a0ad6811c71ee3d94a9662011b1fb0341ac745056c241458c4820",
+    "styles.css": "6ea477cd5cf155edba6ccae6dce93b58037501cbaf8be2274f077c935de83444",
+    "task.md": "ecb0203e9cce81d75cd11ff164e8d5b67aed8a2ba6898a343f8f491a9515e826"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-neutral-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-review.png",
+        "desktop-review-viewport.png",
+        "desktop-neutral-review.png",
+        "desktop-cart.png",
+        "desktop-cart-viewport.png",
+        "desktop-neutral-cart.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 shown before commitment",
+          "status": "pass",
+          "observation": "Required in this new task: USD 68 × 2 + USD 8 shipping; presence alone does not establish good placement.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Sand × 2 cart confirmation",
+          "status": "pass",
+          "observation": "Added 2 Everyday Teapots in Sand to your sample bag. Total $144.00 including illustrative shipping. No payment was taken.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 total explicitly shown",
+          "status": "pass",
+          "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "No horizontal overflow in cart",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Unavailable Ash cannot be purchased",
+          "status": "pass",
+          "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln, product home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Objects",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-iron",
+          "name": "IronDeep moss · 4 available✓",
+          "outline": "solid 3px",
+          "boxShadow": "rgb(52, 70, 56) 3px 0px 0px 0px inset"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-sand",
+          "name": "SandWarm oat · 7 available✓",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "Quantity",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "add-to-cart",
+          "name": "Add to bag ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Field Kiln✳\n    Small-batch objects for everyday rituals\n    STUDIO SAMPLE · NO.",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln, product home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Objects",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-iron",
+          "name": "IronDeep moss · 4 available✓",
+          "outline": "solid 3px",
+          "boxShadow": "rgb(52, 70, 56) 3px 0px 0px 0px inset"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available\n✓",
+              "x": 878.546875,
+              "y": 326.078125,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 878.546875,
+              "y": 393.265625,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available",
+              "x": 878.546875,
+              "y": 460.453125,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 1270,
+              "y": 575.078125,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 878.546875,
+              "y": 850.90625,
+              "width": 461.453125,
+              "height": 48.1875,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 878.546875,
+              "y": 968.109375,
+              "width": 461.453125,
+              "height": 22.390625,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1330,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available\n✓",
+              "x": 878.546875,
+              "y": 326.078125,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 878.546875,
+              "y": 393.265625,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available",
+              "x": 878.546875,
+              "y": 460.453125,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 1270,
+              "y": 575.078125,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 878.546875,
+              "y": 850.90625,
+              "width": 461.453125,
+              "height": 48.1875,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 878.546875,
+              "y": 968.109375,
+              "width": 461.453125,
+              "height": 22.390625,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1330,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available\n✓",
+              "x": 878.546875,
+              "y": 326.078125,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 878.546875,
+              "y": 393.265625,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available",
+              "x": 878.546875,
+              "y": 460.453125,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 1270,
+              "y": 575.078125,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 878.546875,
+              "y": 850.90625,
+              "width": 461.453125,
+              "height": 48.1875,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 878.546875,
+              "y": 968.109375,
+              "width": 461.453125,
+              "height": 22.390625,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1330,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available",
+              "x": 878.546875,
+              "y": 326.078125,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 878.546875,
+              "y": 393.265625,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available\n✓",
+              "x": 878.546875,
+              "y": 460.453125,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 1270,
+              "y": 575.078125,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 878.546875,
+              "y": 850.90625,
+              "width": 461.453125,
+              "height": 48.1875,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 878.546875,
+              "y": 968.109375,
+              "width": 461.453125,
+              "height": 22.390625,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1330,
+          "scrollY": 0
+        },
+        "cart": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available",
+              "x": 878.546875,
+              "y": 326.078125,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 878.546875,
+              "y": 393.265625,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available\n✓",
+              "x": 878.546875,
+              "y": 460.453125,
+              "width": 461.453125,
+              "height": 60,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 1270,
+              "y": 575.078125,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 878.546875,
+              "y": 850.90625,
+              "width": 461.453125,
+              "height": 48.1875,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "cart-status",
+              "text": "Added 2 Everyday Teapots in Sand to your sample bag. Total $144.00 including illustrative shipping. No payment was taken.",
+              "x": 878.546875,
+              "y": 968.109375,
+              "width": 461.453125,
+              "height": 77.21875,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1330,
+          "scrollY": 0
+        }
+      },
+      "initialText": "Field Kiln✳\nSmall-batch objects for everyday rituals\nSTUDIO SAMPLE · NO. 04\nObjects\n/\nTea & table\nFK\nHAND\nFORMED\n01 / FORM STUDY\nIllustration, not a photograph\nTHE DAILY POUR · 650 ML\nEveryday\nTeapot\n\nA quietly balanced shape for the first cup and the last. Made to sit comfortably at the center of an ordinary table.\n\nOBJECT NOTES\n01—03\nObject details\nMaterial\nGlazed stoneware\nDimensions\n16 cm wide × 12 cm high\nCapacity\n650 ml\n↗\n\nCare, simply. Hand wash. Avoid sudden temperature changes. Not for stovetop use.\n\nFIELD NOTES / 04\nSTONEWARE\n$68\nUSD\nper teapot\n\nA one-time studio price for this sample piece.\n\nChoose a glaze\nCOLOR · REQUIRED\nIron\nDeep moss · 4 available\n✓\nAsh\nSoft grey · unavailable\nSOLD OUT\nSand\nWarm oat · 7 available\n\nStock shown is illustrative sample data.\n\nQuantity\n1–4 per order\n01\n02\n03\n04\nORDER TOTAL\nSHIPPING INCLUDED\nTeapot · Iron × 1\n$68.00\nIllustrative domestic shipping\n$8.00\nTotal\n$76.00\n\n↗\nDispatch in 2 business days; illustrative domestic transit 3–5 business days.\n\nAdd to bag\n↗\n\n30-DAY RETURNS\nUnused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.\n\nFIELD KILN ✳ FICTIONAL STUDIO\n\nFictional shop and illustrative product, price, stock, delivery, and returns. This page simulates a cart; it does not take payment.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1330,
+        "title": "Everyday Teapot — Field Kiln",
+        "h1": [
+          "Everyday Teapot"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "full": {},
+        "keyboard-focus": {},
+        "review": {},
+        "cart": {}
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "cart": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">THE DAILY POUR · 650 ML</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>OBJECT NOTES</span>",
+                "target": [
+                  ".section-kicker > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>30-DAY RETURNS</span>",
+                "target": [
+                  ".returns > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 6.6pt (8.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>·</span>",
+                "target": [
+                  ".edition > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span>FK</span>",
+                "target": [
+                  ".art-stamp > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<small>HAND<br>FORMED</small>",
+                "target": [
+                  ".art-stamp > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"check\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".is-selected > .check[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">THE DAILY POUR · 650 ML</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>OBJECT NOTES</span>",
+                "target": [
+                  ".section-kicker > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>30-DAY RETURNS</span>",
+                "target": [
+                  ".returns > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 6.6pt (8.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>·</span>",
+                "target": [
+                  ".edition > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span>FK</span>",
+                "target": [
+                  ".art-stamp > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<small>HAND<br>FORMED</small>",
+                "target": [
+                  ".art-stamp > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"check\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".is-selected > .check[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-neutral-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-review.png",
+        "mobile-review-viewport.png",
+        "mobile-neutral-review.png",
+        "mobile-cart.png",
+        "mobile-cart-viewport.png",
+        "mobile-neutral-cart.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 shown before commitment",
+          "status": "pass",
+          "observation": "Required in this new task: USD 68 × 2 + USD 8 shipping; presence alone does not establish good placement.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Sand × 2 cart confirmation",
+          "status": "pass",
+          "observation": "Added 2 Everyday Teapots in Sand to your sample bag. Total $144.00 including illustrative shipping. No payment was taken.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 total explicitly shown",
+          "status": "pass",
+          "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "No horizontal overflow in cart",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Unavailable Ash cannot be purchased",
+          "status": "pass",
+          "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln, product home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Objects",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-iron",
+          "name": "IronDeep moss · 4 available✓",
+          "outline": "solid 3px",
+          "boxShadow": "rgb(52, 70, 56) 3px 0px 0px 0px inset"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-sand",
+          "name": "SandWarm oat · 7 available✓",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "Quantity",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "add-to-cart",
+          "name": "Add to bag ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Field Kiln✳\n    Small-batch objects for everyday rituals\n    STUDIO SAMPLE · NO.",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln, product home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Objects",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-iron",
+          "name": "IronDeep moss · 4 available✓",
+          "outline": "solid 3px",
+          "boxShadow": "rgb(52, 70, 56) 3px 0px 0px 0px inset"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available\n✓",
+              "x": 12,
+              "y": 1182.65625,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 12,
+              "y": 1249.84375,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available",
+              "x": 12,
+              "y": 1317.03125,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 308,
+              "y": 1431.65625,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 12,
+              "y": 1706.21875,
+              "width": 366,
+              "height": 48.1875,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 12,
+              "y": 1823.421875,
+              "width": 366,
+              "height": 22.390625,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1985,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available\n✓",
+              "x": 12,
+              "y": 1182.65625,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 12,
+              "y": 1249.84375,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available",
+              "x": 12,
+              "y": 1317.03125,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 308,
+              "y": 1431.65625,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 12,
+              "y": 1706.21875,
+              "width": 366,
+              "height": 48.1875,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 12,
+              "y": 1823.421875,
+              "width": 366,
+              "height": 22.390625,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1985,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available\n✓",
+              "x": 12,
+              "y": 1182.65625,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 12,
+              "y": 1249.84375,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available",
+              "x": 12,
+              "y": 1317.03125,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 308,
+              "y": 1431.65625,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 12,
+              "y": 1706.21875,
+              "width": 366,
+              "height": 48.1875,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 12,
+              "y": 1823.421875,
+              "width": 366,
+              "height": 22.390625,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1985,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available",
+              "x": 12,
+              "y": 1182.65625,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 12,
+              "y": 1249.84375,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available\n✓",
+              "x": 12,
+              "y": 1317.03125,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 308,
+              "y": 1431.65625,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 12,
+              "y": 1706.21875,
+              "width": 366,
+              "height": 48.1875,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 12,
+              "y": 1823.421875,
+              "width": 366,
+              "height": 22.390625,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1985,
+          "scrollY": 0
+        },
+        "cart": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available",
+              "x": 12,
+              "y": 1182.65625,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 12,
+              "y": 1249.84375,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available\n✓",
+              "x": 12,
+              "y": 1317.03125,
+              "width": 366,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 308,
+              "y": 1431.65625,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 12,
+              "y": 1706.21875,
+              "width": 366,
+              "height": 48.1875,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Added 2 Everyday Teapots in Sand to your sample bag. Total $144.00 including illustrative shipping. No payment was taken.",
+              "x": 12,
+              "y": 1823.421875,
+              "width": 366,
+              "height": 77.21875,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 2040,
+          "scrollY": 0
+        }
+      },
+      "initialText": "Field Kiln✳\nSTUDIO SAMPLE · NO. 04\nObjects\n/\nTea & table\nFK\nHAND\nFORMED\n01 / FORM STUDY\nIllustration, not a photograph\nTHE DAILY POUR · 650 ML\nEveryday Teapot\n\nA quietly balanced shape for the first cup and the last. Made to sit comfortably at the center of an ordinary table.\n\nOBJECT NOTES\n01—03\nObject details\nMaterial\nGlazed stoneware\nDimensions\n16 cm wide × 12 cm high\nCapacity\n650 ml\n↗\n\nCare, simply. Hand wash. Avoid sudden temperature changes. Not for stovetop use.\n\nFIELD NOTES / 04\nSTONEWARE\n$68\nUSD\nper teapot\n\nA one-time studio price for this sample piece.\n\nChoose a glaze\nCOLOR · REQUIRED\nIron\nDeep moss · 4 available\n✓\nAsh\nSoft grey · unavailable\nSOLD OUT\nSand\nWarm oat · 7 available\n\nStock shown is illustrative sample data.\n\nQuantity\n1–4 per order\n01\n02\n03\n04\nORDER TOTAL\nSHIPPING INCLUDED\nTeapot · Iron × 1\n$68.00\nIllustrative domestic shipping\n$8.00\nTotal\n$76.00\n\n↗\nDispatch in 2 business days; illustrative domestic transit 3–5 business days.\n\nAdd to bag\n↗\n\n30-DAY RETURNS\nUnused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.\n\nFIELD KILN ✳ FICTIONAL STUDIO\n\nFictional shop and illustrative product, price, stock, delivery, and returns. This page simulates a cart; it does not take payment.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 1985,
+        "title": "Everyday Teapot — Field Kiln",
+        "h1": [
+          "Everyday Teapot"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "full": {},
+        "keyboard-focus": {},
+        "review": {},
+        "cart": {}
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "cart": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">THE DAILY POUR · 650 ML</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>OBJECT NOTES</span>",
+                "target": [
+                  ".section-kicker > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>30-DAY RETURNS</span>",
+                "target": [
+                  ".returns > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 6.6pt (8.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>·</span>",
+                "target": [
+                  ".edition > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span>FK</span>",
+                "target": [
+                  ".art-stamp > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<small>HAND<br>FORMED</small>",
+                "target": [
+                  ".art-stamp > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"check\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".is-selected > .check[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">THE DAILY POUR · 650 ML</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>OBJECT NOTES</span>",
+                "target": [
+                  ".section-kicker > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>30-DAY RETURNS</span>",
+                "target": [
+                  ".returns > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 6.6pt (8.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>·</span>",
+                "target": [
+                  ".edition > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span>FK</span>",
+                "target": [
+                  ".art-stamp > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<small>HAND<br>FORMED</small>",
+                "target": [
+                  ".art-stamp > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"check\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".is-selected > .check[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      }
+    },
+    "narrow320": {
+      "viewport": {
+        "name": "narrow320",
+        "width": 320,
+        "height": 740
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "narrow320-initial.png",
+        "narrow320-full.png",
+        "narrow320-neutral-full.png",
+        "narrow320-keyboard-focus.png",
+        "narrow320-review.png",
+        "narrow320-review-viewport.png",
+        "narrow320-neutral-review.png",
+        "narrow320-cart.png",
+        "narrow320-cart-viewport.png",
+        "narrow320-neutral-cart.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 shown before commitment",
+          "status": "pass",
+          "observation": "Required in this new task: USD 68 × 2 + USD 8 shipping; presence alone does not establish good placement.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Sand × 2 cart confirmation",
+          "status": "pass",
+          "observation": "Added 2 Everyday Teapots in Sand to your sample bag. Total $144.00 including illustrative shipping. No payment was taken.",
+          "kind": "contract"
+        },
+        {
+          "name": "Shipping-inclusive USD 144 total explicitly shown",
+          "status": "pass",
+          "observation": "Diagnostic only: the original contract requires unit price and shipping disclosure, not an automatically calculated order total. Expected USD 68 × 2 + USD 8 shipping.",
+          "kind": "diagnostic"
+        },
+        {
+          "name": "No horizontal overflow in cart",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Unavailable Ash cannot be purchased",
+          "status": "pass",
+          "observation": "Disabled variant/action or explicit rejection observed through the shared controls.",
+          "kind": "contract"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln, product home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Objects",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-iron",
+          "name": "IronDeep moss · 4 available✓",
+          "outline": "solid 3px",
+          "boxShadow": "rgb(52, 70, 56) 3px 0px 0px 0px inset"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-sand",
+          "name": "SandWarm oat · 7 available✓",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "testId": "quantity",
+          "name": "Quantity",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "add-to-cart",
+          "name": "Add to bag ↗",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "Field Kiln✳\n    Small-batch objects for everyday rituals\n    STUDIO SAMPLE · NO.",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Field Kiln, product home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Objects",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "glaze-iron",
+          "name": "IronDeep moss · 4 available✓",
+          "outline": "solid 3px",
+          "boxShadow": "rgb(52, 70, 56) 3px 0px 0px 0px inset"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available\n✓",
+              "x": 12,
+              "y": 1186.484375,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 12,
+              "y": 1253.671875,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available",
+              "x": 12,
+              "y": 1320.859375,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 238,
+              "y": 1435.484375,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 12,
+              "y": 1710.046875,
+              "width": 296,
+              "height": 48.1875,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 12,
+              "y": 1843.8125,
+              "width": 296,
+              "height": 22.390625,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 2023,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available\n✓",
+              "x": 12,
+              "y": 1186.484375,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 12,
+              "y": 1253.671875,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available",
+              "x": 12,
+              "y": 1320.859375,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 238,
+              "y": 1435.484375,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 12,
+              "y": 1710.046875,
+              "width": 296,
+              "height": 48.1875,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 12,
+              "y": 1843.8125,
+              "width": 296,
+              "height": 22.390625,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 2023,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available\n✓",
+              "x": 12,
+              "y": 1186.484375,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 12,
+              "y": 1253.671875,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available",
+              "x": 12,
+              "y": 1320.859375,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 238,
+              "y": 1435.484375,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 12,
+              "y": 1710.046875,
+              "width": 296,
+              "height": 48.1875,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 12,
+              "y": 1843.8125,
+              "width": 296,
+              "height": 22.390625,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 2023,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available",
+              "x": 12,
+              "y": 1186.484375,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 12,
+              "y": 1253.671875,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available\n✓",
+              "x": 12,
+              "y": 1320.859375,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 238,
+              "y": 1435.484375,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 12,
+              "y": 1710.046875,
+              "width": 296,
+              "height": 48.1875,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "",
+              "x": 12,
+              "y": 1843.8125,
+              "width": 296,
+              "height": 22.390625,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 2023,
+          "scrollY": 0
+        },
+        "cart": {
+          "controls": [
+            {
+              "testId": "glaze-iron",
+              "text": "Iron\nDeep moss · 4 available",
+              "x": 12,
+              "y": 1186.484375,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-ash",
+              "text": "Ash\nSoft grey · unavailable\nSOLD OUT",
+              "x": 12,
+              "y": 1253.671875,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "glaze-sand",
+              "text": "Sand\nWarm oat · 7 available\n✓",
+              "x": 12,
+              "y": 1320.859375,
+              "width": 296,
+              "height": 60,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "quantity",
+              "text": "01\n02\n03\n04",
+              "x": 238,
+              "y": 1435.484375,
+              "width": 70,
+              "height": 37.375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "add-to-cart",
+              "text": "Add to bag\n↗",
+              "x": 12,
+              "y": 1710.046875,
+              "width": 296,
+              "height": 48.1875,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "cart-status",
+              "text": "Added 2 Everyday Teapots in Sand to your sample bag. Total $144.00 including illustrative shipping. No payment was taken.",
+              "x": 12,
+              "y": 1843.8125,
+              "width": 296,
+              "height": 96.5625,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 2097,
+          "scrollY": 0
+        }
+      },
+      "initialText": "Field Kiln✳\nSTUDIO SAMPLE · NO. 04\nObjects\n/\nTea & table\nFK\nHAND\nFORMED\n01 / FORM STUDY\nIllustration, not a photograph\nTHE DAILY POUR · 650 ML\nEveryday Teapot\n\nA quietly balanced shape for the first cup and the last. Made to sit comfortably at the center of an ordinary table.\n\nOBJECT NOTES\n01—03\nObject details\nMaterial\nGlazed stoneware\nDimensions\n16 cm wide × 12 cm high\nCapacity\n650 ml\n↗\n\nCare, simply. Hand wash. Avoid sudden temperature changes. Not for stovetop use.\n\nFIELD NOTES / 04\nSTONEWARE\n$68\nUSD\nper teapot\n\nA one-time studio price for this sample piece.\n\nChoose a glaze\nCOLOR · REQUIRED\nIron\nDeep moss · 4 available\n✓\nAsh\nSoft grey · unavailable\nSOLD OUT\nSand\nWarm oat · 7 available\n\nStock shown is illustrative sample data.\n\nQuantity\n1–4 per order\n01\n02\n03\n04\nORDER TOTAL\nSHIPPING INCLUDED\nTeapot · Iron × 1\n$68.00\nIllustrative domestic shipping\n$8.00\nTotal\n$76.00\n\n↗\nDispatch in 2 business days; illustrative domestic transit 3–5 business days.\n\nAdd to bag\n↗\n\n30-DAY RETURNS\nUnused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.\n\nFIELD KILN ✳ FICTIONAL STUDIO\n\nFictional shop and illustrative product, price, stock, delivery, and returns. This page simulates a cart; it does not take payment.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 320,
+        "scrollWidth": 320,
+        "pageHeight": 2023,
+        "title": "Everyday Teapot — Field Kiln",
+        "h1": [
+          "Everyday Teapot"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "full": {},
+        "keyboard-focus": {},
+        "review": {},
+        "cart": {}
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "cart": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">THE DAILY POUR · 650 ML</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>OBJECT NOTES</span>",
+                "target": [
+                  ".section-kicker > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>30-DAY RETURNS</span>",
+                "target": [
+                  ".returns > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 6.6pt (8.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>·</span>",
+                "target": [
+                  ".edition > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span>FK</span>",
+                "target": [
+                  ".art-stamp > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<small>HAND<br>FORMED</small>",
+                "target": [
+                  ".art-stamp > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"check\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".is-selected > .check[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">THE DAILY POUR · 650 ML</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>OBJECT NOTES</span>",
+                "target": [
+                  ".section-kicker > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 7.7pt (10.24px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>30-DAY RETURNS</span>",
+                "target": [
+                  ".returns > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #a75e3e, background color: #f5f1e8, font size: 6.6pt (8.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>·</span>",
+                "target": [
+                  ".edition > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span>FK</span>",
+                "target": [
+                  ".art-stamp > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<small>HAND<br>FORMED</small>",
+                "target": [
+                  ".art-stamp > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "html": "<span class=\"check\" aria-hidden=\"true\">✓</span>",
+                "target": [
+                  ".is-selected > .check[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "image-alt",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "select-name",
+          "target-size"
+        ]
+      }
+    }
+  },
+  "supportingNarrow320": {
+    "viewportWidth": 320,
+    "scrollWidth": 320,
+    "pageHeight": 2023,
+    "title": "Everyday Teapot — Field Kiln",
+    "h1": [
+      "Everyday Teapot"
+    ],
+    "mainCount": 1,
+    "htmlLang": "en",
+    "bodyFont": "\"Segoe UI\", Arial, sans-serif",
+    "scope": "Full task trace at 320×740 is recorded under viewports.narrow320; not merely an initial-page screenshot."
+  }
+}

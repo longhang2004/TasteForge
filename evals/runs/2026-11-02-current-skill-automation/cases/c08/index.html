@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <title>Everyday Teapot — Field Kiln</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#product" aria-label="Field Kiln, product home">Field <span>Kiln</span><i aria-hidden="true">✳</i></a>
+    <div class="header-note">Small-batch objects for everyday rituals</div>
+    <div class="edition">STUDIO SAMPLE <span>·</span> NO. 04</div>
+  </header>
+
+  <main id="product" class="page-shell">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="#product">Objects</a><span aria-hidden="true">/</span><span aria-current="page">Tea &amp; table</span>
+    </nav>
+
+    <div class="product-layout">
+      <section class="object-column" aria-labelledby="product-title">
+        <figure class="product-art">
+          <div class="art-stamp" aria-hidden="true"><span>FK</span><small>HAND<br>FORMED</small></div>
+          <img src="assets/teapot.svg" alt="Original vector illustration of a round stoneware teapot with a curved handle and short spout, on a warm neutral ground">
+          <figcaption><span>01 / FORM STUDY</span><span>Illustration, not a photograph</span></figcaption>
+        </figure>
+
+        <div class="object-heading">
+          <div class="eyebrow">THE DAILY POUR · 650 ML</div>
+          <h1 id="product-title">Everyday<br class="desktop-break"> Teapot</h1>
+          <p class="intro">A quietly balanced shape for the first cup and the last. Made to sit comfortably at the center of an ordinary table.</p>
+        </div>
+
+        <section class="specimen" aria-labelledby="specimen-title">
+          <div class="section-kicker"><span>OBJECT NOTES</span><span>01—03</span></div>
+          <h2 id="specimen-title" class="sr-only">Object details</h2>
+          <dl class="spec-list">
+            <div><dt>Material</dt><dd>Glazed stoneware</dd></div>
+            <div><dt>Dimensions</dt><dd>16 cm wide × 12 cm high</dd></div>
+            <div><dt>Capacity</dt><dd>650 ml</dd></div>
+          </dl>
+          <div class="care-note"><span class="care-mark" aria-hidden="true">↗</span><p><strong>Care, simply.</strong> Hand wash. Avoid sudden temperature changes. Not for stovetop use.</p></div>
+        </section>
+      </section>
+
+      <aside class="purchase-column" aria-label="Choose your teapot">
+        <div class="purchase-topline"><span>FIELD NOTES / 04</span><span>STONEWARE</span></div>
+        <div class="price-line"><span class="price">$68</span><span class="currency">USD</span><span class="price-caption">per teapot</span></div>
+        <p class="price-context">A one-time studio price for this sample piece.</p>
+
+        <div class="rule"></div>
+
+        <fieldset class="glaze-fieldset">
+          <legend>Choose a glaze <span class="legend-hint">COLOR · REQUIRED</span></legend>
+          <div class="glaze-options">
+            <button class="glaze-option is-selected" type="button" data-testid="glaze-iron" data-glaze="iron" aria-pressed="true" aria-describedby="availability">
+              <span class="swatch swatch-iron" aria-hidden="true"></span><span class="glaze-copy"><strong>Iron</strong><small>Deep moss · 4 available</small></span><span class="check" aria-hidden="true">✓</span>
+            </button>
+            <button class="glaze-option" type="button" data-testid="glaze-ash" data-glaze="ash" aria-pressed="false" disabled aria-describedby="availability">
+              <span class="swatch swatch-ash" aria-hidden="true"></span><span class="glaze-copy"><strong>Ash</strong><small>Soft grey · unavailable</small></span><span class="availability-tag">SOLD OUT</span>
+            </button>
+            <button class="glaze-option" type="button" data-testid="glaze-sand" data-glaze="sand" aria-pressed="false" aria-describedby="availability">
+              <span class="swatch swatch-sand" aria-hidden="true"></span><span class="glaze-copy"><strong>Sand</strong><small>Warm oat · 7 available</small></span><span class="check" aria-hidden="true">✓</span>
+            </button>
+          </div>
+          <p id="availability" class="field-note">Stock shown is illustrative sample data.</p>
+        </fieldset>
+
+        <div class="quantity-row">
+          <label for="quantity">Quantity <span class="field-note">1–4 per order</span></label>
+          <select id="quantity" data-testid="quantity" name="quantity" aria-label="Quantity">
+            <option value="1" selected>01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option>
+          </select>
+        </div>
+
+        <section class="order-summary" aria-labelledby="total-heading">
+          <div class="summary-title"><span id="total-heading">ORDER TOTAL</span><span>SHIPPING INCLUDED</span></div>
+          <div class="summary-line"><span>Teapot <span id="summary-variant">· Iron</span> × <span id="summary-quantity">1</span></span><span id="items-price">$68.00</span></div>
+          <div class="summary-line shipping-line"><span>Illustrative domestic shipping</span><span>$8.00</span></div>
+          <div class="total-line"><span>Total</span><strong id="order-total">$76.00</strong></div>
+          <p class="delivery"><span aria-hidden="true">↗</span> Dispatch in 2 business days; illustrative domestic transit 3–5 business days.</p>
+        </section>
+
+        <button class="add-button" type="button" data-testid="add-to-cart">Add to bag <span aria-hidden="true">↗</span></button>
+        <p class="returns"><span>30-DAY RETURNS</span> Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.</p>
+        <p class="cart-status" data-testid="cart-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </aside>
+    </div>
+
+    <footer class="site-footer">
+      <span>FIELD KILN <span class="footer-dot">✳</span> FICTIONAL STUDIO</span>
+      <p>Fictional shop and illustrative product, price, stock, delivery, and returns. This page simulates a cart; it does not take payment.</p>
+    </footer>
+  </main>
+</body>
+</html>

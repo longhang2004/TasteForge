@@ -1,0 +1,1571 @@
+{
+  "caseId": "c06",
+  "capturedAtUtc": "2026-11-01T18:34:17.363Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    "app.js": "38d122332f8afe8f29aabe290af7a29821b06a54cdb721ab0b13c3f61c94300e",
+    "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+    "implementation-notes.md": "24bfb1897e249c32163deff4095f0b7ae177d2b644c02a4ad546de044d6425ed",
+    "index.html": "e8dbabce1c9d7e5ef2be7223b8ac3a65ecf5f4afc6d740dbd9b70db097142781",
+    "styles.css": "b9a3ffac908ddb85212222cd3dad465fe76c2a3d199b6f48403d70a9d79a0291",
+    "task.md": "c7facc61f4b8f90b39c2c709b5ac70f8f01eaf3a0a2b5629f2b51b66d3d4a541",
+    "UX_PLAN.md": "6fab7bd336ffb09efa808d97bf1ec5794b66c463939582971f26c98f8052ac08"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-neutral-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-review.png",
+        "desktop-review-viewport.png",
+        "desktop-neutral-review.png",
+        "desktop-failure-state.png",
+        "desktop-failure-state-viewport.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "Complete shared primary-task flow",
+          "status": "fail",
+          "observation": "locator.innerText: Error: strict mode violation: getByTestId('transfer-status') resolved to 4 elements:\n    1) <p id=\"status\" class=\"status-message\" data-testid=\"transfer-status\">Simulation with fictional data. No money is moved…</p> aka getByText('Simulation with fictional')\n    2) <p id=\"review-status\" class=\"status-message\" data-testid=\"transfer-status\">Review carefully. This sample does not move money.</p> aka getByText('Review carefully. This sample')\n    3) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">This simulated attempt failed. Your details are s…</p> aka getByText('This simulated attempt failed')\n    4) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">Your sample transfer was successful. No real mone…</p> aka getByText('Your sample transfer was')\n\nCall log:\n\u001b[2m  - waiting for getByTestId('transfer-status')\u001b[22m\n",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure-state",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(23, 107, 82, 0.14) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "rgba(20, 73, 56, 0.12) 0px 2px 4px 0px"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N\n        northline transfer\n      \n       Sample transfer\n    \n\n    \n      \n   ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "rgba(20, 73, 56, 0.12) 0px 2px 4px 0px"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N\n        northline transfer\n      \n       Sample transfer\n    \n\n    \n      \n   ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 240,
+              "y": 333.890625,
+              "width": 510.75,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 240,
+              "y": 465.390625,
+              "width": 510.75,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 240,
+              "y": 672.890625,
+              "width": 206.875,
+              "height": 50,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Simulation with fictional data. No money is moved and no real account is connected.",
+              "x": 240,
+              "y": 746.890625,
+              "width": 720,
+              "height": 18,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1000,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 240,
+              "y": 333.890625,
+              "width": 510.75,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 240,
+              "y": 465.390625,
+              "width": 510.75,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 240,
+              "y": 672.890625,
+              "width": 206.875,
+              "height": 50,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Simulation with fictional data. No money is moved and no real account is connected.",
+              "x": 240,
+              "y": 746.890625,
+              "width": 720,
+              "height": 18,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1000,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 240,
+              "y": 333.890625,
+              "width": 510.75,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 240,
+              "y": 465.390625,
+              "width": 510.75,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 240,
+              "y": 672.890625,
+              "width": 206.875,
+              "height": 50,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Simulation with fictional data. No money is moved and no real account is connected.",
+              "x": 240,
+              "y": 746.890625,
+              "width": 720,
+              "height": 18,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1000,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "Edit details",
+              "x": 817.84375,
+              "y": 337.140625,
+              "width": 87.15625,
+              "height": 33.5,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "confirm-transfer",
+              "text": "Confirm sample transfer\n→",
+              "x": 955,
+              "y": 465.890625,
+              "width": 245,
+              "height": 50,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Review carefully. This sample does not move money.",
+              "x": 240,
+              "y": 763.890625,
+              "width": 720,
+              "height": 18,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1000,
+          "scrollY": 0
+        },
+        "failure-state": {
+          "controls": [
+            {
+              "testId": "transfer-status",
+              "text": "This simulated attempt failed. Your details are still here, and no money was moved.",
+              "x": 465,
+              "y": 336.890625,
+              "width": 510,
+              "height": 48,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "retry-transfer",
+              "text": "Try again\n→",
+              "x": 617.5,
+              "y": 515.890625,
+              "width": 205,
+              "height": 50,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1000,
+          "scrollY": 0
+        }
+      },
+      "initialText": "N\nnorthline transfer\nSample transfer\n1\nDetails\n2\nReview\n\nSEND MONEY · VIỆT NAM\n\nSet up your transfer\n\nEnter the details, then check every cost before you confirm.\n\nRecipient’s full name\n\nEnter the name as it appears on their account.\n\nYou send\nUSD\n\nSend between $1.00 and $1,000.00 USD.\n\n↗\nSending from\nEveryday USD ••1042\nReview transfer\n→\n\n◆\nNo money moves in this sample\n\n₫\nYOUR RECIPIENT GETS\n6,250,000 VND\nTransfer fee\n$2.50 USD\nExchange rate\n1 USD = 25,000 VND\n\nIllustrative estimate. Final details are shown on the next step.\n\nSimulation with fictional data. No money is moved and no real account is connected.\n\n© 2026 Northline Transfer\nFictional sample · Not a real financial service",
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1000,
+        "title": "Review your transfer · Northline Transfer",
+        "h1": [
+          "Set up your transfer",
+          "Review your transfer",
+          "That didn’t go through",
+          "Transfer simulated"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", \"Noto Sans\", Arial, sans-serif"
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"progress-step\" id=\"step-two\"><span class=\"step-number\">2</span> Review</span>",
+                "target": [
+                  "#step-two"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.41 (foreground color: #687671, background color: #f6f7f4, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>© 2026 Northline Transfer</span>",
+                "target": [
+                  "footer > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #687670, background color: #f6f7f4, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Fictional sample · Not a real financial service</span>",
+                "target": [
+                  "footer > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #687670, background color: #f6f7f4, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"step-number\">2</span>",
+                "target": [
+                  "#step-two > .step-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◆</span>",
+                "target": [
+                  ".secure-note > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"estimate-icon\" aria-hidden=\"true\">₫</span>",
+                "target": [
+                  ".estimate-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "executionError": "locator.innerText: Error: strict mode violation: getByTestId('transfer-status') resolved to 4 elements:\n    1) <p id=\"status\" class=\"status-message\" data-testid=\"transfer-status\">Simulation with fictional data. No money is moved…</p> aka getByText('Simulation with fictional')\n    2) <p id=\"review-status\" class=\"status-message\" data-testid=\"transfer-status\">Review carefully. This sample does not move money.</p> aka getByText('Review carefully. This sample')\n    3) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">This simulated attempt failed. Your details are s…</p> aka getByText('This simulated attempt failed')\n    4) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">Your sample transfer was successful. No real mone…</p> aka getByText('Your sample transfer was')\n\nCall log:\n\u001b[2m  - waiting for getByTestId('transfer-status')\u001b[22m\n"
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-neutral-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-review.png",
+        "mobile-review-viewport.png",
+        "mobile-neutral-review.png",
+        "mobile-failure-state.png",
+        "mobile-failure-state-viewport.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "Complete shared primary-task flow",
+          "status": "fail",
+          "observation": "locator.innerText: Error: strict mode violation: getByTestId('transfer-status') resolved to 4 elements:\n    1) <p id=\"status\" class=\"status-message\" data-testid=\"transfer-status\">Simulation with fictional data. No money is moved…</p> aka getByText('Simulation with fictional')\n    2) <p id=\"review-status\" class=\"status-message\" data-testid=\"transfer-status\">Review carefully. This sample does not move money.</p> aka getByText('Review carefully. This sample')\n    3) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">This simulated attempt failed. Your details are s…</p> aka getByText('This simulated attempt failed')\n    4) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">Your sample transfer was successful. No real mone…</p> aka getByText('Your sample transfer was')\n\nCall log:\n\u001b[2m  - waiting for getByTestId('transfer-status')\u001b[22m\n",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure-state",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "rgba(20, 73, 56, 0.12) 0px 2px 4px 0px"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N\n        northline transfer\n      \n       Sample transfer\n    \n\n    \n      \n   ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "rgba(20, 73, 56, 0.12) 0px 2px 4px 0px"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N\n        northline transfer\n      \n       Sample transfer\n    \n\n    \n      \n   ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 18,
+              "y": 315.6875,
+              "width": 354,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 18,
+              "y": 447.1875,
+              "width": 354,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 18,
+              "y": 654.6875,
+              "width": 354,
+              "height": 50,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Simulation with fictional data. No money is moved and no real account is connected.",
+              "x": 18,
+              "y": 1024.515625,
+              "width": 354,
+              "height": 36,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1162,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 18,
+              "y": 315.6875,
+              "width": 354,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 18,
+              "y": 447.1875,
+              "width": 354,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 18,
+              "y": 654.6875,
+              "width": 354,
+              "height": 50,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Simulation with fictional data. No money is moved and no real account is connected.",
+              "x": 18,
+              "y": 1024.515625,
+              "width": 354,
+              "height": 36,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1162,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 18,
+              "y": 315.6875,
+              "width": 354,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 18,
+              "y": 447.1875,
+              "width": 354,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 18,
+              "y": 654.6875,
+              "width": 354,
+              "height": 50,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Simulation with fictional data. No money is moved and no real account is connected.",
+              "x": 18,
+              "y": 1024.515625,
+              "width": 354,
+              "height": 36,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1162,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "Edit details",
+              "x": 276.25,
+              "y": 319.6875,
+              "width": 80.75,
+              "height": 32,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "confirm-transfer",
+              "text": "Confirm sample transfer\n→",
+              "x": 18,
+              "y": 937.6875,
+              "width": 354,
+              "height": 52,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Review carefully. This sample does not move money.",
+              "x": 18,
+              "y": 1058.1875,
+              "width": 354,
+              "height": 18,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1177,
+          "scrollY": 0
+        },
+        "failure-state": {
+          "controls": [
+            {
+              "testId": "transfer-status",
+              "text": "This simulated attempt failed. Your details are still here, and no money was moved.",
+              "x": 18,
+              "y": 293.6875,
+              "width": 354,
+              "height": 48,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "retry-transfer",
+              "text": "Try again\n→",
+              "x": 92.5,
+              "y": 472.6875,
+              "width": 205,
+              "height": 50,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 844,
+          "scrollY": 0
+        }
+      },
+      "initialText": "N\nnorthline transfer\nSample transfer\n1\nDetails\n2\nReview\n\nSEND MONEY · VIỆT NAM\n\nSet up your transfer\n\nEnter the details, then check every cost before you confirm.\n\nRecipient’s full name\n\nEnter the name as it appears on their account.\n\nYou send\nUSD\n\nSend between $1.00 and $1,000.00 USD.\n\n↗\nSending from\nEveryday USD ••1042\nReview transfer\n→\n\n◆\nNo money moves in this sample\n\n₫\nYOUR RECIPIENT GETS\n6,250,000 VND\nTransfer fee\n$2.50 USD\nExchange rate\n1 USD = 25,000 VND\n\nIllustrative estimate. Final details are shown on the next step.\n\nSimulation with fictional data. No money is moved and no real account is connected.\n\n© 2026 Northline Transfer\nFictional sample · Not a real financial service",
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 1162,
+        "title": "Review your transfer · Northline Transfer",
+        "h1": [
+          "Set up your transfer",
+          "Review your transfer",
+          "That didn’t go through",
+          "Transfer simulated"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", \"Noto Sans\", Arial, sans-serif"
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"progress-step\" id=\"step-two\"><span class=\"step-number\">2</span> Review</span>",
+                "target": [
+                  "#step-two"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.41 (foreground color: #687671, background color: #f6f7f4, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>© 2026 Northline Transfer</span>",
+                "target": [
+                  "footer > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #687670, background color: #f6f7f4, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Fictional sample · Not a real financial service</span>",
+                "target": [
+                  "footer > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #687670, background color: #f6f7f4, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"step-number\">2</span>",
+                "target": [
+                  "#step-two > .step-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◆</span>",
+                "target": [
+                  ".secure-note > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"estimate-icon\" aria-hidden=\"true\">₫</span>",
+                "target": [
+                  ".estimate-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "executionError": "locator.innerText: Error: strict mode violation: getByTestId('transfer-status') resolved to 4 elements:\n    1) <p id=\"status\" class=\"status-message\" data-testid=\"transfer-status\">Simulation with fictional data. No money is moved…</p> aka getByText('Simulation with fictional')\n    2) <p id=\"review-status\" class=\"status-message\" data-testid=\"transfer-status\">Review carefully. This sample does not move money.</p> aka getByText('Review carefully. This sample')\n    3) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">This simulated attempt failed. Your details are s…</p> aka getByText('This simulated attempt failed')\n    4) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">Your sample transfer was successful. No real mone…</p> aka getByText('Your sample transfer was')\n\nCall log:\n\u001b[2m  - waiting for getByTestId('transfer-status')\u001b[22m\n"
+    },
+    "narrow320": {
+      "viewport": {
+        "name": "narrow320",
+        "width": 320,
+        "height": 740
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "narrow320-initial.png",
+        "narrow320-full.png",
+        "narrow320-neutral-full.png",
+        "narrow320-keyboard-focus.png",
+        "narrow320-review.png",
+        "narrow320-review-viewport.png",
+        "narrow320-neutral-review.png",
+        "narrow320-failure-state.png",
+        "narrow320-failure-state-viewport.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "Complete shared primary-task flow",
+          "status": "fail",
+          "observation": "locator.innerText: Error: strict mode violation: getByTestId('transfer-status') resolved to 4 elements:\n    1) <p id=\"status\" class=\"status-message\" data-testid=\"transfer-status\">Simulation with fictional data. No money is moved…</p> aka getByText('Simulation with fictional')\n    2) <p id=\"review-status\" class=\"status-message\" data-testid=\"transfer-status\">Review carefully. This sample does not move money.</p> aka getByText('Review carefully. This sample')\n    3) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">This simulated attempt failed. Your details are s…</p> aka getByText('This simulated attempt failed')\n    4) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">Your sample transfer was successful. No real mone…</p> aka getByText('Your sample transfer was')\n\nCall log:\n\u001b[2m  - waiting for getByTestId('transfer-status')\u001b[22m\n",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure-state",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "rgba(20, 73, 56, 0.12) 0px 2px 4px 0px"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N\n        northline transfer\n      \n       Sample transfer\n    \n\n    \n      \n   ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "rgba(20, 73, 56, 0.12) 0px 2px 4px 0px"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N\n        northline transfer\n      \n       Sample transfer\n    \n\n    \n      \n   ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 18,
+              "y": 347.875,
+              "width": 284,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 18,
+              "y": 498.875,
+              "width": 284,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 18,
+              "y": 706.375,
+              "width": 284,
+              "height": 50,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Simulation with fictional data. No money is moved and no real account is connected.",
+              "x": 18,
+              "y": 1076.203125,
+              "width": 284,
+              "height": 36,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1213,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 18,
+              "y": 347.875,
+              "width": 284,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 18,
+              "y": 498.875,
+              "width": 284,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 18,
+              "y": 706.375,
+              "width": 284,
+              "height": 50,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Simulation with fictional data. No money is moved and no real account is connected.",
+              "x": 18,
+              "y": 1076.203125,
+              "width": 284,
+              "height": 36,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1213,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 18,
+              "y": 347.875,
+              "width": 284,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 18,
+              "y": 498.875,
+              "width": 284,
+              "height": 53,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 18,
+              "y": 706.375,
+              "width": 284,
+              "height": 50,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Simulation with fictional data. No money is moved and no real account is connected.",
+              "x": 18,
+              "y": 1076.203125,
+              "width": 284,
+              "height": 36,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1213,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "Edit details",
+              "x": 206.25,
+              "y": 366.6875,
+              "width": 80.75,
+              "height": 32,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "confirm-transfer",
+              "text": "Confirm sample transfer\n→",
+              "x": 18,
+              "y": 999.515625,
+              "width": 284,
+              "height": 52,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "transfer-status",
+              "text": "Review carefully. This sample does not move money.",
+              "x": 18,
+              "y": 1120.015625,
+              "width": 284,
+              "height": 36,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1257,
+          "scrollY": 0
+        },
+        "failure-state": {
+          "controls": [
+            {
+              "testId": "transfer-status",
+              "text": "This simulated attempt failed. Your details are still here, and no money was moved.",
+              "x": 18,
+              "y": 325.875,
+              "width": 284,
+              "height": 72,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "retry-transfer",
+              "text": "Try again\n→",
+              "x": 57.5,
+              "y": 528.875,
+              "width": 205,
+              "height": 50,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 793,
+          "scrollY": 0
+        }
+      },
+      "initialText": "N\nnorthline transfer\nSample transfer\n1\nDetails\n2\nReview\n\nSEND MONEY · VIỆT NAM\n\nSet up your transfer\n\nEnter the details, then check every cost before you confirm.\n\nRecipient’s full name\n\nEnter the name as it appears on their account.\n\nYou send\nUSD\n\nSend between $1.00 and $1,000.00 USD.\n\n↗\nSending from\nEveryday USD ••1042\nReview transfer\n→\n\n◆\nNo money moves in this sample\n\n₫\nYOUR RECIPIENT GETS\n6,250,000 VND\nTransfer fee\n$2.50 USD\nExchange rate\n1 USD = 25,000 VND\n\nIllustrative estimate. Final details are shown on the next step.\n\nSimulation with fictional data. No money is moved and no real account is connected.\n\n© 2026 Northline Transfer\nFictional sample · Not a real financial service",
+      "layout": {
+        "viewportWidth": 320,
+        "scrollWidth": 320,
+        "pageHeight": 1213,
+        "title": "Review your transfer · Northline Transfer",
+        "h1": [
+          "Set up your transfer",
+          "Review your transfer",
+          "That didn’t go through",
+          "Transfer simulated"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", \"Noto Sans\", Arial, sans-serif"
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"progress-step\" id=\"step-two\"><span class=\"step-number\">2</span> Review</span>",
+                "target": [
+                  "#step-two"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.41 (foreground color: #687671, background color: #f6f7f4, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>© 2026 Northline Transfer</span>",
+                "target": [
+                  "footer > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #687670, background color: #f6f7f4, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>Fictional sample · Not a real financial service</span>",
+                "target": [
+                  "footer > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #687670, background color: #f6f7f4, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"step-number\">2</span>",
+                "target": [
+                  "#step-two > .step-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◆</span>",
+                "target": [
+                  ".secure-note > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"estimate-icon\" aria-hidden=\"true\">₫</span>",
+                "target": [
+                  ".estimate-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "executionError": "locator.innerText: Error: strict mode violation: getByTestId('transfer-status') resolved to 4 elements:\n    1) <p id=\"status\" class=\"status-message\" data-testid=\"transfer-status\">Simulation with fictional data. No money is moved…</p> aka getByText('Simulation with fictional')\n    2) <p id=\"review-status\" class=\"status-message\" data-testid=\"transfer-status\">Review carefully. This sample does not move money.</p> aka getByText('Review carefully. This sample')\n    3) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">This simulated attempt failed. Your details are s…</p> aka getByText('This simulated attempt failed')\n    4) <p role=\"status\" class=\"outcome-copy\" data-testid=\"transfer-status\">Your sample transfer was successful. No real mone…</p> aka getByText('Your sample transfer was')\n\nCall log:\n\u001b[2m  - waiting for getByTestId('transfer-status')\u001b[22m\n"
+    }
+  },
+  "supportingNarrow320": {
+    "viewportWidth": 320,
+    "scrollWidth": 320,
+    "pageHeight": 1213,
+    "title": "Review your transfer · Northline Transfer",
+    "h1": [
+      "Set up your transfer",
+      "Review your transfer",
+      "That didn’t go through",
+      "Transfer simulated"
+    ],
+    "mainCount": 1,
+    "htmlLang": "en",
+    "bodyFont": "\"Segoe UI\", \"Noto Sans\", Arial, sans-serif",
+    "scope": "Full task trace at 320×740 is recorded under viewports.narrow320; not merely an initial-page screenshot."
+  }
+}

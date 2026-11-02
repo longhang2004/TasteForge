@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulated transfer · Northline Transfer</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="./" aria-label="Northline Transfer home"><span class="brand-mark" aria-hidden="true">N<span>↗</span></span>Northline <span class="brand-light">Transfer</span></a><span class="demo-badge">Simulation</span></header>
+<main id="app">
+  <p class="disclosure"><span aria-hidden="true">i</span> Simulation with fictional data. No money is moved and no real account is connected.</p>
+  <nav aria-label="Transfer progress"><ol class="steps"><li id="step-entry" aria-current="step"><span>1</span>Transfer details</li><li id="step-review"><span>2</span>Review & confirm</li></ol></nav>
+  <section id="entry-screen" aria-labelledby="entry-title">
+    <div class="page-heading"><p class="eyebrow">USD → VND</p><h1 id="entry-title" tabindex="-1">Set up your transfer.</h1><p>Start with the details. You’ll check everything before confirming.</p></div>
+    <form id="transfer-form" novalidate>
+      <div class="entry-grid">
+        <div class="details-panel">
+          <div class="section-title"><span class="section-number">01</span><h2>Who are you sending to?</h2></div>
+          <label for="recipient">Recipient’s full name</label>
+          <input id="recipient" data-testid="recipient" name="recipient" autocomplete="name" value="Nguyễn Thị Minh Anh Trường" aria-describedby="recipient-help recipient-error" required>
+          <p class="hint" id="recipient-help">Check the spelling, including Vietnamese diacritics.</p><p class="field-error" id="recipient-error" hidden></p>
+          <div class="destination"><span class="country-mark" aria-hidden="true">VN</span><div><span class="small-label">Destination</span><strong lang="vi">Việt Nam</strong></div><span class="destination-currency">VND</span></div>
+          <div class="section-title second"><span class="section-number">02</span><h2>How much will you send?</h2></div>
+          <label for="amount">You send</label>
+          <div class="amount-input"><input id="amount" data-testid="amount" name="amount" inputmode="decimal" type="number" min="1" max="1000" step="0.01" value="250" aria-describedby="amount-help amount-error" required><span>USD</span></div>
+          <p class="hint" id="amount-help">From USD 1.00 to USD 1,000.00. Fee added separately.</p><p class="field-error" id="amount-error" hidden></p>
+          <div class="source"><span class="small-label">Simulated payment source</span><strong>Everyday USD ••1042</strong><span>Alex Morgan</span></div>
+        </div>
+        <aside class="quote-panel" aria-labelledby="quote-title"><p class="eyebrow">No hidden arithmetic</p><h2 id="quote-title">Your transfer at a glance</h2><dl class="quote-list"><div><dt>You send</dt><dd id="quote-amount">USD 250.00</dd></div><div><dt>Transfer fee <span class="fee-tag">Flat fee</span></dt><dd>USD 2.50</dd></div><div class="total-row"><dt>Total debited</dt><dd id="quote-total">USD 252.50</dd></div></dl><div class="received-box"><span>Recipient receives</span><strong id="quote-received">6,250,000 <small>VND</small></strong><span class="rate">1 USD = 25,000 VND</span></div><div class="delivery"><span aria-hidden="true">◷</span><div><strong>Estimated delivery</strong><p>By 3 November 2026</p><span>Illustrative estimate</span></div></div><button class="primary" type="submit" data-testid="review-transfer">Review transfer <span aria-hidden="true">→</span></button><p class="action-note">You can still edit your details on the next step.</p></aside>
+      </div>
+    </form>
+  </section>
+  <section id="review-screen" hidden aria-labelledby="review-title">
+    <div class="page-heading"><p class="eyebrow">One last check</p><h1 id="review-title" tabindex="-1">Review your transfer.</h1><p>Make sure the recipient and total are right before you confirm.</p></div>
+    <div class="review-card"><div class="review-top"><h2>Transfer details</h2><button class="text-button" id="edit-button" data-testid="edit-transfer" type="button">Edit details</button></div><dl class="review-list"><div class="recipient-row"><dt>Recipient</dt><dd id="review-recipient" lang="vi"></dd></div><div><dt>Destination</dt><dd lang="vi">Việt Nam</dd></div><div><dt>You send</dt><dd id="review-amount"></dd></div><div><dt>Transfer fee · added to amount</dt><dd>USD 2.50</dd></div><div class="total-row"><dt>Total debited</dt><dd id="review-total"></dd></div><div class="receive-row"><dt>Recipient receives</dt><dd id="review-received"></dd></div><div><dt>Exchange rate</dt><dd>1 USD = 25,000 VND</dd></div><div><dt>Estimated delivery</dt><dd>By 3 November 2026<span class="subvalue">Illustrative estimate</span></dd></div><div><dt>Simulated payment source</dt><dd>Everyday USD ••1042</dd></div></dl><div id="outcome" data-testid="transfer-status" role="status" aria-live="polite" hidden></div><div class="review-actions"><p id="confirmation-note">This confirms a simulation only. No money will be moved.</p><button type="button" class="primary" id="confirm-button" data-testid="confirm-transfer">Confirm simulated transfer <span aria-hidden="true">→</span></button><button type="button" class="primary" id="retry-button" data-testid="retry-transfer" hidden>Retry simulated transfer <span aria-hidden="true">↻</span></button></div></div>
+  </section>
+  <footer><span class="footer-mark" aria-hidden="true">↗</span> A practice transfer, from start to finish.<span>Northline Transfer · Fictional service</span></footer>
+</main>
+</body>
+</html>

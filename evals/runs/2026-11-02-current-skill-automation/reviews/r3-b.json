@@ -1,0 +1,79 @@
+{
+  "reviewer": "r3",
+  "batch": "b",
+  "scope": "independent AI screenshot review",
+  "views": [
+    {
+      "id": "b-01",
+      "task": "product",
+      "scores": {
+        "entry_priority": {"score": 4, "note": "The authored desktop viewport places the illustration opposite title, USD 68 price, glaze selection, quantity, USD 76 shipping-inclusive total and an add button repeating that total. On the 390px initial viewport, the title and price appear only after the illustration, disclosure and specification tiles; selection and total are farther down."},
+        "information_grouping": {"score": 4, "note": "A bounded purchase panel joins named glaze controls, stock, quantity and the item/shipping/total breakdown. The full-page capture separates specifications, delivery/returns and disclosures with clear headings and rows. Material, dimensions and capacity are repeated below the illustration and in specifications, adding length."},
+        "decision_context": {"score": 4, "note": "The initial desktop shows Iron 4 in stock, Ash 0/sold out, Sand 7, USD 8 shipping and USD 76 total before the add action. Full-page evidence supplies material, dimensions, care, dispatch/transit and complete 30-day return costs; returns are below the action and first viewport. The description additionally asserts wheel-thrown construction, mineral glaze and an integrated strainer, details not established by the supplied fixture."},
+        "narrow_context": {"score": 3, "note": "The actual 390 × 844 top-of-page capture shows a readable illustration, disclosure, wrapped specification tiles, title, price and shipping charge, but no glaze or quantity controls or inclusive total. The neutral narrow full-page diagnostic shows that these form a readable single column farther down, followed by repeated specifications and policies; authored below-fold mobile layout is not directly shown."},
+        "recovery_evidence": {"score": null, "note": "The cart-confirmation capture shows the same page-top region as the initial narrow capture. The confirmation area is not in view after scroll reset; cart feedback, selected Sand × 2 confirmation, error and recovery are unassessed, with no inferred behavioral failure."},
+        "composition_purpose": {"score": 4, "note": "The green ceramic illustration, cream surfaces, serif product title and restrained glaze swatches support a considered craft presentation. The familiar paired image/purchase structure serves inspection and selection. Repeated specification tiles/rows and the long empty left side of the full page add length after the main product content."}
+      },
+      "authoredRevisionsToNeutral": "Neutral notes remain frozen in r3-b-neutral.md. Authored serif headings, warm surfaces and glaze colors strengthen the craft interpretation, revising composition_purpose from 3 to 4. Entry, grouping, decision and narrow-context observations remain; actual viewport captures confirm that mobile controls are below the first screen. The labeled cart state contributes no visible confirmation evidence because its page-top scope excludes that region.",
+      "evidenceImages": ["neutral/b-01-01.png", "neutral/b-01-02.png", "authored/b-01-03.png", "authored/b-01-04.png", "authored/b-01-05.png", "authored/b-01-06.png"]
+    },
+    {
+      "id": "b-02",
+      "task": "product",
+      "scores": {
+        "entry_priority": {"score": 4, "note": "The authored desktop has an emphatic single-line product title, price, named glaze row, quantity, inclusive total and add action in a coherent right column. At 390 × 844 the page instead opens with the demonstration banner, illustration and craft/care details; product title and purchase choices are below the visible screen."},
+        "information_grouping": {"score": 4, "note": "Image and craft/material facts occupy the left desktop column; the right contains purchasing and subsequent shipping/returns. Rules and headings distinguish groups, and material/capacity/dimensions/care are stated once in the main content. On narrow screens the complete left-column content precedes the purchase column, delaying its context."},
+        "decision_context": {"score": 4, "note": "Desktop evidence explicitly names Iron, unavailable Ash and Sand with stock counts, quantity 1–4, USD 68 item subtotal, USD 8 shipping and USD 76 total before Add to Cart. Dimensions, stoneware material and care are visible; full-page evidence supplies dispatch/transit and all return-cost conditions. The return text extends past the actual desktop viewport and follows the add action."},
+        "narrow_context": {"score": 3, "note": "The actual 390px view keeps illustration, disclosure and practical craft/care text legible, but the product title, price and selection are all below its 844px height. The neutral full-page diagnostic shows large stacked variants and readable total farther down. Nested outer/image borders use considerable width and the left-before-right sequence makes initial purchase orientation slow within the shown scope."},
+        "recovery_evidence": {"score": null, "note": "The cart-confirmation viewport contains the same page-top illustration and craft section as the initial view. Cart confirmation and any recovery region are outside this reset-scroll capture and remain unassessed; their absence from the image is not a behavioral failure."},
+        "composition_purpose": {"score": 4, "note": "A large ceramic illustration, serif typography, warm neutral background and concise craft/material section establish product character through the object and its practical facts. The familiar image-and-purchase columns have a task purpose; the prominent demonstration banner is accurate but competes with the shop identity at entry."}
+      },
+      "authoredRevisionsToNeutral": "Neutral notes remain frozen. The authored font keeps the desktop title on one line rather than the neutral two-line wrap, moving selection, total and action upward by roughly one text line. Color makes unavailable Ash and the selected Iron easier to distinguish visually while their labels retain meaning. The craft composition assessment stays 4. The narrow authored viewport confirms that the product title and purchase controls remain below the first screen; the labeled cart viewport does not expose its feedback region.",
+      "evidenceImages": ["neutral/b-02-01.png", "neutral/b-02-02.png", "authored/b-02-03.png", "authored/b-02-04.png", "authored/b-02-05.png", "authored/b-02-06.png"]
+    },
+    {
+      "id": "b-03",
+      "task": "transfer",
+      "scores": {
+        "entry_priority": {"score": 5, "note": "Within the desktop 1000px viewport, the centered details panel proceeds from source to full Vietnamese recipient and USD 250 amount, then a cost/receive summary and prominent green Continue to Review action. The action is visually distinct and the two-step progression is compact."},
+        "information_grouping": {"score": 4, "note": "Editable fields, funding source and shaded monetary summary have clear boundaries. The narrow review capture separates recipient/destination/source, cost breakdown and delivery/conversion, with USD 377.50 total highlighted. Source and fee repeat on entry, while the long source-account value wraps over several lines in review."},
+        "decision_context": {"score": 4, "note": "Entry shows USD 250 sent, USD 2.50 fee, USD 252.50 debit and VND 6,250,000 receipt, plus limits, rate and delivery date. The review viewport visibly presents the full recipient across two lines, USD 375 sent, USD 2.50 fee, USD 377.50 total and VND 9,375,000 received; lower delivery text and confirmation/edit controls are outside its scope. The persistent simulation disclosure is explicit, but 'guaranteed' payout/rate wording exceeds the fictional fixture's established certainty and the entry delivery wording omits its explicit illustrative-estimate qualifier."},
+        "narrow_context": {"score": 4, "note": "The 390px entry fits the full recipient input and amount; a partial summary is visible at the bottom. Review preserves the long Vietnamese name with readable wrapping and aligns cost values while allowing account text to wrap. Total and received amount appear in the review screen, but its lower delivery/action region requires scrolling; no natural post-click scroll or focus behavior is inferred."},
+        "recovery_evidence": {"score": 4, "note": "The failure viewport shows a prominent red outlined panel with an icon and text stating the transfer could not be processed, a simulated connection timeout, no funds debited, preserved details, and safe retry or edit options. The recipient remains visible beneath it. Retry/edit controls, preserved amount, subsequent success and actual retained-input behavior are outside the shown scope and unassessed."},
+        "composition_purpose": {"score": 4, "note": "Aligned monetary rows, a compact step trail, a restrained panel and a prominent action support verification. Authored green highlights distinguish the review total and current step; red failure treatment is accompanied by explicit text and an icon. The familiar form/review structure serves this task without needing novelty."}
+      },
+      "authoredRevisionsToNeutral": "Neutral notes remain frozen. Authored colors reinforce step and action hierarchy without changing the entry structure. Newly visible review evidence shows a USD 375 scenario and legible long-name wrapping, extending the decision/grouping evidence beyond initial entry. Recovery changes from null to 4 because an explicit simulated-failure explanation and recovery instructions are visible; controls and outcomes below the reset viewport remain unassessed.",
+      "evidenceImages": ["neutral/b-03-01.png", "neutral/b-03-02.png", "authored/b-03-03.png", "authored/b-03-04.png", "authored/b-03-05.png", "authored/b-03-06.png"]
+    },
+    {
+      "id": "b-04",
+      "task": "transfer",
+      "scores": {
+        "entry_priority": {"score": 4, "note": "The separate step indicator and centered form clearly order source, recipient, amount and fee/exchange summary. The desktop action falls below the actual 1000px capture, consistent with its placement after a large gap in neutral full-page evidence. On narrow screens branding/account and step areas occupy substantial space before the form."},
+        "information_grouping": {"score": 4, "note": "Source, fields and summary are distinct. Desktop summary separates costs from conversion, receipt and delivery with aligned values, blue total and green receipt emphasis. Narrow review groups facts in a verification table with a pending badge; the long recipient and destination badge wrap within a compact value column. Repeated source/header information adds vertical overhead."},
+        "decision_context": {"score": 4, "note": "Desktop entry explicitly shows USD 250 sent, USD 2.50 fee, USD 252.50 total, VND 6,250,000 receipt, exchange rate and the full illustrative delivery estimate. Narrow review shows recipient, USD 375 sent, USD 2.50 fee and USD 377.50 total; conversion/delivery and confirmation/edit controls are below the capture. Simulation is clearly disclosed, although 'guaranteed rate' claims certainty not supplied by the fixture."},
+        "narrow_context": {"score": 3, "note": "Entry labels and the long Vietnamese recipient fit the 390px width, but header/account and progress content place the summary almost entirely below the first 844px screen. Review wraps the title and recipient, with total at the bottom edge and other review facts farther down. Neutral full-page evidence shows heavy wrapping of summary labels and the delivery estimate. The visible failure panel itself remains readable and contains a full-width-area retry control."},
+        "recovery_evidence": {"score": 4, "note": "The narrow failure capture visibly labels SIMULATED FAILURE (RECOVERABLE), explains the timeout, states no funds were debited, names the source and recipient, states USD 400 details are preserved, and provides Retry Transfer within the viewport. The preceding review capture shows USD 375, so these separate images do not establish a single unchanged-input sequence. Actual retention, retry success, edit behavior and final outcome remain unassessed."},
+        "composition_purpose": {"score": 4, "note": "The step indicator, consistent form boundary and clearly separated debit/receipt rows support review. Blue/green value emphasis and explicit red failure treatment add useful distinctions. Large branding/progress areas and the gap above the initial action extend the page, especially in the narrow layout, without adding equivalent decision context."}
+      },
+      "authoredRevisionsToNeutral": "Neutral notes remain frozen. Authored color strengthens cost/receipt emphasis and step distinction, while actual viewport images confirm the initial action and mobile summary are below the first screen. New narrow review evidence supplies visible recipient, fee and total for USD 375. Recovery changes from null to 4 because the failure explanation and Retry Transfer button are directly shown. The failure's USD 400 text is recorded as a different visible scenario rather than treated as proof of either successful retention or a retention failure.",
+      "evidenceImages": ["neutral/b-04-01.png", "neutral/b-04-02.png", "authored/b-04-03.png", "authored/b-04-04.png", "authored/b-04-05.png", "authored/b-04-06.png"]
+    }
+  ],
+  "inspectedImages": [
+    "neutral/b-01-01.png", "neutral/b-01-02.png", "neutral/b-02-01.png", "neutral/b-02-02.png",
+    "neutral/b-03-01.png", "neutral/b-03-02.png", "neutral/b-04-01.png", "neutral/b-04-02.png",
+    "authored/b-01-03.png", "authored/b-01-04.png", "authored/b-01-05.png", "authored/b-01-06.png",
+    "authored/b-02-03.png", "authored/b-02-04.png", "authored/b-02-05.png", "authored/b-02-06.png",
+    "authored/b-03-03.png", "authored/b-03-04.png", "authored/b-03-05.png", "authored/b-03-06.png",
+    "authored/b-04-03.png", "authored/b-04-04.png", "authored/b-04-05.png", "authored/b-04-06.png"
+  ],
+  "limitations": [
+    "All 24 listed images were actually viewed. Only this anonymous packet's README, task briefs, fixtures and image indexes/captures were inspected for the review.",
+    "Frozen neutral notes were written before opening authored.json or authored images and were not revised afterward; SHA-256 at freeze: 6c72847278e5086b2ee6088db1ff39c26fc31c19d32f2be8a56db1ec92a55de5.",
+    "Scores are separate dimension judgments: 1 weak/blocking, 3 usable with issues, 5 strong within the shown scope. There is no aggregate score, authorship/condition inference or representative-user usability claim. Familiar task-appropriate patterns may serve the task well; novelty earns no credit by itself.",
+    "Neutral images are full-page diagnostics; font replacement can reflow content and grayscale/surface changes do not represent authored appearance. Desktop authored full-page images exist for product views only; transfer below-fold observations come from neutral diagnostics unless directly visible in authored state captures.",
+    "All state screenshots reset scrollTo(0,0). They show top-of-page state, not natural post-click scrolling or focus. Unshown feedback, recovery controls or outcomes remain unassessed and are never counted as behavioral failures.",
+    "Screenshots do not prove working controls, unavailable-glaze prevention, quantity validation, recalculation, retained input, edit/retry behavior, cart or transfer success, keyboard access, assistive-technology semantics, hover independence or contrast conformance. No live UI interactions or source/test inspection were performed."
+  ]
+}

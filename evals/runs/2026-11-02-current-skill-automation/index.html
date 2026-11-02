@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TasteForge — Current beta UI comparisons</title>
+  <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+  <header>
+    <p class="eyebrow">TasteForge · 2 November 2026 · exploratory evidence</p>
+    <h1>Same task. Current skill. Fresh UIs.</h1>
+    <p>Six planned pairs across two tasks and three creator models. Compare original captures, then inspect the runnable source and task traces. One generation per cell; agent reviews and scripted checks do not replace human usability.</p>
+    <nav aria-label="Study documents"><a href="protocol.md">Protocol</a><a href="manifest.json">Manifest</a><a href="results.json">Measured results</a><a href="report.md">Findings and limits</a></nav>
+    <p id="snapshot" class="meta">Loading actual capture metadata…</p>
+  </header>
+  <main>
+    <section aria-label="Comparison controls" class="controls">
+      <label class="pair-control">Model and task<select id="pair"></select></label>
+      <label>Capture viewport<select id="viewport"><option value="desktop">1440 × 1000</option><option value="mobile">390 × 844</option><option value="narrow320">320 × 740</option></select></label>
+      <label>State<select id="scene"><option value="initial">Initial</option><option value="review">Review / before commitment</option><option value="failure">Recoverable failure</option><option value="success">Success</option><option value="cart">Cart confirmation</option><option value="keyboard-focus">First keyboard focus</option></select></label>
+      <label>Rendering<select id="mode"><option value="authored">Authored</option><option value="neutral">Monochrome diagnostic</option></select></label>
+      <label>Screenshot scope<select id="scope"><option value="viewport">Top-of-page viewport</option><option value="full">Full page</option></select></label>
+    </section>
+    <p id="scope-note" class="scope-note" role="status"></p>
+    <section id="comparison" class="comparison" aria-label="Matched UI pair"></section>
+    <section class="availability" aria-labelledby="availability-heading">
+      <h2 id="availability-heading">Availability is separate from UI quality</h2>
+      <p>Optional OpenCode cells have no UI score when the provider rejects inference. The two requested free models are invoked sequentially, one model at a time.</p>
+      <div id="availability"></div>
+    </section>
+    <p class="limits">All screenshots retain original content. Monochrome diagnostics preserve transparency and luminance, but replace fonts and remove radius/shadows; text can reflow. Full-page captures include content below the viewport and do not prove first-screen visibility. Pending or missing evidence is shown explicitly. Manual/human tests are deferred, not passed.</p>
+  </main>
+  <script src="viewer.js" type="module"></script>
+</body>
+</html>

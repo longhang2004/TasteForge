@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northline Transfer — Simulated Money Transfer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Global Simulation Disclosure Banner -->
+  <aside class="simulation-banner" role="complementary" aria-label="Simulation Notice">
+    <div class="container banner-inner">
+      <span class="sim-badge" aria-hidden="true">DEMO SIMULATION</span>
+      <span class="sim-text">Simulation with fictional data. No money is moved and no real account is connected.</span>
+    </div>
+  </aside>
+
+  <header class="app-header">
+    <div class="container header-inner">
+      <div class="brand-group">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M2 12h20"></path>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Northline Transfer</span>
+          <span class="brand-tag">Occasional Sender Portal</span>
+        </div>
+      </div>
+      <div class="user-pill" title="Active Sender Profile">
+        <span class="user-avatar" aria-hidden="true">AM</span>
+        <div class="user-info">
+          <span class="user-name">Alex Morgan</span>
+          <span class="user-acc">Everyday USD ••1042</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="app-main container">
+    <!-- Stepper Navigation -->
+    <nav class="flow-stepper" aria-label="Transfer steps">
+      <div class="step-node is-active" id="nav-step-1" aria-current="step">
+        <div class="step-circle">1</div>
+        <div class="step-text">
+          <span class="step-num">Step 1</span>
+          <span class="step-title">Transfer details</span>
+        </div>
+      </div>
+      <div class="step-line" aria-hidden="true"></div>
+      <div class="step-node" id="nav-step-2">
+        <div class="step-circle">2</div>
+        <div class="step-text">
+          <span class="step-num">Step 2</span>
+          <span class="step-title">Review &amp; confirm</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- STEP 1: Entry Step -->
+    <section id="step-entry" class="card view-panel" aria-labelledby="entry-heading">
+      <div class="card-header">
+        <h1 id="entry-heading" class="card-title">Send money to Việt Nam</h1>
+        <p class="card-subtitle">Transparent flat fees and guaranteed exchange rates. Check all costs upfront before you review.</p>
+      </div>
+
+      <div class="sender-account-strip">
+        <span class="strip-label">Payment source:</span>
+        <span class="strip-val">Everyday USD ••1042 (Alex Morgan)</span>
+      </div>
+
+      <form id="entry-form" class="flow-form" novalidate>
+        <!-- Recipient Field -->
+        <div class="field-block">
+          <div class="field-label-row">
+            <label for="recipient-input" class="field-label">Recipient full name</label>
+            <span class="field-badge">Việt Nam</span>
+          </div>
+          <input
+            id="recipient-input"
+            name="recipient"
+            type="text"
+            class="text-input"
+            data-testid="recipient"
+            autocomplete="name"
+            spellcheck="false"
+            required
+            aria-describedby="recipient-subtext recipient-error"
+            value="Nguyễn Thị Minh Anh Trường"
+          >
+          <div class="field-subtext-row">
+            <span id="recipient-subtext" class="field-subtext">Destination: Việt Nam (Delivery currency: VND)</span>
+          </div>
+          <div id="recipient-error" class="field-error-slot" aria-live="polite"></div>
+        </div>
+
+        <!-- Amount Field -->
+        <div class="field-block">
+          <div class="field-label-row">
+            <label for="amount-input" class="field-label">You send (USD)</label>
+            <span class="field-hint">Min $1.00 – Max $1,000.00</span>
+          </div>
+          <div class="currency-input-wrap">
+            <span class="input-affix input-prefix" aria-hidden="true">$</span>
+            <input
+              id="amount-input"
+              name="amount"
+              type="number"
+              step="any"
+              min="1"
+              max="1000"
+              class="text-input has-affixes"
+              data-testid="amount"
+              required
+              aria-describedby="amount-subtext amount-error"
+              value="250"
+            >
+            <span class="input-affix input-suffix">USD</span>
+          </div>
+          <div class="field-subtext-row">
+            <span id="amount-subtext" class="field-subtext">Standard transfer fee: flat $2.50 USD per transfer</span>
+          </div>
+          <div id="amount-error" class="field-error-slot" aria-live="polite"></div>
+        </div>
+
+        <!-- Visible Fees & Live Breakdown Before Confirmation -->
+        <div class="live-breakdown-card" aria-label="Fee and cost calculation summary">
+          <div class="breakdown-head">
+            <span class="breakdown-title">Visible Fee &amp; Exchange Summary</span>
+            <span class="guarantee-tag">Guaranteed rate</span>
+          </div>
+          <dl class="breakdown-dl">
+            <div class="breakdown-row">
+              <dt>Send amount</dt>
+              <dd id="entry-live-sent">$250.00 USD</dd>
+            </div>
+            <div class="breakdown-row">
+              <dt>Transfer fee (flat)</dt>
+              <dd id="entry-live-fee">$2.50 USD</dd>
+            </div>
+            <div class="breakdown-row row-total">
+              <dt>Total debited from account</dt>
+              <dd id="entry-live-total" class="num-bold">$252.50 USD</dd>
+            </div>
+            <div class="breakdown-divider" aria-hidden="true"></div>
+            <div class="breakdown-row">
+              <dt>Guaranteed exchange rate</dt>
+              <dd id="entry-live-rate">1 USD = 25,000 VND</dd>
+            </div>
+            <div class="breakdown-row row-payout">
+              <dt>Recipient receives in Việt Nam</dt>
+              <dd id="entry-live-received" class="num-highlight">6,250,000 VND</dd>
+            </div>
+            <div class="breakdown-row">
+              <dt>Delivery estimate</dt>
+              <dd id="entry-live-estimate" class="delivery-val">By 3 November 2026, illustrative estimate</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Global entry-level feedback slot if validation fails -->
+        <div id="entry-feedback-slot" class="feedback-slot" aria-live="assertive"></div>
+
+        <div class="form-action-row">
+          <button
+            type="submit"
+            id="btn-to-review"
+            class="btn btn-primary btn-large"
+            data-testid="review-transfer"
+          >
+            Review Transfer
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- STEP 2: Review & Confirmation Step -->
+    <section id="step-review" class="card view-panel" aria-labelledby="review-heading" hidden>
+      <div class="card-header">
+        <h1 id="review-heading" class="card-title">Review simulated transfer</h1>
+        <p class="card-subtitle">Verify recipient details and total debited cost before confirming.</p>
+      </div>
+
+      <!-- Feedback Area: Failures, Retries, Success Messages -->
+      <div id="review-feedback-slot" class="feedback-slot" aria-live="polite"></div>
+
+      <!-- Review Card Table -->
+      <div class="review-table-card">
+        <div class="review-table-head">
+          <span class="table-title">Transfer verification summary</span>
+          <span class="status-indicator-tag" id="review-stage-tag">Pending verification</span>
+        </div>
+        <dl class="review-dl">
+          <div class="review-row row-recipient">
+            <dt class="review-label">Recipient</dt>
+            <dd class="review-value">
+              <span id="review-recipient-val" class="recipient-display">Nguyễn Thị Minh Anh Trường</span>
+              <span class="destination-tag">Destination: Việt Nam</span>
+            </dd>
+          </div>
+
+          <div class="review-row">
+            <dt class="review-label">Sent amount</dt>
+            <dd id="review-sent-val" class="review-value">$250.00 USD</dd>
+          </div>
+
+          <div class="review-row">
+            <dt class="review-label">Fee</dt>
+            <dd id="review-fee-val" class="review-value">$2.50 USD</dd>
+          </div>
+
+          <div class="review-row row-emphasis">
+            <dt class="review-label">Total debited</dt>
+            <dd class="review-value">
+              <span id="review-total-val" class="review-val-total">$252.50 USD</span>
+              <span class="review-sub">Debited from Everyday USD ••1042</span>
+            </dd>
+          </div>
+
+          <div class="review-row row-payout">
+            <dt class="review-label">Amount received</dt>
+            <dd class="review-value">
+              <span id="review-received-val" class="review-val-received">6,250,000 VND</span>
+              <span class="review-sub">Exchange rate: 1 USD = 25,000 VND</span>
+            </dd>
+          </div>
+
+          <div class="review-row">
+            <dt class="review-label">Delivery estimate</dt>
+            <dd id="review-estimate-val" class="review-value">By 3 November 2026, illustrative estimate</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="review-actions-wrap" id="review-actions">
+        <button
+          type="button"
+          id="btn-edit-details"
+          class="btn btn-secondary"
+          data-testid="edit-transfer"
+        >
+          Edit details
+        </button>
+        <button
+          type="button"
+          id="btn-confirm-transfer"
+          class="btn btn-primary"
+          data-testid="confirm-transfer"
+        >
+          Confirm Transfer
+        </button>
+      </div>
+
+      <div class="review-footer-note">
+        <p>Simulation with fictional data. No money is moved and no real account is connected.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">Northline Transfer • Simulation mode with fictional data • Reference Date: 2026-11-01</p>
+      <p class="footer-sub">For evaluation purposes only. No real payment networks or bank accounts are accessed.</p>
+    </div>
+  </footer>
+</body>
+</html>

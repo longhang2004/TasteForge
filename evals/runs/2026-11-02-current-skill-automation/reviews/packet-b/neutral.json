@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0",
+  "views": [
+    {
+      "view": "b-01",
+      "task": "product",
+      "brief": "tasks/product.md",
+      "fixture": "tasks/product.json",
+      "images": [
+        {
+          "stage": "neutral",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "state": "initial",
+          "scope": "full-page",
+          "available": true,
+          "file": "neutral/b-01-01.png",
+          "sha256": "ba3067504081541c2b7dd793624484c28be82adc023463b159c19c3d7e0a12ca"
+        },
+        {
+          "stage": "neutral",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "state": "initial",
+          "scope": "full-page",
+          "available": true,
+          "file": "neutral/b-01-02.png",
+          "sha256": "617414db634dd75c36feef4106da4d068f7f64a4163dcfb36ef7a8ff9376fb3d"
+        }
+      ]
+    },
+    {
+      "view": "b-02",
+      "task": "product",
+      "brief": "tasks/product.md",
+      "fixture": "tasks/product.json",
+      "images": [
+        {
+          "stage": "neutral",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "state": "initial",
+          "scope": "full-page",
+          "available": true,
+          "file": "neutral/b-02-01.png",
+          "sha256": "27b7014861e60dd8e354f91df747b70142354942dd90365317e4ec774fab254c"
+        },
+        {
+          "stage": "neutral",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "state": "initial",
+          "scope": "full-page",
+          "available": true,
+          "file": "neutral/b-02-02.png",
+          "sha256": "eaae88f165198135d2506d94740e5620c5dd1eb5084b0fc2a07fc24b6659183e"
+        }
+      ]
+    },
+    {
+      "view": "b-03",
+      "task": "transfer",
+      "brief": "tasks/transfer.md",
+      "fixture": "tasks/transfer.json",
+      "images": [
+        {
+          "stage": "neutral",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "state": "initial",
+          "scope": "full-page",
+          "available": true,
+          "file": "neutral/b-03-01.png",
+          "sha256": "06bf44d23238427439a245423241f6d9dc16947b7e8e9961183b6dd7d4cc999f"
+        },
+        {
+          "stage": "neutral",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "state": "initial",
+          "scope": "full-page",
+          "available": true,
+          "file": "neutral/b-03-02.png",
+          "sha256": "598191fe61ba423ef80db3a63877191c4078eb4c1aec2911a05cbe8a42a6bfe6"
+        }
+      ]
+    },
+    {
+      "view": "b-04",
+      "task": "transfer",
+      "brief": "tasks/transfer.md",
+      "fixture": "tasks/transfer.json",
+      "images": [
+        {
+          "stage": "neutral",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "state": "initial",
+          "scope": "full-page",
+          "available": true,
+          "file": "neutral/b-04-01.png",
+          "sha256": "d7e9c2adf931159b4e5520f7195c6fb380efde92b62a88e8cb9dacfde5dfb4e6"
+        },
+        {
+          "stage": "neutral",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "state": "initial",
+          "scope": "full-page",
+          "available": true,
+          "file": "neutral/b-04-02.png",
+          "sha256": "1fa4c414a2dafd685c43cfa530b3fe292c3264f1f570cbfe4490fc066f24cbcf"
+        }
+      ]
+    }
+  ],
+  "method": "Anonymous randomized view labels. Original image bytes and hashes. Neutral first, authored only after neutral notes are locked. Full-page includes below-fold content; actual viewport is clipped to the stated height. Neutral grayscale preserves transparency/luminance but font replacement can reflow text.",
+  "stage": "neutral"
+}
