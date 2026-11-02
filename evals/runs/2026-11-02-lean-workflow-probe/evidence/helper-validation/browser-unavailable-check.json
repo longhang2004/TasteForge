@@ -1,0 +1,28 @@
+{
+  "command": [
+    "node",
+    "skills/tasteforge/scripts/check-ui.mjs",
+    "--url",
+    "http://127.0.0.1:1",
+    "--project",
+    "examples/inventory-workbench/tools",
+    "--out",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-ui-checkpoint-validation/browser-unavailable",
+    "--widths",
+    "390"
+  ],
+  "exitCode": 2,
+  "summary": {
+    "status": "unassessed",
+    "scope": "Initial load only; no task interactions exercised",
+    "widths": [],
+    "geometryFailures": 0,
+    "httpErrorWidths": 0,
+    "javascriptErrorWidths": 0,
+    "accessibility": "not requested",
+    "report": "/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-ui-checkpoint-validation/browser-unavailable/report.json",
+    "error": "Installed Playwright browser unavailable; no browser was downloaded."
+  },
+  "stderr": "",
+  "browserPathOverride": "new empty test cache only; no global configuration changed"
+}

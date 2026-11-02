@@ -1,0 +1,34 @@
+{
+  "case": "l02",
+  "host": "fresh collaboration subagent",
+  "requestedModel": "gpt-6-luna",
+  "reasoningEffort": "high",
+  "task": "/root/lean_fast_l02",
+  "generation": "submitted",
+  "recordedAtUtc": "2026-11-02T04:40:18.735599+00:00",
+  "files": {
+    "index.html": {
+      "bytes": 4910,
+      "sha256": "935937370bf4efea4f8ed3deb97964a9644bbd03f1fbe91d9c26e68cb381bf6a"
+    },
+    "styles.css": {
+      "bytes": 8261,
+      "sha256": "f962c84cd139c6ccad13d8619ddad6048cba42fa6b218b86d06b48fe942e23dc"
+    },
+    "app.js": {
+      "bytes": 1786,
+      "sha256": "2966aa392563153af59ef5ba22bb89c3256c7428d48436af2f60d8e748cbdf72"
+    },
+    "implementation-notes.md": {
+      "bytes": 2016,
+      "sha256": "b91f03f25a1227fca2d2c955b6874f4f58d064383da3153a0e289345fef85eaf"
+    }
+  },
+  "changedStarterFiles": [
+    "styles.css"
+  ],
+  "inputsUnchanged": true,
+  "creatorFinalResponse": "creator-final.txt",
+  "telemetryLimit": "Exact runtime, inference seed/backend and tokens not exposed; notes/file-read claims are self-report, not measured token usage.",
+  "resourceLimit": "Original Fast protocol allowed one preview+correction but no creator rerender; operator separately verifies final source."
+}

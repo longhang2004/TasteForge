@@ -6,6 +6,8 @@ TasteForge is an open-source **Agent Skill and TypeScript CLI for context-aware 
 
 The local design intelligence engine turns a product brief into **Design DNA**: a versioned specification of typography, colors, spacing, layout, motion, and accessibility constraints. The bundled skill guides an agent through UI creation, redesign, and refinement while preserving an existing design system when appropriate.
 
+The current source skill uses [proportional workflows](docs/lean-workflows.md): Fast for bounded corrections, Standard for a clear new screen/flow, and Explore when structure is genuinely undecided. It loads references as needed and can reuse an optional browser checkpoint helper with existing Playwright. These source updates are separate from the tagged beta artifacts; no model service or new CLI command is required.
+
 [Documentation](docs/README.md) · [CLI reference](docs/cli.md) · [Agent Skill](skills/tasteforge/SKILL.md) · [Releases](https://github.com/longhang2004/TasteForge/releases)
 
 ## TasteForge at a glance

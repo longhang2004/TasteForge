@@ -4,6 +4,8 @@ The ten prompts in `prompts.json` cover two cases each in fintech, education, e-
 
 ## Recorded exploratory runs
 
+- [2 November 2026 lean-workflow probe](runs/2026-11-02-lean-workflow-probe/README.md): four old/lean outputs across Fast responsive correction and Standard transfer creation. Preserves natural-state checks, actual AGY usage/time, lower static instruction size, remaining accessibility/content findings and a separately labeled focused finalization. Initial-generation savings are not accepted-UI end-to-end savings; manual testing remains deferred.
+
 - [2 November 2026 current-beta automated study](runs/2026-11-02-current-skill-automation/README.md): twelve fresh UIs across transfer/product tasks, Sol/Luna subagents and native Antigravity/Gemini, with/without the frozen released skill. Preserves 36 task traces, uniform corrected captures, separate-dimension independent AI ratings, narrow overflow and contrast findings, sequential quota-blocked OpenCode probes, and actual resource/CLI-evidence limitations. Local grouping gains and mixed narrow results do not establish general UX improvement; manual/human testing was deferred.
 
 - [1 November 2026 Antigravity inventory pair](runs/2026-11-01-antigravity-inventory/README.md): two actual native Antigravity 1.4.12 submissions on pinned Gemini 3.8 Flash (Medium), with/without the current skill. Includes real task/recovery tests, two anonymous independent reviews, actual token/runtime metadata and disclosed bootstrap/preview deviations. Both reviewers favor assisted mobile grouping locally; neither design eliminates conventional panel composition. Separate host/model case study, not extra samples in the twelve-UI study.

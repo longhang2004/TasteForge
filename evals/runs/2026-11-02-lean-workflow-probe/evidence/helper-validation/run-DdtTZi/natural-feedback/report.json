@@ -1,0 +1,71 @@
+{
+  "label": "natural-feedback",
+  "capturedAtUtc": "2026-11-02T04:14:16.663Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 390,
+    "height": 700
+  },
+  "scroll": {
+    "x": 0,
+    "y": 1172
+  },
+  "document": {
+    "width": 390,
+    "height": 2476
+  },
+  "activeElement": {
+    "tag": "P",
+    "id": "feedback",
+    "testId": null,
+    "rect": {
+      "x": 16,
+      "y": 328.875,
+      "width": 358,
+      "height": 43,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "#feedback",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 16,
+          "y": 328.875,
+          "width": 358,
+          "height": 43,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 1172
+      }
+    },
+    {
+      "file": "full-page.png",
+      "scope": "Full page; includes content outside the original viewport"
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 1172
+  }
+}

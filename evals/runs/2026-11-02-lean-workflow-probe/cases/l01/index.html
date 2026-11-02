@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore the fictional Field Kiln Everyday Teapot. Choose a glaze and review purchase conditions in this local cart simulation.">
+<title>Everyday Teapot — Field Kiln</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#purchase">Skip to product options</a>
+<header class="masthead"><a class="brand" href="./" aria-label="Field Kiln home"><span class="brand-mark" aria-hidden="true">fk</span>Field Kiln<span class="brand-dot" aria-hidden="true">•</span></a><span class="header-note">Objects for everyday rituals</span><span class="simulation-tag">Fictional shop</span></header>
+<main>
+<div class="trail"><span>Stoneware collection</span><span aria-hidden="true">/</span><span>Everyday Teapot</span></div>
+<div class="product-layout">
+<section class="object" aria-label="Product illustration">
+<figure><div class="artwork"><span class="plate-label">FIELD NOTES <span>№ 01</span></span><img src="assets/teapot.svg" alt="Original illustration: a round, dark green Iron-glazed stoneware teapot with a short spout, curved handle and fitted lid."><span class="image-label">Everyday Teapot · Iron glaze shown</span></div><figcaption>Original vector illustration of a fictional sample product; this is not a photograph. Glaze swatches are illustrative.</figcaption></figure>
+<div class="object-footer"><span class="small-label">Made for the daily pour</span><p>A rounded form, a quiet glaze.<br>A place in your everyday ritual.</p><span class="capacity">650<span>ml</span></span></div>
+</section>
+<section class="purchase" id="purchase" aria-labelledby="product-title">
+<div class="eyebrow">FIELD KILN / GLAZED STONEWARE</div>
+<div class="title-row"><h1 id="product-title">Everyday<br>Teapot</h1><span class="price">USD 68.00<span>per piece</span></span></div>
+<p class="intro">A handmade ceramic teapot for the everyday table. Choose the glaze that feels at home.</p>
+<dl class="specs"><div><dt>Material</dt><dd>Glazed stoneware</dd></div><div><dt>Capacity</dt><dd>650 ml</dd></div><div><dt>Dimensions</dt><dd>16 cm wide × 12 cm high</dd></div></dl>
+<form id="order-form">
+<fieldset class="glazes"><legend>01 <span>Choose your glaze</span></legend><div class="glaze-options">
+<label class="glaze"><input type="radio" name="glaze" value="iron" data-testid="glaze-iron" checked><span class="glaze-card"><span class="swatch iron" aria-hidden="true"></span><strong>Iron</strong><span>4 in stock</span><span class="selected-mark" aria-hidden="true">✓</span></span></label>
+<label class="glaze unavailable"><input type="radio" name="glaze" value="ash" data-testid="glaze-ash" disabled><span class="glaze-card"><span class="swatch ash" aria-hidden="true"></span><strong>Ash</strong><span>Unavailable</span></span></label>
+<label class="glaze"><input type="radio" name="glaze" value="sand" data-testid="glaze-sand"><span class="glaze-card"><span class="swatch sand" aria-hidden="true"></span><strong>Sand</strong><span>7 in stock</span><span class="selected-mark" aria-hidden="true">✓</span></span></label>
+</div></fieldset>
+<div class="quantity-row"><label for="quantity"><span class="step-number">02</span> Quantity</label><select id="quantity" data-testid="quantity" name="quantity"><option value="1">1 piece</option><option value="2">2 pieces</option><option value="3">3 pieces</option><option value="4">4 pieces</option></select></div>
+<div class="conditions"><div><h2>Delivery</h2><p>Dispatch in 2 business days; illustrative domestic transit 3–5 business days.</p></div><div><h2>Returns</h2><p>Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.</p></div><div><h2>Care</h2><p>Hand wash. Avoid sudden temperature changes. Not for stovetop use.</p></div></div>
+<div class="order-summary" aria-live="polite"><div><span id="subtotal-label">1 × Iron</span><span id="subtotal">USD 68.00</span></div><div><span>Shipping · domestic</span><span>USD 8.00</span></div><div class="total"><span>Order total<span>Shipping included</span></span><strong id="total">USD 76.00</strong></div></div>
+<button class="add-button" type="submit" data-testid="add-to-cart"><span>Add to simulated cart</span><span aria-hidden="true">↗</span></button>
+<p class="simulation-note">A local demonstration. No checkout or payment.</p>
+<div class="cart-status" data-testid="cart-status" role="status" aria-live="polite" aria-atomic="true">Choose a glaze and quantity to add a piece.</div>
+</form>
+</section>
+</div>
+</main>
+<footer><span class="footer-brand">Field Kiln</span><p>Fictional shop and illustrative product, price, stock, delivery, and returns.</p><span class="footer-note">A slower kind of everyday.</span></footer>
+</body>
+</html>

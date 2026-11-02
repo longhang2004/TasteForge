@@ -1,0 +1,24 @@
+{
+  "status": "findings",
+  "scope": "Initial load only; no task interactions exercised",
+  "url": "http://127.0.0.1:34601/overflow",
+  "checks": [
+    {
+      "width": 320,
+      "navigationStatus": 200,
+      "geometry": {
+        "status": "fail",
+        "horizontalOverflow": 596,
+        "scope": "Document width only; no accessibility or task-quality certification"
+      },
+      "pageErrors": [],
+      "report": "initial-320/report.json"
+    }
+  ],
+  "accessibility": "not requested",
+  "limitations": [
+    "Geometry is not task quality or accessibility conformance.",
+    "Use captureCheckpoint from actual task tests for edit/error/retry states."
+  ],
+  "browser": "156.0.8078.4"
+}

@@ -7,6 +7,7 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 - [Project overview and installation](../README.md): capabilities, requirements, source quickstart, and frequently asked questions.
 - [CLI reference](cli.md): commands, brief fields, hard constraints, scoring configuration, exit codes, and audit rule coverage.
 - [Agent Skill](../skills/tasteforge/SKILL.md): progressive-disclosure instructions for coding agents, with creation, redesign, and refinement workflows. The skill remains useful without the CLI.
+- [Proportional UI workflows](lean-workflows.md): Fast/Standard/Explore effort, compact context, source-grounded copy and optional natural-state browser checkpoints.
 - [Reference-led UX planning](reference-led-design.md): research real product/pattern sources, compare task structures before visual treatments, and understand what the current CLI does and does not automate.
 - [Offline reference catalog](reference-catalog.md): 642 attributed records, seeded external style inspiration, task-tagged template observations, baseline review gates, and reproducible ingestion.
 - [Effect and layout research](effects-research.md): inspected Colorion, Codrops, layout and native-animation sources; purpose-based skill guidance and original runnable studies.

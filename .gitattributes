@@ -11,3 +11,5 @@ packages/knowledge/third-party/** -text
 evals/runs/2026-11-02-current-skill-automation/cases/** whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
 evals/runs/2026-11-02-current-skill-automation/evidence/** whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
 evals/runs/2026-11-02-current-skill-automation/reviews/packet-*/tasks/*.md whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+# Preserve frozen probe inputs, native outputs and validation diagnostics.
+evals/runs/2026-11-02-lean-workflow-probe/** whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab

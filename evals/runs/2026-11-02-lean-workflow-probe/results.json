@@ -1,0 +1,277 @@
+{
+  "runId": "2026-11-02-lean-workflow-probe",
+  "baseCommit": "948592b2fcf64bab790facd51163c62a278dc7c9",
+  "actualPairedUIs": 4,
+  "pairs": 2,
+  "viewportTraces": 12,
+  "passed": 210,
+  "checks": 210,
+  "cases": [
+    {
+      "id": "l01",
+      "effort": "fast",
+      "condition": "old",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "traces": 3,
+      "passed": 42,
+      "checks": 42,
+      "allPrimaryFlowsCompleted": true,
+      "axeRulesAnyCapturedStage": [],
+      "axeIncompleteRules": [
+        "color-contrast"
+      ],
+      "naturalCheckpoints": 12,
+      "checkpointScope": [
+        "Current natural viewport; no scroll or focus reset"
+      ],
+      "failures": [],
+      "rawQualityStatus": "passes-executed-checks-with-unassessed-scope"
+    },
+    {
+      "id": "l02",
+      "effort": "fast",
+      "condition": "lean",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "traces": 3,
+      "passed": 42,
+      "checks": 42,
+      "allPrimaryFlowsCompleted": true,
+      "axeRulesAnyCapturedStage": [],
+      "axeIncompleteRules": [
+        "color-contrast"
+      ],
+      "naturalCheckpoints": 12,
+      "checkpointScope": [
+        "Current natural viewport; no scroll or focus reset"
+      ],
+      "failures": [],
+      "rawQualityStatus": "passes-executed-checks-with-unassessed-scope"
+    },
+    {
+      "id": "l03",
+      "effort": "standard",
+      "condition": "old",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "traces": 3,
+      "passed": 63,
+      "checks": 63,
+      "allPrimaryFlowsCompleted": true,
+      "axeRulesAnyCapturedStage": [
+        "color-contrast"
+      ],
+      "axeIncompleteRules": [
+        "aria-prohibited-attr",
+        "color-contrast"
+      ],
+      "naturalCheckpoints": 15,
+      "checkpointScope": [
+        "Current natural viewport; no scroll or focus reset"
+      ],
+      "failures": [],
+      "rawQualityStatus": "needs-correction"
+    },
+    {
+      "id": "l04",
+      "effort": "standard",
+      "condition": "lean",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "traces": 3,
+      "passed": 63,
+      "checks": 63,
+      "allPrimaryFlowsCompleted": true,
+      "axeRulesAnyCapturedStage": [
+        "color-contrast",
+        "definition-list"
+      ],
+      "axeIncompleteRules": [
+        "aria-prohibited-attr",
+        "color-contrast"
+      ],
+      "naturalCheckpoints": 15,
+      "checkpointScope": [
+        "Current natural viewport; no scroll or focus reset"
+      ],
+      "failures": [],
+      "rawQualityStatus": "needs-correction"
+    }
+  ],
+  "instructionSize": {
+    "old": {
+      "markdownFiles": 20,
+      "entryWords": 1153,
+      "allMarkdownWords": 12084,
+      "files": {
+        "SKILL.md": 1153,
+        "references/accessibility.md": 244,
+        "references/anti-patterns.md": 871,
+        "references/catalog-use.md": 492,
+        "references/design-principles.md": 723,
+        "references/effects-and-composition.md": 1083,
+        "references/interaction-motion.md": 224,
+        "references/layout-archetypes.md": 1235,
+        "references/layout-composition.md": 275,
+        "references/reference-sources.md": 714,
+        "references/surface-purpose.md": 702,
+        "references/typography.md": 300,
+        "references/ux-plan-template.md": 506,
+        "references/visual-hierarchy.md": 201,
+        "workflows/audit-ui.md": 392,
+        "workflows/create-ui.md": 375,
+        "workflows/redesign-ui.md": 275,
+        "workflows/research-and-plan.md": 990,
+        "workflows/structure-and-revise.md": 704,
+        "workflows/targeted-refinement.md": 625
+      }
+    },
+    "lean": {
+      "markdownFiles": 21,
+      "entryWords": 582,
+      "allMarkdownWords": 9979,
+      "files": {
+        "SKILL.md": 582,
+        "references/accessibility.md": 244,
+        "references/anti-patterns.md": 871,
+        "references/catalog-use.md": 467,
+        "references/design-principles.md": 723,
+        "references/effects-and-composition.md": 1083,
+        "references/interaction-motion.md": 224,
+        "references/layout-archetypes.md": 1235,
+        "references/layout-composition.md": 275,
+        "references/reference-sources.md": 714,
+        "references/render-checks.md": 358,
+        "references/surface-purpose.md": 702,
+        "references/typography.md": 300,
+        "references/ux-plan-template.md": 233,
+        "references/visual-hierarchy.md": 201,
+        "workflows/audit-ui.md": 223,
+        "workflows/create-ui.md": 271,
+        "workflows/redesign-ui.md": 166,
+        "workflows/research-and-plan.md": 337,
+        "workflows/structure-and-revise.md": 455,
+        "workflows/targeted-refinement.md": 315
+      }
+    },
+    "interpretation": "Static whitespace-delimited word counts, not model tokens or loaded-context/billed-cost measurements.",
+    "fastDeclaredReads": {
+      "old": {
+        "files": [
+          "SKILL.md",
+          "workflows/targeted-refinement.md",
+          "references/surface-purpose.md"
+        ],
+        "words": 2480
+      },
+      "lean": {
+        "files": [
+          "SKILL.md",
+          "workflows/targeted-refinement.md"
+        ],
+        "words": 897
+      },
+      "evidence": "Creator implementation-notes self-report only; not exported collaboration tool transcripts."
+    }
+  },
+  "standardInitialGenerationMetrics": {
+    "durationSeconds": {
+      "old": 508.076,
+      "lean": 445.197,
+      "changePercent": -12.376
+    },
+    "uniqueNativeToolSteps": {
+      "old": 49,
+      "lean": 34,
+      "changePercent": -30.612
+    },
+    "input_tokens": {
+      "old": 248911,
+      "lean": 198845,
+      "changePercent": -20.114
+    },
+    "output_tokens": {
+      "old": 39775,
+      "lean": 41169,
+      "changePercent": 3.505
+    },
+    "thinking_tokens": {
+      "old": 17824,
+      "lean": 24156,
+      "changePercent": 35.525
+    },
+    "cache_read_tokens": {
+      "old": 1876031,
+      "lean": 1188607,
+      "changePercent": -36.642
+    },
+    "total_tokens": {
+      "old": 288686,
+      "lean": 240014,
+      "changePercent": -16.86
+    }
+  },
+  "standardObservedResources": {
+    "old": {
+      "paths": [
+        "SKILL.md",
+        "references/ux-plan-template.md",
+        "workflows/create-ui.md"
+      ],
+      "fullResourceWords": 2034,
+      "scope": "Native read_file resource names; full-file word proxy, not exhaustive or serialized/partial-token context."
+    },
+    "lean": {
+      "paths": [
+        "SKILL.md",
+        "references/accessibility.md",
+        "workflows/create-ui.md",
+        "workflows/structure-and-revise.md"
+      ],
+      "fullResourceWords": 1552,
+      "scope": "Native read_file resource names; full-file word proxy, not exhaustive or serialized/partial-token context."
+    }
+  },
+  "standardQualityFinding": {
+    "rawLeanRegression": "definition-list plus color-contrast versus old color-contrast",
+    "unsupportedCopy": "Raw lean entry label Guaranteed Rate not established by illustrative fixture",
+    "scope": "Operator source review of this known claim; not a universal automated fact checker"
+  },
+  "workedFinalization": {
+    "traces": 3,
+    "passed": 63,
+    "checks": 63,
+    "allPrimaryFlowsCompleted": true,
+    "axeRulesAnyCapturedStage": [],
+    "axeIncompleteRules": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ],
+    "naturalCheckpoints": 15,
+    "checkpointScope": [
+      "Current natural viewport; no scroll or focus reset"
+    ],
+    "failures": [],
+    "notAPairedSample": true,
+    "jsFixtureTaskUnchanged": true,
+    "knownCopyCorrection": "Guaranteed Rate \u2192 Illustrative exchange rate",
+    "costScope": "Initial paired provider usage excludes root evaluation and this operator correction; end-to-end accepted-UI cost not measured."
+  },
+  "sourceValidation": {
+    "buildTypecheck": "Passed before initial lint failure",
+    "initialFailure": "Flat ESLint traversed ignored .tmp smoke fixtures; failure log retained",
+    "continuation": "Scoped.tmpignore added;lint/format/44tests passed;packed-install passed and22skillfiles byte-verified",
+    "helper": "16 meaningful fixture checks plus separate missing-browser negative check; earlier diagnostics retained"
+  },
+  "limitations": [
+    "One generation per condition/task, two distinct effort/host pairs; no population or host comparison.",
+    "Standard fixed old-then-lean order; backend/inference seed/global host cache/shared-machine effects uncontrolled.",
+    "Provider input/output/thinking/cache categories kept as reported; no billed-price estimate or additive cache arithmetic.",
+    "Observed read_file names and Fast self-reported reads are proxies; collaboration token/runtime totals not exposed.",
+    "Fast one-preview budget forbade creator post-correction rerender; final operator gates separately verify unchanged submissions.",
+    "Standard recheck allowance explicitly amended for both cases before inference; archived originals/base protocol retained.",
+    "Raw lean had real accessibility/content findings despite task checks passing. Finalization is a disclosed worked correction, not a new blind sample.",
+    "Manual/user/assistive-technology testing remains deferred and unassessed."
+  ]
+}

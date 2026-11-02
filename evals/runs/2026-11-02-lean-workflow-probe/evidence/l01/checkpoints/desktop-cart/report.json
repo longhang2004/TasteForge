@@ -1,0 +1,67 @@
+{
+  "label": "desktop-cart",
+  "capturedAtUtc": "2026-11-02T04:42:29.757Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "scroll": {
+    "x": 0,
+    "y": 307
+  },
+  "document": {
+    "width": 1440,
+    "height": 1322
+  },
+  "activeElement": {
+    "tag": "BUTTON",
+    "id": null,
+    "testId": "add-to-cart",
+    "rect": {
+      "x": 801.359375,
+      "y": 713.5,
+      "width": 566.625,
+      "height": 60.5,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[data-testid=\"cart-status\"]",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 801.359375,
+          "y": 812,
+          "width": 566.625,
+          "height": 49,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 307
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 307
+  }
+}

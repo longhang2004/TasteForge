@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Make skill effort proportional with Fast/Standard/Explore routing, shorter shared instructions, compact persistent context and on-demand references. Keep critical task/access/content gates and explicit stopping/escalation.
+- Add an optional existing-Playwright checkpoint helper with natural scroll/focus evidence, minimum-width geometry, compact output and explicit unassessed dependency/browser states; retain separate task-test and accessibility scopes.
+- Clarify contextual CLI brief setup, actual process-completion evidence and source-grounded product/transaction copy. Preserve fixed constraints, engine/DNA contracts and historical evaluation artifacts.
+
 ## 0.2.0-beta.1 — preparation for pre-release
 
 - Coordinate all package versions at `0.2.0-beta.1`; report CLI package version separately from the unchanged `0.1.0` generator engine/knowledge so existing DNA remains valid.

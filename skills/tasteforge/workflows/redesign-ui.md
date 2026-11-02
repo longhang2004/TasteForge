@@ -1,13 +1,11 @@
 # Redesign an existing interface
 
-Establish what the user has authorized changing: composition, visual system, interaction flow, or only a screen. Inspect the current tokens, components, navigation, states, and brand constraints. Identify specific failures in task completion, hierarchy, reading, density, or responsiveness. Preserve working interaction conventions.
+Identify the authorized change: a component, composition, visual system or interaction flow. Inspect existing tokens/components, states and factual copy; name the demonstrated task or access failures. Preserve working conventions and constraints.
 
-Read [layout](../references/layout-composition.md), [hierarchy](../references/visual-hierarchy.md), and the relevant [anti-patterns](../references/anti-patterns.md). A gradient or card is not evidence of a problem by itself. Connect every proposed change to content, audience, or a demonstrated usability issue.
+Use [create](create-ui.md) at Standard effort for a clear replacement, applying the same quality gates to the existing task. Compare the current flow with the proposed change using the same content and states. Open [research](research-and-plan.md) and [runnable alternatives](structure-and-revise.md#make-alternatives-observable) only for consequential unresolved structure or requested exploration. Palette variations are not structural alternatives.
 
-When composition or a flow is in scope, follow [research and structural planning](research-and-plan.md). Compare the existing task path with viable alternatives using real content; inspect relevant source/product references when available. State which navigation, information relationships, and recovery behavior should change, and which working conventions stay. Three palettes applied to the same container arrangement are not three redesign concepts. Keep references and rejection reasons in internal project guidance.
+Map old tokens/components to the chosen system, then implement one representative task before propagating the change. Read only the relevant [layout](../references/layout-composition.md), [hierarchy](../references/visual-hierarchy.md) or [anti-pattern](../references/anti-patterns.md) guidance.
 
-For a CLI-assisted redesign, describe the existing system in the brief and retain fixed constraints. Set `preserveExisting` to false only within the authorized scope. Compare suggestions, record the selected direction and seed, and review existing DNA before using `--force`. Preview the planned artifacts with `--dry-run`.
+For optional engine use, retain fixed constraints, inspect existing DNA and preview writes. Set `preserveExisting` to false only for an authorized replacement; never use force merely to bypass a conflict. See [catalog/engine use](../references/catalog-use.md).
 
-Map old tokens and components to the proposed system, then implement a representative task and its edge states before propagating the change. Reuse components where behavior remains correct. Keep labels, data provenance, keyboard access, and error recovery intact.
-
-Use [runnable alternatives and the render/revision pass](structure-and-revise.md) when changing composition. Validate realistic content, multiple viewport widths, zoom, keyboard navigation, and reduced motion. Compare before and after on the same task. Report source checks separately from rendered inspection and user testing; do not claim evidence you did not collect.
+Complete [rendered revision](structure-and-revise.md#render-the-chosen-task-then-edit). Label actual before/after and structural alternatives correctly. Report source checks, executed behavior, agent inspection and human review separately.

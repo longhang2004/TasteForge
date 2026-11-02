@@ -1,0 +1,2886 @@
+{
+  "captureVersion": "lean-natural-1.0",
+  "evidencePass": "natural-pass-01",
+  "caseId": "l04",
+  "capturedAtUtc": "2026-11-02T05:00:50.702Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    "app.js": "94cbe7ea0af2457458cf52a348b1ae2efd446c31d7835b3384ca6910e8700162",
+    "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+    "implementation-notes.md": "c5d8c5a8966df68300ae903d14bbc1aebb39b9ab6c71ba6068eab758cbc775fe",
+    "index.html": "7304d7de33c5e1bda8515e62be37caa6546e96482cfa8fb4d584284679f4f9ac",
+    "styles.css": "e9b5856ee9f3a3fc78174e3c2f6d9bdcd55bdf7c874d4f34a1559013b9903d2f",
+    "task.md": "c30677136a32851c83f5ef0bc8a91c217b22fcc2b5c01a1aed6e0a90b5e4a87b"
+  },
+  "captureToolSha256": "96a81a5be10699b0a804879e8bbe2c5da136a4422f3cac38c1b22f57f574b1d1",
+  "checkpointHelperSha256": "988d67ba024da04aa5bb37f51c581dcc12a779999a4f2fd562df22791a407c59",
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "checkpoints/desktop-initial/viewport.png",
+        "checkpoints/desktop-keyboard-focus/viewport.png",
+        "checkpoints/desktop-review/viewport.png",
+        "checkpoints/desktop-failure/viewport.png",
+        "checkpoints/desktop-success/viewport.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "⚠\nSimulated Transfer Failed (Recoverable)\n\nA temporary simulated connection timeout occurred during payment verification. No real money was moved and your entered details have been preserved. Please retry your transfer or edit details.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":null,\"recipient\":null,\"method\":\"retained failure summary; edit form not separately exercised\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "⚠\nSimulated Transfer Confirmed\n\nTransfer of $400.00 USD to Nguyễn Thị Minh Anh Trường (10,000,000 VND) has been simulated successfully. Reference: SIM-839201.\n\nNotice: This is a simulation with fictional data. No real money was moved and no real account was connected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in success",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review Transfer →",
+          "outline": "solid 2px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "SIMULATION ONLY\n      Simulation with fictional data. No money is moved and no r",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review Transfer →",
+          "outline": "solid 2px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "SIMULATION ONLY\n      Simulation with fictional data. No money is moved and no r",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "label": "desktop-initial",
+          "capturedAtUtc": "2026-11-02T05:00:52.014Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "document": {
+            "width": 1440,
+            "height": 1036
+          },
+          "activeElement": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1036.1875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"review-transfer\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 441,
+                  "y": 862.1875,
+                  "width": 558,
+                  "height": 44,
+                  "intersectsViewport": true,
+                  "fullyInViewport": true
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "keyboard-focus": {
+          "label": "desktop-keyboard-focus",
+          "capturedAtUtc": "2026-11-02T05:00:53.885Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "document": {
+            "width": 1440,
+            "height": 1036
+          },
+          "activeElement": {
+            "tag": "INPUT",
+            "id": "recipient-input",
+            "testId": "recipient",
+            "rect": {
+              "x": 441,
+              "y": 377.59375,
+              "width": 558,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"review-transfer\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 441,
+                  "y": 862.1875,
+                  "width": 558,
+                  "height": 44,
+                  "intersectsViewport": true,
+                  "fullyInViewport": true
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "review": {
+          "label": "desktop-review",
+          "capturedAtUtc": "2026-11-02T05:00:55.643Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "document": {
+            "width": 1440,
+            "height": 1000
+          },
+          "activeElement": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1000,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"confirm-transfer\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 604,
+                  "y": 799.59375,
+                  "width": 178,
+                  "height": 44,
+                  "intersectsViewport": true,
+                  "fullyInViewport": true
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "failure": {
+          "label": "desktop-failure",
+          "capturedAtUtc": "2026-11-02T05:00:56.681Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "scroll": {
+            "x": 0,
+            "y": 17
+          },
+          "document": {
+            "width": 1440,
+            "height": 1147
+          },
+          "activeElement": {
+            "tag": "BUTTON",
+            "id": "btn-retry",
+            "testId": "retry-transfer",
+            "rect": {
+              "x": 604,
+              "y": 955.78125,
+              "width": 158,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"transfer-status\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 441,
+                  "y": 315.59375,
+                  "width": 558,
+                  "height": 145.1875,
+                  "intersectsViewport": true,
+                  "fullyInViewport": true
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 17
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 17
+          }
+        },
+        "success": {
+          "label": "desktop-success",
+          "capturedAtUtc": "2026-11-02T05:00:58.282Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "scroll": {
+            "x": 0,
+            "y": 17
+          },
+          "document": {
+            "width": 1440,
+            "height": 1247
+          },
+          "activeElement": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": -17,
+              "width": 1440,
+              "height": 1247.265625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"transfer-status\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 441,
+                  "y": 315.59375,
+                  "width": 558,
+                  "height": 165.671875,
+                  "intersectsViewport": true,
+                  "fullyInViewport": true
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 17
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 17
+          }
+        }
+      },
+      "initialText": "SIMULATION ONLY\nSimulation with fictional data. No money is moved and no real account is connected.\n⇄\nNorthline Transfer\nSimulated International Remittance\nAlex Morgan\nEveryday USD ••1042\n1\nEnter Details\n2\nReview & Confirm\n3\nReceipt\nSend Money to Việt Nam\n\nEnter transfer amount and recipient information. All fees and conversion rates are clearly displayed prior to review.\n\nRecipient Full Name\n(Supports Vietnamese diacritics)\n\nDestination country: Việt Nam (Payout currency: VND)\n\nYou Send (USD)\n(Allowed range: $1.00 – $1,000.00 USD)\n$\nUSD\n\nFixed fee of $2.50 USD applies to each transfer.\n\nTransfer Cost & Payout Summary\nTransfer Amount\n$250.00 USD\nTransfer Fee (fixed)\n$2.50 USD\nTotal Debited\n$252.50 USD\nGuaranteed Rate\n1 USD = 25,000 VND\nRecipient Receives\n6,250,000 VND\nDelivery Estimate\nBy 3 November 2026, illustrative estimate\nReview Transfer →\n\nNorthline Transfer Simulation Prototype • Fictional data reference: 2026-11-01.\n\nThis prototype demonstrates UI verification and error handling. No financial transactions or banking connections exist.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1036,
+        "title": "Northline Transfer — Simulated Money Transfer",
+        "h1": [
+          "Send Money to Việt Nam",
+          "Review Transfer Details",
+          "Simulated Transfer Successful"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "feedbackViewportObservations": {
+        "initial": [
+          {
+            "selector": "[data-testid=\"review-transfer\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 1,
+            "fullyInViewport": 1,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "selector": "[data-testid=\"review-transfer\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 1,
+            "fullyInViewport": 1,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "review": [
+          {
+            "selector": "[data-testid=\"confirm-transfer\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 1,
+            "fullyInViewport": 1,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "failure": [
+          {
+            "selector": "[data-testid=\"transfer-status\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 1,
+            "fullyInViewport": 1,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "success": [
+          {
+            "selector": "[data-testid=\"transfer-status\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 1,
+            "fullyInViewport": 1,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ]
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "keyboard-focus": {},
+        "review": {},
+        "failure": {},
+        "success": {}
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<button type=\"submit\" id=\"btn-review\" class=\"btn btn-primary btn-block\" data-testid=\"review-transfer\">\n              Review Transfer →\n            </button>",
+                "target": [
+                  "#btn-review"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #ffffff, background color: #0284c7, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          },
+          {
+            "id": "definition-list",
+            "impact": "serious",
+            "description": "Ensure <dl> elements are structured correctly",
+            "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=playwright",
+            "nodes": [
+              {
+                "html": "<dl class=\"summary-grid\">",
+                "target": [
+                  ".summary-grid"
+                ],
+                "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: [role=separator]"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"account-summary\" aria-label=\"Source account details\">\n        <span class=\"account-holder\">Alex Morgan</span>\n        <span class=\"account-number\">Everyday USD ••1042</span>\n      </div>",
+                "target": [
+                  ".account-summary"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              },
+              {
+                "html": "<div class=\"summary-box\" aria-label=\"Cost and conversion preview\">",
+                "target": [
+                  ".summary-box"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"brand-symbol\" aria-hidden=\"true\">⇄</div>",
+                "target": [
+                  ".brand-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"step-badge\">1</span>",
+                "target": [
+                  "#step-indicator-1 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "color-contrast",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"account-summary\" aria-label=\"Source account details\">\n        <span class=\"account-holder\">Alex Morgan</span>\n        <span class=\"account-number\">Everyday USD ••1042</span>\n      </div>",
+                "target": [
+                  ".account-summary"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              },
+              {
+                "html": "<div class=\"review-details\" aria-label=\"Transfer details to confirm\">",
+                "target": [
+                  "div[aria-label=\"Transfer details to confirm\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"brand-symbol\" aria-hidden=\"true\">⇄</div>",
+                "target": [
+                  ".brand-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"step-badge\">1</span>",
+                "target": [
+                  "#step-indicator-1 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"step-badge\">2</span>",
+                "target": [
+                  "#step-indicator-2 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<button id=\"btn-restart\" type=\"button\" class=\"btn btn-primary\" style=\"margin-top: 16px;\">Start Another Simulated Transfer</button>",
+                "target": [
+                  "#btn-restart"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #ffffff, background color: #0284c7, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"account-summary\" aria-label=\"Source account details\">\n        <span class=\"account-holder\">Alex Morgan</span>\n        <span class=\"account-number\">Everyday USD ••1042</span>\n      </div>",
+                "target": [
+                  ".account-summary"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              },
+              {
+                "html": "<div class=\"review-details\" aria-label=\"Transfer details to confirm\">",
+                "target": [
+                  "div[aria-label=\"Transfer details to confirm\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"brand-symbol\" aria-hidden=\"true\">⇄</div>",
+                "target": [
+                  ".brand-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"step-badge\">1</span>",
+                "target": [
+                  "#step-indicator-1 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"step-badge\">2</span>",
+                "target": [
+                  "#step-indicator-2 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"step-badge\">3</span>",
+                "target": [
+                  "#step-indicator-3 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "checkpoints/mobile-initial/viewport.png",
+        "checkpoints/mobile-initial/full-page.png",
+        "checkpoints/mobile-keyboard-focus/viewport.png",
+        "checkpoints/mobile-review/viewport.png",
+        "checkpoints/mobile-failure/viewport.png",
+        "checkpoints/mobile-success/viewport.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "⚠\nSimulated Transfer Failed (Recoverable)\n\nA temporary simulated connection timeout occurred during payment verification. No real money was moved and your entered details have been preserved. Please retry your transfer or edit details.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":null,\"recipient\":null,\"method\":\"retained failure summary; edit form not separately exercised\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "⚠\nSimulated Transfer Confirmed\n\nTransfer of $400.00 USD to Nguyễn Thị Minh Anh Trường (10,000,000 VND) has been simulated successfully. Reference: SIM-839201.\n\nNotice: This is a simulation with fictional data. No real money was moved and no real account was connected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in success",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review Transfer →",
+          "outline": "solid 2px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "SIMULATION ONLY\n      Simulation with fictional data. No money is moved and no r",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review Transfer →",
+          "outline": "solid 2px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "SIMULATION ONLY\n      Simulation with fictional data. No money is moved and no r",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "label": "mobile-initial",
+          "capturedAtUtc": "2026-11-02T05:01:00.701Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "document": {
+            "width": 390,
+            "height": 1289
+          },
+          "activeElement": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 1288.78125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"review-transfer\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 33,
+                  "y": 1060.78125,
+                  "width": 324,
+                  "height": 44,
+                  "intersectsViewport": false,
+                  "fullyInViewport": false
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "file": "full-page.png",
+              "scope": "Full page; includes content outside the original viewport"
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "keyboard-focus": {
+          "label": "mobile-keyboard-focus",
+          "capturedAtUtc": "2026-11-02T05:01:02.546Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "document": {
+            "width": 390,
+            "height": 1289
+          },
+          "activeElement": {
+            "tag": "INPUT",
+            "id": "recipient-input",
+            "testId": "recipient",
+            "rect": {
+              "x": 33,
+              "y": 512.890625,
+              "width": 324,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"review-transfer\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 33,
+                  "y": 1060.78125,
+                  "width": 324,
+                  "height": 44,
+                  "intersectsViewport": false,
+                  "fullyInViewport": false
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "review": {
+          "label": "mobile-review",
+          "capturedAtUtc": "2026-11-02T05:01:04.193Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scroll": {
+            "x": 0,
+            "y": 445
+          },
+          "document": {
+            "width": 390,
+            "height": 1304
+          },
+          "activeElement": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": -445,
+              "width": 390,
+              "height": 1304.390625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"confirm-transfer\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 33,
+                  "y": 631.390625,
+                  "width": 324,
+                  "height": 44,
+                  "intersectsViewport": true,
+                  "fullyInViewport": true
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 445
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 445
+          }
+        },
+        "failure": {
+          "label": "mobile-failure",
+          "capturedAtUtc": "2026-11-02T05:01:05.080Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scroll": {
+            "x": 0,
+            "y": 698
+          },
+          "document": {
+            "width": 390,
+            "height": 1542
+          },
+          "activeElement": {
+            "tag": "BUTTON",
+            "id": "btn-retry",
+            "testId": "retry-transfer",
+            "rect": {
+              "x": 33,
+              "y": 616.171875,
+              "width": 324,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"transfer-status\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 33,
+                  "y": -230.109375,
+                  "width": 324,
+                  "height": 209.78125,
+                  "intersectsViewport": false,
+                  "fullyInViewport": false
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 698
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 698
+          }
+        },
+        "success": {
+          "label": "mobile-success",
+          "capturedAtUtc": "2026-11-02T05:01:06.538Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scroll": {
+            "x": 0,
+            "y": 736
+          },
+          "document": {
+            "width": 390,
+            "height": 1604
+          },
+          "activeElement": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": -736,
+              "width": 390,
+              "height": 1604.046875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"transfer-status\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 33,
+                  "y": -268.109375,
+                  "width": 324,
+                  "height": 247.65625,
+                  "intersectsViewport": false,
+                  "fullyInViewport": false
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 736
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 736
+          }
+        }
+      },
+      "initialText": "SIMULATION ONLY\nSimulation with fictional data. No money is moved and no real account is connected.\n⇄\nNorthline Transfer\nSimulated International Remittance\nAlex Morgan\nEveryday USD ••1042\n1\nEnter Details\n2\nReview & Confirm\n3\nReceipt\nSend Money to Việt Nam\n\nEnter transfer amount and recipient information. All fees and conversion rates are clearly displayed prior to review.\n\nRecipient Full Name\n(Supports Vietnamese diacritics)\n\nDestination country: Việt Nam (Payout currency: VND)\n\nYou Send (USD)\n(Allowed range: $1.00 – $1,000.00 USD)\n$\nUSD\n\nFixed fee of $2.50 USD applies to each transfer.\n\nTransfer Cost & Payout Summary\nTransfer Amount\n$250.00 USD\nTransfer Fee (fixed)\n$2.50 USD\nTotal Debited\n$252.50 USD\nGuaranteed Rate\n1 USD = 25,000 VND\nRecipient Receives\n6,250,000 VND\nDelivery Estimate\nBy 3 November 2026, illustrative estimate\nReview Transfer →\n\nNorthline Transfer Simulation Prototype • Fictional data reference: 2026-11-01.\n\nThis prototype demonstrates UI verification and error handling. No financial transactions or banking connections exist.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 1289,
+        "title": "Northline Transfer — Simulated Money Transfer",
+        "h1": [
+          "Send Money to Việt Nam",
+          "Review Transfer Details",
+          "Simulated Transfer Successful"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "feedbackViewportObservations": {
+        "initial": [
+          {
+            "selector": "[data-testid=\"review-transfer\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 0,
+            "fullyInViewport": 0,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "selector": "[data-testid=\"review-transfer\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 0,
+            "fullyInViewport": 0,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "review": [
+          {
+            "selector": "[data-testid=\"confirm-transfer\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 1,
+            "fullyInViewport": 1,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "failure": [
+          {
+            "selector": "[data-testid=\"transfer-status\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 0,
+            "fullyInViewport": 0,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "success": [
+          {
+            "selector": "[data-testid=\"transfer-status\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 0,
+            "fullyInViewport": 0,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ]
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "keyboard-focus": {},
+        "review": {},
+        "failure": {},
+        "success": {}
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<button type=\"submit\" id=\"btn-review\" class=\"btn btn-primary btn-block\" data-testid=\"review-transfer\">\n              Review Transfer →\n            </button>",
+                "target": [
+                  "#btn-review"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #ffffff, background color: #0284c7, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          },
+          {
+            "id": "definition-list",
+            "impact": "serious",
+            "description": "Ensure <dl> elements are structured correctly",
+            "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=playwright",
+            "nodes": [
+              {
+                "html": "<dl class=\"summary-grid\">",
+                "target": [
+                  ".summary-grid"
+                ],
+                "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: [role=separator]"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"account-summary\" aria-label=\"Source account details\">\n        <span class=\"account-holder\">Alex Morgan</span>\n        <span class=\"account-number\">Everyday USD ••1042</span>\n      </div>",
+                "target": [
+                  ".account-summary"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              },
+              {
+                "html": "<div class=\"summary-box\" aria-label=\"Cost and conversion preview\">",
+                "target": [
+                  ".summary-box"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"brand-symbol\" aria-hidden=\"true\">⇄</div>",
+                "target": [
+                  ".brand-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"step-badge\">1</span>",
+                "target": [
+                  "#step-indicator-1 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "color-contrast",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"account-summary\" aria-label=\"Source account details\">\n        <span class=\"account-holder\">Alex Morgan</span>\n        <span class=\"account-number\">Everyday USD ••1042</span>\n      </div>",
+                "target": [
+                  ".account-summary"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              },
+              {
+                "html": "<div class=\"review-details\" aria-label=\"Transfer details to confirm\">",
+                "target": [
+                  "div[aria-label=\"Transfer details to confirm\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"brand-symbol\" aria-hidden=\"true\">⇄</div>",
+                "target": [
+                  ".brand-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"step-badge\">1</span>",
+                "target": [
+                  "#step-indicator-1 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"step-badge\">2</span>",
+                "target": [
+                  "#step-indicator-2 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<button id=\"btn-restart\" type=\"button\" class=\"btn btn-primary\" style=\"margin-top: 16px;\">Start Another Simulated Transfer</button>",
+                "target": [
+                  "#btn-restart"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #ffffff, background color: #0284c7, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"account-summary\" aria-label=\"Source account details\">\n        <span class=\"account-holder\">Alex Morgan</span>\n        <span class=\"account-number\">Everyday USD ••1042</span>\n      </div>",
+                "target": [
+                  ".account-summary"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              },
+              {
+                "html": "<div class=\"review-details\" aria-label=\"Transfer details to confirm\">",
+                "target": [
+                  "div[aria-label=\"Transfer details to confirm\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"brand-symbol\" aria-hidden=\"true\">⇄</div>",
+                "target": [
+                  ".brand-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"step-badge\">1</span>",
+                "target": [
+                  "#step-indicator-1 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"step-badge\">2</span>",
+                "target": [
+                  "#step-indicator-2 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"step-badge\">3</span>",
+                "target": [
+                  "#step-indicator-3 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    },
+    "minimum": {
+      "viewport": {
+        "name": "minimum",
+        "width": 320,
+        "height": 740
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "checkpoints/minimum-initial/viewport.png",
+        "checkpoints/minimum-keyboard-focus/viewport.png",
+        "checkpoints/minimum-review/viewport.png",
+        "checkpoints/minimum-failure/viewport.png",
+        "checkpoints/minimum-success/viewport.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "⚠\nSimulated Transfer Failed (Recoverable)\n\nA temporary simulated connection timeout occurred during payment verification. No real money was moved and your entered details have been preserved. Please retry your transfer or edit details.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":null,\"recipient\":null,\"method\":\"retained failure summary; edit form not separately exercised\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "⚠\nSimulated Transfer Confirmed\n\nTransfer of $400.00 USD to Nguyễn Thị Minh Anh Trường (10,000,000 VND) has been simulated successfully. Reference: SIM-839201.\n\nNotice: This is a simulation with fictional data. No real money was moved and no real account was connected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in success",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review Transfer →",
+          "outline": "solid 2px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "SIMULATION ONLY\n      Simulation with fictional data. No money is moved and no r",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review Transfer →",
+          "outline": "solid 2px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "SIMULATION ONLY\n      Simulation with fictional data. No money is moved and no r",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "none 3px",
+          "boxShadow": "rgba(2, 132, 199, 0.2) 0px 0px 0px 3px"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "label": "minimum-initial",
+          "capturedAtUtc": "2026-11-02T05:01:08.832Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 320,
+            "height": 740
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "document": {
+            "width": 320,
+            "height": 1504
+          },
+          "activeElement": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 1504.375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"review-transfer\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 25,
+                  "y": 1284.375,
+                  "width": 270,
+                  "height": 44,
+                  "intersectsViewport": false,
+                  "fullyInViewport": false
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "keyboard-focus": {
+          "label": "minimum-keyboard-focus",
+          "capturedAtUtc": "2026-11-02T05:01:10.441Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 320,
+            "height": 740
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "document": {
+            "width": 320,
+            "height": 1504
+          },
+          "activeElement": {
+            "tag": "INPUT",
+            "id": "recipient-input",
+            "testId": "recipient",
+            "rect": {
+              "x": 25,
+              "y": 584.6875,
+              "width": 270,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"review-transfer\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 25,
+                  "y": 1284.375,
+                  "width": 270,
+                  "height": 44,
+                  "intersectsViewport": false,
+                  "fullyInViewport": false
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "review": {
+          "label": "minimum-review",
+          "capturedAtUtc": "2026-11-02T05:01:12.023Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 320,
+            "height": 740
+          },
+          "scroll": {
+            "x": 0,
+            "y": 816
+          },
+          "document": {
+            "width": 320,
+            "height": 1556
+          },
+          "activeElement": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": -816,
+              "width": 320,
+              "height": 1556.390625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"confirm-transfer\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 25,
+                  "y": 520.390625,
+                  "width": 270,
+                  "height": 44,
+                  "intersectsViewport": true,
+                  "fullyInViewport": true
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 816
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 816
+          }
+        },
+        "failure": {
+          "label": "minimum-failure",
+          "capturedAtUtc": "2026-11-02T05:01:12.886Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 320,
+            "height": 740
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1028
+          },
+          "document": {
+            "width": 320,
+            "height": 1855
+          },
+          "activeElement": {
+            "tag": "BUTTON",
+            "id": "btn-retry",
+            "testId": "retry-transfer",
+            "rect": {
+              "x": 25,
+              "y": 607.0625,
+              "width": 270,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"transfer-status\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 25,
+                  "y": -508.609375,
+                  "width": 270,
+                  "height": 270.671875,
+                  "intersectsViewport": false,
+                  "fullyInViewport": false
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 1028
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 1028
+          }
+        },
+        "success": {
+          "label": "minimum-success",
+          "capturedAtUtc": "2026-11-02T05:01:14.284Z",
+          "scope": "Current natural viewport; no scroll or focus reset",
+          "taskBehavior": "Not established by this checkpoint",
+          "viewport": {
+            "width": 320,
+            "height": 740
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1043
+          },
+          "document": {
+            "width": 320,
+            "height": 1908
+          },
+          "activeElement": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": -1043,
+              "width": 320,
+              "height": 1907.734375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "feedback": [
+            {
+              "selector": "[data-testid=\"transfer-status\"]",
+              "matches": 1,
+              "layoutVisible": 1,
+              "elements": [
+                {
+                  "x": 25,
+                  "y": -523.609375,
+                  "width": 270,
+                  "height": 285.34375,
+                  "intersectsViewport": false,
+                  "fullyInViewport": false
+                }
+              ]
+            }
+          ],
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "screenshots": [
+            {
+              "file": "viewport.png",
+              "scope": "Natural viewport",
+              "scroll": {
+                "x": 0,
+                "y": 1043
+              }
+            }
+          ],
+          "afterCaptureScroll": {
+            "x": 0,
+            "y": 1043
+          }
+        }
+      },
+      "initialText": "SIMULATION ONLY\nSimulation with fictional data. No money is moved and no real account is connected.\n⇄\nNorthline Transfer\nSimulated International Remittance\nAlex Morgan\nEveryday USD ••1042\n1\nEnter Details\n2\nReview & Confirm\n3\nReceipt\nSend Money to Việt Nam\n\nEnter transfer amount and recipient information. All fees and conversion rates are clearly displayed prior to review.\n\nRecipient Full Name\n(Supports Vietnamese diacritics)\n\nDestination country: Việt Nam (Payout currency: VND)\n\nYou Send (USD)\n(Allowed range: $1.00 – $1,000.00 USD)\n$\nUSD\n\nFixed fee of $2.50 USD applies to each transfer.\n\nTransfer Cost & Payout Summary\nTransfer Amount\n$250.00 USD\nTransfer Fee (fixed)\n$2.50 USD\nTotal Debited\n$252.50 USD\nGuaranteed Rate\n1 USD = 25,000 VND\nRecipient Receives\n6,250,000 VND\nDelivery Estimate\nBy 3 November 2026, illustrative estimate\nReview Transfer →\n\nNorthline Transfer Simulation Prototype • Fictional data reference: 2026-11-01.\n\nThis prototype demonstrates UI verification and error handling. No financial transactions or banking connections exist.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 320,
+        "scrollWidth": 320,
+        "pageHeight": 1504,
+        "title": "Northline Transfer — Simulated Money Transfer",
+        "h1": [
+          "Send Money to Việt Nam",
+          "Review Transfer Details",
+          "Simulated Transfer Successful"
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "feedbackViewportObservations": {
+        "initial": [
+          {
+            "selector": "[data-testid=\"review-transfer\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 0,
+            "fullyInViewport": 0,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "keyboard-focus": [
+          {
+            "selector": "[data-testid=\"review-transfer\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 0,
+            "fullyInViewport": 0,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "review": [
+          {
+            "selector": "[data-testid=\"confirm-transfer\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 1,
+            "fullyInViewport": 1,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "failure": [
+          {
+            "selector": "[data-testid=\"transfer-status\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 0,
+            "fullyInViewport": 0,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ],
+        "success": [
+          {
+            "selector": "[data-testid=\"transfer-status\"]",
+            "matches": 1,
+            "layoutVisible": 1,
+            "intersectsViewport": 0,
+            "fullyInViewport": 0,
+            "error": null,
+            "scope": "Observed natural-frame geometry, separate from functional task assertions"
+          }
+        ]
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "keyboard-focus": {},
+        "review": {},
+        "failure": {},
+        "success": {}
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<button type=\"submit\" id=\"btn-review\" class=\"btn btn-primary btn-block\" data-testid=\"review-transfer\">\n              Review Transfer →\n            </button>",
+                "target": [
+                  "#btn-review"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #ffffff, background color: #0284c7, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          },
+          {
+            "id": "definition-list",
+            "impact": "serious",
+            "description": "Ensure <dl> elements are structured correctly",
+            "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=playwright",
+            "nodes": [
+              {
+                "html": "<dl class=\"summary-grid\">",
+                "target": [
+                  ".summary-grid"
+                ],
+                "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: [role=separator]"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"account-summary\" aria-label=\"Source account details\">\n        <span class=\"account-holder\">Alex Morgan</span>\n        <span class=\"account-number\">Everyday USD ••1042</span>\n      </div>",
+                "target": [
+                  ".account-summary"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              },
+              {
+                "html": "<div class=\"summary-box\" aria-label=\"Cost and conversion preview\">",
+                "target": [
+                  ".summary-box"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"brand-symbol\" aria-hidden=\"true\">⇄</div>",
+                "target": [
+                  ".brand-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"step-badge\">1</span>",
+                "target": [
+                  "#step-indicator-1 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "color-contrast",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"account-summary\" aria-label=\"Source account details\">\n        <span class=\"account-holder\">Alex Morgan</span>\n        <span class=\"account-number\">Everyday USD ••1042</span>\n      </div>",
+                "target": [
+                  ".account-summary"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              },
+              {
+                "html": "<div class=\"review-details\" aria-label=\"Transfer details to confirm\">",
+                "target": [
+                  "div[aria-label=\"Transfer details to confirm\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"brand-symbol\" aria-hidden=\"true\">⇄</div>",
+                "target": [
+                  ".brand-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"step-badge\">1</span>",
+                "target": [
+                  "#step-indicator-1 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"step-badge\">2</span>",
+                "target": [
+                  "#step-indicator-2 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<button id=\"btn-restart\" type=\"button\" class=\"btn btn-primary\" style=\"margin-top: 16px;\">Start Another Simulated Transfer</button>",
+                "target": [
+                  "#btn-restart"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #ffffff, background color: #0284c7, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"account-summary\" aria-label=\"Source account details\">\n        <span class=\"account-holder\">Alex Morgan</span>\n        <span class=\"account-number\">Everyday USD ••1042</span>\n      </div>",
+                "target": [
+                  ".account-summary"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              },
+              {
+                "html": "<div class=\"review-details\" aria-label=\"Transfer details to confirm\">",
+                "target": [
+                  "div[aria-label=\"Transfer details to confirm\"]"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"brand-symbol\" aria-hidden=\"true\">⇄</div>",
+                "target": [
+                  ".brand-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"step-badge\">1</span>",
+                "target": [
+                  "#step-indicator-1 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"step-badge\">2</span>",
+                "target": [
+                  "#step-indicator-2 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"step-badge\">3</span>",
+                "target": [
+                  "#step-indicator-3 > .step-badge"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "avoid-inline-spacing",
+          "button-name",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    }
+  },
+  "minimumWidthEvidence": {
+    "viewportWidth": 320,
+    "scrollWidth": 320,
+    "pageHeight": 1504,
+    "title": "Northline Transfer — Simulated Money Transfer",
+    "h1": [
+      "Send Money to Việt Nam",
+      "Review Transfer Details",
+      "Simulated Transfer Successful"
+    ],
+    "mainCount": 1,
+    "htmlLang": "en",
+    "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+    "scope": "Full natural-state task trace at 320×740; no forced scroll reset."
+  }
+}

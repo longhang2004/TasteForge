@@ -1,0 +1,23 @@
+
+ RUN  v3.2.7 /mnt/c/Users/hi/src/personal_repos/TasteForge
+
+ ✓ tests/references.test.ts (9 tests) 1315ms
+ ✓ tests/core.test.ts (16 tests) 1182ms
+   ✓ deterministic controlled exploration > low creativity concentrates on more relevant candidates across seeds  779ms
+ ✓ tests/cli.test.ts (9 tests) 297464ms
+   ✓ CLI integration and exit contract > reads the external catalog and samples attributed inspiration without writing project artifacts  55443ms
+   ✓ CLI integration and exit contract > initializes, loads context, suggests, generates, and audits example source  37217ms
+   ✓ CLI integration and exit contract > previews without any filesystem writes  15984ms
+   ✓ CLI integration and exit contract > never silently overwrites initialized or generated artifacts  38595ms
+   ✓ CLI integration and exit contract > rejects linked output directories and files, including with force  19694ms
+   ✓ CLI integration and exit contract > refuses path traversal and symlink reads outside the project  23735ms
+   ✓ CLI integration and exit contract > returns readable errors for malformed briefs, unknown directions, and invalid options  58847ms
+   ✓ CLI integration and exit contract > fails on malformed sources and can explicitly report without failing  30925ms
+   ✓ CLI integration and exit contract > refuses concurrent writes and malformed persisted DNA  17021ms
+ ✓ tests/audit.test.ts (10 tests) 163ms
+
+ Test Files  4 passed (4)
+      Tests  44 passed (44)
+   Start at  11:51:20
+   Duration  329.86s (transform 4.67s, setup 0ms, collect 28.50s, tests 300.12s, environment 1ms, prepare 23.86s)
+

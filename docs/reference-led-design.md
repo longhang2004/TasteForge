@@ -4,13 +4,13 @@ The first pilot demonstrated visual differences and contrast changes, but that i
 
 ## Workflow
 
-1. Identify the user's primary work, decisions, information relationships, consequences, and state/recovery needs. Inspect the existing system.
-2. Inspect user references first. When available and permitted, research a few task-relevant product/source examples or official pattern guides. Record exact URLs/revisions, what was inspected, adaptation choices, and reuse terms.
-3. Compare viable structural alternatives using realistic content and neutral styling: information order, region relationships, navigation/disclosure, decision placement, state sequence, and narrow-screen priorities. For substantial undecided layouts, try two small runnable task slices at wide and narrow widths. An established structure may only need a scoped check; a third candidate is useful only when it resolves another tradeoff.
-4. Select on task fit and document the rationale in `UX_PLAN.md` or existing project guidance. Do not randomly choose among incompatible interaction models or create extra steps for novelty.
-5. Apply a coherent visual treatment using existing tokens, the CLI, or a reviewed external visual reference. Implement the task, inspect actual entry/review/recovery renders and record consequential problems. Revise demonstrated issues and inspect the affected states again, retaining before/after evidence and unresolved questions.
+1. Identify the user's primary work, information relationships, consequence and relevant state/recovery needs. Reuse the existing system and product context.
+2. Choose [proportional effort](lean-workflows.md): Fast for a bounded correction, Standard for a clear task structure, Explore for a consequential unresolved structure or requested alternatives. Standard does not require research or prototypes by default.
+3. Inspect user references first when supplied. Research task-relevant sources only for the missing decision. For Explore, compare two small runnable task slices with shared content/behavior and neutral styling: information order, navigation/disclosure, decision placement and recovery. Choose for task fit, then polish one.
+4. Record the decision compactly in existing guidance when persistence helps; a local edit needs no new plan document. Keep source observations/reuse terms and actual evidence distinct from inference. Do not randomize incompatible interaction models or invent steps for novelty.
+5. Apply a coherent visual treatment and inspect the actual task at minimum-supported/representative widths and relevant entry/review/error states. Capture natural post-action viewport/focus before optional top/full-page views, fix demonstrated issues and recheck. Stop at the agreed acceptance boundary, retaining unresolved questions.
 
-The skill entrypoint routes to [research and planning](../skills/tasteforge/workflows/research-and-plan.md), [task archetypes](../skills/tasteforge/references/layout-archetypes.md), [source pointers](../skills/tasteforge/references/reference-sources.md), and [a plan template](../skills/tasteforge/references/ux-plan-template.md).
+The skill entrypoint starts one relevant workflow. [Research and planning](../skills/tasteforge/workflows/research-and-plan.md), [task archetypes](../skills/tasteforge/references/layout-archetypes.md), [source pointers](../skills/tasteforge/references/reference-sources.md) and [the compact plan template](../skills/tasteforge/references/ux-plan-template.md) are opened as needed, not loaded as a required reading chain.
 
 The [structure and revision workflow](../skills/tasteforge/workflows/structure-and-revise.md) turns structural uncertainty into runnable alternatives and connects actual rendered issues to edits. Keep the exercise bounded to the representative task; do not force prototypes for small refinements or invent extra navigation for novelty.
 

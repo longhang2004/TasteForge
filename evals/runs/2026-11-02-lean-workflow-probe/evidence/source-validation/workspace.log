@@ -1,0 +1,85 @@
+
+> tasteforge-workspace@0.2.0-beta.1 check /mnt/c/Users/hi/src/personal_repos/TasteForge
+> pnpm build && pnpm typecheck && pnpm lint && pnpm format:check && vitest run
+
+
+> tasteforge-workspace@0.2.0-beta.1 build /mnt/c/Users/hi/src/personal_repos/TasteForge
+> pnpm -r build
+
+Scope: 3 of 4 workspace projects
+packages/knowledge build$ tsc -p tsconfig.json
+packages/knowledge build: Done
+packages/core build$ tsc -p tsconfig.json
+packages/core build: Done
+packages/cli build$ tsc -p tsconfig.json && node scripts/prepare.mjs
+packages/cli build: Done
+
+> tasteforge-workspace@0.2.0-beta.1 typecheck /mnt/c/Users/hi/src/personal_repos/TasteForge
+> pnpm -r typecheck && tsc -p tests/tsconfig.json
+
+Scope: 3 of 4 workspace projects
+packages/knowledge typecheck$ tsc -p tsconfig.json --noEmit
+packages/knowledge typecheck: Done
+packages/core typecheck$ tsc -p tsconfig.json --noEmit
+packages/core typecheck: Done
+packages/cli typecheck$ tsc -p tsconfig.json --noEmit
+packages/cli typecheck: Done
+
+> tasteforge-workspace@0.2.0-beta.1 lint /mnt/c/Users/hi/src/personal_repos/TasteForge
+> eslint . --max-warnings 0
+
+
+/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-operator-smoke-lvj1_a8r/cases/l01/app.js
+   3:14  error  'document' is not defined  no-undef
+   4:18  error  'document' is not defined  no-undef
+   5:16  error  'document' is not defined  no-undef
+  13:3   error  'document' is not defined  no-undef
+  14:3   error  'document' is not defined  no-undef
+  15:3   error  'document' is not defined  no-undef
+
+/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-operator-smoke-lvj1_a8r/cases/l03/app.js
+  3:17  error  'document' is not defined                     no-undef
+  7:5   error  'details' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-operator-smoke-lvj1_a8r/tools/capture.mjs
+   75:23   error  'getComputedStyle' is not defined  no-undef
+  113:33   error  'document' is not defined          no-undef
+  117:67   error  'innerWidth' is not defined        no-undef
+  117:92   error  'document' is not defined          no-undef
+  117:142  error  'document' is not defined          no-undef
+  117:188  error  'document' is not defined          no-undef
+  117:212  error  'document' is not defined          no-undef
+  117:283  error  'document' is not defined          no-undef
+  117:335  error  'document' is not defined          no-undef
+  117:376  error  'getComputedStyle' is not defined  no-undef
+  117:393  error  'document' is not defined          no-undef
+  125:21   error  'document' is not defined          no-undef
+  126:23   error  'getComputedStyle' is not defined  no-undef
+  207:37   error  'document' is not defined          no-undef
+  207:184  error  'getComputedStyle' is not defined  no-undef
+
+/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-preview-smoke-4kes9xl2/cases/l01/app.js
+   3:14  error  'document' is not defined  no-undef
+   4:18  error  'document' is not defined  no-undef
+   5:16  error  'document' is not defined  no-undef
+  13:3   error  'document' is not defined  no-undef
+  14:3   error  'document' is not defined  no-undef
+  15:3   error  'document' is not defined  no-undef
+
+/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-preview-smoke-4kes9xl2/tools/preview.mjs
+  24:29  error  'document' is not defined  no-undef
+
+/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-recheck-smoke-klxqmnf4/cases/l03/app.js
+  3:17  error  'document' is not defined                     no-undef
+  7:5   error  'details' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-recheck-smoke-klxqmnf4/tools/preview.mjs
+  24:29  error  'document' is not defined  no-undef
+
+/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-recheck-smoke-klxqmnf4/tools/recheck.mjs
+  28:29  error  'document' is not defined  no-undef
+
+✖ 34 problems (34 errors, 0 warnings)
+
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

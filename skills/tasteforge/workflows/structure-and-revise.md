@@ -1,42 +1,21 @@
-# Try a structure, inspect it, and edit it
+# Try the task, inspect the result, revise a demonstrated issue
 
-Use for a substantial new layout or authorized composition change after identifying the task and constraints. Keep small refinements within the existing structure. This is an agent workflow, not a new CLI command or a validated layout generator.
+Use the render section for implementation checks. The alternatives section is only for Explore or an explicitly requested structural comparison.
 
 ## Make alternatives observable
 
-When layout is genuinely undecided, build two small, runnable structural candidates before visual polish. Share the same realistic content, data, behavior and rough styling. Limit this to the representative task slice; do not build two complete products. A different overview/detail relationship, decision location or disclosure sequence is meaningful; another palette is not. If an established pattern or the user's constraints already settle the structure, test that structure and explain why additional candidates would not inform the decision.
+Build two small runnable candidates only while a consequential task structure is unresolved. Share realistic content, behavior and rough styling; exercise the same decision/recovery slice at wide and narrow widths. Differences should change information relationships, navigation/disclosure or decision placement. A font/palette switch is not a structural alternative.
 
-Open each candidate at a wide and narrow viewport. Include a representative long name, the decision/review state and one recoverable error. Compare:
-
-- What can the person compare, and what must they remember across views?
-- Which evidence is adjacent to the decision? Is repeated information serving comparison or merely extending the page?
-- Does mobile preserve useful context or carry the entire desktop overview above the action?
-- How do return, edit, validation and retry preserve values and focus?
-
-Use the existing browser/test tooling where possible. Plain HTML prototypes are sufficient. Keep prototype switches in development artifacts, not in the product's user flow. If rendering is unavailable, retain the structural sketch and explicitly mark the selection provisional. Do not describe source inspection or a grayscale filter as observed usability.
-
-Record the selected candidate, actual prototype paths, inspected states and concrete tradeoff in `UX_PLAN.md` or existing project guidance. Select on the task; visual-reference sampling follows this decision.
+Select for task fit, record the losing tradeoff briefly, then polish only the chosen candidate. Existing constraints may settle the choice without prototypes. Do not create two complete applications or force an extra step merely to satisfy a quota.
 
 ## Render the chosen task, then edit
 
-After implementation, inspect actual wide/narrow renders of entry, decision/review and recovery, plus task-specific states. Exercise the action path, keyboard focus, retained edits and long content. Check at a narrower supporting width or zoom when available; document what was actually exercised.
+1. **Set the acceptance boundary.** Reuse the primary task, factual content, fixed choices and supported widths. Plan only relevant states. For responsive web work without stated widths, 320/390/1440px can be provisional stress/representative checks; record that assumption rather than declaring product support.
+2. **Run the consequential path.** Verify actual selection/cost/consequence at commitment, edit retention, invalid input and error/retry when implemented. Confirm narrow reading order and reachable controls, not merely a passing click or short page. Check keyboard/focus and applicable contrast. Use existing project tests or optional [browser checkpoints](../references/render-checks.md); the helper's initial-page CLI alone does not test interactions.
+3. **Inspect real frames.** Include the minimum supported width and a representative wide view, long content, and relevant decision/error/cart states. Inspect intrinsic grid/flex minimums, fixed/nowrap content, feedback and focus. Capture the natural post-action viewport before optional top/full-page views. Record scroll/focus and screenshot scope: content in a full-page image is not necessarily visible after the action. Never reset scroll silently and call the result a natural interaction landing.
+4. **Make one focused correction.** Name the observed issue, evidence, user consequence and smallest useful edit. Consolidate redundant chrome/copy only when it has no distinct job. Keep meaningful repeated facts, brand choices and familiar patterns. Recheck changed states and widths that shared rules could affect.
+5. **Stop proportionally.** Finish when applicable task/access/content/width acceptance is met and no known blocker remains. One correction cycle is a normal budget, not permission to abandon a blocker. Continue for a named unresolved failure or requested exploration; report missing evidence/budget limits honestly instead of repeatedly restyling.
 
-Write a short `DESIGN_REVIEW.md` or use the project's review location:
+Keep the result record compact: **target/state/width → evidence → change → rechecked outcome → uncertainty**. Store detailed traces/screenshots on disk and read the summary plus relevant images; open full logs only for diagnosis.
 
-| Observed issue and task consequence               | Screenshot/trace            | Change                                          | Result after checking again    |
-| ------------------------------------------------- | --------------------------- | ----------------------------------------------- | ------------------------------ |
-| Specific content or behavior, not “looks generic” | Actual artifact/state/width | Remove, merge, reorder, clarify or fix behavior | Observed outcome or unresolved |
-
-Identify the few most consequential problems. Revise at least once when the evidence exposes a material issue, then render the affected states again. Usually one or two bounded passes suffice for a representative slice; stop expanding the exercise when remaining questions need user/domain evidence. Do not invent defects or make arbitrary edits to satisfy an iteration count.
-
-Look for useful subtraction: merge repeated evidence, shorten orientation copy, remove an empty region with no current job, or disclose secondary detail when needed. Cards, whitespace and conventional tables remain valid when they help this task. Do not compress essential evidence or obscure focus just to shorten the page. A button's page coordinate is a diagnostic, not a universal fold limit or proof of ease.
-
-Use domain terms, units, actual content lengths and honest consequences. Do not add forecasts, urgency, testimonials or operational claims merely to give the UI character. Let emphasis and density follow the work. Document the reasons for recurring visual choices rather than adding arbitrary irregularity.
-
-## Keep the evidence honest
-
-Separate executed behavior, automated accessibility findings, agent visual inspection and human/user review. A passing task script does not establish comprehension; zero axe findings do not establish accessibility conformance. Record missing tools and unresolved questions. Never label an agent-produced example “human designed” or “user validated” without that review.
-
-For a warehouse slice, a useful relationship might be: comparable stock rows → selected item's stock ledger → editable quantity → retained review/error/success. On mobile, a separate detail view can retain search/filter state without displaying the whole list above every decision. This is a task-specific option, not a universal dashboard recipe.
-
-When relevant users are available and the session authorizes involving them, ask them to perform realistic tasks without naming the controls. Observe interpretation, mistakes, recovery and lost context. Save their actual observations separately from agent judgments; keep approval/review status pending until it happens.
+Source audit, scripted behavior, automated accessibility findings, agent visual judgment and human observations establish different things. Zero findings does not certify accessibility or comprehension. Keep unsupported checks unassessed and human review status explicit; do not invent approvals, facts or validation.

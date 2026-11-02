@@ -1,0 +1,24 @@
+{
+  "status": "findings",
+  "scope": "Initial load only; no task interactions exercised",
+  "url": "http://127.0.0.1:34601/missing",
+  "checks": [
+    {
+      "width": 390,
+      "navigationStatus": 404,
+      "geometry": {
+        "status": "pass",
+        "horizontalOverflow": 0,
+        "scope": "Document width only; no accessibility or task-quality certification"
+      },
+      "pageErrors": [],
+      "report": "initial-390/report.json"
+    }
+  ],
+  "accessibility": "not requested",
+  "limitations": [
+    "Geometry is not task quality or accessibility conformance.",
+    "Use captureCheckpoint from actual task tests for edit/error/retry states."
+  ],
+  "browser": "156.0.8078.4"
+}

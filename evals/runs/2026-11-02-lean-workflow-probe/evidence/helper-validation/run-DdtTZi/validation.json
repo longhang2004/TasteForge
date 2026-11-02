@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checks": [
+    "Fixture reaches actual scrolled feedback state",
+    "Natural scroll captured and preserved after both screenshot scopes",
+    "Actual focused feedback and in-viewport geometry retained",
+    "Viewport and full-page scopes are separate real PNGs",
+    "Report extracts neither input values nor body copy",
+    "Reused checkpoint refuses overwrite and preserves original bytes",
+    "Traversal label rejected before capture",
+    "Default three widths pass actual initial geometry",
+    "Compact output discloses initial-only scope",
+    "Real overflow produces findings and nonzero exit",
+    "Runner refuses existing output directory",
+    "Remote start URL rejected",
+    "Invalid viewport rejected",
+    "Missing dependency remains unassessed, not a passing gate",
+    "Installed optional axe scan keeps findings/incomplete separate"
+  ],
+  "count": 15,
+  "output": "/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/lean-ui-checkpoint-validation/run-DdtTZi",
+  "project": "/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools",
+  "userTesting": "not performed",
+  "scope": "Local synthetic fixture validation of optional helper, not UI usability"
+}

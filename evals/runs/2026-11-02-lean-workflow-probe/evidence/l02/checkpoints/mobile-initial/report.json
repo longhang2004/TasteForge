@@ -1,0 +1,71 @@
+{
+  "label": "mobile-initial",
+  "capturedAtUtc": "2026-11-02T04:42:52.563Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "document": {
+    "width": 390,
+    "height": 1658
+  },
+  "activeElement": {
+    "tag": "BODY",
+    "id": null,
+    "testId": null,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1657.90625,
+      "intersectsViewport": true,
+      "fullyInViewport": false
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[data-testid=\"add-to-cart\"]",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 23.390625,
+          "y": 1395.90625,
+          "width": 343.21875,
+          "height": 60.5,
+          "intersectsViewport": false,
+          "fullyInViewport": false
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "file": "full-page.png",
+      "scope": "Full page; includes content outside the original viewport"
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 0
+  }
+}
