@@ -1,0 +1,15 @@
+# Reviewer 2 — frozen independent review
+
+Labels were judged separately for each task without a condition key. The evidence is 30 actual natural viewport images, the two task facts, four sources and supplied checks. No full-page screenshots or additional browser suite were used. The JSON lists every inspected image and evidence for all 18 dimensions. There is no aggregate score.
+
+For **press**, A has the stronger task priority, review consequence presentation and narrow state access. Its compact review starts at the heading; at 320 its success view includes the reference, session facts and honest no-booking outcome. B spends more natural post-action viewport space on its introductory headline. A places complete mobile conditions before confirmation; B's sole conditions aside follows the action row, despite referring to conditions alongside the choices. B has advantages in directly exposing the two dates and in visually distinguishing programmatic focus. Retention/recovery and the assessed keyboard/semantics evidence are ties.
+
+B has the more developed press visual direction: two-pass overlap and registration marks, red/blue color, printed mark and serif emphasis. The finite dates also shape its visible choice pair. Both structures respond to the single-session booking conditions, so that dimension ties. A preserves its simpler identity with less narrow-state task cost. A's Wednesday date clips in the 320 native selector, which remains a minor concern.
+
+For **listen**, A gives filters and comparative records more immediate access. At 390 the initial view includes controls and the first record; B only reaches the search field near the bottom. A also puts metadata and evidence limits early in the narrow detail. B prioritizes the note and illustrative sketch; its 390 two-column disclaimer crowds the prose. Truthfulness, retained result context/recovery and assessed keyboard/semantics evidence tie. Both return to quiet / Salt pool / EL-03 and offer a clear empty-state reset.
+
+B has stronger product-specific visual and relational decisions: notebook annotations, habitat stamps, monospaced duration/metadata and record-specific illustrative paths. The quiet EL-03 drawing's two disturbances relate to the supplied two-splash transcript. The caption honestly denies measured audio. A's generic water/air lines are also honest, and its ledger makes comparison efficient. Preservation across widths/states ties after accounting for B's crowded notice and A's more economical hierarchy.
+
+No concrete completion blocker was established. Recorded checks report 33 per press variant and 24 per listening variant with no failures, but they are not human testing or conformance certification. Contrast incompletes remain, and only EL-03 detail was visually inspected. Exact provider/model/token/cost/elapsed measurements and the unsampled start timestamp are null.
+
+These initial judgments are frozen before identity disclosure; any objective clarification should be a separate appended note, not a rewritten verdict.

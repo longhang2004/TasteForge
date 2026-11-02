@@ -1,0 +1,125 @@
+{
+  "summary": "Mixed pilot: candidate helps several task-context/narrow-access decisions; stronger product specificity is not established. Lean has several stronger visual/artifact judgments. Ties/disagreements and unknown total costs remain.",
+  "cells": [
+    {
+      "id": "press-A",
+      "condition": "lean",
+      "verdict": "Scoped automated acceptance",
+      "checks": 33,
+      "correction": "0 creator self-correction;0 operator UI corrections",
+      "report": "evidence/press-A/initial-01/report.json",
+      "images": [
+        {
+          "state": "entry",
+          "width": 320,
+          "file": "evidence/press-A/initial-01/320-entry/viewport.png"
+        },
+        {
+          "state": "failure",
+          "width": 320,
+          "file": "evidence/press-A/initial-01/320-failure/viewport.png"
+        },
+        {
+          "state": "review",
+          "width": 390,
+          "file": "evidence/press-A/initial-01/390-review/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 1440,
+          "file": "evidence/press-A/initial-01/1440-entry/viewport.png"
+        }
+      ]
+    },
+    {
+      "id": "press-B",
+      "condition": "candidate",
+      "verdict": "Scoped automated acceptance",
+      "checks": 33,
+      "correction": "1 creator self-correction;0 operator UI corrections",
+      "report": "evidence/press-B/initial-01/report.json",
+      "images": [
+        {
+          "state": "entry",
+          "width": 320,
+          "file": "evidence/press-B/initial-01/320-entry/viewport.png"
+        },
+        {
+          "state": "failure",
+          "width": 320,
+          "file": "evidence/press-B/initial-01/320-failure/viewport.png"
+        },
+        {
+          "state": "review",
+          "width": 390,
+          "file": "evidence/press-B/initial-01/390-review/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 1440,
+          "file": "evidence/press-B/initial-01/1440-entry/viewport.png"
+        }
+      ]
+    },
+    {
+      "id": "listen-A",
+      "condition": "lean",
+      "verdict": "Scoped automated acceptance",
+      "checks": 24,
+      "correction": "1 creator self-correction;0 operator UI corrections",
+      "report": "evidence/listen-A/initial-01/report.json",
+      "images": [
+        {
+          "state": "entry",
+          "width": 320,
+          "file": "evidence/listen-A/initial-01/320-entry/viewport.png"
+        },
+        {
+          "state": "detail",
+          "width": 320,
+          "file": "evidence/listen-A/initial-01/320-detail/viewport.png"
+        },
+        {
+          "state": "return",
+          "width": 390,
+          "file": "evidence/listen-A/initial-01/390-return/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 1440,
+          "file": "evidence/listen-A/initial-01/1440-entry/viewport.png"
+        }
+      ]
+    },
+    {
+      "id": "listen-B",
+      "condition": "candidate",
+      "verdict": "Scoped automated acceptance",
+      "checks": 24,
+      "correction": "1 creator self-correction;0 operator UI corrections",
+      "report": "evidence/listen-B/initial-02/report.json",
+      "images": [
+        {
+          "state": "entry",
+          "width": 320,
+          "file": "evidence/listen-B/initial-02/320-entry/viewport.png"
+        },
+        {
+          "state": "detail",
+          "width": 320,
+          "file": "evidence/listen-B/initial-02/320-detail/viewport.png"
+        },
+        {
+          "state": "return",
+          "width": 390,
+          "file": "evidence/listen-B/initial-02/390-return/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 1440,
+          "file": "evidence/listen-B/initial-02/1440-entry/viewport.png"
+        }
+      ]
+    }
+  ]
+}

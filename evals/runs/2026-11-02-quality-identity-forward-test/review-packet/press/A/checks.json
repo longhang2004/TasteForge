@@ -1,0 +1,631 @@
+{
+  "scope": "Automated browser/axe + natural viewport; human tests deferred",
+  "checks": 33,
+  "failures": [],
+  "traces": [
+    {
+      "width": 320,
+      "checks": [
+        "full session cannot be reserved",
+        "date change clears stale selected slot",
+        "invalid participants 0 blocked",
+        "invalid participants 1.5 blocked",
+        "invalid participants 4 blocked",
+        "induction required before review",
+        "review has chosen facts fee exclusions and time zone",
+        "edit retains participants slot and induction",
+        "first confirm fails and focuses recovery",
+        "keyboard reaches retry",
+        "retry succeeds with retained facts and honest outcome"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 2165.28125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "participants",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 464.78125,
+              "width": 88.71875,
+              "height": 48,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 483
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 0.1875,
+              "width": 284,
+              "height": 28.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 464
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "choose-title",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 0.1875,
+              "width": 284,
+              "height": 57.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 464
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "failure",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 250.984375,
+              "width": 284,
+              "height": 239,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 318
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "success-title",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 0.1875,
+              "width": 284,
+              "height": 57.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 497
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "checks": [
+        "full session cannot be reserved",
+        "date change clears stale selected slot",
+        "invalid participants 0 blocked",
+        "invalid participants 1.5 blocked",
+        "invalid participants 4 blocked",
+        "induction required before review",
+        "review has chosen facts fee exclusions and time zone",
+        "edit retains participants slot and induction",
+        "first confirm fails and focuses recovery",
+        "keyboard reaches retry",
+        "retry succeeds with retained facts and honest outcome"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 1983.890625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "participants",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 191.390625,
+              "width": 100,
+              "height": 48,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 668
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": -0.40625,
+              "width": 354,
+              "height": 28.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 423
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "choose-title",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": -0.40625,
+              "width": 354,
+              "height": 28.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 423
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "failure",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 313.390625,
+              "width": 354,
+              "height": 218,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 193
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "success-title",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": -0.40625,
+              "width": 354,
+              "height": 57.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 456
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "checks": [
+        "full session cannot be reserved",
+        "date change clears stale selected slot",
+        "invalid participants 0 blocked",
+        "invalid participants 1.5 blocked",
+        "invalid participants 4 blocked",
+        "induction required before review",
+        "review has chosen facts fee exclusions and time zone",
+        "edit retains participants slot and induction",
+        "first confirm fails and focuses recovery",
+        "keyboard reaches retry",
+        "retry succeeds with retained facts and honest outcome"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1229.078125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "participants",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 649.078125,
+              "width": 100,
+              "height": 48,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 229
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 232.078125,
+              "width": 775,
+              "height": 30,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 229
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "choose-title",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 232.078125,
+              "width": 775,
+              "height": 30,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 229
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "failure",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 434.078125,
+              "width": 775,
+              "height": 131,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 112
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "success-title",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 265.078125,
+              "width": 775,
+              "height": 30,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 229
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ]
+    }
+  ]
+}

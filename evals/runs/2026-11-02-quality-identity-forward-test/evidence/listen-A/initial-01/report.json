@@ -1,0 +1,590 @@
+{
+  "cell": "listen-A",
+  "stage": "initial",
+  "pass": "initial-01",
+  "startedAt": "2026-11-02T08:49:04.634Z",
+  "sourceSha256": "99f4ac4bcfe8f015eebaa6c0cc84f42f90ab782caafc4a9321ea782bd83a7228",
+  "harnessSha256": "a0452ace60fe33b5fe0ca059ab3b2c212a324631c5f30cc17d9fd09c5e4fb13d",
+  "taskHarnessSha256": "faf71c00b72e9c4f3b06fa5e5d58765b165e4bdae8ad4f0b7b868c20bd5d2f47",
+  "traces": [
+    {
+      "width": 320,
+      "states": [
+        {
+          "label": "entry",
+          "report": "evidence/listen-A/initial-01/320-entry/report.json",
+          "viewport": "evidence/listen-A/initial-01/320-entry/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 2043.203125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "filtered",
+          "report": "evidence/listen-A/initial-01/320-filtered/report.json",
+          "viewport": "evidence/listen-A/initial-01/320-filtered/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 143.703125,
+              "y": 348.265625,
+              "width": 73.265625,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 487
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "detail",
+          "report": "evidence/listen-A/initial-01/320-detail/report.json",
+          "viewport": "evidence/listen-A/initial-01/320-detail/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H1",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 221.59375,
+              "width": 284,
+              "height": 147.8125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "return",
+          "report": "evidence/listen-A/initial-01/320-return/report.json",
+          "viewport": "evidence/listen-A/initial-01/320-return/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": "open-EL-03",
+            "testId": null,
+            "rect": {
+              "x": 92,
+              "y": 441.265625,
+              "width": 210,
+              "height": 74.0625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 487
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "empty",
+          "report": "evidence/listen-A/initial-01/320-empty/report.json",
+          "viewport": "evidence/listen-A/initial-01/320-empty/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 258.671875,
+              "width": 284,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 487
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "reset",
+          "report": "evidence/listen-A/initial-01/320-reset/report.json",
+          "viewport": "evidence/listen-A/initial-01/320-reset/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 258.671875,
+              "width": 284,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 487
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "four records with truthful no-audio conditions",
+        "search includes supplied observation notes",
+        "habitat filter preserves source result order",
+        "long record opens by keyboard and focuses heading",
+        "detail preserves metadata transcript and evidence limits",
+        "back retains query habitat order and opening focus",
+        "empty results honest and recoverable",
+        "reset restores all records and criteria"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "states": [
+        {
+          "label": "entry",
+          "report": "evidence/listen-A/initial-01/390-entry/report.json",
+          "viewport": "evidence/listen-A/initial-01/390-entry/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 2068.296875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "filtered",
+          "report": "evidence/listen-A/initial-01/390-filtered/report.json",
+          "viewport": "evidence/listen-A/initial-01/390-filtered/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 165.703125,
+              "y": 399.578125,
+              "width": 81.265625,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 491
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "detail",
+          "report": "evidence/listen-A/initial-01/390-detail/report.json",
+          "viewport": "evidence/listen-A/initial-01/390-detail/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H1",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 24,
+              "y": 221.59375,
+              "width": 342,
+              "height": 174.6875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "return",
+          "report": "evidence/listen-A/initial-01/390-return/report.json",
+          "viewport": "evidence/listen-A/initial-01/390-return/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": "open-EL-03",
+            "testId": null,
+            "rect": {
+              "x": 114,
+              "y": 492.578125,
+              "width": 252,
+              "height": 78,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 491
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "empty",
+          "report": "evidence/listen-A/initial-01/390-empty/report.json",
+          "viewport": "evidence/listen-A/initial-01/390-empty/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 24,
+              "y": 309.984375,
+              "width": 342,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 491
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "reset",
+          "report": "evidence/listen-A/initial-01/390-reset/report.json",
+          "viewport": "evidence/listen-A/initial-01/390-reset/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 24,
+              "y": 309.984375,
+              "width": 342,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 491
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "four records with truthful no-audio conditions",
+        "search includes supplied observation notes",
+        "habitat filter preserves source result order",
+        "long record opens by keyboard and focuses heading",
+        "detail preserves metadata transcript and evidence limits",
+        "back retains query habitat order and opening focus",
+        "empty results honest and recoverable",
+        "reset restores all records and criteria"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "states": [
+        {
+          "label": "entry",
+          "report": "evidence/listen-A/initial-01/1440-entry/report.json",
+          "viewport": "evidence/listen-A/initial-01/1440-entry/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1486.28125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "filtered",
+          "report": "evidence/listen-A/initial-01/1440-filtered/report.json",
+          "viewport": "evidence/listen-A/initial-01/1440-filtered/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 1141.265625,
+              "y": 542,
+              "width": 81.265625,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "detail",
+          "report": "evidence/listen-A/initial-01/1440-detail/report.json",
+          "viewport": "evidence/listen-A/initial-01/1440-detail/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H1",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 229,
+              "width": 980,
+              "height": 127.65625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "return",
+          "report": "evidence/listen-A/initial-01/1440-return/report.json",
+          "viewport": "evidence/listen-A/initial-01/1440-return/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": "open-EL-03",
+            "testId": null,
+            "rect": {
+              "x": 254,
+              "y": 641,
+              "width": 689.359375,
+              "height": 28.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "empty",
+          "report": "evidence/listen-A/initial-01/1440-empty/report.json",
+          "viewport": "evidence/listen-A/initial-01/1440-empty/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 540,
+              "width": 390,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "reset",
+          "report": "evidence/listen-A/initial-01/1440-reset/report.json",
+          "viewport": "evidence/listen-A/initial-01/1440-reset/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 540,
+              "width": 390,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "four records with truthful no-audio conditions",
+        "search includes supplied observation notes",
+        "habitat filter preserves source result order",
+        "long record opens by keyboard and focuses heading",
+        "detail preserves metadata transcript and evidence limits",
+        "back retains query habitat order and opening focus",
+        "empty results honest and recoverable",
+        "reset restores all records and criteria"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  ],
+  "failures": [],
+  "providerTokens": null,
+  "scope": "Automated browser/axe + natural viewport; human tests deferred",
+  "chromium": "156.0.8078.4",
+  "finishedAt": "2026-11-02T08:49:37.475Z",
+  "checks": 24
+}

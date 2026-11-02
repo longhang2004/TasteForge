@@ -1,0 +1,11 @@
+# Create a new interface
+
+Use Standard effort when the task structure is sufficiently clear. Use Explore only for a material unresolved structure or an explicit request for alternatives.
+
+1. **Read context once.** Inspect relevant components, tokens, supplied content and constraints. Name the user's successful outcome, facts needed together, consequence at commitment and relevant state/recovery path. Resolve material unknowns; keep reversible assumptions explicit.
+2. **Choose a task structure.** Start from existing product evidence or a familiar appropriate pattern. Record task / constraints / choice / checks briefly in existing guidance. Read [design principles](../references/design-principles.md) or [surface purpose](../references/surface-purpose.md) only if they resolve a decision. Standard does not require web research or two prototypes. For genuine structural uncertainty, use [research](research-and-plan.md); build only the representative alternatives needed to choose.
+3. **Apply one visual system.** Preserve existing tokens or choose a coherent small system. If reference/engine support is useful, read [catalog use](../references/catalog-use.md); otherwise continue without CLI setup. Use [typography](../references/typography.md), [hierarchy](../references/visual-hierarchy.md) or [layout](../references/layout-composition.md) for the specific unresolved issue. Avoid recreating an established system. Read [effects](../references/effects-and-composition.md) only when requested or task-relevant.
+4. **Implement the task and relevant states.** Use supplied/verified product facts, semantic controls and honest action semantics. Retain information through editing/recovery; include loading, empty, validation, disabled, error and success states only as relevant to the requested behavior.
+5. **Render and finish.** Follow the [rendered check/revision pass](structure-and-revise.md#render-the-chosen-task-then-edit), including minimum supported width, long content and commitment/error states. Prefer existing project tests or the optional [checkpoint helper](../references/render-checks.md). Recheck demonstrated fixes and stop at the agreed acceptance boundary.
+
+Without rendered tools, complete useful source work and label runtime/visual checks unassessed. Do not fabricate screenshots, generated DNA, test results or user validation.

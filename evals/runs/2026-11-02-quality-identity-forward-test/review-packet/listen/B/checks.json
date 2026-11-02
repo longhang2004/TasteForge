@@ -1,0 +1,541 @@
+{
+  "scope": "Automated browser/axe + natural viewport; human tests deferred",
+  "checks": 24,
+  "failures": [],
+  "traces": [
+    {
+      "width": 320,
+      "checks": [
+        "four records with truthful no-audio conditions",
+        "search includes supplied observation notes",
+        "habitat filter preserves source result order",
+        "long record opens by keyboard and focuses heading",
+        "detail preserves metadata transcript and evidence limits",
+        "back retains query habitat order and opening focus",
+        "empty results honest and recoverable",
+        "reset restores all records and criteria"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 2043.203125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "filtered",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 143.703125,
+              "y": 348.265625,
+              "width": 73.265625,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 487
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "detail",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H1",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 221.59375,
+              "width": 284,
+              "height": 147.8125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "return",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": "open-EL-03",
+            "testId": null,
+            "rect": {
+              "x": 92,
+              "y": 441.265625,
+              "width": 210,
+              "height": 74.0625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 487
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "empty",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 258.671875,
+              "width": 284,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 487
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "reset",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 18,
+              "y": 258.671875,
+              "width": 284,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 487
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "checks": [
+        "four records with truthful no-audio conditions",
+        "search includes supplied observation notes",
+        "habitat filter preserves source result order",
+        "long record opens by keyboard and focuses heading",
+        "detail preserves metadata transcript and evidence limits",
+        "back retains query habitat order and opening focus",
+        "empty results honest and recoverable",
+        "reset restores all records and criteria"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 2068.296875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "filtered",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 165.703125,
+              "y": 399.578125,
+              "width": 81.265625,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 491
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "detail",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H1",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 24,
+              "y": 221.59375,
+              "width": 342,
+              "height": 174.6875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "return",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": "open-EL-03",
+            "testId": null,
+            "rect": {
+              "x": 114,
+              "y": 492.578125,
+              "width": 252,
+              "height": 78,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 491
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "empty",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 24,
+              "y": 309.984375,
+              "width": 342,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 491
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "reset",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 24,
+              "y": 309.984375,
+              "width": 342,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 491
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "checks": [
+        "four records with truthful no-audio conditions",
+        "search includes supplied observation notes",
+        "habitat filter preserves source result order",
+        "long record opens by keyboard and focuses heading",
+        "detail preserves metadata transcript and evidence limits",
+        "back retains query habitat order and opening focus",
+        "empty results honest and recoverable",
+        "reset restores all records and criteria"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1486.28125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "filtered",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 1141.265625,
+              "y": 542,
+              "width": 81.265625,
+              "height": 44,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "detail",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H1",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 229,
+              "width": 980,
+              "height": 127.65625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "return",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": "open-EL-03",
+            "testId": null,
+            "rect": {
+              "x": 254,
+              "y": 641,
+              "width": 689.359375,
+              "height": 28.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "empty",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 540,
+              "width": 390,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "reset",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "search",
+            "testId": null,
+            "rect": {
+              "x": 128,
+              "y": 540,
+              "width": 390,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ]
+    }
+  ]
+}

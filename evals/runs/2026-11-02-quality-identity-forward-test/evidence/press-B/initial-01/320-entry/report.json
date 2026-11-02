@@ -1,0 +1,82 @@
+{
+  "label": "320-entry",
+  "capturedAtUtc": "2026-11-02T08:46:10.689Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 320,
+    "height": 740
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "document": {
+    "width": 320,
+    "height": 2165
+  },
+  "activeElement": {
+    "tag": "BODY",
+    "id": null,
+    "testId": null,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 2165.28125,
+      "intersectsViewport": true,
+      "fullyInViewport": false
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[role=alert]",
+      "matches": 1,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "[role=status]",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "button:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h1:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h2:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 0
+  }
+}

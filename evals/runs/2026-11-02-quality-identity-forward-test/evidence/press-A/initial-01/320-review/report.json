@@ -1,0 +1,91 @@
+{
+  "label": "320-review",
+  "capturedAtUtc": "2026-11-02T08:37:50.746Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 320,
+    "height": 740
+  },
+  "scroll": {
+    "x": 0,
+    "y": 164
+  },
+  "document": {
+    "width": 320,
+    "height": 2089
+  },
+  "activeElement": {
+    "tag": "H2",
+    "id": "review-title",
+    "testId": null,
+    "rect": {
+      "x": 20,
+      "y": 339.578125,
+      "width": 193.328125,
+      "height": 60,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[role=alert]",
+      "matches": 1,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "[role=status]",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "button:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h1:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h2:focus",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 20,
+          "y": 339.578125,
+          "width": 193.328125,
+          "height": 60,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 164
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 164
+  }
+}

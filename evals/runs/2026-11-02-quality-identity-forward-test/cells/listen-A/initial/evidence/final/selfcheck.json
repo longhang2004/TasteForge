@@ -1,0 +1,222 @@
+{
+  "startedUTC": "2026-11-02T08:45:20.987Z",
+  "checks": [
+    {
+      "name": "initial four records 320",
+      "pass": true
+    },
+    {
+      "name": "collection no horizontal overflow 320",
+      "pass": true
+    },
+    {
+      "name": "note search 320",
+      "pass": true
+    },
+    {
+      "name": "combined search and habitat 320",
+      "pass": true
+    },
+    {
+      "name": "keyboard open / title focus 320",
+      "pass": true
+    },
+    {
+      "name": "detail facts 320",
+      "pass": true
+    },
+    {
+      "name": "long detail no horizontal overflow 320",
+      "pass": true
+    },
+    {
+      "name": "back keyboard reachable 320",
+      "pass": true
+    },
+    {
+      "name": "back retains query, habitat, count, focus and scroll 320",
+      "pass": true,
+      "before": {
+        "scroll": 479,
+        "focus": "open-EL-03"
+      },
+      "after": {
+        "scroll": 479,
+        "focus": "open-EL-03"
+      }
+    },
+    {
+      "name": "empty results 320",
+      "pass": true
+    },
+    {
+      "name": "reset restores collection and search focus 320",
+      "pass": true
+    },
+    {
+      "name": "Channel filter count and order 320",
+      "pass": true
+    },
+    {
+      "name": "initial four records 390",
+      "pass": true
+    },
+    {
+      "name": "collection no horizontal overflow 390",
+      "pass": true
+    },
+    {
+      "name": "note search 390",
+      "pass": true
+    },
+    {
+      "name": "combined search and habitat 390",
+      "pass": true
+    },
+    {
+      "name": "keyboard open / title focus 390",
+      "pass": true
+    },
+    {
+      "name": "detail facts 390",
+      "pass": true
+    },
+    {
+      "name": "long detail no horizontal overflow 390",
+      "pass": true
+    },
+    {
+      "name": "back keyboard reachable 390",
+      "pass": true
+    },
+    {
+      "name": "back retains query, habitat, count, focus and scroll 390",
+      "pass": true,
+      "before": {
+        "scroll": 520,
+        "focus": "open-EL-03"
+      },
+      "after": {
+        "scroll": 520,
+        "focus": "open-EL-03"
+      }
+    },
+    {
+      "name": "empty results 390",
+      "pass": true
+    },
+    {
+      "name": "reset restores collection and search focus 390",
+      "pass": true
+    },
+    {
+      "name": "Channel filter count and order 390",
+      "pass": true
+    },
+    {
+      "name": "initial four records 1440",
+      "pass": true
+    },
+    {
+      "name": "collection no horizontal overflow 1440",
+      "pass": true
+    },
+    {
+      "name": "note search 1440",
+      "pass": true
+    },
+    {
+      "name": "combined search and habitat 1440",
+      "pass": true
+    },
+    {
+      "name": "keyboard open / title focus 1440",
+      "pass": true
+    },
+    {
+      "name": "detail facts 1440",
+      "pass": true
+    },
+    {
+      "name": "long detail no horizontal overflow 1440",
+      "pass": true
+    },
+    {
+      "name": "back keyboard reachable 1440",
+      "pass": true
+    },
+    {
+      "name": "back retains query, habitat, count, focus and scroll 1440",
+      "pass": true,
+      "before": {
+        "scroll": 0,
+        "focus": "open-EL-03"
+      },
+      "after": {
+        "scroll": 0,
+        "focus": "open-EL-03"
+      }
+    },
+    {
+      "name": "empty results 1440",
+      "pass": true
+    },
+    {
+      "name": "reset restores collection and search focus 1440",
+      "pass": true
+    },
+    {
+      "name": "Channel filter count and order 1440",
+      "pass": true
+    },
+    {
+      "name": "no uncaught browser errors",
+      "pass": true
+    },
+    {
+      "name": "axe has no violations",
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "consoleErrors": [],
+  "axe": [
+    {
+      "state": "collection",
+      "width": 320,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "state": "detail",
+      "width": 320,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "state": "collection",
+      "width": 390,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "state": "detail",
+      "width": 390,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "state": "collection",
+      "width": 1440,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "state": "detail",
+      "width": 1440,
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "endedUTC": "2026-11-02T08:45:35.777Z"
+}

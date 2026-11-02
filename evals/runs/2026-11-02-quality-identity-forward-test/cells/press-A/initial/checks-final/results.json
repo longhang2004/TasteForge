@@ -1,0 +1,514 @@
+{
+  "started": "2026-11-02T08:34:53.231Z",
+  "widths": [
+    {
+      "width": 320,
+      "states": [
+        {
+          "state": "choose",
+          "documentWidth": 320,
+          "viewportWidth": 320,
+          "scrollY": 0,
+          "focus": "BODY",
+          "focusRect": {
+            "top": 0,
+            "bottom": 2114.703125
+          },
+          "buttons": [
+            {
+              "text": "Review session →",
+              "width": 190.125,
+              "left": 20,
+              "right": 210.125
+            }
+          ]
+        },
+        {
+          "state": "review",
+          "documentWidth": 320,
+          "viewportWidth": 320,
+          "scrollY": 84,
+          "focus": "review-title",
+          "focusRect": {
+            "top": 419.578125,
+            "bottom": 479.578125
+          },
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 20,
+              "right": 148.828125
+            },
+            {
+              "text": "Confirm reservation →",
+              "width": 227.125,
+              "left": 20,
+              "right": 247.125
+            }
+          ]
+        },
+        {
+          "state": "failure",
+          "documentWidth": 320,
+          "viewportWidth": 320,
+          "scrollY": 241,
+          "focus": "reservation-error",
+          "focusRect": {
+            "top": 344.578125,
+            "bottom": 556.359375
+          },
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 20,
+              "right": 148.828125
+            },
+            {
+              "text": "Try reservation again →",
+              "width": 238,
+              "left": 20,
+              "right": 258
+            }
+          ]
+        },
+        {
+          "state": "success",
+          "documentWidth": 320,
+          "viewportWidth": 320,
+          "scrollY": 170,
+          "focus": "success-title",
+          "focusRect": {
+            "top": 411.578125,
+            "bottom": 488.359375
+          },
+          "buttons": [
+            {
+              "text": "Choose another session",
+              "width": 222.03125,
+              "left": 20,
+              "right": 242.03125
+            }
+          ]
+        }
+      ],
+      "behavior": [
+        "full slot disabled",
+        "date change clears session",
+        "whole number range validated",
+        "induction required",
+        "review shows chosen facts",
+        "edit retains draft",
+        "first confirm fails and focuses recovery",
+        "retry succeeds with same choices",
+        "reservation identified and demo outcome stated"
+      ],
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ],
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "any": [
+                  {
+                    "id": "color-contrast",
+                    "data": {
+                      "messageKey": "nonBmp"
+                    },
+                    "relatedNodes": [],
+                    "impact": "serious",
+                    "message": "Element content contains only non-text characters"
+                  }
+                ],
+                "all": [],
+                "none": [],
+                "impact": "serious",
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "#confirm > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": 37
+      }
+    },
+    {
+      "width": 390,
+      "states": [
+        {
+          "state": "choose",
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "scrollY": 0,
+          "focus": "BODY",
+          "focusRect": {
+            "top": 0,
+            "bottom": 1869.59375
+          },
+          "buttons": [
+            {
+              "text": "Review session →",
+              "width": 190.125,
+              "left": 179.875,
+              "right": 370
+            }
+          ]
+        },
+        {
+          "state": "review",
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "scrollY": 0,
+          "focus": "review-title",
+          "focusRect": {
+            "top": 419.21875,
+            "bottom": 479.21875
+          },
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 20,
+              "right": 148.828125
+            },
+            {
+              "text": "Confirm reservation →",
+              "width": 227.125,
+              "left": 20,
+              "right": 247.125
+            }
+          ]
+        },
+        {
+          "state": "failure",
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "scrollY": 419,
+          "focus": "reservation-error",
+          "focusRect": {
+            "top": 82.21875,
+            "bottom": 273.203125
+          },
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 20,
+              "right": 148.828125
+            },
+            {
+              "text": "Try reservation again →",
+              "width": 238,
+              "left": 20,
+              "right": 258
+            }
+          ]
+        },
+        {
+          "state": "success",
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "scrollY": 419,
+          "focus": "success-title",
+          "focusRect": {
+            "top": 78.21875,
+            "bottom": 116.609375
+          },
+          "buttons": [
+            {
+              "text": "Choose another session",
+              "width": 222.03125,
+              "left": 20,
+              "right": 242.03125
+            }
+          ]
+        }
+      ],
+      "behavior": [
+        "full slot disabled",
+        "date change clears session",
+        "whole number range validated",
+        "induction required",
+        "review shows chosen facts",
+        "edit retains draft",
+        "first confirm fails and focuses recovery",
+        "retry succeeds with same choices",
+        "reservation identified and demo outcome stated"
+      ],
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ],
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "any": [
+                  {
+                    "id": "color-contrast",
+                    "data": {
+                      "messageKey": "nonBmp"
+                    },
+                    "relatedNodes": [],
+                    "impact": "serious",
+                    "message": "Element content contains only non-text characters"
+                  }
+                ],
+                "all": [],
+                "none": [],
+                "impact": "serious",
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "#confirm > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": 37
+      }
+    },
+    {
+      "width": 1440,
+      "states": [
+        {
+          "state": "choose",
+          "documentWidth": 1440,
+          "viewportWidth": 1440,
+          "scrollY": 0,
+          "focus": "BODY",
+          "focusRect": {
+            "top": 0,
+            "bottom": 1284.0625
+          },
+          "buttons": [
+            {
+              "text": "Review session →",
+              "width": 210.125,
+              "left": 690.875,
+              "right": 901
+            }
+          ]
+        },
+        {
+          "state": "review",
+          "documentWidth": 1440,
+          "viewportWidth": 1440,
+          "scrollY": 384,
+          "focus": "review-title",
+          "focusRect": {
+            "top": 117.46875,
+            "bottom": 151.0625
+          },
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 140,
+              "right": 268.828125
+            },
+            {
+              "text": "Confirm reservation →",
+              "width": 247.125,
+              "left": 653.875,
+              "right": 901
+            }
+          ]
+        },
+        {
+          "state": "failure",
+          "documentWidth": 1440,
+          "viewportWidth": 1440,
+          "scrollY": 384,
+          "focus": "reservation-error",
+          "focusRect": {
+            "top": 175.0625,
+            "bottom": 309.734375
+          },
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 140,
+              "right": 268.828125
+            },
+            {
+              "text": "Try reservation again →",
+              "width": 258,
+              "left": 643,
+              "right": 901
+            }
+          ]
+        },
+        {
+          "state": "success",
+          "documentWidth": 1440,
+          "viewportWidth": 1440,
+          "scrollY": 384,
+          "focus": "success-title",
+          "focusRect": {
+            "top": 195.46875,
+            "bottom": 241.0625
+          },
+          "buttons": [
+            {
+              "text": "Choose another session",
+              "width": 222.03125,
+              "left": 140,
+              "right": 362.03125
+            }
+          ]
+        }
+      ],
+      "behavior": [
+        "full slot disabled",
+        "date change clears session",
+        "whole number range validated",
+        "induction required",
+        "review shows chosen facts",
+        "edit retains draft",
+        "first confirm fails and focuses recovery",
+        "retry succeeds with same choices",
+        "reservation identified and demo outcome stated"
+      ],
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ],
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "any": [
+                  {
+                    "id": "color-contrast",
+                    "data": {
+                      "contrastRatio": 0,
+                      "fontSize": "9.0pt (12px)",
+                      "fontWeight": "normal",
+                      "messageKey": "bgOverlap",
+                      "expectedContrastRatio": "4.5:1"
+                    },
+                    "relatedNodes": [],
+                    "impact": "serious",
+                    "message": "Element's background color could not be determined because it is overlapped by another element"
+                  }
+                ],
+                "all": [],
+                "none": [],
+                "impact": "serious",
+                "html": "<text x=\"69\" y=\"49\" fill=\"#fffdf7\" font-family=\"Arial\" font-size=\"12\">01</text>",
+                "target": [
+                  "text[x=\"69\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "any": [
+                  {
+                    "id": "color-contrast",
+                    "data": {
+                      "contrastRatio": 0,
+                      "fontSize": "9.0pt (12px)",
+                      "fontWeight": "normal",
+                      "messageKey": "bgOverlap",
+                      "expectedContrastRatio": "4.5:1"
+                    },
+                    "relatedNodes": [],
+                    "impact": "serious",
+                    "message": "Element's background color could not be determined because it is overlapped by another element"
+                  }
+                ],
+                "all": [],
+                "none": [],
+                "impact": "serious",
+                "html": "<text x=\"191\" y=\"92\" fill=\"#fffdf7\" font-family=\"Arial\" font-size=\"12\">02</text>",
+                "target": [
+                  "text[x=\"191\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "any": [
+                  {
+                    "id": "color-contrast",
+                    "data": {
+                      "messageKey": "nonBmp"
+                    },
+                    "relatedNodes": [],
+                    "impact": "serious",
+                    "message": "Element content contains only non-text characters"
+                  }
+                ],
+                "all": [],
+                "none": [],
+                "impact": "serious",
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "#confirm > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": 38
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "failures": [],
+  "ended": "2026-11-02T08:35:08.590Z"
+}

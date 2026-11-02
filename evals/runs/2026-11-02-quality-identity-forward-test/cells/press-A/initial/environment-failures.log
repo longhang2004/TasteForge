@@ -1,0 +1,17 @@
+environment
+Access is denied. Error code: Wsl/E_ACCESSDENIED
+Resolution: Retried WSL with execution sandbox escalation; authorized read succeeded.
+
+runtime lookup
+command -v chromium returned exit 1 after version hash and UTC were recorded; no chromium command found on PATH.
+Resolution: Installed Playwright-managed Chromium launched successfully.
+
+test harness
+Error: Please use browser.newContext()
+ Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md
+Resolution: Changed harness from browser.newPage to explicit browser.newContext and context.newPage. Rerun has zero axe violations and retains color-contrast incomplete items.
+
+diagnostic shell quoting
+': -c: line 1: syntax error near unexpected token `newline'
+': -c: line 1: `python3 - <<'
+Resolution: Read the already saved check JSON via a local Node script instead.
