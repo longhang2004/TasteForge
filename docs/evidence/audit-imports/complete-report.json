@@ -1,0 +1,148 @@
+{
+  "engineVersion": "0.1.0",
+  "mode": "static-imports",
+  "files": [
+    "examples/audit-imports/entry.css",
+    "examples/audit-imports/notice.css",
+    "examples/audit-imports/tokens.css"
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 2,
+    "review": 0
+  },
+  "findings": [
+    {
+      "ruleId": "contrast-pair",
+      "severity": "warning",
+      "confidence": "high",
+      "category": "verified",
+      "file": "examples/audit-imports/notice.css",
+      "line": 2,
+      "column": 3,
+      "explanation": "The explicitly declared opaque pair #aaaaaa on #ffffff has 2.32:1 contrast, below the 4.5:1 normal-text target. Cascade, text size, and actual visibility were not evaluated.",
+      "remediation": "Use a palette pair meeting the text target; confirm actual computed styles and large-text exceptions in a browser.",
+      "provenance": [
+        {
+          "kind": "definition",
+          "token": "--notice-text",
+          "file": "examples/audit-imports/tokens.css",
+          "line": 4,
+          "column": 3,
+          "value": "var(--tf-color-foreground)"
+        },
+        {
+          "kind": "definition",
+          "token": "--tf-color-foreground",
+          "file": "examples/audit-imports/tokens.css",
+          "line": 2,
+          "column": 3,
+          "value": "#aaa"
+        },
+        {
+          "kind": "definition",
+          "token": "--tf-color-background",
+          "file": "examples/audit-imports/tokens.css",
+          "line": 3,
+          "column": 3,
+          "value": "#fff"
+        }
+      ],
+      "entries": [
+        "examples/audit-imports/entry.css"
+      ]
+    },
+    {
+      "ruleId": "font-fallback",
+      "severity": "warning",
+      "confidence": "high",
+      "category": "verified",
+      "file": "examples/audit-imports/notice.css",
+      "line": 4,
+      "column": 3,
+      "explanation": "font-family ends without a generic fallback: var(--notice-font)",
+      "remediation": "End the stack with serif, sans-serif, monospace, or another CSS generic family.",
+      "provenance": [
+        {
+          "kind": "definition",
+          "token": "--notice-font",
+          "file": "examples/audit-imports/tokens.css",
+          "line": 5,
+          "column": 3,
+          "value": "'Inter'"
+        }
+      ],
+      "entries": [
+        "examples/audit-imports/entry.css"
+      ]
+    }
+  ],
+  "limitations": [
+    "No screenshots or rendered UI inspected.",
+    "Only bounded unconditional local CSS imports are followed; cascade, JS/TS imports, utility classes, computed values and runtime behavior are not resolved.",
+    "A clean report does not establish accessibility conformance or visual quality."
+  ],
+  "resolution": {
+    "version": "1.0",
+    "status": "complete",
+    "roots": [
+      "examples/audit-imports/entry.css"
+    ],
+    "files": [
+      "examples/audit-imports/entry.css",
+      "examples/audit-imports/notice.css",
+      "examples/audit-imports/tokens.css"
+    ],
+    "contexts": [
+      {
+        "entry": "examples/audit-imports/entry.css",
+        "files": [
+          "examples/audit-imports/entry.css",
+          "examples/audit-imports/notice.css",
+          "examples/audit-imports/tokens.css"
+        ],
+        "complete": true
+      }
+    ],
+    "imports": [
+      {
+        "file": "examples/audit-imports/entry.css",
+        "line": 1,
+        "column": 1,
+        "specifier": "./tokens.css",
+        "target": "examples/audit-imports/tokens.css",
+        "status": "resolved"
+      },
+      {
+        "file": "examples/audit-imports/entry.css",
+        "line": 2,
+        "column": 1,
+        "specifier": "./notice.css",
+        "target": "examples/audit-imports/notice.css",
+        "status": "resolved"
+      }
+    ],
+    "limits": {
+      "files": 256,
+      "imports": 1024,
+      "importDepth": 16,
+      "aliasDepth": 16,
+      "fileBytes": 2000000,
+      "totalBytes": 16000000,
+      "definitions": 5000,
+      "declarations": 20000,
+      "findings": 2000,
+      "valueLength": 4096,
+      "provenance": 32,
+      "contexts": 512
+    },
+    "limitations": [
+      "Static stylesheet relationships only; no screenshots or computed browser styles.",
+      "Only explicit local unconditional CSS imports and unambiguous top-level :root candidates are resolved.",
+      "Each selected stylesheet is a separate entry context; application-entry ordering, selectors, inheritance, CSS Modules, JS/TS imports and runtime styling are not resolved.",
+      "Provenance locations identify definition/import/use declarations, not token-substring offsets.",
+      "A clean report does not establish accessibility conformance or visual quality."
+    ],
+    "jsxImportsFollowed": false
+  }
+}

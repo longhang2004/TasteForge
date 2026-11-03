@@ -1,0 +1,18 @@
+
+ RUN  v3.2.7 /var/tmp/tasteforge-audit-imports-20261103
+
+ ✓ tests/audit-imports.test.ts (19 tests) 923ms
+   ✓ bounded static stylesheet audit > enforces supplied file, edge, definition and UTF-8 byte budgets  517ms
+ ✓ tests/audit-imports-cli.test.ts (6 tests) 18498ms
+   ✓ opt-in import audit CLI > loads project-local imports beyond the selected entry and preserves default JSON/exit behavior  5739ms
+   ✓ opt-in import audit CLI > keeps missing, remote, conditional, excluded and escaping imports visible as review  6796ms
+   ✓ opt-in import audit CLI > rejects original symlink directory/file components and hardlinked imports  2758ms
+   ✓ opt-in import audit CLI > allows explicit generated-token imports without requiring generated DNA  980ms
+   ✓ opt-in import audit CLI > leaves JSX/TSX source audit intact and never executes module imports  1128ms
+   ✓ opt-in import audit CLI > returns a narrow-path error on over-budget selected CSS roots  1092ms
+
+ Test Files  2 passed (2)
+      Tests  25 passed (25)
+   Start at  12:38:08
+   Duration  20.78s (transform 615ms, setup 0ms, collect 3.29s, tests 19.42s, environment 1ms, prepare 407ms)
+
