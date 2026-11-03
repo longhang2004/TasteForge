@@ -1,0 +1,75 @@
+{
+  "task": "Bounded source review and correction of the existing Field Fold reservation slice against PRODUCT.md; no redesign or style reroll",
+  "mode": "Standalone TasteForge, Fast targeted refinement; no CLI, dependencies, external services or agents",
+  "projectRoot": "C:/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-beta2-host-project",
+  "resolvedExplicitSkill": "C:/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-beta2-host-project/.agents/skills/tasteforge/SKILL.md",
+  "loadedPathsRelativeToProject": {
+    "skill": ".agents/skills/tasteforge/SKILL.md",
+    "workflow": ".agents/skills/tasteforge/workflows/targeted-refinement.md",
+    "references": [".agents/skills/tasteforge/references/render-checks.md"],
+    "projectInputs": ["AGENTS.md", "PRODUCT.md", "index.html", "common/fixtures.json (field-fold factual contract)"],
+    "note": "No other workflow, catalog, comparison or project was loaded. Reference guidance was read locally; no linked external source or browser helper was invoked."
+  },
+  "findings": [
+    {
+      "targetStateWidth": "Decision cost after retaining quantity 3 while changing Harbor to Ridge; source review, no rendered width",
+      "evidence": "Original update() checked quantity against 3 but ignored selected stock; validate() correctly rejected Ridge quantity 3.",
+      "consequence": "An unavailable selection displayed USD 159 items and USD 164 total as ordinary costs.",
+      "change": "Use the selected edition stock limit for both decision pricing and submission; show pending dashes for invalid/unavailable selections, retain quantity and update stock guidance and aria-invalid.",
+      "recheck": "Minimal-DOM script passed stock edit, unavailable edition, empty/zero/negative/fractional/over-limit quantities, correction and exact totals."
+    },
+    {
+      "targetStateWidth": "Decision order; source review, all widths unrendered",
+      "evidence": "The email field appeared before the complete item/shipping/total decision; fixture says visitors need cost before sharing email.",
+      "consequence": "The required email preceded the information needed to decide.",
+      "change": "Move the unchanged costs block before the unchanged email field within the same form.",
+      "recheck": "Source-order assertion passed; no new design rules or factual copy."
+    },
+    {
+      "targetStateWidth": "Required/invalid input recovery; source review, all widths unrendered",
+      "evidence": "Original validation focused generic feedback and marked the field invalid without associating its error message.",
+      "consequence": "Keyboard and assistive-technology users had less direct access to the input requiring correction.",
+      "change": "Associate the visible error using aria-describedby and focus the invalid field; reset descriptions on edits and preserve existing focus styling.",
+      "recheck": "Minimal-DOM assertions passed required/invalid email, quantity and unavailable edition focus and description linkage; actual assistive-technology behavior remains unassessed."
+    },
+    {
+      "targetStateWidth": "Failure followed by an input edit, retry, success and subsequent edit; source review, all widths unrendered",
+      "evidence": "Original input/change listeners always cleared feedback, including the failure retry control.",
+      "consequence": "Editing removed the explicit recovery action and its context.",
+      "change": "Retain retry through edits to a failure state, replace stale selection-specific feedback with current-input recovery guidance, preserve values and clear obsolete success after an edit.",
+      "recheck": "Minimal-DOM assertions passed first valid failure, retained email/selection, edition edit with retry retained, Ridge success, subsequent Harbor edit and exact USD 111 success."
+    }
+  ],
+  "preserved": ["Current visual design and CSS", "Offer, contents, edition stocks and prices", "Shipping, returns, privacy and terms", "Media and factual captions", "Local-only simulation and no real order/payment/email consequence"],
+  "sourceHashes": {
+    "algorithm": "SHA-256",
+    "original_index_and_versions_00": "255b7c599971f906ccc84ee835be28ffad49eb26830f267863d0ebb8445783f7",
+    "corrected_index_and_versions_01": "c9263769993b6f4ae7341276654d61b97f2239bb4cd763e835d0b47bf29a8b7a"
+  },
+  "commands": {
+    "launcher": "wsl.exe --distribution Ubuntu --cd /mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-beta2-host-project --exec bash -lc '<command>'",
+    "executedBashCommands": [
+      "pwd; rg --files -g \"AGENTS.md\" -g \"PRODUCT.md\" -g \"index.html\" -g \"*targeted*\" -g \"SKILL.md\" -g \"package.json\" -g \"creator-record.json\" . .agents; cat .agents/skills/tasteforge/SKILL.md; cat .agents/skills/tasteforge/workflows/targeted-refinement.md; cat PRODUCT.md; cat index.html",
+      "cat AGENTS.md; cat common/fixtures.json; ls -la; command -v node; command -v python3; cat .agents/skills/tasteforge/references/render-checks.md",
+      "mkdir -p versions && cp -n index.html versions/00.html && cmp index.html versions/00.html && sha256sum index.html versions/00.html",
+      "python3 - <<\"PY\"\nfrom pathlib import Path\np=Path(\"index.html\")\ns=p.read_text()\nstart=s.index(\"<div class=\\\"email-field\\\">\")\nend=s.index(\"<dl class=\\\"costs\\\"\",start)\nemail=s[start:end]\ns=s[:start]+s[end:]\npos=s.index(\"</dl>\",start)+len(\"</dl>\")\ns=s[:pos]+email+s[pos:]\np.write_text(s)\nPY",
+      "node checks/reservation.cjs; git diff --check; sha256sum versions/00.html index.html",
+      "cp -n index.html versions/01.html && cmp index.html versions/01.html && sha256sum versions/00.html versions/01.html index.html; git diff --stat",
+      "python3 -m json.tool creator-record.json >/dev/null && node checks/reservation.cjs && cmp index.html versions/01.html && sha256sum versions/00.html index.html"
+    ],
+    "otherTools": "apply_patch edited the reservation JavaScript and added checks/reservation.cjs and this record; no shell used outside Ubuntu Bash except the Windows WSL launcher. Project-local snapshot/move writes used authorized sandbox escalation."
+  },
+  "checks": [
+    {"name": "Original preservation", "result": "PASS: cmp before edits and matching SHA-256; versions/00.html byte-for-byte original"},
+    {"name": "Source-level reservation state checks", "command": "node checks/reservation.cjs", "result": "PASS", "scope": "Node VM and minimal DOM; does not emulate native browser email/number constraints, rendering, scroll or accessibility tree"},
+    {"name": "Whitespace diff check", "command": "git diff --check", "result": "No diagnostics; repository diff coverage may exclude untracked files"},
+    {"name": "Focused corrected snapshot", "result": "PASS: cmp and matching SHA-256 for index.html and versions/01.html"},
+    {"name": "Record JSON parse and final state recheck", "result": "PASS before this additive command-log entry; state checks, snapshot comparison and hashes passed again"}
+  ],
+  "remainingLimits": [
+    "Parent runs matched browser acceptance; no browser checks were executed here.",
+    "320, 390 and 1440px layout, wrapping, control reachability and natural post-action viewport/scroll are unassessed.",
+    "Native keyboard interaction, actual focus visibility, accessibility announcements and contrast were not browser-verified.",
+    "No human usability or visual uniqueness claim. No network research, installs, CLI, real submissions, accounts, email, commits or host settings changes."
+  ]
+}

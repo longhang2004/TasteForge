@@ -21,6 +21,8 @@ Save the actual validation summary under `.tmp/release-v<VERSION>/validation/sum
 python3 scripts/prepare-release.py
 ```
 
+When host smoke tests install a candidate skill ZIP, record `standaloneSkillArchive: {"path": "validation/tasteforge-skill-v<VERSION>.zip", "sha256": "<actual hash>"}` in the summary. The builder copies those exact tested bytes into the release assets, verifies every member against this candidate's skill source/license and rejects unexpected or duplicate members. The path must stay inside this version's preparation directory. Without that field it builds the skill ZIP as before. Keep raw host failures and distinguish extraction/discovery, actual invocation and task checks.
+
 The helper requires a clean Git checkout, matching package versions and the passed local summary. It packs the three coordinated packages, verifies archive versions/license files, builds a standalone skill ZIP, archives the exact Git commit, copies release notes/validation metadata and writes a manifest and SHA256 checksums. It uses Python 3, Git, pnpm and POSIX tar as maintainer tools; they are not extra CLI runtime requirements.
 
 Artifacts are placed in `.tmp/release-v<VERSION>/artifacts/`. Runtimes and diagnostic logs stay in sibling preparation directories and are not upload assets. The script refuses to overwrite a nonempty artifact directory. A passed summary is a local operator record, not an attestation or substitute for reviewing its logs.

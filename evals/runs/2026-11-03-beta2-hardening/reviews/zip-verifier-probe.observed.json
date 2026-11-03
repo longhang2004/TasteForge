@@ -1,0 +1,55 @@
+{
+  "recordType": "tool-observed-result-transcribed-after-execution",
+  "rawProbeCodeFileSavedAtExecution": false,
+  "rawStdoutFileSavedAtExecution": false,
+  "provenance": "The executed inline Python code and tool-returned stdout were visible in the reviewer chat transcript. These evidence files were written afterward. The code is copied from that tool call; the stdout is copied from that tool result. Neither is represented as an original raw on-disk execution artifact. The six probes were not rerun for preservation.",
+  "codeFile": "zip-verifier-probe.transcript.py",
+  "execution": {
+    "tool": "functions.exec -> tools.exec_command",
+    "toolResultChunkId": "b64e81",
+    "workingDirectoryWsl": "/mnt/c/Users/hi/src/personal_repos/TasteForge",
+    "environment": "Ubuntu on WSL2, Bash, python3 -B via a heredoc; Windows shell used only to launch wsl.exe",
+    "exitCode": 0,
+    "toolWallTimeSeconds": 1.882101,
+    "repositoryFilesChangedByProbe": false,
+    "temporaryFixtures": "tempfile.TemporaryDirectory; removed when probe completed"
+  },
+  "cases": [
+    {
+      "name": "valid",
+      "expected": "accept exact source and license members",
+      "observed": "passed"
+    },
+    {
+      "name": "duplicate",
+      "expected": "reject duplicate expected member",
+      "observed": "passed"
+    },
+    {
+      "name": "traversal",
+      "expected": "reject extra ../outside member",
+      "observed": "passed"
+    },
+    {
+      "name": "unexpected",
+      "expected": "reject extra tasteforge/extra member",
+      "observed": "passed"
+    },
+    {
+      "name": "missing-license",
+      "expected": "reject archive missing tasteforge/LICENSE",
+      "observed": "passed"
+    },
+    {
+      "name": "different-source",
+      "expected": "reject changed SKILL.md bytes",
+      "observed": "passed"
+    }
+  ],
+  "toolObservedStdout": "valid: passed\nduplicate: passed\ntraversal: passed\nunexpected: passed\nmissing-license: passed\ndifferent-source: passed\nIsolated ZIP verifier checks: 6 passed; no repository files changed\n",
+  "limitations": [
+    "These are isolated checks of verify_skill_archive only, not a full release preparation or package/browser/host suite.",
+    "Containment and copied-ZIP hash behavior were inspected statically, not exercised by these six fixtures.",
+    "The source script hash and fixture ZIPs were not saved at execution time. No exact reviewed working-tree snapshot is claimed."
+  ]
+}

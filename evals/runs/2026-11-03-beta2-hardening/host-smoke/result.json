@@ -1,0 +1,41 @@
+{
+  "collectedAt": "2026-11-03T03:50:25.779228+00:00",
+  "host": "Codex CLI 0.166.0-alpha.5.1 native Windows",
+  "platform": "Windows host; terminal operations Ubuntu WSL2 Bash",
+  "authenticationObservation": "Logged in using ChatGPT; no credentials copied/read into evidence",
+  "invocation": "Explicit $tasteforge, no supplied skill path; repository .agents/skills tree extracted from the candidate ZIP",
+  "commandFlags": [
+    "--ignore-user-config",
+    "--ephemeral",
+    "--approve-for-me",
+    "--json",
+    "--color never",
+    "--cd <isolated Windows project>",
+    "--output-last-message <project>/creator-summary.txt",
+    "- < prompt.txt"
+  ],
+  "invocationFailure": "Initial invocation used mutually exclusive --sandbox and --approve-for-me; exited2 before a model turn. Raw preserved. Corrected invocation omits --sandbox because --approve-for-me already selects workspace-write. No model/provider fallback.",
+  "startedAt": "2026-11-03T03:36:40Z",
+  "finishedAt": "2026-11-03T03:40:56Z",
+  "exitCode": 0,
+  "terminalCommandCount": 7,
+  "usage": {
+    "input_tokens": 291544,
+    "cached_input_tokens": 274432,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 7174,
+    "reasoning_output_tokens": 858
+  },
+  "billing": null,
+  "resolvedModel": null,
+  "otherOperatorEvaluatorTotals": null,
+  "scope": "One explicit repo-scope native invocation, standalone skill, bounded refinement of a supplied fixture. Not implicit triggering, global install, all-host certification or causal skill-efficacy evidence.",
+  "otherHosts": {
+    "Codex Linux 0.163.0": "login status: Not logged in; model invocation not attempted",
+    "Claude": "not run in this beta lane",
+    "Antigravity": "not run in this beta lane",
+    "OpenCode": "not run in this beta lane"
+  },
+  "globalSettingsChanged": false,
+  "humanManualTests": "deferred"
+}

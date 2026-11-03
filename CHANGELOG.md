@@ -2,9 +2,16 @@
 
 ## Unreleased
 
+## 0.2.0-beta.2
+
 - Make skill effort proportional with Fast/Standard/Explore routing, shorter shared instructions, compact persistent context and on-demand references. Keep critical task/access/content gates and explicit stopping/escalation.
 - Add an optional existing-Playwright checkpoint helper with natural scroll/focus evidence, minimum-width geometry, compact output and explicit unassessed dependency/browser states; retain separate task-test and accessibility scopes.
 - Clarify contextual CLI brief setup, actual process-completion evidence and source-grounded product/transaction copy. Preserve fixed constraints, engine/DNA contracts and historical evaluation artifacts.
+- Add four explained, runnable conventional/adapted task pairs and optional product art-direction guidance routed by task; keep familiar interactions when appropriate.
+- Preserve held-out quality/identity trials and the pinned eight-UI four-skill comparison with independent per-dimension judgments, ties, negative results, actual corrections and incomplete resource coverage. No universal quality or end-to-end savings claim.
+- Harden cost/availability review: displayed costs and submission must use the same current-selection validity; retain a separate bounded follow-up instead of rewriting the frozen invalid-stock finding.
+- Allow release preparation to reuse an exact host-tested standalone skill ZIP after hash, complete source/license and archive-member verification.
+- Record one actual native Windows Codex repo-scope ZIP invocation and a separate 51-assertion browser follow-up; broader host coverage and human usability remain unassessed.
 
 ## 0.2.0-beta.1 — preparation for pre-release
 
