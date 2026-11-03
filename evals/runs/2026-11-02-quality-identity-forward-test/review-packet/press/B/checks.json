@@ -1,0 +1,748 @@
+{
+  "scope": "Automated browser/axe + natural viewport; human tests deferred",
+  "checks": 33,
+  "failures": [],
+  "traces": [
+    {
+      "width": 320,
+      "checks": [
+        "full session cannot be reserved",
+        "date change clears stale selected slot",
+        "invalid participants 0 blocked",
+        "invalid participants 1.5 blocked",
+        "invalid participants 4 blocked",
+        "induction required before review",
+        "review has chosen facts fee exclusions and time zone",
+        "edit retains participants slot and induction",
+        "first confirm fails and focuses recovery",
+        "keyboard reaches retry",
+        "retry succeeds with retained facts and honest outcome"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 2114.703125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "participants",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 109.078125,
+              "width": 75,
+              "height": 47,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 851
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 339.578125,
+              "width": 193.328125,
+              "height": 60,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 164
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#confirm > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 175,
+              "y": 360.953125,
+              "width": 18,
+              "height": 18,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 286
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "reservation-error",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 264.578125,
+              "width": 280,
+              "height": 211.78125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 321
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#confirm > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "success-title",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 331.578125,
+              "width": 280,
+              "height": 76.78125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 250
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".success-mark"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "checks": [
+        "full session cannot be reserved",
+        "date change clears stale selected slot",
+        "invalid participants 0 blocked",
+        "invalid participants 1.5 blocked",
+        "invalid participants 4 blocked",
+        "induction required before review",
+        "review has chosen facts fee exclusions and time zone",
+        "edit retains participants slot and induction",
+        "first confirm fails and focuses recovery",
+        "keyboard reaches retry",
+        "retry succeeds with retained facts and honest outcome"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 1869.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "participants",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 215.21875,
+              "width": 75,
+              "height": 47,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 609
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 392.21875,
+              "width": 244.390625,
+              "height": 60,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 27
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#confirm > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 210,
+              "y": 20.71875,
+              "width": 18,
+              "height": 18,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 504
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "reservation-error",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 326.21875,
+              "width": 350,
+              "height": 190.984375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 175
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "#confirm > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "success-title",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 403.21875,
+              "width": 350,
+              "height": 38.390625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 94
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".success-mark"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "checks": [
+        "full session cannot be reserved",
+        "date change clears stale selected slot",
+        "invalid participants 0 blocked",
+        "invalid participants 1.5 blocked",
+        "invalid participants 4 blocked",
+        "induction required before review",
+        "review has chosen facts fee exclusions and time zone",
+        "edit retains participants slot and induction",
+        "first confirm fails and focuses recovery",
+        "keyboard reaches retry",
+        "retry succeeds with retained facts and honest outcome"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1284.0625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "text[x=\"69\"]"
+                ],
+                [
+                  "text[x=\"191\"]"
+                ],
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "invalid",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "participants",
+            "testId": null,
+            "rect": {
+              "x": 140,
+              "y": 632.0625,
+              "width": 75,
+              "height": 47,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 284
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "text[x=\"69\"]"
+                ],
+                [
+                  "text[x=\"191\"]"
+                ],
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 140,
+              "y": 217.46875,
+              "width": 288.78125,
+              "height": 33.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 284
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "text[x=\"69\"]"
+                ],
+                [
+                  "text[x=\"191\"]"
+                ],
+                [
+                  "#confirm > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 541.5,
+              "y": 330.5625,
+              "width": 18,
+              "height": 18,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 284
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "text[x=\"69\"]"
+                ],
+                [
+                  "text[x=\"191\"]"
+                ],
+                [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "reservation-error",
+            "testId": null,
+            "rect": {
+              "x": 140,
+              "y": 275.0625,
+              "width": 761,
+              "height": 134.671875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 284
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "text[x=\"69\"]"
+                ],
+                [
+                  "text[x=\"191\"]"
+                ],
+                [
+                  "#confirm > span[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "success-title",
+            "testId": null,
+            "rect": {
+              "x": 140,
+              "y": 295.46875,
+              "width": 761,
+              "height": 45.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 284
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "text[x=\"69\"]"
+                ],
+                [
+                  "text[x=\"191\"]"
+                ],
+                [
+                  ".success-mark"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

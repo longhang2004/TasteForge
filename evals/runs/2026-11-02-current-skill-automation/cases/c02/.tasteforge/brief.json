@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "productType": "service",
+  "industry": "finance",
+  "audience": [
+    "occasional money-transfer customers"
+  ],
+  "goals": [
+    "Verify recipient and total cost before confirming a simulated transfer"
+  ],
+  "brandPersonality": [
+    "clear",
+    "trustworthy"
+  ],
+  "existingConstraints": {
+    "preserveExisting": false,
+    "excludedDirections": [],
+    "maxComplexity": "medium",
+    "fontDelivery": "system"
+  },
+  "accessibility": {
+    "languages": [
+      "en", "vi"
+    ],
+    "minContrast": 4.5,
+    "reducedMotion": true
+  },
+  "creativity": 0.35
+}

@@ -1,0 +1,38 @@
+{
+  "type": "operator-targeted-finalization-not-a-paired-trial",
+  "sourceCase": "../cases/l04",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "minimum",
+      "width": 320,
+      "height": 740
+    }
+  ],
+  "cases": [
+    {
+      "id": "f01",
+      "promptId": "fintech-transfer",
+      "effort": "fast",
+      "condition": "lean-finalized",
+      "generation": "submitted"
+    }
+  ],
+  "generationReady": true,
+  "frozenInputHashes": {
+    "cases/f01/app.js": "94cbe7ea0af2457458cf52a348b1ae2efd446c31d7835b3384ca6910e8700162",
+    "cases/f01/fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+    "cases/f01/index.html": "ec69ab4dbeac729df54b4b080ed3a9cff7b86f1f140f5eb072a8badb423512e1",
+    "cases/f01/styles.css": "f1df0aea394aaa4d5ab84857dd94268664ec1a0189ecb3b35349e55ce0ba30a8",
+    "cases/f01/task.md": "c30677136a32851c83f5ef0bc8a91c217b22fcc2b5c01a1aed6e0a90b5e4a87b"
+  }
+}

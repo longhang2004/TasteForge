@@ -1,0 +1,58 @@
+{
+  "caseId": "l02",
+  "startedAtUtc": "2026-11-02T04:29:26.568Z",
+  "browser": "156.0.8078.4",
+  "scope": "Initial-page preview only; no interactions exercised",
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "report": "desktop/report.json",
+      "geometry": {
+        "status": "pass",
+        "horizontalOverflow": 0,
+        "scope": "Document width only; no accessibility or task-quality certification"
+      },
+      "images": [
+        "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l02/evidence/self-review/desktop/viewport.png"
+      ]
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "report": "mobile/report.json",
+      "geometry": {
+        "status": "pass",
+        "horizontalOverflow": 0,
+        "scope": "Document width only; no accessibility or task-quality certification"
+      },
+      "images": [
+        "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l02/evidence/self-review/mobile/viewport.png",
+        "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l02/evidence/self-review/mobile/full-page.png"
+      ]
+    },
+    {
+      "viewport": {
+        "name": "minimum",
+        "width": 320,
+        "height": 740
+      },
+      "report": "minimum/report.json",
+      "geometry": {
+        "status": "fail",
+        "horizontalOverflow": 19,
+        "scope": "Document width only; no accessibility or task-quality certification"
+      },
+      "images": [
+        "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l02/evidence/self-review/minimum/viewport.png"
+      ]
+    }
+  ],
+  "completedAtUtc": "2026-11-02T04:29:29.689Z"
+}

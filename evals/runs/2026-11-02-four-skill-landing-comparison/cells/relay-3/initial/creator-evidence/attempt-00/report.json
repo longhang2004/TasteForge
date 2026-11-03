@@ -1,0 +1,260 @@
+{
+  "startedAt": "2026-11-02T16:28:47.362Z",
+  "checks": [
+    {
+      "name": "no overflow at 320",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "local font loaded at 320",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "no overflow at 390",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "local font loaded at 390",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "skip link first keyboard target",
+      "actual": "Skip to content",
+      "expected": "Skip to content",
+      "pass": true
+    },
+    {
+      "name": "empty validation shown",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "invalid feedback focused",
+      "actual": "feedback",
+      "expected": "feedback",
+      "pass": true
+    },
+    {
+      "name": "invalid email feedback",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "annual exact visible cost",
+      "actual": "USD 120 per workspace billed once yearly",
+      "expected": "USD 120 per workspace billed once yearly",
+      "pass": true
+    },
+    {
+      "name": "first valid attempt recoverable",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "retained workspace",
+      "actual": "Canal Docs",
+      "expected": "Canal Docs",
+      "pass": true
+    },
+    {
+      "name": "retained email",
+      "actual": "mai@example.com",
+      "expected": "mai@example.com",
+      "pass": true
+    },
+    {
+      "name": "retained plan",
+      "actual": "annual",
+      "expected": "annual",
+      "pass": true
+    },
+    {
+      "name": "annual retry success",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "success editor and trial conditions",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "success no real consequence",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "edit clears success",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "monthly success exact conditions",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "long feedback no overflow",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "axe violations 390",
+      "actual": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": [
+            [
+              "a[aria-label=\"Relay Notes, page start\"]"
+            ]
+          ]
+        }
+      ],
+      "pass": false
+    },
+    {
+      "name": "no overflow at 1440",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "local font loaded at 1440",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "axe violations 1440",
+      "actual": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".tagline-line:nth-child(1) > .word:nth-child(1)"
+            ],
+            [
+              ".tagline-line:nth-child(1) > .word:nth-child(2)"
+            ],
+            [
+              ".tagline-line:nth-child(1) > .word:nth-child(3)"
+            ],
+            [
+              ".word:nth-child(5)"
+            ],
+            [
+              ".tagline-line:nth-child(2) > .word:nth-child(1)"
+            ],
+            [
+              ".tagline-line:nth-child(2) > .word:nth-child(2)"
+            ],
+            [
+              ".tagline-line:nth-child(2) > .word:nth-child(3)"
+            ],
+            [
+              ".tagline-line:nth-child(2) > .word:nth-child(4)"
+            ]
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": [
+            [
+              "a[aria-label=\"Relay Notes, page start\"]"
+            ]
+          ]
+        }
+      ],
+      "pass": false
+    },
+    {
+      "name": "reduced motion tagline full opacity",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "reduced motion reveals visible",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "no external browser requests",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:39815/",
+    "http://127.0.0.1:39815/common/fonts.css",
+    "http://127.0.0.1:39815/common/assets/relay-notes-editor.svg",
+    "http://127.0.0.1:39815/common/fonts/manrope/Manrope%5Bwght%5D.ttf",
+    "http://127.0.0.1:39815/common/assets/relay-notes-draft.svg",
+    "http://127.0.0.1:39815/",
+    "http://127.0.0.1:39815/common/fonts.css",
+    "http://127.0.0.1:39815/common/assets/relay-notes-editor.svg",
+    "http://127.0.0.1:39815/common/fonts/manrope/Manrope%5Bwght%5D.ttf",
+    "http://127.0.0.1:39815/common/assets/relay-notes-draft.svg",
+    "http://127.0.0.1:39815/",
+    "http://127.0.0.1:39815/common/fonts.css",
+    "http://127.0.0.1:39815/common/assets/relay-notes-editor.svg",
+    "http://127.0.0.1:39815/common/fonts/manrope/Manrope%5Bwght%5D.ttf",
+    "http://127.0.0.1:39815/common/assets/relay-notes-draft.svg"
+  ],
+  "actions": [
+    {
+      "stage": "cta",
+      "scrollY": 3602,
+      "focus": "workspace"
+    },
+    {
+      "stage": "failure",
+      "feedback": "Demo setup could not finish on this first attempt. Your workspace name, email and billing choice are kept. Select Retry demo setup to finish the local simulation. No account, payment or email was created.",
+      "scrollY": 4381,
+      "focus": "feedback"
+    },
+    {
+      "stage": "annual success",
+      "feedback": "Demo workspace ready for Canal Docs (mai@example.com). Annual: USD 120 per workspace billed once yearly, with up to 3 editors. The fictional offer includes a 14 day trial. This local demo creates no real account, trial, subscription, payment or email. No money is taken.",
+      "scrollY": 4820,
+      "focus": "feedback"
+    },
+    {
+      "stage": "long monthly success",
+      "feedback": "Demo workspace ready for Canal Docs community documentation and release maintainers workspace with a deliberately long descriptive project name for feedback wrapping (mai@example.com). Monthly: USD 12 per workspace each month, with up to 3 editors. The fictional offer includes a 14 day trial. This local demo creates no real account, trial, subscription, payment or email. No money is taken.",
+      "scrollY": 4525,
+      "focus": "feedback"
+    }
+  ],
+  "url": "http://127.0.0.1:39815/",
+  "finishedAt": "2026-11-02T16:28:58.004Z"
+}

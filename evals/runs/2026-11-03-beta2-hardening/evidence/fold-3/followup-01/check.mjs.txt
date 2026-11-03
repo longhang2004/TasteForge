@@ -1,0 +1,154 @@
+import assert from 'node:assert/strict';
+import { createRequire } from 'node:module';
+import { createHash } from 'node:crypto';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+import { runRoot, serve } from './serve.mjs';
+import { captureCheckpoint } from '../../../../skills/tasteforge/scripts/check-ui.mjs';
+
+const repo=path.resolve(runRoot,'../../..');
+const require=createRequire(path.join(repo,'examples/inventory-workbench/tools/package.json'));
+const {chromium}=require('playwright');const AxeBuilder=require('@axe-core/playwright').default;
+const cell=process.argv[2],stage=process.argv[3]||'initial',pass=process.argv[4]||'initial-01';
+assert(/^(fold|relay)-[1-4]$/.test(cell));assert(/^[a-z0-9-]+$/.test(stage)&&/^[a-z0-9-]+$/.test(pass));
+const sha=data=>createHash('sha256').update(data).digest('hex');
+const out=path.join(runRoot,'evidence',cell,pass);await mkdir(path.dirname(out),{recursive:true});await mkdir(out);
+const source=path.join(runRoot,'cells',cell,stage,'index.html');
+const script=await readFile(fileURLToPath(import.meta.url));await writeFile(path.join(out,'check.mjs.txt'),script);
+const report={cell,stage,pass,startedAt:new Date().toISOString(),sourceSha256:sha(await readFile(source)),harnessSha256:sha(script),traces:[],failures:[],scope:'Matched scripted task/width/access and natural viewport evidence; no human tests'};
+const {server,url}=await serve();const browser=await chromium.launch();report.chromium=browser.version();let trace;
+const ensure=async(name,run)=>{try{await run();trace.checks.push({name,pass:true});}catch(error){trace.checks.push({name,pass:false,error:error.message});report.failures.push(`${trace.id}/${name}: ${error.message}`);}};
+async function eventually(run){const deadline=Date.now()+6000;let last;do{try{return await run();}catch(error){last=error;await new Promise(resolve=>setTimeout(resolve,50));}}while(Date.now()<deadline);throw last;}
+async function capture(page,label){
+  await page.evaluate(()=>document.fonts.ready);
+  const shot=await captureCheckpoint(page,{outputDir:out,label:`${trace.id}-${label}`,fullPage:label==='entry'&&trace.width===1440,feedbackSelectors:['#feedback','#reserve','#start','#retry']});
+  const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();
+  const state={label,viewport:path.relative(runRoot,path.join(shot.directory,'viewport.png')),report:path.relative(runRoot,path.join(shot.directory,'report.json')),geometry:shot.report.geometry,scroll:shot.report.scroll,focus:shot.report.activeElement,violations:axe.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))})),incomplete:axe.incomplete.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))};
+  trace.states.push(state);if(state.geometry.status!=='pass')report.failures.push(`${trace.id}/${label}: horizontal overflow`);
+  if(state.violations.length)report.failures.push(`${trace.id}/${label}: axe ${state.violations.map(v=>v.id).join(',')}`);
+}
+const text=async(page,selector)=>await page.locator(selector).innerText();
+const numeric=async(page,selector)=>{
+  const value=await text(page,selector);
+  const match=value.match(/(?:USD|\$)\s*([0-9]+(?:\.[0-9]+)?)/i)||value.match(/([0-9]+(?:\.[0-9]+)?)/);
+  assert(match,`No amount in ${selector}`);return Number(match[1]);
+};
+async function reach(page,pattern,field){
+  const link=page.getByRole('link',{name:pattern}).first();
+  if(await link.count()){await link.click();trace.journey='primary CTA link';}
+  else{await page.locator(field).scrollIntoViewIfNeeded();trace.journey='direct form reached by purposeful task scroll';}
+  await ensure('primary task fields reachable',async()=>assert(await page.locator(field).isVisible()));
+}
+async function invalid(page,button){
+  await button.click();
+  await ensure('invalid required input blocks valid-submit recovery',async()=>{
+    assert.equal(await page.locator('#retry:visible').count(),0);
+    assert(await page.locator('input:invalid').count()>0 || (await text(page,'#feedback')).trim().length>0);
+  });
+}
+async function fold(page){
+  await reach(page,/reserve.*kit/i,'#edition');
+  await ensure('unavailable Night option cannot be selected',async()=>assert(await page.locator('#edition option[value=Night]').isDisabled()));
+  await invalid(page,page.locator('#reserve'));
+  await page.locator('#edition').selectOption('Ridge');await page.locator('#quantity').fill('3');await page.locator('#email').fill('mai@example.test');
+  await page.locator('#reserve').click();
+  await ensure('Ridge quantity3 blocked by stock2',async()=>{
+    assert.equal(await page.locator('#retry:visible').count(),0);
+    assert(await page.locator('#quantity:invalid').count()>0 || (await text(page,'#feedback')).trim().length>0);
+  });
+  await ensure('invalid-stock selection does not expose ordinary payable total',async()=>{
+    assert(!/(?:USD|\$)\s*\d/.test(await text(page,'#total')));
+  });
+  await capture(page,'invalid');
+  await page.locator('#edition').selectOption('Harbor');
+  for(const value of ['0','1.5','4']){
+    await page.locator('#quantity').fill(value);await page.locator('#reserve').click();
+    await ensure(`invalid whole quantity ${value} blocked`,async()=>assert.equal(await page.locator('#retry:visible').count(),0));
+  }
+  await page.locator('#quantity').fill('2');await page.locator('#email').fill('bad-address');await page.locator('#reserve').click();
+  await ensure('invalid email blocked',async()=>assert.equal(await page.locator('#retry:visible').count(),0));
+  await page.locator('#email').fill('mai@example.test');
+  await ensure('complete selected cost106+5=111',async()=>{
+    assert.equal(await numeric(page,'#subtotal'),106);assert.equal(await numeric(page,'#shipping'),5);assert.equal(await numeric(page,'#total'),111);
+  });
+  await ensure('complete cost is presented before required email',async()=>{
+    const cost=await page.locator('.costs').boundingBox(),email=await page.locator('#email').boundingBox();
+    assert(cost&&email&&cost.y+cost.height<=email.y);
+  });
+  await capture(page,'decision');await page.locator('#reserve').click();
+  await ensure('first valid submit fails with useful retry',()=>eventually(async()=>{
+    assert(await page.locator('#retry').isVisible());assert.match(await text(page,'#feedback'),/retry|try again|not|could|fail/i);
+  }));
+  await ensure('failure retains edition quantity email',async()=>{
+    assert.equal(await page.locator('#edition').inputValue(),'Harbor');assert.equal(await page.locator('#quantity').inputValue(),'2');assert.equal(await page.locator('#email').inputValue(),'mai@example.test');
+  });
+  await capture(page,'failure');
+  await page.locator('#edition').selectOption('Ridge');
+  await ensure('failure edit retains values and explicit retry',async()=>{
+    assert(await page.locator('#retry').isVisible());
+    assert.equal(await page.locator('#edition').inputValue(),'Ridge');
+    assert.equal(await page.locator('#quantity').inputValue(),'2');
+    assert.equal(await page.locator('#email').inputValue(),'mai@example.test');
+  });
+  await capture(page,'failure-edit');
+  await page.locator('#edition').selectOption('Harbor');
+  await page.locator('#retry').focus();await page.keyboard.press('Enter');
+  await ensure('keyboard retry succeeds with exact choice and honest outcome',()=>eventually(async()=>{
+    const t=await text(page,'#feedback');for(const fact of ['Harbor','2','111'])assert(t.includes(fact),fact);assert.match(t,/no real|no order|not.*(order|payment)|simulation|simulated|demo/i);
+  }));
+  await capture(page,'success');
+  await page.locator('#edition').selectOption('Ridge');
+  await ensure('changed selection does not retain visible stale Harbor success',async()=>{
+    if(await page.locator('#feedback').isVisible())assert(!/Harbor.*(reserved|success)|success.*Harbor/i.test(await text(page,'#feedback')));
+  });
+}
+async function relay(page){
+  await reach(page,/start.*(demo|workspace)/i,'#workspace');await invalid(page,page.locator('#start'));
+  await page.locator('#workspace').fill('Canal Docs');await page.locator('#email').fill('invalid-email');await page.locator('#start').click();
+  await ensure('invalid email blocks commitment',async()=>assert.equal(await page.locator('#retry:visible').count(),0));
+  await capture(page,'invalid');await page.locator('#email').fill('mai@example.test');
+  await page.locator('#billing').selectOption('annual');
+  await ensure('annual amount120/year and conditions present',async()=>{
+    const t=await text(page,'#price');assert.equal(await numeric(page,'#price'),120);assert.match(t,/year|annual/i);
+    const body=await text(page,'body');assert.match(body,/14/);assert.match(body,/3/);
+  });
+  await capture(page,'decision');await page.locator('#start').click();
+  await ensure('first valid submit fails with useful retry',()=>eventually(async()=>{
+    assert(await page.locator('#retry').isVisible());assert.match(await text(page,'#feedback'),/retry|try again|not|could|fail/i);
+  }));
+  await ensure('failure retains workspace email billing',async()=>{
+    assert.equal(await page.locator('#workspace').inputValue(),'Canal Docs');assert.equal(await page.locator('#email').inputValue(),'mai@example.test');assert.equal(await page.locator('#billing').inputValue(),'annual');
+  });
+  await capture(page,'failure');await page.locator('#retry').focus();await page.keyboard.press('Enter');
+  await ensure('keyboard retry succeeds with exact plan and honest outcome',()=>eventually(async()=>{
+    const t=await text(page,'#feedback');assert(t.includes('Canal Docs'));assert.match(t,/annual|year/i);assert.match(t,/120/);assert.match(t,/no real|not.*(account|payment)|simulat|demo/i);
+  }));
+  await capture(page,'success');await page.locator('#billing').selectOption('monthly');
+  await ensure('billing edit updates price and clears visible stale annual success',async()=>{
+    assert.equal(await numeric(page,'#price'),12);assert.match(await text(page,'#price'),/month/i);
+    if(await page.locator('#feedback').isVisible())assert(!/annual.*(created|success)|success.*annual/i.test(await text(page,'#feedback')));
+  });
+}
+try{
+  for(const width of [320,390,1440]){
+    trace={id:String(width),width,states:[],checks:[],pageErrors:[],external:[],httpFailures:[]};report.traces.push(trace);
+    const context=await browser.newContext({viewport:{width,height:width===320?740:width===390?844:1000}});const page=await context.newPage();page.setDefaultTimeout(7000);
+    page.on('pageerror',error=>trace.pageErrors.push(error.message));page.on('response',r=>{if(r.status()>=400)trace.httpFailures.push({url:r.url(),status:r.status()});});
+    await page.route('**/*',route=>{if(new URL(route.request().url()).origin!==url){trace.external.push(route.request().url());return route.abort();}return route.continue();});
+    try{
+      assert.equal((await page.goto(`${url}/cells/${cell}/${stage}/index.html`)).status(),200);
+      await page.getByRole('heading',{level:1}).first().waitFor();await capture(page,'entry');
+      await (cell.startsWith('fold')?fold:relay)(page);
+      await ensure('no page errors external requests or broken local assets',async()=>{assert.deepEqual(trace.pageErrors,[]);assert.deepEqual(trace.external,[]);assert.deepEqual(trace.httpFailures,[]);});
+    }catch(error){trace.error=error.stack;report.failures.push(`${trace.id}: ${error.message}`);await page.screenshot({path:path.join(out,`${width}-failure-diagnostic.png`)}).catch(()=>{});}
+    finally{await context.close();}
+  }
+  trace={id:'390-reduced',width:390,states:[],checks:[],pageErrors:[],external:[],httpFailures:[]};report.traces.push(trace);
+  const context=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});const page=await context.newPage();
+  await page.goto(`${url}/cells/${cell}/${stage}/index.html`);await page.getByRole('heading',{level:1}).first().waitFor();await capture(page,'entry');await context.close();
+}finally{
+  report.finishedAt=new Date().toISOString();report.checkCount=report.traces.reduce((n,t)=>n+t.checks.length,0);report.stateCount=report.traces.reduce((n,t)=>n+t.states.length,0);
+  await writeFile(path.join(out,'report.json'),JSON.stringify(report,null,2)+'\n');await browser.close();server.close();
+}
+console.log(JSON.stringify({cell,stage,pass,checks:report.checkCount,states:report.stateCount,failures:report.failures}));if(report.failures.length)process.exitCode=1;

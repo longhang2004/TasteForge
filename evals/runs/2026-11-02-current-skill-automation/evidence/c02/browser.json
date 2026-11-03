@@ -1,0 +1,1820 @@
+{
+  "caseId": "c02",
+  "capturedAtUtc": "2026-11-01T18:26:12.583Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    ".tasteforge/brief.json": "66ebdb4ed3c7c72a4849bb9ca4d4f97751a55bd0b4c8e1cc7c4bb49a670f61ab",
+    ".tasteforge/config.json": "ff07092e7f08b1ac648b99a9e5dbd318b4c9b5e7e1d363be3f6cb837937e6f8d",
+    "app.js": "416c332c775eee480a52fa2d5399fee26f6e579b21b756ff7df783eca0b40cc3",
+    "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+    "implementation-notes.md": "2f846d5041254011581368cd54816524b0cfe1721733b9cd7ff7faf931fa4336",
+    "index.html": "25707a168972e2b3af87fa7cb232b1836bb063343aeee57d05e6624b9d8e9236",
+    "styles.css": "9a25ec2d390d2f997fbd99c4d01997bff571f547e199099faf6b1e0eba89e389",
+    "task.md": "c7facc61f4b8f90b39c2c709b5ac70f8f01eaf3a0a2b5629f2b51b66d3d4a541",
+    "UX_PLAN.md": "ee83cd8df647520dd66e623bd7381d98d091ced326e5a93214b2372cde7e46da"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-neutral-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-review.png",
+        "desktop-review-viewport.png",
+        "desktop-neutral-review.png",
+        "desktop-failure.png",
+        "desktop-failure-viewport.png",
+        "desktop-neutral-failure.png",
+        "desktop-success.png",
+        "desktop-success-viewport.png",
+        "desktop-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "The simulation couldn’t complete.\n\nThis is a recoverable simulated failure. Your details are saved. No money moved. Try again with the same details.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":\"400\",\"recipient\":\"Nguyễn Thị Minh Anh Trường\",\"method\":\"retained input elements\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "Simulated transfer complete.\n\nYour practice transfer succeeded. No money was moved and no real account was connected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in success",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N↗Northline TransferSimulation\n\n  i Simulation with fictional data. No money is ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N↗Northline TransferSimulation\n\n  i Simulation with fictional data. No money is ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 200,
+              "y": 459.375,
+              "width": 525.140625,
+              "height": 52,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 200,
+              "y": 723.5625,
+              "width": 525.140625,
+              "height": 61,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 820.140625,
+              "y": 869.78125,
+              "width": 390.84375,
+              "height": 49,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1078,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 200,
+              "y": 459.375,
+              "width": 525.140625,
+              "height": 52,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 200,
+              "y": 723.5625,
+              "width": 525.140625,
+              "height": 61,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 820.140625,
+              "y": 869.78125,
+              "width": 390.84375,
+              "height": 49,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1078,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 200,
+              "y": 459.375,
+              "width": 525.140625,
+              "height": 52,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 200,
+              "y": 723.5625,
+              "width": 525.140625,
+              "height": 61,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 820.140625,
+              "y": 869.78125,
+              "width": 390.84375,
+              "height": 49,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1078,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "Edit details",
+              "x": 833.84375,
+              "y": 405.6875,
+              "width": 93.15625,
+              "height": 48,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "confirm-transfer",
+              "text": "Confirm simulated transfer\n→",
+              "x": 233,
+              "y": 993.78125,
+              "width": 694,
+              "height": 49,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1179,
+          "scrollY": 0
+        },
+        "failure": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "Edit details",
+              "x": 833.84375,
+              "y": 405.6875,
+              "width": 93.15625,
+              "height": 48,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "The simulation couldn’t complete.\n\nThis is a recoverable simulated failure. Your details are saved. No money moved. Try again with the same ",
+              "x": 233,
+              "y": 942.78125,
+              "width": 694,
+              "height": 107.5,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "retry-transfer",
+              "text": "Retry simulated transfer\n↻",
+              "x": 233,
+              "y": 1118.28125,
+              "width": 694,
+              "height": 49,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1303,
+          "scrollY": 0
+        },
+        "success": {
+          "controls": [
+            {
+              "testId": "transfer-status",
+              "text": "Simulated transfer complete.\n\nYour practice transfer succeeded. No money was moved and no real account was connected.",
+              "x": 233,
+              "y": 919.96875,
+              "width": 694,
+              "height": 86.5,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1178,
+          "scrollY": 0
+        }
+      },
+      "initialText": "N\n↗\nNorthline\nTransfer\nSIMULATION\n\ni\nSimulation with fictional data. No money is moved and no real account is connected.\n\n1\nTransfer details\n2\nReview & confirm\n\nUSD → VND\n\nSet up your transfer.\n\nStart with the details. You’ll check everything before confirming.\n\n01\nWho are you sending to?\nRecipient’s full name\n\nCheck the spelling, including Vietnamese diacritics.\n\nVN\nDestination\nViệt Nam\nVND\n02\nHow much will you send?\nYou send\nUSD\n\nFrom USD 1.00 to USD 1,000.00. Fee added separately.\n\nSimulated payment source\nEveryday USD ••1042\nAlex Morgan\n\nNO HIDDEN ARITHMETIC\n\nYour transfer at a glance\nYou send\nUSD 250.00\nTransfer fee Flat fee\nUSD 2.50\nTotal debited\nUSD 252.50\nRecipient receives\n6,250,000 VND\n1 USD = 25,000 VND\n◷\nEstimated delivery\n\nBy 3 November 2026\n\nIllustrative estimate\nReview transfer\n→\n\nYou can still edit your details on the next step.\n\n↗\nA practice transfer, from start to finish.\nNorthline Transfer · Fictional service",
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1078,
+        "title": "Simulated transfer · Northline Transfer",
+        "h1": [
+          "Set up your transfer.",
+          "Review your transfer."
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "failure": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "success": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size",
+          "valid-lang"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-hidden=\"true\">↻</span>",
+                "target": [
+                  "#retry-button > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size",
+          "valid-lang"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "target-size",
+          "valid-lang"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-neutral-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-review.png",
+        "mobile-review-viewport.png",
+        "mobile-neutral-review.png",
+        "mobile-failure.png",
+        "mobile-failure-viewport.png",
+        "mobile-neutral-failure.png",
+        "mobile-success.png",
+        "mobile-success-viewport.png",
+        "mobile-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "The simulation couldn’t complete.\n\nThis is a recoverable simulated failure. Your details are saved. No money moved. Try again with the same details.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":\"400\",\"recipient\":\"Nguyễn Thị Minh Anh Trường\",\"method\":\"retained input elements\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "Simulated transfer complete.\n\nYour practice transfer succeeded. No money was moved and no real account was connected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in success",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N↗Northline TransferSimulation\n\n  i Simulation with fictional data. No money is ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N↗Northline TransferSimulation\n\n  i Simulation with fictional data. No money is ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 22,
+              "y": 429.796875,
+              "width": 346,
+              "height": 52,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 22,
+              "y": 689.59375,
+              "width": 346,
+              "height": 61,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 1364.078125,
+              "width": 300,
+              "height": 48,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1584,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 22,
+              "y": 429.796875,
+              "width": 346,
+              "height": 52,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 22,
+              "y": 689.59375,
+              "width": 346,
+              "height": 61,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 1364.078125,
+              "width": 300,
+              "height": 48,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1584,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 22,
+              "y": 429.796875,
+              "width": 346,
+              "height": 52,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 22,
+              "y": 689.59375,
+              "width": 346,
+              "height": 61,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 1364.078125,
+              "width": 300,
+              "height": 48,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1584,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "Edit details",
+              "x": 253.84375,
+              "y": 409.5,
+              "width": 93.15625,
+              "height": 48,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "confirm-transfer",
+              "text": "Confirm simulated transfer\n→",
+              "x": 43,
+              "y": 1027.59375,
+              "width": 304,
+              "height": 48,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1219,
+          "scrollY": 0
+        },
+        "failure": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "Edit details",
+              "x": 253.84375,
+              "y": 409.5,
+              "width": 93.15625,
+              "height": 48,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "The simulation couldn’t complete.\n\nThis is a recoverable simulated failure. Your details are saved. No money moved. Try again with the same ",
+              "x": 43,
+              "y": 961.59375,
+              "width": 304,
+              "height": 175,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "retry-transfer",
+              "text": "Retry simulated transfer\n↻",
+              "x": 43,
+              "y": 1219.59375,
+              "width": 304,
+              "height": 48,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1411,
+          "scrollY": 0
+        },
+        "success": {
+          "controls": [
+            {
+              "testId": "transfer-status",
+              "text": "Simulated transfer complete.\n\nYour practice transfer succeeded. No money was moved and no real account was connected.",
+              "x": 43,
+              "y": 935.984375,
+              "width": 304,
+              "height": 154,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1269,
+          "scrollY": 0
+        }
+      },
+      "initialText": "N\n↗\nNorthline\nTransfer\nSIMULATION\n\ni\nSimulation with fictional data. No money is moved and no real account is connected.\n\n1\nTransfer details\n2\nReview & confirm\n\nUSD → VND\n\nSet up your transfer.\n\nStart with the details. You’ll check everything before confirming.\n\n01\nWho are you sending to?\nRecipient’s full name\n\nCheck the spelling, including Vietnamese diacritics.\n\nVN\nDestination\nViệt Nam\nVND\n02\nHow much will you send?\nYou send\nUSD\n\nFrom USD 1.00 to USD 1,000.00. Fee added separately.\n\nSimulated payment source\nEveryday USD ••1042\nAlex Morgan\n\nNO HIDDEN ARITHMETIC\n\nYour transfer at a glance\nYou send\nUSD 250.00\nTransfer fee Flat fee\nUSD 2.50\nTotal debited\nUSD 252.50\nRecipient receives\n6,250,000 VND\n1 USD = 25,000 VND\n◷\nEstimated delivery\n\nBy 3 November 2026\n\nIllustrative estimate\nReview transfer\n→\n\nYou can still edit your details on the next step.\n\n↗\nA practice transfer, from start to finish.\nNorthline Transfer · Fictional service",
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 1584,
+        "title": "Simulated transfer · Northline Transfer",
+        "h1": [
+          "Set up your transfer.",
+          "Review your transfer."
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "failure": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "success": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size",
+          "valid-lang"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-hidden=\"true\">↻</span>",
+                "target": [
+                  "#retry-button > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size",
+          "valid-lang"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "target-size",
+          "valid-lang"
+        ]
+      }
+    },
+    "narrow320": {
+      "viewport": {
+        "name": "narrow320",
+        "width": 320,
+        "height": 740
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "narrow320-initial.png",
+        "narrow320-full.png",
+        "narrow320-neutral-full.png",
+        "narrow320-keyboard-focus.png",
+        "narrow320-review.png",
+        "narrow320-review-viewport.png",
+        "narrow320-neutral-review.png",
+        "narrow320-failure.png",
+        "narrow320-failure-viewport.png",
+        "narrow320-neutral-failure.png",
+        "narrow320-success.png",
+        "narrow320-success-viewport.png",
+        "narrow320-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "The simulation couldn’t complete.\n\nThis is a recoverable simulated failure. Your details are saved. No money moved. Try again with the same details.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":\"400\",\"recipient\":\"Nguyễn Thị Minh Anh Trường\",\"method\":\"retained input elements\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "Simulated transfer complete.\n\nYour practice transfer succeeded. No money was moved and no real account was connected.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in success",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N↗Northline TransferSimulation\n\n  i Simulation with fictional data. No money is ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "N↗Northline TransferSimulation\n\n  i Simulation with fictional data. No money is ",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 22,
+              "y": 475.796875,
+              "width": 276,
+              "height": 52,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 22,
+              "y": 753.59375,
+              "width": 276,
+              "height": 61,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 1533.375,
+              "width": 230,
+              "height": 48,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1769,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 22,
+              "y": 475.796875,
+              "width": 276,
+              "height": 52,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 22,
+              "y": 753.59375,
+              "width": 276,
+              "height": 61,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 1533.375,
+              "width": 230,
+              "height": 48,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1769,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 22,
+              "y": 475.796875,
+              "width": 276,
+              "height": 52,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 22,
+              "y": 753.59375,
+              "width": 276,
+              "height": 61,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 1533.375,
+              "width": 230,
+              "height": 48,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1769,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "Edit details",
+              "x": 189.765625,
+              "y": 419.5,
+              "width": 87.234375,
+              "height": 49,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "confirm-transfer",
+              "text": "Confirm simulated transfer\n→",
+              "x": 43,
+              "y": 1167.390625,
+              "width": 234,
+              "height": 67,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1377,
+          "scrollY": 0
+        },
+        "failure": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "Edit details",
+              "x": 189.765625,
+              "y": 419.5,
+              "width": 87.234375,
+              "height": 49,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "The simulation couldn’t complete.\n\nThis is a recoverable simulated failure. Your details are saved. No money moved. Try again with the same ",
+              "x": 43,
+              "y": 1113.390625,
+              "width": 234,
+              "height": 196,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "retry-transfer",
+              "text": "Retry simulated transfer\n↻",
+              "x": 43,
+              "y": 1392.390625,
+              "width": 234,
+              "height": 67,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1602,
+          "scrollY": 0
+        },
+        "success": {
+          "controls": [
+            {
+              "testId": "transfer-status",
+              "text": "Simulated transfer complete.\n\nYour practice transfer succeeded. No money was moved and no real account was connected.",
+              "x": 43,
+              "y": 1086.78125,
+              "width": 234,
+              "height": 175,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1441,
+          "scrollY": 0
+        }
+      },
+      "initialText": "N\n↗\nNorthline\nTransfer\nSIMULATION\n\ni\nSimulation with fictional data. No money is moved and no real account is connected.\n\n1\nTransfer details\n2\nReview & confirm\n\nUSD → VND\n\nSet up your transfer.\n\nStart with the details. You’ll check everything before confirming.\n\n01\nWho are you sending to?\nRecipient’s full name\n\nCheck the spelling, including Vietnamese diacritics.\n\nVN\nDestination\nViệt Nam\nVND\n02\nHow much will you send?\nYou send\nUSD\n\nFrom USD 1.00 to USD 1,000.00. Fee added separately.\n\nSimulated payment source\nEveryday USD ••1042\nAlex Morgan\n\nNO HIDDEN ARITHMETIC\n\nYour transfer at a glance\nYou send\nUSD 250.00\nTransfer fee Flat fee\nUSD 2.50\nTotal debited\nUSD 252.50\nRecipient receives\n6,250,000 VND\n1 USD = 25,000 VND\n◷\nEstimated delivery\n\nBy 3 November 2026\n\nIllustrative estimate\nReview transfer\n→\n\nYou can still edit your details on the next step.\n\n↗\nA practice transfer, from start to finish.\nNorthline Transfer · Fictional service",
+      "layout": {
+        "viewportWidth": 320,
+        "scrollWidth": 320,
+        "pageHeight": 1769,
+        "title": "Simulated transfer · Northline Transfer",
+        "h1": [
+          "Set up your transfer.",
+          "Review your transfer."
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "failure": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "success": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size",
+          "valid-lang"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span aria-hidden=\"true\">↻</span>",
+                "target": [
+                  "#retry-button > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size",
+          "valid-lang"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [],
+        "incomplete": [],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "target-size",
+          "valid-lang"
+        ]
+      }
+    }
+  },
+  "supportingNarrow320": {
+    "viewportWidth": 320,
+    "scrollWidth": 320,
+    "pageHeight": 1769,
+    "title": "Simulated transfer · Northline Transfer",
+    "h1": [
+      "Set up your transfer.",
+      "Review your transfer."
+    ],
+    "mainCount": 1,
+    "htmlLang": "en",
+    "bodyFont": "\"Segoe UI\", Arial, sans-serif",
+    "scope": "Full task trace at 320×740 is recorded under viewports.narrow320; not merely an initial-page screenshot."
+  }
+}

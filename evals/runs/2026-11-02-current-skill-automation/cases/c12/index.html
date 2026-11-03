@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Field Kiln — Everyday Teapot</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Fictional shop simulation banner -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <span class="shop-badge">Demonstration Artifact</span>
+      <p class="site-header__disclosure" id="banner-disclosure">
+        Fictional shop and illustrative product, price, stock, delivery, and returns.
+      </p>
+    </div>
+  </header>
+
+  <main id="app" class="product-page">
+    <div class="product-container">
+      
+      <!-- Left Column: Media & Physical Craft Details -->
+      <section class="product-gallery" aria-label="Product Media and Craft Specifications">
+        <div class="product-gallery__image-wrap">
+          <img 
+            src="assets/teapot.svg" 
+            alt="Handmade Everyday Teapot in Glazed Stoneware" 
+            class="product-image"
+            width="900" 
+            height="700"
+          >
+          <p class="product-gallery__caption" id="image-caption">
+            Original vector illustrations of a fictional sample product; these are not photographs.
+          </p>
+        </div>
+
+        <div class="craft-specifications" aria-labelledby="specs-heading">
+          <h2 id="specs-heading" class="section-subheading">Craft &amp; Material Details</h2>
+          <dl class="specs-grid">
+            <div class="spec-item">
+              <dt class="spec-label">Material</dt>
+              <dd class="spec-value" id="spec-material">Glazed stoneware</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Capacity</dt>
+              <dd class="spec-value" id="spec-capacity">650 ml</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Dimensions</dt>
+              <dd class="spec-value" id="spec-dimensions">16 cm wide × 12 cm high</dd>
+            </div>
+            <div class="spec-item spec-item--full">
+              <dt class="spec-label">Care Instructions</dt>
+              <dd class="spec-value" id="spec-care">Hand wash. Avoid sudden temperature changes. Not for stovetop use.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Right Column: Decision Workbench & Purchase Rail -->
+      <section class="product-purchase" aria-label="Purchase Configuration">
+        <div class="product-header">
+          <p class="brand-name" id="product-brand">Field Kiln</p>
+          <h1 class="product-title" id="product-title">Everyday Teapot</h1>
+          <div class="product-price-row">
+            <span class="price-value" id="unit-price">$68.00 USD</span>
+            <span class="price-qualifier">per piece</span>
+          </div>
+        </div>
+
+        <form id="purchase-form" class="purchase-form" onsubmit="return false;">
+          
+          <!-- Glaze Selection -->
+          <fieldset class="form-group glaze-selector">
+            <legend class="form-label">
+              Glaze Variant: <span id="selected-glaze-label" class="selected-variant-name">Iron</span>
+            </legend>
+            <div class="glaze-options" role="radiogroup" aria-labelledby="selected-glaze-label">
+              
+              <!-- Iron Variant -->
+              <button 
+                type="button" 
+                class="glaze-btn glaze-btn--active" 
+                id="btn-glaze-iron" 
+                data-testid="glaze-iron" 
+                data-variant-id="iron"
+                role="radio" 
+                aria-checked="true"
+              >
+                <span class="glaze-swatch glaze-swatch--iron" aria-hidden="true"></span>
+                <span class="glaze-info">
+                  <span class="glaze-name">Iron</span>
+                  <span class="glaze-stock" id="stock-iron">4 in stock</span>
+                </span>
+              </button>
+
+              <!-- Ash Variant (Unavailable) -->
+              <button 
+                type="button" 
+                class="glaze-btn glaze-btn--out-of-stock" 
+                id="btn-glaze-ash" 
+                data-testid="glaze-ash" 
+                data-variant-id="ash"
+                role="radio" 
+                aria-checked="false"
+                aria-disabled="true"
+              >
+                <span class="glaze-swatch glaze-swatch--ash" aria-hidden="true"></span>
+                <span class="glaze-info">
+                  <span class="glaze-name">Ash</span>
+                  <span class="glaze-stock glaze-stock--out" id="stock-ash">Unavailable (0 in stock)</span>
+                </span>
+              </button>
+
+              <!-- Sand Variant -->
+              <button 
+                type="button" 
+                class="glaze-btn" 
+                id="btn-glaze-sand" 
+                data-testid="glaze-sand" 
+                data-variant-id="sand"
+                role="radio" 
+                aria-checked="false"
+              >
+                <span class="glaze-swatch glaze-swatch--sand" aria-hidden="true"></span>
+                <span class="glaze-info">
+                  <span class="glaze-name">Sand</span>
+                  <span class="glaze-stock" id="stock-sand">7 in stock</span>
+                </span>
+              </button>
+
+            </div>
+          </fieldset>
+
+          <!-- Quantity Selection -->
+          <div class="form-group quantity-selector">
+            <label for="quantity-input" class="form-label">Quantity (1–4)</label>
+            <div class="quantity-input-wrap">
+              <input 
+                type="number" 
+                id="quantity-input" 
+                name="quantity" 
+                data-testid="quantity" 
+                min="1" 
+                max="4" 
+                value="1" 
+                class="quantity-field"
+                aria-label="Quantity"
+              >
+              <span class="quantity-limit-hint">Limit 4 per customer</span>
+            </div>
+          </div>
+
+          <!-- Total Calculation Ledger (Discoverable before purchase) -->
+          <div class="order-ledger" aria-label="Order summary breakdown">
+            <div class="ledger-row">
+              <span class="ledger-label">Item subtotal (<span id="ledger-qty-count">1</span> × $68.00):</span>
+              <span class="ledger-value" id="ledger-subtotal">$68.00 USD</span>
+            </div>
+            <div class="ledger-row">
+              <span class="ledger-label">Flat-rate shipping:</span>
+              <span class="ledger-value" id="ledger-shipping">$8.00 USD</span>
+            </div>
+            <div class="ledger-row ledger-row--total">
+              <span class="ledger-label-total">Total purchase cost:</span>
+              <span class="ledger-value-total" id="order-total">USD 76.00</span>
+            </div>
+            <p class="ledger-shipping-note">Shipping-inclusive total updated live based on selected quantity.</p>
+          </div>
+
+          <!-- Add to Cart Simulation Button -->
+          <div class="action-wrap">
+            <button 
+              type="button" 
+              id="add-to-cart-btn" 
+              data-testid="add-to-cart" 
+              class="btn-purchase"
+            >
+              Add to cart
+            </button>
+          </div>
+
+          <!-- Visible Feedback Confirmation Region -->
+          <div 
+            id="cart-status" 
+            data-testid="cart-status" 
+            class="cart-status" 
+            role="status" 
+            aria-live="polite"
+          ></div>
+
+        </form>
+
+        <!-- Practical Delivery & Return Policies -->
+        <div class="practical-policies" aria-labelledby="policies-heading">
+          <h2 id="policies-heading" class="policies-heading">Shipping, Delivery &amp; Returns</h2>
+          <div class="policy-item">
+            <h3 class="policy-title">Dispatch &amp; Delivery</h3>
+            <p class="policy-text" id="policy-delivery">
+              Dispatch in 2 business days; illustrative domestic transit 3–5 business days.
+            </p>
+          </div>
+          <div class="policy-item">
+            <h3 class="policy-title">Return Policy</h3>
+            <p class="policy-text" id="policy-returns">
+              Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.
+            </p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="footer-disclosure" id="footer-disclosure">
+        Field Kiln is a fictional workshop created for user experience evaluation. No real transactions or shipments occur.
+      </p>
+      <p class="footer-disclosure-secondary">
+        Original vector illustrations of a fictional sample product; these are not photographs.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

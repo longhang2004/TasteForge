@@ -1,0 +1,45 @@
+{
+  "cell": "listen-B",
+  "stage": "initial",
+  "pass": "initial-01",
+  "startedAt": "2026-11-02T08:40:03.695Z",
+  "sourceSha256": "5e96e7bf139258038cb9ca5f1e10df76faf833d74ad537f780d6e494ae70d499",
+  "harnessSha256": "3f940f8303d5898a395788541153f7c82c519a7289541b9315553af4852cf0e9",
+  "taskHarnessSha256": "6d45a51f7fd031d80d1b220da47c8b5c1f20e3e0fd1fa1a4ff915c23b939bd6f",
+  "traces": [
+    {
+      "width": 320,
+      "states": [],
+      "checks": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "locator.waitFor: Error: strict mode violation: locator('h1') resolved to 2 elements:\n    1) <h1 id=\"collection-title\">…</h1> aka getByRole('heading', { name: 'At the water’s edge.' })\n    2) <h1 tabindex=\"-1\" id=\"detail-title\"></h1> aka locator('#detail-title')\n\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n\n    at runCell (/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-quality-identity-forward-test/tools/browser.mjs:56:34)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-quality-identity-forward-test/tools/check-listen-b.mjs:5:16"
+    },
+    {
+      "width": 390,
+      "states": [],
+      "checks": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "locator.waitFor: Error: strict mode violation: locator('h1') resolved to 2 elements:\n    1) <h1 id=\"collection-title\">…</h1> aka getByRole('heading', { name: 'At the water’s edge.' })\n    2) <h1 tabindex=\"-1\" id=\"detail-title\"></h1> aka locator('#detail-title')\n\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n\n    at runCell (/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-quality-identity-forward-test/tools/browser.mjs:56:34)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-quality-identity-forward-test/tools/check-listen-b.mjs:5:16"
+    },
+    {
+      "width": 1440,
+      "states": [],
+      "checks": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "error": "locator.waitFor: Error: strict mode violation: locator('h1') resolved to 2 elements:\n    1) <h1 id=\"collection-title\">…</h1> aka getByRole('heading', { name: 'At the water’s edge.' })\n    2) <h1 tabindex=\"-1\" id=\"detail-title\"></h1> aka locator('#detail-title')\n\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n\n    at runCell (/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-quality-identity-forward-test/tools/browser.mjs:56:34)\n    at async file:///mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-quality-identity-forward-test/tools/check-listen-b.mjs:5:16"
+    }
+  ],
+  "failures": [
+    "320: locator.waitFor: Error: strict mode violation: locator('h1') resolved to 2 elements:\n    1) <h1 id=\"collection-title\">…</h1> aka getByRole('heading', { name: 'At the water’s edge.' })\n    2) <h1 tabindex=\"-1\" id=\"detail-title\"></h1> aka locator('#detail-title')\n\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n",
+    "390: locator.waitFor: Error: strict mode violation: locator('h1') resolved to 2 elements:\n    1) <h1 id=\"collection-title\">…</h1> aka getByRole('heading', { name: 'At the water’s edge.' })\n    2) <h1 tabindex=\"-1\" id=\"detail-title\"></h1> aka locator('#detail-title')\n\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n",
+    "1440: locator.waitFor: Error: strict mode violation: locator('h1') resolved to 2 elements:\n    1) <h1 id=\"collection-title\">…</h1> aka getByRole('heading', { name: 'At the water’s edge.' })\n    2) <h1 tabindex=\"-1\" id=\"detail-title\"></h1> aka locator('#detail-title')\n\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n"
+  ],
+  "providerTokens": null,
+  "scope": "Automated browser/axe + natural viewport; human tests deferred",
+  "chromium": "156.0.8078.4",
+  "finishedAt": "2026-11-02T08:40:05.939Z",
+  "checks": 0
+}

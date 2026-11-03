@@ -1,0 +1,100 @@
+{
+  "label": "320-return",
+  "capturedAtUtc": "2026-11-02T08:41:16.784Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 320,
+    "height": 740
+  },
+  "scroll": {
+    "x": 0,
+    "y": 459
+  },
+  "document": {
+    "width": 320,
+    "height": 1199
+  },
+  "activeElement": {
+    "tag": "BUTTON",
+    "id": "open-EL-03",
+    "testId": null,
+    "rect": {
+      "x": 67,
+      "y": 389.8125,
+      "width": 235,
+      "height": 78.75,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[role=alert]",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "[role=status]",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 18,
+          "y": 291.8125,
+          "width": 123.875,
+          "height": 33,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "button:focus",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 67,
+          "y": 389.8125,
+          "width": 235,
+          "height": 78.75,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "h1:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h2:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 459
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 459
+  }
+}

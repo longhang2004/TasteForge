@@ -1,0 +1,53 @@
+{
+  "status": "failed",
+  "node": "v24.22.0",
+  "commands": [
+    {
+      "test": "workspace",
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "startedAtUtc": "2026-11-02T04:35:49.070851+00:00",
+      "durationSeconds": 259.79,
+      "exitCode": 1
+    },
+    {
+      "test": "packed-install",
+      "command": [
+        "pnpm",
+        "pack:smoke"
+      ],
+      "startedAtUtc": "2026-11-02T04:40:08.869761+00:00",
+      "durationSeconds": 22.799,
+      "exitCode": 0
+    }
+  ],
+  "skillLocalLinks": "passed",
+  "packagedSkillFiles": [
+    "SKILL.md",
+    "references/accessibility.md",
+    "references/anti-patterns.md",
+    "references/catalog-use.md",
+    "references/design-principles.md",
+    "references/effects-and-composition.md",
+    "references/interaction-motion.md",
+    "references/layout-archetypes.md",
+    "references/layout-composition.md",
+    "references/reference-sources.md",
+    "references/render-checks.md",
+    "references/surface-purpose.md",
+    "references/typography.md",
+    "references/ux-plan-template.md",
+    "references/visual-hierarchy.md",
+    "scripts/check-ui.mjs",
+    "workflows/audit-ui.md",
+    "workflows/create-ui.md",
+    "workflows/redesign-ui.md",
+    "workflows/research-and-plan.md",
+    "workflows/structure-and-revise.md",
+    "workflows/targeted-refinement.md"
+  ],
+  "helperSha256": "988d67ba024da04aa5bb37f51c581dcc12a779999a4f2fd562df22791a407c59",
+  "scope": "Source/packaging regression; not a general UX or token-efficiency claim."
+}

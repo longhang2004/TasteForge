@@ -1,0 +1,516 @@
+{
+  "sourceCommit": "449c90bdbd5ba3cfb3795a91dcc45bd53cbdc602",
+  "runId": "2026-11-02-current-skill-automation",
+  "plannedCells": 20,
+  "actualUIs": 12,
+  "matchedPairs": 6,
+  "viewportTraces": 36,
+  "rawPassed": 552,
+  "rawTotal": 558,
+  "nonDiagnosticPassed": 534,
+  "nonDiagnosticTotal": 540,
+  "allPrimaryTaskTracesCompleted": true,
+  "quotaBlockedCells": 8,
+  "cases": [
+    {
+      "id": "c01",
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "promptId": "fintech-transfer",
+      "condition": "no-skill",
+      "rawPassed": 63,
+      "rawTotal": 63,
+      "nonDiagnosticPassed": 63,
+      "nonDiagnosticTotal": 63,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [],
+      "axeRulesAnyCapturedStage": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "c02",
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "promptId": "fintech-transfer",
+      "condition": "current-skill",
+      "rawPassed": 63,
+      "rawTotal": 63,
+      "nonDiagnosticPassed": 63,
+      "nonDiagnosticTotal": 63,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [],
+      "axeRulesAnyCapturedStage": []
+    },
+    {
+      "id": "c03",
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "promptId": "commerce-craft",
+      "condition": "no-skill",
+      "rawPassed": 30,
+      "rawTotal": 30,
+      "nonDiagnosticPassed": 27,
+      "nonDiagnosticTotal": 27,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [],
+      "axeRulesAnyCapturedStage": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "c04",
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "promptId": "commerce-craft",
+      "condition": "current-skill",
+      "rawPassed": 27,
+      "rawTotal": 30,
+      "nonDiagnosticPassed": 24,
+      "nonDiagnosticTotal": 27,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [
+        {
+          "viewport": "narrow320",
+          "name": "No document horizontal overflow",
+          "status": "fail",
+          "observation": "339px document / 320px viewport",
+          "kind": "contract"
+        },
+        {
+          "viewport": "narrow320",
+          "name": "No horizontal overflow in review",
+          "status": "fail",
+          "observation": "339px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "viewport": "narrow320",
+          "name": "No horizontal overflow in cart",
+          "status": "fail",
+          "observation": "339px document / 320px viewport",
+          "kind": "geometry"
+        }
+      ],
+      "axeRulesAnyCapturedStage": []
+    },
+    {
+      "id": "c05",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "promptId": "fintech-transfer",
+      "condition": "no-skill",
+      "rawPassed": 63,
+      "rawTotal": 63,
+      "nonDiagnosticPassed": 63,
+      "nonDiagnosticTotal": 63,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [],
+      "axeRulesAnyCapturedStage": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "c06",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "promptId": "fintech-transfer",
+      "condition": "current-skill",
+      "rawPassed": 63,
+      "rawTotal": 63,
+      "nonDiagnosticPassed": 63,
+      "nonDiagnosticTotal": 63,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [],
+      "axeRulesAnyCapturedStage": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "c07",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "promptId": "commerce-craft",
+      "condition": "no-skill",
+      "rawPassed": 30,
+      "rawTotal": 30,
+      "nonDiagnosticPassed": 27,
+      "nonDiagnosticTotal": 27,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [],
+      "axeRulesAnyCapturedStage": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "c08",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "promptId": "commerce-craft",
+      "condition": "current-skill",
+      "rawPassed": 30,
+      "rawTotal": 30,
+      "nonDiagnosticPassed": 27,
+      "nonDiagnosticTotal": 27,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [],
+      "axeRulesAnyCapturedStage": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "c09",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "promptId": "fintech-transfer",
+      "condition": "no-skill",
+      "rawPassed": 63,
+      "rawTotal": 63,
+      "nonDiagnosticPassed": 63,
+      "nonDiagnosticTotal": 63,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [],
+      "axeRulesAnyCapturedStage": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "c10",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "promptId": "fintech-transfer",
+      "condition": "current-skill",
+      "rawPassed": 63,
+      "rawTotal": 63,
+      "nonDiagnosticPassed": 63,
+      "nonDiagnosticTotal": 63,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [],
+      "axeRulesAnyCapturedStage": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "c11",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "promptId": "commerce-craft",
+      "condition": "no-skill",
+      "rawPassed": 27,
+      "rawTotal": 30,
+      "nonDiagnosticPassed": 24,
+      "nonDiagnosticTotal": 27,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [
+        {
+          "viewport": "narrow320",
+          "name": "No document horizontal overflow",
+          "status": "fail",
+          "observation": "349px document / 320px viewport",
+          "kind": "contract"
+        },
+        {
+          "viewport": "narrow320",
+          "name": "No horizontal overflow in review",
+          "status": "fail",
+          "observation": "349px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "viewport": "narrow320",
+          "name": "No horizontal overflow in cart",
+          "status": "fail",
+          "observation": "349px document / 320px viewport",
+          "kind": "geometry"
+        }
+      ],
+      "axeRulesAnyCapturedStage": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "c12",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "promptId": "commerce-craft",
+      "condition": "current-skill",
+      "rawPassed": 30,
+      "rawTotal": 30,
+      "nonDiagnosticPassed": 27,
+      "nonDiagnosticTotal": 27,
+      "allTaskTracesCompleted": true,
+      "failedChecks": [],
+      "axeRulesAnyCapturedStage": []
+    }
+  ],
+  "pairs": [
+    {
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "task": "fintech-transfer",
+      "baseline": "c01",
+      "assisted": "c02",
+      "pairedDifferencesByReviewer": {
+        "r1": {
+          "entry_priority": 1,
+          "information_grouping": 1,
+          "decision_context": 0,
+          "narrow_context": 0,
+          "recovery_evidence": null,
+          "composition_purpose": 1
+        },
+        "r2": {
+          "entry_priority": 0,
+          "information_grouping": 0,
+          "decision_context": 0,
+          "narrow_context": 0,
+          "recovery_evidence": null,
+          "composition_purpose": 0
+        }
+      }
+    },
+    {
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "task": "commerce-craft",
+      "baseline": "c03",
+      "assisted": "c04",
+      "pairedDifferencesByReviewer": {
+        "r1": {
+          "entry_priority": 0,
+          "information_grouping": 1,
+          "decision_context": 1,
+          "narrow_context": 1,
+          "recovery_evidence": null,
+          "composition_purpose": 0
+        },
+        "r2": {
+          "entry_priority": 0,
+          "information_grouping": 1,
+          "decision_context": 2,
+          "narrow_context": 0,
+          "recovery_evidence": null,
+          "composition_purpose": 0
+        }
+      }
+    },
+    {
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "task": "fintech-transfer",
+      "baseline": "c05",
+      "assisted": "c06",
+      "pairedDifferencesByReviewer": {
+        "r1": {
+          "entry_priority": 1,
+          "information_grouping": 0,
+          "decision_context": 0,
+          "narrow_context": 1,
+          "recovery_evidence": null,
+          "composition_purpose": 0
+        },
+        "r2": {
+          "entry_priority": 0,
+          "information_grouping": 1,
+          "decision_context": 0,
+          "narrow_context": 1,
+          "recovery_evidence": 1,
+          "composition_purpose": 1
+        }
+      }
+    },
+    {
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "task": "commerce-craft",
+      "baseline": "c07",
+      "assisted": "c08",
+      "pairedDifferencesByReviewer": {
+        "r1": {
+          "entry_priority": 0,
+          "information_grouping": 1,
+          "decision_context": 0,
+          "narrow_context": 0,
+          "recovery_evidence": null,
+          "composition_purpose": 1
+        },
+        "r2": {
+          "entry_priority": 0,
+          "information_grouping": 1,
+          "decision_context": 1,
+          "narrow_context": -1,
+          "recovery_evidence": null,
+          "composition_purpose": 1
+        }
+      }
+    },
+    {
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "task": "fintech-transfer",
+      "baseline": "c09",
+      "assisted": "c10",
+      "pairedDifferencesByReviewer": {
+        "r1": {
+          "entry_priority": 1,
+          "information_grouping": 0,
+          "decision_context": 0,
+          "narrow_context": 0,
+          "recovery_evidence": null,
+          "composition_purpose": 1
+        },
+        "r3": {
+          "entry_priority": 1,
+          "information_grouping": 0,
+          "decision_context": 0,
+          "narrow_context": 1,
+          "recovery_evidence": 0,
+          "composition_purpose": 0
+        }
+      }
+    },
+    {
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "task": "commerce-craft",
+      "baseline": "c11",
+      "assisted": "c12",
+      "pairedDifferencesByReviewer": {
+        "r1": {
+          "entry_priority": 0,
+          "information_grouping": 0,
+          "decision_context": 1,
+          "narrow_context": 0,
+          "recovery_evidence": null,
+          "composition_purpose": 0
+        },
+        "r3": {
+          "entry_priority": 0,
+          "information_grouping": 0,
+          "decision_context": 0,
+          "narrow_context": 0,
+          "recovery_evidence": null,
+          "composition_purpose": 0
+        }
+      }
+    }
+  ],
+  "dimensionSummary": {
+    "entry_priority": {
+      "positive": 4,
+      "tie": 8,
+      "negative": 0,
+      "unassessed": 0
+    },
+    "information_grouping": {
+      "positive": 6,
+      "tie": 6,
+      "negative": 0,
+      "unassessed": 0
+    },
+    "decision_context": {
+      "positive": 4,
+      "tie": 8,
+      "negative": 0,
+      "unassessed": 0
+    },
+    "narrow_context": {
+      "positive": 4,
+      "tie": 7,
+      "negative": 1,
+      "unassessed": 0
+    },
+    "recovery_evidence": {
+      "positive": 1,
+      "tie": 1,
+      "negative": 0,
+      "unassessed": 10
+    },
+    "composition_purpose": {
+      "positive": 5,
+      "tie": 7,
+      "negative": 0,
+      "unassessed": 0
+    }
+  },
+  "reviewAgreement": {
+    "numericDisagreements": 28,
+    "bothAssessedCells": 62,
+    "assessmentAvailabilityDisagreements": 2,
+    "panels": {
+      "a": [
+        "r1",
+        "r2"
+      ],
+      "b": [
+        "r1",
+        "r3"
+      ]
+    }
+  },
+  "antigravityRuntime": [
+    {
+      "case": "c09",
+      "condition": "no-skill",
+      "task": "fintech-transfer",
+      "durationSeconds": 440.136,
+      "usage": {
+        "input_tokens": 140960,
+        "output_tokens": 51017,
+        "thinking_tokens": 32518,
+        "cache_read_tokens": 1083375,
+        "total_tokens": 191977
+      },
+      "scope": "One native CLI run; cache categories separate, no billed-cost estimate."
+    },
+    {
+      "case": "c10",
+      "condition": "current-skill",
+      "task": "fintech-transfer",
+      "durationSeconds": 509.949,
+      "usage": {
+        "input_tokens": 265241,
+        "output_tokens": 41209,
+        "thinking_tokens": 19115,
+        "cache_read_tokens": 1969699,
+        "total_tokens": 306450
+      },
+      "scope": "One native CLI run; cache categories separate, no billed-cost estimate."
+    },
+    {
+      "case": "c11",
+      "condition": "no-skill",
+      "task": "commerce-craft",
+      "durationSeconds": 436.758,
+      "usage": {
+        "input_tokens": 252151,
+        "output_tokens": 39735,
+        "thinking_tokens": 14353,
+        "cache_read_tokens": 1019372,
+        "total_tokens": 291886
+      },
+      "scope": "One native CLI run; cache categories separate, no billed-cost estimate."
+    },
+    {
+      "case": "c12",
+      "condition": "current-skill",
+      "task": "commerce-craft",
+      "durationSeconds": 631.493,
+      "usage": {
+        "input_tokens": 259011,
+        "output_tokens": 49919,
+        "thinking_tokens": 20806,
+        "cache_read_tokens": 2103710,
+        "total_tokens": 308930
+      },
+      "scope": "One native CLI run; cache categories separate, no billed-cost estimate."
+    }
+  ],
+  "limitations": [
+    "One generation per cell, uncontrolled inference seed/backend and soft compute budget; not replicated/population inference.",
+    "Ratings are independent AI screenshot judgments, not user usability; no overall score.",
+    "All state viewport frames forced to page top, not natural post-click landings; unshown recovery remains unassessed.",
+    "Panels differ by host batch after quota/capacity interruption; do not rank hosts.",
+    "Manual/human tests deferred per user, never treated as passed."
+  ]
+}

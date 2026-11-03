@@ -1,0 +1,67 @@
+{
+  "label": "mobile-success",
+  "capturedAtUtc": "2026-11-02T04:54:02.401Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scroll": {
+    "x": 0,
+    "y": 613
+  },
+  "document": {
+    "width": 390,
+    "height": 1457
+  },
+  "activeElement": {
+    "tag": "BODY",
+    "id": null,
+    "testId": null,
+    "rect": {
+      "x": 0,
+      "y": -613,
+      "width": 390,
+      "height": 1456.671875,
+      "intersectsViewport": true,
+      "fullyInViewport": false
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[data-testid=\"transfer-status\"]",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 23,
+          "y": -278.421875,
+          "width": 344,
+          "height": 190.359375,
+          "intersectsViewport": false,
+          "fullyInViewport": false
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 613
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 613
+  }
+}

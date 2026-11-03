@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f4">
+  <title>Review your transfer · Northline Transfer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Northline Transfer home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>northline<span class="brand-light"> transfer</span></span>
+      </a>
+      <div class="top-meta"><span class="sample-dot" aria-hidden="true"></span> Sample transfer</div>
+    </header>
+
+    <main class="main-content">
+      <nav class="progress" aria-label="Transfer steps">
+        <span class="progress-step is-current" id="step-one"><span class="step-number">1</span> Details</span>
+        <span class="progress-line" aria-hidden="true"></span>
+        <span class="progress-step" id="step-two"><span class="step-number">2</span> Review</span>
+      </nav>
+
+      <section class="view" id="entry-view" aria-labelledby="entry-title">
+        <div class="intro">
+          <p class="eyebrow">SEND MONEY · VIỆT NAM</p>
+          <h1 id="entry-title" tabindex="-1">Set up your transfer</h1>
+          <p class="intro-copy">Enter the details, then check every cost before you confirm.</p>
+        </div>
+
+        <div class="entry-grid">
+          <form id="transfer-form" novalidate>
+            <div class="field-group">
+              <label for="recipient">Recipient’s full name</label>
+              <input id="recipient" data-testid="recipient" name="recipient" type="text" autocomplete="name" value="Nguyễn Thị Minh Anh Trường" aria-describedby="recipient-hint recipient-error" required>
+              <p class="field-hint" id="recipient-hint">Enter the name as it appears on their account.</p>
+              <p class="field-error" id="recipient-error"></p>
+            </div>
+            <div class="field-group amount-group">
+              <label for="amount">You send</label>
+              <div class="amount-input-wrap"><span class="currency-prefix" aria-hidden="true">USD</span><input id="amount" data-testid="amount" name="amount" type="number" inputmode="decimal" min="1" max="1000" step="0.01" value="250" aria-describedby="amount-hint amount-error" required></div>
+              <p class="field-hint" id="amount-hint">Send between $1.00 and $1,000.00 USD.</p>
+              <p class="field-error" id="amount-error"></p>
+            </div>
+            <div class="send-from"><span class="from-icon" aria-hidden="true">↗</span><div><span class="meta-label">Sending from</span><strong>Everyday USD <span class="account-dots">••1042</span></strong></div></div>
+            <div class="form-actions">
+              <button class="button button-primary" type="submit" data-testid="review-transfer">Review transfer <span aria-hidden="true">→</span></button>
+              <p class="secure-note"><span aria-hidden="true">◆</span> No money moves in this sample</p>
+            </div>
+          </form>
+
+          <aside class="estimate-panel" aria-label="Transfer estimate">
+            <div class="estimate-heading"><span class="estimate-icon" aria-hidden="true">₫</span><span>YOUR RECIPIENT GETS</span></div>
+            <div class="estimate-value" id="live-receive">6,250,000 <small>VND</small></div>
+            <div class="estimate-rule"></div>
+            <div class="estimate-row"><span>Transfer fee</span><strong>$2.50 USD</strong></div>
+            <div class="estimate-row"><span>Exchange rate</span><strong>1 USD = 25,000 VND</strong></div>
+            <p class="estimate-foot">Illustrative estimate. Final details are shown on the next step.</p>
+          </aside>
+        </div>
+        <div class="status-slot" aria-live="polite" aria-atomic="true"><p class="status-message" id="status" data-testid="transfer-status">Simulation with fictional data. No money is moved and no real account is connected.</p></div>
+      </section>
+
+      <section class="view" id="review-view" aria-labelledby="review-title" hidden>
+        <div class="intro">
+          <p class="eyebrow">CHECK BEFORE YOU CONFIRM</p>
+          <h1 id="review-title" tabindex="-1">Review your transfer</h1>
+          <p class="intro-copy">Make sure the recipient and total cost look right.</p>
+        </div>
+        <div class="review-layout">
+          <div class="review-card">
+            <div class="recipient-block">
+              <div class="recipient-avatar" aria-hidden="true">VN</div>
+              <div class="recipient-copy"><span class="meta-label">Sending to · Việt Nam</span><strong id="review-recipient">Nguyễn Thị Minh Anh Trường</strong></div>
+              <button class="text-button" type="button" data-testid="edit-transfer">Edit details</button>
+            </div>
+            <div class="review-divider"></div>
+            <dl class="cost-list">
+              <div class="cost-row"><dt>You send</dt><dd id="review-send">$250.00 USD</dd></div>
+              <div class="cost-row"><dt>Transfer fee</dt><dd>$2.50 USD</dd></div>
+              <div class="cost-row cost-total"><dt>Total debited</dt><dd id="review-total">$252.50 USD</dd></div>
+            </dl>
+            <div class="receive-panel"><div><span class="meta-label">Recipient gets</span><strong id="review-receive">6,250,000 VND</strong></div><span class="rate-badge">1 USD = 25,000 VND</span></div>
+            <div class="delivery-row"><span class="delivery-icon" aria-hidden="true">◷</span><div><span class="meta-label">Estimated delivery</span><strong>By 3 November 2026</strong><span class="delivery-caption">Illustrative estimate</span></div></div>
+          </div>
+          <aside class="review-aside">
+            <div class="account-card"><span class="meta-label">Paying from</span><strong>Everyday USD <span class="account-dots">••1042</span></strong><span class="account-owner">Alex Morgan</span></div>
+            <p class="confirmation-note"><span aria-hidden="true">ⓘ</span> This is a simulation using fictional data. No money will be moved.</p>
+            <button class="button button-primary confirm-button" type="button" data-testid="confirm-transfer">Confirm sample transfer <span aria-hidden="true">→</span></button>
+            <button class="back-button" id="back-to-details" type="button">← Back to details</button>
+          </aside>
+        </div>
+        <div class="status-slot" aria-live="polite" aria-atomic="true"><p class="status-message" id="review-status" data-testid="transfer-status">Review carefully. This sample does not move money.</p></div>
+      </section>
+
+      <section class="view outcome-view" id="failure-view" aria-labelledby="failure-title" hidden>
+        <div class="outcome-mark error-mark" aria-hidden="true">!</div>
+        <p class="eyebrow">SAMPLE TRANSFER</p>
+        <h1 id="failure-title" tabindex="-1">That didn’t go through</h1>
+        <p class="outcome-copy" data-testid="transfer-status" role="status">This simulated attempt failed. Your details are still here, and no money was moved.</p>
+        <div class="outcome-summary"><span>To <strong id="failure-recipient">Nguyễn Thị Minh Anh Trường</strong></span><span>Amount <strong id="failure-amount">$250.00 USD</strong></span></div>
+        <button class="button button-primary outcome-button" type="button" data-testid="retry-transfer">Try again <span aria-hidden="true">→</span></button>
+        <button class="back-button" id="edit-after-failure" type="button">Edit transfer details</button>
+      </section>
+
+      <section class="view outcome-view" id="success-view" aria-labelledby="success-title" hidden>
+        <div class="outcome-mark success-mark" aria-hidden="true">✓</div>
+        <p class="eyebrow">SAMPLE COMPLETE</p>
+        <h1 id="success-title" tabindex="-1">Transfer simulated</h1>
+        <p class="outcome-copy" data-testid="transfer-status" role="status">Your sample transfer was successful. No real money was moved.</p>
+        <div class="success-summary"><span>Recipient gets</span><strong id="success-receive">6,250,000 VND</strong><small>By 3 November 2026 · Illustrative estimate</small></div>
+        <button class="button button-secondary outcome-button" id="start-over" type="button">Start a new sample</button>
+      </section>
+    </main>
+    <footer class="footer"><span>© 2026 Northline Transfer</span><span>Fictional sample · Not a real financial service</span></footer>
+  </div>
+</body>
+</html>

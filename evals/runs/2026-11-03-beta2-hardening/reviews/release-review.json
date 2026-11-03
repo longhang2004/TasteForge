@@ -1,0 +1,59 @@
+{
+  "reviewId": "beta2-release-independent-review",
+  "recordedAtUtc": "2026-11-03T03:46:46.178525+00:00",
+  "reviewer": "/root/beta2_release_review",
+  "independence": "Reviewer authored none of the reviewed source/release changes and made no source edits, commits, publication or external messages.",
+  "reviewedCandidate": {
+    "branchFromParent": "codex/prepare-v0.2.0-beta.2",
+    "baseAndHeadAtReview": "5912ba2c4af91feaa9212eb720ab79131d9db006",
+    "version": "0.2.0-beta.2",
+    "workingTreeChangesReviewed": true,
+    "snapshotHashCapturedAtReview": false,
+    "note": "This was a review of the in-progress working tree relative to the stated base, not a claim that the base commit contains the release changes. Parent may subsequently revise files."
+  },
+  "scope": [
+    "scripts/prepare-release.py",
+    "docs/releasing.md",
+    "skills/tasteforge/references/render-checks.md",
+    "package.json",
+    "packages/cli/package.json",
+    "packages/core/package.json",
+    "packages/knowledge/package.json",
+    "docs/releases/v0.2.0-beta.2.md",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "methods": [
+    "Read selected diffs against 5912ba2 and relevant full files with line numbers using Ubuntu WSL2 Bash.",
+    "Checked coordinated package versions, release scope and compatibility wording, negative findings and limitations.",
+    "Inspected tested-ZIP relative-path and resolved-containment checks, source and copied-destination SHA256 checks, exact member-set/duplicate checks and source/license byte equality.",
+    "Executed exactly six isolated temporary ZIP-verifier fixtures; all passed. No full suite rerun."
+  ],
+  "conclusion": "No release blockers identified within the selected review scope.",
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "P3",
+      "blocking": false,
+      "file": "README.md",
+      "lineAtReview": 9,
+      "title": "Stale separation of source updates from tagged beta artifacts",
+      "observedText": "These source updates are separate from the tagged beta artifacts; no model service or new CLI command is required.",
+      "reason": "The beta.2 release includes the proportional workflows and checkpoint helper described in that paragraph, as stated by release notes lines 7-8 and verified by source/license archive checks.",
+      "recommendation": "Update or remove the sentence about separation before publication.",
+      "resolutionOwnership": "Parent stated that it would fix README line 9. This independent record preserves the finding at review time and does not claim post-fix revalidation."
+    }
+  ],
+  "observations": [
+    "The workspace and all three package manifests use version 0.2.0-beta.2.",
+    "The final inspected helper includes a SHA256 check on the copied skill ZIP immediately after copy, at scripts/prepare-release.py:78, before source/member verification.",
+    "Release notes preserve the original invalid-stock displayed-total defect and separate follow-up, plus human-test, resource and host-coverage limits."
+  ],
+  "excluded": [
+    "Pending native Codex discovery/invocation and browser hardening evidence, collected separately by parent.",
+    "Independent verification of study assertion/capture counts or historical evidence collections.",
+    "Full CI, package smoke, release preparation, npm publication, global host settings, manual/human usability tests."
+  ],
+  "probeEvidence": "zip-verifier-probe.observed.json",
+  "evidenceProvenance": "Probe code/stdout were not saved as raw files during execution. The companion files are transcript-derived records created afterward, with no rerun or reconstruction of absent raw artifacts."
+}

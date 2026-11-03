@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fresh quality / identity pilot · TasteForge</title>
+<link rel="stylesheet" href="../../../examples/composition-studies/gallery.css">
+<style>body{max-width:1450px}table{width:100%;border-collapse:collapse}td,th{text-align:left;vertical-align:top;border-bottom:1px solid #aaa;padding:12px}img{max-width:100%;max-height:650px;object-fit:contain;object-position:left}.previews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}details{padding:12px 0}code{overflow-wrap:anywhere}@media(max-width:650px){.previews{grid-template-columns:1fr}td,th{padding:8px;font-size:.85rem}}</style>
+<p><a href="../../../examples/composition-studies/index.html">← Authored studies</a></p>
+<header><p class="eyebrow">TasteForge / fresh forward test</p><h1>Quality and identity, separately.</h1><p>Two held-out matched prompts, four fresh creator outputs. Raw versions, corrections, natural-state captures and independent A/B reviews remain inspectable. This small pilot makes no human-usability, uniqueness or universal-cost claim.</p></header>
+<main><p><a href="report.md">Report</a> · <a href="protocol.md">Predeclared protocol</a> · <a href="manifest.json">Frozen manifest</a> · <a href="reviews/">Review files</a></p><div id="results"><p>Execution in progress. Final results appear here after checks and independent review.</p></div></main>
+<script type="module">
+const root=document.querySelector('#results');
+try {
+ const response=await fetch('results.json'); if(!response.ok) throw Error('Pending');
+ const data=await response.json();
+ const escape=(value)=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
+ root.innerHTML=`<p>${escape(data.summary)}</p><table><thead><tr><th>Cell</th><th>Acceptance</th><th>Source / evidence</th></tr></thead><tbody>${data.cells.map(cell=>`<tr><th>${escape(cell.id)} · ${escape(cell.condition)}</th><td>${escape(cell.verdict)}<br>${cell.checks} assertions<br>${escape(cell.correction)}</td><td><a href="cells/${cell.id}/initial/index.html">Creator submission</a> · <a href="cells/${cell.id}/final/index.html">Final runnable</a> · <a href="${cell.report}">Raw report</a></td></tr>`).join('')}</tbody></table><h2>Normal renders</h2><p>Viewport images retain natural scroll/focus; optional full-page captures are separately labeled in raw evidence.</p><div class="previews">${data.cells.map(cell=>`<article><h3>${escape(cell.id)} · ${escape(cell.condition)}</h3>${cell.images.map(image=>`<details ${image.state==='entry'?'open':''}><summary>${escape(image.state)} / ${image.width}px</summary><a href="${image.file}"><img loading="lazy" src="${image.file}" alt="${escape(cell.id)} ${escape(image.state)} ${image.width}px natural viewport"></a></details>`).join('')}</article>`).join('')}</div>`;
+} catch { /* Pending execution keeps the explicit progress text. */ }
+</script>
+</html>

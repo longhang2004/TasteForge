@@ -1,0 +1,94 @@
+{
+  "label": "1440-success",
+  "capturedAtUtc": "2026-11-02T16:36:23.298Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "scroll": {
+    "x": 0,
+    "y": 3605
+  },
+  "document": {
+    "width": 1440,
+    "height": 4605
+  },
+  "activeElement": {
+    "tag": "BODY",
+    "id": null,
+    "testId": null,
+    "rect": {
+      "x": 0,
+      "y": -3605,
+      "width": 1440,
+      "height": 4604.75,
+      "intersectsViewport": true,
+      "fullyInViewport": false
+    }
+  },
+  "feedback": [
+    {
+      "selector": "#feedback",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 785,
+          "y": 494.75,
+          "width": 478,
+          "height": 82,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "#reserve",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "#start",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 785,
+          "y": 376.75,
+          "width": 478,
+          "height": 42,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "#retry",
+      "matches": 1,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 3605
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 3605
+  }
+}

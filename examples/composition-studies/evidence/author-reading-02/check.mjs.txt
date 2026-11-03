@@ -1,0 +1,63 @@
+import { createRequire } from 'node:module';
+import { mkdir, writeFile, readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import assert from 'node:assert/strict';
+import { serve, root } from '../examples/composition-studies/tools/serve.mjs';
+const require = createRequire(new URL('../examples/inventory-workbench/tools/package.json', import.meta.url));
+const { chromium } = require('playwright');
+const AxeBuilder = require('@axe-core/playwright').default;
+const {server, url}=await serve();
+const browser=await chromium.launch();
+const output=`${root}/evidence/author-reading-02`;
+await mkdir(output,{recursive:true});
+const report={createdAt:new Date().toISOString(),traces:[],errors:[],sources:{}};
+for(const file of ['editorial.mjs','editorial.css','collection.mjs','collection.css','tools/serve.mjs']) report.sources[file]=createHash('sha256').update(await readFile(`${root}/${file}`)).digest('hex');
+async function snap(page,trace,state){
+ await page.screenshot({path:`${output}/${trace.id}-${state}.png`,fullPage:false});
+ const data=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,scrollY,focus:document.activeElement.id||document.activeElement.getAttribute('data-record')}));
+ const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();
+ trace.states[state]={...data,violations:axe.violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)})),incomplete:axe.incomplete.map(v=>v.id)};
+ assert(data.scrollWidth<=data.width,`${trace.id}/${state} overflow`);
+ assert.equal(axe.violations.length,0,`${trace.id}/${state} axe`);
+}
+try{
+ for(const condition of ['adapted'])for(const width of [320]){
+  const context=await browser.newContext({viewport:{width,height:850}});const page=await context.newPage();
+  page.on('pageerror',e=>report.errors.push(e.message));
+  for(const caseId of ['editorial','collection']){
+   const trace={id:`${caseId}-${condition}-${width}`,states:{}};report.traces.push(trace);
+   await page.goto(`${url}/examples/composition-studies/study.html?case=${caseId}&condition=${condition}`);
+   await page.waitForSelector(caseId==='editorial'?'#ed-status':'#cl-count');
+   await snap(page,trace,'entry');
+   if(caseId==='editorial'){
+    await page.locator('nav[aria-label="Guide sections"] a[href="#compare"]').focus();await page.keyboard.press('Enter');
+    assert.equal(await page.evaluate(()=>document.activeElement.id),'compare');
+    await page.locator('#ed-save-compare').click();
+    assert((await page.locator('#ed-status').textContent()).includes('Compare the record'));
+    await page.locator('nav[aria-label="Guide sections"] a[href="#record"]').click();
+    assert.equal(await page.evaluate(()=>document.activeElement.id),'record');
+    await page.locator('#ed-resume').click();
+    assert.equal(await page.evaluate(()=>document.activeElement.id),'compare');
+    await snap(page,trace,'resume');
+    await page.locator('#ed-clear').click();assert(await page.locator('#ed-resume').isDisabled());
+    await snap(page,trace,'clear');
+   }else{
+    await page.locator('#cl-type').selectOption('Print');await page.locator('#cl-search').fill('ink');
+    assert.equal(await page.locator('[data-record]').count(),1);
+    await page.locator('[data-record="FI-03"]').focus();await page.keyboard.press('Enter');
+    assert.equal(await page.evaluate(()=>document.activeElement.id),'cl-detail-title');
+    await snap(page,trace,'detail');
+    await page.locator('#cl-back').click();
+    assert.equal(await page.locator('#cl-search').inputValue(),'ink');assert.equal(await page.locator('#cl-type').inputValue(),'Print');
+    assert.equal(await page.evaluate(()=>document.activeElement.dataset.record),'FI-03');
+    await snap(page,trace,'return');
+    await page.locator('#cl-search').fill('nothing matches');assert.equal(await page.locator('[data-record]').count(),0);
+    await snap(page,trace,'empty');
+    await page.locator('[data-empty-reset]').click();assert.equal(await page.locator('[data-record]').count(),4);
+   }
+  }
+  await context.close();
+ }
+ assert.equal(report.errors.length,0);
+}catch(error){report.failure=error.stack;process.exitCode=1;}finally{await writeFile(`${output}/report.json`,JSON.stringify(report,null,2));await browser.close();server.close();}
+console.log(JSON.stringify({traces:report.traces.length,failure:report.failure,errors:report.errors}));

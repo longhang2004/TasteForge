@@ -1,0 +1,277 @@
+{
+  "product": "Field Fold",
+  "assignedSkill": "ui-ux-pro-max",
+  "projectPath": "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-1-r2",
+  "utcStart": "2026-11-02T14:34:10.921Z",
+  "utcEnd": "2026-11-02T14:40:37.811Z",
+  "startBasis": "First successful tool UTC before input loading. The initial required WSL launch was sandbox-denied; the next, escalated WSL launch returned this UTC. No task input was loaded before it.",
+  "experimentOverrides": [
+    "One creator; code-first; supplied local media only; no helpers or image generation. Persistent isolated assigned project supersedes operator original /tmp staging path."
+  ],
+  "loadedPaths": [
+    "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-1-r2/PRODUCT.md",
+    "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-1-r2/common/fixtures.json",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/operator.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/SKILL.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/references/pro-rules.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/references/quick-reference.md",
+    "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-1-r2/common/fonts.css",
+    "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-1-r2/common/assets/LICENSE",
+    "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-1-r2/common/assets/field-fold-map.svg",
+    "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-1-r2/common/assets/field-fold-contents.svg"
+  ],
+  "nativeCalls": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/scripts/search.py \"urban sketching printed map kit\" --design-system -p \"Field Fold\"",
+      "outcome": "Returned Hero + Features + CTA; Minimalism & Swiss Style; dark purple/tool-teal palette; Outfit/Work Sans. Verified output category and identity; product match was generic creative-tool guidance, so narrowed once."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/scripts/search.py \"error summary validation\" --domain ux",
+      "outcome": "Returned 3 UX rules: Focusable Error Summary, Error Messages, Error Placement. Applied focused summary, linked field messages, aria-describedby and role alert."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/promax/skill/scripts/search.py \"printed art ecommerce editorial\" --design-system -p \"Field Fold\"",
+      "outcome": "Narrower retry returned Feature-Rich Showcase, Vibrant & Block-based, green/orange retail palette, Rubik/Nunito Sans. Verified retail fit. Used bold section hierarchy, green/orange accents and native forms; omitted unprovided social proof and replaced unavailable external fonts with supplied local Manrope/IBM Plex Mono."
+    }
+  ],
+  "nativeGuidanceLimits": "Recommendations adapted to supplied facts; no social proof, external fonts, GSAP or stack library. The prescribed implementation is plain HTML/CSS/JS, so no unsupported html-tailwind stack match was claimed. Native pro-rules read; its mobile-only scope was recognized, and quick-reference supplied web-specific guidance.",
+  "rationale": "A large schematic artifact explains the object before the content list. Retail green and orange create clear conversion hierarchy; one edition/quantity/email form keeps availability, costs and local consequences together. Broad whitespace and bold Manrope give the small offer a legible, direct composition.",
+  "tradeoffs": "The complete factual captions and policies make the mobile page longer. Native select retains familiar keyboard behavior; no edition previews were fabricated. Failure moves focus to a summary near the top of the form, with retry available below its retained controls; natural scroll is captured. No human usability or visual uniqueness claim.",
+  "versions": [
+    {
+      "version": "versions/00.html",
+      "author": "creator",
+      "utc": "2026-11-02T14:37:49.517Z",
+      "sha256": "5fe94a40e9a9d5e47f4673e90ad7a473379edb5c6b3eae4ac1825201728dffe7",
+      "basis": "First runnable HTML preserved byte-for-byte before any browser checks."
+    }
+  ],
+  "corrections": [],
+  "submitted": {
+    "file": "index.html",
+    "sha256": "5fe94a40e9a9d5e47f4673e90ad7a473379edb5c6b3eae4ac1825201728dffe7",
+    "utc": "2026-11-02T14:40:37.811Z",
+    "sameAsFirstVersion": true
+  },
+  "checks": {
+    "attempts": [
+      {
+        "path": "evidence/attempt-00",
+        "outcome": "Tooling failure before page assessment: net::ERR_CONNECTION_REFUSED. Background server did not remain alive after launcher exited. Raw original report and log preserved."
+      },
+      {
+        "path": "evidence/attempt-01",
+        "outcome": "Same first HTML, server held alive with foreground checker. 21 assertions passed; zero failed assertions. Axe reported zero violations in inspected initial 390px state. No JS page errors or external requests observed.",
+        "started": "2026-11-02T14:39:09.469Z",
+        "ended": "2026-11-02T14:39:15.424Z"
+      }
+    ],
+    "executed": [
+      {
+        "name": "no horizontal overflow 320",
+        "passed": true,
+        "details": {
+          "width": 320,
+          "scrollWidth": 320
+        }
+      },
+      {
+        "name": "no horizontal overflow 390",
+        "passed": true,
+        "details": {
+          "width": 390,
+          "scrollWidth": 390
+        }
+      },
+      {
+        "name": "no horizontal overflow 1440",
+        "passed": true,
+        "details": {
+          "width": 1440,
+          "scrollWidth": 1440
+        }
+      },
+      {
+        "name": "empty email blocked and focus feedback",
+        "passed": true,
+        "details": {
+          "scrollX": 0,
+          "scrollY": 2502,
+          "focus": "feedback",
+          "feedback": "Check your reservation details\nEnter a valid email address, such as you@example.com.",
+          "quantity": "1",
+          "edition": "Harbor",
+          "email": "",
+          "total": "USD 58"
+        }
+      },
+      {
+        "name": "malformed email blocked",
+        "passed": true
+      },
+      {
+        "name": "Ridge 3 blocked",
+        "passed": true,
+        "details": {
+          "scrollX": 0,
+          "scrollY": 2559,
+          "focus": "feedback",
+          "feedback": "Check your reservation details\nEnter 1 or 2 whole kits; Ridge has only 2 available.",
+          "quantity": "3",
+          "edition": "Ridge",
+          "email": "mai@example.com",
+          "total": "\u2014"
+        }
+      },
+      {
+        "name": "Night disabled",
+        "passed": true
+      },
+      {
+        "name": "fraction blocked",
+        "passed": true
+      },
+      {
+        "name": "Harbor 2 cost",
+        "passed": true
+      },
+      {
+        "name": "first valid attempt recoverable failure",
+        "passed": true,
+        "details": {
+          "scrollX": 0,
+          "scrollY": 2559,
+          "focus": "feedback",
+          "feedback": "The demo reservation did not complete.\n\nYour edition, quantity and email are still here. Retry to complete this local simulation. No order, payment or email was sent.",
+          "quantity": "2",
+          "edition": "Harbor",
+          "email": "mai@example.com",
+          "total": "USD 111"
+        }
+      },
+      {
+        "name": "retry succeeds exact values",
+        "passed": true,
+        "details": {
+          "scrollX": 0,
+          "scrollY": 2540,
+          "focus": "feedback",
+          "feedback": "Demo reservation complete\n\nHarbor \u00d7 2 \u2014 item subtotal USD 106 + shipping USD 5 = total USD 111. Email: mai@example.com. No real reservation, order, payment or email was sent. You can edit the fields to try another selection.",
+          "quantity": "2",
+          "edition": "Harbor",
+          "email": "mai@example.com",
+          "total": "USD 111"
+        }
+      },
+      {
+        "name": "edit clears stale feedback",
+        "passed": true
+      },
+      {
+        "name": "long feedback no overflow",
+        "passed": true
+      },
+      {
+        "name": "reduced motion removes transition",
+        "passed": true
+      },
+      {
+        "name": "keyboard skip link first",
+        "passed": true
+      },
+      {
+        "name": "keyboard field order quantity",
+        "passed": true
+      },
+      {
+        "name": "keyboard field order email",
+        "passed": true
+      },
+      {
+        "name": "visible keyboard focus",
+        "passed": true,
+        "details": {
+          "outline": "solid",
+          "width": "3px"
+        }
+      },
+      {
+        "name": "axe scan zero violations",
+        "passed": true,
+        "details": []
+      },
+      {
+        "name": "no JS errors",
+        "passed": true,
+        "details": []
+      },
+      {
+        "name": "no external requests",
+        "passed": true,
+        "details": [
+          "http://127.0.0.1:8813/",
+          "http://127.0.0.1:8813/common/fonts.css",
+          "http://127.0.0.1:8813/common/assets/field-fold-map.svg",
+          "http://127.0.0.1:8813/common/fonts/manrope/Manrope%5Bwght%5D.ttf",
+          "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Medium.ttf",
+          "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Regular.ttf",
+          "http://127.0.0.1:8813/common/assets/field-fold-contents.svg",
+          "http://127.0.0.1:8813/",
+          "http://127.0.0.1:8813/common/fonts.css",
+          "http://127.0.0.1:8813/common/assets/field-fold-map.svg",
+          "http://127.0.0.1:8813/common/assets/field-fold-contents.svg",
+          "http://127.0.0.1:8813/common/fonts/manrope/Manrope%5Bwght%5D.ttf",
+          "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Regular.ttf",
+          "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Medium.ttf"
+        ]
+      }
+    ],
+    "commands": [
+      "node check.cjs",
+      "node check-attempt01.cjs"
+    ],
+    "rawReports": [
+      "evidence/attempt-00/report.json",
+      "evidence/attempt-00/check.log",
+      "evidence/attempt-01/report.json",
+      "evidence/attempt-01/axe.json",
+      "evidence/attempt-01/check.log"
+    ],
+    "screenshots": [
+      "evidence/attempt-01/initial-320.png",
+      "evidence/attempt-01/initial-390.png",
+      "evidence/attempt-01/initial-1440.png",
+      "evidence/attempt-01/invalid-natural-scroll.png",
+      "evidence/attempt-01/failure-natural-scroll.png",
+      "evidence/attempt-01/success-natural-scroll.png",
+      "evidence/attempt-01/long-feedback-390.png"
+    ],
+    "creatorVisualInspection": [
+      "initial-1440.png",
+      "initial-320.png",
+      "failure-natural-scroll.png",
+      "success-natural-scroll.png"
+    ],
+    "postActionScrollFocus": "Actual values preserved in attempt-01 report ctaState, invalidState, stockInvalidState, failureState, successState and longFeedbackState. Screenshots captured immediately after actions without resetting scroll.",
+    "unassessed": [
+      "Human usability/acceptance",
+      "Independent reviewer assessment",
+      "Assistive-technology speech output",
+      "Full cross-browser/device coverage",
+      "Manual numerical contrast audit beyond axe",
+      "Every possible form/input combination",
+      "Landscape and largest system text size"
+    ]
+  },
+  "commonAssets": "Existing common directory was read and referenced, never modified.",
+  "provider": null,
+  "model": null,
+  "inputTokens": null,
+  "outputTokens": null,
+  "thinkingTokens": null,
+  "cacheTokens": null,
+  "billing": null,
+  "cost": null,
+  "toolCount": null,
+  "limitations": "Provider/model/token/cache/billing/tool-count metadata are not exposed to this creator and are not estimated. Automated checks do not establish human usability or uniqueness. No commits, pushes, external messages or Linear updates."
+}

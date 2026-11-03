@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northline Transfer — Fictional Money Transfer Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="simulation-banner" role="region" aria-label="Simulation notice">
+    <div class="banner-inner">
+      <span class="sim-badge">SIMULATION ONLY</span>
+      <span class="sim-text">Simulation with fictional data. No money is moved and no real account is connected.</span>
+    </div>
+  </div>
+
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="17 1 21 5 17 9"></polyline>
+            <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+            <polyline points="7 23 3 19 7 15"></polyline>
+            <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Northline Transfer</span>
+          <span class="brand-sub">Fictional Remittance Service</span>
+        </div>
+      </div>
+      <div class="account-badge" aria-label="Sender account">
+        <span class="account-label">Simulated Sender</span>
+        <span class="account-name">Alex Morgan</span>
+        <span class="account-meta">Everyday USD ••1042</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="app-main" aria-live="polite">
+    <!-- Dynamic content injected by app.js -->
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <p class="footer-primary">Northline Transfer Simulation • Reference date: 1 November 2026</p>
+      <p class="footer-secondary">Fictional demonstration for occasional customer transfer review. No financial transaction will be executed.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e8">
+  <title>Everyday Teapot — Field Kiln</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="announcement">A small-batch study in everyday ritual <span>·</span> Fictional sample shop</div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Field Kiln home">FIELD<span>/</span>KILN</a>
+    <nav aria-label="Main navigation"><a href="#details">Our approach</a><a href="#purchase">The teapot</a></nav>
+    <a class="bag-link" href="#purchase">Your bag <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="top">
+    <div class="breadcrumbs"><a href="#top">Objects</a><span>/</span><span>Tea service</span></div>
+    <section class="product-layout" aria-labelledby="product-title">
+      <div class="visual-column">
+        <div class="image-frame">
+          <img src="assets/teapot.svg" alt="Original vector illustration of a round, dark green stoneware teapot with a curved handle and short spout, shown on a warm neutral ground.">
+          <span class="image-index">OBJECT 01</span>
+          <span class="image-caption">Illustration · Iron glaze</span>
+        </div>
+        <div class="image-note"><span class="tiny-mark">✳</span><p>Original vector illustration of a fictional sample product; this is not a photograph.</p></div>
+      </div>
+      <div class="product-info" id="purchase">
+        <p class="eyebrow">FIELD KILN <span>·</span> TEA SERVICE</p>
+        <h1 id="product-title">Everyday<br><em>Teapot</em></h1>
+        <p class="intro">A generous little pour, made for the table you come back to. Quietly shaped in stoneware, finished by hand.</p>
+        <div class="price-line"><span class="price">$68</span><span class="currency">USD</span><span class="price-note">per piece <i>·</i> 650 ml</span></div>
+        <div class="hairline"></div>
+        <div class="option-heading"><span>01 / Choose a glaze</span><span id="selected-name">IRON</span></div>
+        <div class="swatches" role="group" aria-label="Choose a glaze">
+          <button class="swatch selected" type="button" data-testid="glaze-iron" data-glaze="iron" aria-pressed="true" aria-label="Iron glaze, in stock, 4 available"><span class="swatch-dot iron-dot"></span><span>Iron</span><span class="swatch-stock">4</span></button>
+          <button class="swatch unavailable" type="button" data-testid="glaze-ash" data-glaze="ash" aria-pressed="false" aria-disabled="true" aria-label="Ash glaze, unavailable"><span class="swatch-dot ash-dot"></span><span>Ash</span><span class="swatch-stock">Sold out</span></button>
+          <button class="swatch" type="button" data-testid="glaze-sand" data-glaze="sand" aria-pressed="false" aria-label="Sand glaze, in stock, 7 available"><span class="swatch-dot sand-dot"></span><span>Sand</span><span class="swatch-stock">7</span></button>
+        </div>
+        <div class="stock-line"><span class="stock-dot"></span><span id="stock-copy">4 in stock · Ships in 2 business days</span></div>
+        <div class="purchase-rule"></div>
+        <div class="option-heading quantity-heading"><label for="quantity">02 / Quantity</label><span>MAX 4 PER ORDER</span></div>
+        <div class="purchase-row">
+          <div class="quantity-control"><button id="qty-minus" type="button" aria-label="Decrease quantity">−</button><input id="quantity" data-testid="quantity" type="number" min="1" max="4" value="1" inputmode="numeric" aria-label="Quantity, from 1 to 4"><button id="qty-plus" type="button" aria-label="Increase quantity">+</button></div>
+          <span class="total-label">Order total <strong id="total">$76.00</strong><small>USD · shipping included</small></span>
+        </div>
+        <button class="add-button" data-testid="add-to-cart" type="button"><span>Add to bag</span><span aria-hidden="true">↗</span></button>
+        <div id="cart-status" data-testid="cart-status" class="cart-status" role="status" aria-live="polite"></div>
+        <p class="shipping-note"><span>↗</span> $8 flat-rate delivery, shown in your total.</p>
+        <div class="delivery-mini"><span>DELIVERY</span><span>Dispatch in 2 business days<br>Illustrative domestic transit 3–5 business days</span></div>
+      </div>
+    </section>
+    <section id="details" class="details-section" aria-labelledby="details-title">
+      <div class="details-intro"><p class="eyebrow">MADE FOR THE EVERYDAY</p><h2 id="details-title">A useful shape.<br><em>A lasting ritual.</em></h2><p>Designed to sit within reach: steady in the hand, balanced on the table, and ready for one more cup.</p></div>
+      <div class="detail-list">
+        <article><span class="detail-number">01</span><div><h3>Material & form</h3><p>Glazed stoneware · 650 ml capacity<br>16 cm wide × 12 cm high</p></div><span class="detail-glyph">◯</span></article>
+        <article><span class="detail-number">02</span><div><h3>Care, simply</h3><p>Hand wash. Avoid sudden temperature changes. Not for stovetop use.</p></div><span class="detail-glyph">⌁</span></article>
+        <article><span class="detail-number">03</span><div><h3>Delivery & returns</h3><p>Dispatch in 2 business days; illustrative domestic transit 3–5 business days. Unused pieces accepted within 30 days. Customer pays return shipping; original shipping is nonrefundable.</p></div><span class="detail-glyph">↗</span></article>
+      </div>
+    </section>
+  </main>
+  <footer><a class="wordmark" href="#top">FIELD<span>/</span>KILN</a><p>Fictional shop and illustrative product, price, stock, delivery, and returns.</p><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>

@@ -7,12 +7,14 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 - [Project overview and installation](../README.md): capabilities, requirements, source quickstart, and frequently asked questions.
 - [CLI reference](cli.md): commands, brief fields, hard constraints, scoring configuration, exit codes, and audit rule coverage.
 - [Agent Skill](../skills/tasteforge/SKILL.md): progressive-disclosure instructions for coding agents, with creation, redesign, and refinement workflows. The skill remains useful without the CLI.
+- [Proportional UI workflows](lean-workflows.md): Fast/Standard/Explore effort, compact context, source-grounded copy and optional natural-state browser checkpoints.
 - [Reference-led UX planning](reference-led-design.md): research real product/pattern sources, compare task structures before visual treatments, and understand what the current CLI does and does not automate.
 - [Offline reference catalog](reference-catalog.md): 642 attributed records, seeded external style inspiration, task-tagged template observations, baseline review gates, and reproducible ingestion.
 - [Effect and layout research](effects-research.md): inspected Colorion, Codrops, layout and native-animation sources; purpose-based skill guidance and original runnable studies.
 - [Surface purpose and targeted refinement](impeccable-informed-workflow.md): Impeccable-informed concepts, scoped edits, intentional exceptions, an annotated evidence gallery and a bounded independent forward-test.
 - [GitHub releases](https://github.com/longhang2004/TasteForge/releases): tagged source, built package archives, standalone skill ZIP, checksums, and release notes. The npm packages are not yet published.
-- [0.2.0-beta.1 notes](releases/v0.2.0-beta.1.md): beta scope, compatibility, prepared assets and evidence limits.
+- [Standalone host evidence](host-integration.md): the observed native Codex ZIP discovery/invocation, isolated setup and remaining host coverage.
+- [0.2.0-beta.2 notes](releases/v0.2.0-beta.2.md): proportional workflows, explained task compositions, hardening and artifact/evidence limits. [Beta.1 notes](releases/v0.2.0-beta.1.md) retain the previous release scope.
 
 ## Use and inspect the outputs
 
@@ -22,6 +24,8 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 - [Examples guide](../examples/README.md): reproduction commands and deliberately flawed source fixtures for static audit checks.
 - [Inventory worked composition](../examples/inventory-workbench/README.md): runnable structural alternatives, a focused mobile task, actual render/revision evidence and explicit pending human-review status.
 - [Annotated design gallery](../examples/design-gallery/README.md): four cases with unchanged captures, viewport/full-page distinctions and keyboard-accessible explanatory notes.
+- [Explained composition pairs](../examples/composition-studies/README.md): operational, commerce, editorial and collection slices with conventional/adapted relationships and shared facts.
+- [Four-skill comparison](../evals/runs/2026-11-02-four-skill-landing-comparison/README.md): eight runnable landing slices, separately frozen independent judgments and preserved limitations.
 
 ## Understand and extend TasteForge
 
@@ -35,6 +39,6 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 
 ## Scope and evidence
 
-The recommendation engine uses transparent editorial heuristics. The static audit distinguishes verified source conditions, heuristic warnings, and items requiring human or rendered review; it does not certify visual quality or accessibility conformance. Font metadata records coverage evidence and limitations, while font delivery and target-platform rendering need separate verification. Agent-host integrations have not been certified.
+The recommendation engine uses transparent editorial heuristics. The static audit distinguishes verified source conditions, heuristic warnings, and items requiring human or rendered review; it does not certify visual quality or accessibility conformance. Font metadata records coverage evidence and limitations, while font delivery and target-platform rendering need separate verification. Host evidence is limited to the versions/tasks actually recorded; broad agent-host integration is not certified.
 
 For the current implementation details, use the CLI reference, schemas, examples, and tests in this repository. For an immutable version, follow a GitHub release tag rather than assuming the default branch matches an older release.

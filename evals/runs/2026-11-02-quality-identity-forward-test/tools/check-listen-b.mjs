@@ -1,0 +1,57 @@
+import assert from 'node:assert/strict';
+import { fileURLToPath } from 'node:url';
+import { runCell } from './browser.mjs';
+
+const result = await runCell('listen-B', process.argv[2] || 'initial', process.argv[3] || 'initial-01', async ({page, capture, check}) => {
+  await check('four records with truthful no-audio conditions', async () => {
+    assert.equal(await page.locator('.record').count(),4);
+    assert.equal(await page.locator('audio').count(),0);
+    assert.match(await page.locator('body').innerText(), /no (actual|audio)|no recordings|not.*audio/i);
+  });
+  await page.locator('#search').fill('engine');
+  await check('search includes supplied observation notes', async () => {
+    assert.equal(await page.locator('.record').count(),1);
+    assert.match(await page.locator('.record-title').innerText(),/Reeds at slack water/);
+  });
+  await page.locator('#search').fill('');
+  await page.locator('#habitat').selectOption('Channel');
+  await check('habitat filter preserves source result order', async () => {
+    assert.deepEqual((await page.locator('.record-id').allTextContents()).map(s=>s.trim()),['EL-02','EL-04']);
+  });
+  await capture('filtered');
+  await page.locator('#search').fill('quiet');
+  await page.locator('#habitat').selectOption('Salt pool');
+  await page.locator('#open-EL-03').focus(); await page.keyboard.press('Enter');
+  await check('long record opens by keyboard and focuses heading', async () => {
+    assert.equal(await page.locator('#detail-title').innerText(),'Evening at the salt pool — Nguyễn Thị Minh Anh notebook');
+    assert(await page.locator('#detail-title').evaluate(e=>e===document.activeElement));
+  });
+  await check('detail preserves metadata transcript and evidence limits', async () => {
+    const text=await page.locator('body').innerText();
+    for(const fact of ['03:05','13 June 2025','18:40','WAV','Two brief splashes']) assert(text.includes(fact),fact);
+    assert.match(text,/mono/i);
+  });
+  await capture('detail');
+  await page.locator('#back').click();
+  await check('back retains query habitat order and opening focus', async () => {
+    assert.equal(await page.locator('#search').inputValue(),'quiet');
+    assert.equal(await page.locator('#habitat').inputValue(),'Salt pool');
+    assert.equal(await page.evaluate(()=>document.activeElement.id),'open-EL-03');
+    assert.deepEqual((await page.locator('.record-id').allTextContents()).map(s=>s.trim()),['EL-03']);
+  });
+  await capture('return');
+  await page.locator('#search').fill('nonexistent');
+  await check('empty results honest and recoverable', async () => {
+    assert(await page.locator('#empty').isVisible());
+    assert.equal(await page.locator('.record').count(),0);
+  });
+  await capture('empty');
+  await page.locator('#reset').click();
+  await check('reset restores all records and criteria', async () => {
+    assert.equal(await page.locator('.record').count(),4);
+    assert.equal(await page.locator('#search').inputValue(),'');
+    assert.equal(await page.locator('#habitat').inputValue(),'All');
+  });
+  await capture('reset');
+}, fileURLToPath(import.meta.url));
+if(result.failures.length) process.exitCode=1;

@@ -1,0 +1,228 @@
+{
+  "reviewer": "reviewer-2",
+  "startedAt": null,
+  "finishedAt": "2026-11-02T08:59:20Z",
+  "inspectedImages": [
+    "press/A/1440-entry.png",
+    "press/B/1440-entry.png",
+    "listen/A/1440-entry.png",
+    "listen/B/1440-entry.png",
+    "press/A/320-entry.png",
+    "press/B/320-entry.png",
+    "listen/A/320-entry.png",
+    "listen/B/320-entry.png",
+    "press/A/390-entry.png",
+    "press/B/390-entry.png",
+    "listen/A/390-entry.png",
+    "listen/B/390-entry.png",
+    "press/A/320-review.png",
+    "press/B/320-review.png",
+    "press/A/320-failure.png",
+    "press/B/320-failure.png",
+    "press/A/1440-failure.png",
+    "press/B/1440-failure.png",
+    "listen/A/320-detail.png",
+    "listen/B/320-detail.png",
+    "listen/A/320-return.png",
+    "listen/B/320-return.png",
+    "listen/A/1440-detail.png",
+    "listen/B/1440-detail.png",
+    "press/A/320-edit.png",
+    "press/B/320-edit.png",
+    "press/A/320-success.png",
+    "press/B/320-success.png",
+    "listen/A/320-empty.png",
+    "listen/B/320-empty.png"
+  ],
+  "cases": {
+    "press": {
+      "taskQuality": [
+        {
+          "dimension": "Entry/action priority and grouping",
+          "verdict": "A",
+          "evidence": "press/A/1440-entry.png begins with the direct 'Book the press' instruction and fits date, three slots, participant input and induction near the first viewport; B uses a taller promotional introduction and vertical slot rows. At 320 A reaches the date selector sooner. Both have clear choose/review/reserved stages.",
+          "tradeoff": "B's two visible date radio choices make the small date set easier to compare without opening a selector; A's compact select conceals the other date."
+        },
+        {
+          "dimension": "Decision context, truthful claims and consequence",
+          "verdict": "A",
+          "evidence": "press/A/320-review.png places fee/exclusions, induction and complete session conditions in the review flow before confirmation, as confirmed by press/A/index.html .review-conditions. press/B/index.html leaves the sole complete conditions aside after the workarea on mobile, after Edit/Confirm, despite referring to conditions 'alongside' choices. A's explicit fixture/no-live-booking notice is also high in press/A/390-entry.png. Both sources preserve supplied fees/times and honestly describe simulated failure.",
+          "tradeoff": "B integrates date/time/90 minutes in one summary group and puts exclusions beside the fee; its conditions remain available by scrolling. A repeats conditions and makes mobile review longer."
+        },
+        {
+          "dimension": "Narrow reading/action access",
+          "verdict": "A",
+          "evidence": "press/A/320-review.png starts at the review heading with facts immediately below, while press/B/320-review.png retains a large tail of the hero and only begins the focused review heading around y340. press/A/320-success.png shows the reference, selected facts and no-real-booking outcome together; B's first success viewport ends within selected facts. Both 390 entry images show usable session choices without horizontal clipping.",
+          "tradeoff": "Both failure images put the full recovery message in view but require further scrolling to retry. A's native date selector truncates the Wednesday label in press/A/320-edit.png; B's date radio labels wrap visibly."
+        },
+        {
+          "dimension": "State retention, editing/failure/recovery",
+          "verdict": "tie",
+          "evidence": "press/A/320-edit.png and press/B/320-edit.png retain Wednesday, 14:00–15:30 and 3 participants. Both 320 failure images explain retained choices and simulated failure. Both checks.json report edit retention, stale-slot clearing, keyboard retry and successful retry; both sources preserve the form in the page and fail only the first confirmation.",
+          "tradeoff": "B focuses the selected date radio on edit; A brings the whole edit section to the top. A names each retained field explicitly in failure copy; B provides an explicit date-change instruction, although it persists after the new session has been selected."
+        },
+        {
+          "dimension": "Keyboard/focus/contrast/semantics within available evidence",
+          "verdict": "tie",
+          "evidence": "Both supplied sources use labeled native numeric inputs, required induction checkboxes, fieldsets/radios, disabled full slots and alert recovery regions. press/B/320-review.png and press/B/320-failure.png show prominent programmatic focus outlines; A's checks record focused review/failure regions and keyboard access to retry. Each press checks.json reports 33 checks with no failures.",
+          "tradeoff": "B styles all focused tabindex=-1 targets and uses a radio group for the dates; A keeps a native select and explicit slot help. A records an unresolved contrast check on a decorative submit arrow. Automated checks and screenshots do not establish full accessibility conformance."
+        }
+      ],
+      "productSpecificity": [
+        {
+          "dimension": "Supplied facts/artifacts that actually shaped composition",
+          "verdict": "B",
+          "evidence": "press/B/1440-entry.png turns the two-color process into an honestly captioned, prominent overlapping two-pass schematic with registration marks; the two supplied dates become the complete visible date pair. The single-press/session limits shape its adjacent 'session, in full' sheet. A has a smaller overlap schematic and session sheet date range.",
+          "tradeoff": "A uses the same actual constraints clearly and more economically; B's larger process illustration is identity context rather than necessary booking information and disappears on narrow widths."
+        },
+        {
+          "dimension": "Coherent media/caption/type/hierarchy/spacing direction",
+          "verdict": "B",
+          "evidence": "press/B/1440-entry.png consistently coordinates red accent, blue overlapping color, registration marks, the tilted printed m, and serif emphasis in the headline and conditions title. press/B/1440-failure.png continues the red rule and subdued sheet background around an ordinary error. A is coherent in its simpler purple/black form presentation.",
+          "tradeoff": "B spends more space on display type and introductory copy; A's quieter hierarchy gives the task more of the first viewport."
+        },
+        {
+          "dimension": "Structure responding to relationships rather than an interchangeable shell",
+          "verdict": "tie",
+          "evidence": "Both 1440 entry/failure images use a choice/review workarea beside complete single-session conditions and distinguish the fee from exclusions and participants. In press/A/index.html the mobile review duplicates complete conditions before actions; B directly exposes the finite date options and groups time/date/duration in the summary.",
+          "tradeoff": "A responds better to the mobile relation between conditions and confirmation; B responds better to comparing the two dates. Both retain a conventional, appropriate form-plus-conditions structure."
+        },
+        {
+          "dimension": "Recognizable decisions preserved across widths/states without task harm",
+          "verdict": "A",
+          "evidence": "A retains its plain booking-sheet hierarchy, overlap mark, direct task title and compact state summaries across press/A/390-entry.png, press/A/320-edit.png, press/A/320-review.png and press/A/320-success.png. B preserves its headline treatment and colors but that headline consumes substantial natural post-action viewport space in press/B/320-review.png and press/B/320-success.png; the two-pass diagram is hidden on mobile.",
+          "tradeoff": "B remains recognizable and keeps ordinary controls; A's strongest product image is modest and the date selector clips a long chosen label at 320."
+        }
+      ]
+    },
+    "listen": {
+      "taskQuality": [
+        {
+          "dimension": "Entry/action priority and grouping",
+          "verdict": "A",
+          "evidence": "listen/A/390-entry.png includes search, habitat, matching count and the start of the first record. listen/B/390-entry.png reaches the search field only at the bottom, with habitat and records further down. At 1440 A exposes three substantial record rows compared with B's two, with date/time/duration columns aiding comparison.",
+          "tradeoff": "B exposes all four habitat choices as buttons and labels 'Read record' explicitly; A's habitat select and bare title buttons demand slightly more interpretation."
+        },
+        {
+          "dimension": "Decision context, truthful claims and consequence",
+          "verdict": "tie",
+          "evidence": "Both entry images explicitly deny distributed audio; both 1440 detail images preserve the supplied note, transcript, date/time, habitat, mono WAV metadata and evidence limits. B captions its two-spike salt-pool drawing 'Illustrative sound sketch · not measured audio'; A explicitly says its water/air lines are not measured waveform/audio data. Neither source adds playable controls or unsupported gear/species claims.",
+          "tradeoff": "A places metadata and evidence limits early on mobile (listen/A/320-detail.png); B makes the note and illustrative response more immediate (listen/B/320-detail.png) and explicitly lists audio availability in metadata."
+        },
+        {
+          "dimension": "Narrow reading/action access",
+          "verdict": "A",
+          "evidence": "Both 320 detail titles wrap fully. A's 320 detail viewport also shows the full metadata grid and evidence limit notice, while B's viewport reaches the illustrative sketch after its note and keeps metadata later. At 390 B's two-column disclaimer squeezes prose into a narrow column, while A's notice uses the width. A reaches filtering earlier at both narrow entry widths.",
+          "tradeoff": "B prioritizes reading the observation first and exposes habitat filters without a select menu. A's mobile ordering delays the actual note until after metadata, and its 320 return search field shows both native and custom clear icons."
+        },
+        {
+          "dimension": "State retention, editing/failure/recovery",
+          "verdict": "tie",
+          "evidence": "listen/A/320-return.png and listen/B/320-return.png both return to query 'quiet', Salt pool and the single EL-03 record. Their 320 empty images preserve criteria and offer an explicit reset. Both supplied sources save scroll and opener, focus the opener on return and keep criteria/result order. Each checks.json reports 24 checks without failures including return focus and reset.",
+          "tradeoff": "A adds a dedicated clear-search action alongside full reset; B offers immediately visible habitat buttons. These are different convenient routes, with no retained-context failure established."
+        },
+        {
+          "dimension": "Keyboard/focus/contrast/semantics within available evidence",
+          "verdict": "tie",
+          "evidence": "Both 320 detail images show a clear focus outline around the long heading and both sources provide skip links, labeled search, live result counts, title buttons and programmatic opener restoration. A uses a named search form and native habitat select; B uses a fieldset and aria-pressed filter buttons, plus both title and Read record buttons. Recorded checks include keyboard opening and return focus.",
+          "tradeoff": "B has extra tab stops for the duplicate per-record open actions but explicit action text. A has a simpler keyboard path and named results list. A has unresolved automated contrast checks on SVG/decorative content; neither packet establishes complete screen-reader or contrast conformance."
+        }
+      ],
+      "productSpecificity": [
+        {
+          "dimension": "Supplied facts/artifacts that actually shaped composition",
+          "verdict": "B",
+          "evidence": "listen/B/1440-entry.png names reeds/channels/quiet water and gives record ID/habitat stamps, dates and monospaced durations distinct roles. listen/B/1440-detail.png's EL-03 sketch has two isolated disturbances beside the quiet note and transcript's two splashes; listen/B/index.html defines different illustrative paths per record. A's detail sketch is the same generic water/air curves.",
+          "tradeoff": "A still uses all supplied record facts effectively and its note-based hero is specific to the collection. B's sketches are expressive interpretation, correctly captioned, rather than additional audio evidence."
+        },
+        {
+          "dimension": "Coherent media/caption/type/hierarchy/spacing direction",
+          "verdict": "B",
+          "evidence": "listen/B/1440-entry.png and listen/B/1440-detail.png coordinate a reed/water mark, restrained green ribbon, monospaced notebook annotations and duration figures, habitat stamps, and serif headline emphasis. The caption and annotation style continue around the record-specific schematic. A has a consistent calm sans-serif ledger direction but less differentiation of notebook annotations.",
+          "tradeoff": "B's small monospaced labels and large ribbon consume narrow space; A's simpler typographic system is easier to scan at 390 and uses fewer competing treatments."
+        },
+        {
+          "dimension": "Structure responding to relationships rather than an interchangeable shell",
+          "verdict": "B",
+          "evidence": "B's detail groups the listening note with a record-specific illustrative sketch, then transcript, while metadata and audio availability form an adjacent fact column at 1440 (listen/B/1440-detail.png). The two isolated marks visibly relate to the quiet EL-03 observation and two-splash excerpt. A has a useful comparative ledger and separate facts but repeats one water/air illustration across records in source.",
+          "tradeoff": "A's ledger makes cross-record date/time/duration comparison especially direct, and its mobile metadata grid is practical. B's stronger note/sketch relationship costs space before transcript and metadata on narrow screens."
+        },
+        {
+          "dimension": "Recognizable decisions preserved across widths/states without task harm",
+          "verdict": "tie",
+          "evidence": "Both retain notebook rows, ID/habitat distinction, duration, long title and restrained green/paper palette in the 320 return and detail images. B keeps monospaced annotations and stamps; A keeps its ledger hierarchy and water mark. Both preserve search/filter context and wrap the long title without horizontal overflow in recorded checks.",
+          "tradeoff": "B has a notably crowded 390 disclaimer and later entry controls; A's identity is less visually assertive but more compact. Neither gains this dimension solely through novelty, and the observed styling differences do not justify overriding the respective task tradeoffs."
+        }
+      ]
+    }
+  },
+  "findings": [
+    {
+      "task": "press",
+      "label": "B",
+      "file": "press/B/index.html",
+      "severity": "quality concern",
+      "finding": "At mobile widths the sole full conditions aside follows the review action row; the review asks readers to consider conditions 'alongside' choices although they must scroll past confirmation to reach them. This is source/order evidence, not a demonstrated inability to complete."
+    },
+    {
+      "task": "press",
+      "label": "B",
+      "file": "press/B/320-review.png",
+      "severity": "quality concern",
+      "finding": "Natural review focus leaves substantial hero content above the review heading; key summary information is spread across more scrolling than A. The same pattern persists in 320 success."
+    },
+    {
+      "task": "press",
+      "label": "A",
+      "file": "press/A/320-edit.png",
+      "severity": "minor quality concern",
+      "finding": "The selected Wednesday date is truncated within the native select. Review and success show the full date, so no incorrect-selection blocker is established."
+    },
+    {
+      "task": "listen",
+      "label": "B",
+      "file": "listen/B/390-entry.png",
+      "severity": "quality concern",
+      "finding": "The disclaimer remains in two columns at 390, producing a narrow prose column and a tall notice; filtering/result access moves further down. At 320 the ribbon stacks, so this issue is width dependent."
+    },
+    {
+      "task": "listen",
+      "label": "A",
+      "file": "listen/A/320-return.png",
+      "severity": "minor quality concern",
+      "finding": "Native search clearing and the custom clear button both appear as adjacent X controls, adding redundant visual affordances."
+    }
+  ],
+  "limitations": [
+    "Independent procedural blinding: read only reviewer instructions, packet index, tasks, listed screenshots, source and checks; did not read a key, manifest, creator notes, teaching examples or another review.",
+    "Inspected exactly the listed 30 natural viewport images. Did not inspect optional full-page images or infer post-action visibility from them.",
+    "No independent browser rerun, network, installation or human testing. Source inspection clarifies ordering/retention but is not a rendered test.",
+    "Recorded browser/axe checks have no failures; incomplete contrast items remain in packet evidence. Full accessibility conformance, human comprehension/usability, uniqueness and novelty are unassessed.",
+    "Only EL-03 detail was visually inspected; all four records and per-record sketch definitions were read in source. Other detail appearances are not visually certified.",
+    "Initial start timestamp was not sampled; startedAt and exact elapsed duration are null. Last work completion timestamp is sampled in UTC.",
+    "No aggregate winner or score is assigned; task quality and product specificity are judged independently."
+  ],
+  "resources": {
+    "provider": null,
+    "model": null,
+    "inputTokens": null,
+    "outputTokens": null,
+    "totalTokens": null,
+    "cost": null,
+    "elapsedSeconds": null,
+    "inspectedImageCount": 30,
+    "newBrowserRuns": 0,
+    "networkRequestsByReviewer": 0,
+    "packetRecordedChecks": {
+      "press": {
+        "A": 33,
+        "B": 33
+      },
+      "listen": {
+        "A": 24,
+        "B": 24
+      }
+    }
+  },
+  "frozenInitialJudgments": true
+}

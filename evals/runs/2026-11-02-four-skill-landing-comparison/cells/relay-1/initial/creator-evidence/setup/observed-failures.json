@@ -1,0 +1,31 @@
+{
+  "firstObservedUTC": "2026-11-02T14:24:28Z",
+  "notes": "These excerpts transcribe actual tool outputs; complete original raw tool streams remain in the task transcript. They are not rerun output.",
+  "failures": [
+    {
+      "kind": "sandbox WSL denial",
+      "observed": "Access is denied. Error code: Wsl/E_ACCESSDENIED",
+      "outcome": "Escalated Ubuntu WSL command succeeded."
+    },
+    {
+      "kind": "missing isolated project",
+      "observed": "<3>WSL (503 - Relay) ERROR: CreateProcessCommon:867: chdir(/tmp/tasteforge-four-skill-relay-1) failed 2; cat: PRODUCT.md: No such file or directory",
+      "outcome": "Initial context ran without inputs and was invalidated."
+    },
+    {
+      "kind": "temporary directory disappeared",
+      "observed": "<3>WSL (408 - Relay) ERROR: CreateProcessCommon:867: chdir(/tmp/tasteforge-four-skill-relay-1) failed 2; bash: line 1: native-concept.txt: Permission denied",
+      "outcome": "Concept command did not execute in this call."
+    },
+    {
+      "kind": "unpopulated product seed refusal",
+      "observed": "NO_PRODUCT_MD: the dice stay in the cup until product truth exists.",
+      "outcome": "No direction assigned; parent amended workspace before UI."
+    },
+    {
+      "kind": "PowerShell launcher quoting failure",
+      "observed": "ParserError: An expression was expected after (",
+      "outcome": "Browser-path lookup did not run; default Playwright runtime used successfully."
+    }
+  ]
+}

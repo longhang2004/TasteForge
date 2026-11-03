@@ -1,0 +1,13 @@
+# Setup amendment before scored UI outputs
+
+The frozen manifest remains unchanged. WSL `/tmp` projects created successfully in one exec were absent in later execs; exact underlying lifecycle cause is unconfirmed. Before product UI existed at the amendment checkpoint2026-11-02T14:28:01.044Z, persistent projects were staged in the allowed Windows visualization workspace outside TasteForge Git. Each received the same local common/ bytes and task PRODUCT.md. [workspace-amendment.json](workspace-amendment.json) retains old/new paths and the setup observation. Global settings and product/asset/visual criteria did not change.
+
+Original startup timestamps/failures stay recorded. The creation8/12-minute window for the two started cells begins when persistent inputs are ready, while full setup duration remains in resource coverage. Remaining cells start with ready persistent inputs. Impeccable's first context invocation without PRODUCT is invalid setup evidence, followed by one corrected context call; it is not a UI-quality failure.
+
+## One invalid startup repeated before quality selection
+
+fold-1 authored a first staged HTML at14:28:39.955Z after the amendment checkpoint but before the complete task PRODUCT/prompt was read in the corrected project. Inputs-ready was observed at14:28:53Z; source was copied/preserved14:28:59Z. The first SHA256 is `5bb763de7fcbee183b1e8ff7791c81af4933c6a561cb76f7307fd25160eef3ff`. An earlier approximate14:31 message was corrected by file timestamps. This incomplete intake violates the matched-input startup boundary. The creator also read path-amendment metadata listing the lineup, which is disclosed; no other arm's output or quality judgment was provided.
+
+Per the predeclared objectively invalid-invocation rule, retain this attempt's first source, versions, raw checks/failures and context as **invalid-attempt-01, excluded from the scored comparison**, and repeat that cell once in a fresh context with complete ready inputs. Root made this decision without viewing the HTML/screenshots or selecting for quality. The invalid attempt's resource cost is not erased. Stop its ongoing checks/refinement; no artistic reroll is authorized. No other cell is repeated by this amendment.
+
+Creators receive only their direct project/entry paths going forward, not the lineup/path manifest. The reviewer packet later withholds identity/key as planned; no reviewer has yet been dispatched. The controlled single-creator/code-first limitation and eight valid-cell target remain unchanged. Raw setup losses or unavailable streams are labeled rather than reconstructed as raw.

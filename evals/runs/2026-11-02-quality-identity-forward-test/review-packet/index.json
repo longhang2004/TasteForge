@@ -1,0 +1,423 @@
+{
+  "createdAt": "2026-11-02T08:51:10.371568+00:00",
+  "cases": {
+    "press": {
+      "task": "press/task.md",
+      "variants": {
+        "A": {
+          "source": "press/A/index.html",
+          "checks": "press/A/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "file": "press/A/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "invalid",
+              "file": "press/A/320-invalid.png"
+            },
+            {
+              "width": 320,
+              "state": "review",
+              "file": "press/A/320-review.png"
+            },
+            {
+              "width": 320,
+              "state": "edit",
+              "file": "press/A/320-edit.png"
+            },
+            {
+              "width": 320,
+              "state": "failure",
+              "file": "press/A/320-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "file": "press/A/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "file": "press/A/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "invalid",
+              "file": "press/A/390-invalid.png"
+            },
+            {
+              "width": 390,
+              "state": "review",
+              "file": "press/A/390-review.png"
+            },
+            {
+              "width": 390,
+              "state": "edit",
+              "file": "press/A/390-edit.png"
+            },
+            {
+              "width": 390,
+              "state": "failure",
+              "file": "press/A/390-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "file": "press/A/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "file": "press/A/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "scope": "Optional full page; not natural post-action visibility",
+              "file": "press/A/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "invalid",
+              "file": "press/A/1440-invalid.png"
+            },
+            {
+              "width": 1440,
+              "state": "review",
+              "file": "press/A/1440-review.png"
+            },
+            {
+              "width": 1440,
+              "state": "edit",
+              "file": "press/A/1440-edit.png"
+            },
+            {
+              "width": 1440,
+              "state": "failure",
+              "file": "press/A/1440-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "file": "press/A/1440-success.png"
+            }
+          ]
+        },
+        "B": {
+          "source": "press/B/index.html",
+          "checks": "press/B/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "file": "press/B/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "invalid",
+              "file": "press/B/320-invalid.png"
+            },
+            {
+              "width": 320,
+              "state": "review",
+              "file": "press/B/320-review.png"
+            },
+            {
+              "width": 320,
+              "state": "edit",
+              "file": "press/B/320-edit.png"
+            },
+            {
+              "width": 320,
+              "state": "failure",
+              "file": "press/B/320-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "file": "press/B/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "file": "press/B/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "invalid",
+              "file": "press/B/390-invalid.png"
+            },
+            {
+              "width": 390,
+              "state": "review",
+              "file": "press/B/390-review.png"
+            },
+            {
+              "width": 390,
+              "state": "edit",
+              "file": "press/B/390-edit.png"
+            },
+            {
+              "width": 390,
+              "state": "failure",
+              "file": "press/B/390-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "file": "press/B/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "file": "press/B/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "scope": "Optional full page; not natural post-action visibility",
+              "file": "press/B/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "invalid",
+              "file": "press/B/1440-invalid.png"
+            },
+            {
+              "width": 1440,
+              "state": "review",
+              "file": "press/B/1440-review.png"
+            },
+            {
+              "width": 1440,
+              "state": "edit",
+              "file": "press/B/1440-edit.png"
+            },
+            {
+              "width": 1440,
+              "state": "failure",
+              "file": "press/B/1440-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "file": "press/B/1440-success.png"
+            }
+          ]
+        }
+      }
+    },
+    "listen": {
+      "task": "listen/task.md",
+      "variants": {
+        "A": {
+          "source": "listen/A/index.html",
+          "checks": "listen/A/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "file": "listen/A/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "filtered",
+              "file": "listen/A/320-filtered.png"
+            },
+            {
+              "width": 320,
+              "state": "detail",
+              "file": "listen/A/320-detail.png"
+            },
+            {
+              "width": 320,
+              "state": "return",
+              "file": "listen/A/320-return.png"
+            },
+            {
+              "width": 320,
+              "state": "empty",
+              "file": "listen/A/320-empty.png"
+            },
+            {
+              "width": 320,
+              "state": "reset",
+              "file": "listen/A/320-reset.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "file": "listen/A/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "filtered",
+              "file": "listen/A/390-filtered.png"
+            },
+            {
+              "width": 390,
+              "state": "detail",
+              "file": "listen/A/390-detail.png"
+            },
+            {
+              "width": 390,
+              "state": "return",
+              "file": "listen/A/390-return.png"
+            },
+            {
+              "width": 390,
+              "state": "empty",
+              "file": "listen/A/390-empty.png"
+            },
+            {
+              "width": 390,
+              "state": "reset",
+              "file": "listen/A/390-reset.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "file": "listen/A/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "scope": "Optional full page; not natural post-action visibility",
+              "file": "listen/A/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "filtered",
+              "file": "listen/A/1440-filtered.png"
+            },
+            {
+              "width": 1440,
+              "state": "detail",
+              "file": "listen/A/1440-detail.png"
+            },
+            {
+              "width": 1440,
+              "state": "return",
+              "file": "listen/A/1440-return.png"
+            },
+            {
+              "width": 1440,
+              "state": "empty",
+              "file": "listen/A/1440-empty.png"
+            },
+            {
+              "width": 1440,
+              "state": "reset",
+              "file": "listen/A/1440-reset.png"
+            }
+          ]
+        },
+        "B": {
+          "source": "listen/B/index.html",
+          "checks": "listen/B/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "file": "listen/B/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "filtered",
+              "file": "listen/B/320-filtered.png"
+            },
+            {
+              "width": 320,
+              "state": "detail",
+              "file": "listen/B/320-detail.png"
+            },
+            {
+              "width": 320,
+              "state": "return",
+              "file": "listen/B/320-return.png"
+            },
+            {
+              "width": 320,
+              "state": "empty",
+              "file": "listen/B/320-empty.png"
+            },
+            {
+              "width": 320,
+              "state": "reset",
+              "file": "listen/B/320-reset.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "file": "listen/B/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "filtered",
+              "file": "listen/B/390-filtered.png"
+            },
+            {
+              "width": 390,
+              "state": "detail",
+              "file": "listen/B/390-detail.png"
+            },
+            {
+              "width": 390,
+              "state": "return",
+              "file": "listen/B/390-return.png"
+            },
+            {
+              "width": 390,
+              "state": "empty",
+              "file": "listen/B/390-empty.png"
+            },
+            {
+              "width": 390,
+              "state": "reset",
+              "file": "listen/B/390-reset.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "file": "listen/B/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "scope": "Optional full page; not natural post-action visibility",
+              "file": "listen/B/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "filtered",
+              "file": "listen/B/1440-filtered.png"
+            },
+            {
+              "width": 1440,
+              "state": "detail",
+              "file": "listen/B/1440-detail.png"
+            },
+            {
+              "width": 1440,
+              "state": "return",
+              "file": "listen/B/1440-return.png"
+            },
+            {
+              "width": 1440,
+              "state": "empty",
+              "file": "listen/B/1440-empty.png"
+            },
+            {
+              "width": 1440,
+              "state": "reset",
+              "file": "listen/B/1440-reset.png"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

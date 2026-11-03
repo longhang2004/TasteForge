@@ -1,0 +1,4234 @@
+{
+  "startedAt": "2026-11-02T08:08:29.763Z",
+  "chromium": "156.0.8078.4",
+  "sources": {
+    "app.mjs": "5acd74dff1f4959c23fc8a8c337de3bf980250b0c502fd2a04b208585850edcf",
+    "brief-freeze.json": "5e02b8082403b5d2a124b04aaabb140c82501a29073f85b1ad792b302c836156",
+    "collection.css": "615db2a283d8b73aa95d891efa06d69a86c9ec15d5e63fce6e07a004740f4f83",
+    "collection.mjs": "40fe534d4d0efea5a495efdfa9d0a808d06719c8b63cf8acb80fbbbb8c9d3298",
+    "commerce.css": "aed87b3b985cd754d1f166abafdaefb3dee94cdce41a6939e1e08386e28d3487",
+    "commerce.mjs": "4d8e6b8a192690a4464dc31e88a70554ccc19505cf4168be196b99a07fb4cc4f",
+    "editorial.css": "9cf1819b7177b7ee0c7a76ca38a5c6d488ad50b399029cc6a381b266c4ba1e6a",
+    "editorial.mjs": "ebc1f10bc48578378e1971a2e2b4861c12ec4ea5ed83e93b30a3536e726823d9",
+    "fixtures.json": "50d5ddc6746918e5a7235b138ae0ba977018eb0b1c77274d2121dc5e940806f2",
+    "gallery.css": "7e78a0850de5ca25f06f1b4717a38b99989b3d55b626ad44e8210772f5950736",
+    "index.html": "6615e63160367d97c785336c21b047f81cf74aa746570ea7bf14f32dabb63fe4",
+    "operational.css": "042f659dbcb38c1178d632ea94ea2bbe7c51d3ee3762f568471e9160ff21ea93",
+    "operational.mjs": "66d11770727838cec8fe7e7670102ca45136b1510ed13587b2776ea0739ed433",
+    "shared.css": "5552bb78c8f05be4ca56deebd730d354c21945c0ec8ec386cbe8314627cc5366",
+    "study.html": "d66fdb091d2458f58357e7cf9de06d146ffd7d69ba95560eec4a43c05b4a2a55",
+    "assets/fold-study.svg": "2a553410188ab77ad347f83fe290e2bb63b99452d7e0a32a23d5b854bbabfbd0",
+    "assets/grid-study.svg": "3f55ca69e9ccbe9e464b15d98012b970cce7e7682ee71ab6a587f28b722a7943",
+    "assets/joint-comparison.svg": "1a0bd05b63ebe7739d5133c072be4b013817a394cc870f07d18a894792572c47",
+    "assets/joint-observation.svg": "c53271b3f378feb238eb9d4a526f66adfa38451dca64c51df895a6ea9f46a45d",
+    "assets/loop-weight.svg": "94b7ad8840e4887dc7f34c8b1b9ccf796f695c3227352696fd751601b0ad5ce0",
+    "assets/pouring-cup.svg": "1139015b08409b6d6fdaa1a78a9b69722b9049d3050ff868b41e554ee1b2ee00",
+    "assets/ridge-vessel.svg": "2c5f1cd38f2361b630b50c5c3c870cbe5592d50cd8720805ab22ecf5509e0c6f"
+  },
+  "traces": [
+    {
+      "id": "operational-conventional-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-conventional-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1166,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "detail",
+          "file": "operational-conventional-320-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1536,
+            "scrollX": 0,
+            "scrollY": 567,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 325.140625,
+              "bottom": 415.140625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-conventional-320-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1656,
+            "scrollX": 0,
+            "scrollY": 796,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 523.71875,
+              "bottom": 569.71875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-conventional-320-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1674,
+            "scrollX": 0,
+            "scrollY": 796,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 96.140625,
+              "bottom": 186.140625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-conventional-320-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1833,
+            "scrollX": 0,
+            "scrollY": 893,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 595.015625,
+              "bottom": 740.203125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-conventional-320-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1649,
+            "scrollX": 0,
+            "scrollY": 909,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 579.015625,
+              "bottom": 660.015625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-conventional-320-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 802,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 624.171875,
+              "bottom": 735.953125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-conventional-320-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 831,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 402.109375,
+              "bottom": 443.109375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "operational-conventional-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-conventional-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1071,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "detail",
+          "file": "operational-conventional-390-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1498,
+            "scrollX": 0,
+            "scrollY": 477,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 376.921875,
+              "bottom": 466.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-conventional-390-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1592,
+            "scrollX": 0,
+            "scrollY": 654,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 627.5,
+              "bottom": 673.5
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-conventional-390-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1580,
+            "scrollX": 0,
+            "scrollY": 654,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 199.921875,
+              "bottom": 289.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-conventional-390-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1720,
+            "scrollX": 0,
+            "scrollY": 732,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 717.796875,
+              "bottom": 843.984375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-conventional-390-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1592,
+            "scrollX": 0,
+            "scrollY": 748,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 701.796875,
+              "bottom": 763.796875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-conventional-390-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 844,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 604.984375,
+              "bottom": 697.734375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-conventional-390-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 844,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 382.921875,
+              "bottom": 423.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "operational-conventional-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-conventional-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "a[href=\"index.html\"]"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (62.3px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ],
+          "optionalFullPage": "operational-conventional-1440-entry-full.png"
+        },
+        {
+          "state": "detail",
+          "file": "operational-conventional-1440-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1240,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 685.15625,
+              "bottom": 715.15625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-conventional-1440-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1309,
+            "scrollX": 0,
+            "scrollY": 240,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 771.796875,
+              "bottom": 817.796875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-conventional-1440-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1279,
+            "scrollX": 0,
+            "scrollY": 240,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 445.15625,
+              "bottom": 475.15625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-conventional-1440-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1393,
+            "scrollX": 0,
+            "scrollY": 240,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 896.59375,
+              "bottom": 997.1875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-conventional-1440-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1272,
+            "scrollX": 0,
+            "scrollY": 272,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 864.59375,
+              "bottom": 907.59375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-conventional-1440-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 449.40625,
+              "bottom": 524.96875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-conventional-1440-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 297.34375,
+              "bottom": 338.34375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "operational-adapted-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-adapted-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1166,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "detail",
+          "file": "operational-adapted-320-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1107,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 463.03125,
+              "bottom": 553.03125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-adapted-320-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1227,
+            "scrollX": 0,
+            "scrollY": 367,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 523.609375,
+              "bottom": 569.609375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-adapted-320-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1245,
+            "scrollX": 0,
+            "scrollY": 367,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 96.03125,
+              "bottom": 186.03125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-adapted-320-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1404,
+            "scrollX": 0,
+            "scrollY": 464,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 594.90625,
+              "bottom": 740.09375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-adapted-320-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1220,
+            "scrollX": 0,
+            "scrollY": 480,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 578.90625,
+              "bottom": 659.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-adapted-320-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 802,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 624.171875,
+              "bottom": 735.953125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-adapted-320-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 831,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 402.109375,
+              "bottom": 443.109375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "operational-adapted-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-adapted-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1071,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "detail",
+          "file": "operational-adapted-390-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1087,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 443.84375,
+              "bottom": 533.84375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-adapted-390-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1182,
+            "scrollX": 0,
+            "scrollY": 243,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 628.421875,
+              "bottom": 674.421875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-adapted-390-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1170,
+            "scrollX": 0,
+            "scrollY": 243,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 200.84375,
+              "bottom": 290.84375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-adapted-390-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1310,
+            "scrollX": 0,
+            "scrollY": 322,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 717.71875,
+              "bottom": 843.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-adapted-390-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1182,
+            "scrollX": 0,
+            "scrollY": 338,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 701.71875,
+              "bottom": 763.71875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-adapted-390-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 844,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 604.984375,
+              "bottom": 697.734375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-adapted-390-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 844,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 382.921875,
+              "bottom": 423.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "operational-adapted-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "operational-adapted-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "a[href=\"index.html\"]"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (62.3px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ],
+          "optionalFullPage": "operational-adapted-1440-entry-full.png"
+        },
+        {
+          "state": "detail",
+          "file": "operational-adapted-1440-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 362.265625,
+              "bottom": 422.265625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "invalid",
+          "file": "operational-adapted-1440-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1036,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-quantity",
+              "text": "",
+              "top": 739.375,
+              "bottom": 785.375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "review",
+          "file": "operational-adapted-1440-review.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1028,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "op-heading",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linen",
+              "top": 362.265625,
+              "bottom": 422.265625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "operational-adapted-1440-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1143,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-error",
+              "text": "Decision was not recorded.Your quantity is retained. Retry or edit the decision.",
+              "top": 885.921875,
+              "bottom": 986.515625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "operational-adapted-1440-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1040,
+            "scrollX": 0,
+            "scrollY": 40,
+            "focus": {
+              "tag": "DIV",
+              "id": "op-success",
+              "text": "Recorded 8 pieces for LIN-115 in this session. No real warehouse update.",
+              "top": 845.921875,
+              "bottom": 907.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "operational-adapted-1440-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Khăn bàn Nguyễn Thị Minh Anh — Natural linenLIN-115 · B-04",
+              "top": 449.40625,
+              "bottom": 524.96875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "operational-adapted-1440-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "op-search",
+              "text": "",
+              "top": 297.34375,
+              "bottom": 338.34375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "invalid quantity 0 blocked",
+        "invalid quantity 1.5 blocked",
+        "edit retains quantity",
+        "save failure offers retry",
+        "retry reports success and selected quantity",
+        "return retains search/filter and row focus",
+        "reopen retains draft",
+        "empty list has no selectable rows"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-conventional-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-conventional-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1693,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-conventional-320-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1708,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-conventional-320-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1765,
+            "scrollX": 0,
+            "scrollY": 829,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 102.6875,
+              "bottom": 140.6875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-conventional-320-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1693,
+            "scrollX": 0,
+            "scrollY": 829,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 102.6875,
+              "bottom": 140.6875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-conventional-320-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1832,
+            "scrollX": 0,
+            "scrollY": 829,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 347.71875,
+              "bottom": 471.25
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-conventional-320-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1832,
+            "scrollX": 0,
+            "scrollY": 829,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 347.71875,
+              "bottom": 471.25
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-conventional-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-conventional-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1696,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-conventional-390-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1696,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-conventional-390-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1768,
+            "scrollX": 0,
+            "scrollY": 780,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 154.671875,
+              "bottom": 192.671875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-conventional-390-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1696,
+            "scrollX": 0,
+            "scrollY": 780,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 154.671875,
+              "bottom": 192.671875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-conventional-390-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1812,
+            "scrollX": 0,
+            "scrollY": 780,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 399.703125,
+              "bottom": 500.1875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-conventional-390-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1835,
+            "scrollX": 0,
+            "scrollY": 780,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 399.703125,
+              "bottom": 523.234375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-conventional-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-conventional-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1161,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "a[href=\"index.html\"]"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (62.3px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ],
+          "optionalFullPage": "commerce-conventional-1440-entry-full.png"
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-conventional-1440-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1161,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "a[href=\"index.html\"]"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (62.3px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-conventional-1440-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1217,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 563.3125,
+              "bottom": 601.3125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-conventional-1440-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1161,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 563.3125,
+              "bottom": 601.3125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-conventional-1440-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1278,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 808.34375,
+              "bottom": 908.828125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-conventional-1440-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1278,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 808.34375,
+              "bottom": 908.828125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-adapted-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-adapted-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1726,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-adapted-320-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1741,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-adapted-320-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1798,
+            "scrollX": 0,
+            "scrollY": 875,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 103.421875,
+              "bottom": 141.421875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-adapted-320-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1726,
+            "scrollX": 0,
+            "scrollY": 875,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 103.421875,
+              "bottom": 141.421875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-adapted-320-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1866,
+            "scrollX": 0,
+            "scrollY": 875,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 348.453125,
+              "bottom": 471.984375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-adapted-320-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1866,
+            "scrollX": 0,
+            "scrollY": 875,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 348.453125,
+              "bottom": 471.984375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-adapted-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-adapted-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1729,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-adapted-390-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1729,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-adapted-390-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1801,
+            "scrollX": 0,
+            "scrollY": 826,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 155.40625,
+              "bottom": 193.40625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-adapted-390-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1729,
+            "scrollX": 0,
+            "scrollY": 826,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 155.40625,
+              "bottom": 193.40625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-adapted-390-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1846,
+            "scrollX": 0,
+            "scrollY": 826,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 400.4375,
+              "bottom": 500.921875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-adapted-390-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1869,
+            "scrollX": 0,
+            "scrollY": 826,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 400.4375,
+              "bottom": 523.96875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "commerce-adapted-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "commerce-adapted-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1158,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "a[href=\"index.html\"]"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (62.3px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ],
+          "optionalFullPage": "commerce-adapted-1440-entry-full.png"
+        },
+        {
+          "state": "unavailable",
+          "file": "commerce-adapted-1440-unavailable.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1158,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "a[href=\"index.html\"]"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (62.3px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "invalid",
+          "file": "commerce-adapted-1440-invalid.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1168,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 428.171875,
+              "bottom": 466.171875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "decision",
+          "file": "commerce-adapted-1440-decision.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1158,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "co-quantity",
+              "text": "",
+              "top": 428.171875,
+              "bottom": 466.171875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "failure",
+          "file": "commerce-adapted-1440-failure.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1229,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Cup was not added.Your glaze and quantity are retained. Retry or change the choices above.",
+              "top": 673.203125,
+              "bottom": 773.6875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "success",
+          "file": "commerce-adapted-1440-success.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1229,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "DIV",
+              "id": "co-feedback",
+              "text": "Added Sand × 2.Total USD 90, including USD 6 shipping. Simulated cart only; no real order or payment.",
+              "top": 673.203125,
+              "bottom": 773.6875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "unavailable purchase blocked",
+        "over-stock does not add",
+        "complete cost and policies supplied",
+        "retry retains choices and exact total"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-conventional-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-conventional-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4021,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "section",
+          "file": "editorial-conventional-320-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4021,
+            "scrollX": 0,
+            "scrollY": 1791,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 23.6875,
+              "bottom": 89.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-conventional-320-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4021,
+            "scrollX": 0,
+            "scrollY": 1791,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 23.6875,
+              "bottom": 89.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-conventional-320-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4044,
+            "scrollX": 0,
+            "scrollY": 2705,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 24.140625,
+              "bottom": 90.359375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-conventional-320-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 4021,
+            "scrollX": 0,
+            "scrollY": 502,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 50.046875,
+              "bottom": 69.046875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-conventional-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-conventional-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3793,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "section",
+          "file": "editorial-conventional-390-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3793,
+            "scrollX": 0,
+            "scrollY": 1737,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.234375,
+              "bottom": 57.34375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-conventional-390-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3793,
+            "scrollX": 0,
+            "scrollY": 1737,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.234375,
+              "bottom": 57.34375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-conventional-390-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3793,
+            "scrollX": 0,
+            "scrollY": 2573,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 24.03125,
+              "bottom": 90.25
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-conventional-390-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3793,
+            "scrollX": 0,
+            "scrollY": 385,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 125.59375,
+              "bottom": 144.59375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-conventional-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-conventional-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 3401,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "a[href=\"index.html\"]"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (62.3px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ],
+          "optionalFullPage": "editorial-conventional-1440-entry-full.png"
+        },
+        {
+          "state": "section",
+          "file": "editorial-conventional-1440-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 3401,
+            "scrollX": 0,
+            "scrollY": 1561,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.46875,
+              "bottom": 70.828125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-conventional-1440-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 3401,
+            "scrollX": 0,
+            "scrollY": 1561,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.46875,
+              "bottom": 70.828125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-conventional-1440-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 3401,
+            "scrollX": 0,
+            "scrollY": 2401,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 34.21875,
+              "bottom": 80.578125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-conventional-1440-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 3401,
+            "scrollX": 0,
+            "scrollY": 89,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 447.75,
+              "bottom": 466.75
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-adapted-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-adapted-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 3949,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "section",
+          "file": "editorial-adapted-320-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 3949,
+            "scrollX": 0,
+            "scrollY": 1929,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.203125,
+              "bottom": 90.421875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-adapted-320-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 3949,
+            "scrollX": 0,
+            "scrollY": 1929,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.203125,
+              "bottom": 90.421875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-adapted-320-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 3972,
+            "scrollX": 0,
+            "scrollY": 2982,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 24.171875,
+              "bottom": 90.390625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-adapted-320-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 3949,
+            "scrollX": 0,
+            "scrollY": 502,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 50.046875,
+              "bottom": 69.046875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-adapted-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-adapted-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3694,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "section",
+          "file": "editorial-adapted-390-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3694,
+            "scrollX": 0,
+            "scrollY": 1849,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 23.75,
+              "bottom": 56.859375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-adapted-390-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3694,
+            "scrollX": 0,
+            "scrollY": 1849,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 23.75,
+              "bottom": 56.859375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-adapted-390-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3694,
+            "scrollX": 0,
+            "scrollY": 2823,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 24.0625,
+              "bottom": 90.28125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-adapted-390-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 3694,
+            "scrollX": 0,
+            "scrollY": 358,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 125.59375,
+              "bottom": 144.59375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "editorial-adapted-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "editorial-adapted-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 2682,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "a[href=\"index.html\"]"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (62.3px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ],
+          "optionalFullPage": "editorial-adapted-1440-entry-full.png"
+        },
+        {
+          "state": "section",
+          "file": "editorial-adapted-1440-section.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 2682,
+            "scrollX": 0,
+            "scrollY": 1390,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.171875,
+              "bottom": 70.53125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "resumed",
+          "file": "editorial-adapted-1440-resumed.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 2682,
+            "scrollX": 0,
+            "scrollY": 1390,
+            "focus": {
+              "tag": "H2",
+              "id": "compare",
+              "text": "Compare the record",
+              "top": 24.171875,
+              "bottom": 70.53125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "replaced",
+          "file": "editorial-adapted-1440-replaced.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 2682,
+            "scrollX": 0,
+            "scrollY": 1682,
+            "focus": {
+              "tag": "H2",
+              "id": "record",
+              "text": "Record what remains unknown",
+              "top": 410.625,
+              "bottom": 503.34375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "cleared",
+          "file": "editorial-adapted-1440-cleared.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 2682,
+            "scrollX": 0,
+            "scrollY": 89,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Observe the gap",
+              "top": 447.75,
+              "bottom": 466.75
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "anchor focuses matching heading",
+        "resume restores saved heading focus",
+        "replace saved section works",
+        "captions stay attached to artifacts"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-conventional-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-conventional-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 2086,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "detail",
+          "file": "collection-conventional-320-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1530,
+            "scrollX": 0,
+            "scrollY": 338,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 635.9375,
+              "bottom": 739.578125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-conventional-320-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1045,
+            "scrollX": 0,
+            "scrollY": 305,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 603.203125,
+              "bottom": 667.828125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-conventional-320-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 974,
+            "scrollX": 0,
+            "scrollY": 234,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 215.5,
+              "bottom": 256.5
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-conventional-320-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 2086,
+            "scrollX": 0,
+            "scrollY": 234,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 215.5,
+              "bottom": 256.5
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-conventional-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-conventional-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 2061,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "detail",
+          "file": "collection-conventional-390-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1567,
+            "scrollX": 0,
+            "scrollY": 270,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 740.59375,
+              "bottom": 844.234375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-conventional-390-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1019,
+            "scrollX": 0,
+            "scrollY": 175,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 707.609375,
+              "bottom": 772.234375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-conventional-390-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 922,
+            "scrollX": 0,
+            "scrollY": 78,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 345.90625,
+              "bottom": 386.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-conventional-390-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 2061,
+            "scrollX": 0,
+            "scrollY": 78,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 345.90625,
+              "bottom": 386.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-conventional-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-conventional-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "a[href=\"index.html\"]"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (62.3px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ],
+          "optionalFullPage": "collection-conventional-1440-entry-full.png"
+        },
+        {
+          "state": "detail",
+          "file": "collection-conventional-1440-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1543,
+            "scrollX": 0,
+            "scrollY": 543,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 469.8125,
+              "bottom": 580.375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-conventional-1440-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 851.578125,
+              "bottom": 916.203125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-conventional-1440-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 446.875,
+              "bottom": 487.875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-conventional-1440-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 446.875,
+              "bottom": 487.875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-adapted-320",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-adapted-320-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1764,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "#alternate"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (118.4px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "detail",
+          "file": "collection-adapted-320-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1530,
+            "scrollX": 0,
+            "scrollY": 656,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 317.9375,
+              "bottom": 421.578125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-adapted-320-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 999,
+            "scrollX": 0,
+            "scrollY": 74,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 618.203125,
+              "bottom": 710.140625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-adapted-320-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 974,
+            "scrollX": 0,
+            "scrollY": 74,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 375.5,
+              "bottom": 416.5
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-adapted-320-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 320,
+            "height": 740,
+            "scrollWidth": 320,
+            "scrollHeight": 1764,
+            "scrollX": 0,
+            "scrollY": 74,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 375.5,
+              "bottom": 416.5
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-adapted-390",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-adapted-390-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1685,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "state": "detail",
+          "file": "collection-adapted-390-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1540,
+            "scrollX": 0,
+            "scrollY": 613,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 370.59375,
+              "bottom": 474.234375
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-adapted-390-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 947,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 639.609375,
+              "bottom": 731.546875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-adapted-390-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 895,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 396.90625,
+              "bottom": 437.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-adapted-390-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollWidth": 390,
+            "scrollHeight": 1685,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 396.90625,
+              "bottom": 437.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "id": "collection-adapted-1440",
+      "states": [
+        {
+          "state": "entry",
+          "file": "collection-adapted-1440-entry.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1437,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "text": "Skip to task",
+              "top": 0,
+              "bottom": 43
+            }
+          },
+          "violations": [
+            {
+              "id": "target-size",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "target": [
+                    "a[href=\"index.html\"]"
+                  ],
+                  "summary": "Fix any of the following:\n  Target has insufficient size (62.3px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+                }
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  "a[href=\"index.html\"]"
+                ]
+              ]
+            }
+          ],
+          "optionalFullPage": "collection-adapted-1440-entry-full.png"
+        },
+        {
+          "state": "detail",
+          "file": "collection-adapted-1440-detail.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1122,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "H2",
+              "id": "cl-detail-title",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 537.0625,
+              "bottom": 702.90625
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "return",
+          "file": "collection-adapted-1440-return.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "text": "Grid after rain — Nguyễn Thị Minh Anh study",
+              "top": 617.578125,
+              "bottom": 661.578125
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "empty",
+          "file": "collection-adapted-1440-empty.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1000,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 446.875,
+              "bottom": 487.875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "state": "reset",
+          "file": "collection-adapted-1440-reset.png",
+          "scope": "natural viewport; no scroll/focus reset",
+          "geometry": {
+            "width": 1440,
+            "height": 1000,
+            "scrollWidth": 1440,
+            "scrollHeight": 1437,
+            "scrollX": 0,
+            "scrollY": 0,
+            "focus": {
+              "tag": "INPUT",
+              "id": "cl-search",
+              "text": "",
+              "top": 446.875,
+              "bottom": 487.875
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        "first keyboard stop is skip link",
+        "filters narrow to matching record",
+        "detail has meaningful metadata and caption",
+        "return retains query/filter and trigger focus",
+        "empty reset restores all records"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  ],
+  "failures": [
+    "operational-conventional-320/entry: axe target-size",
+    "operational-conventional-390/entry: axe target-size",
+    "operational-conventional-1440/entry: axe target-size",
+    "operational-adapted-320/entry: axe target-size",
+    "operational-adapted-390/entry: axe target-size",
+    "operational-adapted-1440/entry: axe target-size",
+    "commerce-conventional-320/entry: axe target-size",
+    "commerce-conventional-320/unavailable: axe target-size",
+    "commerce-conventional-390/entry: axe target-size",
+    "commerce-conventional-390/unavailable: axe target-size",
+    "commerce-conventional-1440/entry: axe target-size",
+    "commerce-conventional-1440/unavailable: axe target-size",
+    "commerce-adapted-320/entry: axe target-size",
+    "commerce-adapted-320/unavailable: axe target-size",
+    "commerce-adapted-390/entry: axe target-size",
+    "commerce-adapted-390/unavailable: axe target-size",
+    "commerce-adapted-1440/entry: axe target-size",
+    "commerce-adapted-1440/unavailable: axe target-size",
+    "editorial-conventional-320/entry: axe target-size",
+    "editorial-conventional-390/entry: axe target-size",
+    "editorial-conventional-1440/entry: axe target-size",
+    "editorial-adapted-320/entry: axe target-size",
+    "editorial-adapted-1440/entry: axe target-size",
+    "collection-conventional-320/entry: axe target-size",
+    "collection-conventional-390/entry: axe target-size",
+    "collection-conventional-1440/entry: axe target-size",
+    "collection-adapted-320/entry: axe target-size",
+    "collection-adapted-1440/entry: axe target-size"
+  ],
+  "scope": "Automated task assertions, axe and natural viewport evidence; no human tests or conformance claim.",
+  "finishedAt": "2026-11-02T08:11:58.815Z",
+  "checkCount": 144,
+  "stateCount": 144
+}

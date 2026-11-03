@@ -2,8 +2,23 @@
 evals/runs/** -text
 evals/runs/**/reviews/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 examples/*/evidence/** -text
+examples/composition-studies/brief-freeze.json -text
+examples/composition-studies/briefs.md -text
+examples/composition-studies/fixtures.json -text
+examples/composition-studies/assets/** -text
 examples/inventory-workbench/reviews/** -text
 examples/generated/** -text
 packages/knowledge/src/data/references.json -text
 packages/knowledge/reference-lock.json -text
 packages/knowledge/third-party/** -text
+# Preserve raw creator and operator whitespace in the frozen automated study.
+evals/runs/2026-11-02-current-skill-automation/cases/** whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+evals/runs/2026-11-02-current-skill-automation/evidence/** whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+evals/runs/2026-11-02-current-skill-automation/reviews/packet-*/tasks/*.md whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+# Preserve frozen probe inputs, native outputs and validation diagnostics.
+evals/runs/2026-11-02-lean-workflow-probe/** whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+# Preserve new raw trial code and process streams without whitespace normalization.
+evals/runs/2026-11-02-quality-identity-forward-test/** whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+evals/runs/2026-11-02-four-skill-landing-comparison/** whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+evals/runs/2026-11-03-beta2-hardening/** whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+examples/composition-studies/evidence/** whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab

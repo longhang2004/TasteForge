@@ -1,0 +1,221 @@
+.collection {
+  color: #292e2b;
+  --cl-rule: #a5aaa0;
+}
+.cl-header {
+  border-bottom: 2px solid #333d34;
+  padding-bottom: 24px;
+  max-width: 1100px;
+}
+.cl-header h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  font-weight: 500;
+  max-width: 13ch;
+  margin: 22px 0;
+}
+.cl-header > p:last-child {
+  max-width: 66ch;
+}
+.cl-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 16px;
+  padding-top: 28px;
+}
+.cl-filters > div:first-child {
+  flex: 1 1 280px;
+  max-width: 580px;
+}
+.cl-filters input {
+  width: 100%;
+}
+.cl-filters label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.cl-count {
+  color: #4e5b50;
+  font-size: 0.86rem;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--cl-rule);
+}
+.cl-records {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.cl-record figure {
+  min-width: 0;
+  background: #ebe9df;
+}
+.cl-record img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+.cl-record h2 {
+  font-size: 1.22rem;
+  line-height: 1.4;
+  margin: 8px 0;
+}
+.cl-record h2 button {
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  padding: 5px 0;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  color: #304e3d;
+}
+.cl-record .eyebrow {
+  color: #53614f;
+  margin-bottom: 6px;
+}
+.collection.conventional .cl-records {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+.collection.conventional .cl-record img {
+  height: 250px;
+  padding: 22px;
+}
+.collection.conventional .cl-record-label {
+  padding-top: 8px;
+}
+.collection.adapted .cl-record {
+  display: grid;
+  grid-template-columns: minmax(110px, 180px) minmax(0, 1fr);
+  gap: 28px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--cl-rule);
+  align-items: center;
+}
+.collection.adapted .cl-record img {
+  height: 140px;
+  padding: 10px;
+}
+.collection.adapted .cl-record.object img {
+  height: 160px;
+  padding: 12px 26px;
+}
+.cl-quick {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 12px;
+  margin: 18px 0 0;
+}
+.collection dt {
+  color: #4e5b50;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 5px;
+}
+.collection dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.cl-empty {
+  padding: 32px 0;
+  max-width: 500px;
+}
+#cl-detail {
+  padding-top: 24px;
+}
+.cl-detail-layout {
+  margin-top: 28px;
+}
+.cl-detail-layout figure {
+  max-width: 680px;
+}
+.cl-detail-layout img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+  padding: 24px;
+  object-fit: contain;
+  background: #ebe9df;
+}
+.cl-detail-layout figcaption {
+  margin-top: 14px;
+}
+.cl-object-record {
+  max-width: 660px;
+}
+#cl-detail-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.8rem, 3.2vw, 3.1rem);
+  line-height: 1.2;
+  font-weight: 500;
+  margin-top: 18px;
+}
+.cl-object-record dl > div {
+  padding: 12px 0;
+  border-top: 1px solid var(--cl-rule);
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 16px;
+}
+.cl-scope {
+  font-size: 0.85rem;
+  color: #4e5b50;
+}
+.collection.adapted .cl-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+@media (min-width: 1100px) {
+  .collection.conventional .cl-records {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .collection.conventional .cl-records {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .collection.conventional .cl-record img {
+    height: 220px;
+  }
+  .collection.adapted .cl-record {
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+  }
+  .collection.adapted .cl-record img,
+  .collection.adapted .cl-record.object img {
+    height: 100px;
+    padding: 6px;
+  }
+  .collection.adapted .cl-record .eyebrow {
+    margin-top: 0;
+  }
+  .cl-quick {
+    grid-template-columns: 1fr;
+    margin-top: 14px;
+  }
+  .cl-filters > div:first-child {
+    flex-basis: 100%;
+  }
+  .collection.adapted .cl-detail-layout {
+    display: block;
+  }
+  .cl-object-record {
+    margin-top: 28px;
+  }
+  .cl-object-record dl > div {
+    grid-template-columns: 85px minmax(0, 1fr);
+    gap: 10px;
+  }
+}

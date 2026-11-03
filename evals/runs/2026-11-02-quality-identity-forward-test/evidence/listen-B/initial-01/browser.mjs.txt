@@ -1,0 +1,74 @@
+import { createRequire } from 'node:module';
+import { createHash } from 'node:crypto';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { serve } from '../../../../examples/composition-studies/tools/serve.mjs';
+import { captureCheckpoint } from '../../../../skills/tasteforge/scripts/check-ui.mjs';
+
+const repository = path.resolve(fileURLToPath(new URL('../../../..', import.meta.url)));
+export const runRoot = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
+const require = createRequire(path.join(repository, 'examples/inventory-workbench/tools/package.json'));
+const { chromium } = require('playwright');
+const AxeBuilder = require('@axe-core/playwright').default;
+export async function runCell(cell, stage, pass, task, testSource) {
+  const out = path.join(runRoot, 'evidence', cell, pass);
+  await mkdir(path.dirname(out), { recursive: true });
+  await mkdir(out);
+  const source = path.join(runRoot, 'cells', cell, stage, 'index.html');
+  await writeFile(path.join(out, 'task.mjs.txt'), await readFile(testSource));
+  await writeFile(path.join(out, 'browser.mjs.txt'), await readFile(fileURLToPath(import.meta.url)));
+  const sha = (data) => createHash('sha256').update(data).digest('hex');
+  const report = { cell, stage, pass, startedAt: new Date().toISOString(), sourceSha256: sha(await readFile(source)),
+    harnessSha256: sha(await readFile(fileURLToPath(import.meta.url))), taskHarnessSha256: sha(await readFile(testSource)),
+    traces: [], failures: [], providerTokens: null, scope: 'Automated browser/axe + natural viewport; human tests deferred' };
+  const { server, url } = await serve();
+  const browser = await chromium.launch();
+  report.chromium = browser.version();
+  try {
+    for (const width of [320, 390, 1440]) {
+      const trace = { width, states: [], checks: [], pageErrors: [], externalRequests: [] };
+      report.traces.push(trace);
+      const context = await browser.newContext({ viewport: { width, height: width === 320 ? 740 : width === 390 ? 844 : 1000 } });
+      const page = await context.newPage();
+      page.setDefaultTimeout(5000);
+      page.on('pageerror', (error) => trace.pageErrors.push(error.message));
+      await page.route('**/*', (route) => {
+        if (new URL(route.request().url()).origin !== url) { trace.externalRequests.push(route.request().url()); return route.abort(); }
+        return route.continue();
+      });
+      const capture = async (label) => {
+        const capture = await captureCheckpoint(page, { outputDir: out, label: `${width}-${label}`, fullPage: label === 'entry' && width === 1440,
+          feedbackSelectors: ['[role=alert]', '[role=status]', 'button:focus', 'h1:focus', 'h2:focus'] });
+        const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
+        const state = { label, report: path.relative(runRoot, path.join(capture.directory, 'report.json')),
+          viewport: path.relative(runRoot, path.join(capture.directory, 'viewport.png')),
+          geometry: capture.report.geometry, focus: capture.report.activeElement, scroll: capture.report.scroll,
+          violations: axe.violations.map((v) => ({ id: v.id, nodes: v.nodes.map((n) => ({ target: n.target, summary: n.failureSummary })) })),
+          incomplete: axe.incomplete.map((v) => ({ id: v.id, nodes: v.nodes.map((n) => n.target) })) };
+        trace.states.push(state);
+        if (state.geometry.status !== 'pass') report.failures.push(`${width}/${label}: horizontal overflow`);
+        if (state.violations.length) report.failures.push(`${width}/${label}: axe ${state.violations.map((v) => v.id).join(', ')}`);
+      };
+      const check = async (name, assertion) => { await assertion(); trace.checks.push(name); };
+      try {
+        await page.goto(`${url}/evals/runs/2026-11-02-quality-identity-forward-test/cells/${cell}/${stage}/index.html`);
+        await page.locator('h1').waitFor();
+        await capture('entry');
+        await task({ page, width, capture, check });
+        if (trace.pageErrors.length || trace.externalRequests.length) throw Error('Runtime or external request failures');
+      } catch (error) {
+        trace.error = error.stack;
+        report.failures.push(`${width}: ${error.message}`);
+        await page.screenshot({ path: path.join(out, `${width}-failure-diagnostic.png`) }).catch(() => {});
+      } finally { await context.close(); }
+    }
+  } finally {
+    report.finishedAt = new Date().toISOString();
+    report.checks = report.traces.reduce((n, trace) => n + trace.checks.length, 0);
+    await writeFile(path.join(out, 'report.json'), JSON.stringify(report, null, 2) + '\n');
+    await browser.close(); server.close();
+  }
+  console.log(JSON.stringify({ cell, stage, pass, checks: report.checks, failures: report.failures }));
+  return report;
+}

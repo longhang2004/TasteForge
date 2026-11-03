@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "scope": "Initial load only; no task interactions exercised",
+  "url": "http://127.0.0.1:41955",
+  "checks": [
+    {
+      "width": 320,
+      "geometry": {
+        "status": "pass",
+        "horizontalOverflow": 0,
+        "scope": "Document width only; no accessibility or task-quality certification"
+      },
+      "pageErrors": [],
+      "report": "initial-320/report.json"
+    },
+    {
+      "width": 390,
+      "geometry": {
+        "status": "pass",
+        "horizontalOverflow": 0,
+        "scope": "Document width only; no accessibility or task-quality certification"
+      },
+      "pageErrors": [],
+      "report": "initial-390/report.json"
+    },
+    {
+      "width": 1440,
+      "geometry": {
+        "status": "pass",
+        "horizontalOverflow": 0,
+        "scope": "Document width only; no accessibility or task-quality certification"
+      },
+      "pageErrors": [],
+      "report": "initial-1440/report.json"
+    }
+  ],
+  "accessibility": "not requested",
+  "limitations": [
+    "Geometry is not task quality or accessibility conformance.",
+    "Use captureCheckpoint from actual task tests for edit/error/retry states."
+  ],
+  "browser": "156.0.8078.4"
+}

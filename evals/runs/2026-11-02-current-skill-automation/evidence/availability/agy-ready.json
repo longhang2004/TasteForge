@@ -1,0 +1,21 @@
+{
+  "exitCode": 0,
+  "stdout": "{\"conversation_id\":\"84e66d6b-6870-49c0-9a87-19115a486b5c\",\"status\":\"SUCCESS\",\"response\":\"READY\\n\",\"duration_seconds\":3.4071714,\"num_turns\":1,\"usage\":{\"input_tokens\":6838,\"output_tokens\":36,\"thinking_tokens\":35,\"cache_read_tokens\":0,\"total_tokens\":6874}}\n",
+  "stderr": "",
+  "command": [
+    "/mnt/c/Users/hi/AppData/Local/agy/bin/agy.exe",
+    "--model",
+    "gemini-3.8-flash-medium",
+    "--output-format",
+    "json",
+    "--print-timeout",
+    "45s",
+    "--disable-slash-commands",
+    "--settings",
+    "{\"permissions\": {\"deny\": [\"command(*)\", \"write_file(*)\", \"read_file(*)\"]}}",
+    "-p",
+    "Reply exactly READY. Do not read files, use tools or change anything."
+  ],
+  "startedAtUtc": "2026-11-01T18:14:31.171669+00:00",
+  "durationSeconds": 12.709
+}

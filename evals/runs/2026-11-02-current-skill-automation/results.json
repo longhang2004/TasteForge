@@ -1,0 +1,3517 @@
+{
+  "runId": "2026-11-02-current-skill-automation",
+  "summarizedAtUtc": "2026-11-02T02:14:45.563Z",
+  "sourceCommit": "449c90bdbd5ba3cfb3795a91dcc45bd53cbdc602",
+  "cases": [
+    {
+      "id": "c01",
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "promptId": "fintech-transfer",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c01/browser.json",
+      "initialEvidence": "evidence/c01/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1104,
+            "title": "Northline Transfer — Simulated transfer",
+            "h1": [
+              "A little closer to home."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Arial, Helvetica, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 19
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 7
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 21
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 5
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 15
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 5
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c01/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1659,
+            "title": "Northline Transfer — Simulated transfer",
+            "h1": [
+              "A little closer to home."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Arial, Helvetica, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 18
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 7
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 20
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 5
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 14
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 5
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c01/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 320,
+            "pageHeight": 1785,
+            "title": "Northline Transfer — Simulated transfer",
+            "h1": [
+              "A little closer to home."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Arial, Helvetica, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 18
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 7
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 20
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 5
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 14
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 5
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c01/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c02",
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "promptId": "fintech-transfer",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c02/browser.json",
+      "initialEvidence": "evidence/c02/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1078,
+            "title": "Simulated transfer · Northline Transfer",
+            "h1": [
+              "Set up your transfer.",
+              "Review your transfer."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 2
+                }
+              ]
+            },
+            "failure": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [],
+              "incomplete": []
+            }
+          },
+          "source": "evidence/pass-02/c02/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1584,
+            "title": "Simulated transfer · Northline Transfer",
+            "h1": [
+              "Set up your transfer.",
+              "Review your transfer."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 2
+                }
+              ]
+            },
+            "failure": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [],
+              "incomplete": []
+            }
+          },
+          "source": "evidence/pass-02/c02/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 320,
+            "pageHeight": 1769,
+            "title": "Simulated transfer · Northline Transfer",
+            "h1": [
+              "Set up your transfer.",
+              "Review your transfer."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 2
+                }
+              ]
+            },
+            "failure": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [],
+              "incomplete": []
+            }
+          },
+          "source": "evidence/pass-02/c02/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c03",
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "promptId": "commerce-craft",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c03/browser.json",
+      "initialEvidence": "evidence/c03/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1555,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Arial, Helvetica, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 3
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 3
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c03/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 2356,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Arial, Helvetica, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 3
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 3
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c03/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 320,
+            "pageHeight": 2360,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Arial, Helvetica, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 3
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 3
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c03/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c04",
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "promptId": "commerce-craft",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c04/browser.json",
+      "initialEvidence": "evidence/c04/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1307,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Arial, \"Segoe UI\", sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            },
+            "final": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c04/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1658,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Arial, \"Segoe UI\", sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            },
+            "final": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c04/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 6,
+            "failed": 3,
+            "total": 9
+          },
+          "contract": {
+            "passed": 5,
+            "failed": 1,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "fail",
+              "observation": "339px document / 320px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "No horizontal overflow in review",
+              "status": "fail",
+              "observation": "339px document / 320px viewport",
+              "kind": "geometry"
+            },
+            {
+              "name": "No horizontal overflow in cart",
+              "status": "fail",
+              "observation": "339px document / 320px viewport",
+              "kind": "geometry"
+            }
+          ],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 339,
+            "pageHeight": 1696,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Arial, \"Segoe UI\", sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 14
+                }
+              ]
+            },
+            "final": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 15
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c04/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c05",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "promptId": "fintech-transfer",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c05/browser.json",
+      "initialEvidence": "evidence/c05/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1000,
+            "title": "Review transfer · Northline Transfer",
+            "h1": [
+              "Send with confidence."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 5
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 2
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c05/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1227,
+            "title": "Review transfer · Northline Transfer",
+            "h1": [
+              "Send with confidence."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 5
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 2
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c05/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 320,
+            "pageHeight": 1277,
+            "title": "Review transfer · Northline Transfer",
+            "h1": [
+              "Send with confidence."
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 5
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 2
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c05/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c06",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "promptId": "fintech-transfer",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c06/browser.json",
+      "initialEvidence": "evidence/c06/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1000,
+            "title": "Review your transfer · Northline Transfer",
+            "h1": [
+              "Set up your transfer",
+              "Review your transfer",
+              "That didn’t go through",
+              "Transfer simulated"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Segoe UI\", \"Noto Sans\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c06/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1162,
+            "title": "Review your transfer · Northline Transfer",
+            "h1": [
+              "Set up your transfer",
+              "Review your transfer",
+              "That didn’t go through",
+              "Transfer simulated"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Segoe UI\", \"Noto Sans\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c06/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 320,
+            "pageHeight": 1213,
+            "title": "Review your transfer · Northline Transfer",
+            "h1": [
+              "Set up your transfer",
+              "Review your transfer",
+              "That didn’t go through",
+              "Transfer simulated"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Segoe UI\", \"Noto Sans\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c06/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c07",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "promptId": "commerce-craft",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c07/browser.json",
+      "initialEvidence": "evidence/c07/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1582,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 20
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 7
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 20
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 7
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c07/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 2022,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 20
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 7
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 20
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 7
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c07/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 320,
+            "pageHeight": 2054,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "EverydayTeapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 20
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 7
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 20
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 7
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c07/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c08",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "promptId": "commerce-craft",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c08/browser.json",
+      "initialEvidence": "evidence/c08/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1330,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "Everyday Teapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c08/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1985,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "Everyday Teapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c08/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 320,
+            "pageHeight": 2023,
+            "title": "Everyday Teapot — Field Kiln",
+            "h1": [
+              "Everyday Teapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "\"Segoe UI\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 4
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c08/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c09",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "promptId": "fintech-transfer",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c09/browser.json",
+      "initialEvidence": "evidence/c09/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1230,
+            "title": "Northline Transfer — Simulated Money Transfer",
+            "h1": [
+              "Send money to Việt Nam",
+              "Review simulated transfer"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c09/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1536,
+            "title": "Northline Transfer — Simulated Money Transfer",
+            "h1": [
+              "Send money to Việt Nam",
+              "Review simulated transfer"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c09/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 320,
+            "pageHeight": 1859,
+            "title": "Northline Transfer — Simulated Money Transfer",
+            "h1": [
+              "Send money to Việt Nam",
+              "Review simulated transfer"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 3
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 3
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 4
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c09/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c10",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "promptId": "fintech-transfer",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c10/browser.json",
+      "initialEvidence": "evidence/c10/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1093,
+            "title": "Northline Transfer — Money Transfer Simulation",
+            "h1": [
+              "Send money to Việt Nam"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 2
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": []
+            }
+          },
+          "source": "evidence/pass-02/c10/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 1238,
+            "title": "Northline Transfer — Money Transfer Simulation",
+            "h1": [
+              "Send money to Việt Nam"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 2
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": []
+            }
+          },
+          "source": "evidence/pass-02/c10/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 21,
+            "failed": 0,
+            "total": 21
+          },
+          "contract": {
+            "passed": 17,
+            "failed": 0,
+            "total": 17
+          },
+          "geometry": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 320,
+            "pageHeight": 1450,
+            "title": "Northline Transfer — Money Transfer Simulation",
+            "h1": [
+              "Send money to Việt Nam"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 2
+                }
+              ]
+            },
+            "failure": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 1
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 1
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": []
+            }
+          },
+          "source": "evidence/pass-02/c10/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c11",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "promptId": "commerce-craft",
+      "condition": "no-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c11/browser.json",
+      "initialEvidence": "evidence/c11/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1805,
+            "title": "Field Kiln — Everyday Teapot",
+            "h1": [
+              "Everyday Teapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c11/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 2698,
+            "title": "Field Kiln — Everyday Teapot",
+            "h1": [
+              "Everyday Teapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c11/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 6,
+            "failed": 3,
+            "total": 9
+          },
+          "contract": {
+            "passed": 5,
+            "failed": 1,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [
+            {
+              "name": "No document horizontal overflow",
+              "status": "fail",
+              "observation": "349px document / 320px viewport",
+              "kind": "contract"
+            },
+            {
+              "name": "No horizontal overflow in review",
+              "status": "fail",
+              "observation": "349px document / 320px viewport",
+              "kind": "geometry"
+            },
+            {
+              "name": "No horizontal overflow in cart",
+              "status": "fail",
+              "observation": "349px document / 320px viewport",
+              "kind": "geometry"
+            }
+          ],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 349,
+            "pageHeight": 2775,
+            "title": "Field Kiln — Everyday Teapot",
+            "h1": [
+              "Everyday Teapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 3
+                }
+              ]
+            },
+            "final": {
+              "violations": [
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "nodes": 1
+                }
+              ],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                },
+                {
+                  "id": "color-contrast",
+                  "nodes": 3
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c11/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c12",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "promptId": "commerce-craft",
+      "condition": "current-skill",
+      "generation": "submitted",
+      "browserEvidence": true,
+      "finalEvidenceSelected": true,
+      "selectedEvidence": "evidence/pass-02/c12/browser.json",
+      "initialEvidence": "evidence/c12/browser.json",
+      "browserVersion": "156.0.8078.4",
+      "browser": {
+        "desktop": {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 1000
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 1440,
+            "scrollWidth": 1440,
+            "pageHeight": 1319,
+            "title": "Field Kiln — Everyday Teapot",
+            "h1": [
+              "Everyday Teapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Georgia, serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                }
+              ]
+            },
+            "final": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c12/browser.json"
+        },
+        "mobile": {
+          "viewport": {
+            "name": "mobile",
+            "width": 390,
+            "height": 844
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 390,
+            "scrollWidth": 390,
+            "pageHeight": 2258,
+            "title": "Field Kiln — Everyday Teapot",
+            "h1": [
+              "Everyday Teapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Georgia, serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                }
+              ]
+            },
+            "final": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c12/browser.json"
+        },
+        "narrow320": {
+          "viewport": {
+            "name": "narrow320",
+            "width": 320,
+            "height": 740
+          },
+          "checks": {
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          },
+          "contract": {
+            "passed": 6,
+            "failed": 0,
+            "total": 6
+          },
+          "geometry": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+          },
+          "execution": {
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+          },
+          "harness": {
+            "passed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "failedChecks": [],
+          "executionError": null,
+          "initialLayout": {
+            "viewportWidth": 320,
+            "scrollWidth": 320,
+            "pageHeight": 2536,
+            "title": "Field Kiln — Everyday Teapot",
+            "h1": [
+              "Everyday Teapot"
+            ],
+            "mainCount": 1,
+            "htmlLang": "en",
+            "bodyFont": "Georgia, serif"
+          },
+          "axe": {
+            "initial": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                }
+              ]
+            },
+            "final": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "nodes": 3
+                }
+              ]
+            }
+          },
+          "source": "evidence/pass-02/c12/browser.json"
+        }
+      }
+    },
+    {
+      "id": "c13",
+      "host": "opencode",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "promptId": "fintech-transfer",
+      "condition": "no-skill",
+      "generation": "availability-blocked",
+      "browserEvidence": false,
+      "finalEvidenceSelected": false,
+      "selectedEvidence": "evidence/c13/browser.json",
+      "initialEvidence": "evidence/c13/browser.json"
+    },
+    {
+      "id": "c14",
+      "host": "opencode",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "promptId": "fintech-transfer",
+      "condition": "current-skill",
+      "generation": "availability-blocked",
+      "browserEvidence": false,
+      "finalEvidenceSelected": false,
+      "selectedEvidence": "evidence/c14/browser.json",
+      "initialEvidence": "evidence/c14/browser.json"
+    },
+    {
+      "id": "c15",
+      "host": "opencode",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "promptId": "commerce-craft",
+      "condition": "no-skill",
+      "generation": "availability-blocked",
+      "browserEvidence": false,
+      "finalEvidenceSelected": false,
+      "selectedEvidence": "evidence/c15/browser.json",
+      "initialEvidence": "evidence/c15/browser.json"
+    },
+    {
+      "id": "c16",
+      "host": "opencode",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "promptId": "commerce-craft",
+      "condition": "current-skill",
+      "generation": "availability-blocked",
+      "browserEvidence": false,
+      "finalEvidenceSelected": false,
+      "selectedEvidence": "evidence/c16/browser.json",
+      "initialEvidence": "evidence/c16/browser.json"
+    },
+    {
+      "id": "c17",
+      "host": "opencode",
+      "model": "opencode/glm-5.3-flash-free",
+      "promptId": "fintech-transfer",
+      "condition": "no-skill",
+      "generation": "availability-blocked",
+      "browserEvidence": false,
+      "finalEvidenceSelected": false,
+      "selectedEvidence": "evidence/c17/browser.json",
+      "initialEvidence": "evidence/c17/browser.json"
+    },
+    {
+      "id": "c18",
+      "host": "opencode",
+      "model": "opencode/glm-5.3-flash-free",
+      "promptId": "fintech-transfer",
+      "condition": "current-skill",
+      "generation": "availability-blocked",
+      "browserEvidence": false,
+      "finalEvidenceSelected": false,
+      "selectedEvidence": "evidence/c18/browser.json",
+      "initialEvidence": "evidence/c18/browser.json"
+    },
+    {
+      "id": "c19",
+      "host": "opencode",
+      "model": "opencode/glm-5.3-flash-free",
+      "promptId": "commerce-craft",
+      "condition": "no-skill",
+      "generation": "availability-blocked",
+      "browserEvidence": false,
+      "finalEvidenceSelected": false,
+      "selectedEvidence": "evidence/c19/browser.json",
+      "initialEvidence": "evidence/c19/browser.json"
+    },
+    {
+      "id": "c20",
+      "host": "opencode",
+      "model": "opencode/glm-5.3-flash-free",
+      "promptId": "commerce-craft",
+      "condition": "current-skill",
+      "generation": "availability-blocked",
+      "browserEvidence": false,
+      "finalEvidenceSelected": false,
+      "selectedEvidence": "evidence/c20/browser.json",
+      "initialEvidence": "evidence/c20/browser.json"
+    }
+  ],
+  "pairs": [
+    {
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "promptId": "fintech-transfer",
+      "noSkill": "c01",
+      "currentSkill": "c02",
+      "bothRendered": true
+    },
+    {
+      "host": "subagent",
+      "model": "gpt-6.1-sol",
+      "promptId": "commerce-craft",
+      "noSkill": "c03",
+      "currentSkill": "c04",
+      "bothRendered": true
+    },
+    {
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "promptId": "fintech-transfer",
+      "noSkill": "c05",
+      "currentSkill": "c06",
+      "bothRendered": true
+    },
+    {
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "promptId": "commerce-craft",
+      "noSkill": "c07",
+      "currentSkill": "c08",
+      "bothRendered": true
+    },
+    {
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "promptId": "fintech-transfer",
+      "noSkill": "c09",
+      "currentSkill": "c10",
+      "bothRendered": true
+    },
+    {
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "promptId": "commerce-craft",
+      "noSkill": "c11",
+      "currentSkill": "c12",
+      "bothRendered": true
+    },
+    {
+      "host": "opencode",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "promptId": "fintech-transfer",
+      "noSkill": "c13",
+      "currentSkill": "c14",
+      "bothRendered": false
+    },
+    {
+      "host": "opencode",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "promptId": "commerce-craft",
+      "noSkill": "c15",
+      "currentSkill": "c16",
+      "bothRendered": false
+    },
+    {
+      "host": "opencode",
+      "model": "opencode/glm-5.3-flash-free",
+      "promptId": "fintech-transfer",
+      "noSkill": "c17",
+      "currentSkill": "c18",
+      "bothRendered": false
+    },
+    {
+      "host": "opencode",
+      "model": "opencode/glm-5.3-flash-free",
+      "promptId": "commerce-craft",
+      "noSkill": "c19",
+      "currentSkill": "c20",
+      "bothRendered": false
+    }
+  ],
+  "scope": "Scripted task/geometry/a11y evidence only; ungenerated cells are not UI failures. Human/manual tests deferred, not passed. No reviewer scores or general efficacy claim inferred."
+}

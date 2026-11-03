@@ -1,0 +1,56 @@
+{
+  "startedAt": "2026-11-03T03:51:31.550Z",
+  "scope": "Named invalid-stock displayed-total regression; supplied existing UI before/after, not a fresh quality comparison",
+  "observations": [
+    {
+      "stage": "before",
+      "width": 320,
+      "quantity": "3",
+      "total": "USD 164",
+      "ordinaryPayable": true,
+      "expectedKnownBaselineFinding": true
+    },
+    {
+      "stage": "before",
+      "width": 390,
+      "quantity": "3",
+      "total": "USD 164",
+      "ordinaryPayable": true,
+      "expectedKnownBaselineFinding": true
+    },
+    {
+      "stage": "before",
+      "width": 1440,
+      "quantity": "3",
+      "total": "USD 164",
+      "ordinaryPayable": true,
+      "expectedKnownBaselineFinding": true
+    },
+    {
+      "stage": "after",
+      "width": 320,
+      "quantity": "3",
+      "total": "—",
+      "ordinaryPayable": false,
+      "expectedKnownBaselineFinding": false
+    },
+    {
+      "stage": "after",
+      "width": 390,
+      "quantity": "3",
+      "total": "—",
+      "ordinaryPayable": false,
+      "expectedKnownBaselineFinding": false
+    },
+    {
+      "stage": "after",
+      "width": 1440,
+      "quantity": "3",
+      "total": "—",
+      "ordinaryPayable": false,
+      "expectedKnownBaselineFinding": false
+    }
+  ],
+  "failures": [],
+  "finishedAt": "2026-11-03T03:51:46.130Z"
+}

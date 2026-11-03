@@ -1,0 +1,634 @@
+{
+  "cell": "relay-1",
+  "stage": "initial",
+  "pass": "initial-01",
+  "startedAt": "2026-11-02T14:40:51.225Z",
+  "sourceSha256": "a629eb51d2d056023805584b46e428a0827bb3d929af60c4245fdd0039bb2faa",
+  "harnessSha256": "35d2970b9d1f936d7e76f005d1e3f0404b5168e01afde038dada9a87063273d7",
+  "traces": [
+    {
+      "id": "320",
+      "width": 320,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/relay-1/initial-01/320-entry/viewport.png",
+          "report": "evidence/relay-1/initial-01/320-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 4411.953125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "invalid",
+          "viewport": "evidence/relay-1/initial-01/320-invalid/viewport.png",
+          "report": "evidence/relay-1/initial-01/320-invalid/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 526
+          },
+          "focus": {
+            "tag": "P",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 675.03125,
+              "width": 280,
+              "height": 48,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "decision",
+          "viewport": "evidence/relay-1/initial-01/320-decision/viewport.png",
+          "report": "evidence/relay-1/initial-01/320-decision/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 526
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 357.25,
+              "width": 280,
+              "height": 53.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "failure",
+          "viewport": "evidence/relay-1/initial-01/320-failure/viewport.png",
+          "report": "evidence/relay-1/initial-01/320-failure/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 575
+          },
+          "focus": {
+            "tag": "P",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 626.03125,
+              "width": 280,
+              "height": 120,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "success",
+          "viewport": "evidence/relay-1/initial-01/320-success/viewport.png",
+          "report": "evidence/relay-1/initial-01/320-success/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 600
+          },
+          "focus": {
+            "tag": "P",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 601.03125,
+              "width": 280,
+              "height": 144,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocks commitment",
+          "pass": true
+        },
+        {
+          "name": "annual amount120/year and conditions present",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains workspace email billing",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact plan and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "billing edit updates price and clears stale annual success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": [],
+      "journey": "primary CTA link"
+    },
+    {
+      "id": "390",
+      "width": 390,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/relay-1/initial-01/390-entry/viewport.png",
+          "report": "evidence/relay-1/initial-01/390-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 4205.03125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "invalid",
+          "viewport": "evidence/relay-1/initial-01/390-invalid/viewport.png",
+          "report": "evidence/relay-1/initial-01/390-invalid/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 484
+          },
+          "focus": {
+            "tag": "P",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 618.9375,
+              "width": 350,
+              "height": 48,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "decision",
+          "viewport": "evidence/relay-1/initial-01/390-decision/viewport.png",
+          "report": "evidence/relay-1/initial-01/390-decision/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 484
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 301.15625,
+              "width": 350,
+              "height": 53.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "failure",
+          "viewport": "evidence/relay-1/initial-01/390-failure/viewport.png",
+          "report": "evidence/relay-1/initial-01/390-failure/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 484
+          },
+          "focus": {
+            "tag": "P",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 618.9375,
+              "width": 350,
+              "height": 96,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "success",
+          "viewport": "evidence/relay-1/initial-01/390-success/viewport.png",
+          "report": "evidence/relay-1/initial-01/390-success/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 484
+          },
+          "focus": {
+            "tag": "P",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 618.9375,
+              "width": 350,
+              "height": 144,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocks commitment",
+          "pass": true
+        },
+        {
+          "name": "annual amount120/year and conditions present",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains workspace email billing",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact plan and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "billing edit updates price and clears stale annual success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": [],
+      "journey": "primary CTA link"
+    },
+    {
+      "id": "1440",
+      "width": 1440,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/relay-1/initial-01/1440-entry/viewport.png",
+          "report": "evidence/relay-1/initial-01/1440-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 3669.46875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "invalid",
+          "viewport": "evidence/relay-1/initial-01/1440-invalid/viewport.png",
+          "report": "evidence/relay-1/initial-01/1440-invalid/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 461
+          },
+          "focus": {
+            "tag": "P",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 80,
+              "y": 273.828125,
+              "width": 474,
+              "height": 24,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "decision",
+          "viewport": "evidence/relay-1/initial-01/1440-decision/viewport.png",
+          "report": "evidence/relay-1/initial-01/1440-decision/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 461
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 393.84375,
+              "y": 165.4375,
+              "width": 338.453125,
+              "height": 53.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "failure",
+          "viewport": "evidence/relay-1/initial-01/1440-failure/viewport.png",
+          "report": "evidence/relay-1/initial-01/1440-failure/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 461
+          },
+          "focus": {
+            "tag": "P",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 80,
+              "y": 273.828125,
+              "width": 792,
+              "height": 48,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "success",
+          "viewport": "evidence/relay-1/initial-01/1440-success/viewport.png",
+          "report": "evidence/relay-1/initial-01/1440-success/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 461
+          },
+          "focus": {
+            "tag": "P",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 80,
+              "y": 273.828125,
+              "width": 792,
+              "height": 72,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocks commitment",
+          "pass": true
+        },
+        {
+          "name": "annual amount120/year and conditions present",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains workspace email billing",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact plan and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "billing edit updates price and clears stale annual success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": [],
+      "journey": "primary CTA link"
+    },
+    {
+      "id": "390-reduced",
+      "width": 390,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/relay-1/initial-01/390-reduced-entry/viewport.png",
+          "report": "evidence/relay-1/initial-01/390-reduced-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 4205.03125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": []
+    }
+  ],
+  "failures": [],
+  "scope": "Matched scripted task/width/access and natural viewport evidence; no human tests",
+  "chromium": "156.0.8078.4",
+  "finishedAt": "2026-11-02T14:41:22.955Z",
+  "checkCount": 27,
+  "stateCount": 16
+}

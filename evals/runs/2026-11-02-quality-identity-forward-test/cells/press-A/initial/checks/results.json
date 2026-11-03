@@ -1,0 +1,269 @@
+{
+  "started": "2026-11-02T08:33:41.536Z",
+  "widths": [
+    {
+      "width": 320,
+      "states": [
+        {
+          "state": "choose",
+          "documentWidth": 320,
+          "viewportWidth": 320,
+          "focus": "BODY",
+          "buttons": [
+            {
+              "text": "Review session →",
+              "width": 190.125,
+              "left": 20,
+              "right": 210.125
+            }
+          ]
+        },
+        {
+          "state": "review",
+          "documentWidth": 320,
+          "viewportWidth": 320,
+          "focus": "review-title",
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 20,
+              "right": 148.828125
+            },
+            {
+              "text": "Confirm reservation →",
+              "width": 227.125,
+              "left": 20,
+              "right": 247.125
+            }
+          ]
+        },
+        {
+          "state": "failure",
+          "documentWidth": 320,
+          "viewportWidth": 320,
+          "focus": "reservation-error",
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 20,
+              "right": 148.828125
+            },
+            {
+              "text": "Try reservation again →",
+              "width": 238,
+              "left": 20,
+              "right": 258
+            }
+          ]
+        },
+        {
+          "state": "success",
+          "documentWidth": 320,
+          "viewportWidth": 320,
+          "focus": "success-title",
+          "buttons": [
+            {
+              "text": "Choose another session",
+              "width": 222.03125,
+              "left": 20,
+              "right": 242.03125
+            }
+          ]
+        }
+      ],
+      "behavior": [
+        "full slot disabled",
+        "date change clears session",
+        "whole number range validated",
+        "induction required",
+        "review shows chosen facts",
+        "edit retains draft",
+        "first confirm fails and focuses recovery",
+        "retry succeeds with same choices",
+        "reservation identified and demo outcome stated"
+      ],
+      "axe": {
+        "unassessed": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md"
+      }
+    },
+    {
+      "width": 390,
+      "states": [
+        {
+          "state": "choose",
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "focus": "BODY",
+          "buttons": [
+            {
+              "text": "Review session →",
+              "width": 190.125,
+              "left": 179.875,
+              "right": 370
+            }
+          ]
+        },
+        {
+          "state": "review",
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "focus": "review-title",
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 20,
+              "right": 148.828125
+            },
+            {
+              "text": "Confirm reservation →",
+              "width": 227.125,
+              "left": 20,
+              "right": 247.125
+            }
+          ]
+        },
+        {
+          "state": "failure",
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "focus": "reservation-error",
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 20,
+              "right": 148.828125
+            },
+            {
+              "text": "Try reservation again →",
+              "width": 238,
+              "left": 20,
+              "right": 258
+            }
+          ]
+        },
+        {
+          "state": "success",
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "focus": "success-title",
+          "buttons": [
+            {
+              "text": "Choose another session",
+              "width": 222.03125,
+              "left": 20,
+              "right": 242.03125
+            }
+          ]
+        }
+      ],
+      "behavior": [
+        "full slot disabled",
+        "date change clears session",
+        "whole number range validated",
+        "induction required",
+        "review shows chosen facts",
+        "edit retains draft",
+        "first confirm fails and focuses recovery",
+        "retry succeeds with same choices",
+        "reservation identified and demo outcome stated"
+      ],
+      "axe": {
+        "unassessed": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md"
+      }
+    },
+    {
+      "width": 1440,
+      "states": [
+        {
+          "state": "choose",
+          "documentWidth": 1440,
+          "viewportWidth": 1440,
+          "focus": "BODY",
+          "buttons": [
+            {
+              "text": "Review session →",
+              "width": 210.125,
+              "left": 690.875,
+              "right": 901
+            }
+          ]
+        },
+        {
+          "state": "review",
+          "documentWidth": 1440,
+          "viewportWidth": 1440,
+          "focus": "review-title",
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 140,
+              "right": 268.828125
+            },
+            {
+              "text": "Confirm reservation →",
+              "width": 247.125,
+              "left": 653.875,
+              "right": 901
+            }
+          ]
+        },
+        {
+          "state": "failure",
+          "documentWidth": 1440,
+          "viewportWidth": 1440,
+          "focus": "reservation-error",
+          "buttons": [
+            {
+              "text": "Edit session",
+              "width": 128.828125,
+              "left": 140,
+              "right": 268.828125
+            },
+            {
+              "text": "Try reservation again →",
+              "width": 258,
+              "left": 643,
+              "right": 901
+            }
+          ]
+        },
+        {
+          "state": "success",
+          "documentWidth": 1440,
+          "viewportWidth": 1440,
+          "focus": "success-title",
+          "buttons": [
+            {
+              "text": "Choose another session",
+              "width": 222.03125,
+              "left": 140,
+              "right": 362.03125
+            }
+          ]
+        }
+      ],
+      "behavior": [
+        "full slot disabled",
+        "date change clears session",
+        "whole number range validated",
+        "induction required",
+        "review shows chosen facts",
+        "edit retains draft",
+        "first confirm fails and focuses recovery",
+        "retry succeeds with same choices",
+        "reservation identified and demo outcome stated"
+      ],
+      "axe": {
+        "unassessed": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md"
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "failures": [],
+  "ended": "2026-11-02T08:33:58.421Z"
+}

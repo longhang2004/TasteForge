@@ -1,21 +1,17 @@
-# Audit and refine an interface
+# Audit an interface
 
-Inspect the requested source and any existing Design DNA. Preserve the current direction, fonts, colors, component conventions, and branding unless the user authorizes redesign. A refinement task usually needs a local correction, not a new recommendation set.
+Start with the requested target and existing system. A technical source audit can inspect source directly; a visual critique starts with the task and actual renders, then reconciles detector results. Disclose when existing findings influenced the review.
 
-For a rendered critique, first record task/design observations using the [surface's purpose](../references/surface-purpose.md), then reconcile them with detector/source findings. If detector output was already seen, describe the actual process rather than claiming independent judgment. A technical-only source audit can start directly with the source checks.
+Trace the first useful action, facts compared, consequence and edit/error/recovery path. Inspect affected states at relevant widths, including the product's minimum supported width. Read [accessibility](../references/accessibility.md), [interaction](../references/interaction-motion.md) or another reference only for an unresolved finding.
 
-If the CLI is available, run `tasteforge audit --path <project-local-source> --format json`. With generated DNA present, the engine checks against those tokens. Source-only checks cannot resolve the complete CSS cascade, utility frameworks, computed styles, responsive behavior, keyboard flows, or data truth.
+If useful and installed, run `tasteforge audit --path <project-local-source> --format json`; record completed exit/output evidence as described in [catalog use](../references/catalog-use.md). Keep findings distinct:
 
-Separate the evidence:
+- **Verified source:** the named syntax/declaration condition is established; rendered impact may still be unknown.
+- **Heuristic:** a contextual pattern deserves inspection. Keep it when it serves the task.
+- **Review:** supported source analysis cannot resolve the question.
 
-- **Verified:** the stated source condition was established, such as a declared opaque color pair or malformed syntax. Confirm whether runtime conditions affect its user impact.
-- **Heuristic:** a pattern deserves inspection, such as three card-like ancestors or several gradients. Keep it when it serves the task.
-- **Review:** the source cannot resolve the question; inspect a rendered state or obtain the missing context.
+The static audit does not establish full cascade, responsiveness, runtime accessibility or factual truth. A familiar layout, card count or gradient alone is not a defect.
 
-Read [accessibility](../references/accessibility.md), [interaction](../references/interaction-motion.md), or another reference only when relevant. Prioritize task blockers and accessibility failures, then hierarchy and content, then polish. Explain why a proposed change helps a user.
+Prioritize task/access/content failures before polish. For each material finding retain target/state/width, evidence, user consequence and uncertainty. A source-only review must not claim rendered inspection.
 
-Assess the task architecture even when contrast and token checks pass: locate the first useful action, trace what users must compare, inspect cost/consequence visibility, count unnecessary navigation or context loss, and test edit/error/retry paths. Identify generic composition only through its impact on this task; a familiar layout is not inherently a defect. If structural redesign is authorized and needed, use [research and structural planning](research-and-plan.md); otherwise retain the system and report the issue or make the scoped fix.
-
-For a rendered review, inspect the actual requested views at narrow and wide widths, with long content and meaningful empty/error states. Test keyboard focus and actions. Record which views, states, and methods were checked. For a source-only review, explicitly say no rendered UI was inspected.
-
-Use [targeted refinement](targeted-refinement.md) to reduce clutter, clarify meaning, adapt context or adjust emphasis within the authorised target. Record evidence, user consequence, change and rechecked result; retain intentional exceptions with reasons. Rerun applicable checks and summarize remaining uncertainties. Do not convert every heuristic into a mandatory fix.
+If correction is requested, use [targeted refinement](targeted-refinement.md). Escalate to [redesign](redesign-ui.md) only when the authorized scope includes the necessary structural/system change. Keep useful repetition and justified brand exceptions; do not rewrite a working system to satisfy a heuristic.

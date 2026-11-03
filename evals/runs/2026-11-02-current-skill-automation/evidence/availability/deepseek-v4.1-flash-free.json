@@ -1,0 +1,40 @@
+{
+  "exitCode": "operator-timeout-55s",
+  "stdout": "",
+  "stderr": "",
+  "command": [
+    "opencode",
+    "run",
+    "--pure",
+    "--model",
+    "opencode/deepseek-v4.1-flash-free",
+    "--format",
+    "json",
+    "--title",
+    "TasteForge current-beta availability",
+    "Reply exactly READY. Do not read files or use tools."
+  ],
+  "startedAtUtc": "2026-11-01T18:12:33.279911+00:00",
+  "durationSeconds": 55.288,
+  "requestedModel": "opencode/deepseek-v4.1-flash-free",
+  "config": {
+    "$schema": "https://opencode.ai/config.json",
+    "autoupdate": false,
+    "share": "disabled",
+    "snapshot": false,
+    "formatter": false,
+    "lsp": false,
+    "enabled_providers": [
+      "opencode"
+    ],
+    "model": "opencode/deepseek-v4.1-flash-free",
+    "small_model": "opencode/deepseek-v4.1-flash-free",
+    "permission": "deny"
+  },
+  "providerErrorLines": [
+    "timestamp=2026-11-01T18:12:48.688Z level=ERROR run=5fd7efd6 message=\"stream error\" providerID=opencode modelID=deepseek-v4.1-flash-free session.id=ses_e67afbbafffekdQsmHkYzLKMaf small=false agent=build mode=primary error.error=\"AI_APICallError: Free usage limit reached. Free models work in OpenCode (https://opencode.ai); subscribe to OpenCode Go to keep going: https://opencode.ai/go\""
+  ],
+  "credentialContext": "Isolated XDG; API-key/token environment removed. No existing credential files read, copied or exported. No paid fallback.",
+  "sequential": true,
+  "availability": "quota-blocked"
+}

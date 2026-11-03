@@ -1,0 +1,225 @@
+{
+  "cells": {
+    "press-A": {
+      "condition": "lean",
+      "creatorObservedStart": "2026-11-02T08:29:56Z",
+      "creatorObservedEnd": "2026-11-02T08:36:35.051Z",
+      "creatorStartBasis": "First observed UTC clock at initial read attempt.",
+      "creatorObservedSeconds": 399.051,
+      "firstArtifactObservedSeconds": 168.0,
+      "creatorVersions": [
+        {
+          "path": "versions/00.html",
+          "preserved_utc": "2026-11-02T08:32:44Z",
+          "sha256": "fe0ef56cc15035bf07cec54c8c021152cdc91af54578afeb1a122133767504f2",
+          "author": "creator",
+          "finding": "First runnable version, preserved before any browser check."
+        }
+      ],
+      "creatorUiCorrections": 0,
+      "loadedSkillWordProxies": {
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R1/tasteforge/SKILL.md": 582,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R1/tasteforge/workflows/create-ui.md": 271,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R1/tasteforge/references/render-checks.md": 358
+      },
+      "loadedSkillWords": 1211,
+      "operatorBrowserSegments": [
+        {
+          "report": "evidence/press-A/initial-01/report.json",
+          "startedAt": "2026-11-02T08:37:46.143Z",
+          "finishedAt": "2026-11-02T08:38:13.412Z",
+          "seconds": 27.269,
+          "checks": 33,
+          "failures": []
+        }
+      ],
+      "operatorUiCorrections": 0,
+      "providerInputTokens": null,
+      "providerOutputTokens": null,
+      "providerThinkingTokens": null,
+      "providerCacheTokens": null,
+      "billedCost": null,
+      "completeAcceptanceCycleCost": null,
+      "creatorToolCalls": null
+    },
+    "press-B": {
+      "condition": "candidate",
+      "creatorObservedStart": "2026-11-02T08:37:24Z",
+      "creatorObservedEnd": "2026-11-02T08:44:47.949603+00:00",
+      "creatorStartBasis": "First explicitly captured UTC timestamp, after initial assigned-input read; exact earlier invocation start was not exposed.",
+      "creatorObservedSeconds": 443.949603,
+      "firstArtifactObservedSeconds": 129.345336,
+      "creatorVersions": [
+        {
+          "path": "versions/00.html",
+          "sha256": "fd291787ffec34f5d4d4dc28f67e55b0e0a72771848e94ab1d0892b149ddfd31",
+          "utc": "2026-11-02T08:39:33.345336+00:00",
+          "author": "creator",
+          "finding": "First runnable version preserved byte-for-byte before browser checks."
+        },
+        {
+          "path": "versions/01.html",
+          "sha256": "6b8643bac609b16ac4f3896ae7b64bfede79ce3ae3066ea1c466da0ae29a6bb7",
+          "utc": "2026-11-02T08:43:03.488720+00:00",
+          "author": "creator",
+          "finding": "Single focused correction: axe region finding on demo notice; at 320px full review conditions appeared after confirmation action. Added named notice region and placed full mobile review conditions before action."
+        }
+      ],
+      "creatorUiCorrections": 1,
+      "loadedSkillWordProxies": {
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/SKILL.md": 593,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/workflows/create-ui.md": 290,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/references/art-direction.md": 522,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/references/render-checks.md": 358
+      },
+      "loadedSkillWords": 1763,
+      "operatorBrowserSegments": [
+        {
+          "report": "evidence/press-B/initial-01/report.json",
+          "startedAt": "2026-11-02T08:46:10.192Z",
+          "finishedAt": "2026-11-02T08:46:43.662Z",
+          "seconds": 33.47,
+          "checks": 33,
+          "failures": []
+        }
+      ],
+      "operatorUiCorrections": 0,
+      "providerInputTokens": null,
+      "providerOutputTokens": null,
+      "providerThinkingTokens": null,
+      "providerCacheTokens": null,
+      "billedCost": null,
+      "completeAcceptanceCycleCost": null,
+      "creatorToolCalls": null
+    },
+    "listen-A": {
+      "condition": "lean",
+      "creatorObservedStart": "2026-11-02T08:39:14Z",
+      "creatorObservedEnd": "2026-11-02T08:47:48.253280Z",
+      "creatorStartBasis": "First observed UTC timestamp at implementation/workflow start; initial assigned-input read preceded this timestamp. No exact earlier assignment timestamp was exposed.",
+      "creatorObservedSeconds": 514.25328,
+      "firstArtifactObservedSeconds": 188.0,
+      "creatorVersions": [
+        {
+          "file": "versions/00.html",
+          "preservedUTC": "2026-11-02T08:42:22Z",
+          "sha256": "db696d430680e3c2875837a893131032bdbd8abc0ef3bdbeaeda54a5db52fc55",
+          "author": "creator agent /root/creator_listen_a",
+          "finding": "First runnable source preserved before browser selfchecks."
+        },
+        {
+          "file": "versions/01.html",
+          "preservedUTC": "2026-11-02T08:45:18Z",
+          "sha256": "99f4ac4bcfe8f015eebaa6c0cc84f42f90ab782caafc4a9321ea782bd83a7228",
+          "author": "creator agent /root/creator_listen_a",
+          "finding": "Axe reported a brand visible-name/accessibility-name mismatch. Visual inspection also showed Read record cues were not separate actionable controls. One focused navigation semantics correction removed the redundant brand aria-label, added content whitespace, made Read record a real button, and replaced the decorative back glyph with inline SVG to remove an automated contrast incomplete finding."
+        }
+      ],
+      "creatorUiCorrections": 1,
+      "loadedSkillWordProxies": {
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R1/tasteforge/SKILL.md": 582,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R1/tasteforge/workflows/create-ui.md": 271,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R1/tasteforge/references/render-checks.md": 358,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R1/tasteforge/workflows/structure-and-revise.md": 455
+      },
+      "loadedSkillWords": 1666,
+      "operatorBrowserSegments": [
+        {
+          "report": "evidence/listen-A/initial-01/report.json",
+          "startedAt": "2026-11-02T08:49:04.634Z",
+          "finishedAt": "2026-11-02T08:49:37.475Z",
+          "seconds": 32.841,
+          "checks": 24,
+          "failures": []
+        }
+      ],
+      "operatorUiCorrections": 0,
+      "providerInputTokens": null,
+      "providerOutputTokens": null,
+      "providerThinkingTokens": null,
+      "providerCacheTokens": null,
+      "billedCost": null,
+      "completeAcceptanceCycleCost": null,
+      "creatorToolCalls": null
+    },
+    "listen-B": {
+      "condition": "candidate",
+      "creatorObservedStart": "2026-11-02T08:30:26Z",
+      "creatorObservedEnd": "2026-11-02T08:37:46.497Z",
+      "creatorStartBasis": "First directly observed UTC checkpoint after assigned input load; the initial WSL launch and escalation preceded this checkpoint. Exact earlier wall start was not exposed.",
+      "creatorObservedSeconds": 440.497,
+      "firstArtifactObservedSeconds": 173.0,
+      "creatorVersions": [
+        {
+          "path": "versions/00.html",
+          "utc": "2026-11-02T08:33:19Z",
+          "sha256": "d606d10defaf50f82f52d259b1b5271d01eab619ce7448e3af0299bb3217ef4f",
+          "author": "creator",
+          "finding": "First runnable artifact preserved before rendered checks."
+        },
+        {
+          "path": "versions/01.html",
+          "utc": "2026-11-02T08:35:20Z",
+          "sha256": "5e96e7bf139258038cb9ca5f1e10df76faf833d74ad537f780d6e494ae70d499",
+          "author": "creator",
+          "finding": "1440px rendered collection showed date and local time visually joined. Set the local-time element to display:block. One focused UI correction pass.",
+          "recheck": "Same behaviors and widths rechecked successfully; corrected wide screenshot visually inspected."
+        }
+      ],
+      "creatorUiCorrections": 1,
+      "loadedSkillWordProxies": {
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/SKILL.md": 593,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/workflows/create-ui.md": 290,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/references/art-direction.md": 522,
+        "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/workflows/structure-and-revise.md": 455
+      },
+      "loadedSkillWords": 1860,
+      "operatorBrowserSegments": [
+        {
+          "report": "evidence/listen-B/initial-01/report.json",
+          "startedAt": "2026-11-02T08:40:03.695Z",
+          "finishedAt": "2026-11-02T08:40:05.939Z",
+          "seconds": 2.244,
+          "checks": 0,
+          "failures": [
+            "320: locator.waitFor: Error: strict mode violation: locator('h1') resolved to 2 elements:\n    1) <h1 id=\"collection-title\">\u2026</h1> aka getByRole('heading', { name: 'At the water\u2019s edge.' })\n    2) <h1 tabindex=\"-1\" id=\"detail-title\"></h1> aka locator('#detail-title')\n\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n",
+            "390: locator.waitFor: Error: strict mode violation: locator('h1') resolved to 2 elements:\n    1) <h1 id=\"collection-title\">\u2026</h1> aka getByRole('heading', { name: 'At the water\u2019s edge.' })\n    2) <h1 tabindex=\"-1\" id=\"detail-title\"></h1> aka locator('#detail-title')\n\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n",
+            "1440: locator.waitFor: Error: strict mode violation: locator('h1') resolved to 2 elements:\n    1) <h1 id=\"collection-title\">\u2026</h1> aka getByRole('heading', { name: 'At the water\u2019s edge.' })\n    2) <h1 tabindex=\"-1\" id=\"detail-title\"></h1> aka locator('#detail-title')\n\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n"
+          ]
+        },
+        {
+          "report": "evidence/listen-B/initial-02/report.json",
+          "startedAt": "2026-11-02T08:41:09.330Z",
+          "finishedAt": "2026-11-02T08:41:47.092Z",
+          "seconds": 37.762,
+          "checks": 24,
+          "failures": []
+        }
+      ],
+      "operatorUiCorrections": 0,
+      "providerInputTokens": null,
+      "providerOutputTokens": null,
+      "providerThinkingTokens": null,
+      "providerCacheTokens": null,
+      "billedCost": null,
+      "completeAcceptanceCycleCost": null,
+      "creatorToolCalls": null
+    }
+  },
+  "coverage": {
+    "meaning": "Observed segments only; start bases differ and some begin after input reads/launch. Not billed costs or comparable complete-cycle savings.",
+    "initial": "First preserved runnable version timestamp minus first observed creator clock; may exclude earlier work.",
+    "creator": "Observed creator interval includes self-check/corrections; no provider token telemetry.",
+    "operator": "Each report measures browser/check segment, excluding harness authoring, launcher overhead and evaluator queue/review/finalization.",
+    "unknown": [
+      "exact resolved model/provider version",
+      "input/output/thinking/cache tokens",
+      "billed money",
+      "complete operator/evaluator tool/token totals",
+      "complete accepted-UI cost and savings"
+    ],
+    "overlap": "Cells overlap; do not sum wall intervals as total elapsed time.",
+    "loss": "listen-B creator first auxiliary check report was overwritten and reconstructed/transcribed; it is not preserved raw evidence. Original00 HTML remains immutable; root matched acceptance is independent fresh evidence.",
+    "human": "Human/manual tests deferred."
+  }
+}

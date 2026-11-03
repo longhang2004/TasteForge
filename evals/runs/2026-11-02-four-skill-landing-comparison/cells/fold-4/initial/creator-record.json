@@ -1,0 +1,136 @@
+{
+  "cell": "fold-4",
+  "product": "field-fold",
+  "skill": "Impeccable 4.8.0",
+  "utcStart": "2026-11-02T16:32:43Z",
+  "utcEnd": "2026-11-02T16:40:16.571559Z",
+  "startBasis": "clock.curr_time at first available tool step, before complete inputs; initial WSL read denied and successful escalated read followed.",
+  "workspace": {
+    "linux": "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-4",
+    "windows": "C:\\Users\\hi\\.codex\\visualizations\\2026\\11\\02\\01a19b3e-944d-71f3-aad3-5bb52e595e71\\tasteforge-four-skill-projects\\fold-4",
+    "basis": "Persistent assigned project supersedes original operator /tmp staging path."
+  },
+  "loadedPaths": [
+    "PRODUCT.md",
+    "common/fixtures.json",
+    "common/fonts.css",
+    "common/assets/LICENSE",
+    "common/assets/field-fold-map.svg",
+    "common/assets/field-fold-contents.svg",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/operator.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/SKILL.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/reference/new-work.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/reference/craft-floor.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/reference/document.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/reference/degraded/finish-reviewer.md",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/reference/degraded/documenter.md"
+  ],
+  "nativeEnvironment": {
+    "IMPECCABLE_BIN": "/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/comparison-runtime/bin/0.1.18/impeccable-linux-x64",
+    "IMPECCABLE_HOME": "/mnt/c/Users/hi/.codex/visualizations/2026/11/02/01a19b3e-944d-71f3-aad3-5bb52e595e71/tasteforge-four-skill-projects/fold-4/native-home",
+    "IMPECCABLE_SKILL_DIR": "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill",
+    "IMPECCABLE_API_TIMEOUT": "0",
+    "IMPECCABLE_NO_TELEMETRY": "1",
+    "DO_NOT_TRACK": "1",
+    "IMPECCABLE_API_URL": "http://127.0.0.1:9"
+  },
+  "nativeCalls": [
+    {
+      "command": "/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/comparison-runtime/bin/0.1.18/impeccable-linux-x64 context --target index.html",
+      "count": 1,
+      "outcome": "exit 0; found PRODUCT and no implementation/DESIGN; reported stale legacy PRODUCT schema, not repaired.",
+      "raw": "creator-evidence/native-01/context.txt"
+    },
+    {
+      "command": "/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/comparison-runtime/bin/0.1.18/impeccable-linux-x64 concept-seed --scope direction --mode persuade",
+      "outcome": "exit 0; degraded offline roll, assigned own candidate 7; no challengers or quality-bar boards. No external retry because explicitly offline.",
+      "seedReference": "seed:07c756e5ad5795c8",
+      "raw": "creator-evidence/native-01/concept-seed.txt"
+    },
+    {
+      "command": "/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/comparison-runtime/bin/0.1.18/impeccable-linux-x64 detect --json index.html",
+      "count": 1,
+      "outcome": "completed; three retained warnings: overused-font, cream-palette, aphoristic-cadence.",
+      "raw": "creator-evidence/native-01/detect.json",
+      "stderr": "creator-evidence/native-01/detect.stderr"
+    }
+  ],
+  "workflowLimits": [
+    "Explicit one-creator code-first supplied-media comparison overrides native image comps, question/decision page, separate finisher and separate documenter. No independent approval claimed.",
+    "Subagent proceeds from complete supplied task without further human interview; selection is creator assumption, not user preference.",
+    "Seven grounded candidates were documented after native seed rather than before: workflow-order deviation.",
+    "No challenger pool/quality-bar boards while offline. No network retry.",
+    "PRODUCT schema drift reported by context was not repaired.",
+    "Self-finishing and documentation performed by creator; full native workflow compliance is not claimed."
+  ],
+  "initialCreation": {
+    "firstRunnablePath": "versions/00.html",
+    "preservedAt": "2026-11-02T16:35:50Z",
+    "sha256": "42eb04f3692e096b54e9dea8ac9191b047a86d734c13719f86a4b1372abc6c1b",
+    "beforeAnyChecks": true
+  },
+  "corrections": [],
+  "submitted": {
+    "path": "index.html",
+    "utc": "2026-11-02T16:40:16.571559Z",
+    "sha256": "42eb04f3692e096b54e9dea8ac9191b047a86d734c13719f86a4b1372abc6c1b",
+    "sameAsFirstRunnable": true
+  },
+  "rationale": "Exhibition registration-desk direction places a supplied schematic object alongside actual stock, email and total controls. Serif display and ruled inventory frame factual product content without manufactured proof.",
+  "tradeoff": "Familiar cream/serif grammar is restrained; native detector flags this familiarity. Mobile stacks artifact before the form but header/skip links reach reservation. Human distinction and usability are unassessed.",
+  "checks": [
+    {
+      "command": "node check.cjs",
+      "utc": "2026-11-02T16:36:38.474Z",
+      "raw": "creator-evidence/check-01/report.json",
+      "observed": "320/390/1440: no horizontal overflow; required and invalid email, Ridge3, fractional quantity blocked; Night disabled; Harbor2 subtotal106 shipping5 total111; first valid failure then retained-input retry success; edit clears success; 0 axe violations in success state, 0 page errors, 0 external requests. Actual post-action focus and scroll recorded."
+    },
+    {
+      "command": "node supplementary-check.cjs",
+      "utc": "2026-11-02T16:38:55.177Z",
+      "raw": "creator-evidence/check-02/report.json",
+      "observed": "Keyboard skip entry and form tab order with 3px focus outline; Ridge2 retry succeeds; long email feedback wraps at320 with no horizontal overflow. Actual post-action scrollY857 and feedback focus retained."
+    },
+    {
+      "command": "view_image for every screenshot",
+      "observed": "Creator opened initial1440/390/320, failure390, success390 and long-success320; captures have expected content and natural post-action positions."
+    }
+  ],
+  "rawFailures": [
+    {
+      "operation": "initial WSL instruction read without escalation",
+      "outcome": "Wsl/E_ACCESSDENIED; successful escalated WSL retry, no native-shell fallback.",
+      "rawLocation": "Tool transcript; no filesystem raw file emitted."
+    }
+  ],
+  "screenshots": [
+    "creator-evidence/check-01/initial-1440.png",
+    "creator-evidence/check-01/initial-390.png",
+    "creator-evidence/check-01/initial-320.png",
+    "creator-evidence/check-01/failure-390.png",
+    "creator-evidence/check-01/success-390.png",
+    "creator-evidence/check-02/long-success-320.png"
+  ],
+  "selfFinish": "creator-evidence/self-finish.md",
+  "documentation": [
+    "DIRECTION.md",
+    "DESIGN.md",
+    ".impeccable/design.json"
+  ],
+  "unassessed": [
+    "Human usability, conversion effectiveness and distinctiveness",
+    "Independent finisher/documenter assessment",
+    "Native challenger quality bars and image-comp fidelity",
+    "Full assistive-technology and browser/device matrix"
+  ],
+  "provider": null,
+  "model": null,
+  "inputTokens": null,
+  "outputTokens": null,
+  "thinkingTokens": null,
+  "cacheTokens": null,
+  "billing": null,
+  "cost": null,
+  "toolCount": null,
+  "telemetryBasis": "No exposed per-cell model, token, billing or aggregate tool meter. Null values are intentional."
+}

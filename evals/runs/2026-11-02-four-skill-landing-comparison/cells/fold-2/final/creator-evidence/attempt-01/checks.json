@@ -1,0 +1,241 @@
+{
+  "started": "2026-11-02T16:21:33.902Z",
+  "checks": [
+    {
+      "name": "initial-1440",
+      "width": 1440,
+      "scrollX": 0,
+      "scrollY": 0,
+      "activeElement": "BODY",
+      "feedback": "",
+      "total": "USD 58",
+      "overflow": false
+    },
+    {
+      "name": "initial-390",
+      "width": 390,
+      "scrollX": 0,
+      "scrollY": 0,
+      "activeElement": "BODY",
+      "feedback": "",
+      "total": "USD 58",
+      "overflow": false
+    },
+    {
+      "name": "primary-action-first-screen-390",
+      "visible": true,
+      "box": {
+        "x": 16,
+        "y": 334,
+        "width": 149.40625,
+        "height": 48
+      }
+    },
+    {
+      "name": "initial-320",
+      "width": 320,
+      "scrollX": 0,
+      "scrollY": 0,
+      "activeElement": "BODY",
+      "feedback": "",
+      "total": "USD 58",
+      "overflow": false
+    },
+    {
+      "name": "keyboard-first-tab",
+      "focusedText": "Skip to content"
+    },
+    {
+      "name": "skip-link-after-enter",
+      "width": 390,
+      "scrollX": 0,
+      "scrollY": 0,
+      "activeElement": "BODY",
+      "feedback": "",
+      "total": "USD 58",
+      "overflow": false
+    },
+    {
+      "name": "cta-after-action",
+      "width": 390,
+      "scrollX": 0,
+      "scrollY": 2257,
+      "activeElement": "BODY",
+      "feedback": "",
+      "total": "USD 58",
+      "overflow": false
+    },
+    {
+      "name": "empty-email-invalid",
+      "width": 390,
+      "scrollX": 0,
+      "scrollY": 2978,
+      "activeElement": "feedback",
+      "feedback": "Enter a valid email address, such as you@example.com. No reservation was made.",
+      "total": "USD 58",
+      "overflow": false
+    },
+    {
+      "name": "ridge-three-invalid",
+      "width": 390,
+      "scrollX": 0,
+      "scrollY": 2978,
+      "activeElement": "feedback",
+      "feedback": "Choose a whole quantity from 1 to 2 for Ridge. 2 kits are available. No reservation was made.",
+      "total": "—",
+      "overflow": false
+    },
+    {
+      "name": "night-disabled",
+      "disabled": true
+    },
+    {
+      "name": "harbor-two-cost",
+      "width": 390,
+      "scrollX": 0,
+      "scrollY": 2978,
+      "activeElement": "quantity",
+      "feedback": "",
+      "total": "USD 111",
+      "overflow": false
+    },
+    {
+      "name": "first-valid-error",
+      "width": 390,
+      "scrollX": 0,
+      "scrollY": 2978,
+      "activeElement": "feedback",
+      "feedback": "The simulated reservation could not be completed. Your edition, quantity and email are still here. Retry to finish the local simulation. No order, payment or email was sent.",
+      "total": "USD 111",
+      "overflow": false
+    },
+    {
+      "name": "failure-preserves-inputs",
+      "edition": "Harbor",
+      "quantity": "2",
+      "email": "mai@example.com"
+    },
+    {
+      "name": "retry-success",
+      "width": 390,
+      "scrollX": 0,
+      "scrollY": 2978,
+      "activeElement": "feedback",
+      "feedback": "Simulation complete: 2 × Harbor kits for mai@example.com. Item subtotal USD 106 + shipping USD 5 = total USD 111. No real reservation, order, payment or email was sent.",
+      "total": "USD 111",
+      "overflow": false
+    },
+    {
+      "name": "axe-success-390",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".unavailable"
+            ]
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": [
+            [
+              "a[aria-label=\"Field Fold home\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "change-clears-success",
+      "width": 390,
+      "scrollX": 0,
+      "scrollY": 2978,
+      "activeElement": "quantity",
+      "feedback": "",
+      "total": "USD 58",
+      "overflow": false
+    },
+    {
+      "name": "axe-initial-1440",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".section-label > span:nth-child(1)"
+            ],
+            [
+              ".contents-grid > figure > figcaption"
+            ],
+            [
+              "li:nth-child(1) > .bullet.caption-3"
+            ],
+            [
+              "li:nth-child(1) > div > .body-6"
+            ],
+            [
+              "li:nth-child(2) > .bullet.caption-3"
+            ],
+            [
+              "li:nth-child(2) > div > .body-6"
+            ],
+            [
+              "li:nth-child(3) > .bullet.caption-3"
+            ],
+            [
+              "li:nth-child(3) > div > .body-6"
+            ],
+            [
+              ".tagline-word:nth-child(1)"
+            ],
+            [
+              ".tagline-word:nth-child(2)"
+            ],
+            [
+              ".tagline-word:nth-child(3)"
+            ],
+            [
+              ".tagline-word:nth-child(5)"
+            ],
+            [
+              ".tagline-word:nth-child(6)"
+            ],
+            [
+              ".tagline-word:nth-child(7)"
+            ],
+            [
+              ".tagline-word:nth-child(8)"
+            ],
+            [
+              ".unavailable"
+            ]
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": [
+            [
+              "a[aria-label=\"Field Fold home\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "reduced-motion",
+      "styles": {
+        "opacity": "1",
+        "transition": "0s",
+        "scrollBehavior": "auto"
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "ended": "2026-11-02T16:21:43.578Z"
+}

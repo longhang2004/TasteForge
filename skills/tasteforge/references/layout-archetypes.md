@@ -113,4 +113,6 @@ These are original planning heuristics for matching information relationships to
 
 ## What constitutes an alternative?
 
+For a relevant unresolved composition/identity choice, [art direction](art-direction.md#task-indexed-worked-pairs) routes to four runnable pairs and their actual state tradeoffs. Read only the matching case.
+
 Show the region map, information order, navigation, state sequence, and narrow behavior. Two candidates with the same task relationships but different fonts, color themes, corner radii, or decorative grid spans are the same structural approach. Conversely, changing a familiar interaction merely to appear novel is not evidence of better UX. Select for the real work, then apply visual variation within that structure.

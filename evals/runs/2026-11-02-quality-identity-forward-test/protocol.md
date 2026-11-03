@@ -1,0 +1,31 @@
+# Bounded quality / identity pilot
+
+Predeclaration written before creator dispatch. Spec07: [approved protocol](https://linear.app/long-hang/document/07-quality-distinctiveness-and-resource-evaluation-protocol-b493c668b8a3). Two held-out matched prompts, four fresh outputs; no expansion planned. An expansion would require a named uncertainty and a new recorded amendment before dispatch.
+
+## Inputs and availability
+
+- Lean source: exact `4c24a590974046c342de89f092da63fb419749a7` skill tree. Candidate: frozen skill tree after authored-study integration, identified by manifest file SHA-256s and git revision before dispatch. The manifest freezes both trees, common prompts, operator instructions and this protocol. No historical run is edited.
+- Pressroom booking is consequential form/review/recovery work; listening-room browsing is content/exploration work. Families overlap teaching studies, but these products, constraints, records and prompts differ. This is not a claim of wholly unseen domains.
+- Provider/host: Codex fresh subagents, inherited current model for every cell. The exact resolved model/version and provider token/cache/thinking/billing telemetry are not exposed by the delegation API and remain **unknown**. Availability is confirmed for Codex subagents. No AGY/OpenCode/model matrix is needed; no paid fallback is authorized by this protocol.
+- Same task facts, no starter implementation, system-font constraint, local-only inline artifacts, browser dependencies, provisional320/390/1440 widths and correction budget within each pair. No external browsing, installations, reference retrieval or teaching-implementation inspection in creator cells. Optional relevant frozen skill references are allowed equally. This restricted local task tests supplied-content composition, not open-web reference discovery.
+- Each creator receives one prompt, one neutrally named frozen skill tree and one exclusive output directory, in a fresh context (`fork_turns=none`). Do not expose other cells, condition identity, creator notes or desired winner. One creator per cell. Dispatch order counterbalances: pressroom lean then candidate; listening candidate then lean. Different prompt pairs may overlap, keeping at most two creators active.
+
+## Budget and stopping
+
+Per cell: soft creator budget8 minutes, hard15 minutes (wall clock after dispatch). One targeted operator correction pass up to10 minutes after automated checks; hard full observable cycle30 minutes per cell, excluding shared evaluator queue time. Named known functional/access/factual blockers prevent acceptance; a budget stop is reported as such. Checks may continue to characterize a raw failure. Do not repeatedly restyle a passing result. Root records dispatch/completion/check/correction timestamps and file hashes; creators report actually loaded resources and available tool counts. Missing initial/total provider or evaluator costs are unknown, not estimated from word counts.
+
+## Execute and retain
+
+Preserve creator `index.html` verbatim as `initial/index.html`, creator resource/decision record, and hashes before running checks. Accepted/corrected artifacts are separate directories; keep raw reports and screenshots from failed attempts. Corrections identify author, observed defect, exact change and recheck. An unchanged passing artifact is copied byte-identically as final. Record any harness correction separately from UI correction.
+
+Creators preserve their first runnable version before self-checks and every subsequent version/finding/hash, with at most one focused creator self-correction pass inside the same creation budget. Submitted initial and first-authored versions can therefore differ; report those phases explicitly rather than calling an already revised artifact the first output.
+
+Booking checks: available/full slots, invalid participants and induction, valid review facts/fee/exclusions, edit retention, first failure/retry, success and no-real-booking truth, date change and stale-slot reset. Listening checks: matching count/search/filter, long-title detail metadata/transcript, retained query/filter/order and trigger focus on return, empty/reset. Both: JavaScript/errors/external requests, overflow, keyboard activation/focus, axe violations/incomplete findings; viewport images before optional full-page captures. Natural post-action scroll/focus is captured without an operator reset.
+
+## Independent review and reporting
+
+After automated checks and disclosed corrections, produce an identical packet for two fresh AI reviewers who authored none of the outputs. Randomized A/B labels per prompt; record randomization key privately until both judgments are written and hashed. Reviewers receive common task facts, equal normal-render state scope, raw checks and anonymized source. They receive no creator notes, treatment labels or intended result. They may report an output that appears more guided; blinding is procedural, not guaranteed against inference. Neutralized renders are optional diagnostics only; none is required or interpreted as a uniqueness measure.
+
+Each reviewer separately reports **task quality** (entry/action grouping; decision/truth/consequence; narrow access; retention/edit/error/recovery; keyboard/focus/contrast/semantics) and **product specificity** (facts/artifacts shaping composition; coherent media/caption/type/spacing; relationships vs interchangeable shell; preservation across widths/states). Every dimension: A better / B better / tie / unassessed, with file/state evidence and tradeoff. No aggregate novelty or slop score. Freeze initial judgments before unblinding; preserve disagreement and ties. Root may adjudicate concrete defects without rewriting reviewer verdicts.
+
+Publish per-pair dimensions, limitations, creator/check/correction resources and accepted-vs-raw differences. Authored studies remain separate evidence. Passing automation does not prove comprehension, accessibility conformance, uniqueness or population efficacy. No human/manual testing. No total-cost savings claim unless the whole relevant cycle is actually measured; word proxies are words, never billed tokens. LON-109, LON-99 and LON-95 broader scope remains open and separate.

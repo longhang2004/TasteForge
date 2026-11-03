@@ -1,0 +1,694 @@
+{
+  "cell": "fold-4",
+  "stage": "initial",
+  "pass": "initial-01",
+  "startedAt": "2026-11-02T16:42:52.727Z",
+  "sourceSha256": "42eb04f3692e096b54e9dea8ac9191b047a86d734c13719f86a4b1372abc6c1b",
+  "harnessSha256": "3f54144d8babdcc780745acb0d210c52ab61f4d862bae0112149433c9973c56e",
+  "traces": [
+    {
+      "id": "320",
+      "width": 320,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/fold-4/initial-01/320-entry/viewport.png",
+          "report": "evidence/fold-4/initial-01/320-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 2867.1875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "invalid",
+          "viewport": "evidence/fold-4/initial-01/320-invalid/viewport.png",
+          "report": "evidence/fold-4/initial-01/320-invalid/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 692
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 669.90625,
+              "width": 288,
+              "height": 70,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "decision",
+          "viewport": "evidence/fold-4/initial-01/320-decision/viewport.png",
+          "report": "evidence/fold-4/initial-01/320-decision/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 713
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 276.40625,
+              "width": 288,
+              "height": 48,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "failure",
+          "viewport": "evidence/fold-4/initial-01/320-failure/viewport.png",
+          "report": "evidence/fold-4/initial-01/320-failure/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 776
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 585.90625,
+              "width": 288,
+              "height": 154,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "success",
+          "viewport": "evidence/fold-4/initial-01/320-success/viewport.png",
+          "report": "evidence/fold-4/initial-01/320-success/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1184
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 177.90625,
+              "width": 288,
+              "height": 154,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "unavailable Night option cannot be selected",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "Ridge quantity3 blocked by stock2",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 0 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 1.5 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 4 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocked",
+          "pass": true
+        },
+        {
+          "name": "complete selected cost106+5=111",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains edition quantity email",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact choice and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "changed selection does not retain visible stale Harbor success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": [],
+      "journey": "primary CTA link"
+    },
+    {
+      "id": "390",
+      "width": 390,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/fold-4/initial-01/390-entry/viewport.png",
+          "report": "evidence/fold-4/initial-01/390-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 2840.046875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "invalid",
+          "viewport": "evidence/fold-4/initial-01/390-invalid/viewport.png",
+          "report": "evidence/fold-4/initial-01/390-invalid/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 676
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 683.5625,
+              "width": 350,
+              "height": 70,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "decision",
+          "viewport": "evidence/fold-4/initial-01/390-decision/viewport.png",
+          "report": "evidence/fold-4/initial-01/390-decision/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 676
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 311.0625,
+              "width": 350,
+              "height": 48,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "failure",
+          "viewport": "evidence/fold-4/initial-01/390-failure/viewport.png",
+          "report": "evidence/fold-4/initial-01/390-failure/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 676
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 683.5625,
+              "width": 350,
+              "height": 133,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "success",
+          "viewport": "evidence/fold-4/initial-01/390-success/viewport.png",
+          "report": "evidence/fold-4/initial-01/390-success/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 713
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 20,
+              "y": 646.5625,
+              "width": 350,
+              "height": 133,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "unavailable Night option cannot be selected",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "Ridge quantity3 blocked by stock2",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 0 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 1.5 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 4 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocked",
+          "pass": true
+        },
+        {
+          "name": "complete selected cost106+5=111",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains edition quantity email",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact choice and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "changed selection does not retain visible stale Harbor success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": [],
+      "journey": "primary CTA link"
+    },
+    {
+      "id": "1440",
+      "width": 1440,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/fold-4/initial-01/1440-entry/viewport.png",
+          "report": "evidence/fold-4/initial-01/1440-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 2017.125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "invalid",
+          "viewport": "evidence/fold-4/initial-01/1440-invalid/viewport.png",
+          "report": "evidence/fold-4/initial-01/1440-invalid/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 323
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 875.421875,
+              "y": 668,
+              "width": 516.578125,
+              "height": 49,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "decision",
+          "viewport": "evidence/fold-4/initial-01/1440-decision/viewport.png",
+          "report": "evidence/fold-4/initial-01/1440-decision/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 323
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "email",
+            "testId": null,
+            "rect": {
+              "x": 875.421875,
+              "y": 313.5,
+              "width": 516.578125,
+              "height": 48,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "failure",
+          "viewport": "evidence/fold-4/initial-01/1440-failure/viewport.png",
+          "report": "evidence/fold-4/initial-01/1440-failure/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 323
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 875.421875,
+              "y": 668,
+              "width": 516.578125,
+              "height": 91,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "success",
+          "viewport": "evidence/fold-4/initial-01/1440-success/viewport.png",
+          "report": "evidence/fold-4/initial-01/1440-success/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 323
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "feedback",
+            "testId": null,
+            "rect": {
+              "x": 875.421875,
+              "y": 668,
+              "width": 516.578125,
+              "height": 91,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [
+        {
+          "name": "primary task fields reachable",
+          "pass": true
+        },
+        {
+          "name": "unavailable Night option cannot be selected",
+          "pass": true
+        },
+        {
+          "name": "invalid required input blocks valid-submit recovery",
+          "pass": true
+        },
+        {
+          "name": "Ridge quantity3 blocked by stock2",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 0 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 1.5 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid whole quantity 4 blocked",
+          "pass": true
+        },
+        {
+          "name": "invalid email blocked",
+          "pass": true
+        },
+        {
+          "name": "complete selected cost106+5=111",
+          "pass": true
+        },
+        {
+          "name": "first valid submit fails with useful retry",
+          "pass": true
+        },
+        {
+          "name": "failure retains edition quantity email",
+          "pass": true
+        },
+        {
+          "name": "keyboard retry succeeds with exact choice and honest outcome",
+          "pass": true
+        },
+        {
+          "name": "changed selection does not retain visible stale Harbor success",
+          "pass": true
+        },
+        {
+          "name": "no page errors external requests or broken local assets",
+          "pass": true
+        }
+      ],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": [],
+      "journey": "primary CTA link"
+    },
+    {
+      "id": "390-reduced",
+      "width": 390,
+      "states": [
+        {
+          "label": "entry",
+          "viewport": "evidence/fold-4/initial-01/390-reduced-entry/viewport.png",
+          "report": "evidence/fold-4/initial-01/390-reduced-entry/report.json",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 2840.046875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "violations": [],
+          "incomplete": []
+        }
+      ],
+      "checks": [],
+      "pageErrors": [],
+      "external": [],
+      "httpFailures": []
+    }
+  ],
+  "failures": [],
+  "scope": "Matched scripted task/width/access and natural viewport evidence; no human tests",
+  "chromium": "156.0.8078.4",
+  "finishedAt": "2026-11-02T16:43:35.571Z",
+  "checkCount": 42,
+  "stateCount": 16
+}

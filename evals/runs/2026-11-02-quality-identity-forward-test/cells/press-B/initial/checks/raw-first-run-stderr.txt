@@ -1,0 +1,12 @@
+Error: Please use browser.newContext()
+ Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md
+    at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:254:13)
+    at async screen (/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-quality-identity-forward-test/cells/press-B/initial/checks/check.cjs:6:357)
+    at async /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-quality-identity-forward-test/cells/press-B/initial/checks/check.cjs:7:1 {
+  [cause]: Error: Please use browser.newContext()
+      at _BrowserContext.newPage (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/playwright-core@1.64.1/node_modules/playwright-core/lib/coreBundle.js:63972:17)
+      at AxeBuilder.finishRun (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:350:37)
+      at AxeBuilder.analyze (/mnt/c/Users/hi/src/personal_repos/TasteForge/examples/inventory-workbench/tools/node_modules/.pnpm/@axe-core+playwright@4.14.0_playwright-core@1.64.1/node_modules/@axe-core/playwright/dist/index.js:252:25)
+      at async screen (/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-quality-identity-forward-test/cells/press-B/initial/checks/check.cjs:6:357)
+      at async /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-quality-identity-forward-test/cells/press-B/initial/checks/check.cjs:7:1
+}

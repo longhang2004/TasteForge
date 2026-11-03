@@ -6,6 +6,8 @@ TasteForge is an open-source **Agent Skill and TypeScript CLI for context-aware 
 
 The local design intelligence engine turns a product brief into **Design DNA**: a versioned specification of typography, colors, spacing, layout, motion, and accessibility constraints. The bundled skill guides an agent through UI creation, redesign, and refinement while preserving an existing design system when appropriate.
 
+The beta.2 skill uses [proportional workflows](docs/lean-workflows.md): Fast for bounded corrections, Standard for a clear new screen/flow, and Explore when structure is genuinely undecided. It loads references as needed and can reuse an optional browser checkpoint helper with existing Playwright. No model service or new CLI command is required.
+
 [Documentation](docs/README.md) · [CLI reference](docs/cli.md) · [Agent Skill](skills/tasteforge/SKILL.md) · [Releases](https://github.com/longhang2004/TasteForge/releases)
 
 ## TasteForge at a glance
@@ -20,7 +22,7 @@ The local design intelligence engine turns a product brief into **Design DNA**: 
 | Generated artifacts | `design-dna.json`, semantic `tokens.css`, and project `DESIGN.md`                                     |
 | Static audit scope  | CSS declarations and literal JSX/TSX styles; verified source conditions, heuristics, and review items |
 | Runtime             | Node.js 20.19+; pnpm workspace; local filesystem state                                                |
-| License and status  | MIT; 0.2.0-beta.1 source; npm packages unpublished                                                    |
+| License and status  | MIT; 0.2.0-beta.2 source; npm packages unpublished                                                    |
 
 No API keys, external LLM calls, database, or cloud service are required. Core operations make no network requests. Static source checks identify implementation issues and review questions; rendered UI inspection and accessibility testing remain separate work.
 
@@ -107,7 +109,7 @@ Optional [effect/composition guidance](skills/tasteforge/references/effects-and-
 
 For substantial undecided layouts, [the revision workflow](skills/tasteforge/workflows/structure-and-revise.md) compares runnable task slices, then records actual render findings and rechecked edits. The [inventory worked composition](examples/inventory-workbench/README.md) demonstrates this with a compact desktop table and retained mobile detail/review/recovery. It is agent-authored; human design approval and representative-user testing remain pending.
 
-Automated verification in this repository covers the skill's frontmatter, reference files, and CLI integration workflow. **End-to-end integration inside Codex, Claude Code, Cursor, or other agent applications has not been certified.** Consult each host's current installation instructions; no universal compatibility claim is made.
+Automated verification covers skill resources and the CLI integration workflow. A beta.2 smoke also completed one native Windows Codex explicit repo-skill invocation using the standalone ZIP; [host evidence and limits](docs/host-integration.md) record its exact scope. Broad integration across Codex, Claude Code, Cursor or other agent applications is not certified.
 
 ## Frequently asked questions
 
@@ -117,11 +119,11 @@ The CLI's recommendation, generation, and source-audit operations run locally wi
 
 ### How do I install the CLI or the standalone Agent Skill?
 
-Use the [source quickstart](#quickstart-from-source) for the CLI. For the 0.2 beta skill, copy the current `skills/tasteforge` folder or use the matching skill ZIP when published. The [v0.1.0 release](https://github.com/longhang2004/TasteForge/releases/tag/v0.1.0) contains the older four-command MVP and does not include the beta workflows. The npm packages are not yet published.
+Use the [source quickstart](#quickstart-from-source) for the CLI. For the 0.2 beta skill, copy the current `skills/tasteforge` folder or use the matching skill ZIP from [GitHub releases](https://github.com/longhang2004/TasteForge/releases). Preserve the folder's references/workflows/scripts. The v0.1.0 release contains the older four-command MVP and does not include the beta workflows. The npm packages are not yet published.
 
 ### Can I use TasteForge with Codex, Claude Code, or Cursor?
 
-TasteForge provides a portable `SKILL.md` with references and workflows. Use it through a host's supported skill mechanism or explicitly supply the instructions to your coding agent. Host-specific discovery, installation, and invocation vary; end-to-end integration in these applications has not been certified. See [Agent Skill](#agent-skill) for the current verification scope.
+TasteForge provides a portable `SKILL.md` with references and workflows. Use a host's supported skill mechanism or explicitly supply the instructions. One native Windows Codex repo-scope ZIP invocation was observed; other hosts remain unassessed for this beta. See [host integration evidence](docs/host-integration.md) for installation scope, repeat steps and limits.
 
 ### Will TasteForge preserve my existing design system?
 
@@ -189,6 +191,6 @@ pnpm format:check
 - **No audit findings:** confirm the path contains `.css`, `.tsx`, or `.jsx`. Dynamic/utility-driven styling may require rendered review. An empty report is not a design-quality score.
 - **Path or symlink rejected:** keep inputs inside `--project` and `.tasteforge` as a real local directory. Intentional external projects can be selected explicitly with `--project`.
 
-See [CONTRIBUTING](CONTRIBUTING.md), [knowledge extension](docs/extending-knowledge.md), [release preparation](docs/releasing.md), and [benchmark methodology](evals/README.md). Original code and prose use the [MIT license](LICENSE); bundled external reference text retains its upstream MIT notices. Font binaries and third-party image assets are not shipped.
+See [CONTRIBUTING](CONTRIBUTING.md), [knowledge extension](docs/extending-knowledge.md), [release preparation](docs/releasing.md), and [benchmark methodology](evals/README.md). Original code and prose use the [MIT license](LICENSE); bundled external references retain their upstream notices. The CLI packages and standalone skill do not bundle font binaries or UI image assets. Evaluation source archives include local OFL font fixtures and original SVGs with asset-specific manifests/notices.
 
 Next priorities: gather real agent-integration evidence, expand AST-aware audit coverage with project token imports, validate more languages, and run the published benchmark methodology with independent reviewers. Exploratory results and their limitations are recorded; no general UX improvement is established.

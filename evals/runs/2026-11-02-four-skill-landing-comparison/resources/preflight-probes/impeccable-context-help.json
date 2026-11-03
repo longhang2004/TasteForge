@@ -1,0 +1,15 @@
+{
+  "name": "impeccable-context-help",
+  "startedAt": "2026-11-02T14:11:53.658989+00:00",
+  "command": [
+    "sh",
+    "/mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-four-skill-landing-comparison/resources/impeccable/skill/scripts/impeccable",
+    "context",
+    "--help"
+  ],
+  "cwd": "/mnt/c/Users/hi/src/personal_repos/TasteForge/.tmp/comparison-runtime",
+  "exitCode": 0,
+  "stdout": "TARGET_SELECTION_REQUIRED:\n{\n  \"targetPath\": null,\n  \"projectRoot\": \"/mnt/c/Users/hi/src/personal_repos/TasteForge\",\n  \"repoRoot\": \"/mnt/c/Users/hi/src/personal_repos/TasteForge\",\n  \"targetCandidates\": [\n    {\n      \"name\": \"cli\",\n      \"path\": \"packages/cli\",\n      \"targetExample\": \"packages/cli/src/index.ts\",\n      \"productStatus\": \"missing\",\n      \"productPath\": null,\n      \"designStatus\": \"missing\",\n      \"designPath\": null\n    },\n    {\n      \"name\": \"core\",\n      \"path\": \"packages/core\",\n      \"targetExample\": \"packages/core/src/index.ts\",\n      \"productStatus\": \"missing\",\n      \"productPath\": null,\n      \"designStatus\": \"missing\",\n      \"designPath\": null\n    },\n    {\n      \"name\": \"knowledge\",\n      \"path\": \"packages/knowledge\",\n      \"targetExample\": \"packages/knowledge/src/index.ts\",\n      \"productStatus\": \"missing\",\n      \"productPath\": null,\n      \"designStatus\": \"missing\",\n      \"designPath\": null\n    }\n  ]\n}\n\nShow each app with its productStatus/productPath and designStatus/designPath so the user can see child overrides, inherited root files, fallback files, or missing files before choosing. Ask the user which app Impeccable should use, then rerun Impeccable helper commands from that child app cwd using this same scripts directory. Use `--target <path>` only as a fallback when changing cwd is not possible, or when the user explicitly named a file/path.\n",
+  "stderr": "",
+  "finishedAt": "2026-11-02T14:11:55.062422+00:00"
+}

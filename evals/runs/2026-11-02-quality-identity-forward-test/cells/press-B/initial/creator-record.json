@@ -1,0 +1,317 @@
+{
+  "cell": "press-B",
+  "artifact": "index.html",
+  "start_utc": "2026-11-02T08:37:24Z",
+  "start_utc_basis": "First explicitly captured UTC timestamp, after initial assigned-input read; exact earlier invocation start was not exposed.",
+  "end_utc": "2026-11-02T08:44:47.949603+00:00",
+  "exact_invocation_start_utc": null,
+  "loaded_paths": [
+    "evals/runs/2026-11-02-quality-identity-forward-test/operator.md",
+    "evals/runs/2026-11-02-quality-identity-forward-test/prompts/press-booking.md",
+    "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/SKILL.md",
+    "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/workflows/create-ui.md",
+    "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/references/art-direction.md",
+    "evals/runs/2026-11-02-quality-identity-forward-test/resources/R2/tasteforge/references/render-checks.md",
+    "examples/inventory-workbench/tools/node_modules/playwright",
+    "examples/inventory-workbench/tools/node_modules/@axe-core/playwright",
+    "/home/longhang2004/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome"
+  ],
+  "rationale": "A ruled session sheet groups date/time/participants as an ordinary form and uses the risograph's two-color overlap as an honestly labelled small schematic. Wide review places full terms beside the decision; narrow review puts terms before confirmation. Review, edit, focused failure and retry preserve in-page choices.",
+  "versions": [
+    {
+      "path": "versions/00.html",
+      "sha256": "fd291787ffec34f5d4d4dc28f67e55b0e0a72771848e94ab1d0892b149ddfd31",
+      "utc": "2026-11-02T08:39:33.345336+00:00",
+      "author": "creator",
+      "finding": "First runnable version preserved byte-for-byte before browser checks."
+    },
+    {
+      "path": "versions/01.html",
+      "sha256": "6b8643bac609b16ac4f3896ae7b64bfede79ce3ae3066ea1c466da0ae29a6bb7",
+      "utc": "2026-11-02T08:43:03.488720+00:00",
+      "author": "creator",
+      "finding": "Single focused correction: axe region finding on demo notice; at 320px full review conditions appeared after confirmation action. Added named notice region and placed full mobile review conditions before action."
+    }
+  ],
+  "self_correction_passes": 1,
+  "checks": {
+    "runtime": "Installed WSL Playwright Chromium, local file URL, no server/backend/network.",
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "height": 900,
+    "states": [
+      "choose",
+      "review",
+      "error",
+      "success"
+    ],
+    "executed_task_assertions": [
+      {
+        "width": 320,
+        "name": "full slot disabled",
+        "pass": true
+      },
+      {
+        "width": 320,
+        "name": "date change clears selection",
+        "pass": true
+      },
+      {
+        "width": 320,
+        "name": "fraction rejected",
+        "pass": true
+      },
+      {
+        "width": 320,
+        "name": "review details",
+        "pass": true
+      },
+      {
+        "width": 320,
+        "name": "edit retains all choices",
+        "pass": true
+      },
+      {
+        "width": 320,
+        "name": "first confirm fails with focused recovery",
+        "pass": true
+      },
+      {
+        "width": 320,
+        "name": "retry succeeds with same choices and demo disclosure",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "name": "full slot disabled",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "name": "date change clears selection",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "name": "fraction rejected",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "name": "review details",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "name": "edit retains all choices",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "name": "first confirm fails with focused recovery",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "name": "retry succeeds with same choices and demo disclosure",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "name": "full slot disabled",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "name": "date change clears selection",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "name": "fraction rejected",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "name": "review details",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "name": "edit retains all choices",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "name": "first confirm fails with focused recovery",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "name": "retry succeeds with same choices and demo disclosure",
+        "pass": true
+      }
+    ],
+    "horizontal_overflow_failures": [],
+    "uncaught_page_errors": [],
+    "axe": [
+      {
+        "width": 320,
+        "state": "choose",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "width": 320,
+        "state": "review",
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "width": 320,
+        "state": "error",
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "width": 320,
+        "state": "success",
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "width": 390,
+        "state": "choose",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "width": 390,
+        "state": "review",
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "width": 390,
+        "state": "error",
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "width": 390,
+        "state": "success",
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "width": 1440,
+        "state": "choose",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "width": 1440,
+        "state": "review",
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "width": 1440,
+        "state": "error",
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "width": 1440,
+        "state": "success",
+        "violations": [],
+        "incomplete": []
+      }
+    ],
+    "source_inspection_is_not_rendered_test": true,
+    "rendered_images_inspected": [
+      "checks/320-choose.png",
+      "checks/320-error.png",
+      "checks/1440-review.png",
+      "checks-01/320-review.png"
+    ],
+    "focus_evidence": "Programmatic focus asserted on first failure; focus moves to section headings on stage changes. Form inputs and buttons have focus-visible CSS.",
+    "raw_evidence": [
+      "checks/raw-first-run-stderr.txt",
+      "checks/raw-report.json",
+      "checks/raw-stdout.txt",
+      "checks/raw-stderr.txt",
+      "checks-01/raw-report.json",
+      "checks-01/raw-stdout.txt",
+      "checks-01/raw-stderr.txt"
+    ]
+  },
+  "raw_failures": [
+    {
+      "stage": "initial WSL read",
+      "raw": "Access is denied. Error code: Wsl/E_ACCESSDENIED",
+      "resolution": "Requested tool sandbox escalation; subsequent WSL commands executed."
+    },
+    {
+      "stage": "installed runtime probe",
+      "raw": "ls: cannot access examples/inventory-workbench/tools/node_modules/@playwright: No such file or directory; ls: cannot access /home/hi/.cache/ms-playwright: No such file or directory",
+      "resolution": "Located existing direct playwright module and Chromium via executablePath."
+    },
+    {
+      "stage": "first axe harness",
+      "raw": "Error: Please use browser.newContext()",
+      "resolution": "Corrected test harness to use explicit context; retained raw-first-run-stderr.txt. No artifact change in this harness correction."
+    },
+    {
+      "stage": "requested image before generated",
+      "raw": "Unable to locate checks/390-error.png: The system cannot find the file specified. (os error 2)",
+      "resolution": "Waited for task screenshots; inspected existing 320px error image."
+    },
+    {
+      "stage": "initial completed axe check",
+      "raw": "region: .demo is outside landmarks (moderate) at all tested widths/states",
+      "resolution": "Corrected in versions/01.html; final axe reports zero violations."
+    }
+  ],
+  "unavailable_or_unassessed_checks": [
+    "Human usability/acceptance was not performed.",
+    "Full manual keyboard navigation and screen-reader behavior were not tested; programmatic failure focus was tested.",
+    "Axe color-contrast remains incomplete in choose state at each width, associated with the native form/disabled state; automated scans do not establish complete conformance.",
+    "Natural-viewport feedback geometry/occlusion was not separately captured; full-page images were inspected and interactions used Playwright scrolling.",
+    "No reload persistence requested or tested."
+  ],
+  "final_sha256": "6b8643bac609b16ac4f3896ae7b64bfede79ce3ae3066ea1c466da0ae29a6bb7",
+  "tool_call_count": null,
+  "tool_call_count_note": "Not reliably counted across shell launch, polling, viewing and coordination tools.",
+  "model": null,
+  "provider": null,
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "thinking_tokens": null,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "total_tokens": null
+  },
+  "cost": {
+    "input": null,
+    "output": null,
+    "thinking": null,
+    "cache_read": null,
+    "cache_write": null,
+    "total": null,
+    "currency": null
+  },
+  "network_used": false,
+  "packages_installed": false,
+  "human_acceptance": null
+}

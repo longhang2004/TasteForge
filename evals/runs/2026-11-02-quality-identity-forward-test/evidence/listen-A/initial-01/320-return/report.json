@@ -1,0 +1,100 @@
+{
+  "label": "320-return",
+  "capturedAtUtc": "2026-11-02T08:49:11.764Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 320,
+    "height": 740
+  },
+  "scroll": {
+    "x": 0,
+    "y": 487
+  },
+  "document": {
+    "width": 320,
+    "height": 1379
+  },
+  "activeElement": {
+    "tag": "BUTTON",
+    "id": "open-EL-03",
+    "testId": null,
+    "rect": {
+      "x": 92,
+      "y": 441.265625,
+      "width": 210,
+      "height": 74.0625,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[role=alert]",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "[role=status]",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 223.71875,
+          "y": 195.078125,
+          "width": 78.28125,
+          "height": 11,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "button:focus",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 92,
+          "y": 441.265625,
+          "width": 210,
+          "height": 74.0625,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "h1:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h2:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 487
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 487
+  }
+}

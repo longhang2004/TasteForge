@@ -1,0 +1,243 @@
+{
+  "started": "2026-11-02T14:39:09.469Z",
+  "checks": [
+    {
+      "name": "no horizontal overflow 320",
+      "passed": true,
+      "details": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "no horizontal overflow 390",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "no horizontal overflow 1440",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "empty email blocked and focus feedback",
+      "passed": true,
+      "details": {
+        "scrollX": 0,
+        "scrollY": 2502,
+        "focus": "feedback",
+        "feedback": "Check your reservation details\nEnter a valid email address, such as you@example.com.",
+        "quantity": "1",
+        "edition": "Harbor",
+        "email": "",
+        "total": "USD 58"
+      }
+    },
+    {
+      "name": "malformed email blocked",
+      "passed": true
+    },
+    {
+      "name": "Ridge 3 blocked",
+      "passed": true,
+      "details": {
+        "scrollX": 0,
+        "scrollY": 2559,
+        "focus": "feedback",
+        "feedback": "Check your reservation details\nEnter 1 or 2 whole kits; Ridge has only 2 available.",
+        "quantity": "3",
+        "edition": "Ridge",
+        "email": "mai@example.com",
+        "total": "—"
+      }
+    },
+    {
+      "name": "Night disabled",
+      "passed": true
+    },
+    {
+      "name": "fraction blocked",
+      "passed": true
+    },
+    {
+      "name": "Harbor 2 cost",
+      "passed": true
+    },
+    {
+      "name": "first valid attempt recoverable failure",
+      "passed": true,
+      "details": {
+        "scrollX": 0,
+        "scrollY": 2559,
+        "focus": "feedback",
+        "feedback": "The demo reservation did not complete.\n\nYour edition, quantity and email are still here. Retry to complete this local simulation. No order, payment or email was sent.",
+        "quantity": "2",
+        "edition": "Harbor",
+        "email": "mai@example.com",
+        "total": "USD 111"
+      }
+    },
+    {
+      "name": "retry succeeds exact values",
+      "passed": true,
+      "details": {
+        "scrollX": 0,
+        "scrollY": 2540,
+        "focus": "feedback",
+        "feedback": "Demo reservation complete\n\nHarbor × 2 — item subtotal USD 106 + shipping USD 5 = total USD 111. Email: mai@example.com. No real reservation, order, payment or email was sent. You can edit the fields to try another selection.",
+        "quantity": "2",
+        "edition": "Harbor",
+        "email": "mai@example.com",
+        "total": "USD 111"
+      }
+    },
+    {
+      "name": "edit clears stale feedback",
+      "passed": true
+    },
+    {
+      "name": "long feedback no overflow",
+      "passed": true
+    },
+    {
+      "name": "reduced motion removes transition",
+      "passed": true
+    },
+    {
+      "name": "keyboard skip link first",
+      "passed": true
+    },
+    {
+      "name": "keyboard field order quantity",
+      "passed": true
+    },
+    {
+      "name": "keyboard field order email",
+      "passed": true
+    },
+    {
+      "name": "visible keyboard focus",
+      "passed": true,
+      "details": {
+        "outline": "solid",
+        "width": "3px"
+      }
+    },
+    {
+      "name": "axe scan zero violations",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "no JS errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "no external requests",
+      "passed": true,
+      "details": [
+        "http://127.0.0.1:8813/",
+        "http://127.0.0.1:8813/common/fonts.css",
+        "http://127.0.0.1:8813/common/assets/field-fold-map.svg",
+        "http://127.0.0.1:8813/common/fonts/manrope/Manrope%5Bwght%5D.ttf",
+        "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Medium.ttf",
+        "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Regular.ttf",
+        "http://127.0.0.1:8813/common/assets/field-fold-contents.svg",
+        "http://127.0.0.1:8813/",
+        "http://127.0.0.1:8813/common/fonts.css",
+        "http://127.0.0.1:8813/common/assets/field-fold-map.svg",
+        "http://127.0.0.1:8813/common/assets/field-fold-contents.svg",
+        "http://127.0.0.1:8813/common/fonts/manrope/Manrope%5Bwght%5D.ttf",
+        "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Regular.ttf",
+        "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Medium.ttf"
+      ]
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "requests": [
+    "http://127.0.0.1:8813/",
+    "http://127.0.0.1:8813/common/fonts.css",
+    "http://127.0.0.1:8813/common/assets/field-fold-map.svg",
+    "http://127.0.0.1:8813/common/fonts/manrope/Manrope%5Bwght%5D.ttf",
+    "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Medium.ttf",
+    "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Regular.ttf",
+    "http://127.0.0.1:8813/common/assets/field-fold-contents.svg",
+    "http://127.0.0.1:8813/",
+    "http://127.0.0.1:8813/common/fonts.css",
+    "http://127.0.0.1:8813/common/assets/field-fold-map.svg",
+    "http://127.0.0.1:8813/common/assets/field-fold-contents.svg",
+    "http://127.0.0.1:8813/common/fonts/manrope/Manrope%5Bwght%5D.ttf",
+    "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Regular.ttf",
+    "http://127.0.0.1:8813/common/fonts/ibmplexmono/IBMPlexMono-Medium.ttf"
+  ],
+  "ctaState": {
+    "scrollX": 0,
+    "scrollY": 2044,
+    "focus": "BODY",
+    "feedback": "",
+    "quantity": "1",
+    "edition": "Harbor",
+    "email": "",
+    "total": "USD 58"
+  },
+  "invalidState": {
+    "scrollX": 0,
+    "scrollY": 2502,
+    "focus": "feedback",
+    "feedback": "Check your reservation details\nEnter a valid email address, such as you@example.com.",
+    "quantity": "1",
+    "edition": "Harbor",
+    "email": "",
+    "total": "USD 58"
+  },
+  "stockInvalidState": {
+    "scrollX": 0,
+    "scrollY": 2559,
+    "focus": "feedback",
+    "feedback": "Check your reservation details\nEnter 1 or 2 whole kits; Ridge has only 2 available.",
+    "quantity": "3",
+    "edition": "Ridge",
+    "email": "mai@example.com",
+    "total": "—"
+  },
+  "failureState": {
+    "scrollX": 0,
+    "scrollY": 2559,
+    "focus": "feedback",
+    "feedback": "The demo reservation did not complete.\n\nYour edition, quantity and email are still here. Retry to complete this local simulation. No order, payment or email was sent.",
+    "quantity": "2",
+    "edition": "Harbor",
+    "email": "mai@example.com",
+    "total": "USD 111"
+  },
+  "successState": {
+    "scrollX": 0,
+    "scrollY": 2540,
+    "focus": "feedback",
+    "feedback": "Demo reservation complete\n\nHarbor × 2 — item subtotal USD 106 + shipping USD 5 = total USD 111. Email: mai@example.com. No real reservation, order, payment or email was sent. You can edit the fields to try another selection.",
+    "quantity": "2",
+    "edition": "Harbor",
+    "email": "mai@example.com",
+    "total": "USD 111"
+  },
+  "longFeedbackState": {
+    "scrollX": 0,
+    "scrollY": 2559,
+    "focus": "feedback",
+    "feedback": "Demo reservation complete\n\nHarbor × 1 — item subtotal USD 53 + shipping USD 5 = total USD 58. Email: averylongaddresswithmanycharactersforfeedbackverification@example.com. No real reservation, order, payment or email was sent. You can edit the fields to try another selection.",
+    "quantity": "1",
+    "edition": "Harbor",
+    "email": "averylongaddresswithmanycharactersforfeedbackverification@example.com",
+    "total": "USD 58"
+  },
+  "keyboardFirst": "Skip to content",
+  "ended": "2026-11-02T14:39:15.424Z"
+}

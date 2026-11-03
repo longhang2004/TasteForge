@@ -1,0 +1,31 @@
+{
+  "case": "c01",
+  "requestedModel": "gpt-6.1-sol",
+  "reasoningEffort": "high",
+  "agentTask": "/root/current_sol_c01",
+  "recordedAtUtc": "2026-11-01T18:27:37.826199+00:00",
+  "isolation": "fork_turns=none, case-only prompt; no counterpart/other study reads authorized",
+  "timingNote": "Coordinator metadata recorded after dispatch; exact backend snapshot, runtime, tokens and inference seed not exposed. Soft budget only.",
+  "generation": "submitted",
+  "files": {
+    "index.html": {
+      "exists": true,
+      "bytes": 6378
+    },
+    "styles.css": {
+      "exists": true,
+      "bytes": 10987
+    },
+    "app.js": {
+      "exists": true,
+      "bytes": 4839
+    },
+    "implementation-notes.md": {
+      "exists": true,
+      "bytes": 3644
+    }
+  },
+  "taskFixtureUnchanged": true,
+  "creatorFinalResponse": "creator-final.txt",
+  "toolTranscript": "Not exported by collaboration API; final response, authored notes, previews and actual CLI evidence retained. Self-reported checks are not operator test results."
+}

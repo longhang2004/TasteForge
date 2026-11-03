@@ -1,0 +1,539 @@
+{
+  "reviewer": "reviewer-2",
+  "startedAt": "2026-11-02T16:53:58Z",
+  "finishedAt": "2026-11-02T17:00:49Z",
+  "inspectedImages": [
+    "field-fold/A/1440-entry.png",
+    "field-fold/A/390-entry.png",
+    "field-fold/A/320-decision.png",
+    "field-fold/A/320-failure.png",
+    "field-fold/A/320-success.png",
+    "field-fold/A/320-invalid.png",
+    "field-fold/A/1440-entry-full-page.png",
+    "field-fold/B/1440-entry.png",
+    "field-fold/B/390-entry.png",
+    "field-fold/B/320-decision.png",
+    "field-fold/B/320-failure.png",
+    "field-fold/B/320-success.png",
+    "field-fold/B/320-invalid.png",
+    "field-fold/B/1440-entry-full-page.png",
+    "field-fold/C/1440-entry.png",
+    "field-fold/C/390-entry.png",
+    "field-fold/C/320-decision.png",
+    "field-fold/C/320-failure.png",
+    "field-fold/C/320-success.png",
+    "field-fold/C/320-invalid.png",
+    "field-fold/C/1440-entry-full-page.png",
+    "field-fold/D/1440-entry.png",
+    "field-fold/D/390-entry.png",
+    "field-fold/D/320-decision.png",
+    "field-fold/D/320-failure.png",
+    "field-fold/D/320-success.png",
+    "field-fold/D/320-invalid.png",
+    "field-fold/D/1440-entry-full-page.png",
+    "relay-notes/A/1440-entry.png",
+    "relay-notes/A/390-entry.png",
+    "relay-notes/A/320-decision.png",
+    "relay-notes/A/320-failure.png",
+    "relay-notes/A/320-success.png",
+    "relay-notes/A/320-invalid.png",
+    "relay-notes/A/1440-entry-full-page.png",
+    "relay-notes/B/1440-entry.png",
+    "relay-notes/B/390-entry.png",
+    "relay-notes/B/320-decision.png",
+    "relay-notes/B/320-failure.png",
+    "relay-notes/B/320-success.png",
+    "relay-notes/B/320-invalid.png",
+    "relay-notes/B/1440-entry-full-page.png",
+    "relay-notes/C/1440-entry.png",
+    "relay-notes/C/390-entry.png",
+    "relay-notes/C/320-decision.png",
+    "relay-notes/C/320-failure.png",
+    "relay-notes/C/320-success.png",
+    "relay-notes/C/320-invalid.png",
+    "relay-notes/C/1440-entry-full-page.png",
+    "relay-notes/D/1440-entry.png",
+    "relay-notes/D/390-entry.png",
+    "relay-notes/D/320-decision.png",
+    "relay-notes/D/320-failure.png",
+    "relay-notes/D/320-success.png",
+    "relay-notes/D/320-invalid.png",
+    "relay-notes/D/1440-entry-full-page.png"
+  ],
+  "cases": {
+    "field-fold": {
+      "visualCraft": [
+        {
+          "dimension": "Typography, readability and hierarchy",
+          "groups": [
+            [
+              "B",
+              "D"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/1440-entry.png and B/390-entry.png: strong title/form headings and compact readable offer hierarchy.",
+            "D/1440-entry.png and D/390-entry.png: consistent title, body and figure-caption hierarchy.",
+            "A/390-entry.png: emphatic headline and clear price; C/390-entry.png: direct readable offer, with less distinct separation between supporting copy and captions."
+          ],
+          "tradeoff": "A's bold emphasis and C's literal lead are useful; this is a modest hierarchy preference, not a preference for serif fonts."
+        },
+        {
+          "dimension": "Composition, spacing and rhythm",
+          "groups": [
+            [
+              "B",
+              "D"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/1440-entry.png places schematic and complete costed form together; D/1440-entry-full-page.png pairs contents and reservation in a compact second section.",
+            "A/1440-entry-full-page.png uses orderly but extended hero/contents/reservation bands; C/1440-entry.png gives the next contents label a long lead-in."
+          ],
+          "tradeoff": "A/C offer a more leisurely introduction. C full-page blank areas include scroll-reveal state and are not treated as permanently empty content."
+        },
+        {
+          "dimension": "Media/caption/content craft",
+          "groups": [
+            [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "All four 1440-entry-full-page.png images use the schematic map and contents illustration, with visible limits on navigation, photography and print-quality implications.",
+            "A pairs the contents image with a detailed inventory; B uses a counted inventory, C explains parts alongside the illustration, and D uses numbered figures and an inventory."
+          ],
+          "tradeoff": "All accurately explain the supplied object; differing frames, captions and typography do not establish a reliable quality ordering."
+        },
+        {
+          "dimension": "Coherence across widths and relevant states",
+          "groups": [
+            [
+              "B",
+              "C",
+              "D"
+            ],
+            [
+              "A"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/C/D 320-decision.png show total USD 111 and the reserve action within the natural viewport; their success images preserve the same visual language.",
+            "A/390-entry.png remains coherent, but A/320-decision.png ends before the total/action; A/320-failure.png places feedback above a long form."
+          ],
+          "tradeoff": "A's large controls and spacing are readable, but the narrow decision requires more scrolling."
+        }
+      ],
+      "productSpecificity": [
+        {
+          "dimension": "Supplied facts/artifacts actually shaping the composition",
+          "groups": [
+            [
+              "A",
+              "B",
+              "D"
+            ],
+            [
+              "C"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "A/1440-entry-full-page.png organizes the contents and edition stock as inventories; B/1440-entry.png gives the physical artifact and costed selection equal priority.",
+            "D/1440-entry-full-page.png pairs the counted contents with the form; C/1440-entry-full-page.png includes the same facts but separates them with an additional tagline and sequential marketing sections."
+          ],
+          "tradeoff": "C remains factually specific; the preference concerns the supplied inventory and selection task organizing the page."
+        },
+        {
+          "dimension": "Coherent product direction beyond a replaceable logo/copy shell",
+          "groups": [
+            [
+              "A",
+              "B",
+              "D"
+            ],
+            [
+              "C"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "A's field-notes frame and counted kit strip, B's paper-folio arrangement, and D's figure/contents/selection sequence support a printed-object offer (their 1440 entry/full-page images).",
+            "C/1440-entry-full-page.png uses a coherent hero/benefits/tagline/form sequence whose organization is less dependent on this particular kit."
+          ],
+          "tradeoff": "Familiar patterns are appropriate. C's weaker placement here is about its structure doing less product-specific work, not its palette or rounded controls."
+        },
+        {
+          "dimension": "Specific decisions preserved across widths/states without task harm",
+          "groups": [
+            [
+              "B",
+              "C"
+            ],
+            [
+              "A"
+            ],
+            [
+              "D"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/C 320-decision.png and 320-success.png preserve edition, complete total and honest local outcome in compact reading areas.",
+            "A/320-success.png preserves the exact Harbor x2 outcome, but A/320-decision.png pushes the total/action below view.",
+            "D/320-invalid.png shows Ridge quantity 3 with USD 164 despite the stock error; D/320-success.png is exact for valid Harbor x2."
+          ],
+          "tradeoff": "D blocks the invalid reservation according to its checks; the displayed impossible total is still a decision-quality weakness."
+        }
+      ],
+      "taskAccess": [
+        {
+          "dimension": "Entry/action priority, decision conditions and truthful consequence",
+          "groups": [
+            [
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "D"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/1440-entry.png exposes edition, quantity, email, shipping, total and local consequence together.",
+            "A/390-entry.png gives USD 58 for one kit and a strong action; C/390-entry.png gives USD 53 plus shipping and the local-demo consequence.",
+            "D/320-invalid.png continues to price a stock-invalid selection, unlike B/C invalid images and A/index.html's invalid-total suppression."
+          ],
+          "tradeoff": "D's valid 320-decision.png is clear and correctly costed. B's advantage is strongest for the stated high-intent audience at wide entry."
+        },
+        {
+          "dimension": "Validation, selection/state retention, failure and recovery",
+          "groups": [
+            [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "A/320-invalid.png provides a linked quantity correction summary; B/C/320-invalid.png give stock-specific correction and suppress invalid totals; D/320-invalid.png preserves selection and explains the stock limit.",
+            "All four 320-failure.png and 320-success.png show recoverable local outcomes; each checks.json reports retained inputs, keyboard retry, stock enforcement and stale-success clearing."
+          ],
+          "tradeoff": "A offers stronger correction links; D puts retry inside visible feedback. These strengths do not justify a single overall ordering of this dimension."
+        },
+        {
+          "dimension": "Narrow reading/action access and applicable keyboard/focus/contrast/semantics",
+          "groups": [
+            [
+              "B",
+              "C",
+              "D"
+            ],
+            [
+              "A"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/C/D 320-decision.png retain total/action in view; A/320-decision.png does not.",
+            "All four decision/success images show visible focus treatment; A invalid summary links and source aria-describedby support correction.",
+            "All checks.json files report no scoped failures; incomplete ARIA/contrast checks exist for some labels and are not accessibility certification."
+          ],
+          "tradeoff": "B/C edition option text truncates at 320, but the edition name and nearby stock remain available. No human keyboard or assistive-technology test was conducted."
+        }
+      ]
+    },
+    "relay-notes": {
+      "visualCraft": [
+        {
+          "dimension": "Typography, readability and hierarchy",
+          "groups": [
+            [
+              "B",
+              "D"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/390-entry.png keeps a compact two-line headline, clear workflow list and form hierarchy.",
+            "D/390-entry.png has a deliberate three-line lead with clear supporting paragraph/action hierarchy.",
+            "A/390-entry.png stretches its large lead to three lines; C/390-entry.png crowds the small audience line immediately below the capsule navigation."
+          ],
+          "tradeoff": "All four are readable. The preference concerns spacing and hierarchy, not the choice of type family."
+        },
+        {
+          "dimension": "Composition, spacing and rhythm",
+          "groups": [
+            [
+              "B",
+              "D"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/1440-entry.png moves through offer, three workflow steps and a compact demo row; D/1440-entry.png balances lead and complete static preview.",
+            "A/1440-entry-full-page.png uses an extended nested-preview, steps, output and demo sequence; C uses an extended hero/benefits/workflow/tagline/demo sequence (C/index.html)."
+          ],
+          "tradeoff": "A gives the artifact substantial room; C gives sections room to appear during scrolling. Unrevealed regions in C's optional full-page capture are not evidence that those sections are absent."
+        },
+        {
+          "dimension": "Media/caption/content craft",
+          "groups": [
+            [
+              "B"
+            ],
+            [
+              "A",
+              "C",
+              "D"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/1440-entry-full-page.png includes accurate static-preview captions, a readable body list of change/credit pairs, and full-size illustration/draft links.",
+            "A/1440-entry-full-page.png also names contributors in surrounding copy; C/D full-page images accurately caption both supplied artifacts and their limitations.",
+            "C/D/390-entry.png show the editor as a very small static overview; their captions correctly say its controls are not implemented."
+          ],
+          "tradeoff": "All use the supplied fictional records honestly. B gives a clearer path to reading the actual artifact beyond the reduced preview."
+        },
+        {
+          "dimension": "Coherence across widths and relevant states",
+          "groups": [
+            [
+              "B",
+              "D"
+            ],
+            [
+              "C"
+            ],
+            [
+              "A"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/D 320-decision.png retain selected annual price, conditions and action in view; B/D 320-failure.png also expose retry in the feedback area.",
+            "C/320-decision.png is coherent and complete, but C/320-failure.png refers to retry below the visible bottom.",
+            "A/320-decision.png ends in the price block before the action; A/320-failure.png puts the retry instruction above a long form."
+          ],
+          "tradeoff": "A's larger, airy form reads well individually, at the expense of seeing the decision and recovery action together."
+        }
+      ],
+      "productSpecificity": [
+        {
+          "dimension": "Supplied facts/artifacts actually shaping the composition",
+          "groups": [
+            [
+              "A",
+              "B",
+              "D"
+            ],
+            [
+              "C"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "A/1440-entry-full-page.png relates Markdown, section arrangement, supplied draft and contributor credits.",
+            "B/1440-entry-full-page.png uses the exact three-step workflow early, then expands the change/credit evidence; D pairs workflow explanations with the draft artifact.",
+            "C/index.html contains the same supplied workflow and artifacts but interposes a more general benefits and tagline sequence."
+          ],
+          "tradeoff": "C has real task content and is not merely a logo swap; the other structures put the supplied workflow to more immediate compositional use."
+        },
+        {
+          "dimension": "Coherent product direction beyond a replaceable logo/copy shell",
+          "groups": [
+            [
+              "A",
+              "B",
+              "D"
+            ],
+            [
+              "C"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "A's source/structure/draft progression, B's notes-and-credits progression and D's notes-to-sections framing build a consistent small-maintainer drafting direction (1440-entry-full-page.png for each).",
+            "C/1440-entry.png clearly identifies Markdown-to-email drafting; its benefits/tagline/form organization is more transferable."
+          ],
+          "tradeoff": "This is a structural preference. A conventional SaaS layout is not intrinsically worse, and C preserves the correct product limits."
+        },
+        {
+          "dimension": "Specific decisions preserved across widths/states without task harm",
+          "groups": [
+            [
+              "B",
+              "D"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "All four 320-success.png images preserve Canal Docs, Annual, USD 120 billed once yearly, editor/trial conditions and no real account/payment/email consequence.",
+            "B/D 320-failure.png put the retained-state explanation and retry action together; A/C failure images leave retry outside the natural viewport."
+          ],
+          "tradeoff": "All scoped retention and changed-plan checks pass. The ordering concerns visible access to the product's deliberately recoverable local simulation."
+        }
+      ],
+      "taskAccess": [
+        {
+          "dimension": "Entry/action priority, decision conditions and truthful consequence",
+          "groups": [
+            [
+              "B",
+              "C",
+              "D"
+            ],
+            [
+              "A"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/1440-entry.png exposes the form immediately, with workspace price/editor/trial and demo consequence nearby.",
+            "C/D 320-decision.png place the exact annual price, editor/trial limits and local-demo consequence before the action.",
+            "A/320-decision.png presents the correct annual wording but leaves conditions and action below view."
+          ],
+          "tradeoff": "B's conditions follow the button in document reading order, whereas C/D put them before it; B offers the quickest entry path. These tradeoffs support a tie."
+        },
+        {
+          "dimension": "Validation, selection/state retention, failure and recovery",
+          "groups": [
+            [
+              "D"
+            ],
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "D/320-invalid.png places an email-specific correction next to the erroneous field and provides a focused summary; D/320-failure.png includes retry.",
+            "A/320-invalid.png offers a linked error summary and inline error, while B/320-invalid.png keeps the invalid field and focused message visible.",
+            "C/320-invalid.png focuses feedback below the form, leaving the invalid email field outside view; C/320-failure.png names retry below view.",
+            "All checks.json files report required/email blocking, retained fields, keyboard retry and changed-plan stale-success clearing."
+          ],
+          "tradeoff": "A's linked correction is strong but recovery requires scrolling. C still provides useful text and passes the scoped keyboard path; no blocker is established."
+        },
+        {
+          "dimension": "Narrow reading/action access and applicable keyboard/focus/contrast/semantics",
+          "groups": [
+            [
+              "B",
+              "D"
+            ],
+            [
+              "C"
+            ],
+            [
+              "A"
+            ]
+          ],
+          "unassessed": [],
+          "evidence": [
+            "B/D 320-decision/failure/success.png retain useful context around the action and feedback; D's inline error is visibly tied to email.",
+            "C/320-decision.png keeps action/conditions together, with visible focus; C invalid/failure views separate error text from its field or retry.",
+            "A/320-decision.png omits the submit action from view; A/320-success.png gives a complete, visibly focused outcome.",
+            "Scoped checks report no failures for any label; some contrast/ARIA checks are incomplete."
+          ],
+          "tradeoff": "Visible focus and scripted keyboard success do not establish human keyboard usability, contrast conformance or screen-reader quality."
+        }
+      ]
+    }
+  },
+  "findings": [
+    {
+      "case": "field-fold",
+      "label": "A",
+      "severity": "moderate",
+      "blocking": false,
+      "evidence": [
+        "field-fold/A/320-decision.png: tall stacked form leaves total and action below the natural viewport; entry and success remain readable."
+      ]
+    },
+    {
+      "case": "field-fold",
+      "label": "D",
+      "severity": "moderate",
+      "blocking": false,
+      "evidence": [
+        "field-fold/D/320-invalid.png: Ridge x3 shows USD 159 items plus USD 5 = USD 164 despite stock limit 2. Scoped checks confirm submission is blocked."
+      ]
+    },
+    {
+      "case": "relay-notes",
+      "label": "A",
+      "severity": "moderate",
+      "blocking": false,
+      "evidence": [
+        "relay-notes/A/320-decision.png: submit and full conditions are below view. relay-notes/A/320-failure.png: retry instruction is visible while retry control is below the long form."
+      ]
+    },
+    {
+      "case": "relay-notes",
+      "label": "C",
+      "severity": "minor",
+      "blocking": false,
+      "evidence": [
+        "relay-notes/C/320-invalid.png: focused email error appears with the erroneous field offscreen. relay-notes/C/320-failure.png: retry control is below the visible bottom."
+      ]
+    }
+  ],
+  "limitations": [
+    "Independent reviewer authored none of the outputs. Read only the assigned instruction and review-packet; no treatment identity, resource records, creator notes or other review was read before freezing.",
+    "The base sample is symmetric: 1440 entry, 390 entry and 320 decision/failure/success for every variant. Bounded symmetric expansions were 320 invalid for correction access and 1440 full-page entry for contents/artifact explanation and page rhythm.",
+    "Optional full-page captures were never used to infer natural post-action visibility. C uses IntersectionObserver reveals; blank areas in those captures are not treated as missing content.",
+    "Checks and narrow source excerpts clarify task behavior. No automation suite was rerun, no human/manual test was conducted, and user manual tests remain deferred.",
+    "Visual judgments are conditional on supplied normal-color renders and the stated briefs. Ties are deliberate. Procedural blinding may still permit style/source-convention inference; no identity inference was used.",
+    "No quantitative aggregate, overall repository winner, model ranking, cost comparison or complete resource claim is made. Accessibility remains unconfirmed; scoped passing checks and incomplete checks do not establish conformance."
+  ],
+  "resources": {
+    "provider": null,
+    "model": null,
+    "inputTokens": null,
+    "outputTokens": null,
+    "totalTokens": null,
+    "cachedTokens": null,
+    "billing": null,
+    "completeResourceTotals": null,
+    "creatorWallTimeSeconds": null,
+    "reviewerActiveTimeSeconds": null,
+    "exactToolIntervals": null
+  }
+}

@@ -1,0 +1,9 @@
+/* Supplemental diagnostic only: preserves original transparency and luminance.
+   Font replacement can reflow content; authored renders remain authoritative. */
+html { filter: grayscale(1) !important; }
+*, *::before, *::after {
+  font-family: Arial, sans-serif !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}

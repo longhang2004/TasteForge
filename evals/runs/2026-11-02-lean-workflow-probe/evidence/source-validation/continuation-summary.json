@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "Continuation after excluding ignored temporary fixtures from ESLint. Prior pnpm check completed build/typecheck then failed fixture lint; lint-continuation and these remaining checks are separate preserved records. No engine/TypeScript changes followed that build.",
+  "continuedCommands": [
+    {
+      "test": "format-continuation",
+      "command": [
+        "pnpm",
+        "format:check"
+      ],
+      "exitCode": 0,
+      "durationSeconds": 16.552,
+      "startedAtUtc": "2026-11-02T04:50:44.252262+00:00"
+    },
+    {
+      "test": "tests-continuation",
+      "command": [
+        "pnpm",
+        "exec",
+        "vitest",
+        "run"
+      ],
+      "exitCode": 0,
+      "durationSeconds": 353.014,
+      "startedAtUtc": "2026-11-02T04:51:00.818081+00:00"
+    }
+  ],
+  "priorPackedInstall": "passed;22packagedskillfiles byte-verified",
+  "manualTesting": "not performed"
+}

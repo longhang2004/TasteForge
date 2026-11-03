@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l04)",
+      "write_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l04)",
+      "command(regex:wsl\\.exe --distribution Ubuntu --cd /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l04 --exec bash -lc .*)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/treatment/lean/tasteforge)"
+    ],
+    "deny": [
+      "read_url(*)",
+      "execute_url(*)",
+      "mcp(*)",
+      "write_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l04/task.md)",
+      "write_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l04/fixture.json)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/treatment/old)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/shared/check-ui.mjs)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l01)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l02)",
+      "read_file(C:/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-02-lean-workflow-probe/cases/l03)"
+    ]
+  }
+}

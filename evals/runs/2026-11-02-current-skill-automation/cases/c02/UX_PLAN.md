@@ -1,0 +1,17 @@
+# c02 task plan
+
+Audience: occasional transfer customers. Surface purpose: work—verify recipient and full cost, correct details, then confirm a simulation with confidence.
+
+The contract establishes entry → review → recoverable failure → retry → success. Candidate A keeps editable fields beside a running quote, then presents a read-only review. Candidate B would keep fields and confirmation in one continuous form. A is selected because the required explicit review separates editing from confirming while keeping consequences adjacent. The contract settles the structure; no additional runnable prototypes were made under the single-preview budget.
+
+Entry order: simulation disclosure, two-step progress, recipient, destination, amount, fee/rate/received estimate, review action. Desktop pairs fields with a compact quote; mobile puts fields before the quote and action. Review order: recipient/destination, sent amount, fee, total debited, received amount, delivery, edit, confirmation. Failure retains the review and inputs; retry is the primary recovery action. Success says the simulation completed and no money moved.
+
+Use native labeled inputs and buttons, visible focus, field-associated validation, live feedback and programmatic focus on state headings. Long Vietnamese names wrap without truncation. System sans fonts only. No animation is necessary. Tokens use restrained ink, warm neutral surfaces and a dark teal action accent; comparable amounts use tabular figures.
+
+Checks: required fixture values, range rejection, retained edits and recalculation, first-failure/retry-success behavior, keyboard reachability, long-name wrapping, desktop/mobile hierarchy. Only checks actually executed will be recorded in implementation-notes.md.
+
+Reference scope: frozen TasteForge SKILL.md; create-ui, research-and-plan and structure-and-revise workflows; surface-purpose, catalog-use, accessibility and typography references. No external browsing. Offline catalog metadata version 2026.11.01.2 inspected with seed 42 for visual exploration. Full selected records and CLI output are retained in evidence/cli. Stored source observations do not establish rendered usability; no upstream assets/code were reused.
+
+Catalog observations: `template-adminlte-pages-examples-contact-us` (AdminLTE revision bd4d9c72931f1dd28601b6bfb387554a381ad540) contains one form alongside navigation/aside regions; rejected its surrounding navigation because this is one focused transfer flow. Seeded visual samples included cyberpunk, heat map, and Adobe Spectrum. The first two have no useful fit here. Read full `promax-styles-spectrum-design-system` record (nextlevelbuilder/ui-ux-pro-max-skill revision bf41cbc3ce63e30c922e58ef48741ba6133f9aa9): precise hierarchy and focus conventions are relevant, but dense professional-tool styling and official components are inappropriate for this dependency-free occasional-customer task. No Spectrum colors or components were copied. Full `promax-app-interface-12` record supports retaining mounted fields on return; adapted that relationship with hidden sections, without native app code. The catalog records are MIT with notices retained in evidence; no source code/assets were copied. Record access was local on 2026-11-02; source snapshots report 2026-11-01. URLs and hashes are in selected JSON records.
+
+CLI suggest could not satisfy Vietnamese + system font delivery; retained both constraints. Manual visual tokens are not generated DNA. Font glyph support outside inspected fixture text remains unverified.

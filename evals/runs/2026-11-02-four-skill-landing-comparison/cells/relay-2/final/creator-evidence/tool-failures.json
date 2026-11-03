@@ -1,0 +1,4 @@
+[
+  {"attempt":"initial sandboxed WSL read", "exitCode":1, "output":"Access is denied. Error code: Wsl/E_ACCESSDENIED", "captureScope":"Readable excerpt from tool output; original UTF-16 null-separated output remains in tool transcript.", "result":"No command ran and no inputs read. Escalated WSL invocation then succeeded."},
+  {"attempt":"first focused-correction launcher", "exitCode":1, "output":"': -c: line 1: syntax error near unexpected token `newline'\n': -c: line 1: `python3 - <<'", "captureScope":"Tool output", "result":"Shell parsing failed before edits. Same focused correction applied with apply_patch; versions and raw test attempts preserved."}
+]

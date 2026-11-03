@@ -1,0 +1,82 @@
+{
+  "label": "after-390-invalid-edit",
+  "capturedAtUtc": "2026-11-03T03:51:43.132Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 390,
+    "height": 900
+  },
+  "scroll": {
+    "x": 0,
+    "y": 993
+  },
+  "document": {
+    "width": 390,
+    "height": 3129
+  },
+  "activeElement": {
+    "tag": "INPUT",
+    "id": "quantity",
+    "testId": null,
+    "rect": {
+      "x": 41,
+      "y": 864.8125,
+      "width": 110,
+      "height": 48,
+      "intersectsViewport": true,
+      "fullyInViewport": false
+    }
+  },
+  "feedback": [
+    {
+      "selector": "#total",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 331,
+          "y": 1062.78125,
+          "width": 18,
+          "height": 26,
+          "intersectsViewport": false,
+          "fullyInViewport": false
+        }
+      ]
+    },
+    {
+      "selector": "#quantity",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 41,
+          "y": 864.8125,
+          "width": 110,
+          "height": 48,
+          "intersectsViewport": true,
+          "fullyInViewport": false
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 993
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 993
+  }
+}

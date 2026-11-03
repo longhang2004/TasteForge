@@ -1,0 +1,3512 @@
+{
+  "captureVersion": "2.0",
+  "evidencePass": "pass-02",
+  "caseId": "c01",
+  "capturedAtUtc": "2026-11-01T18:40:09.201Z",
+  "browser": "156.0.8078.4",
+  "sourceHashes": {
+    "app.js": "726791e88c530c91d9c0ec64401b672acfa4595331a305d7fe9ba3b66a0ac487",
+    "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+    "implementation-notes.md": "a04d3dddfc38602a5f9b1618cfb799becbc92f2c0eb9b651c1c53120e8f6035c",
+    "index.html": "6f30a909597a950da2210d42f74b6d7981a54b8a0fa20889ed1b67492650c764",
+    "preview-output.txt": "a044262141c27b27f604d32539a1fcf482262ec6a73a3b93a48aad6c0f8527e4",
+    "styles.css": "0534ee8549f766624ab15e873c1e5949a640893dcdfaeea5c49135b5bc0d815d",
+    "syntax-check-output.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "task.md": "c7facc61f4b8f90b39c2c709b5ac70f8f01eaf3a0a2b5629f2b51b66d3d4a541"
+  },
+  "viewports": {
+    "desktop": {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "desktop-initial.png",
+        "desktop-full.png",
+        "desktop-neutral-full.png",
+        "desktop-keyboard-focus.png",
+        "desktop-review.png",
+        "desktop-review-viewport.png",
+        "desktop-neutral-review.png",
+        "desktop-failure.png",
+        "desktop-failure-viewport.png",
+        "desktop-neutral-failure.png",
+        "desktop-success.png",
+        "desktop-success-viewport.png",
+        "desktop-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "The practice transfer didn’t go through.\nThis is a simulated connection error. Your details are saved and no money was moved. Try again to complete the simulation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":null,\"recipient\":null,\"method\":\"retained failure summary; edit form not separately exercised\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "Simulated transfer successful. No money was moved.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in success",
+          "status": "pass",
+          "observation": "1440px document / 1440px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "n↗northlineTRANSFER SIMULATIONAM\n  \n    YOUR TRANSFER, STEP BY STEP\n    A little",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "n↗northlineTRANSFER SIMULATIONAM\n  \n    YOUR TRANSFER, STEP BY STEP\n    A little",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 217,
+              "y": 474.890625,
+              "width": 550.234375,
+              "height": 54,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 217,
+              "y": 683.640625,
+              "width": 550.234375,
+              "height": 66.390625,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 217,
+              "y": 896.78125,
+              "width": 550.234375,
+              "height": 58.59375,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1104,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 217,
+              "y": 474.890625,
+              "width": 550.234375,
+              "height": 54,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 217,
+              "y": 683.640625,
+              "width": 550.234375,
+              "height": 66.390625,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 217,
+              "y": 896.78125,
+              "width": 550.234375,
+              "height": 58.59375,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1104,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 217,
+              "y": 474.890625,
+              "width": 550.234375,
+              "height": 54,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 217,
+              "y": 683.640625,
+              "width": 550.234375,
+              "height": 66.390625,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 217,
+              "y": 896.78125,
+              "width": 550.234375,
+              "height": 58.59375,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1104,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "← Edit details",
+              "x": 217,
+              "y": 822.890625,
+              "width": 74.171875,
+              "height": 40,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "confirm-transfer",
+              "text": "Confirm simulated transfer\n→",
+              "x": 217,
+              "y": 876.890625,
+              "width": 550.234375,
+              "height": 58.59375,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1084,
+          "scrollY": 0
+        },
+        "failure": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "← Edit details",
+              "x": 217,
+              "y": 822.890625,
+              "width": 74.171875,
+              "height": 40,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "The practice transfer didn’t go through.\nThis is a simulated connection error. Your details are saved and no money was moved. Try again to c",
+              "x": 217,
+              "y": 876.890625,
+              "width": 550.234375,
+              "height": 95.171875,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "retry-transfer",
+              "text": "Retry simulated transfer\n↻",
+              "x": 217,
+              "y": 989.0625,
+              "width": 550.234375,
+              "height": 58.59375,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1196,
+          "scrollY": 0
+        },
+        "success": {
+          "controls": [
+            {
+              "testId": "transfer-status",
+              "text": "Simulated transfer successful. No money was moved.",
+              "x": 217,
+              "y": 455.890625,
+              "width": 550.234375,
+              "height": 51.1875,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "scrollWidth": 1440,
+          "pageHeight": 1093,
+          "scrollY": 0
+        }
+      },
+      "initialText": "n↗\nnorthline\nTRANSFER\nSIMULATION\nAM\nYOUR TRANSFER, STEP BY STEP\nA little closer to home.\n\nSend to Việt Nam with every detail in view.\n\n1\nTransfer details\n2\nReview & confirm\n3\nComplete\n\n01 / TRANSFER DETAILS\n\nWho are you sending to?\n↗\nRecipient’s full name\n\nUse their full name, including Vietnamese diacritics.\n\n★\nDESTINATION\nViệt Nam\nVND\nYou send\n$\nUSD\n\nSend between USD 1 and USD 1,000. Fee added separately.\n\n▤\nSIMULATED SOURCE ACCOUNT\nEveryday USD ••1042\n\nAlex Morgan\n\nReview transfer\n→\n\nYou’ll review all details before confirming.\n\nNO GUESSWORK\n\nYour transfer at a glance\nYou send\nUSD 250.00\nTransfer fee FLAT\nUSD 2.50\nTotal you pay\nUSD 252.50\nThey receive\n6,250,000 VND\n\n1 USD = 25,000 VND\n\n◷\nBy 3 November 2026\n\nIllustrative delivery estimate\n\n↔\n\nClear from the start.\nThe fee is added to your send amount. Your recipient receives the full converted amount.\n\ni\n\nSimulation with fictional data. No money is moved and no real account is connected.\n\nNORTHLINE DEMO",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 1104,
+        "title": "Northline Transfer — Simulated transfer",
+        "h1": [
+          "A little closer to home."
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Arial, Helvetica, sans-serif"
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "full": {},
+        "keyboard-focus": {},
+        "review": {},
+        "failure": {},
+        "success": {}
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "failure": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "success": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">YOUR TRANSFER, STEP BY STEP</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #66795d, background color: #f5f5ef, font size: 7.5pt (10px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p id=\"page-subtitle\">Send to Việt Nam with every detail in view.</p>",
+                "target": [
+                  "#page-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #68766d, background color: #f5f5ef, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-2\"><span>2</span>Review &amp; confirm</li>",
+                "target": [
+                  "#step-2"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-3\"><span>3</span>Complete</li>",
+                "target": [
+                  "#step-3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\" id=\"panel-overline\">01 / TRANSFER DETAILS</p>",
+                "target": [
+                  "#panel-overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #758269, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"field-help\" id=\"recipient-help\">Use their full name, including Vietnamese diacritics.</p>",
+                "target": [
+                  "#recipient-help"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806d, background color: #ffffff, font size: 7.9pt (10.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">DESTINATION</span>",
+                "target": [
+                  ".destination > div > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.88 (foreground color: #71806b, background color: #f5f7f0, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"destination-code\">VND</span>",
+                "target": [
+                  ".destination-code"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #6b7b63, background color: #f5f7f0, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"field-help\" id=\"amount-help\">Send between USD 1 and USD 1,000. Fee added separately.</p>",
+                "target": [
+                  "#amount-help"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806d, background color: #ffffff, font size: 7.9pt (10.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">SIMULATED SOURCE ACCOUNT</span>",
+                "target": [
+                  ".source-account > div > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806b, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>••1042</span>",
+                "target": [
+                  "strong > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.34 (foreground color: #85907d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Alex Morgan</p>",
+                "target": [
+                  ".source-account > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b8775, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"button-note\">You’ll review all details before confirming.</p>",
+                "target": [
+                  "#entry-form > .button-note"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #778371, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\">NO GUESSWORK</p>",
+                "target": [
+                  ".summary-card > .overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #697d59, background color: #eaf0df, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"flat-tag\">FLAT</span>",
+                "target": [
+                  ".flat-tag"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #5a6e4e, background color: #dce6cf, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Illustrative delivery estimate</p>",
+                "target": [
+                  ".delivery > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #7c8a70, background color: #eaf0df, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p><strong>Clear from the start.</strong><br>The fee is added to your send amount. Your recipient receives the full converted amount.</p>",
+                "target": [
+                  ".confidence-note > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #75816c, background color: #f5f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Simulation with fictional data. No money is moved and no real account is connected.</p>",
+                "target": [
+                  "footer > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"footer-brand\">NORTHLINE DEMO</span>",
+                "target": [
+                  ".footer-brand"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"profile\" aria-label=\"Alex Morgan\">AM</span>",
+                "target": [
+                  ".profile"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>2</span>",
+                "target": [
+                  "#step-2 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span>3</span>",
+                "target": [
+                  "#step-3 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"country-symbol\" aria-hidden=\"true\">★</span>",
+                "target": [
+                  ".country-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"account-icon\" aria-hidden=\"true\">▤</span>",
+                "target": [
+                  ".account-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"footer-symbol\" aria-hidden=\"true\">i</span>",
+                "target": [
+                  ".footer-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">YOUR TRANSFER, STEP BY STEP</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #66795d, background color: #f5f5ef, font size: 7.5pt (10px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p id=\"page-subtitle\">Check the recipient and total before you confirm.</p>",
+                "target": [
+                  "#page-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #68766d, background color: #f5f5ef, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-1\" class=\"done\"><span>✓</span>Transfer details</li>",
+                "target": [
+                  "#step-1"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-3\"><span>3</span>Complete</li>",
+                "target": [
+                  "#step-3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\" id=\"panel-overline\">02 / REVIEW &amp; CONFIRM</p>",
+                "target": [
+                  "#panel-overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #758269, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">RECIPIENT IN VIỆT NAM</span>",
+                "target": [
+                  ".recipient-review > div > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806b, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>You send</dt>",
+                "target": [
+                  ".review-details > div:nth-child(1) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Transfer fee</dt>",
+                "target": [
+                  ".review-details > div:nth-child(2) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Total debited</dt>",
+                "target": [
+                  ".review-total > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Recipient receives</dt>",
+                "target": [
+                  "div:nth-child(4) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>From</dt>",
+                "target": [
+                  "div:nth-child(5) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"detail-sub\">Alex Morgan</span>",
+                "target": [
+                  "div:nth-child(5) > dd > .detail-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b8774, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Estimated delivery</dt>",
+                "target": [
+                  "div:nth-child(6) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"detail-sub\">Illustrative estimate</span>",
+                "target": [
+                  "div:nth-child(6) > dd > .detail-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b8774, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"button-note\">This is a practice transfer. No money will move.</p>",
+                "target": [
+                  "#review-panel > .button-note"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #778371, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\">NO GUESSWORK</p>",
+                "target": [
+                  ".summary-card > .overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #697d59, background color: #eaf0df, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"flat-tag\">FLAT</span>",
+                "target": [
+                  ".flat-tag"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #5a6e4e, background color: #dce6cf, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Illustrative delivery estimate</p>",
+                "target": [
+                  ".delivery > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #7c8a70, background color: #eaf0df, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p><strong>Clear from the start.</strong><br>The fee is added to your send amount. Your recipient receives the full converted amount.</p>",
+                "target": [
+                  ".confidence-note > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #75816c, background color: #f5f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Simulation with fictional data. No money is moved and no real account is connected.</p>",
+                "target": [
+                  "footer > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"footer-brand\">NORTHLINE DEMO</span>",
+                "target": [
+                  ".footer-brand"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"profile\" aria-label=\"Alex Morgan\">AM</span>",
+                "target": [
+                  ".profile"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  "#step-1 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span>3</span>",
+                "target": [
+                  "#step-3 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">↻</span>",
+                "target": [
+                  "#retry > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"footer-symbol\" aria-hidden=\"true\">i</span>",
+                "target": [
+                  ".footer-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">YOUR TRANSFER, STEP BY STEP</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #66795d, background color: #f5f5ef, font size: 7.5pt (10px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p id=\"page-subtitle\">A clear outcome for your practice transfer.</p>",
+                "target": [
+                  "#page-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #68766d, background color: #f5f5ef, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-1\" class=\"done\"><span>✓</span>Transfer details</li>",
+                "target": [
+                  "#step-1"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-2\" class=\"done\"><span>✓</span>Review &amp; confirm</li>",
+                "target": [
+                  "#step-2"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\" id=\"panel-overline\">03 / COMPLETE</p>",
+                "target": [
+                  "#panel-overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #758269, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"success-copy\">Your simulated transfer to <strong id=\"success-name\">Nguyễn Thị Minh Anh Trường</strong> was successful.</p>",
+                "target": [
+                  ".success-copy"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #708066, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">SIMULATED AMOUNT RECEIVED</span>",
+                "target": [
+                  ".success-receipt > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.87 (foreground color: #71806b, background color: #f4f7ed, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>No money was moved.</p>",
+                "target": [
+                  ".success-receipt > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #728367, background color: #f4f7ed, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"success-delivery\">Estimated delivery: by 3 November 2026.<br>Illustrative estimate only.</p>",
+                "target": [
+                  ".success-delivery"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #728367, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\">NO GUESSWORK</p>",
+                "target": [
+                  ".summary-card > .overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #697d59, background color: #eaf0df, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"flat-tag\">FLAT</span>",
+                "target": [
+                  ".flat-tag"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #5a6e4e, background color: #dce6cf, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Illustrative delivery estimate</p>",
+                "target": [
+                  ".delivery > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #7c8a70, background color: #eaf0df, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p><strong>Clear from the start.</strong><br>The fee is added to your send amount. Your recipient receives the full converted amount.</p>",
+                "target": [
+                  ".confidence-note > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #75816c, background color: #f5f5ef, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Simulation with fictional data. No money is moved and no real account is connected.</p>",
+                "target": [
+                  "footer > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"footer-brand\">NORTHLINE DEMO</span>",
+                "target": [
+                  ".footer-brand"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"profile\" aria-label=\"Alex Morgan\">AM</span>",
+                "target": [
+                  ".profile"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  "#step-1 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  "#step-2 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<div class=\"success-icon\" aria-hidden=\"true\">✓</div>",
+                "target": [
+                  ".success-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"footer-symbol\" aria-hidden=\"true\">i</span>",
+                "target": [
+                  ".footer-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    },
+    "mobile": {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "mobile-initial.png",
+        "mobile-full.png",
+        "mobile-neutral-full.png",
+        "mobile-keyboard-focus.png",
+        "mobile-review.png",
+        "mobile-review-viewport.png",
+        "mobile-neutral-review.png",
+        "mobile-failure.png",
+        "mobile-failure-viewport.png",
+        "mobile-neutral-failure.png",
+        "mobile-success.png",
+        "mobile-success-viewport.png",
+        "mobile-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "The practice transfer didn’t go through.\nThis is a simulated connection error. Your details are saved and no money was moved. Try again to complete the simulation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":null,\"recipient\":null,\"method\":\"retained failure summary; edit form not separately exercised\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "Simulated transfer successful. No money was moved.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in success",
+          "status": "pass",
+          "observation": "390px document / 390px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "n↗northlineTRANSFER SIMULATIONAM\n  \n    YOUR TRANSFER, STEP BY STEP\n    A little",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "n↗northlineTRANSFER SIMULATIONAM\n  \n    YOUR TRANSFER, STEP BY STEP\n    A little",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 45,
+              "y": 463.6875,
+              "width": 300,
+              "height": 54,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 45,
+              "y": 671.6875,
+              "width": 300,
+              "height": 66.390625,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 899.078125,
+              "width": 300,
+              "height": 58.59375,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1659,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 45,
+              "y": 463.6875,
+              "width": 300,
+              "height": 54,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 45,
+              "y": 671.6875,
+              "width": 300,
+              "height": 66.390625,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 899.078125,
+              "width": 300,
+              "height": 58.59375,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1659,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 45,
+              "y": 463.6875,
+              "width": 300,
+              "height": 54,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 45,
+              "y": 671.6875,
+              "width": 300,
+              "height": 66.390625,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 899.078125,
+              "width": 300,
+              "height": 58.59375,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1659,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "← Edit details",
+              "x": 45,
+              "y": 795.1875,
+              "width": 74.171875,
+              "height": 40,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "confirm-transfer",
+              "text": "Confirm simulated transfer\n→",
+              "x": 45,
+              "y": 849.1875,
+              "width": 300,
+              "height": 58.59375,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1609,
+          "scrollY": 0
+        },
+        "failure": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "← Edit details",
+              "x": 45,
+              "y": 795.1875,
+              "width": 74.171875,
+              "height": 40,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "transfer-status",
+              "text": "The practice transfer didn’t go through.\nThis is a simulated connection error. Your details are saved and no money was moved. Try again to c",
+              "x": 45,
+              "y": 849.1875,
+              "width": 300,
+              "height": 154.34375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "retry-transfer",
+              "text": "Retry simulated transfer\n↻",
+              "x": 45,
+              "y": 1020.53125,
+              "width": 300,
+              "height": 58.59375,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1780,
+          "scrollY": 0
+        },
+        "success": {
+          "controls": [
+            {
+              "testId": "transfer-status",
+              "text": "Simulated transfer successful. No money was moved.",
+              "x": 45,
+              "y": 418.6875,
+              "width": 300,
+              "height": 70.375,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "pageHeight": 1677,
+          "scrollY": 0
+        }
+      },
+      "initialText": "n↗\nnorthline\nTRANSFER\nSIMULATION\nAM\nYOUR TRANSFER, STEP BY STEP\nA little closer to home.\n\nSend to Việt Nam with every detail in view.\n\n1\nTransfer details\n2\nReview & confirm\n3\nComplete\n\n01 / TRANSFER DETAILS\n\nWho are you sending to?\n↗\nRecipient’s full name\n\nUse their full name, including Vietnamese diacritics.\n\n★\nDESTINATION\nViệt Nam\nVND\nYou send\n$\nUSD\n\nSend between USD 1 and USD 1,000. Fee added separately.\n\n▤\nSIMULATED SOURCE ACCOUNT\nEveryday USD ••1042\n\nAlex Morgan\n\nReview transfer\n→\n\nYou’ll review all details before confirming.\n\nNO GUESSWORK\n\nYour transfer at a glance\nYou send\nUSD 250.00\nTransfer fee FLAT\nUSD 2.50\nTotal you pay\nUSD 252.50\nThey receive\n6,250,000 VND\n\n1 USD = 25,000 VND\n\n◷\nBy 3 November 2026\n\nIllustrative delivery estimate\n\n↔\n\nClear from the start.\nThe fee is added to your send amount. Your recipient receives the full converted amount.\n\ni\n\nSimulation with fictional data. No money is moved and no real account is connected.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 1659,
+        "title": "Northline Transfer — Simulated transfer",
+        "h1": [
+          "A little closer to home."
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Arial, Helvetica, sans-serif"
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "full": {},
+        "keyboard-focus": {},
+        "review": {},
+        "failure": {},
+        "success": {}
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "failure": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "success": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">YOUR TRANSFER, STEP BY STEP</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #66795d, background color: #f5f5ef, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p id=\"page-subtitle\">Send to Việt Nam with every detail in view.</p>",
+                "target": [
+                  "#page-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #68766d, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-2\"><span>2</span>Review &amp; confirm</li>",
+                "target": [
+                  "#step-2"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-3\"><span>3</span>Complete</li>",
+                "target": [
+                  "#step-3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\" id=\"panel-overline\">01 / TRANSFER DETAILS</p>",
+                "target": [
+                  "#panel-overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #758269, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"field-help\" id=\"recipient-help\">Use their full name, including Vietnamese diacritics.</p>",
+                "target": [
+                  "#recipient-help"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806d, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">DESTINATION</span>",
+                "target": [
+                  ".destination > div > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.88 (foreground color: #71806b, background color: #f5f7f0, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"destination-code\">VND</span>",
+                "target": [
+                  ".destination-code"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #6b7b63, background color: #f5f7f0, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"field-help\" id=\"amount-help\">Send between USD 1 and USD 1,000. Fee added separately.</p>",
+                "target": [
+                  "#amount-help"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806d, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">SIMULATED SOURCE ACCOUNT</span>",
+                "target": [
+                  ".source-account > div > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806b, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>••1042</span>",
+                "target": [
+                  "strong > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.34 (foreground color: #85907d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Alex Morgan</p>",
+                "target": [
+                  ".source-account > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b8775, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"button-note\">You’ll review all details before confirming.</p>",
+                "target": [
+                  "#entry-form > .button-note"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #778371, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\">NO GUESSWORK</p>",
+                "target": [
+                  ".summary-card > .overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #697d59, background color: #eaf0df, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"flat-tag\">FLAT</span>",
+                "target": [
+                  ".flat-tag"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #5a6e4e, background color: #dce6cf, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Illustrative delivery estimate</p>",
+                "target": [
+                  ".delivery > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #7c8a70, background color: #eaf0df, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p><strong>Clear from the start.</strong><br>The fee is added to your send amount. Your recipient receives the full converted amount.</p>",
+                "target": [
+                  ".confidence-note > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #75816c, background color: #f5f5ef, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Simulation with fictional data. No money is moved and no real account is connected.</p>",
+                "target": [
+                  "footer > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"profile\" aria-label=\"Alex Morgan\">AM</span>",
+                "target": [
+                  ".profile"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>2</span>",
+                "target": [
+                  "#step-2 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span>3</span>",
+                "target": [
+                  "#step-3 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"country-symbol\" aria-hidden=\"true\">★</span>",
+                "target": [
+                  ".country-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"account-icon\" aria-hidden=\"true\">▤</span>",
+                "target": [
+                  ".account-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"footer-symbol\" aria-hidden=\"true\">i</span>",
+                "target": [
+                  ".footer-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">YOUR TRANSFER, STEP BY STEP</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #66795d, background color: #f5f5ef, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p id=\"page-subtitle\">Check the recipient and total before you confirm.</p>",
+                "target": [
+                  "#page-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #68766d, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-1\" class=\"done\"><span>✓</span>Transfer details</li>",
+                "target": [
+                  "#step-1"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-3\"><span>3</span>Complete</li>",
+                "target": [
+                  "#step-3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\" id=\"panel-overline\">02 / REVIEW &amp; CONFIRM</p>",
+                "target": [
+                  "#panel-overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #758269, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">RECIPIENT IN VIỆT NAM</span>",
+                "target": [
+                  ".recipient-review > div > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806b, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>You send</dt>",
+                "target": [
+                  ".review-details > div:nth-child(1) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Transfer fee</dt>",
+                "target": [
+                  ".review-details > div:nth-child(2) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Total debited</dt>",
+                "target": [
+                  ".review-total > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Recipient receives</dt>",
+                "target": [
+                  "div:nth-child(4) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>From</dt>",
+                "target": [
+                  "div:nth-child(5) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"detail-sub\">Alex Morgan</span>",
+                "target": [
+                  "div:nth-child(5) > dd > .detail-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b8774, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Estimated delivery</dt>",
+                "target": [
+                  "div:nth-child(6) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"detail-sub\">Illustrative estimate</span>",
+                "target": [
+                  "div:nth-child(6) > dd > .detail-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b8774, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"button-note\">This is a practice transfer. No money will move.</p>",
+                "target": [
+                  "#review-panel > .button-note"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #778371, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\">NO GUESSWORK</p>",
+                "target": [
+                  ".summary-card > .overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #697d59, background color: #eaf0df, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"flat-tag\">FLAT</span>",
+                "target": [
+                  ".flat-tag"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #5a6e4e, background color: #dce6cf, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Illustrative delivery estimate</p>",
+                "target": [
+                  ".delivery > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #7c8a70, background color: #eaf0df, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p><strong>Clear from the start.</strong><br>The fee is added to your send amount. Your recipient receives the full converted amount.</p>",
+                "target": [
+                  ".confidence-note > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #75816c, background color: #f5f5ef, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Simulation with fictional data. No money is moved and no real account is connected.</p>",
+                "target": [
+                  "footer > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"profile\" aria-label=\"Alex Morgan\">AM</span>",
+                "target": [
+                  ".profile"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  "#step-1 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span>3</span>",
+                "target": [
+                  "#step-3 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">↻</span>",
+                "target": [
+                  "#retry > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"footer-symbol\" aria-hidden=\"true\">i</span>",
+                "target": [
+                  ".footer-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">YOUR TRANSFER, STEP BY STEP</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #66795d, background color: #f5f5ef, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p id=\"page-subtitle\">A clear outcome for your practice transfer.</p>",
+                "target": [
+                  "#page-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #68766d, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-1\" class=\"done\"><span>✓</span>Transfer details</li>",
+                "target": [
+                  "#step-1"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-2\" class=\"done\"><span>✓</span>Review &amp; confirm</li>",
+                "target": [
+                  "#step-2"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\" id=\"panel-overline\">03 / COMPLETE</p>",
+                "target": [
+                  "#panel-overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #758269, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"success-copy\">Your simulated transfer to <strong id=\"success-name\">Nguyễn Thị Minh Anh Trường</strong> was successful.</p>",
+                "target": [
+                  ".success-copy"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #708066, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">SIMULATED AMOUNT RECEIVED</span>",
+                "target": [
+                  ".success-receipt > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.87 (foreground color: #71806b, background color: #f4f7ed, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>No money was moved.</p>",
+                "target": [
+                  ".success-receipt > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #728367, background color: #f4f7ed, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"success-delivery\">Estimated delivery: by 3 November 2026.<br>Illustrative estimate only.</p>",
+                "target": [
+                  ".success-delivery"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #728367, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\">NO GUESSWORK</p>",
+                "target": [
+                  ".summary-card > .overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #697d59, background color: #eaf0df, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"flat-tag\">FLAT</span>",
+                "target": [
+                  ".flat-tag"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #5a6e4e, background color: #dce6cf, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Illustrative delivery estimate</p>",
+                "target": [
+                  ".delivery > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #7c8a70, background color: #eaf0df, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p><strong>Clear from the start.</strong><br>The fee is added to your send amount. Your recipient receives the full converted amount.</p>",
+                "target": [
+                  ".confidence-note > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #75816c, background color: #f5f5ef, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Simulation with fictional data. No money is moved and no real account is connected.</p>",
+                "target": [
+                  "footer > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"profile\" aria-label=\"Alex Morgan\">AM</span>",
+                "target": [
+                  ".profile"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  "#step-1 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  "#step-2 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<div class=\"success-icon\" aria-hidden=\"true\">✓</div>",
+                "target": [
+                  ".success-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"footer-symbol\" aria-hidden=\"true\">i</span>",
+                "target": [
+                  ".footer-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    },
+    "narrow320": {
+      "viewport": {
+        "name": "narrow320",
+        "width": 320,
+        "height": 740
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedResponses": [],
+      "screenshots": [
+        "narrow320-initial.png",
+        "narrow320-full.png",
+        "narrow320-neutral-full.png",
+        "narrow320-keyboard-focus.png",
+        "narrow320-review.png",
+        "narrow320-review-viewport.png",
+        "narrow320-neutral-review.png",
+        "narrow320-failure.png",
+        "narrow320-failure-viewport.png",
+        "narrow320-neutral-failure.png",
+        "narrow320-success.png",
+        "narrow320-success-viewport.png",
+        "narrow320-neutral-success.png"
+      ],
+      "checks": [
+        {
+          "name": "No document horizontal overflow",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "contract"
+        },
+        {
+          "name": "Fictional/simulation disclosure visible",
+          "status": "pass",
+          "observation": "Visible page text inspected; wording is not a certification of factual accuracy.",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 0",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Reject out-of-range amount 1001",
+          "status": "pass",
+          "observation": "Confirmation visible: false; recipient retained: true",
+          "kind": "contract"
+        },
+        {
+          "name": "Review retains full Vietnamese recipient",
+          "status": "pass",
+          "observation": "Nguyễn Thị Minh Anh Trường",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 375 amount",
+          "status": "pass",
+          "observation": "Changed the original amount to exercise recalculation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 2.50 fee",
+          "status": "pass",
+          "observation": "Flat fee from the shared fixture.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows USD 377.50 total",
+          "status": "pass",
+          "observation": "USD 375 + USD 2.50 fee.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows VND 9,375,000 received",
+          "status": "pass",
+          "observation": "USD 375 × 25,000 VND/USD.",
+          "kind": "contract"
+        },
+        {
+          "name": "Review shows delivery estimate",
+          "status": "pass",
+          "observation": "Fixture estimate; no current banking or delivery guarantee.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in review",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Edit retains recipient and previous amount",
+          "status": "pass",
+          "observation": "Review-to-entry edit was actually exercised.",
+          "kind": "contract"
+        },
+        {
+          "name": "Edited amount recalculates total and received amount",
+          "status": "pass",
+          "observation": "USD 400 + fee; VND 10,000,000.",
+          "kind": "contract"
+        },
+        {
+          "name": "First confirmation reports recoverable failure",
+          "status": "pass",
+          "observation": "The practice transfer didn’t go through.\nThis is a simulated connection error. Your details are saved and no money was moved. Try again to complete the simulation.",
+          "kind": "contract"
+        },
+        {
+          "name": "Failure retains recipient and amount",
+          "status": "pass",
+          "observation": "{\"amount\":null,\"recipient\":null,\"method\":\"retained failure summary; edit form not separately exercised\"}",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in failure",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "Retry reaches a visible success outcome",
+          "status": "pass",
+          "observation": "Simulated transfer successful. No money was moved.",
+          "kind": "contract"
+        },
+        {
+          "name": "Success remains clearly simulated",
+          "status": "pass",
+          "observation": "Success-state page text inspected.",
+          "kind": "contract"
+        },
+        {
+          "name": "No horizontal overflow in success",
+          "status": "pass",
+          "observation": "320px document / 320px viewport",
+          "kind": "geometry"
+        },
+        {
+          "name": "No uncaught browser JavaScript errors",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "execution"
+        },
+        {
+          "name": "No external resources requested",
+          "status": "pass",
+          "observation": "None observed.",
+          "kind": "contract"
+        }
+      ],
+      "focusSequence": [
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "n↗northlineTRANSFER SIMULATIONAM\n  \n    YOUR TRANSFER, STEP BY STEP\n    A little",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "A",
+          "testId": null,
+          "name": "Northline Transfer home",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "recipient",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "testId": "amount",
+          "name": "",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "testId": "review-transfer",
+          "name": "Review transfer →",
+          "outline": "solid 3px",
+          "boxShadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "testId": null,
+          "name": "n↗northlineTRANSFER SIMULATIONAM\n  \n    YOUR TRANSFER, STEP BY STEP\n    A little",
+          "outline": "none 3px",
+          "boxShadow": "none"
+        }
+      ],
+      "stateGeometry": {
+        "initial": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 45,
+              "y": 467.875,
+              "width": 230,
+              "height": 54,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 45,
+              "y": 690.875,
+              "width": 230,
+              "height": 66.390625,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 918.265625,
+              "width": 230,
+              "height": 58.59375,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1785,
+          "scrollY": 0
+        },
+        "full": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 45,
+              "y": 467.875,
+              "width": 230,
+              "height": 54,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 45,
+              "y": 690.875,
+              "width": 230,
+              "height": 66.390625,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 918.265625,
+              "width": 230,
+              "height": 58.59375,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1785,
+          "scrollY": 0
+        },
+        "keyboard-focus": {
+          "controls": [
+            {
+              "testId": "recipient",
+              "text": "",
+              "x": 45,
+              "y": 467.875,
+              "width": 230,
+              "height": 54,
+              "fullyInFirstViewport": true
+            },
+            {
+              "testId": "amount",
+              "text": "",
+              "x": 45,
+              "y": 690.875,
+              "width": 230,
+              "height": 66.390625,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "review-transfer",
+              "text": "Review transfer\n→",
+              "x": 45,
+              "y": 918.265625,
+              "width": 230,
+              "height": 58.59375,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1785,
+          "scrollY": 0
+        },
+        "review": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "← Edit details",
+              "x": 45,
+              "y": 844.5625,
+              "width": 74.171875,
+              "height": 40,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "confirm-transfer",
+              "text": "Confirm simulated transfer\n→",
+              "x": 45,
+              "y": 898.5625,
+              "width": 230,
+              "height": 62.78125,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1769,
+          "scrollY": 0
+        },
+        "failure": {
+          "controls": [
+            {
+              "testId": "edit-transfer",
+              "text": "← Edit details",
+              "x": 45,
+              "y": 844.5625,
+              "width": 74.171875,
+              "height": 40,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "transfer-status",
+              "text": "The practice transfer didn’t go through.\nThis is a simulated connection error. Your details are saved and no money was moved. Try again to c",
+              "x": 45,
+              "y": 898.5625,
+              "width": 230,
+              "height": 154.34375,
+              "fullyInFirstViewport": false
+            },
+            {
+              "testId": "retry-transfer",
+              "text": "Retry simulated transfer\n↻",
+              "x": 45,
+              "y": 1069.90625,
+              "width": 230,
+              "height": 58.59375,
+              "fullyInFirstViewport": false
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1936,
+          "scrollY": 0
+        },
+        "success": {
+          "controls": [
+            {
+              "testId": "transfer-status",
+              "text": "Simulated transfer successful. No money was moved.",
+              "x": 45,
+              "y": 448.875,
+              "width": 230,
+              "height": 70.375,
+              "fullyInFirstViewport": true
+            }
+          ],
+          "viewportWidth": 320,
+          "viewportHeight": 740,
+          "scrollWidth": 320,
+          "pageHeight": 1831,
+          "scrollY": 0
+        }
+      },
+      "initialText": "n↗\nnorthline\nTRANSFER\nSIMULATION\nAM\nYOUR TRANSFER, STEP BY STEP\nA little closer to home.\n\nSend to Việt Nam with every detail in view.\n\n1\nTransfer details\n2\nReview & confirm\n3\nComplete\n\n01 / TRANSFER DETAILS\n\nWho are you sending to?\n↗\nRecipient’s full name\n\nUse their full name, including Vietnamese diacritics.\n\n★\nDESTINATION\nViệt Nam\nVND\nYou send\n$\nUSD\n\nSend between USD 1 and USD 1,000. Fee added separately.\n\n▤\nSIMULATED SOURCE ACCOUNT\nEveryday USD ••1042\n\nAlex Morgan\n\nReview transfer\n→\n\nYou’ll review all details before confirming.\n\nNO GUESSWORK\n\nYour transfer at a glance\nYou send\nUSD 250.00\nTransfer fee FLAT\nUSD 2.50\nTotal you pay\nUSD 252.50\nThey receive\n6,250,000 VND\n\n1 USD = 25,000 VND\n\n◷\nBy 3 November 2026\n\nIllustrative delivery estimate\n\n↔\n\nClear from the start.\nThe fee is added to your send amount. Your recipient receives the full converted amount.\n\ni\n\nSimulation with fictional data. No money is moved and no real account is connected.",
+      "hookMultiplicityInitial": {},
+      "layout": {
+        "viewportWidth": 320,
+        "scrollWidth": 320,
+        "pageHeight": 1785,
+        "title": "Northline Transfer — Simulated transfer",
+        "h1": [
+          "A little closer to home."
+        ],
+        "mainCount": 1,
+        "htmlLang": "en",
+        "bodyFont": "Arial, Helvetica, sans-serif"
+      },
+      "hookMultiplicityByState": {
+        "initial": {},
+        "full": {},
+        "keyboard-focus": {},
+        "review": {},
+        "failure": {},
+        "success": {}
+      },
+      "neutralDiagnostics": {
+        "full": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "review": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "failure": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        },
+        "success": {
+          "textUnchanged": true,
+          "method": "grayscale plus font/radius/shadow changes; no color/background overwrite; geometry may reflow"
+        }
+      },
+      "axeInitial": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">YOUR TRANSFER, STEP BY STEP</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #66795d, background color: #f5f5ef, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p id=\"page-subtitle\">Send to Việt Nam with every detail in view.</p>",
+                "target": [
+                  "#page-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #68766d, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-2\"><span>2</span>Review &amp; confirm</li>",
+                "target": [
+                  "#step-2"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-3\"><span>3</span>Complete</li>",
+                "target": [
+                  "#step-3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\" id=\"panel-overline\">01 / TRANSFER DETAILS</p>",
+                "target": [
+                  "#panel-overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #758269, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"field-help\" id=\"recipient-help\">Use their full name, including Vietnamese diacritics.</p>",
+                "target": [
+                  "#recipient-help"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806d, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">DESTINATION</span>",
+                "target": [
+                  ".destination > div > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.88 (foreground color: #71806b, background color: #f5f7f0, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"destination-code\">VND</span>",
+                "target": [
+                  ".destination-code"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #6b7b63, background color: #f5f7f0, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"field-help\" id=\"amount-help\">Send between USD 1 and USD 1,000. Fee added separately.</p>",
+                "target": [
+                  "#amount-help"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806d, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">SIMULATED SOURCE ACCOUNT</span>",
+                "target": [
+                  ".source-account > div > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806b, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span>••1042</span>",
+                "target": [
+                  "strong > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.34 (foreground color: #85907d, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Alex Morgan</p>",
+                "target": [
+                  ".source-account > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b8775, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"button-note\">You’ll review all details before confirming.</p>",
+                "target": [
+                  "#entry-form > .button-note"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #778371, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\">NO GUESSWORK</p>",
+                "target": [
+                  ".summary-card > .overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #697d59, background color: #eaf0df, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"flat-tag\">FLAT</span>",
+                "target": [
+                  ".flat-tag"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #5a6e4e, background color: #dce6cf, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Illustrative delivery estimate</p>",
+                "target": [
+                  ".delivery > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #7c8a70, background color: #eaf0df, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p><strong>Clear from the start.</strong><br>The fee is added to your send amount. Your recipient receives the full converted amount.</p>",
+                "target": [
+                  ".confidence-note > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #75816c, background color: #f5f5ef, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Simulation with fictional data. No money is moved and no real account is connected.</p>",
+                "target": [
+                  "footer > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"profile\" aria-label=\"Alex Morgan\">AM</span>",
+                "target": [
+                  ".profile"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>2</span>",
+                "target": [
+                  "#step-2 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span>3</span>",
+                "target": [
+                  "#step-3 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span class=\"country-symbol\" aria-hidden=\"true\">★</span>",
+                "target": [
+                  ".country-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"account-icon\" aria-hidden=\"true\">▤</span>",
+                "target": [
+                  ".account-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">→</span>",
+                "target": [
+                  "button[type=\"submit\"] > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"footer-symbol\" aria-hidden=\"true\">i</span>",
+                "target": [
+                  ".footer-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "autocomplete-valid",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "form-field-multiple-labels",
+          "html-has-lang",
+          "html-lang-valid",
+          "label",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFailure": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">YOUR TRANSFER, STEP BY STEP</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #66795d, background color: #f5f5ef, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p id=\"page-subtitle\">Check the recipient and total before you confirm.</p>",
+                "target": [
+                  "#page-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #68766d, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-1\" class=\"done\"><span>✓</span>Transfer details</li>",
+                "target": [
+                  "#step-1"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-3\"><span>3</span>Complete</li>",
+                "target": [
+                  "#step-3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\" id=\"panel-overline\">02 / REVIEW &amp; CONFIRM</p>",
+                "target": [
+                  "#panel-overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #758269, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">RECIPIENT IN VIỆT NAM</span>",
+                "target": [
+                  ".recipient-review > div > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #71806b, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>You send</dt>",
+                "target": [
+                  ".review-details > div:nth-child(1) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Transfer fee</dt>",
+                "target": [
+                  ".review-details > div:nth-child(2) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Total debited</dt>",
+                "target": [
+                  ".review-total > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Recipient receives</dt>",
+                "target": [
+                  "div:nth-child(4) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>From</dt>",
+                "target": [
+                  "div:nth-child(5) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"detail-sub\">Alex Morgan</span>",
+                "target": [
+                  "div:nth-child(5) > dd > .detail-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b8774, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<dt>Estimated delivery</dt>",
+                "target": [
+                  "div:nth-child(6) > dt"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #74806d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"detail-sub\">Illustrative estimate</span>",
+                "target": [
+                  "div:nth-child(6) > dd > .detail-sub"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.77 (foreground color: #7b8774, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"button-note\">This is a practice transfer. No money will move.</p>",
+                "target": [
+                  "#review-panel > .button-note"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #778371, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\">NO GUESSWORK</p>",
+                "target": [
+                  ".summary-card > .overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #697d59, background color: #eaf0df, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"flat-tag\">FLAT</span>",
+                "target": [
+                  ".flat-tag"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #5a6e4e, background color: #dce6cf, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Illustrative delivery estimate</p>",
+                "target": [
+                  ".delivery > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #7c8a70, background color: #eaf0df, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p><strong>Clear from the start.</strong><br>The fee is added to your send amount. Your recipient receives the full converted amount.</p>",
+                "target": [
+                  ".confidence-note > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #75816c, background color: #f5f5ef, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Simulation with fictional data. No money is moved and no real account is connected.</p>",
+                "target": [
+                  "footer > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"profile\" aria-label=\"Alex Morgan\">AM</span>",
+                "target": [
+                  ".profile"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  "#step-1 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span>3</span>",
+                "target": [
+                  "#step-3 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">↻</span>",
+                "target": [
+                  "#retry > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"footer-symbol\" aria-hidden=\"true\">i</span>",
+                "target": [
+                  ".footer-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      },
+      "axeFinal": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.14.0"
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<div class=\"eyebrow\">YOUR TRANSFER, STEP BY STEP</div>",
+                "target": [
+                  ".eyebrow"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #66795d, background color: #f5f5ef, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p id=\"page-subtitle\">A clear outcome for your practice transfer.</p>",
+                "target": [
+                  "#page-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #68766d, background color: #f5f5ef, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-1\" class=\"done\"><span>✓</span>Transfer details</li>",
+                "target": [
+                  "#step-1"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<li id=\"step-2\" class=\"done\"><span>✓</span>Review &amp; confirm</li>",
+                "target": [
+                  "#step-2"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #788377, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\" id=\"panel-overline\">03 / COMPLETE</p>",
+                "target": [
+                  "#panel-overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #758269, background color: #ffffff, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"success-copy\">Your simulated transfer to <strong id=\"success-name\">Nguyễn Thị Minh Anh Trường</strong> was successful.</p>",
+                "target": [
+                  ".success-copy"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #708066, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"small-label\">SIMULATED AMOUNT RECEIVED</span>",
+                "target": [
+                  ".success-receipt > .small-label"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.87 (foreground color: #71806b, background color: #f4f7ed, font size: 6.0pt (8px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>No money was moved.</p>",
+                "target": [
+                  ".success-receipt > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #728367, background color: #f4f7ed, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"success-delivery\">Estimated delivery: by 3 November 2026.<br>Illustrative estimate only.</p>",
+                "target": [
+                  ".success-delivery"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #728367, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p class=\"overline\">NO GUESSWORK</p>",
+                "target": [
+                  ".summary-card > .overline"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #697d59, background color: #eaf0df, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<span class=\"flat-tag\">FLAT</span>",
+                "target": [
+                  ".flat-tag"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #5a6e4e, background color: #dce6cf, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Illustrative delivery estimate</p>",
+                "target": [
+                  ".delivery > div > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #7c8a70, background color: #eaf0df, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p><strong>Clear from the start.</strong><br>The fee is added to your send amount. Your recipient receives the full converted amount.</p>",
+                "target": [
+                  ".confidence-note > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #75816c, background color: #f5f5ef, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "html": "<p>Simulation with fictional data. No money is moved and no real account is connected.</p>",
+                "target": [
+                  "footer > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #7a8671, background color: #f5f5ef, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "description": "Ensure ARIA attributes are not prohibited for an element's role",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+            "nodes": [
+              {
+                "html": "<span class=\"profile\" aria-label=\"Alex Morgan\">AM</span>",
+                "target": [
+                  ".profile"
+                ],
+                "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"span\" elements with no valid role attribute."
+              }
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+            "nodes": [
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  "#step-1 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span>✓</span>",
+                "target": [
+                  "#step-2 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<div class=\"success-icon\" aria-hidden=\"true\">✓</div>",
+                "target": [
+                  ".success-icon"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span aria-hidden=\"true\">◷</span>",
+                "target": [
+                  ".delivery > span[aria-hidden=\"true\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "html": "<span class=\"footer-symbol\" aria-hidden=\"true\">i</span>",
+                "target": [
+                  ".footer-symbol"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              }
+            ]
+          }
+        ],
+        "passes": [
+          "aria-allowed-attr",
+          "aria-conditional-attr",
+          "aria-deprecated-role",
+          "aria-hidden-body",
+          "aria-hidden-focus",
+          "aria-prohibited-attr",
+          "aria-required-attr",
+          "aria-roles",
+          "aria-valid-attr-value",
+          "aria-valid-attr",
+          "button-name",
+          "bypass",
+          "color-contrast",
+          "definition-list",
+          "dlitem",
+          "document-title",
+          "duplicate-id-aria",
+          "html-has-lang",
+          "html-lang-valid",
+          "link-name",
+          "list",
+          "listitem",
+          "meta-viewport",
+          "nested-interactive",
+          "target-size"
+        ]
+      }
+    }
+  },
+  "supportingNarrow320": {
+    "viewportWidth": 320,
+    "scrollWidth": 320,
+    "pageHeight": 1785,
+    "title": "Northline Transfer — Simulated transfer",
+    "h1": [
+      "A little closer to home."
+    ],
+    "mainCount": 1,
+    "htmlLang": "en",
+    "bodyFont": "Arial, Helvetica, sans-serif",
+    "scope": "Full task trace at 320×740 is recorded under viewports.narrow320; not merely an initial-page screenshot."
+  }
+}

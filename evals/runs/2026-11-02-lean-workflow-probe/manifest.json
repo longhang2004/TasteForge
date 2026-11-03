@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "1.0",
+  "runId": "2026-11-02-lean-workflow-probe",
+  "type": "small-old-versus-lean-workflow-forward-test",
+  "createdAtUtc": "2026-11-02T04:23:38.784098+00:00",
+  "sourceBaseCommit": "948592b2fcf64bab790facd51163c62a278dc7c9",
+  "generationReady": true,
+  "cases": [
+    {
+      "id": "l01",
+      "effort": "fast",
+      "condition": "old",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "reasoningEffort": "high",
+      "promptId": "commerce-repair",
+      "softMinutes": 6,
+      "generation": "submitted",
+      "taskSha256": "af0baefab9bb54f4c16b47ef6fd607346723d0dde35a9036693a4f30f31c1bef",
+      "fixtureSha256": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "creatorPromptSha256": "1517f0329565e0022b1f17a5a01bb89e538d7caf138a34e56d12ec54bf6fdff8",
+      "startingSourceHashes": {
+        "app.js": "2966aa392563153af59ef5ba22bb89c3256c7428d48436af2f60d8e748cbdf72",
+        "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+        "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+        "index.html": "935937370bf4efea4f8ed3deb97964a9644bbd03f1fbe91d9c26e68cb381bf6a",
+        "styles.css": "95912c805d6d78a47296acb8e091cc68eaafbee36333925d0972009e38b54473",
+        "task.md": "af0baefab9bb54f4c16b47ef6fd607346723d0dde35a9036693a4f30f31c1bef"
+      }
+    },
+    {
+      "id": "l02",
+      "effort": "fast",
+      "condition": "lean",
+      "host": "subagent",
+      "model": "gpt-6-luna",
+      "reasoningEffort": "high",
+      "promptId": "commerce-repair",
+      "softMinutes": 6,
+      "generation": "submitted",
+      "taskSha256": "af0baefab9bb54f4c16b47ef6fd607346723d0dde35a9036693a4f30f31c1bef",
+      "fixtureSha256": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "creatorPromptSha256": "0c29f8098df80943564be71226bacda9b9d25a5d3f8375f6d4f7d829c9c590dd",
+      "startingSourceHashes": {
+        "app.js": "2966aa392563153af59ef5ba22bb89c3256c7428d48436af2f60d8e748cbdf72",
+        "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+        "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+        "index.html": "935937370bf4efea4f8ed3deb97964a9644bbd03f1fbe91d9c26e68cb381bf6a",
+        "styles.css": "95912c805d6d78a47296acb8e091cc68eaafbee36333925d0972009e38b54473",
+        "task.md": "af0baefab9bb54f4c16b47ef6fd607346723d0dde35a9036693a4f30f31c1bef"
+      }
+    },
+    {
+      "id": "l03",
+      "effort": "standard",
+      "condition": "old",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "reasoningEffort": "medium",
+      "promptId": "fintech-transfer",
+      "softMinutes": 12,
+      "generation": "submitted",
+      "taskSha256": "c30677136a32851c83f5ef0bc8a91c217b22fcc2b5c01a1aed6e0a90b5e4a87b",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "creatorPromptSha256": "5d6992979bb2832d0dd5032d10c9cebc1092db85aca4f0f54c9c27843f922af7",
+      "startingSourceHashes": {
+        "app.js": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+        "index.html": "d543d063769639226f48dcd3c37a14df9a40664f9cecba903f91fb2fe72fe06a",
+        "styles.css": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "task.md": "c30677136a32851c83f5ef0bc8a91c217b22fcc2b5c01a1aed6e0a90b5e4a87b"
+      },
+      "protocolAmendment": "protocol-amendment-01.md"
+    },
+    {
+      "id": "l04",
+      "effort": "standard",
+      "condition": "lean",
+      "host": "antigravity",
+      "model": "gemini-3.8-flash-medium",
+      "reasoningEffort": "medium",
+      "promptId": "fintech-transfer",
+      "softMinutes": 12,
+      "generation": "submitted",
+      "taskSha256": "c30677136a32851c83f5ef0bc8a91c217b22fcc2b5c01a1aed6e0a90b5e4a87b",
+      "fixtureSha256": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+      "creatorPromptSha256": "2e250cd07c369e6ef766fa62343bbdd8ecc4d572155fcd557357e2541e0be6d1",
+      "startingSourceHashes": {
+        "app.js": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fixture.json": "b57f22b6f11142dcff5b84fb8f140d03a971e5edefce51daf5f38ab5cfbe705f",
+        "index.html": "d543d063769639226f48dcd3c37a14df9a40664f9cecba903f91fb2fe72fe06a",
+        "styles.css": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "task.md": "c30677136a32851c83f5ef0bc8a91c217b22fcc2b5c01a1aed6e0a90b5e4a87b"
+      },
+      "protocolAmendment": "protocol-amendment-01.md"
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "minimum",
+      "width": 320,
+      "height": 740
+    }
+  ],
+  "tasteforgeSeed": 42,
+  "inferenceSeed": null,
+  "replicatesPerCondition": 1,
+  "skillSnapshots": {
+    "old": {
+      "sourceCommit": "948592b2fcf64bab790facd51163c62a278dc7c9",
+      "files": {
+        "SKILL.md": "03a00785cea8f4c443c00e135c8cb2d40a73e9b19e4206b57bfecf293118bda5",
+        "references/accessibility.md": "fe0de4a8631dc9bb1ed983477ade2623b0c91e8f0233452f51d28ae919c50927",
+        "references/anti-patterns.md": "3461de076c267730b9140fa9277f9ac23725bc7878a7ab9256daa15447be407a",
+        "references/catalog-use.md": "e2a7b0825c2da91f468a1d824d731935790972c13cba96647daabc237b00e7ac",
+        "references/design-principles.md": "8d5d60cec70f462bd9f9d75d3b67185e1cdbda5fe0006abb57d823a59cab756b",
+        "references/effects-and-composition.md": "72ff110fed3cf52d01b97ff73bbe1b242311764c7f227b6abcbbbbecade9ba03",
+        "references/interaction-motion.md": "c1c750ff13654865ac9334f758341a9a5cf55e5f035d99b50641a35975519370",
+        "references/layout-archetypes.md": "5e0ec34161454430c5b1b46e6ab3cd9d57f84b7ecc9f5167db2329c155261a31",
+        "references/layout-composition.md": "c67ca832df627cfbc05eaa373219dfe088e994d480e263bc0cd2190e35a8de33",
+        "references/reference-sources.md": "ae7361d1f19fce3fe75234597d99bd0efe64fcd81a85bdedca0a7d5020bc32a0",
+        "references/surface-purpose.md": "7ab871172d719d6002482dcab952012115b0f39f1bd9e0b78af54b8de1011fe9",
+        "references/typography.md": "7fa0b604aab81da8cb4f462c59c9c3c8ca726a679f728652292035fc29054b45",
+        "references/ux-plan-template.md": "3d2b688e9fe91dd6e6c88bf120801b7a97910051c06327d33d2a4ae0bce34a07",
+        "references/visual-hierarchy.md": "09bfde3f0a531fa56b545087e1e69e70482921a499efae39033d1a1078393b82",
+        "workflows/audit-ui.md": "265818ab00abf5fd4620a34d4f796409e198745cc3fc8c369ebd165c97f41451",
+        "workflows/create-ui.md": "caf4fba1ebe971a8b525f11a0ecec01442c1f9c4331d8c0f45b549102da03856",
+        "workflows/redesign-ui.md": "591c22a646fbdbaa3bb5e8d69df1aea63df623ce39e7b462b4b9afa0f196db3b",
+        "workflows/research-and-plan.md": "8b30e5178056372be820b8c93fe351ce613a385ecd2f958dd4a0a82a692a59cb",
+        "workflows/structure-and-revise.md": "cf566bc624187a04bf61ec9a2e6687abc251878dd03a3dec9ddc19778e38c01f",
+        "workflows/targeted-refinement.md": "c9e9a0387a622525c6a0553a42434524ed437ff41dd11fb075e06d0952579550"
+      },
+      "stats": {
+        "markdownFiles": 20,
+        "markdownWords": 12084,
+        "byFileWords": {
+          "SKILL.md": 1153,
+          "references/accessibility.md": 244,
+          "references/anti-patterns.md": 871,
+          "references/catalog-use.md": 492,
+          "references/design-principles.md": 723,
+          "references/effects-and-composition.md": 1083,
+          "references/interaction-motion.md": 224,
+          "references/layout-archetypes.md": 1235,
+          "references/layout-composition.md": 275,
+          "references/reference-sources.md": 714,
+          "references/surface-purpose.md": 702,
+          "references/typography.md": 300,
+          "references/ux-plan-template.md": 506,
+          "references/visual-hierarchy.md": 201,
+          "workflows/audit-ui.md": 392,
+          "workflows/create-ui.md": 375,
+          "workflows/redesign-ui.md": 275,
+          "workflows/research-and-plan.md": 990,
+          "workflows/structure-and-revise.md": 704,
+          "workflows/targeted-refinement.md": 625
+        },
+        "scope": "Static whitespace-delimited words, not model tokens or actual loaded context"
+      }
+    },
+    "lean": {
+      "source": "working-tree SHA256 snapshot at freeze; not a release version",
+      "files": {
+        "SKILL.md": "3254ac26c459314a2be02b8e609a8793665ad43c292767f127f0536707ebebb4",
+        "references/accessibility.md": "fe0de4a8631dc9bb1ed983477ade2623b0c91e8f0233452f51d28ae919c50927",
+        "references/anti-patterns.md": "3461de076c267730b9140fa9277f9ac23725bc7878a7ab9256daa15447be407a",
+        "references/catalog-use.md": "3c634d492cd2a8a3407a79284f46c8122c7e0823b5a4e70de3554e0f2fa48213",
+        "references/design-principles.md": "8d5d60cec70f462bd9f9d75d3b67185e1cdbda5fe0006abb57d823a59cab756b",
+        "references/effects-and-composition.md": "72ff110fed3cf52d01b97ff73bbe1b242311764c7f227b6abcbbbbecade9ba03",
+        "references/interaction-motion.md": "c1c750ff13654865ac9334f758341a9a5cf55e5f035d99b50641a35975519370",
+        "references/layout-archetypes.md": "5e0ec34161454430c5b1b46e6ab3cd9d57f84b7ecc9f5167db2329c155261a31",
+        "references/layout-composition.md": "c67ca832df627cfbc05eaa373219dfe088e994d480e263bc0cd2190e35a8de33",
+        "references/reference-sources.md": "ae7361d1f19fce3fe75234597d99bd0efe64fcd81a85bdedca0a7d5020bc32a0",
+        "references/render-checks.md": "3cf4006aba9e3e3f176c4df65c8164bec134f7c5c5b5454d16c720c75196cc65",
+        "references/surface-purpose.md": "7ab871172d719d6002482dcab952012115b0f39f1bd9e0b78af54b8de1011fe9",
+        "references/typography.md": "7fa0b604aab81da8cb4f462c59c9c3c8ca726a679f728652292035fc29054b45",
+        "references/ux-plan-template.md": "e3e5dbb891434170efe38b114ca068077b55d9314878673f19add69d51f545e7",
+        "references/visual-hierarchy.md": "09bfde3f0a531fa56b545087e1e69e70482921a499efae39033d1a1078393b82",
+        "scripts/check-ui.mjs": "988d67ba024da04aa5bb37f51c581dcc12a779999a4f2fd562df22791a407c59",
+        "workflows/audit-ui.md": "85e270047231412833e7017951f18032700af9dba7620376521e881a00e9dea7",
+        "workflows/create-ui.md": "deaed9bbdd513889b5c0f0089d90cb9edbea6fa7af35a845bd64c374c315e28a",
+        "workflows/redesign-ui.md": "92770b069194669b3bfe9cffc41db2c2c4bbb51f4a060761186dc72e972fe880",
+        "workflows/research-and-plan.md": "26980cace16b08f98618abb98d179826a66f340984e08ceb6fd30a68f050caf8",
+        "workflows/structure-and-revise.md": "fe053913b958ff8eccdbdeb69ea4f57e9b50a5618d24b25cc81cc1cc46d61a6b",
+        "workflows/targeted-refinement.md": "917dd61f9d37b1c8385feff1a163e86a2058a27fa80d1dbd76d9e42e4894fa5b"
+      },
+      "stats": {
+        "markdownFiles": 21,
+        "markdownWords": 9979,
+        "byFileWords": {
+          "SKILL.md": 582,
+          "references/accessibility.md": 244,
+          "references/anti-patterns.md": 871,
+          "references/catalog-use.md": 467,
+          "references/design-principles.md": 723,
+          "references/effects-and-composition.md": 1083,
+          "references/interaction-motion.md": 224,
+          "references/layout-archetypes.md": 1235,
+          "references/layout-composition.md": 275,
+          "references/reference-sources.md": 714,
+          "references/render-checks.md": 358,
+          "references/surface-purpose.md": 702,
+          "references/typography.md": 300,
+          "references/ux-plan-template.md": 233,
+          "references/visual-hierarchy.md": 201,
+          "workflows/audit-ui.md": 223,
+          "workflows/create-ui.md": 271,
+          "workflows/redesign-ui.md": 166,
+          "workflows/research-and-plan.md": 337,
+          "workflows/structure-and-revise.md": 455,
+          "workflows/targeted-refinement.md": 315
+        },
+        "scope": "Static whitespace-delimited words, not model tokens or actual loaded context"
+      }
+    }
+  },
+  "sharedStarterHashes": {
+    "product": {
+      "app.js": "2966aa392563153af59ef5ba22bb89c3256c7428d48436af2f60d8e748cbdf72",
+      "assets/teapot.svg": "5664d6c7c4dec576bcaccc6580ac610b660dbc11b828d60fcbd804d4fba7dbec",
+      "fixture.json": "c99486fff0be5093a0b35ac86421d6bbded3cbdcd255bd4ecab9f6422e5f049b",
+      "index.html": "935937370bf4efea4f8ed3deb97964a9644bbd03f1fbe91d9c26e68cb381bf6a",
+      "styles.css": "95912c805d6d78a47296acb8e091cc68eaafbee36333925d0972009e38b54473"
+    },
+    "transfer": {
+      "app.js": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index.html": "d543d063769639226f48dcd3c37a14df9a40664f9cecba903f91fb2fe72fe06a",
+      "styles.css": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "protocolSha256": "bb0de9e241bf25c90e216a13d17badbf060dad841fc5d0331e73462f231f5fc8",
+  "limitations": [
+    "Two task pairs only; no representative-user, universal-quality or general token-saving claim.",
+    "Different host/model per task prevents cross-mode or host ranking.",
+    "Soft time targets, backend snapshot and inference seed not controlled.",
+    "Native AGY runs fixed old-then-lean order; cache/order effects are not isolated.",
+    "Human/manual tests deferred, not passed."
+  ],
+  "sharedHelperSha256": "988d67ba024da04aa5bb37f51c581dcc12a779999a4f2fd562df22791a407c59",
+  "optimizedFrozenAtUtc": "2026-11-02T04:26:01.179543+00:00",
+  "protocolAmendments": [
+    {
+      "file": "protocol-amendment-01.md",
+      "sha256": "bc9afbd8fb24c3057c41e493dafbe77d2c03c169dcce09c34bc81688b7c038af",
+      "record": "evidence/protocol-amendment-01/record.json",
+      "scope": "l03/l04 Standard only, pre-dispatch"
+    }
+  ]
+}
