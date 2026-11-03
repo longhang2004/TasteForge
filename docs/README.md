@@ -30,6 +30,7 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 ## Understand and extend TasteForge
 
 - [Architecture and determinism](architecture.md): package boundaries, hard filtering, scoring, seeded sampling, DNA consistency, and filesystem reliability.
+- [Bounded CSS import audit](audit-imports-rfc.md): opt-in entry contexts, token provenance, supported syntax and conservative unresolved states; [validation evidence](audit-imports-validation.md).
 - [Knowledge extension guide](extending-knowledge.md): schemas, style compatibility, font language evidence, palette constraints, and versioning.
 - [Contributing](../CONTRIBUTING.md): local development, checks, contribution scope, and source/licensing expectations.
 - [Evaluation methodology and recorded runs](../evals/README.md): ten benchmark prompts, the full evaluation rubric, and an eight-UI exploratory pilot with screenshots and anonymous AI reviews. A replicated full benchmark has not been completed.

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Add opt-in `audit --resolve-imports` and a pure `auditProject` API for bounded local CSS import graphs, entry-specific token resolution and original-source provenance. Preserve the default source-only audit, generator/DNA contracts and frozen evaluations. Unsupported or ambiguous contexts remain explicit review items.
+
 ## 0.2.0-beta.2
 
 - Make skill effort proportional with Fast/Standard/Explore routing, shorter shared instructions, compact persistent context and on-demand references. Keep critical task/access/content gates and explicit stopping/escalation.

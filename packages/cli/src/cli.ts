@@ -15,7 +15,8 @@ import {
   suggest,
   validateDNA,
 } from '@tasteforge/core/engine';
-import type { Finding } from '@tasteforge/core/audit';
+import type { ProjectFinding } from '@tasteforge/core/audit';
+import { collectAuditStylesheets, validateAuditImportSelection } from './audit-imports.js';
 import {
   exists,
   collectSources,
@@ -238,8 +239,13 @@ export async function run(argv: string[]): Promise<number> {
     .command('audit')
     .description('Run static source checks; does not inspect a rendered UI')
     .option('--path <path>', 'project-local source file or directory', 'src')
+    .option(
+      '--resolve-imports',
+      'follow bounded static local CSS imports with token provenance',
+      false,
+    )
     .option('--fail-on <severity>', 'exit 1 on error, warning, or never', 'error')
-    .action(async (opts: { path: string; failOn: string }) => {
+    .action(async (opts: { path: string; failOn: string; resolveImports: boolean }) => {
       const { root, format } = await globalOptions();
       const failOn = z.enum(['error', 'warning', 'never']).parse(opts.failOn);
       await stateDirectory(root, false);
@@ -247,10 +253,39 @@ export async function run(argv: string[]): Promise<number> {
       const dna = (await exists(dnaPath))
         ? validateDNA(await readJson(root, '.tasteforge/design-dna.json'))
         : undefined;
+      if (opts.resolveImports) await validateAuditImportSelection(root, opts.path);
       const files = await collectSources(root, opts.path);
-      const { auditSource } = await import('@tasteforge/core/audit');
-      const findings: Finding[] = [];
-      for (const file of files)
+      const { auditSource, auditProject, AUDIT_RESOLUTION_VERSION, AUDIT_IMPORT_LIMITS } =
+        await import('@tasteforge/core/audit');
+      const findings: ProjectFinding[] = [];
+      let auditedFiles = files;
+      let resolution;
+      if (opts.resolveImports) {
+        const collected = await collectAuditStylesheets(root, files);
+        if (collected.sources.length) {
+          const { findings: resolvedFindings, ...details } = auditProject(collected.sources, {
+            roots: collected.roots,
+            unavailable: collected.unavailable,
+            tokens: dna?.tokens,
+            minContrast: dna?.context.accessibility.minContrast,
+          });
+          findings.push(...resolvedFindings);
+          auditedFiles = [...new Set([...files, ...details.files])].sort();
+          resolution = { ...details, jsxImportsFollowed: false };
+        } else
+          resolution = {
+            version: AUDIT_RESOLUTION_VERSION,
+            status: 'not-applicable',
+            roots: [],
+            files: [],
+            contexts: [],
+            imports: [],
+            limits: AUDIT_IMPORT_LIMITS,
+            jsxImportsFollowed: false,
+            limitations: ['No CSS roots selected; JSX/TSX keeps the existing inline source audit.'],
+          };
+      }
+      for (const file of files.filter((file) => !opts.resolveImports || !file.endsWith('.css')))
         findings.push(
           ...auditSource(file, await readText(root, file), {
             tokens: dna?.tokens,
@@ -264,20 +299,23 @@ export async function run(argv: string[]): Promise<number> {
       };
       const report = {
         engineVersion: ENGINE_VERSION,
-        mode: 'static-source',
-        files,
+        mode: opts.resolveImports ? 'static-imports' : 'static-source',
+        files: auditedFiles,
         summary,
         findings,
         limitations: [
           'No screenshots or rendered UI inspected.',
-          'Cascade, imported styles, utility classes, computed values, and component runtime behavior are not resolved.',
+          opts.resolveImports
+            ? 'Only bounded unconditional local CSS imports are followed; cascade, JS/TS imports, utility classes, computed values and runtime behavior are not resolved.'
+            : 'Cascade, imported styles, utility classes, computed values, and component runtime behavior are not resolved.',
           'A clean report does not establish accessibility conformance or visual quality.',
         ],
+        ...(resolution ? { resolution } : {}),
       };
       output(
         report,
         format,
-        `Static source audit: ${files.length} files; ${summary.errors} errors; ${summary.warnings} warnings; ${summary.review} review items.\n${findings.map((f) => `${f.file}${f.line ? `:${f.line}:${f.column}` : ''} [${f.category}/${f.severity}] ${f.ruleId}: ${f.explanation}\n  ${f.remediation}`).join('\n')}\nNo rendered UI inspected.`,
+        `Static source audit: ${auditedFiles.length} files; ${summary.errors} errors; ${summary.warnings} warnings; ${summary.review} review items.\n${findings.map((f) => `${f.file}${f.line ? `:${f.line}:${f.column}` : ''} [${f.category}/${f.severity}] ${f.ruleId}: ${f.explanation}\n  ${f.remediation}${f.entries ? `\n  Entries: ${f.entries.join(', ')}` : ''}${f.provenance?.map((p) => `\n  ${p.kind}: ${p.token}${p.file ? ` at ${p.file}:${p.line}:${p.column}` : ' (supplied context)'}`).join('') ?? ''}`).join('\n')}\nNo rendered UI inspected.`,
       );
       if (
         failOn !== 'never' &&

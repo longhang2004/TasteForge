@@ -1,0 +1,109 @@
+{
+  "engineVersion": "0.1.0",
+  "mode": "static-imports",
+  "files": [
+    "examples/audit-imports/partial.css"
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "review": 3
+  },
+  "findings": [
+    {
+      "ruleId": "import-resolution-review",
+      "severity": "info",
+      "confidence": "low",
+      "category": "review",
+      "file": "examples/audit-imports/partial.css",
+      "line": 1,
+      "column": 1,
+      "explanation": "Stylesheet import \"'./tokens.css' screen\" was not resolved: Conditional, layered or nonliteral import syntax is not resolved.",
+      "remediation": "Supply a supported local stylesheet or inspect the build/runtime stylesheet context."
+    },
+    {
+      "ruleId": "contrast-review",
+      "severity": "info",
+      "confidence": "low",
+      "category": "review",
+      "file": "examples/audit-imports/partial.css",
+      "line": 4,
+      "column": 3,
+      "explanation": "A foreground/background pair could not be resolved to opaque sRGB literals, or has layering effects.",
+      "remediation": "Inspect computed colors and composited backgrounds in a rendered UI.",
+      "entries": [
+        "examples/audit-imports/partial.css"
+      ]
+    },
+    {
+      "ruleId": "token-resolution-review",
+      "severity": "info",
+      "confidence": "low",
+      "category": "review",
+      "file": "examples/audit-imports/partial.css",
+      "line": 4,
+      "column": 3,
+      "explanation": "The static token value remains unresolved: Import context is incomplete.",
+      "remediation": "Review the token definitions/import context or inspect computed values in a browser.",
+      "entries": [
+        "examples/audit-imports/partial.css"
+      ]
+    }
+  ],
+  "limitations": [
+    "No screenshots or rendered UI inspected.",
+    "Only bounded unconditional local CSS imports are followed; cascade, JS/TS imports, utility classes, computed values and runtime behavior are not resolved.",
+    "A clean report does not establish accessibility conformance or visual quality."
+  ],
+  "resolution": {
+    "version": "1.0",
+    "status": "partial",
+    "roots": [
+      "examples/audit-imports/partial.css"
+    ],
+    "files": [
+      "examples/audit-imports/partial.css"
+    ],
+    "contexts": [
+      {
+        "entry": "examples/audit-imports/partial.css",
+        "files": [
+          "examples/audit-imports/partial.css"
+        ],
+        "complete": false
+      }
+    ],
+    "imports": [
+      {
+        "file": "examples/audit-imports/partial.css",
+        "line": 1,
+        "column": 1,
+        "specifier": "'./tokens.css' screen",
+        "reason": "Conditional, layered or nonliteral import syntax is not resolved",
+        "status": "unresolved"
+      }
+    ],
+    "limits": {
+      "files": 256,
+      "imports": 1024,
+      "importDepth": 16,
+      "aliasDepth": 16,
+      "fileBytes": 2000000,
+      "totalBytes": 16000000,
+      "definitions": 5000,
+      "declarations": 20000,
+      "findings": 2000,
+      "valueLength": 4096,
+      "provenance": 32,
+      "contexts": 512
+    },
+    "limitations": [
+      "Static stylesheet relationships only; no screenshots or computed browser styles.",
+      "Only explicit local unconditional CSS imports and unambiguous top-level :root candidates are resolved.",
+      "Each selected stylesheet is a separate entry context; application-entry ordering, selectors, inheritance, CSS Modules, JS/TS imports and runtime styling are not resolved.",
+      "Provenance locations identify definition/import/use declarations, not token-substring offsets.",
+      "A clean report does not establish accessibility conformance or visual quality."
+    ],
+    "jsxImportsFollowed": false
+  }
+}
