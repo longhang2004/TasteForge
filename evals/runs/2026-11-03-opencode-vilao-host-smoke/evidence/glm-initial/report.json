@@ -1,0 +1,3048 @@
+{
+  "model": "glm",
+  "pass": "initial",
+  "startedAt": "2026-11-03T07:11:41.096Z",
+  "sourceSha256": "62349c6f19aa144b38d4b04439d82765633711f63e0ffac8d16d2fa03aa7e651",
+  "assertions": [
+    {
+      "label": "1440 initial: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n\n  \n    Kiln Notes\n    Fictional demo\n  \n\n  \n    Pouring cup\n    A handleless pouring cup with a small spout.\n\n    \n   ",
+          "top": 0,
+          "bottom": 1101.46875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440 initial: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "1440: initial total USD 48",
+      "pass": true
+    },
+    {
+      "label": "1440: supplied material, capacity and care visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 4 available for Sand.\n\nItem subtotal\n$42.00\nShipping (flat)\n$6.00\nTotal\n$48.00\nAdd to simulated cart\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "1440: supplied return period and postage visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 4 available for Sand.\n\nItem subtotal\n$42.00\nShipping (flat)\n$6.00\nTotal\n$48.00\nAdd to simulated cart\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "1440: simulation is disclosed",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 4 available for Sand.\n\nItem subtotal\n$42.00\nShipping (flat)\n$6.00\nTotal\n$48.00\nAdd to simulated cart\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "1440: provided image loaded",
+      "pass": true
+    },
+    {
+      "label": "1440: sold-out Ash unavailable",
+      "pass": true
+    },
+    {
+      "label": "1440: Sand 3 total USD 132",
+      "pass": true
+    },
+    {
+      "label": "1440: lower-stock switch clamps to 2",
+      "pass": true
+    },
+    {
+      "label": "1440: clamp announced",
+      "pass": true
+    },
+    {
+      "label": "1440: Iron 2 total USD 90",
+      "pass": true
+    },
+    {
+      "label": "1440 clamp: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 342.53125,
+          "bottom": 360.921875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Quantity reduced to 2 — Iron has 2 in stock.",
+            "top": 781.0625,
+            "bottom": 826.25,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440: invalid \"\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter a quantity — whole cups from 1 up to 4.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Please fill out this field."
+        }
+      }
+    },
+    {
+      "label": "1440: invalid \"\" cannot succeed",
+      "pass": true,
+      "details": "Enter a quantity — whole cups from 1 up to 4.\n\n"
+    },
+    {
+      "label": "1440: invalid \"0\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Quantity must be at least 1 — enter 1 or more.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Value must be greater than or equal to 1."
+        }
+      }
+    },
+    {
+      "label": "1440: invalid \"0\" cannot succeed",
+      "pass": true,
+      "details": "Quantity must be at least 1 — enter 1 or more.\n\n"
+    },
+    {
+      "label": "1440: invalid \"-1\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Quantity must be at least 1 — enter 1 or more.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Value must be greater than or equal to 1."
+        }
+      }
+    },
+    {
+      "label": "1440: invalid \"-1\" cannot succeed",
+      "pass": true,
+      "details": "Quantity must be at least 1 — enter 1 or more.\n\n"
+    },
+    {
+      "label": "1440: invalid \"1.5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Please enter a valid value. The two nearest valid values are 1 and 2."
+        }
+      }
+    },
+    {
+      "label": "1440: invalid \"1.5\" cannot succeed",
+      "pass": true,
+      "details": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.\n\n"
+    },
+    {
+      "label": "1440 fractional-invalid: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 491.953125,
+          "bottom": 536.34375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.",
+            "top": 570.1875,
+            "bottom": 614.84375,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440 fractional-invalid: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "1440: invalid \"5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Maximum 4 per order — enter 4 or fewer.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Value must be less than or equal to 4."
+        }
+      }
+    },
+    {
+      "label": "1440: invalid \"5\" cannot succeed",
+      "pass": true,
+      "details": "Maximum 4 per order — enter 4 or fewer.\n\n"
+    },
+    {
+      "label": "1440: first valid attempt fails recoverably",
+      "pass": true,
+      "details": "\nCould not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.\n"
+    },
+    {
+      "label": "1440: quantity retained after failure",
+      "pass": true
+    },
+    {
+      "label": "1440: total retained after failure",
+      "pass": true
+    },
+    {
+      "label": "1440 failure: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "P",
+          "id": "panel-alert",
+          "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantit",
+          "top": 581.390625,
+          "bottom": 695.015625,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.",
+            "top": 581.390625,
+            "bottom": 695.015625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440 failure: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "1440: retry succeeds with glaze, quantity and total",
+      "pass": true,
+      "details": "\n\nAdded to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment."
+    },
+    {
+      "label": "1440 success: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 714.28125,
+          "bottom": 766.671875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Added to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment.",
+            "top": 781.0625,
+            "bottom": 871.875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440 success: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "1440: editing clears stale success",
+      "pass": true,
+      "details": "\n\n"
+    },
+    {
+      "label": "1440: edited total USD 48",
+      "pass": true
+    },
+    {
+      "label": "1440 edited: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 491.953125,
+          "bottom": 536.34375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440 keyboard-add: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 714.28125,
+          "bottom": 766.671875,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440: Tab reaches simulated cart action",
+      "pass": true
+    },
+    {
+      "label": "390 initial: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1680,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n\n  \n    Kiln Notes\n    Fictional demo\n  \n\n  \n    Pouring cup\n    A handleless pouring cup with a small spout.\n\n    \n   ",
+          "top": 0,
+          "bottom": 1680.203125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1314.546875,
+            "bottom": 1314.546875,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "390 initial: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "390: initial total USD 48",
+      "pass": true
+    },
+    {
+      "label": "390: supplied material, capacity and care visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 4 available for Sand.\n\nItem subtotal\n$42.00\nShipping (flat)\n$6.00\nTotal\n$48.00\nAdd to simulated cart\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "390: supplied return period and postage visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 4 available for Sand.\n\nItem subtotal\n$42.00\nShipping (flat)\n$6.00\nTotal\n$48.00\nAdd to simulated cart\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "390: simulation is disclosed",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 4 available for Sand.\n\nItem subtotal\n$42.00\nShipping (flat)\n$6.00\nTotal\n$48.00\nAdd to simulated cart\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "390: provided image loaded",
+      "pass": true
+    },
+    {
+      "label": "390: sold-out Ash unavailable",
+      "pass": true
+    },
+    {
+      "label": "390: Sand 3 total USD 132",
+      "pass": true
+    },
+    {
+      "label": "390: lower-stock switch clamps to 2",
+      "pass": true
+    },
+    {
+      "label": "390: clamp announced",
+      "pass": true
+    },
+    {
+      "label": "390: Iron 2 total USD 90",
+      "pass": true
+    },
+    {
+      "label": "390 clamp: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1763,
+        "scrollY": 368,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 704.96875,
+          "bottom": 723.359375,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 946.546875,
+            "bottom": 946.546875,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Quantity reduced to 2 — Iron has 2 in stock.",
+            "top": 1157.421875,
+            "bottom": 1225.421875,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "390: invalid \"\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter a quantity — whole cups from 1 up to 4.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Please fill out this field."
+        }
+      }
+    },
+    {
+      "label": "390: invalid \"\" cannot succeed",
+      "pass": true,
+      "details": "Enter a quantity — whole cups from 1 up to 4.\n\n"
+    },
+    {
+      "label": "390: invalid \"0\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Quantity must be at least 1 — enter 1 or more.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Value must be greater than or equal to 1."
+        }
+      }
+    },
+    {
+      "label": "390: invalid \"0\" cannot succeed",
+      "pass": true,
+      "details": "Quantity must be at least 1 — enter 1 or more.\n\n"
+    },
+    {
+      "label": "390: invalid \"-1\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Quantity must be at least 1 — enter 1 or more.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Value must be greater than or equal to 1."
+        }
+      }
+    },
+    {
+      "label": "390: invalid \"-1\" cannot succeed",
+      "pass": true,
+      "details": "Quantity must be at least 1 — enter 1 or more.\n\n"
+    },
+    {
+      "label": "390: invalid \"1.5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Please enter a valid value. The two nearest valid values are 1 and 2."
+        }
+      }
+    },
+    {
+      "label": "390: invalid \"1.5\" cannot succeed",
+      "pass": true,
+      "details": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.\n\n"
+    },
+    {
+      "label": "390 fractional-invalid: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1731,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 456.3125,
+          "bottom": 500.703125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.",
+            "top": 534.546875,
+            "bottom": 579.203125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "390 fractional-invalid: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "390: invalid \"5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Maximum 4 per order — enter 4 or fewer.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Value must be less than or equal to 4."
+        }
+      }
+    },
+    {
+      "label": "390: invalid \"5\" cannot succeed",
+      "pass": true,
+      "details": "Maximum 4 per order — enter 4 or fewer.\n\n"
+    },
+    {
+      "label": "390: first valid attempt fails recoverably",
+      "pass": true,
+      "details": "\nCould not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.\n"
+    },
+    {
+      "label": "390: quantity retained after failure",
+      "pass": true
+    },
+    {
+      "label": "390: total retained after failure",
+      "pass": true
+    },
+    {
+      "label": "390 failure: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1834,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "P",
+          "id": "panel-alert",
+          "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantit",
+          "top": 545.75,
+          "bottom": 682.1875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 534.546875,
+            "bottom": 534.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.",
+            "top": 545.75,
+            "bottom": 682.1875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "390 failure: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "390: retry succeeds with glaze, quantity and total",
+      "pass": true,
+      "details": "\n\nAdded to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment."
+    },
+    {
+      "label": "390 success: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1808,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 678.640625,
+          "bottom": 731.03125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 534.546875,
+            "bottom": 534.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Added to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment.",
+            "top": 745.421875,
+            "bottom": 859.046875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "390 success: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "390: editing clears stale success",
+      "pass": true,
+      "details": "\n\n"
+    },
+    {
+      "label": "390: edited total USD 48",
+      "pass": true
+    },
+    {
+      "label": "390 edited: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1680,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 456.3125,
+          "bottom": 500.703125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 534.546875,
+            "bottom": 534.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "390 keyboard-add: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1680,
+        "scrollY": 632,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 826.640625,
+          "bottom": 879.03125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 682.546875,
+            "bottom": 682.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "390: Tab reaches simulated cart action",
+      "pass": true
+    },
+    {
+      "label": "320 initial: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1753,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n\n  \n    Kiln Notes\n    Fictional demo\n  \n\n  \n    Pouring cup\n    A handleless pouring cup with a small spout.\n\n    \n   ",
+          "top": 0,
+          "bottom": 1753.3125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1387.65625,
+            "bottom": 1387.65625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "320 initial: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "320: initial total USD 48",
+      "pass": true
+    },
+    {
+      "label": "320: supplied material, capacity and care visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 4 available for Sand.\n\nItem subtotal\n$42.00\nShipping (flat)\n$6.00\nTotal\n$48.00\nAdd to simulated cart\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "320: supplied return period and postage visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 4 available for Sand.\n\nItem subtotal\n$42.00\nShipping (flat)\n$6.00\nTotal\n$48.00\nAdd to simulated cart\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "320: simulation is disclosed",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 4 available for Sand.\n\nItem subtotal\n$42.00\nShipping (flat)\n$6.00\nTotal\n$48.00\nAdd to simulated cart\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "320: provided image loaded",
+      "pass": true
+    },
+    {
+      "label": "320: sold-out Ash unavailable",
+      "pass": true
+    },
+    {
+      "label": "320: Sand 3 total USD 132",
+      "pass": true
+    },
+    {
+      "label": "320: lower-stock switch clamps to 2",
+      "pass": true
+    },
+    {
+      "label": "320: clamp announced",
+      "pass": true
+    },
+    {
+      "label": "320: Iron 2 total USD 90",
+      "pass": true
+    },
+    {
+      "label": "320 clamp: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1836,
+        "scrollY": 420,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 718.9375,
+          "bottom": 737.328125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 967.65625,
+            "bottom": 967.65625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Quantity reduced to 2 — Iron has 2 in stock.",
+            "top": 1178.53125,
+            "bottom": 1246.53125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "320: invalid \"\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter a quantity — whole cups from 1 up to 4.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Please fill out this field."
+        }
+      }
+    },
+    {
+      "label": "320: invalid \"\" cannot succeed",
+      "pass": true,
+      "details": "Enter a quantity — whole cups from 1 up to 4.\n\n"
+    },
+    {
+      "label": "320: invalid \"0\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Quantity must be at least 1 — enter 1 or more.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Value must be greater than or equal to 1."
+        }
+      }
+    },
+    {
+      "label": "320: invalid \"0\" cannot succeed",
+      "pass": true,
+      "details": "Quantity must be at least 1 — enter 1 or more.\n\n"
+    },
+    {
+      "label": "320: invalid \"-1\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Quantity must be at least 1 — enter 1 or more.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Value must be greater than or equal to 1."
+        }
+      }
+    },
+    {
+      "label": "320: invalid \"-1\" cannot succeed",
+      "pass": true,
+      "details": "Quantity must be at least 1 — enter 1 or more.\n\n"
+    },
+    {
+      "label": "320: invalid \"1.5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Please enter a valid value. The two nearest valid values are 1 and 2."
+        }
+      }
+    },
+    {
+      "label": "320: invalid \"1.5\" cannot succeed",
+      "pass": true,
+      "details": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.\n\n"
+    },
+    {
+      "label": "320 fractional-invalid: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1827,
+        "scrollY": 853,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 435.359375,
+          "bottom": 479.75,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.",
+            "top": 534.65625,
+            "bottom": 601.640625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "320 fractional-invalid: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "320: invalid \"5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Maximum 4 per order — enter 4 or fewer.\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": false,
+          "message": "Value must be less than or equal to 4."
+        }
+      }
+    },
+    {
+      "label": "320: invalid \"5\" cannot succeed",
+      "pass": true,
+      "details": "Maximum 4 per order — enter 4 or fewer.\n\n"
+    },
+    {
+      "label": "320: first valid attempt fails recoverably",
+      "pass": true,
+      "details": "\nCould not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.\n"
+    },
+    {
+      "label": "320: quantity retained after failure",
+      "pass": true
+    },
+    {
+      "label": "320: total retained after failure",
+      "pass": true
+    },
+    {
+      "label": "320 failure: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1953,
+        "scrollY": 853,
+        "scrollX": 0,
+        "focus": {
+          "tag": "P",
+          "id": "panel-alert",
+          "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantit",
+          "top": 545.859375,
+          "bottom": 727.921875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 534.65625,
+            "bottom": 534.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.",
+            "top": 545.859375,
+            "bottom": 727.921875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "320 failure: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "320: retry succeeds with glaze, quantity and total",
+      "pass": true,
+      "details": "\n\nAdded to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment."
+    },
+    {
+      "label": "320 success: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1904,
+        "scrollY": 884,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 647.75,
+          "bottom": 700.140625,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 503.65625,
+            "bottom": 503.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Added to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment.",
+            "top": 714.53125,
+            "bottom": 850.96875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "320 success: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "320: editing clears stale success",
+      "pass": true,
+      "details": "\n\n"
+    },
+    {
+      "label": "320: edited total USD 48",
+      "pass": true
+    },
+    {
+      "label": "320 edited: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1753,
+        "scrollY": 853,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 435.359375,
+          "bottom": 479.75,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 534.65625,
+            "bottom": 534.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "320 keyboard-add: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1753,
+        "scrollY": 684,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 847.75,
+          "bottom": 900.140625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 703.65625,
+            "bottom": 703.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "320: Tab reaches simulated cart action",
+      "pass": true
+    },
+    {
+      "label": "No browser script errors",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "No external asset/network attempts",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "captures": [
+    {
+      "width": 1440,
+      "state": "initial",
+      "file": "1440-initial.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n\n  \n    Kiln Notes\n    Fictional demo\n  \n\n  \n    Pouring cup\n    A handleless pouring cup with a small spout.\n\n    \n   ",
+          "top": 0,
+          "bottom": 1101.46875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "state": "clamp",
+      "file": "1440-clamp.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 342.53125,
+          "bottom": 360.921875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Quantity reduced to 2 — Iron has 2 in stock.",
+            "top": 781.0625,
+            "bottom": 826.25,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "state": "fractional-invalid",
+      "file": "1440-fractional-invalid.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 491.953125,
+          "bottom": 536.34375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.",
+            "top": 570.1875,
+            "bottom": 614.84375,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "state": "failure",
+      "file": "1440-failure.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "P",
+          "id": "panel-alert",
+          "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantit",
+          "top": 581.390625,
+          "bottom": 695.015625,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.",
+            "top": 581.390625,
+            "bottom": 695.015625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "state": "success",
+      "file": "1440-success.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 714.28125,
+          "bottom": 766.671875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Added to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment.",
+            "top": 781.0625,
+            "bottom": 871.875,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "state": "edited",
+      "file": "1440-edited.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 491.953125,
+          "bottom": 536.34375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "state": "keyboard-add",
+      "file": "1440-keyboard-add.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 714.28125,
+          "bottom": 766.671875,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "initial",
+      "file": "390-initial.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1680,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n\n  \n    Kiln Notes\n    Fictional demo\n  \n\n  \n    Pouring cup\n    A handleless pouring cup with a small spout.\n\n    \n   ",
+          "top": 0,
+          "bottom": 1680.203125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1314.546875,
+            "bottom": 1314.546875,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "state": "clamp",
+      "file": "390-clamp.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1763,
+        "scrollY": 368,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 704.96875,
+          "bottom": 723.359375,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 946.546875,
+            "bottom": 946.546875,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Quantity reduced to 2 — Iron has 2 in stock.",
+            "top": 1157.421875,
+            "bottom": 1225.421875,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "fractional-invalid",
+      "file": "390-fractional-invalid.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1731,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 456.3125,
+          "bottom": 500.703125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.",
+            "top": 534.546875,
+            "bottom": 579.203125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "state": "failure",
+      "file": "390-failure.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1834,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "P",
+          "id": "panel-alert",
+          "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantit",
+          "top": 545.75,
+          "bottom": 682.1875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 534.546875,
+            "bottom": 534.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.",
+            "top": 545.75,
+            "bottom": 682.1875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "state": "success",
+      "file": "390-success.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1808,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 678.640625,
+          "bottom": 731.03125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 534.546875,
+            "bottom": 534.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Added to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment.",
+            "top": 745.421875,
+            "bottom": 859.046875,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "state": "edited",
+      "file": "390-edited.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1680,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 456.3125,
+          "bottom": 500.703125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 534.546875,
+            "bottom": 534.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "keyboard-add",
+      "file": "390-keyboard-add.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1680,
+        "scrollY": 632,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 826.640625,
+          "bottom": 879.03125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 682.546875,
+            "bottom": 682.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "initial",
+      "file": "320-initial.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1753,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n\n  \n    Kiln Notes\n    Fictional demo\n  \n\n  \n    Pouring cup\n    A handleless pouring cup with a small spout.\n\n    \n   ",
+          "top": 0,
+          "bottom": 1753.3125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1387.65625,
+            "bottom": 1387.65625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 320,
+      "state": "clamp",
+      "file": "320-clamp.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1836,
+        "scrollY": 420,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 718.9375,
+          "bottom": 737.328125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 967.65625,
+            "bottom": 967.65625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Quantity reduced to 2 — Iron has 2 in stock.",
+            "top": 1178.53125,
+            "bottom": 1246.53125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "fractional-invalid",
+      "file": "320-fractional-invalid.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1827,
+        "scrollY": 853,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 435.359375,
+          "bottom": 479.75,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.",
+            "top": 534.65625,
+            "bottom": 601.640625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 320,
+      "state": "failure",
+      "file": "320-failure.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1953,
+        "scrollY": 853,
+        "scrollX": 0,
+        "focus": {
+          "tag": "P",
+          "id": "panel-alert",
+          "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantit",
+          "top": 545.859375,
+          "bottom": 727.921875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 534.65625,
+            "bottom": 534.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.",
+            "top": 545.859375,
+            "bottom": 727.921875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 320,
+      "state": "success",
+      "file": "320-success.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1904,
+        "scrollY": 884,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 647.75,
+          "bottom": 700.140625,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 503.65625,
+            "bottom": 503.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Added to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment.",
+            "top": 714.53125,
+            "bottom": 850.96875,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 320,
+      "state": "edited",
+      "file": "320-edited.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1753,
+        "scrollY": 853,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 435.359375,
+          "bottom": 479.75,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 534.65625,
+            "bottom": 534.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "keyboard-add",
+      "file": "320-keyboard-add.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1753,
+        "scrollY": 684,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 847.75,
+          "bottom": 900.140625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 703.65625,
+            "bottom": 703.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "remote": [],
+  "keyboard": [
+    {
+      "width": 1440,
+      "step": 1,
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 342.53125,
+          "bottom": 360.921875,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "step": 2,
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 491.953125,
+          "bottom": 536.34375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "step": 3,
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 714.28125,
+          "bottom": 766.671875,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "step": 1,
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1680,
+        "scrollY": 632,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 440.96875,
+          "bottom": 459.359375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 682.546875,
+            "bottom": 682.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "step": 2,
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1680,
+        "scrollY": 632,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 604.3125,
+          "bottom": 648.703125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 682.546875,
+            "bottom": 682.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "step": 3,
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1680,
+        "scrollY": 632,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 826.640625,
+          "bottom": 879.03125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 682.546875,
+            "bottom": 682.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "step": 1,
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1753,
+        "scrollY": 632,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 440.328125,
+          "bottom": 458.71875,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 755.65625,
+            "bottom": 755.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "step": 2,
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1753,
+        "scrollY": 632,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 656.359375,
+          "bottom": 700.75,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 755.65625,
+            "bottom": 755.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "step": 3,
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1753,
+        "scrollY": 684,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 847.75,
+          "bottom": 900.140625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 703.65625,
+            "bottom": 703.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Automated task/axe/geometry observations; no human testing or conformance claim.",
+  "chromium": "156.0.8078.4",
+  "finishedAt": "2026-11-03T07:12:08.579Z",
+  "durationMs": 27482.184579,
+  "passed": 116,
+  "failed": 0
+}

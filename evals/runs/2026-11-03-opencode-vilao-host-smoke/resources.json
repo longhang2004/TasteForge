@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0",
+  "models": [
+    {
+      "model": "vilao/chib/deepseek-v4.1-flash",
+      "host": "native OpenCode 2.2.5",
+      "generation": {
+        "startedAt": "2026-11-03T06:38:53.415055+00:00",
+        "durationSeconds": 1005.654,
+        "exitCode": 0,
+        "steps": 43,
+        "toolCalls": {
+          "skill": 1,
+          "read": 16,
+          "glob": 1,
+          "write": 2,
+          "edit": 23,
+          "grep": 2
+        },
+        "reportedPerStepTokenSums": {
+          "input": 69616,
+          "output": 18951,
+          "reasoning": 90610,
+          "cacheRead": 3026944,
+          "cacheWrite": 0
+        },
+        "stepsMissingUsage": [],
+        "reportedCostSum": 0,
+        "verifiedBillingCost": "unknown",
+        "providerUsageNormalization": "unknown"
+      },
+      "initialBrowserAcceptance": {
+        "durationSeconds": 32.540970034,
+        "passed": 116,
+        "failed": 0,
+        "finishedAt": "2026-11-03T06:57:49.965Z"
+      },
+      "finalBrowserAcceptance": {
+        "durationSeconds": 32.540970034,
+        "passed": 116,
+        "failed": 0,
+        "finishedAt": "2026-11-03T06:57:49.965Z"
+      },
+      "initialFollowUp": {
+        "passed": 39,
+        "failed": 0,
+        "durationSeconds": 8.502911226,
+        "finishedAt": "2026-11-03T07:17:14.325Z"
+      },
+      "finalFollowUp": {
+        "passed": 39,
+        "failed": 0,
+        "durationSeconds": 8.502911226,
+        "finishedAt": "2026-11-03T07:17:14.325Z"
+      },
+      "finalInvalidSwitch": {
+        "passed": 12,
+        "failed": 0,
+        "durationSeconds": 15.262187291,
+        "finishedAt": "2026-11-03T07:25:07.443Z"
+      },
+      "correction": "No parent-requested correction",
+      "independentAiReviewTokensAndCost": "unknown",
+      "humanAcceptance": "deferred"
+    },
+    {
+      "model": "vilao/mn/glm-5.3-flash",
+      "host": "native OpenCode 2.2.5",
+      "generation": {
+        "startedAt": "2026-11-03T06:56:57.642967+00:00",
+        "durationSeconds": 747.099,
+        "exitCode": 0,
+        "steps": 8,
+        "toolCalls": {
+          "skill": 1,
+          "read": 9,
+          "write": 2
+        },
+        "reportedPerStepTokenSums": {
+          "input": 93749,
+          "output": 7451,
+          "reasoning": 21063,
+          "cacheRead": 50944,
+          "cacheWrite": 0
+        },
+        "stepsMissingUsage": [],
+        "reportedCostSum": 0,
+        "verifiedBillingCost": "unknown",
+        "providerUsageNormalization": "unknown"
+      },
+      "initialBrowserAcceptance": {
+        "durationSeconds": 27.482184579000002,
+        "passed": 116,
+        "failed": 0,
+        "finishedAt": "2026-11-03T07:12:08.579Z"
+      },
+      "finalBrowserAcceptance": {
+        "durationSeconds": 28.620139417999997,
+        "passed": 116,
+        "failed": 0,
+        "finishedAt": "2026-11-03T07:27:26.049Z"
+      },
+      "initialFollowUp": {
+        "passed": 30,
+        "failed": 9,
+        "durationSeconds": 7.015239249,
+        "finishedAt": "2026-11-03T07:17:25.047Z"
+      },
+      "finalFollowUp": {
+        "passed": 39,
+        "failed": 0,
+        "durationSeconds": 7.249185734999999,
+        "finishedAt": "2026-11-03T07:27:37.079Z"
+      },
+      "finalInvalidSwitch": {
+        "passed": 12,
+        "failed": 0,
+        "durationSeconds": 13.51530269,
+        "finishedAt": "2026-11-03T07:27:54.233Z"
+      },
+      "correction": {
+        "model": "vilao/mn/glm-5.3-flash",
+        "startedAtUnix": 1793690363.3558128,
+        "durationSeconds": 357.468,
+        "exitCode": 0,
+        "fallback": "none",
+        "reportedPerStepTokenSums": {
+          "input": 116575,
+          "output": 3006,
+          "reasoning": 10726,
+          "cacheRead": 100672,
+          "cacheWrite": 0
+        },
+        "reportedCostSum": 0,
+        "verifiedBillingCost": "unknown"
+      },
+      "independentAiReviewTokensAndCost": "unknown",
+      "humanAcceptance": "deferred"
+    }
+  ],
+  "observedUiGenerationToLastAutomatedCheckSpanSeconds": 2940.817945,
+  "spanScope": "Calendar span includes sequential creation, overlapping parent checks, inspection/setup/wait time; excludes initial availability probes, later bookkeeping/CI and human acceptance.",
+  "parentModelUsage": "unknown",
+  "fullEndToEndResourceCost": "unknown",
+  "verifiedBillingCost": "unknown",
+  "interpretation": "Per-step usage is summed in its original separate categories. Cache replay is not unique prompt size; do not add categories into an assumed billed-token total. Reported zero cost is not independently verified billing. One reused case, provider defaults and sequential gateway calls do not establish normalized model/skill efficiency or savings."
+}

@@ -1,0 +1,19 @@
+{
+  "model": "vilao/mn/glm-5.3-flash",
+  "host": "native OpenCode 2.2.5",
+  "startedAtUnix": 1793689017.6429665,
+  "durationSeconds": 747.099,
+  "exitCode": 0,
+  "fallback": "none",
+  "command": [
+    "run",
+    "--standalone",
+    "--model",
+    "vilao/mn/glm-5.3-flash",
+    "--format",
+    "json",
+    "--title",
+    "TasteForge Kiln Notes UI glm",
+    "Read PROMPT.md and implement its task. Explicitly load the installed tasteforge skill via the native skill tool first."
+  ]
+}

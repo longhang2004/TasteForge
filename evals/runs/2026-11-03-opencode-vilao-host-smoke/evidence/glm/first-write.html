@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Pouring cup · Kiln Notes — simulated checkout</title>
+<style>
+  :root{
+    --paper:#eee6d7;
+    --panel:#f7f1e6;
+    --plate:#f9f4e9;
+    --ink:#493c33;
+    --ink-soft:#665345;
+    --line:#d9ccb6;
+    --sand:#c7a77b;
+    --iron:#61574e;
+    --ash:#a5aaa2;
+    --error:#7a2e1a;
+    --error-bg:#f2ddd1;
+    --ok:#2e5b3f;
+    --ok-bg:#e2ead9;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --serif:Georgia,"Times New Roman",Times,serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.55;
+  }
+  .page{
+    max-width:72rem;
+    margin-inline:auto;
+    padding:clamp(1rem,3vw,2.5rem);
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:.75rem;
+    margin-bottom:1.5rem;
+  }
+  .brand{
+    margin:0;
+    font-family:var(--serif);
+    font-size:1.05rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .demo-tag{
+    margin:0;
+    font-size:.72rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:.15rem .6rem;
+  }
+
+  /* ---------- title ---------- */
+  h1{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:clamp(1.7rem,4vw,2.4rem);
+    line-height:1.15;
+    margin:0 0 .35rem;
+  }
+  .lede{
+    margin:0 0 1.75rem;
+    color:var(--ink-soft);
+    max-width:38rem;
+  }
+
+  /* ---------- object sheet grid ---------- */
+  .sheet{
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:clamp(1.5rem,3vw,2.75rem);
+    align-items:start;
+  }
+  @media (min-width:56em){
+    .sheet{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}
+  }
+
+  /* ---------- schematic plate ---------- */
+  .plate{
+    margin:0 0 1.75rem;
+    background:var(--plate);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:.75rem;
+  }
+  .plate img{
+    display:block;
+    width:100%;
+    max-width:30rem;
+    height:auto;
+    margin-inline:auto;
+    border-radius:6px;
+  }
+  .plate figcaption{
+    margin-top:.6rem;
+    font-size:.85rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- specs + terms ---------- */
+  .specs h2,.terms h2{
+    font-size:.8rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin:0 0 .5rem;
+  }
+  .specs dl{margin:0 0 1.75rem}
+  .specs dl div{
+    display:flex;
+    justify-content:space-between;
+    gap:1rem;
+    padding:.45rem 0;
+  }
+  .specs dl div + div{border-top:1px solid var(--line)}
+  .specs dt{color:var(--ink-soft)}
+  .specs dd{
+    margin:0;
+    text-align:right;
+    flex:1 1 auto;
+    font-variant-numeric:tabular-nums;
+  }
+  .terms ul{margin:0;padding:0;list-style:none}
+  .terms li{
+    padding:.45rem 0;
+    font-size:.95rem;
+  }
+  .terms li + li{border-top:1px solid var(--line)}
+
+  /* ---------- decision panel ---------- */
+  .panel{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:clamp(1rem,2.5vw,1.5rem);
+  }
+  .panel h2{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:1.3rem;
+    margin:0;
+  }
+  .price-line{
+    margin:.15rem 0 1.1rem;
+    color:var(--ink-soft);
+    font-variant-numeric:tabular-nums;
+  }
+  .price-line strong{color:var(--ink);font-weight:650}
+
+  fieldset.glazes{
+    border:0;
+    margin:0 0 1.1rem;
+    padding:0;
+  }
+  fieldset.glazes legend{
+    padding:0;
+    font-size:.8rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:.5rem;
+  }
+  .glaze-options{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));
+    gap:.5rem;
+  }
+  .glaze{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:.6rem .7rem;
+    cursor:pointer;
+    min-height:44px;
+    background:var(--panel);
+  }
+  .glaze input[type="radio"]{
+    width:1.15rem;
+    height:1.15rem;
+    margin:0;
+    flex:none;
+    accent-color:var(--ink);
+    cursor:pointer;
+  }
+  .glaze input[type="radio"]:focus-visible{
+    outline:3px solid var(--ink);
+    outline-offset:2px;
+  }
+  .swatch{
+    width:1.5rem;
+    height:1.5rem;
+    flex:none;
+    border-radius:50%;
+    background-color:var(--swatch,var(--sand));
+    border:1px solid rgba(73,60,51,.45);
+  }
+  .g-info{display:flex;flex-direction:column;line-height:1.3}
+  .g-name{font-weight:600}
+  .g-stock{font-size:.8rem;color:var(--ink-soft)}
+  .glaze.selected{
+    border:2px solid var(--ink);
+    background:#f2e9d8;
+    padding:calc(.6rem - 1px) calc(.7rem - 1px);
+  }
+  .glaze.soldout{border-style:dashed;cursor:not-allowed}
+  .glaze.soldout .swatch{opacity:.55}
+  .glaze.soldout .g-name{text-decoration:line-through}
+  .g-soldout-chip{
+    display:inline-block;
+    align-self:flex-start;
+    font-size:.68rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    border:1px solid var(--ink-soft);
+    border-radius:999px;
+    padding:.05rem .45rem;
+  }
+
+  /* ---------- quantity ---------- */
+  .qty-field{margin:0 0 1.1rem}
+  .qty-field label{
+    display:block;
+    font-size:.8rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:.35rem;
+  }
+  .qty-field input[type="number"]{
+    width:min(7rem,100%);
+    padding:.55rem .6rem;
+    font:inherit;
+    color:var(--ink);
+    background:#fdfaf3;
+    border:1px solid var(--ink-soft);
+    border-radius:8px;
+  }
+  .qty-field input[type="number"]:focus-visible{
+    outline:3px solid var(--ink);
+    outline-offset:2px;
+  }
+  .qty-field input[aria-invalid="true"]{border-color:var(--error)}
+  .hint{
+    margin:.4rem 0 0;
+    font-size:.85rem;
+    color:var(--ink-soft);
+  }
+  .field-error{
+    margin:.4rem 0 0;
+    font-size:.9rem;
+    font-weight:600;
+    color:var(--error);
+  }
+
+  /* ---------- feedback regions ---------- */
+  .feedback{border-radius:8px;padding:.7rem .9rem;font-size:.92rem}
+  .feedback:empty{display:none}
+  .feedback-error{
+    background:var(--error-bg);
+    border-left:3px solid var(--error);
+    color:var(--error);
+    margin:0 0 1.1rem;
+  }
+  .feedback-ok{
+    background:var(--ok-bg);
+    border-left:3px solid var(--ok);
+    color:var(--ok);
+    margin:.9rem 0 0;
+  }
+  #panel-alert:focus-visible{outline:3px solid var(--error);outline-offset:2px}
+
+  /* ---------- cost + action ---------- */
+  .cost-action{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:stretch;
+    gap:1rem;
+  }
+  .cost{margin:0;flex:1 1 13rem;font-variant-numeric:tabular-nums}
+  .cost div{display:flex;justify-content:space-between;gap:1rem;padding:.3rem 0}
+  .cost dt{color:var(--ink-soft)}
+  .cost dd{margin:0;text-align:right}
+  .cost .grand{border-top:2px solid var(--ink);margin-top:.3rem;padding-top:.5rem}
+  .cost .grand dt{color:var(--ink);font-weight:650}
+  .cost .grand dd{font-weight:700;font-size:1.15rem}
+  .add{
+    flex:1 1 100%;
+    align-self:end;
+    min-height:48px;
+    padding:.8rem 1.2rem;
+    font:inherit;
+    font-weight:650;
+    color:var(--panel);
+    background:var(--ink);
+    border:1px solid var(--ink);
+    border-radius:10px;
+    cursor:pointer;
+  }
+  .add:hover{background:#3d3229}
+  .add:focus-visible{
+    outline:3px solid var(--ink);
+    outline-offset:3px;
+  }
+  @media (min-width:30em){
+    .add{flex:0 1 auto;min-width:14rem}
+  }
+  .sim-note{
+    margin:.9rem 0 0;
+    font-size:.85rem;
+    color:var(--ink-soft);
+  }
+
+  .colophon{
+    margin:2.5rem 0 0;
+    font-size:.8rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- motion (guarded) ---------- */
+  @media (prefers-reduced-motion: no-preference){
+    .glaze,.add,.feedback{transition:background-color .15s ease,border-color .15s ease}
+    .add:active{transform:translateY(1px)}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <p class="brand">Kiln Notes</p>
+    <p class="demo-tag">Fictional demo</p>
+  </header>
+
+  <main>
+    <h1>Pouring cup</h1>
+    <p class="lede">A handleless pouring cup with a small spout.</p>
+
+    <div class="sheet">
+      <div class="media-specs">
+        <figure class="plate">
+          <img
+            src="assets/pouring-cup.svg"
+            width="600" height="420"
+            alt="Schematic drawing of the handleless pouring cup with a small spout, marked 9 cm wide.">
+          <figcaption>Original schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.</figcaption>
+        </figure>
+
+        <section class="specs" aria-labelledby="specs-h">
+          <h2 id="specs-h">Specifications</h2>
+          <dl>
+            <div><dt>Capacity</dt><dd>280 ml</dd></div>
+            <div><dt>Dimensions</dt><dd>9 cm wide × 8 cm tall</dd></div>
+            <div><dt>Material</dt><dd>Stoneware</dd></div>
+            <div><dt>Care</dt><dd>Hand-wash; do not use on a stovetop.</dd></div>
+          </dl>
+        </section>
+
+        <section class="terms" aria-labelledby="terms-h">
+          <h2 id="terms-h">Shipping &amp; returns</h2>
+          <ul>
+            <li>Flat USD 6 shipping in this fictional checkout; no delivery date is promised.</li>
+            <li>Unused items may be returned within 14 days; buyer pays return postage.</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="panel" aria-labelledby="decide-h">
+        <h2 id="decide-h">Build your order</h2>
+        <p class="price-line"><strong>USD 42.00</strong> each</p>
+
+        <form id="order" novalidate>
+          <fieldset class="glazes">
+            <legend>Glaze</legend>
+            <div class="glaze-options">
+              <label class="glaze selected" data-glaze="Sand">
+                <input type="radio" name="glaze" value="Sand" checked>
+                <span class="swatch" aria-hidden="true" style="--swatch:#c7a77b"></span>
+                <span class="g-info">
+                  <span class="g-name">Sand</span>
+                  <span class="g-stock">4 in stock</span>
+                </span>
+              </label>
+              <label class="glaze" data-glaze="Iron">
+                <input type="radio" name="glaze" value="Iron">
+                <span class="swatch" aria-hidden="true" style="--swatch:#61574e"></span>
+                <span class="g-info">
+                  <span class="g-name">Iron</span>
+                  <span class="g-stock">2 in stock</span>
+                </span>
+              </label>
+              <label class="glaze soldout" data-glaze="Ash">
+                <input type="radio" name="glaze" value="Ash" disabled>
+                <span class="swatch" aria-hidden="true" style="--swatch:#a5aaa2"></span>
+                <span class="g-info">
+                  <span class="g-name">Ash</span>
+                  <span class="g-stock"><span class="g-soldout-chip">Sold out</span></span>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="qty-field">
+            <label for="qty">Quantity</label>
+            <input id="qty" name="quantity" type="number" value="1"
+                   min="1" max="4" step="1" inputmode="numeric" required
+                   aria-describedby="qty-hint qty-error">
+            <p id="qty-hint" class="hint">Whole cups only. <span id="qty-stock-note">Up to 4 available for Sand.</span></p>
+            <p id="qty-error" class="field-error" role="alert"></p>
+          </div>
+
+          <p id="panel-alert" class="feedback feedback-error" role="alert" tabindex="-1"></p>
+
+          <div class="cost-action">
+            <dl class="cost">
+              <div><dt>Item subtotal</dt><dd id="cost-sub">$42.00</dd></div>
+              <div><dt>Shipping (flat)</dt><dd id="cost-ship">$6.00</dd></div>
+              <div class="grand"><dt>Total</dt><dd id="cost-total">$48.00</dd></div>
+            </dl>
+            <button type="submit" class="add">Add to simulated cart</button>
+          </div>
+
+          <p id="panel-status" class="feedback feedback-ok" role="status"></p>
+          <p class="sim-note">Simulated cart — no real order is placed and no payment is taken.</p>
+        </form>
+      </section>
+    </div>
+
+    <p class="colophon">Kiln Notes is a fictional brand; this page is a UI demo with no real store behind it.</p>
+  </main>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var PRICE = 42, SHIP = 6, QMIN = 1, QMAX = 4;
+  var GLAZES = { Sand:{stock:4}, Iron:{stock:2}, Ash:{stock:0} };
+
+  var form        = document.getElementById("order");
+  var qty         = document.getElementById("qty");
+  var stockNote   = document.getElementById("qty-stock-note");
+  var qtyError    = document.getElementById("qty-error");
+  var panelAlert  = document.getElementById("panel-alert");
+  var panelStatus = document.getElementById("panel-status");
+  var costSub     = document.getElementById("cost-sub");
+  var costShip    = document.getElementById("cost-ship");
+  var costTotal   = document.getElementById("cost-total");
+  var radios      = Array.prototype.slice.call(document.querySelectorAll('input[name="glaze"]'));
+  var labels      = Array.prototype.slice.call(document.querySelectorAll(".glaze"));
+
+  var currentGlaze  = "Sand";
+  var lastValidQty  = 1;
+  var hasFailedOnce = false; // the first valid attempt fails recoverably, once
+
+  function fmt(n){ return "$" + n.toFixed(2); }
+  function cap(){ return Math.min(QMAX, GLAZES[currentGlaze].stock); }
+
+  function renderTotals(q){
+    costSub.textContent   = fmt(PRICE * q);
+    costShip.textContent  = fmt(SHIP);
+    costTotal.textContent = fmt(PRICE * q + SHIP);
+  }
+
+  function clearQtyError(){
+    qtyError.textContent = "";
+    qty.removeAttribute("aria-invalid");
+  }
+  function clearPanelAlert(){ panelAlert.textContent = ""; }
+  function clearSuccess(){ panelStatus.textContent = ""; }
+
+  function updateGlazeUi(){
+    labels.forEach(function(l){
+      l.classList.toggle("selected", l.getAttribute("data-glaze") === currentGlaze);
+    });
+    qty.max = String(cap());
+    stockNote.textContent = "Up to " + cap() + " available for " + currentGlaze + ".";
+  }
+
+  /* ---- quantity validation: empty / small / fractional / excessive ---- */
+  function readQty(){
+    var raw = qty.value.trim();
+    if (raw === "") {
+      return { ok:false, msg:"Enter a quantity — whole cups from 1 up to " + cap() + "." };
+    }
+    var n = Number(raw);
+    if (!Number.isFinite(n)) {
+      return { ok:false, msg:"Enter a quantity as digits only." };
+    }
+    if (!Number.isInteger(n)) {
+      return { ok:false, msg:"Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4." };
+    }
+    if (n < QMIN) {
+      return { ok:false, msg:"Quantity must be at least 1 — enter 1 or more." };
+    }
+    var c = cap();
+    if (n > c) {
+      if (c < QMAX) {
+        return { ok:false, msg:"Only " + c + " " + currentGlaze + " cups in stock — enter " + c + " or fewer." };
+      }
+      return { ok:false, msg:"Maximum " + QMAX + " per order — enter 4 or fewer." };
+    }
+    return { ok:true, value:n };
+  }
+
+  /* ---- glaze switch: clamp quantity to stock and announce ---- */
+  radios.forEach(function(r){
+    r.addEventListener("change", function(e){
+      if (!e.target.checked) return;
+      currentGlaze = e.target.value;
+      clearSuccess();
+      clearPanelAlert();
+      clearQtyError();
+      updateGlazeUi();
+      var c = cap();
+      if (lastValidQty > c) {
+        lastValidQty = c;
+        qty.value = String(c);
+        renderTotals(c);
+        panelStatus.textContent =
+          "Quantity reduced to " + c + " — " + currentGlaze + " has " + c + " in stock.";
+      }
+    });
+  });
+
+  /* ---- editing choices clears stale feedback; totals follow valid input ---- */
+  qty.addEventListener("input", function(){
+    clearQtyError();
+    clearPanelAlert();
+    clearSuccess();
+    var r = readQty();
+    if (r.ok) {
+      lastValidQty = r.value;
+      renderTotals(r.value);
+    }
+  });
+
+  /* ---- simulated add: first valid attempt fails, retry succeeds ---- */
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    clearQtyError();
+    clearPanelAlert();
+    var r = readQty();
+    if (!r.ok) {
+      qtyError.textContent = r.msg;
+      qty.setAttribute("aria-invalid", "true");
+      qty.focus();
+      return;
+    }
+    if (!hasFailedOnce) {
+      hasFailedOnce = true;
+      panelAlert.textContent =
+        "Could not add to the simulated cart — the simulated checkout did not respond. " +
+        "Your choices are kept (glaze " + currentGlaze + ", quantity " + r.value + "). " +
+        "Press \u201CAdd to simulated cart\u201D again to retry.";
+      panelAlert.focus();
+      return;
+    }
+    var q = r.value;
+    panelStatus.textContent =
+      "Added to simulated cart: " + q + " \u00D7 " + currentGlaze + " pouring cup" +
+      (q === 1 ? "" : "s") + " — total " + fmt(PRICE * q + SHIP) +
+      " (" + fmt(PRICE * q) + " + " + fmt(SHIP) + " shipping). " +
+      "No real order or payment.";
+  });
+
+  updateGlazeUi();
+  renderTotals(lastValidQty);
+})();
+</script>
+</body>
+</html>

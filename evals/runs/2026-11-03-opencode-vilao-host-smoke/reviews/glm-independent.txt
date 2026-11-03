@@ -1,0 +1,22 @@
+Independent agent observation, before reading the parent automated GLM report.
+Reviewer knew the model label; this was not a blind or human review.
+
+Supplied facts, disabled Ash, semantic native controls, visible focus and normal
+failure→retry/success look coherent in source/captures.
+
+One concrete source-level clamp gap deserves a bounded reproduction: defaults
+Sand/1 → enter 5 (invalid, so lastValidQty stays 1) → choose Iron. Handler at
+outputs/glm/initial/index.html:529–536 compares lastValidQty (1) to cap (2), so it
+leaves visible qty=5 and total=$48, clears errors and announces no clamp. Prompt's
+lower-stock switch clamp is about the shown quantity; ordinary valid 3→Iron is
+covered but this branch is missed. I have not executed this extra trace.
+
+Other advisory limits: 320 failure natural capture focuses alert with retry button
+largely below 900px viewport; additional ordinary scroll/Tab is required, not
+unreachable. First price/control also follows all image/spec/terms on narrow,
+unlike wide's compact panel.
+
+Product specificity moderate: actual schematic colors + honest dimensioned
+plate/specs; rounded card/serif/warm paper remains familiar craft-commerce styling.
+
+No model winner, human usability or causal skill-effect conclusion.

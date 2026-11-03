@@ -4,6 +4,8 @@ The ten prompts in `prompts.json` cover two cases each in fintech, education, e-
 
 ## Recorded exploratory runs
 
+- [3 November 2026 native OpenCode / Vilao host smoke](runs/2026-11-03-opencode-vilao-host-smoke/README.md): two configured models, exact beta.2 ZIP discovery/invocation, two maintained commerce UIs, independent task/product-specificity observations and browser/keyboard acceptance. Preserves a GLM quantity-state defect, one same-session correction, parent diagnostic corrections and separate resource categories. No held-out/unassisted condition, model winner or human-usability claim.
+
 - [3 November 2026 beta.2 hardening/native host smoke](runs/2026-11-03-beta2-hardening/README.md): one actual native Windows Codex repo-skill ZIP invocation, a bounded maintenance correction of a supplied fixture, separate browser regression checks and release-helper review. Preserves the original invalid-total finding and raw startup error; not a fresh paired efficacy trial or all-host certification.
 
 - [2 November 2026 four-skill landing-page comparison](runs/2026-11-02-four-skill-landing-comparison/README.md): two matched briefs × TasteForge, UI/UX Pro Max, Elaya and Impeccable, with eight runnable UIs, natural task/recovery captures, pinned resources and two independently frozen anonymous AI reviews. Separate visual craft, product specificity, task/access and observed resource coverage; controlled offline single-creator lane, not full native workflow efficacy or a universal ranking.

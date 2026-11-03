@@ -1,0 +1,1 @@
+This is an isolated TasteForge host trial. Work only in this project. Use the installed tasteforge skill. Do not execute commands, access external files or services, change settings, install dependencies, commit, push or switch models. Create index.html and creator-notes.md only. Parent performs browser validation.

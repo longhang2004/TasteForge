@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Record native OpenCode 2/Vilao standalone skill discovery and two runnable UI host trials, with separate task/product-specificity observations, retained failures/correction and explicit resource limits.
+
 ## 0.2.0-beta.2
 
 - Make skill effort proportional with Fast/Standard/Explore routing, shorter shared instructions, compact persistent context and on-demand references. Keep critical task/access/content gates and explicit stopping/escalation.

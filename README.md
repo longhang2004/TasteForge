@@ -109,7 +109,7 @@ Optional [effect/composition guidance](skills/tasteforge/references/effects-and-
 
 For substantial undecided layouts, [the revision workflow](skills/tasteforge/workflows/structure-and-revise.md) compares runnable task slices, then records actual render findings and rechecked edits. The [inventory worked composition](examples/inventory-workbench/README.md) demonstrates this with a compact desktop table and retained mobile detail/review/recovery. It is agent-authored; human design approval and representative-user testing remain pending.
 
-Automated verification covers skill resources and the CLI integration workflow. A beta.2 smoke also completed one native Windows Codex explicit repo-skill invocation using the standalone ZIP; [host evidence and limits](docs/host-integration.md) record its exact scope. Broad integration across Codex, Claude Code, Cursor or other agent applications is not certified.
+Automated verification covers skill resources and the CLI integration workflow. A beta.2 smoke completed one native Windows Codex explicit repo-skill invocation; a later native OpenCode 2/Vilao smoke loaded the same standalone ZIP and produced two checked UI slices. [Host evidence and limits](docs/host-integration.md) record the exact scopes and remaining coverage. Broad integration across agent applications is not certified.
 
 ## Frequently asked questions
 
@@ -123,7 +123,7 @@ Use the [source quickstart](#quickstart-from-source) for the CLI. For the 0.2 be
 
 ### Can I use TasteForge with Codex, Claude Code, or Cursor?
 
-TasteForge provides a portable `SKILL.md` with references and workflows. Use a host's supported skill mechanism or explicitly supply the instructions. One native Windows Codex repo-scope ZIP invocation was observed; other hosts remain unassessed for this beta. See [host integration evidence](docs/host-integration.md) for installation scope, repeat steps and limits.
+TasteForge provides a portable `SKILL.md` with references and workflows. Use a host's supported skill mechanism or explicitly supply the instructions. Native Windows Codex and OpenCode 2/Vilao explicit repo-scope ZIP invocations were observed; implicit triggering and broader host coverage remain unassessed. See [host integration evidence](docs/host-integration.md) for installation scope, repeat steps and limits.
 
 ### Will TasteForge preserve my existing design system?
 

@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Pouring cup — Kiln Notes</title>
+  <meta name="description" content="A runnable, fictional product decision for the Kiln Notes pouring cup.">
+  <style>
+    :root {
+      --paper: #f2ebdf;
+      --surface: #fffcf6;
+      --surface-warm: #f8efe0;
+      --ink: #2a231c;
+      --ink-soft: #5a4d40;
+      --rule: #c8b99f;
+      --rule-strong: #7f6b52;
+      --accent: #6a3a1b;
+      --accent-hover: #552c12;
+      --focus: #0f5b85;
+      --error-ink: #842615;
+      --error-bg: #fbede9;
+      --error-rule: #a23c27;
+      --success-ink: #1e5637;
+      --success-bg: #edf5ee;
+      --success-rule: #3f7354;
+      --font-display: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+      --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      --radius: 5px;
+      --shadow-plate: 0 1px 0 rgba(90, 71, 49, 0.16);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      color-scheme: light;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--paper);
+      background-image:
+        linear-gradient(90deg, rgba(127, 107, 82, 0.045) 1px, transparent 1px),
+        linear-gradient(rgba(127, 107, 82, 0.035) 1px, transparent 1px);
+      background-size: 96px 100%, 100% 96px;
+      color: var(--ink);
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      line-height: 1.55;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: clamp(18px, 3.5vw, 44px) clamp(16px, 4vw, 40px) 40px;
+    }
+
+    .masthead {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule-strong);
+    }
+
+    .brand {
+      margin: 0;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+    }
+
+    .fiction {
+      margin: 0;
+      padding: 2px 8px;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      background: rgba(255, 252, 246, 0.55);
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+    }
+
+    .intro {
+      padding: clamp(22px, 4vw, 42px) 0 clamp(20px, 3vw, 30px);
+    }
+
+    .eyebrow {
+      margin: 0 0 4px;
+      color: var(--ink-soft);
+      font-family: var(--font-mono);
+      font-size: 0.73rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 7.6vw, 4.2rem);
+      font-weight: 500;
+      letter-spacing: -0.025em;
+      line-height: 0.98;
+      text-wrap: balance;
+    }
+
+    .lede {
+      max-width: 48ch;
+      margin: 14px 0 0;
+      color: var(--ink-soft);
+      font-size: 1.03rem;
+      text-wrap: pretty;
+    }
+
+    .price-line {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 4px 10px;
+      margin: 14px 0 0;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .price-note {
+      color: var(--ink-soft);
+      font-size: 0.86rem;
+    }
+
+    .shop-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 26px;
+      align-items: start;
+    }
+
+    .media,
+    .decision,
+    .record,
+    .terms {
+      min-width: 0;
+    }
+
+    .media {
+      margin: 0;
+    }
+
+    .plate {
+      border: 1px solid var(--rule-strong);
+      border-radius: 2px;
+      background: #fffaf0;
+      padding: clamp(8px, 1.8vw, 16px);
+      box-shadow: var(--shadow-plate);
+    }
+
+    .plate img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #d8c8b2;
+      background: #eee6d7;
+    }
+
+    figcaption {
+      max-width: 62ch;
+      margin-top: 11px;
+      color: var(--ink-soft);
+      font-size: 0.83rem;
+      line-height: 1.5;
+    }
+
+    .caption-kicker {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--ink);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .record {
+      margin-top: clamp(22px, 4vw, 34px);
+    }
+
+    .record h2,
+    .terms h2 {
+      margin: 0 0 10px;
+      font-family: var(--font-mono);
+      font-size: 0.73rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .spec-list {
+      display: grid;
+      grid-template-columns: minmax(5.5rem, 7rem) minmax(0, 1fr);
+      column-gap: 16px;
+      margin: 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .spec-list dt,
+    .spec-list dd {
+      margin: 0;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .spec-list dt {
+      color: var(--ink-soft);
+      font-size: 0.85rem;
+    }
+
+    .spec-list dd {
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .decision {
+      border: 1px solid var(--rule-strong);
+      border-top: 4px solid var(--ink);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: clamp(16px, 3vw, 24px);
+      box-shadow: 0 3px 0 rgba(90, 71, 49, 0.08);
+    }
+
+    .decision h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(1.45rem, 4vw, 1.75rem);
+      font-weight: 500;
+      letter-spacing: -0.015em;
+      line-height: 1.1;
+    }
+
+    .rail-intro {
+      margin: 5px 0 0;
+      color: var(--ink-soft);
+      font-size: 0.86rem;
+    }
+
+    fieldset {
+      min-inline-size: 0;
+      margin: 20px 0 0;
+      padding: 0;
+      border: 0;
+    }
+
+    legend,
+    .field-label {
+      display: block;
+      margin: 0 0 7px;
+      padding: 0;
+      color: var(--ink);
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .glaze-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .glaze-row {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 9px 11px;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      background: #fffdf8;
+      transition: background-color 120ms ease, border-color 120ms ease;
+    }
+
+    .glaze-row:hover {
+      border-color: var(--rule-strong);
+      background: #fbf4e7;
+    }
+
+    .glaze-row input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: 0;
+      opacity: 0;
+    }
+
+    .glaze-row:has(input:checked) {
+      border-color: var(--ink);
+      background: var(--surface-warm);
+      box-shadow: inset 0 0 0 1px var(--ink);
+    }
+
+    .glaze-row:has(input:focus-visible) {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .glaze-row.is-soldout {
+      border-style: dashed;
+      background: #f0ebe2;
+      color: #5a4d40;
+    }
+
+    .glaze-row.is-soldout:hover {
+      border-color: var(--rule);
+      background: #f0ebe2;
+    }
+
+    .glaze-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      padding: 0 11px;
+      cursor: pointer;
+    }
+
+    .glaze-row.is-soldout .glaze-label {
+      cursor: not-allowed;
+    }
+
+    .swatch {
+      flex: 0 0 auto;
+      width: 22px;
+      height: 22px;
+      border: 1px solid rgba(42, 35, 28, 0.55);
+      border-radius: 50%;
+      background: var(--chip);
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.28);
+    }
+
+    .glaze-name {
+      font-weight: 650;
+      letter-spacing: 0.005em;
+      overflow-wrap: anywhere;
+    }
+
+    .stock {
+      margin-left: auto;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .stock--out {
+      padding: 2px 6px;
+      border: 1px solid #8d8172;
+      border-radius: 2px;
+      color: #4d4338;
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .tick {
+      flex: 0 0 18px;
+      visibility: hidden;
+      color: var(--ink);
+      font-size: 0.98rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .glaze-row:has(input:checked) .tick {
+      visibility: visible;
+    }
+
+    .micro {
+      margin: 7px 0 0;
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+      line-height: 1.45;
+    }
+
+    .field {
+      margin-top: 20px;
+    }
+
+    .field-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 2px 10px;
+    }
+
+    .field-head .field-label {
+      margin-bottom: 0;
+    }
+
+    .stock-line {
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .stepper {
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr) 44px;
+      gap: 8px;
+      margin-top: 7px;
+    }
+
+    .step {
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: 1px solid var(--rule-strong);
+      border-radius: 4px;
+      background: var(--surface);
+      color: var(--ink);
+      font-family: var(--font-ui);
+      font-size: 1.25rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .step:hover:not(:disabled):not([aria-disabled="true"]) {
+      background: var(--surface-warm);
+    }
+
+    .step:disabled,
+    .step[aria-disabled="true"] {
+      border-color: var(--rule);
+      background: #f1ece3;
+      color: #6b5d4c;
+      cursor: not-allowed;
+    }
+
+    #quantity {
+      width: 100%;
+      height: 44px;
+      min-width: 0;
+      padding: 4px 8px;
+      border: 1px solid var(--rule-strong);
+      border-radius: 4px;
+      background: #fffdf8;
+      color: var(--ink);
+      font-family: var(--font-ui);
+      font-size: 1.08rem;
+      font-variant-numeric: tabular-nums;
+      text-align: center;
+    }
+
+    #quantity[aria-invalid="true"] {
+      border-color: var(--error-rule);
+      box-shadow: inset 0 0 0 1px var(--error-rule);
+      background: #fff8f5;
+    }
+
+    .help {
+      margin: 6px 0 0;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      line-height: 1.45;
+    }
+
+    .msg {
+      margin: 0;
+      border-radius: 3px;
+      font-size: 0.86rem;
+      line-height: 1.5;
+    }
+
+    .msg:not(:empty) {
+      margin-top: 9px;
+      padding: 9px 11px;
+      border-left: 4px solid;
+      overflow-wrap: anywhere;
+    }
+
+    .msg-error {
+      border-color: var(--error-rule);
+      background: var(--error-bg);
+      color: var(--error-ink);
+    }
+
+    .msg-success {
+      border-color: var(--success-rule);
+      background: var(--success-bg);
+      color: var(--success-ink);
+    }
+
+    .stock-notice {
+      margin: 0;
+      color: #4d3b29;
+      font-size: 0.8rem;
+      line-height: 1.45;
+    }
+
+    .stock-notice:not(:empty) {
+      margin-top: 9px;
+      padding: 8px 10px;
+      border-left: 3px solid var(--rule-strong);
+      background: #f4ead7;
+      overflow-wrap: anywhere;
+    }
+
+    .totals {
+      margin: 20px 0 0;
+      padding-top: 11px;
+      border-top: 1px solid var(--rule-strong);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .totals .line {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 4px 0;
+    }
+
+    .totals dt {
+      min-width: 0;
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.86rem;
+    }
+
+    .totals dd {
+      margin: 0;
+      color: var(--ink);
+      white-space: nowrap;
+      font-weight: 600;
+    }
+
+    .basis {
+      display: block;
+      margin-top: 1px;
+      color: var(--ink-soft);
+      font-size: 0.73rem;
+      font-weight: 400;
+      line-height: 1.35;
+    }
+
+    .totals .grand {
+      align-items: baseline;
+      margin-top: 5px;
+      padding-top: 10px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .totals .grand dt,
+    .totals .grand dd {
+      color: var(--ink);
+      font-size: 1.12rem;
+      font-weight: 700;
+    }
+
+    #total {
+      font-size: 1.28rem;
+      letter-spacing: -0.01em;
+    }
+
+    .add {
+      width: 100%;
+      min-height: 50px;
+      margin-top: 16px;
+      padding: 11px 16px;
+      border: 1px solid #4d2a12;
+      border-radius: 4px;
+      background: var(--accent);
+      color: #fffaf0;
+      font-family: var(--font-ui);
+      font-size: 0.98rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      transition: background-color 120ms ease;
+    }
+
+    .add:hover {
+      background: var(--accent-hover);
+    }
+
+    .add:active {
+      background: #45230c;
+    }
+
+    .feedback {
+      margin: 0;
+    }
+
+    .sim-note {
+      margin: 10px 0 0;
+      color: var(--ink-soft);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
+    .sim-note strong {
+      color: var(--ink);
+    }
+
+    .terms {
+      margin-top: clamp(22px, 4vw, 34px);
+    }
+
+    .terms-list {
+      margin: 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .terms-list div {
+      padding: 11px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .terms-list dt {
+      color: var(--ink-soft);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .terms-list dd {
+      max-width: 62ch;
+      margin: 3px 0 0;
+      font-size: 0.92rem;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      margin-top: 36px;
+      padding-top: 14px;
+      border-top: 1px solid var(--rule-strong);
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      line-height: 1.5;
+    }
+
+    footer p {
+      margin: 0;
+      max-width: 70ch;
+    }
+
+    :where(button, input):focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection {
+      background: #dfc8a6;
+      color: var(--ink);
+    }
+
+    @media (min-width: 900px) {
+      .shop-grid {
+        grid-template-columns: minmax(0, 1.25fr) minmax(340px, 0.85fr);
+        grid-template-areas:
+          "media rail"
+          "record rail"
+          "terms rail";
+        column-gap: clamp(28px, 4vw, 56px);
+        row-gap: 30px;
+      }
+
+      .media {
+        grid-area: media;
+      }
+
+      .decision {
+        grid-area: rail;
+      }
+
+      .record {
+        grid-area: record;
+        margin-top: 0;
+      }
+
+      .terms {
+        grid-area: terms;
+        margin-top: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="masthead">
+        <p class="brand">Kiln Notes</p>
+        <p class="fiction">Fictional product study</p>
+      </div>
+
+      <div class="intro">
+        <p class="eyebrow">Stoneware · 280 ml</p>
+        <h1>Pouring cup</h1>
+        <p class="lede">A handleless pouring cup with a small spout.</p>
+        <p class="price-line">
+          <span class="price">USD 42.00</span>
+          <span class="price-note">plus flat USD 6.00 shipping</span>
+        </p>
+      </div>
+    </header>
+
+    <main class="shop-grid">
+      <figure class="media">
+        <div class="plate">
+          <img
+            src="assets/pouring-cup.svg"
+            width="600"
+            height="420"
+            alt="Original schematic of a handleless stoneware pouring cup with a small spout, marked 9 cm wide."
+          >
+        </div>
+        <figcaption>
+          <span class="caption-kicker">Image note</span>
+          Original schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.
+        </figcaption>
+      </figure>
+
+      <section class="record" aria-labelledby="product-record-title">
+        <h2 id="product-record-title">Product record</h2>
+        <dl class="spec-list">
+          <dt>Material</dt>
+          <dd>Stoneware</dd>
+          <dt>Capacity</dt>
+          <dd>280 ml</dd>
+          <dt>Dimensions</dt>
+          <dd>9 cm wide × 8 cm tall</dd>
+        </dl>
+      </section>
+
+      <aside class="decision" aria-labelledby="decision-title">
+        <h2 id="decision-title">Choose and add</h2>
+        <p class="rail-intro">Pick a glaze and a whole quantity. Stock is checked before the simulated add.</p>
+
+        <form id="cart-form" novalidate>
+          <fieldset aria-describedby="glaze-note">
+            <legend>Glaze</legend>
+            <div class="glaze-list">
+              <div class="glaze-row" style="--chip: #c7a77b;">
+                <input type="radio" id="glaze-sand" name="glaze" value="Sand" data-stock="4" aria-describedby="sand-stock" checked>
+                <label class="glaze-label" for="glaze-sand">
+                  <span class="swatch" aria-hidden="true"></span>
+                  <span class="glaze-name">Sand</span>
+                </label>
+                <span class="stock" id="sand-stock">4 available</span>
+                <span class="tick" aria-hidden="true">✓</span>
+              </div>
+
+              <div class="glaze-row" style="--chip: #61574e;">
+                <input type="radio" id="glaze-iron" name="glaze" value="Iron" data-stock="2" aria-describedby="iron-stock">
+                <label class="glaze-label" for="glaze-iron">
+                  <span class="swatch" aria-hidden="true"></span>
+                  <span class="glaze-name">Iron</span>
+                </label>
+                <span class="stock" id="iron-stock">2 available</span>
+                <span class="tick" aria-hidden="true">✓</span>
+              </div>
+
+              <div class="glaze-row is-soldout">
+                <input type="radio" id="glaze-ash" name="glaze" value="Ash" data-stock="0" aria-describedby="ash-stock" disabled>
+                <label class="glaze-label" for="glaze-ash">
+                  <span class="swatch" aria-hidden="true"></span>
+                  <span class="glaze-name">Ash</span>
+                </label>
+                <span class="stock stock--out" id="ash-stock">Sold out</span>
+                <span class="tick" aria-hidden="true">✓</span>
+              </div>
+            </div>
+            <p class="micro" id="glaze-note">Stock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.</p>
+          </fieldset>
+
+          <div class="field">
+            <div class="field-head">
+              <label class="field-label" for="quantity">Quantity</label>
+              <span class="stock-line" id="stock-line">Sand: 4 available</span>
+            </div>
+            <div class="stepper">
+              <button class="step" id="decrease" type="button" aria-label="Decrease quantity">−</button>
+              <input
+                id="quantity"
+                name="quantity"
+                type="text"
+                inputmode="numeric"
+                autocomplete="off"
+                spellcheck="false"
+                value="1"
+                aria-describedby="quantity-help quantity-error stock-notice"
+              >
+              <button class="step" id="increase" type="button" aria-label="Increase quantity">+</button>
+            </div>
+            <p class="help" id="quantity-help">Whole numbers 1–4. Sand has 4 available.</p>
+            <p class="msg msg-error" id="quantity-error" role="alert"></p>
+            <p class="stock-notice" id="stock-notice" role="status" aria-live="polite"></p>
+          </div>
+
+          <dl class="totals">
+            <div class="line">
+              <dt>
+                Item subtotal
+                <span class="basis" id="item-basis">Sand × 1 · USD 42.00 each</span>
+              </dt>
+              <dd id="item-subtotal">USD 42.00</dd>
+            </div>
+            <div class="line">
+              <dt>Flat shipping</dt>
+              <dd>USD 6.00</dd>
+            </div>
+            <div class="line grand">
+              <dt>Total</dt>
+              <dd><span id="total">USD 48.00</span></dd>
+            </div>
+          </dl>
+
+          <div class="feedback">
+            <p class="msg msg-success" id="cart-success" role="status" aria-live="polite" aria-atomic="true"></p>
+            <p class="msg msg-error" id="cart-failure" role="alert" aria-atomic="true"></p>
+          </div>
+
+          <button class="add" type="submit" aria-describedby="sim-note">Add to simulated cart</button>
+
+          <p class="sim-note" id="sim-note"><strong>Simulated cart.</strong> No real order is placed and no payment is taken.</p>
+        </form>
+      </aside>
+
+      <section class="terms" aria-labelledby="terms-title">
+        <h2 id="terms-title">Care, returns and shipping</h2>
+        <dl class="terms-list">
+          <div>
+            <dt>Care</dt>
+            <dd>Hand-wash; do not use on a stovetop.</dd>
+          </div>
+          <div>
+            <dt>Returns</dt>
+            <dd>Unused items may be returned within 14 days; buyer pays return postage.</dd>
+          </div>
+          <div>
+            <dt>Shipping</dt>
+            <dd>Flat USD 6 shipping in this fictional checkout; no delivery date is promised.</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <p>Kiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment.</p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var PRICE = 42;
+      var SHIPPING = 6;
+      var QUANTITY_MAX = 4;
+
+      var form = document.getElementById("cart-form");
+      var quantityInput = document.getElementById("quantity");
+      var quantityHelp = document.getElementById("quantity-help");
+      var quantityError = document.getElementById("quantity-error");
+      var stockLine = document.getElementById("stock-line");
+      var stockNotice = document.getElementById("stock-notice");
+      var itemBasis = document.getElementById("item-basis");
+      var itemSubtotal = document.getElementById("item-subtotal");
+      var total = document.getElementById("total");
+      var cartSuccess = document.getElementById("cart-success");
+      var cartFailure = document.getElementById("cart-failure");
+      var decreaseButton = document.getElementById("decrease");
+      var increaseButton = document.getElementById("increase");
+      var glazeInputs = Array.prototype.slice.call(document.querySelectorAll('input[name="glaze"]'));
+
+      var hasSubmitted = false;
+      var firstValidAttempt = true;
+
+      function money(amount) {
+        return "USD " + amount.toFixed(2);
+      }
+
+      function selectedGlaze() {
+        return glazeInputs.filter(function (input) {
+          return input.checked;
+        })[0];
+      }
+
+      function selectedName() {
+        return selectedGlaze().value;
+      }
+
+      function selectedStock() {
+        return Number(selectedGlaze().getAttribute("data-stock"));
+      }
+
+      function allowedMax() {
+        return Math.max(1, Math.min(QUANTITY_MAX, selectedStock()));
+      }
+
+      function readQuantity() {
+        var raw = quantityInput.value.trim();
+        var value = Number(raw);
+        var max = allowedMax();
+        var valid = raw !== "" && Number.isFinite(value) && Number.isInteger(value) && value >= 1 && value <= max;
+        return {
+          raw: raw,
+          value: value,
+          max: max,
+          stock: selectedStock(),
+          name: selectedName(),
+          valid: valid
+        };
+      }
+
+      function quantityProblem() {
+        var state = readQuantity();
+        var name = state.name;
+        var stock = state.stock;
+        var max = state.max;
+
+        if (state.raw === "") {
+          return "Enter a quantity. Use a whole number from 1 to " + max + " for " + name + " (" + stock + " available).";
+        }
+        if (!Number.isFinite(state.value)) {
+          return "Enter a whole number, such as 2. " + name + " accepts 1–" + max + " (" + stock + " available).";
+        }
+        if (!Number.isInteger(state.value)) {
+          return "Use a whole number, not a fraction. " + name + " accepts 1–" + max + " (" + stock + " available).";
+        }
+        if (state.value < 1) {
+          return "Enter at least 1. " + name + " accepts 1–" + max + " (" + stock + " available).";
+        }
+        if (state.value > max) {
+          return "Choose " + max + " or fewer for " + name + ". " + stock + " available; the limit is " + QUANTITY_MAX + " per add.";
+        }
+        return "";
+      }
+
+      function setQuantityError(message) {
+        quantityError.textContent = message || "";
+        if (message) {
+          quantityInput.setAttribute("aria-invalid", "true");
+        } else {
+          quantityInput.removeAttribute("aria-invalid");
+        }
+      }
+
+      function clearOutcome() {
+        cartSuccess.textContent = "";
+        cartFailure.textContent = "";
+      }
+
+      function clearStockNotice() {
+        stockNotice.textContent = "";
+      }
+
+      function updateTotals() {
+        var state = readQuantity();
+        var basis = state.valid ? state.value : "—";
+        itemBasis.textContent = state.name + " × " + basis + " · " + money(PRICE) + " each";
+        itemSubtotal.textContent = state.valid ? money(PRICE * state.value) : "—";
+        total.textContent = state.valid ? money(PRICE * state.value + SHIPPING) : "—";
+      }
+
+      function setStepAvailability(button, unavailable) {
+        if (unavailable) {
+          button.setAttribute("aria-disabled", "true");
+        } else {
+          button.removeAttribute("aria-disabled");
+        }
+      }
+
+      function updateSteppers() {
+        var state = readQuantity();
+        setStepAvailability(decreaseButton, state.valid && state.value <= 1);
+        setStepAvailability(increaseButton, state.valid && state.value >= state.max);
+      }
+
+      function updateGuidance() {
+        var state = readQuantity();
+        quantityHelp.textContent = "Whole numbers 1–" + state.max + ". " + state.name + " has " + state.stock + " available.";
+        stockLine.textContent = state.name + ": " + state.stock + " available";
+      }
+
+      function refresh() {
+        updateGuidance();
+        updateTotals();
+        updateSteppers();
+      }
+
+      function announceClamp(from, to, name) {
+        stockNotice.textContent = "Quantity changed from " + from + " to " + to + " to match available " + name + " stock.";
+      }
+
+      function showFailure(name, quantity) {
+        cartSuccess.textContent = "";
+        cartFailure.textContent = "Simulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: " + name + ", quantity " + quantity + ". Try again.";
+      }
+
+      function showSuccess(name, quantity) {
+        var subtotal = PRICE * quantity;
+        var grandTotal = subtotal + SHIPPING;
+        cartFailure.textContent = "";
+        cartSuccess.textContent = "Added to the simulated cart: " + name + " glaze, quantity " + quantity + ", total " + money(grandTotal) + " (" + money(subtotal) + " item plus " + money(SHIPPING) + " flat shipping). No real order was placed and no payment was taken.";
+      }
+
+      glazeInputs.forEach(function (input) {
+        input.addEventListener("change", function () {
+          if (!input.checked) {
+            return;
+          }
+
+          clearOutcome();
+          clearStockNotice();
+
+          var stock = Number(input.getAttribute("data-stock"));
+          var raw = quantityInput.value.trim();
+          var value = Number(raw);
+
+          if (raw !== "" && Number.isFinite(value) && value > stock) {
+            quantityInput.value = String(stock);
+            announceClamp(raw, stock, input.value);
+          }
+
+          refresh();
+          if (hasSubmitted) {
+            setQuantityError(quantityProblem());
+          }
+        });
+      });
+
+      quantityInput.addEventListener("input", function () {
+        clearOutcome();
+        clearStockNotice();
+        refresh();
+        if (hasSubmitted) {
+          setQuantityError(quantityProblem());
+        }
+      });
+
+      function step(delta) {
+        var state = readQuantity();
+        var next;
+
+        if (state.valid) {
+          next = Math.min(state.max, Math.max(1, state.value + delta));
+        } else if (Number.isFinite(state.value) && state.value > state.max) {
+          next = state.max;
+        } else {
+          next = 1;
+        }
+
+        if (String(next) !== quantityInput.value) {
+          quantityInput.value = String(next);
+          clearOutcome();
+          clearStockNotice();
+          refresh();
+          if (hasSubmitted) {
+            setQuantityError(quantityProblem());
+          }
+        }
+      }
+
+      decreaseButton.addEventListener("click", function () {
+        step(-1);
+      });
+
+      increaseButton.addEventListener("click", function () {
+        step(1);
+      });
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        hasSubmitted = true;
+
+        var problem = quantityProblem();
+
+        if (problem) {
+          clearOutcome();
+          setQuantityError(problem);
+          refresh();
+          quantityInput.focus();
+          return;
+        }
+
+        setQuantityError("");
+
+        var state = readQuantity();
+
+        if (firstValidAttempt) {
+          firstValidAttempt = false;
+          showFailure(state.name, state.value);
+          return;
+        }
+
+        showSuccess(state.name, state.value);
+      });
+
+      refresh();
+    })();
+  </script>
+</body>
+</html>
