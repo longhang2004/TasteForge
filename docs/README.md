@@ -13,7 +13,7 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 - [Effect and layout research](effects-research.md): inspected Colorion, Codrops, layout and native-animation sources; purpose-based skill guidance and original runnable studies.
 - [Surface purpose and targeted refinement](impeccable-informed-workflow.md): Impeccable-informed concepts, scoped edits, intentional exceptions, an annotated evidence gallery and a bounded independent forward-test.
 - [GitHub releases](https://github.com/longhang2004/TasteForge/releases): tagged source, built package archives, standalone skill ZIP, checksums, and release notes. The npm packages are not yet published.
-- [Standalone host evidence](host-integration.md): the observed native Codex ZIP discovery/invocation, isolated setup and remaining host coverage.
+- [Standalone host evidence](host-integration.md): observed native Codex and OpenCode/Vilao ZIP discovery/invocation, isolated setup and remaining host coverage.
 - [0.2.0-beta.2 notes](releases/v0.2.0-beta.2.md): proportional workflows, explained task compositions, hardening and artifact/evidence limits. [Beta.1 notes](releases/v0.2.0-beta.1.md) retain the previous release scope.
 
 ## Use and inspect the outputs

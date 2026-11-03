@@ -1,0 +1,19 @@
+{
+  "model": "vilao/mn/glm-5.3-flash",
+  "host": "native OpenCode 2.2.5",
+  "startedAtUnix": 1793687786.7395952,
+  "durationSeconds": 15.09,
+  "exitCode": 0,
+  "fallback": "none",
+  "command": [
+    "run",
+    "--standalone",
+    "--model",
+    "vilao/mn/glm-5.3-flash",
+    "--format",
+    "json",
+    "--title",
+    "TasteForge Vilao availability glm",
+    "Reply with exactly MODEL_AVAILABLE. Do not use tools, access files, or change anything."
+  ]
+}

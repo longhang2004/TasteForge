@@ -1,0 +1,19 @@
+{
+  "model": "vilao/chib/deepseek-v4.1-flash",
+  "host": "native OpenCode 2.2.5",
+  "startedAtUnix": 1793687689.541091,
+  "durationSeconds": 9.886,
+  "exitCode": 0,
+  "fallback": "none",
+  "command": [
+    "run",
+    "--standalone",
+    "--model",
+    "vilao/chib/deepseek-v4.1-flash",
+    "--format",
+    "json",
+    "--title",
+    "TasteForge Vilao availability deepseek",
+    "Reply with exactly MODEL_AVAILABLE. Do not use tools, access files, or change anything."
+  ]
+}

@@ -1,0 +1,20 @@
+First resource-summary execution failed under the installed Python datetime parser:
+
+  File "evals/runs/2026-11-03-opencode-vilao-host-smoke/tools/resources.py", line 40, in <module>
+    end=max(datetime.fromisoformat(c['finalBrowserAcceptance']['finishedAt']) for c in cells)
+ValueError: Invalid isoformat string: '2026-11-03T06:57:49.965Z'
+
+Correction: normalize the recorded UTC suffix Z to +00:00 before fromisoformat.
+This was a parent postprocessing error, not a model/UI failure. No raw report or
+timestamp was rewritten.
+
+Later static-gallery check initially used browser.newPage(), which axe rejected:
+
+Error: Please use browser.newContext()
+ Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md
+    at AxeBuilder.analyze (.../@axe-core/playwright/dist/index.js:254:13)
+  [cause]: Error: Please use browser.newContext()
+Node.js v24.22.0
+
+Correction: use an explicit browser context, as the product UI checkers already do.
+This was a parent gallery-harness startup error, not a product UI/axe violation.
