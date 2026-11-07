@@ -1,0 +1,67 @@
+{
+  "product": "Signal Cabinet",
+  "scope": "A fictional archive of six wayfinding panels. Diagrams are original illustrative artifacts; no historical authenticity or physical condition claim.",
+  "records": [
+    {
+      "id": "SC-01",
+      "title": "Bến số 4",
+      "year": 1988,
+      "material": "Enamel steel",
+      "size": "600 × 300 mm",
+      "route": "04",
+      "asset": "sc-01.svg"
+    },
+    {
+      "id": "SC-02",
+      "title": "Lối qua xưởng",
+      "year": 1994,
+      "material": "Painted wood",
+      "size": "420 × 180 mm",
+      "route": "W2",
+      "asset": "sc-02.svg"
+    },
+    {
+      "id": "SC-03",
+      "title": "Trạm phía Đông",
+      "year": 2001,
+      "material": "Aluminium",
+      "size": "500 × 250 mm",
+      "route": "E7",
+      "asset": "sc-03.svg"
+    },
+    {
+      "id": "SC-04",
+      "title": "Đường vòng số 2",
+      "year": 1986,
+      "material": "Enamel steel",
+      "size": "700 × 250 mm",
+      "route": "02",
+      "asset": "sc-04.svg"
+    },
+    {
+      "id": "SC-05",
+      "title": "Cổng vườn mưa",
+      "year": 2008,
+      "material": "Aluminium",
+      "size": "360 × 360 mm",
+      "route": "G1",
+      "asset": "sc-05.svg"
+    },
+    {
+      "id": "SC-06",
+      "title": "Lối xuống bờ kè",
+      "year": 1997,
+      "material": "Painted wood",
+      "size": "450 × 200 mm",
+      "route": "R3",
+      "asset": "sc-06.svg"
+    }
+  ],
+  "rules": [
+    "Filter by material and search title, ID or route. Filters combine; counts are accurate, zero results has a reset action.",
+    "Open a record, show its actual supplied SVG plus all metadata, then return retaining query/material/scroll context.",
+    "Pin at most two distinct records for comparison. Expose what is pinned, allow removal and replacement, compare title/year/material/dimensions/route with explicit labels. Trying a third pin gives clear recoverable feedback.",
+    "First detail-open attempt shows a simulated loading failure; retry opens the same chosen record without losing filters or pins. Mark this local demonstration honestly.",
+    "Use actual supplied diagrams rather than invented photos, claims, stock, reviews or sales actions."
+  ]
+}

@@ -57,6 +57,7 @@ Choose a direction returned for **your** brief; `swiss-editorial` is an example 
 - **`generate`** creates `design-dna.json`, `tokens.css`, and `DESIGN.md` from the same context, direction, and seed. The font/palette choice matches `suggest` for that direction. Existing artifacts require `--force`; inspect them before replacing them.
 - **`audit`** parses CSS with PostCSS and JSX/TSX with TypeScript. It reports explicit source conditions, contextual heuristics, and review items separately. If Design DNA is present, its tokens and contrast target inform the audit. CSS-local root tokens are also recognized.
 - **`catalog`** searches 642 attributed offline reference records from 18 pinned sources and reads selected documents with provenance and license notices. **`inspire`** samples distinct external visual references with task-matched structural examples and fixed review gates. These are reference inputs, not additional validated token-generating profiles. See [catalog scope and commands](docs/reference-catalog.md).
+- The [composition field guide](examples/composition-library/README.md) adds twelve original cards and local licensed type specimens. `inspire` exposes conditional composition choices and soft visual-family diversity; the imported 642-record catalog remains separate. The [typography review](docs/typography-expansion.md) expands local font metadata to 38 pairs while retaining strict language/delivery filters.
 
 Import generated tokens in your app and apply semantic roles:
 

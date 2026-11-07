@@ -1,0 +1,13 @@
+# Validation attempts
+
+The original Windows-mounted baseline attempt overlapped the newly added RED tests: its retained log reports 44 passing existing tests and the two expected missing-composition failures. An exact main `98e1ebb` Linux validation checkout subsequently ran all 44 baseline tests successfully. The first Linux sparse attempt had omitted committed `examples/generated` and failed that fixture check; including the existing fixture corrected the harness. These were not product regressions.
+
+Focused candidate tests first reported 21 passing and one test-fixture failure: requesting all twenty system-font directions under default medium complexity correctly excluded the high-complexity experimental style. The test now explicitly permits high complexity. No production filter was relaxed; the next focused run passed all 22 tests.
+
+The first full candidate check passed build/typecheck and failed ESLint on six browser-global declarations: `Option` (two uses), `getComputedStyle` (two uses), and duplicate inline/config declarations for `document` and `FontFace`. The root ESLint browser-file allowlist now declares the actual APIs, and the redundant inline declaration was removed. This changes lint configuration/comments, not runtime controls or font delivery.
+
+The full first-check log was held in `/tmp/tasteforge-composition-full-check.log`. A usage-limit failure in automatic approval review prevented the planned copy; after continuation that temporary log was no longer present. The six findings above are a **summary of the observed tool transcript**, not a reconstructed raw full log. Other retained files are copied as actual output, and later checks write directly into workspace scratch before archiving.
+
+Gallery and font helpers independently retain their own first failures, corrections and final reports under `examples/composition-library/evidence` and `fonts`. Neither source verification nor passing browser/axe checks establishes human usability or full language/accessibility conformance.
+
+The next full check passed build/typecheck/lint/format and reported 56 passing tests with one failing maintained-example check. Its DNA still recorded knowledge `0.1.0`; the updated font pool uses `0.1.1`, and existing validation correctly rejected that mismatch. The maintained `examples/generated` bundle was regenerated from its original context, direction ID and seed. Historical frozen outputs and their knowledge versions were not rewritten. Existing users' DNA remains tied to its recorded knowledge version; changing versions requires a deliberate regeneration, not bypassing validation or silently overwriting a project.

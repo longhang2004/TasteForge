@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "styles": [
     {
       "id": "swiss-editorial",
@@ -13,7 +13,13 @@
       "density": "balanced",
       "complexity": "medium",
       "distinctiveness": 0.7,
-      "fontPairIds": ["inter-inter", "source-serif-sans", "inter-source", "system-serif"],
+      "fontPairIds": [
+        "inter-inter",
+        "source-serif-sans",
+        "inter-source",
+        "system-serif",
+        "archivo-archivo"
+      ],
       "paletteIds": ["ink-paper", "cobalt-chalk", "mono-light"],
       "layout": [
         "Use asymmetric columns with aligned edges.",
@@ -43,7 +49,13 @@
       "density": "balanced",
       "complexity": "low",
       "distinctiveness": 0.5,
-      "fontPairIds": ["inter-inter", "source-source", "noto-noto", "system-sans"],
+      "fontPairIds": [
+        "inter-inter",
+        "source-source",
+        "noto-noto",
+        "system-sans",
+        "archivo-archivo"
+      ],
       "paletteIds": ["mono-light", "slate-blue", "cobalt-chalk"],
       "layout": [
         "Align headings and body to shared tracks.",
@@ -73,7 +85,13 @@
       "density": "spacious",
       "complexity": "medium",
       "distinctiveness": 0.6,
-      "fontPairIds": ["lora-inter", "literata-inter", "noto-serif-inter", "system-serif"],
+      "fontPairIds": [
+        "lora-inter",
+        "literata-inter",
+        "noto-serif-inter",
+        "system-serif",
+        "newsreader-source"
+      ],
       "paletteIds": ["bone-oxblood", "ink-paper", "rose-stone"],
       "layout": [
         "Give product imagery generous space.",
@@ -133,7 +151,7 @@
       "density": "dense",
       "complexity": "low",
       "distinctiveness": 0.4,
-      "fontPairIds": ["plex-plex", "mono-plex", "plex-inter", "system-sans"],
+      "fontPairIds": ["plex-plex", "mono-plex", "plex-inter", "system-sans", "barlow-barlow"],
       "paletteIds": ["slate-blue", "carbon-lime", "ocean-tool"],
       "layout": [
         "Group related commands tightly.",
@@ -163,7 +181,13 @@
       "density": "dense",
       "complexity": "medium",
       "distinctiveness": 0.3,
-      "fontPairIds": ["inter-inter", "plex-source", "source-source", "system-sans"],
+      "fontPairIds": [
+        "inter-inter",
+        "plex-source",
+        "source-source",
+        "system-sans",
+        "barlow-barlow"
+      ],
       "paletteIds": ["slate-blue", "navy-sand", "mono-light"],
       "layout": ["Keep filters adjacent to results.", "Use tables for comparable records."],
       "guidance": [
@@ -190,7 +214,14 @@
       "density": "balanced",
       "complexity": "medium",
       "distinctiveness": 0.8,
-      "fontPairIds": ["source-serif-inter", "lora-source", "literata-source", "system-serif"],
+      "fontPairIds": [
+        "source-serif-inter",
+        "lora-source",
+        "literata-source",
+        "system-serif",
+        "newsreader-source",
+        "bitter-source"
+      ],
       "paletteIds": ["plum-cream", "ink-paper", "berry-snow"],
       "layout": [
         "Alternate feature and compact story blocks.",
@@ -220,7 +251,13 @@
       "density": "balanced",
       "complexity": "medium",
       "distinctiveness": 0.8,
-      "fontPairIds": ["manrope-vietnam", "manrope-source", "space-vietnam", "system-sans"],
+      "fontPairIds": [
+        "manrope-vietnam",
+        "manrope-source",
+        "space-vietnam",
+        "system-sans",
+        "figtree-figtree"
+      ],
       "paletteIds": ["indigo-study", "berry-snow", "yellow-ink"],
       "layout": [
         "Make module order communicate a sequence.",
@@ -250,7 +287,13 @@
       "density": "balanced",
       "complexity": "low",
       "distinctiveness": 0.4,
-      "fontPairIds": ["noto-serif-sans", "noto-serif-vietnam", "source-source", "system-serif"],
+      "fontPairIds": [
+        "noto-serif-sans",
+        "noto-serif-vietnam",
+        "source-source",
+        "system-serif",
+        "bitter-source"
+      ],
       "paletteIds": ["navy-sand", "teal-clinic", "slate-blue"],
       "layout": [
         "Lead with service tasks and eligibility.",
@@ -310,7 +353,13 @@
       "density": "spacious",
       "complexity": "low",
       "distinctiveness": 0.6,
-      "fontPairIds": ["lora-vietnam", "manrope-noto", "lora-inter", "system-serif"],
+      "fontPairIds": [
+        "lora-vietnam",
+        "manrope-noto",
+        "lora-inter",
+        "system-serif",
+        "fraunces-source"
+      ],
       "paletteIds": ["terracotta", "forest-mist", "rose-stone"],
       "layout": [
         "Use image-led sections tied to real content.",
@@ -400,7 +449,13 @@
       "density": "balanced",
       "complexity": "low",
       "distinctiveness": 0.3,
-      "fontPairIds": ["vietnam-vietnam", "noto-noto", "manrope-noto", "system-sans"],
+      "fontPairIds": [
+        "vietnam-vietnam",
+        "noto-noto",
+        "manrope-noto",
+        "system-sans",
+        "figtree-figtree"
+      ],
       "paletteIds": ["teal-clinic", "slate-blue", "rose-stone"],
       "layout": [
         "Show one primary action per task group.",
@@ -460,7 +515,13 @@
       "density": "balanced",
       "complexity": "low",
       "distinctiveness": 0.3,
-      "fontPairIds": ["source-source", "noto-noto", "vietnam-vietnam", "system-sans"],
+      "fontPairIds": [
+        "source-source",
+        "noto-noto",
+        "vietnam-vietnam",
+        "system-sans",
+        "barlow-barlow"
+      ],
       "paletteIds": ["navy-sand", "teal-clinic", "mono-light"],
       "layout": [
         "Start with the user task and required documents.",
@@ -520,7 +581,13 @@
       "density": "balanced",
       "complexity": "low",
       "distinctiveness": 0.5,
-      "fontPairIds": ["lora-source", "manrope-inter", "source-serif-vietnam", "system-serif"],
+      "fontPairIds": [
+        "lora-source",
+        "manrope-inter",
+        "source-serif-vietnam",
+        "system-serif",
+        "fraunces-source"
+      ],
       "paletteIds": ["terracotta", "bone-oxblood", "ink-paper"],
       "layout": [
         "Keep price, variants, and delivery near purchase.",
@@ -550,7 +617,13 @@
       "density": "balanced",
       "complexity": "low",
       "distinctiveness": 0.5,
-      "fontPairIds": ["vietnam-vietnam", "source-serif-sans", "manrope-source", "system-serif"],
+      "fontPairIds": [
+        "vietnam-vietnam",
+        "source-serif-sans",
+        "manrope-source",
+        "system-serif",
+        "bitter-source"
+      ],
       "paletteIds": ["indigo-study", "navy-sand", "forest-mist"],
       "layout": [
         "Separate instruction, practice, and feedback.",
@@ -580,7 +653,14 @@
       "density": "spacious",
       "complexity": "medium",
       "distinctiveness": 0.8,
-      "fontPairIds": ["literata-source", "space-source", "lora-inter", "system-serif"],
+      "fontPairIds": [
+        "literata-source",
+        "space-source",
+        "lora-inter",
+        "system-serif",
+        "newsreader-source",
+        "fraunces-source"
+      ],
       "paletteIds": ["mono-light", "ink-paper", "plum-cream"],
       "layout": [
         "Let image sequence tell a deliberate story.",
@@ -1208,6 +1288,120 @@
       },
       "delivery": "system",
       "rationale": "Use installed fonts without a network or font-file dependency; validate metrics and glyphs on target systems."
+    },
+    {
+      "id": "newsreader-source",
+      "heading": {
+        "family": "Newsreader",
+        "stack": "\"Newsreader\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/newsreader/METADATA.pb",
+        "coverageNote": "Pinned Google Fonts metadata and 76-code-point English cmap sample checked 2026-11-06. Vietnamese subset listed; 147-code-point precomposed sample mapped. These are bounded samples, not full script or rendering certification; verify actual weights, line heights and target OS. Gallery retains exact font and OFL hashes."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Optical-size editorial titles paired with restrained support text; set the optical size deliberately and verify long reading at the chosen size."
+    },
+    {
+      "id": "fraunces-source",
+      "heading": {
+        "family": "Fraunces",
+        "stack": "\"Fraunces\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/fraunces/METADATA.pb",
+        "coverageNote": "Pinned Google Fonts metadata and 76-code-point English cmap sample checked 2026-11-06. Vietnamese subset listed; 147-code-point precomposed sample mapped. Decomposed sample lacks U+0309/U+0323 cmap mappings; normalize to NFC or verify shaping/fallback. These are bounded samples, not full script or rendering certification; verify actual weights, line heights and target OS. Gallery retains exact font and OFL hashes."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Soft, expressive serif titles for short commerce or culture stories with Source Sans 3 for controls and paragraphs; avoid decorative settings in dense data."
+    },
+    {
+      "id": "archivo-archivo",
+      "heading": {
+        "family": "Archivo",
+        "stack": "\"Archivo\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/archivo/METADATA.pb",
+        "coverageNote": "Pinned Google Fonts metadata and 76-code-point English cmap sample checked 2026-11-06. Vietnamese subset listed; 147-code-point precomposed sample mapped. These are bounded samples, not full script or rendering certification; verify actual weights, line heights and target OS. Gallery retains exact font and OFL hashes."
+      },
+      "body": {
+        "family": "Archivo",
+        "stack": "\"Archivo\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/archivo/METADATA.pb",
+        "coverageNote": "Pinned Google Fonts metadata and 76-code-point English cmap sample checked 2026-11-06. Vietnamese subset listed; 147-code-point precomposed sample mapped. These are bounded samples, not full script or rendering certification; verify actual weights, line heights and target OS. Gallery retains exact font and OFL hashes."
+      },
+      "delivery": "optional-web",
+      "rationale": "One sturdy sans family for assertive information hierarchy; width variation can help navigation fit, but verify labels rather than compressing everything."
+    },
+    {
+      "id": "barlow-barlow",
+      "heading": {
+        "family": "Barlow",
+        "stack": "\"Barlow\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/barlow/METADATA.pb",
+        "coverageNote": "Pinned Google Fonts metadata and 76-code-point English cmap sample checked 2026-11-06. Vietnamese subset listed; 147-code-point precomposed sample mapped. These are bounded samples, not full script or rendering certification; verify actual weights, line heights and target OS. Gallery retains exact font and OFL hashes."
+      },
+      "body": {
+        "family": "Barlow",
+        "stack": "\"Barlow\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/barlow/METADATA.pb",
+        "coverageNote": "Pinned Google Fonts metadata and 76-code-point English cmap sample checked 2026-11-06. Vietnamese subset listed; 147-code-point precomposed sample mapped. These are bounded samples, not full script or rendering certification; verify actual weights, line heights and target OS. Gallery retains exact font and OFL hashes."
+      },
+      "delivery": "optional-web",
+      "rationale": "A narrower, open sans for practical wayfinding and technical interfaces; use clear spacing and test dense labels. The gallery specimen is regular weight only."
+    },
+    {
+      "id": "figtree-figtree",
+      "heading": {
+        "family": "Figtree",
+        "stack": "\"Figtree\", Arial, sans-serif",
+        "languages": ["en"],
+        "source": "https://github.com/google/fonts/blob/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/figtree/METADATA.pb",
+        "coverageNote": "Pinned Google Fonts metadata and 76-code-point English cmap sample checked 2026-11-06. Vietnamese is not listed and sampled glyphs are missing; excluded from Vietnamese compatibility. These are bounded samples, not full script or rendering certification; verify actual weights, line heights and target OS. Gallery retains exact font and OFL hashes."
+      },
+      "body": {
+        "family": "Figtree",
+        "stack": "\"Figtree\", Arial, sans-serif",
+        "languages": ["en"],
+        "source": "https://github.com/google/fonts/blob/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/figtree/METADATA.pb",
+        "coverageNote": "Pinned Google Fonts metadata and 76-code-point English cmap sample checked 2026-11-06. Vietnamese is not listed and sampled glyphs are missing; excluded from Vietnamese compatibility. These are bounded samples, not full script or rendering certification; verify actual weights, line heights and target OS. Gallery retains exact font and OFL hashes."
+      },
+      "delivery": "optional-web",
+      "rationale": "A compact, friendly sans for English utility and onboarding; spacing and weight establish hierarchy. This reviewed file is excluded when Vietnamese is required."
+    },
+    {
+      "id": "bitter-source",
+      "heading": {
+        "family": "Bitter",
+        "stack": "\"Bitter\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/bitter/METADATA.pb",
+        "coverageNote": "Pinned Google Fonts metadata and 76-code-point English cmap sample checked 2026-11-06. Vietnamese subset listed; 147-code-point precomposed sample mapped. These are bounded samples, not full script or rendering certification; verify actual weights, line heights and target OS. Gallery retains exact font and OFL hashes."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Slab-serif titles give learning and reading content a sturdy text-led voice; neutral sans support keeps navigation and form controls clear."
     }
   ],
   "palettes": [

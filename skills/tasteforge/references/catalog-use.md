@@ -28,7 +28,9 @@ tasteforge inspire --task commerce --count 1 --seed 42 --format json
 
 Without a useful brief or supported command, continue from project evidence; do not fabricate CLI results. Do not force-overwrite artifacts to clear a conflict. `preserveExisting: true` intentionally prevents replacement systems; change it only for authorized redesign.
 
-`inspire` returns attributed external references, a task-matched template or null, contextual rules and ten baseline gates. All gates remain applicable regardless of sample count. Retain actual task/fixed constraints and unknown compatibility. Imported IDs cannot generate validated DNA.
+`inspire` returns original task-matched composition cards (or null), attributed external treatments, a separately attributed source template (or null), contextual rules and ten baseline gates. Read a composition's suitable/avoid conditions, anatomy, narrow behavior and tradeoff before adapting it. Its source pointers distinguish inspected source facts from proposed behavior; it is not a ready-made application. Selection checks indexed task, fixed density and complexity; other content preconditions need interpretation. All gates remain applicable regardless of sample count. Retain actual task/fixed constraints and unknown compatibility. Imported IDs cannot generate validated DNA.
+
+Known visual families receive a soft repeat penalty within a sample. These are coarse editorial title labels, not a visual-similarity measurement. A style and composition are suggestions to reconcile with product content, not a certified joint design. Keep the selection/library/catalog versions with the seed; the seed alone cannot reproduce results across data changes. Read [art direction](art-direction.md) only when the relationship or visual direction remains unresolved.
 
 For validated local tokens when needed:
 

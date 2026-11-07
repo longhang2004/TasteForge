@@ -1,0 +1,98 @@
+
+> tasteforge-workspace@0.2.0-beta.2 check /var/tmp/tasteforge-composition-20261106
+> pnpm build && pnpm typecheck && pnpm lint && pnpm format:check && vitest run
+
+
+> tasteforge-workspace@0.2.0-beta.2 build /var/tmp/tasteforge-composition-20261106
+> pnpm -r build
+
+Scope: 3 of 4 workspace projects
+packages/knowledge build$ tsc -p tsconfig.json
+packages/knowledge build: Done
+packages/core build$ tsc -p tsconfig.json
+packages/core build: Done
+packages/cli build$ tsc -p tsconfig.json && node scripts/prepare.mjs
+packages/cli build: Done
+
+> tasteforge-workspace@0.2.0-beta.2 typecheck /var/tmp/tasteforge-composition-20261106
+> pnpm -r typecheck && tsc -p tests/tsconfig.json
+
+Scope: 3 of 4 workspace projects
+packages/knowledge typecheck$ tsc -p tsconfig.json --noEmit
+packages/knowledge typecheck: Done
+packages/core typecheck$ tsc -p tsconfig.json --noEmit
+packages/core typecheck: Done
+packages/cli typecheck$ tsc -p tsconfig.json --noEmit
+packages/cli typecheck: Done
+
+> tasteforge-workspace@0.2.0-beta.2 lint /var/tmp/tasteforge-composition-20261106
+> eslint . --max-warnings 0
+
+
+> tasteforge-workspace@0.2.0-beta.2 format:check /var/tmp/tasteforge-composition-20261106
+> prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!
+
+ RUN  v3.2.7 /var/tmp/tasteforge-composition-20261106
+
+ ❯ tests/core.test.ts (16 tests | 1 failed) 1717ms
+   ✓ validated context and knowledge > requires meaningful context and rejects unknown or unsupported inputs 13ms
+   ✓ validated context and knowledge > validates every curated entry and all references 34ms
+   ✓ validated context and knowledge > rejects duplicate IDs, dangling references, malformed colors and entries 18ms
+   ✓ validated context and knowledge > normalizes config defaults and requires scoring weights to sum to one 4ms
+   ✓ hard constraints and transparent ranking > ranks task and audience fit rather than a universal aesthetic 42ms
+   ✓ hard constraints and transparent ranking > filters before ranking for density, complexity, allowed and excluded styles 75ms
+   ✓ hard constraints and transparent ranking > preserves established systems and explains incompatible constraints 54ms
+   ✓ hard constraints and transparent ranking > honors Vietnamese coverage, fixed pair, delivery and contrast constraints 99ms
+   ✓ deterministic controlled exploration > has a stable PRNG stream including zero and rejects invalid seeds 3ms
+   ✓ deterministic controlled exploration > reproduces complete suggestions and ignores knowledge entry ordering 108ms
+   ✓ deterministic controlled exploration > uses the brief seed unless explicitly overridden and rejects invalid counts 51ms
+   ✓ deterministic controlled exploration > low creativity concentrates on more relevant candidates across seeds  1074ms
+   × Design DNA and tokens > keeps the committed example artifacts consistent with engine output 29ms
+     → Direction does not match this context and bundled knowledge version
+   ✓ Design DNA and tokens > generates mutually consistent, reproducible artifacts with recorded context 46ms
+   ✓ Design DNA and tokens > rejects inconsistent DNA, mismatched context, and unsafe CSS values 35ms
+   ✓ Design DNA and tokens > preserves nondefault scoring configuration in DNA 23ms
+ ✓ tests/references.test.ts (11 tests) 2002ms
+   ✓ task-aware seeded reference exploration > reproduces complete packs independent of input order and changes across seeds  372ms
+ ✓ tests/compositions.test.ts (3 tests) 938ms
+   ✓ original composition evidence and selection > reproduces complete packs after composition/source reordering and filters fixed density/complexity  538ms
+   ✓ original composition evidence and selection > softly reduces repeated known visual families while allowing repeat treatments  370ms
+ ✓ tests/typography.test.ts (8 tests) 560ms
+ ✓ tests/cli.test.ts (9 tests) 32096ms
+   ✓ CLI integration and exit contract > reads the external catalog and samples attributed inspiration without writing project artifacts  8030ms
+   ✓ CLI integration and exit contract > initializes, loads context, suggests, generates, and audits example source  5963ms
+   ✓ CLI integration and exit contract > previews without any filesystem writes  1654ms
+   ✓ CLI integration and exit contract > never silently overwrites initialized or generated artifacts  3296ms
+   ✓ CLI integration and exit contract > rejects linked output directories and files, including with force  2006ms
+   ✓ CLI integration and exit contract > refuses path traversal and symlink reads outside the project  1672ms
+   ✓ CLI integration and exit contract > returns readable errors for malformed briefs, unknown directions, and invalid options  4176ms
+   ✓ CLI integration and exit contract > fails on malformed sources and can explicitly report without failing  3509ms
+   ✓ CLI integration and exit contract > refuses concurrent writes and malformed persisted DNA  1782ms
+ ✓ tests/audit.test.ts (10 tests) 276ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/core.test.ts > Design DNA and tokens > keeps the committed example artifacts consistent with engine output
+Error: Direction does not match this context and bundled knowledge version
+ ❯ createDesignDNA packages/core/src/generate.ts:21:11
+     19|   });
+     20|   if (JSON.stringify(chosen) !== JSON.stringify(expected)) {
+     21|     throw new Error('Direction does not match this context and bundled…
+       |           ^
+     22|   }
+     23|   const spacing = [0, 4, 8, 12, 16, 24, 32, 48, 64];
+ ❯ validateDNA packages/core/src/generate.ts:79:20
+ ❯ tests/core.test.ts:219:17
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 5 passed (6)
+      Tests  1 failed | 56 passed (57)
+   Start at  16:22:38
+   Duration  37.03s (transform 2.03s, setup 0ms, collect 10.83s, tests 37.59s, environment 7ms, prepare 1.37s)
+
+ ELIFECYCLE  Command failed with exit code 1.

@@ -37,6 +37,8 @@ try {
     if (short === 'knowledge') {
       assert(files.includes('package/dist/data/knowledge.json'));
       assert(files.includes('package/dist/data/references.json'));
+      assert(files.includes('package/dist/data/compositions.json'));
+      assert(files.includes('package/dist/compositions.js'));
       assert(files.includes('package/reference-lock.json'));
       assert(files.includes('package/third-party/volt.LICENSE.txt'));
       assert(files.includes('package/third-party/promax.LICENSE.txt'));
@@ -92,6 +94,9 @@ try {
   );
   assert.equal(inspiration.inspirations.length, 3);
   assert(inspiration.inspirations.every((p) => p.template?.tasks.includes('commerce')));
+  assert(inspiration.inspirations.every((p) => p.composition?.tasks.includes('commerce')));
+  assert.equal(new Set(inspiration.inspirations.map((p) => p.composition.id)).size, 3);
+  assert(inspiration.compositionSources.every((s) => s.revision.length === 40));
   assert.equal(inspiration.requiredGates.length, 10);
   await writeFile(path.join(project, 'view.css'), '.x { color: #aaa; background: #fff; }');
   const audit = JSON.parse(cli('audit', '--path', 'view.css', '--format', 'json'));
