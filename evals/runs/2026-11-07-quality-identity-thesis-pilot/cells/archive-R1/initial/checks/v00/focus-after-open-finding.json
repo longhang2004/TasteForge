@@ -1,0 +1,31 @@
+{
+  "capturedAtUtc": "2026-11-07T16:01:39.739Z",
+  "page": "http://127.0.0.1:4181/versions/00.html",
+  "viewport": {
+    "width": 320,
+    "height": 780
+  },
+  "observed": {
+    "activeTag": "BODY",
+    "activeId": "",
+    "activeText": "Skip to catalogue records\n\n\n  \n    \n      Lantern Slide Lect",
+    "detailTitleExists": true,
+    "detailTitleTabIndex": "-1",
+    "detailTitleRect": {
+      "x": 16,
+      "y": 889.578125,
+      "width": 288,
+      "height": 80.625,
+      "top": 889.578125,
+      "right": 304,
+      "bottom": 970.203125,
+      "left": 16
+    },
+    "detailViewHiddenAttrAtFocusTime": null,
+    "detailVisibleNow": true
+  },
+  "retryFocusAfterVisible": {
+    "activeId": "detailTitle"
+  },
+  "conclusion": "After clicking a record, document.activeElement was not #detailTitle. Focus was attempted inside renderDetail() while #detailView still had the hidden attribute, so the focus call was ignored. Re-focusing the same element after unhiding succeeds, confirming the ordering (not the element) is the defect."
+}

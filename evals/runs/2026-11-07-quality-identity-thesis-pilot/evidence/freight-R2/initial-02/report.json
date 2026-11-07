@@ -1,0 +1,1835 @@
+{
+  "cell": "freight-R2",
+  "stage": "initial",
+  "pass": "initial-02",
+  "startedAt": "2026-11-07T18:15:58.631Z",
+  "sourceSha256": "7ac1efe084a6dded8e9a79b9bd5e55310f943d3f24ab3aaab84756ddacf3125e",
+  "harnessSha256": "9ffcf3ebba41939d4d1c4076417967a2c87c9dd586957bfd652c162076e245f0",
+  "taskHarnessSha256": "5903344b3c59482921bd29757b939e09e8f1a8460e0bc972f9593dd0bbbee978",
+  "traces": [
+    {
+      "width": 320,
+      "states": [
+        {
+          "label": "entry",
+          "report": "evidence/freight-R2/initial-02/320-entry/report.json",
+          "viewport": "evidence/freight-R2/initial-02/320-entry/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 1844.890625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "blocked-excursion",
+          "report": "evidence/freight-R2/initial-02/320-blocked-excursion/report.json",
+          "viewport": "evidence/freight-R2/initial-02/320-blocked-excursion/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 30,
+              "y": 327.078125,
+              "width": 260,
+              "height": 86.625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2184
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "note-too-short",
+          "report": "evidence/freight-R2/initial-02/320-note-too-short/report.json",
+          "viewport": "evidence/freight-R2/initial-02/320-note-too-short/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 30,
+              "y": 306.078125,
+              "width": 260,
+              "height": 127.125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2205
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "report": "evidence/freight-R2/initial-02/320-review/report.json",
+          "viewport": "evidence/freight-R2/initial-02/320-review/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 30,
+              "y": 347.171875,
+              "width": 260,
+              "height": 45.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 474
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "report": "evidence/freight-R2/initial-02/320-edit/report.json",
+          "viewport": "evidence/freight-R2/initial-02/320-edit/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 30,
+              "y": 344.765625,
+              "width": 260,
+              "height": 50.375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1072
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "submit-failure",
+          "report": "evidence/freight-R2/initial-02/320-submit-failure/report.json",
+          "viewport": "evidence/freight-R2/initial-02/320-submit-failure/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H3",
+            "id": "submit-error-title",
+            "testId": null,
+            "rect": {
+              "x": 51,
+              "y": 350.765625,
+              "width": 222,
+              "height": 39,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 657
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "report": "evidence/freight-R2/initial-02/320-success/report.json",
+          "viewport": "evidence/freight-R2/initial-02/320-success/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "success-title",
+            "testId": null,
+            "rect": {
+              "x": 30,
+              "y": 341.921875,
+              "width": 260,
+              "height": 55.1875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 526
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        "all four declared consignments are offered",
+        "HC-114 shows its four readings and declared limit",
+        "HC-114 states the correct excursion state",
+        "HC-118 shows its four readings and declared limit",
+        "HC-118 states the correct excursion state",
+        "HC-121 shows its four readings and declared limit",
+        "HC-121 states the correct excursion state",
+        "HC-126 shows its four readings and declared limit",
+        "HC-126 states the correct excursion state",
+        "HC-114 names the −0.4 °C reading against its −1.0 °C limit",
+        "Release cannot be carried through for HC-114, and is explained",
+        "Hold still reaches review, so the refusal is specific to Release",
+        "a 9-character note is rejected",
+        "a note over 120 characters is refused",
+        "review shows consignment, decision, weight, dock, excursion, note",
+        "edit retains the selection, decision and note",
+        "changing consignment clears the previous decision and note",
+        "HC-118 has no excursion, so Release is available",
+        "the first valid submit fails with a useful recovery",
+        "facts are unchanged after the failure",
+        "retry succeeds and states the recorded decision honestly",
+        "no horizontal overflow at 320px"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "states": [
+        {
+          "label": "entry",
+          "report": "evidence/freight-R2/initial-02/390-entry/report.json",
+          "viewport": "evidence/freight-R2/initial-02/390-entry/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 1628.078125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "blocked-excursion",
+          "report": "evidence/freight-R2/initial-02/390-blocked-excursion/report.json",
+          "viewport": "evidence/freight-R2/initial-02/390-blocked-excursion/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 31.59375,
+              "y": 42.328125,
+              "width": 326.8125,
+              "height": 86.625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2240
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "note-too-short",
+          "report": "evidence/freight-R2/initial-02/390-note-too-short/report.json",
+          "viewport": "evidence/freight-R2/initial-02/390-note-too-short/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 31.59375,
+              "y": 257.328125,
+              "width": 326.8125,
+              "height": 106.875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2025
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "report": "evidence/freight-R2/initial-02/390-review/report.json",
+          "viewport": "evidence/freight-R2/initial-02/390-review/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 31.59375,
+              "y": 695.796875,
+              "width": 326.8125,
+              "height": 22.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "report": "evidence/freight-R2/initial-02/390-edit/report.json",
+          "viewport": "evidence/freight-R2/initial-02/390-edit/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 31.59375,
+              "y": 396.640625,
+              "width": 326.8125,
+              "height": 50.375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 851
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "submit-failure",
+          "report": "evidence/freight-R2/initial-02/390-submit-failure/report.json",
+          "viewport": "evidence/freight-R2/initial-02/390-submit-failure/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H3",
+            "id": "submit-error-title",
+            "testId": null,
+            "rect": {
+              "x": 52.59375,
+              "y": 402.84375,
+              "width": 288.8125,
+              "height": 39,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 435
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "report": "evidence/freight-R2/initial-02/390-success/report.json",
+          "viewport": "evidence/freight-R2/initial-02/390-success/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "success-title",
+            "testId": null,
+            "rect": {
+              "x": 31.59375,
+              "y": 759.796875,
+              "width": 326.8125,
+              "height": 27.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        "all four declared consignments are offered",
+        "HC-114 shows its four readings and declared limit",
+        "HC-114 states the correct excursion state",
+        "HC-118 shows its four readings and declared limit",
+        "HC-118 states the correct excursion state",
+        "HC-121 shows its four readings and declared limit",
+        "HC-121 states the correct excursion state",
+        "HC-126 shows its four readings and declared limit",
+        "HC-126 states the correct excursion state",
+        "HC-114 names the −0.4 °C reading against its −1.0 °C limit",
+        "Release cannot be carried through for HC-114, and is explained",
+        "Hold still reaches review, so the refusal is specific to Release",
+        "a 9-character note is rejected",
+        "a note over 120 characters is refused",
+        "review shows consignment, decision, weight, dock, excursion, note",
+        "edit retains the selection, decision and note",
+        "changing consignment clears the previous decision and note",
+        "HC-118 has no excursion, so Release is available",
+        "the first valid submit fails with a useful recovery",
+        "facts are unchanged after the failure",
+        "retry succeeds and states the recorded decision honestly",
+        "no horizontal overflow at 390px"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "states": [
+        {
+          "label": "entry",
+          "report": "evidence/freight-R2/initial-02/1440-entry/report.json",
+          "viewport": "evidence/freight-R2/initial-02/1440-entry/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1052.4375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "blocked-excursion",
+          "report": "evidence/freight-R2/initial-02/1440-blocked-excursion/report.json",
+          "viewport": "evidence/freight-R2/initial-02/1440-blocked-excursion/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 559,
+              "y": 412.71875,
+              "width": 720,
+              "height": 68.4375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 843
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "note-too-short",
+          "report": "evidence/freight-R2/initial-02/1440-note-too-short/report.json",
+          "viewport": "evidence/freight-R2/initial-02/1440-note-too-short/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 559,
+              "y": 426.71875,
+              "width": 720,
+              "height": 68.4375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 829
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "report": "evidence/freight-R2/initial-02/1440-review/report.json",
+          "viewport": "evidence/freight-R2/initial-02/1440-review/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 163,
+              "y": 391.34375,
+              "width": 834,
+              "height": 27.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "report": "evidence/freight-R2/initial-02/1440-edit/report.json",
+          "viewport": "evidence/freight-R2/initial-02/1440-edit/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 559,
+              "y": 383.09375,
+              "width": 456.46875,
+              "height": 31.1875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "submit-failure",
+          "report": "evidence/freight-R2/initial-02/1440-submit-failure/report.json",
+          "viewport": "evidence/freight-R2/initial-02/1440-submit-failure/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H3",
+            "id": "submit-error-title",
+            "testId": null,
+            "rect": {
+              "x": 184,
+              "y": 457.6875,
+              "width": 796,
+              "height": 19.5,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 37
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "report": "evidence/freight-R2/initial-02/1440-success/report.json",
+          "viewport": "evidence/freight-R2/initial-02/1440-success/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "success-title",
+            "testId": null,
+            "rect": {
+              "x": 163,
+              "y": 455.34375,
+              "width": 774,
+              "height": 34.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        "all four declared consignments are offered",
+        "HC-114 shows its four readings and declared limit",
+        "HC-114 states the correct excursion state",
+        "HC-118 shows its four readings and declared limit",
+        "HC-118 states the correct excursion state",
+        "HC-121 shows its four readings and declared limit",
+        "HC-121 states the correct excursion state",
+        "HC-126 shows its four readings and declared limit",
+        "HC-126 states the correct excursion state",
+        "HC-114 names the −0.4 °C reading against its −1.0 °C limit",
+        "Release cannot be carried through for HC-114, and is explained",
+        "Hold still reaches review, so the refusal is specific to Release",
+        "a 9-character note is rejected",
+        "a note over 120 characters is refused",
+        "review shows consignment, decision, weight, dock, excursion, note",
+        "edit retains the selection, decision and note",
+        "changing consignment clears the previous decision and note",
+        "HC-118 has no excursion, so Release is available",
+        "the first valid submit fails with a useful recovery",
+        "facts are unchanged after the failure",
+        "retry succeeds and states the recorded decision honestly",
+        "no horizontal overflow at 1440px"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  ],
+  "failures": [],
+  "providerTokens": null,
+  "scope": "Automated browser/axe + natural viewport; human tests deferred",
+  "chromium": "156.0.8078.4",
+  "finishedAt": "2026-11-07T18:17:10.535Z",
+  "checks": 66
+}

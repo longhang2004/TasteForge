@@ -1,0 +1,82 @@
+{
+  "cell": "freight-R1",
+  "resource": "R1/tasteforge",
+  "task": "Harbor Cold Chain consignment release: inspect one consignment's temperature evidence, decide Release or Hold under a declared-limit rule, record a 10-120 character note, review, recover from a failed first submission, and confirm a simulated record.",
+  "start_utc": "2026-11-07T15:47:17Z",
+  "end_utc": "2026-11-07T16:10:54Z",
+  "submitted_file": "initial/index.html",
+  "versions": [
+    {
+      "file": "versions/00.html",
+      "sha256": "917b9f9f11a370e13f39c2067c6da227f6790d035aae9ab0acb12ae00b95be62",
+      "saved_utc": "2026-11-07T15:51:13Z",
+      "note": "First runnable file, saved byte-for-byte before any browser test or revision."
+    },
+    {
+      "file": "versions/01.html",
+      "sha256": "c4dafded6213ca0eb302e1c8feb2fb2bfae2acfbf58a969542b473b5b21b4370",
+      "saved_utc": "2026-11-07T16:06:52Z",
+      "note": "Single focused self-correction pass (copied from 00 at 15:55:02Z, edited, finalized 16:06:52Z). Observed finding: (a) axe color-contrast came back 'incomplete' on 8 nodes because .card used a linear-gradient background so axe could not resolve the background colour; (b) the keyboard check showed no focus ring on the consignment radios (outline-style computed as 'none' under the :focus-visible rule for a small radio); (c) axe incomplete 'aria-prohibited-attr' on #release-block for aria-labelledby while the referenced visible text already sits inside it; (d) dead code in changeConsignment referenced a non-existent '#dec-announce' element and threw a TypeError on every consignment change (5 uncaught page errors in v00). Changed: moved the ambient radial gradients from body background to a fixed, z-index:-1 body::before layer so card/text backgrounds resolve to a flat colour; added .pick/.opt :focus-within surface change plus an explicit 3px ring on the focused radio; removed the redundant aria-labelledby from #release-block; removed the throwing statement and rewrote the change-consignment announcement through the live region; added syncPicker() to renderEvidence so the checked card styling follows state changes. Rechecked: full browser/axe suite re-run (27 pass / 0 fail), axe violations 0 in evidence, review and blocked-release+validation states, 0 uncaught page errors, no horizontal overflow at 320/390/1440 in all four states. ALSO: during this same pass I introduced and then fixed one regression of my own — clearing #release-block via textContent destroyed its child title/paragraph nodes, which broke the blocked-release state and two downstream checks; that line was removed and the checks re-run clean."
+    }
+  ],
+  "submitted_sha256": "c4dafded6213ca0eb302e1c8feb2fb2bfae2acfbf58a969542b473b5b21b4370",
+  "loaded_skill_paths": [
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/operator.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/prompts/freight.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/SKILL.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/create-ui.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/render-checks.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/structure-and-revise.md"
+  ],
+  "rationale": "Standard-effort create: the task is a single consequential decision (release vs hold) with an irreversible-ish consequence, so the page is organised as one column of evidence and one column of action, in the order an operator actually works: consignment picker, then the reading evidence and the rule verdict side by side with the decision and note, then review, then a recorded state. The evidence card leads with the declared limit and derives the excursion sentence from the same comparison the release gate uses, so the operator cannot see a verdict that disagrees with the action; a four-row schematic strip plots each reading against a shaded over-limit band because the supplied facts are four chronological numbers per consignment and the only thing that matters is which reading crossed the line. Visual direction: a cold storage palette (deep navy surfaces, ice-cyan accent, amber strictly reserved for excursion/blocked/failed states and mint for within-limit/recorded), one system font stack, tabular numerals for all temperatures and weights. A persistent 'Simulation - no real shipment is affected' marker and a success disclaimer keep the demo honest, and no fact beyond the supplied table was invented.",
+  "checks_run": [
+    "Browser harness: local static HTTP fixture + Playwright 1.64.1 + @axe-core/playwright 4.14.0 from examples/inventory-workbench/tools/node_modules (nothing installed). Raw output retained under initial/checks/raw-v00/ and initial/checks/raw-v01/.",
+    "Facts render (v01): for all four consignments, product, declared-limit phrase, weight, destination dock and all four readings rendered exactly as supplied, and the plotted over-limit flags matched the excursion rule (HC-114 true, HC-118 false, HC-121 true, HC-126 false). PASS.",
+    "HC-114 release blocked: selecting Release on HC-114 with reading -0.4 vs 'at or below -1.0 °C' revealed a block naming 'Reading 3', the -0.4 °C value, the declared limit and the 'must be held, not released' rule, and clicking Continue to review did not advance. PASS.",
+    "HC-118 release allowed: no excursion, Release reached review with consignment HC-118, decision Release, 18.0 kg, Dock A, 'No reading above the declared limit' summary and the exact note. PASS.",
+    "Edit retention: Edit decision returned to evidence with HC-118 still selected, Release still checked and the note text intact. PASS.",
+    "Note minimum: 2-character note rejected with 'at least 10 characters' message, aria-invalid=true, focus moved to the textarea, review not reached. PASS.",
+    "Note maximum: 125-character note rejected with a message naming the 120 limit. PASS.",
+    "Submit failure and retry: first Submit produced 'Submission not confirmed ... Nothing was recorded' with a Retry submission button and no success view; the retry succeeded with consignment, decision, weight and note byte-identical to the pre-retry review. PASS.",
+    "Consignment change reset: HC-121 + Hold + note, then switching to HC-126 left no decision checked and the note empty. PASS.",
+    "HC-121 path: excursion flagged, Hold reached review with 61.2 kg, Dock C and '3 of 4 readings above the declared limit of at or below 0.0 °C ... Reading 1 at 0.3 °C'. PASS.",
+    "Keyboard/focus: 8 Tab presses from document start stepped through the skip link into the consignment radio group, the decision group, the note and the review button; on keyboard focus the radio computed outline 3px solid rgb(126,231,245) with the card border also changing; Space selected the focused radio; Enter on the focused review button advanced to review. PASS. (Programmatic .focus() does not match :focus-visible, which is expected.)",
+    "Axe (v01), evidence view: 0 violations, 1 incomplete (color-contrast). Review view: 0 violations, 1 incomplete (color-contrast). Blocked-release + validation state: 0 violations, 1 incomplete (color-contrast). PASS with the incomplete item kept as a review item, not a pass.",
+    "Manual contrast sampling for the pairs axe could not resolve (gradient card backgrounds): 15 foreground/background pairs computed, lowest 5.76:1, 0 below 4.5:1. Raw log: checks/raw-v01/v01-contrast-sample.log.",
+    "Horizontal overflow, states evidence-with-blocked-release, review, submit-error and success at widths 320, 390 and 1440: document scrollWidth equalled window.innerWidth in all 12 combinations; submit-error text (180 chars) stayed in the viewport at all three widths. Raw geometry also confirmed no clipped non-sr-only elements at any width and no control under 24 px tall.",
+    "Static: lang=en, no external link/script/img/iframe/source requests, zero console errors, zero uncaught page errors, zero failed requests in the v01 run.",
+    "Labels: all radio inputs and the textarea resolve a programmatic label (buttons use visible text). PASS."
+  ],
+  "failures_observed_and_resolved": [
+    "v00 uncaught TypeError: changeConsignment() wrote to '#dec-announce', an element that does not exist, so every consignment change threw (5 page errors observed across the v00 run). Resolved in 01 by deleting the dead statement and routing the same announcement through the existing live region.",
+    "v00 keyboard check FAILED: the consignment radio computed outline-style 'none' once focused, so there was no visible focus ring even though the CSS declared one. Resolved in 01 with an explicit 3px :focus-visible ring on the radio input plus a :focus-within surface change on the whole option card; re-probed and confirmed outline 3px solid + card border change under real keyboard Tab.",
+    "v00 axe incomplete color-contrast on 8 nodes ('background color could not be determined due to a background gradient') caused by .card's linear-gradient. Resolved in 01 by making card surfaces flat colours and painting the ambient gradients on a separate fixed body::before layer; remaining incomplete nodes were then manually sampled and all passed.",
+    "v00 axe incomplete aria-prohibited-attr on #release-block (aria-labelledby pointing at visible text that is already inside the element). Resolved in 01 by dropping the redundant aria-labelledby.",
+    "Self-introduced regression during the correction pass: I cleared '#release-block' with textContent = '' on consignment change, which destroyed its <h3>/#block-text children and broke the blocked-release state (1 check failed, then 3 checks failed with Playwright visibility timeouts). Resolved by removing that single line and re-running the suite clean.",
+    "Two of my own test-harness assertions were wrong and were corrected rather than papered over: (1) I compared reading text including the ' °C' suffix against bare numeric expectations; (2) I asserted '2 of 4' readings above limit for HC-121 when the supplied readings 0.3, 0.2 and 0.1 all exceed 0.0 °C, so the correct count is 3 of 4. The page was right in both cases; the harness was corrected and the raw first-failure output is retained in checks/raw-v00/."
+  ],
+  "unavailable_or_unassessed_checks": [
+    "No human visual review, human acceptance or user testing was performed; nothing here is a claim of accessibility conformance.",
+    "I could not view the screenshots: this session's model has no image input, so the PNGs under checks/raw-v00/ and checks/raw-v01/ were captured but were assessed only through DOM geometry, computed styles, text extraction and axe. Visual judgment of polish, hierarchy and whether the focus ring reads well is unassessed.",
+    "axe color-contrast remained 'incomplete' rather than 'passing' on 8 nodes in each state because those nodes sit on gradient-backed surfaces; I covered them with a manual computation over the declared colour pairs, but a manual pair calculation is weaker evidence than axe resolving the real composited background, and it does not cover text over the radial gradient wash at the page edges.",
+    "No screen-reader run (NVDA/JAWS/VoiceOver) was performed; live-region behaviour for the consignment-change announcement and the async submit failure is asserted only from code and DOM state.",
+    "No cross-browser check: only Chromium via the bundled Playwright was exercised.",
+    "No zoom/reflow check at 400% (WCAG 1.4.10) and no forced-colors/high-contrast mode check.",
+    "The creation budget was exceeded: the operator sets an 8-minute soft / 15-minute hard creation wall-time budget and this cell ran roughly 21.5 minutes from 15:47:17Z to 16:08:51Z, largely on the correction pass and on diagnosing the self-introduced release-block regression. The work was stopped after one coherent slice and one correction pass; no alternatives were built."
+  ],
+  "tool_calls": null,
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "thinking_tokens": null,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "total_tokens": null,
+    "cost_usd": null
+  },
+  "model": {
+    "provider": null,
+    "id": null
+  },
+  "human_acceptance": null
+}

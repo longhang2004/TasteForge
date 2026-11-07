@@ -1,0 +1,26 @@
+PASS  no horizontal overflow @ list/320px  — scrollWidth=320 clientWidth=320
+PASS  matching count shown @ list/320px  — count="5 RECORDS"
+PASS  all 5 records listed @ list/320px  — rows=5
+PASS  long title present @ list/320px
+PASS  duplicate LS-19 listed @ list/320px
+PASS  LS-19 labelled duplicate @ list/320px  — SCHEMATIC LS-19 FIELD SURVEYS Coastal erosion survey, figure 4 — duplicate — open record LS-19 Hand-tinted glass·Catalogue date undated·Plate 8.3 × 8.3 cm CONDI
+PASS  search by title "coastal" @ list/320px  — n=2 ids=LS-02,LS-19
+PASS  count reflects filter @ list/320px  — count="2 OF 5 RECORDS"
+PASS  search by series text @ list/320px  — ids=LS-07,LS-14
+PASS  series filter Field Surveys @ list/320px  — ids=LS-02,LS-11,LS-19
+PASS  empty state appears @ list/320px
+PASS  records list hidden when empty @ list/320px
+PASS  no horizontal overflow @ list/320px/empty  — scrollWidth=320 clientWidth=320
+PASS  empty reset control present @ list/320px
+PASS  reset restores results @ list/320px  — rows=5 q="" count="5 RECORDS"
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 30000ms exceeded.
+    at /mnt/c/Users/hi/src/personal_repos/TasteForge/evals/runs/2026-11-07-quality-identity-thesis-pilot/cells/archive-R1/initial/checks/run-checks.mjs:131:16 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v24.22.0

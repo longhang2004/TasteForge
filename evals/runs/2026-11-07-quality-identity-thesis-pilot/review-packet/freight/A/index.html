@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consignment release — Harbor Cold Chain</title>
+<style>
+  :root{
+    --bg:#0a1520;
+    --bg-glow:#10283c;
+    --panel:#122437;
+    --panel-2:#162c41;
+    --line:#274359;
+    --line-soft:#1d3347;
+    --text:#eef5fa;
+    --muted:#a9bfd0;
+    --dim:#8ea8bc;
+    --ice:#7ee7f5;
+    --ok:#77e3b4;
+    --warn:#ffc76f;
+    --warn-ink:#241703;
+    --radius:14px;
+    --shadow:0 18px 40px rgba(2,8,14,.45);
+    --font:"Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    font-family:var(--font);
+    color:var(--text);
+    background:var(--bg);
+    min-height:100vh;
+    line-height:1.5;
+  }
+  /* Ambient light sits on its own layer so text backgrounds stay a single
+     flat colour that contrast checks can resolve. */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(1100px 520px at 78% -8%, rgba(126,231,245,.13), transparent 62%),
+      radial-gradient(900px 480px at 8% 8%, rgba(119,227,180,.08), transparent 60%);
+  }
+  h1,h2,h3,p,ol,ul,dl,dd,figure{margin:0}
+  button{font:inherit}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(14px,4vw,32px)}
+  .skip{
+    position:absolute;left:-9999px;top:0;z-index:20;
+    background:var(--ice);color:#062330;font-weight:700;
+    padding:.7rem 1rem;border-radius:0 0 10px 0;text-decoration:none;
+  }
+  .skip:focus{left:0}
+  :focus-visible{outline:3px solid var(--ice);outline-offset:3px;border-radius:6px}
+  /* A radio is a small target, so the focused option's card also changes
+     surface while the input itself carries the visible ring. */
+  .pick:focus-within,.opt:focus-within{border-color:var(--ice);background:rgba(126,231,245,.12)}
+  .pick input:focus-visible,.opt input:focus-visible{outline:3px solid var(--ice);outline-offset:2px}
+
+  /* ---------- masthead ---------- */
+  .masthead{border-bottom:1px solid var(--line-soft);background:rgba(9,20,31,.72)}
+  .masthead__in{display:flex;flex-wrap:wrap;gap:.85rem 1.4rem;align-items:center;justify-content:space-between;padding-block:.95rem}
+  .brand{display:flex;align-items:center;gap:.7rem;min-width:0}
+  .brand__mark{
+    display:grid;place-items:center;width:2.4rem;height:2.4rem;flex:0 0 auto;
+    border:1px solid rgba(126,231,245,.5);border-radius:9px;
+    background:linear-gradient(160deg,rgba(126,231,245,.22),rgba(126,231,245,.04));
+    color:var(--ice);font-weight:800;font-size:.82rem;letter-spacing:.04em;
+  }
+  .brand__name{font-weight:750;letter-spacing:.01em;line-height:1.2}
+  .brand__sub{display:block;font-size:.76rem;font-weight:400;color:var(--dim)}
+  .sim-flag{
+    display:inline-flex;align-items:center;gap:.45rem;
+    border:1px solid rgba(255,199,111,.45);border-radius:999px;
+    padding:.3rem .7rem;font-size:.76rem;color:var(--warn);background:rgba(255,199,111,.08);
+  }
+  .sim-flag__dot{width:.42rem;height:.42rem;border-radius:50%;background:var(--warn);flex:0 0 auto}
+
+  /* ---------- steps ---------- */
+  .steps{
+    list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 0;
+    margin:0 auto;padding-bottom:.85rem;font-size:.8rem;color:var(--dim);
+  }
+  .steps li{display:flex;align-items:center;gap:.45rem;padding-right:1.5rem;position:relative}
+  .steps li + li{padding-left:1.5rem}
+  .steps li + li::before{
+    content:"";position:absolute;left:0;top:50%;width:1rem;height:1px;background:var(--line);
+  }
+  .steps__num{
+    display:grid;place-items:center;width:1.35rem;height:1.35rem;border-radius:50%;
+    border:1px solid var(--line);font-size:.72rem;font-weight:700;flex:0 0 auto;
+  }
+  .steps li[aria-current="step"]{color:var(--text);font-weight:650}
+  .steps li[aria-current="step"] .steps__num{border-color:var(--ice);background:var(--ice);color:#062330}
+  .steps li[data-done="true"] .steps__num{border-color:rgba(119,227,180,.6);color:var(--ok)}
+
+  /* ---------- views ---------- */
+  .view[hidden]{display:none}
+  main{padding-block:clamp(1.1rem,3vw,2rem) 3rem}
+  .panel-head{max-width:62ch;margin-bottom:1.1rem}
+  .kicker{
+    text-transform:uppercase;letter-spacing:.14em;font-size:.7rem;font-weight:700;color:var(--ice);
+    margin-bottom:.35rem;
+  }
+  h1{font-size:clamp(1.32rem,1.1rem + 1.1vw,1.85rem);line-height:1.22;letter-spacing:-.015em;font-weight:760}
+  h1:focus-visible{outline-offset:6px}
+  .lede{color:var(--muted);margin-top:.5rem;max-width:66ch}
+
+  /* ---------- layout ---------- */
+  .cols{display:grid;gap:1rem;grid-template-columns:minmax(0,1fr);align-items:start}
+  @media (min-width:900px){
+    .cols{grid-template-columns:17.5rem minmax(0,1fr);gap:1.15rem}
+  }
+  .stack{display:grid;gap:1rem;min-width:0}
+  .card{
+    background:linear-gradient(180deg,var(--panel-2),var(--panel));
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:1.05rem 1.05rem 1.15rem;
+    box-shadow:var(--shadow);
+    min-width:0;
+  }
+  fieldset.card{margin:0;border:1px solid var(--line)}
+  legend{padding:0;font-weight:750;font-size:.95rem;letter-spacing:.01em}
+  .card > legend + *{margin-top:.65rem}
+
+  /* ---------- picker ---------- */
+  .pick-list{display:grid;gap:.5rem}
+  .pick{
+    display:flex;gap:.6rem;align-items:flex-start;
+    border:1px solid var(--line-soft);border-radius:11px;
+    padding:.6rem .65rem;cursor:pointer;background:rgba(9,22,34,.55);
+    transition:border-color .12s ease, background .12s ease;
+  }
+  .pick:hover{border-color:var(--line);background:rgba(20,44,66,.85)}
+  .pick input{margin:.28rem 0 0;accent-color:var(--ice);width:1.05rem;height:1.05rem;flex:0 0 auto}
+  .pick__body{display:grid;min-width:0;gap:.1rem}
+  .pick__id{font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.01em}
+  .pick__name{color:var(--muted);font-size:.88rem;overflow-wrap:anywhere}
+  .pick__meta{color:var(--dim);font-size:.76rem;font-variant-numeric:tabular-nums}
+  .pick__tag{
+    margin-left:auto;align-self:flex-start;flex:0 0 auto;
+    font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    padding:.18rem .42rem;border-radius:5px;white-space:nowrap;
+  }
+  .pick__tag.is-warn{background:rgba(255,199,111,.16);color:var(--warn);border:1px solid rgba(255,199,111,.4)}
+  .pick__tag.is-ok{background:rgba(119,227,180,.14);color:var(--ok);border:1px solid rgba(119,227,180,.36)}
+  .pick.is-on{border-color:var(--ice);background:rgba(126,231,245,.1)}
+
+  /* ---------- evidence ---------- */
+  .ev-head{display:flex;flex-wrap:wrap;gap:.5rem .9rem;align-items:baseline;justify-content:space-between}
+  .ev-id{font-size:1.25rem;font-weight:780;font-variant-numeric:tabular-nums;letter-spacing:.01em}
+  .ev-name{color:var(--muted);font-size:.92rem}
+  .ev-facts{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:.7rem;font-size:.86rem;color:var(--muted)}
+  .ev-facts b{color:var(--text);font-weight:650;font-variant-numeric:tabular-nums}
+  .verdict{
+    margin-top:1rem;border-radius:11px;padding:.8rem .85rem;border:1px solid var(--line);
+    display:grid;gap:.25rem;
+  }
+  .verdict__title{display:flex;align-items:center;gap:.5rem;font-weight:750}
+  .verdict__title::before{content:"";width:.6rem;height:.6rem;border-radius:50%;flex:0 0 auto}
+  .verdict.is-warn{border-color:rgba(255,199,111,.5);background:rgba(255,199,111,.09)}
+  .verdict.is-warn .verdict__title{color:var(--warn)}
+  .verdict.is-warn .verdict__title::before{background:var(--warn)}
+  .verdict.is-ok{border-color:rgba(119,227,180,.42);background:rgba(119,227,180,.07)}
+  .verdict.is-ok .verdict__title{color:var(--ok)}
+  .verdict.is-ok .verdict__title::before{background:var(--ok)}
+  .verdict__text{color:var(--muted);font-size:.88rem;overflow-wrap:anywhere}
+
+  .plot{margin-top:1.1rem}
+  .plot__head{display:flex;flex-wrap:wrap;gap:.2rem .8rem;align-items:baseline;justify-content:space-between}
+  .plot h2{font-size:.95rem;font-weight:730}
+  .mini{font-size:.76rem;color:var(--dim);max-width:52ch}
+  .strip{list-style:none;padding:0;margin:.7rem 0 0;display:grid;gap:.34rem}
+  .srow{display:grid;grid-template-columns:5.4rem minmax(0,1fr) 4.9rem;align-items:center;gap:.5rem;font-size:.83rem}
+  .srow__label{color:var(--dim);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .track{position:relative;height:1.5rem;border-radius:4px;background:rgba(9,22,34,.75);border:1px solid var(--line-soft)}
+  .track__over{position:absolute;top:0;bottom:0;background:rgba(255,199,111,.13);border-left:1px dashed rgba(255,199,111,.7);border-radius:0 4px 4px 0}
+  .track__dot{
+    position:absolute;top:50%;transform:translate(-50%,-50%);
+    width:.72rem;height:.72rem;border-radius:50%;
+    background:var(--ice);border:2px solid #0a1520;box-shadow:0 0 0 1.5px rgba(126,231,245,.65);
+  }
+  .srow.is-over .track__dot{background:var(--warn);box-shadow:0 0 0 1.5px rgba(255,199,111,.75)}
+  .srow__val{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .srow.is-over .srow__val{color:var(--warn)}
+  .srow__val::after{content:"";}
+  .key{margin-top:.6rem;display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-size:.74rem;color:var(--dim)}
+  .key span{display:inline-flex;align-items:center;gap:.35rem}
+  .key i{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;background:var(--ice)}
+  .key i.w{background:var(--warn)}
+  .key i.t{border-radius:1px;width:0;height:.8rem;border-left:1px dashed rgba(255,199,111,.8)}
+
+  /* ---------- decision ---------- */
+  .dec-opts{display:grid;gap:.6rem;grid-template-columns:minmax(0,1fr)}
+  @media (min-width:620px){.dec-opts{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+  .opt{
+    display:flex;gap:.65rem;align-items:flex-start;
+    border:1px solid var(--line-soft);border-radius:11px;padding:.7rem .75rem;
+    background:rgba(9,22,34,.55);cursor:pointer;
+  }
+  .opt:hover{border-color:var(--line)}
+  .opt input{margin:.24rem 0 0;accent-color:var(--ice);width:1.05rem;height:1.05rem;flex:0 0 auto}
+  .opt__text{display:grid;gap:.1rem;min-width:0}
+  .opt__label{font-weight:700}
+  .opt__sub{font-size:.8rem;color:var(--dim)}
+  .opt.is-on{border-color:var(--ice);background:rgba(126,231,245,.09)}
+  .opt__tag{
+    margin-left:auto;align-self:flex-start;font-size:.64rem;font-weight:700;
+    letter-spacing:.05em;text-transform:uppercase;color:var(--warn);
+    background:rgba(255,199,111,.14);border:1px solid rgba(255,199,111,.38);
+    padding:.16rem .38rem;border-radius:5px;white-space:nowrap;flex:0 0 auto;
+  }
+
+  .block{
+    margin-top:.85rem;border:1px solid rgba(255,199,111,.55);border-radius:11px;
+    background:rgba(255,199,111,.1);padding:.8rem .85rem;display:grid;gap:.3rem;
+  }
+  .block[hidden]{display:none}
+  .block h3{font-size:.92rem;color:var(--warn);letter-spacing:.01em}
+  .block p{font-size:.87rem;color:var(--text);overflow-wrap:anywhere}
+  .block .mini{color:var(--muted)}
+
+  .note{display:grid;gap:.35rem;margin-top:1rem}
+  .note__top{display:flex;flex-wrap:wrap;gap:.3rem .8rem;align-items:baseline;justify-content:space-between}
+  .note label{font-weight:700;font-size:.95rem}
+  .note__count{font-size:.78rem;color:var(--dim);font-variant-numeric:tabular-nums}
+  textarea{
+    width:100%;min-height:5.2rem;resize:vertical;
+    background:rgba(6,18,28,.85);color:var(--text);
+    border:1px solid var(--line);border-radius:10px;
+    padding:.7rem .75rem;font:inherit;font-size:.92rem;line-height:1.45;
+  }
+  textarea::placeholder{color:#7e97ab}
+  textarea[aria-invalid="true"]{border-color:var(--warn);box-shadow:0 0 0 1px rgba(255,199,111,.5)}
+  .err{
+    margin-top:.65rem;border:1px solid rgba(255,199,111,.6);border-radius:10px;
+    background:rgba(255,199,111,.12);color:var(--text);padding:.65rem .75rem;
+    font-size:.87rem;overflow-wrap:anywhere;
+  }
+  .err:empty{display:none}
+
+  .actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.15rem;align-items:center}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.4rem;
+    border-radius:10px;padding:.68rem 1.1rem;font-weight:700;font-size:.92rem;
+    border:1px solid transparent;cursor:pointer;min-height:2.7rem;
+  }
+  .btn--primary{background:var(--ice);color:#062330;border-color:var(--ice)}
+  .btn--primary:hover{background:#a2effa}
+  .btn--ghost{background:transparent;color:var(--text);border-color:var(--line)}
+  .btn--ghost:hover{border-color:var(--muted);background:rgba(255,255,255,.04)}
+  .btn[disabled]{opacity:.6;cursor:progress}
+  .btn-row-note{font-size:.78rem;color:var(--dim)}
+
+  /* ---------- review / success ---------- */
+  .facts{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(min(11rem,100%),1fr));
+    gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);
+    border-radius:12px;overflow:hidden;margin-top:.9rem;
+  }
+  .facts > div{background:var(--panel);padding:.8rem .9rem;min-width:0}
+  .facts dt{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);font-weight:700}
+  .facts dd{margin-top:.2rem;font-weight:670;overflow-wrap:anywhere}
+  .facts dd.is-warn{color:var(--warn)}
+  .rv-note{margin-top:1rem;border-left:3px solid var(--line);padding-left:.85rem}
+  .rv-note h2{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+  .rv-note p{margin-top:.2rem;overflow-wrap:anywhere}
+  .sim-note{
+    margin-top:1.15rem;border-top:1px solid var(--line-soft);padding-top:.8rem;
+    font-size:.82rem;color:var(--dim);
+  }
+  .success .verdict{margin-top:1rem}
+  .done-mark{
+    display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;
+    border:1px solid rgba(119,227,180,.5);background:rgba(119,227,180,.12);
+    color:var(--ok);font-size:1.15rem;font-weight:800;margin-bottom:.7rem;
+  }
+  .sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0 0 0 0);white-space:nowrap;border:0;
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the release task</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead__in">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true">HC</span>
+        <span class="brand__name">Harbor Cold Chain
+          <span class="brand__sub">Cold-storage co-operative · consignment release</span>
+        </span>
+      </div>
+      <p class="sim-flag"><span class="sim-flag__dot" aria-hidden="true"></span>Simulation · no real shipment is affected</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <ol class="steps" id="steps">
+      <li data-step="1" aria-current="step"><span class="steps__num" aria-hidden="true">1</span>Evidence</li>
+      <li data-step="2"><span class="steps__num" aria-hidden="true">2</span>Review</li>
+      <li data-step="3"><span class="steps__num" aria-hidden="true">3</span>Recorded</li>
+    </ol>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <!-- ============ EVIDENCE ============ -->
+  <section class="view" id="panel-evidence" aria-labelledby="h-evidence">
+    <div class="panel-head">
+      <p class="kicker">Step 1 · Consignment evidence</p>
+      <h1 id="h-evidence" tabindex="-1">Check the temperature evidence, then decide</h1>
+      <p class="lede">Each declared limit below is a fixture on this consignment record, not a regulation. A reading above the declared limit is an excursion, and a consignment with any excursion must be held.</p>
+    </div>
+
+    <form id="form" novalidate>
+      <div class="cols">
+        <fieldset class="card picker" id="picker">
+          <legend>Consignment</legend>
+          <div class="pick-list" id="pick-list"></div>
+        </fieldset>
+
+        <div class="stack">
+          <section class="card" aria-labelledby="ev-id">
+            <div class="ev-head">
+              <div>
+                <h2 class="ev-id" id="ev-id">HC-114</h2>
+                <p class="ev-name" id="ev-name">Line-caught mackerel</p>
+              </div>
+              <p class="mini" id="ev-catch">Caught 2 Nov 2026</p>
+            </div>
+            <p class="ev-facts">
+              <span>Declared limit <b id="ev-limit">at or below −1.0 °C</b></span>
+              <span>Weight <b id="ev-weight">42.5 kg</b></span>
+              <span>Destination <b id="ev-dock">Dock B</b></span>
+            </p>
+
+            <div class="verdict is-warn" id="verdict">
+              <p class="verdict__title" id="verdict-title">Excursion on record</p>
+              <p class="verdict__text" id="verdict-text">1 of 4 readings above the declared limit of at or below −1.0 °C. Highest: Reading 3 at −0.4 °C, 0.6 °C above the limit.</p>
+            </div>
+
+            <div class="plot">
+              <div class="plot__head">
+                <h2>Readings, oldest to newest</h2>
+                <p class="mini">Schematic plotted from the four supplied readings — not a live sensor feed.</p>
+              </div>
+              <ol class="strip" id="strip"></ol>
+              <p class="key">
+                <span><i aria-hidden="true"></i>at or below the limit</span>
+                <span><i class="w" aria-hidden="true"></i>above the limit</span>
+                <span><i class="t" aria-hidden="true"></i>declared limit</span>
+              </p>
+            </div>
+          </section>
+
+          <fieldset class="card" id="decision-fieldset" aria-describedby="dec-hint">
+            <legend>Decision for <span id="dec-id">HC-114</span></legend>
+            <p class="mini" id="dec-hint">Release is only possible when every reading is at or below the declared limit.</p>
+            <div class="dec-opts">
+              <label class="opt" id="opt-release" for="d-release">
+                <input type="radio" name="decision" id="d-release" value="release">
+                <span class="opt__text">
+                  <span class="opt__label">Release</span>
+                  <span class="opt__sub">Consignment may proceed</span>
+                </span>
+                <span class="opt__tag" id="release-tag" hidden>Excursion</span>
+              </label>
+              <label class="opt" id="opt-hold" for="d-hold">
+                <input type="radio" name="decision" id="d-hold" value="hold">
+                <span class="opt__text">
+                  <span class="opt__label">Hold</span>
+                  <span class="opt__sub">Stays in the cold store</span>
+                </span>
+              </label>
+            </div>
+
+            <div class="block" id="release-block" hidden tabindex="-1">
+              <h3 id="block-title">Release blocked</h3>
+              <p id="block-text"></p>
+              <p class="mini">Switch the decision to Hold to continue. Nothing has been recorded.</p>
+            </div>
+
+            <div class="note">
+              <div class="note__top">
+                <label for="note">Operator note</label>
+                <span class="note__count" id="note-count">0 / 120</span>
+              </div>
+              <p class="mini" id="note-help">10–120 characters. Stored with the decision you record.</p>
+              <textarea id="note" name="note" rows="3" aria-describedby="note-help note-count" placeholder="What did you check, and what happens next?"></textarea>
+            </div>
+
+            <p class="err" id="form-error" role="alert"></p>
+
+            <div class="actions">
+              <button type="submit" class="btn btn--primary" id="btn-review">Continue to review</button>
+              <p class="btn-row-note">Nothing is submitted until you review and confirm.</p>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- ============ REVIEW ============ -->
+  <section class="view" id="panel-review" aria-labelledby="h-review" hidden>
+    <div class="panel-head">
+      <p class="kicker">Step 2 · Review</p>
+      <h1 id="h-review" tabindex="-1">Review the decision before recording</h1>
+      <p class="lede">These are the facts that will be recorded. Edit keeps your consignment, decision and note exactly as they are.</p>
+    </div>
+
+    <div class="card">
+      <dl class="facts">
+        <div><dt>Consignment</dt><dd id="rv-consignment">—</dd></div>
+        <div><dt>Decision</dt><dd id="rv-decision">—</dd></div>
+        <div><dt>Weight</dt><dd id="rv-weight">—</dd></div>
+        <div><dt>Destination dock</dt><dd id="rv-dock">—</dd></div>
+      </dl>
+      <div class="rv-note">
+        <h2>Excursion summary</h2>
+        <p id="rv-excursion">—</p>
+      </div>
+      <div class="rv-note">
+        <h2>Note</h2>
+        <p id="rv-note">—</p>
+      </div>
+      <p class="sim-note">Simulation only. Submitting records a placeholder entry here; no real shipment, release or food-safety determination occurs.</p>
+      <p class="err" id="submit-error" role="alert"></p>
+      <div class="actions">
+        <button type="button" class="btn btn--ghost" id="btn-edit">Edit decision</button>
+        <button type="button" class="btn btn--primary" id="btn-submit">Submit decision</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECORDED ============ -->
+  <section class="view" id="panel-success" aria-labelledby="h-success" hidden>
+    <div class="card success">
+      <div class="done-mark" aria-hidden="true">✓</div>
+      <div role="status">
+        <h1 id="h-success" tabindex="-1">Hold recorded for HC-114</h1>
+        <p class="lede" id="suc-line">The recorded decision is Hold for HC-114 (Line-caught mackerel), 42.5 kg, to Dock B.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Recorded decision</dt><dd id="suc-decision">—</dd></div>
+        <div><dt>Consignment</dt><dd id="suc-consignment">—</dd></div>
+        <div><dt>Weight</dt><dd id="suc-weight">—</dd></div>
+        <div><dt>Destination dock</dt><dd id="suc-dock">—</dd></div>
+      </dl>
+      <div class="rv-note">
+        <h2>Recorded note</h2>
+        <p id="suc-note">—</p>
+      </div>
+      <p class="sim-note" id="suc-disclaimer">This is a simulated record only. No real shipment was moved, released or held, and no food-safety determination was made.</p>
+      <div class="actions">
+        <button type="button" class="btn btn--ghost" id="btn-again">Start another consignment</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  var CONSIGNMENTS = [
+    { id: "HC-114", product: "Line-caught mackerel", catchDate: "2 Nov 2026", limit: -1.0, readings: [-2.1, -1.8, -0.4, -1.6], dock: "Dock B", weight: 42.5 },
+    { id: "HC-118", product: "Blue mussels", catchDate: "3 Nov 2026", limit: 2.0, readings: [1.2, 1.6, 1.9, 1.4], dock: "Dock A", weight: 18.0 },
+    { id: "HC-121", product: "Sea bream", catchDate: "1 Nov 2026", limit: 0.0, readings: [0.3, 0.2, -0.2, 0.1], dock: "Dock C", weight: 61.2 },
+    { id: "HC-126", product: "Squid", catchDate: "4 Nov 2026", limit: -0.5, readings: [-1.4, -1.1, -1.2, -1.3], dock: "Dock A", weight: 27.4 }
+  ];
+
+  var state = {
+    id: "HC-114",
+    decision: null,
+    note: "",
+    view: "evidence",
+    attempts: 0,
+    submitting: false
+  };
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  function num(value) {
+    var out = Math.abs(value).toFixed(1);
+    return (value < 0 ? "\u2212" : "") + out;
+  }
+  function celsius(value) { return num(value) + " \u00b0C"; }
+  function limitPhrase(c) { return "at or below " + celsius(c.limit); }
+  function listOf() { return CONSIGNMENTS; }
+  function current() {
+    for (var i = 0; i < CONSIGNMENTS.length; i++) { if (CONSIGNMENTS[i].id === state.id) { return CONSIGNMENTS[i]; } }
+    return CONSIGNMENTS[0];
+  }
+
+  function excursion(c) {
+    var over = [];
+    for (var i = 0; i < c.readings.length; i++) {
+      if (c.readings[i] > c.limit) { over.push({ index: i, value: c.readings[i] }); }
+    }
+    var worst = null;
+    for (var j = 0; j < over.length; j++) {
+      if (!worst || over[j].value > worst.value) { worst = over[j]; }
+    }
+    return {
+      any: over.length > 0,
+      count: over.length,
+      over: over,
+      worst: worst,
+      margin: worst ? worst.value - c.limit : 0
+    };
+  }
+
+  function summary(c) {
+    var x = excursion(c);
+    var n = c.readings.length;
+    if (!x.any) {
+      return "No reading above the declared limit of " + limitPhrase(c) + ". All " + n + " readings are within it.";
+    }
+    var s = x.count + " of " + n + " readings above the declared limit of " + limitPhrase(c) + ". ";
+    s += "Highest: Reading " + (x.worst.index + 1) + " at " + celsius(x.worst.value) + ", " + celsius(x.margin) + " above the limit.";
+    return s;
+  }
+
+  function blockText(c) {
+    var x = excursion(c);
+    if (!x.any) { return ""; }
+    var s = "Reading " + (x.worst.index + 1) + " of " + c.readings.length + " measures " + celsius(x.worst.value) +
+      ", above the declared limit of " + limitPhrase(c) + " by " + celsius(x.margin) + ". ";
+    if (x.count > 1) { s += x.count + " of " + c.readings.length + " readings are above the limit. "; }
+    s += "A consignment with any excursion must be held, not released.";
+    return s;
+  }
+
+  /* ---------------- picker ---------------- */
+  var pickList = $("pick-list");
+  CONSIGNMENTS.forEach(function (c) {
+    var x = excursion(c);
+    var label = document.createElement("label");
+    label.className = "pick";
+    label.setAttribute("for", "pick-" + c.id);
+
+    var input = document.createElement("input");
+    input.type = "radio";
+    input.name = "consignment";
+    input.id = "pick-" + c.id;
+    input.value = c.id;
+
+    var body = document.createElement("span");
+    body.className = "pick__body";
+    var idEl = document.createElement("span");
+    idEl.className = "pick__id";
+    idEl.textContent = c.id;
+    var nameEl = document.createElement("span");
+    nameEl.className = "pick__name";
+    nameEl.textContent = c.product;
+    var metaEl = document.createElement("span");
+    metaEl.className = "pick__meta";
+    metaEl.textContent = c.weight.toFixed(1) + " kg \u00b7 " + c.dock;
+    body.appendChild(idEl); body.appendChild(nameEl); body.appendChild(metaEl);
+
+    var tag = document.createElement("span");
+    tag.className = "pick__tag " + (x.any ? "is-warn" : "is-ok");
+    tag.textContent = x.any ? "Excursion" : "Within limit";
+
+    label.appendChild(input); label.appendChild(body); label.appendChild(tag);
+    pickList.appendChild(label);
+
+    input.addEventListener("change", function () {
+      if (input.checked) { changeConsignment(c.id); }
+    });
+  });
+
+  /* ---------------- render ---------------- */
+  function syncPicker() {
+    var inputs = pickList.querySelectorAll("input");
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].checked = inputs[i].value === state.id;
+      inputs[i].closest(".pick").classList.toggle("is-on", inputs[i].checked);
+    }
+  }
+
+  function renderStrip(c) {
+    var strip = $("strip");
+    strip.textContent = "";
+    var all = c.readings.concat([c.limit]);
+    var lo = Math.min.apply(null, all) - 0.5;
+    var hi = Math.max.apply(null, all) + 0.5;
+    var pos = function (v) {
+      var pct = ((v - lo) / (hi - lo)) * 100;
+      return Math.min(97, Math.max(3, pct));
+    };
+    c.readings.forEach(function (v, i) {
+      var over = v > c.limit;
+      var li = document.createElement("li");
+      li.className = "srow" + (over ? " is-over" : "");
+
+      var lab = document.createElement("span");
+      lab.className = "srow__label";
+      lab.textContent = "Reading " + (i + 1);
+
+      var track = document.createElement("span");
+      track.className = "track";
+      var band = document.createElement("span");
+      band.className = "track__over";
+      band.style.left = pos(c.limit) + "%";
+      band.style.right = "0";
+      var dot = document.createElement("span");
+      dot.className = "track__dot";
+      dot.style.left = pos(v) + "%";
+      track.appendChild(band); track.appendChild(dot);
+
+      var val = document.createElement("span");
+      val.className = "srow__val";
+      val.textContent = celsius(v);
+
+      if (over) {
+        var sr = document.createElement("span");
+        sr.className = "sr-only";
+        sr.textContent = " (above the limit)";
+        val.appendChild(sr);
+      }
+      li.appendChild(lab); li.appendChild(track); li.appendChild(val);
+      strip.appendChild(li);
+    });
+  }
+
+  function renderEvidence() {
+    var c = current();
+    var x = excursion(c);
+    $("ev-id").textContent = c.id;
+    $("ev-name").textContent = c.product;
+    $("ev-catch").textContent = "Caught " + c.catchDate;
+    $("ev-limit").textContent = limitPhrase(c);
+    $("ev-weight").textContent = c.weight.toFixed(1) + " kg";
+    $("ev-dock").textContent = c.dock;
+
+    var verdict = $("verdict");
+    verdict.className = "verdict " + (x.any ? "is-warn" : "is-ok");
+    $("verdict-title").textContent = x.any ? "Excursion on record" : "No excursion";
+    $("verdict-text").textContent = summary(c);
+
+    renderStrip(c);
+    syncPicker();
+
+    $("dec-id").textContent = c.id;
+    $("release-tag").hidden = !x.any;
+    $("release-tag").textContent = x.any ? "Blocked" : "";
+    syncDecisionVisibility(x.any);
+  }
+
+  function syncDecisionVisibility(hasExcursion) {
+    var selected = null;
+    var inputs = document.querySelectorAll('input[name="decision"]');
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].checked = inputs[i].value === state.decision;
+      if (inputs[i].checked) { selected = inputs[i].value; }
+      inputs[i].closest(".opt").classList.toggle("is-on", inputs[i].checked);
+    }
+    var block = $("release-block");
+    if (hasExcursion && selected === "release") {
+      $("block-text").textContent = blockText(current());
+      block.hidden = false;
+    } else {
+      block.hidden = true;
+      $("block-text").textContent = "";
+    }
+  }
+
+  function updateCount() {
+    $("note-count").textContent = state.note.length + " / 120";
+  }
+
+  /* ---------------- events ---------------- */
+  function changeConsignment(id) {
+    if (id === state.id) { return; }
+    var previous = state.id;
+    state.id = id;
+    state.decision = null;
+    state.note = "";
+    $("note").value = "";
+    $("note").setAttribute("aria-invalid", "false");
+    $("form-error").textContent = "";
+    $("release-block").hidden = true;
+    updateCount();
+    renderEvidence();
+    announce("Consignment changed from " + previous + " to " + id + ". The decision and the note were cleared for the new consignment.");
+  }
+
+  var liveRegion = null;
+  function ensureLiveRegion() {
+    if (!liveRegion) {
+      liveRegion = document.createElement("p");
+      liveRegion.className = "sr-only";
+      liveRegion.setAttribute("role", "status");
+      document.body.appendChild(liveRegion);
+    }
+  }
+  function announce(message) {
+    ensureLiveRegion();
+    liveRegion.textContent = "";
+    window.setTimeout(function () { liveRegion.textContent = message; }, 60);
+  }
+
+  $("note").addEventListener("input", function (e) {
+    state.note = e.target.value;
+    updateCount();
+    if (e.target.getAttribute("aria-invalid") === "true" && isValidNote()) {
+      e.target.setAttribute("aria-invalid", "false");
+      $("form-error").textContent = "";
+    }
+  });
+
+  var decInputs = document.querySelectorAll('input[name="decision"]');
+  for (var i = 0; i < decInputs.length; i++) {
+    decInputs[i].addEventListener("change", function (e) {
+      if (!e.target.checked) { return; }
+      state.decision = e.target.value;
+      syncDecisionVisibility(excursion(current()).any);
+      if (state.decision === "release" && excursion(current()).any) {
+        $("release-block").focus();
+      } else {
+        $("form-error").textContent = "";
+      }
+    });
+  }
+
+  function noteLength() { return state.note.trim().length; }
+  function isValidNote() {
+    var n = state.note.trim().length;
+    return n >= 10 && state.note.length <= 120;
+  }
+
+  $("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var c = current();
+    var x = excursion(c);
+    var errorEl = $("form-error");
+    errorEl.textContent = "";
+
+    if (!state.decision) {
+      errorEl.textContent = "Choose Release or Hold before continuing.";
+      var first = document.querySelector('input[name="decision"]');
+      if (first) { first.focus(); }
+      return;
+    }
+    if (state.decision === "release" && x.any) {
+      $("release-block").hidden = false;
+      $("block-text").textContent = blockText(c);
+      $("release-block").focus();
+      return;
+    }
+    if (state.note.trim().length < 10) {
+      $("note").setAttribute("aria-invalid", "true");
+      errorEl.textContent = state.note.trim().length === 0
+        ? "Add an operator note of 10–120 characters before continuing. The note is recorded with the decision."
+        : "The note is too short: " + noteLength() + " characters after trimming. It needs at least 10 characters, for example what you checked.";
+      $("note").focus();
+      return;
+    }
+    if (state.note.length > 120) {
+      $("note").setAttribute("aria-invalid", "true");
+      errorEl.textContent = "The note is " + state.note.length + " characters; the limit is 120. Remove at least " + (state.note.length - 120) + " characters.";
+      $("note").focus();
+      return;
+    }
+    $("note").setAttribute("aria-invalid", "false");
+    openReview();
+  });
+
+  /* ---------------- review ---------------- */
+  function openReview() {
+    var c = current();
+    var x = excursion(c);
+    var isHold = state.decision === "hold";
+    $("rv-consignment").textContent = c.id + " \u00b7 " + c.product;
+    $("rv-decision").textContent = isHold ? "Hold" : "Release";
+    $("rv-decision").className = isHold ? "is-warn" : "";
+    $("rv-weight").textContent = c.weight.toFixed(1) + " kg";
+    $("rv-dock").textContent = c.dock;
+    $("rv-excursion").textContent = summary(c);
+    $("rv-note").textContent = state.note.trim();
+    $("rv-excursion").className = x.any ? "is-warn" : "";
+    $("submit-error").textContent = "";
+    $("btn-submit").disabled = false;
+    $("btn-submit").textContent = "Submit decision";
+    setView("review");
+  }
+
+  $("btn-edit").addEventListener("click", function () {
+    setView("evidence");
+    var target = state.decision === "hold" ? $("d-hold") : $("d-release");
+    if (target) { target.focus(); }
+  });
+
+  $("btn-submit").addEventListener("click", function () {
+    if (state.submitting) { return; }
+    var btn = $("btn-submit");
+    state.submitting = true;
+    btn.disabled = true;
+    btn.textContent = "Submitting\u2026";
+    $("submit-error").textContent = "";
+    window.setTimeout(function () {
+      state.attempts += 1;
+      state.submitting = false;
+      btn.disabled = false;
+      if (state.attempts === 1) {
+        btn.textContent = "Retry submission";
+        $("submit-error").textContent = "Submission not confirmed: the dock link timed out before the record was written. Nothing was recorded, and your decision and note are unchanged. Retry to send the same facts again.";
+        announce("Submission not confirmed. Nothing was recorded. Retry available.");
+        $("submit-error").focus && $("submit-error").focus();
+      } else {
+        openSuccess();
+      }
+    }, 700);
+  });
+
+  function openSuccess() {
+    var c = current();
+    var isHold = state.decision === "hold";
+    var verb = isHold ? "Hold" : "Release";
+    $("h-success").textContent = verb + " recorded for " + c.id;
+    $("suc-line").textContent = "The recorded decision is " + verb + " for " + c.id + " (" + c.product + "), " + c.weight.toFixed(1) + " kg, to " + c.dock + ".";
+    $("suc-decision").textContent = verb;
+    $("suc-decision").className = isHold ? "is-warn" : "";
+    $("suc-consignment").textContent = c.id + " \u00b7 " + c.product;
+    $("suc-weight").textContent = c.weight.toFixed(1) + " kg";
+    $("suc-dock").textContent = c.dock;
+    $("suc-note").textContent = state.note.trim();
+    setView("success");
+  }
+
+  $("btn-again").addEventListener("click", function () {
+    state.decision = null;
+    state.note = "";
+    state.attempts = 0;
+    $("note").value = "";
+    updateCount();
+    renderEvidence();
+    setView("evidence");
+    var checked = document.querySelector('input[name="consignment"]:checked');
+    if (checked) { checked.focus(); }
+  });
+
+  function setView(view) {
+    state.view = view;
+    ["evidence", "review", "success"].forEach(function (name) {
+      $("panel-" + name).hidden = name !== view;
+    });
+    var order = { evidence: 1, review: 2, success: 3 };
+    var steps = $("steps").querySelectorAll("li");
+    for (var i = 0; i < steps.length; i++) {
+      var n = Number(steps[i].getAttribute("data-step"));
+      if (n === order[view]) {
+        steps[i].setAttribute("aria-current", "step");
+        steps[i].removeAttribute("data-done");
+      } else {
+        steps[i].removeAttribute("aria-current");
+        steps[i].setAttribute("data-done", n < order[view] ? "true" : "false");
+      }
+    }
+    var heading = view === "evidence" ? $("h-evidence") : view === "review" ? $("h-review") : $("h-success");
+    window.scrollTo(0, 0);
+    heading.focus();
+  }
+
+  /* ---------------- init ---------------- */
+  renderEvidence();
+  updateCount();
+})();
+</script>
+</body>
+</html>

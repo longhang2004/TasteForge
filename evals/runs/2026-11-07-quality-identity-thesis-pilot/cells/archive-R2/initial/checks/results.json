@@ -1,0 +1,185 @@
+[
+  {
+    "name": "initial list shows 5 records",
+    "ok": true,
+    "detail": "count=5"
+  },
+  {
+    "name": "count text",
+    "ok": true,
+    "detail": "Showing 5 of 5 records"
+  },
+  {
+    "name": "search \"weir\" -> 1",
+    "ok": true,
+    "detail": "count=1"
+  },
+  {
+    "name": "weir result title",
+    "ok": true,
+    "detail": "River weir cross-section — revised plate"
+  },
+  {
+    "name": "search \"craft\" (series match) -> 2",
+    "ok": true,
+    "detail": "count=2"
+  },
+  {
+    "name": "empty state visible",
+    "ok": true
+  },
+  {
+    "name": "empty desc mentions term",
+    "ok": true,
+    "detail": "Nothing in the catalogue matches “zzzz”. Try a shorter term or clear the series filter."
+  },
+  {
+    "name": "reset restores 5",
+    "ok": true,
+    "detail": "count=5"
+  },
+  {
+    "name": "reset clears query",
+    "ok": true
+  },
+  {
+    "name": "Field Surveys filter -> 3",
+    "ok": true,
+    "detail": "count=3"
+  },
+  {
+    "name": "kiln + Field Surveys empty",
+    "ok": true
+  },
+  {
+    "name": "reset clears series too",
+    "ok": true
+  },
+  {
+    "name": "arrow key changes series",
+    "ok": true,
+    "detail": "checked Field Surveys"
+  },
+  {
+    "name": "keyboard series filter applied -> 3",
+    "ok": true,
+    "detail": "count=3"
+  },
+  {
+    "name": "coastal -> 2 (LS-02, LS-19)",
+    "ok": true,
+    "detail": "count=2"
+  },
+  {
+    "name": "detail visible",
+    "ok": true
+  },
+  {
+    "name": "browse hidden",
+    "ok": true
+  },
+  {
+    "name": "duplicate detail title",
+    "ok": true,
+    "detail": "Coastal erosion survey, figure 4 — duplicate"
+  },
+  {
+    "name": "focus on detail heading",
+    "ok": true
+  },
+  {
+    "name": "duplicate notice present",
+    "ok": true
+  },
+  {
+    "name": "schematic caption not archival",
+    "ok": true
+  },
+  {
+    "name": "condition note shown",
+    "ok": true,
+    "detail": "Duplicate of LS-02; second copy, not a different photograph"
+  },
+  {
+    "name": "limits list",
+    "ok": true,
+    "detail": "li=4"
+  },
+  {
+    "name": "position text",
+    "ok": true,
+    "detail": "RECORD 2 OF 2 IN CURRENT RESULTS"
+  },
+  {
+    "name": "back shows browse",
+    "ok": true
+  },
+  {
+    "name": "back retains query",
+    "ok": true
+  },
+  {
+    "name": "back retains 2 results",
+    "ok": true,
+    "detail": "count=2"
+  },
+  {
+    "name": "focus restored to opened record",
+    "ok": true,
+    "detail": "LS-19"
+  },
+  {
+    "name": "scroll restored",
+    "ok": true,
+    "detail": "7 -> 7"
+  },
+  {
+    "name": "Escape closes detail",
+    "ok": true
+  },
+  {
+    "name": "no horizontal overflow @320",
+    "ok": true,
+    "detail": "{\"sw\":320,\"cw\":320}"
+  },
+  {
+    "name": "no horizontal overflow @390",
+    "ok": true,
+    "detail": "{\"sw\":390,\"cw\":390}"
+  },
+  {
+    "name": "no horizontal overflow @1440",
+    "ok": true,
+    "detail": "{\"sw\":1440,\"cw\":1440}"
+  },
+  {
+    "name": "axe list violations",
+    "ok": true,
+    "detail": "none"
+  },
+  {
+    "name": "axe detail violations",
+    "ok": true,
+    "detail": "none"
+  },
+  {
+    "name": "axe detail incomplete",
+    "ok": true,
+    "detail": "none"
+  },
+  {
+    "name": "focus rings via real Tab traversal",
+    "ok": true,
+    "detail": "skip:solid/3px q:solid/3px INPUT:solid/3px record-btn:solid/3px"
+  },
+  {
+    "name": "keyboard order reaches records",
+    "ok": true,
+    "detail": "record-btn"
+  },
+  {
+    "name": "no JS/console errors",
+    "ok": true,
+    "detail": "none"
+  }
+]

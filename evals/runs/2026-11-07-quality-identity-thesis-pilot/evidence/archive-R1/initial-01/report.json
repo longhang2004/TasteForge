@@ -1,0 +1,2465 @@
+{
+  "cell": "archive-R1",
+  "stage": "initial",
+  "pass": "initial-01",
+  "startedAt": "2026-11-07T17:32:01.841Z",
+  "sourceSha256": "fbc63de9d7c8b7ded5574491c7f0f1486b1fe0bc214fde629ca3a8fab65fd484",
+  "harnessSha256": "9ffcf3ebba41939d4d1c4076417967a2c87c9dd586957bfd652c162076e245f0",
+  "taskHarnessSha256": "7ab0991813ef5f630e131e9cc837fe5e58a307eda27dbbb449e825c3f8339b9c",
+  "traces": [
+    {
+      "width": 320,
+      "states": [
+        {
+          "label": "entry",
+          "report": "evidence/archive-R1/initial-01/320-entry/report.json",
+          "viewport": "evidence/archive-R1/initial-01/320-entry/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 3139.75,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  "#count"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-02\"]"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-07\"]"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-11\"]"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-14\"]"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-19\"]"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "filter-field-surveys",
+          "report": "evidence/archive-R1/initial-01/320-filter-field-surveys/report.json",
+          "viewport": "evidence/archive-R1/initial-01/320-filter-field-surveys/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 102.296875,
+              "y": 361.765625,
+              "width": 16.796875,
+              "height": 16.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 569
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  ".num"
+                ],
+                [
+                  ".of"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-02\"]"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-11\"]"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-19\"]"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "search-weir",
+          "report": "evidence/archive-R1/initial-01/320-search-weir/report.json",
+          "viewport": "evidence/archive-R1/initial-01/320-search-weir/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 17,
+              "y": 239.65625,
+              "width": 251.359375,
+              "height": 44.765625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 569
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  ".num"
+                ],
+                [
+                  ".of"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  ".pcap"
+                ],
+                [
+                  ".id"
+                ],
+                [
+                  ".series"
+                ],
+                [
+                  ".open"
+                ],
+                [
+                  ".meta"
+                ],
+                [
+                  ".sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  ".sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  ".cond"
+                ],
+                [
+                  ".lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "empty",
+          "report": "evidence/archive-R1/initial-01/320-empty/report.json",
+          "viewport": "evidence/archive-R1/initial-01/320-empty/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 17,
+              "y": 239.65625,
+              "width": 251.359375,
+              "height": 44.765625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 569
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  "#count"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "detail-duplicate",
+          "report": "evidence/archive-R1/initial-01/320-detail-duplicate/report.json",
+          "viewport": "evidence/archive-R1/initial-01/320-detail-duplicate/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "detailTitle",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 889.578125,
+              "width": 288,
+              "height": 80.625,
+              "intersectsViewport": false,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "#back > span[aria-hidden=\"true\"]"
+                ],
+                [
+                  ".detail-head > .code > .id"
+                ],
+                [
+                  ".detail-head > .code > .series"
+                ],
+                [
+                  "#detailTitle"
+                ],
+                [
+                  ".sub"
+                ],
+                [
+                  "figcaption"
+                ],
+                [
+                  "dt:nth-child(1)"
+                ],
+                [
+                  "dd:nth-child(2)"
+                ],
+                [
+                  "dt:nth-child(3)"
+                ],
+                [
+                  "dd:nth-child(4)"
+                ],
+                [
+                  "dt:nth-child(5)"
+                ],
+                [
+                  "dd:nth-child(6)"
+                ],
+                [
+                  "dt:nth-child(7)"
+                ],
+                [
+                  "dd:nth-child(8)"
+                ],
+                [
+                  "dt:nth-child(9)"
+                ],
+                [
+                  "dd:nth-child(10)"
+                ],
+                [
+                  "dt:nth-child(11)"
+                ],
+                [
+                  "dd:nth-child(12)"
+                ],
+                [
+                  ".rel > p"
+                ],
+                [
+                  ".rel > p > strong"
+                ],
+                [
+                  ".btn-quiet.btn[data-open=\"LS-02\"]"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "return",
+          "report": "evidence/archive-R1/initial-01/320-return/report.json",
+          "viewport": "evidence/archive-R1/initial-01/320-return/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 1200.4375,
+              "width": 288,
+              "height": 43,
+              "intersectsViewport": false,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 461
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  ".num"
+                ],
+                [
+                  ".of"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .series"
+                ],
+                [
+                  ".open[data-open=\"LS-02\"]"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-19\"]"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        "all five declared records are shown with their facts",
+        "the matching count is shown",
+        "Series filter limits results to Field Surveys",
+        "search keeps only the matching record within the filter",
+        "an empty result set offers a clear reset",
+        "reset restores the result set",
+        "search for Coastal keeps the Field Surveys copies",
+        "detail shows LS-19 metadata, condition and the schematic disclaimer",
+        "LS-19 is not presented as a separate photograph or new discovery",
+        "returning retains query, filter, order and focus",
+        "the long title is readable at this width",
+        "no horizontal overflow at 320px"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "states": [
+        {
+          "label": "entry",
+          "report": "evidence/archive-R1/initial-01/390-entry/report.json",
+          "viewport": "evidence/archive-R1/initial-01/390-entry/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 2901.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  "#count"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-02\"]"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-07\"]"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-11\"]"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-14\"]"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-19\"]"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "filter-field-surveys",
+          "report": "evidence/archive-R1/initial-01/390-filter-field-surveys/report.json",
+          "viewport": "evidence/archive-R1/initial-01/390-filter-field-surveys/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 102.296875,
+              "y": 819.53125,
+              "width": 16.796875,
+              "height": 16.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  ".num"
+                ],
+                [
+                  ".of"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-02\"]"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-11\"]"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-19\"]"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "search-weir",
+          "report": "evidence/archive-R1/initial-01/390-search-weir/report.json",
+          "viewport": "evidence/archive-R1/initial-01/390-search-weir/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 17,
+              "y": 697.421875,
+              "width": 321.359375,
+              "height": 44.765625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  ".num"
+                ],
+                [
+                  ".of"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  ".pcap"
+                ],
+                [
+                  ".id"
+                ],
+                [
+                  ".series"
+                ],
+                [
+                  ".open"
+                ],
+                [
+                  ".meta"
+                ],
+                [
+                  ".sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  ".sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  ".cond"
+                ],
+                [
+                  ".lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "empty",
+          "report": "evidence/archive-R1/initial-01/390-empty/report.json",
+          "viewport": "evidence/archive-R1/initial-01/390-empty/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 17,
+              "y": 697.421875,
+              "width": 321.359375,
+              "height": 44.765625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  "#count"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "detail-duplicate",
+          "report": "evidence/archive-R1/initial-01/390-detail-duplicate/report.json",
+          "viewport": "evidence/archive-R1/initial-01/390-detail-duplicate/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "detailTitle",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 778.34375,
+              "width": 358,
+              "height": 53.75,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "#back > span[aria-hidden=\"true\"]"
+                ],
+                [
+                  ".detail-head > .code > .id"
+                ],
+                [
+                  ".detail-head > .code > .series"
+                ],
+                [
+                  "#detailTitle"
+                ],
+                [
+                  ".sub"
+                ],
+                [
+                  "figcaption"
+                ],
+                [
+                  "dt:nth-child(1)"
+                ],
+                [
+                  "dd:nth-child(2)"
+                ],
+                [
+                  "dt:nth-child(3)"
+                ],
+                [
+                  "dd:nth-child(4)"
+                ],
+                [
+                  "dt:nth-child(5)"
+                ],
+                [
+                  "dd:nth-child(6)"
+                ],
+                [
+                  "dt:nth-child(7)"
+                ],
+                [
+                  "dd:nth-child(8)"
+                ],
+                [
+                  "dt:nth-child(9)"
+                ],
+                [
+                  "dd:nth-child(10)"
+                ],
+                [
+                  "dt:nth-child(11)"
+                ],
+                [
+                  "dd:nth-child(12)"
+                ],
+                [
+                  ".rel > p"
+                ],
+                [
+                  ".rel > p > strong"
+                ],
+                [
+                  ".btn-quiet.btn[data-open=\"LS-02\"]"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "return",
+          "report": "evidence/archive-R1/initial-01/390-return/report.json",
+          "viewport": "evidence/archive-R1/initial-01/390-return/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 1206.078125,
+              "width": 358,
+              "height": 43,
+              "intersectsViewport": false,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 298
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  ".num"
+                ],
+                [
+                  ".of"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .series"
+                ],
+                [
+                  ".open[data-open=\"LS-02\"]"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-19\"]"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        "all five declared records are shown with their facts",
+        "the matching count is shown",
+        "Series filter limits results to Field Surveys",
+        "search keeps only the matching record within the filter",
+        "an empty result set offers a clear reset",
+        "reset restores the result set",
+        "search for Coastal keeps the Field Surveys copies",
+        "detail shows LS-19 metadata, condition and the schematic disclaimer",
+        "LS-19 is not presented as a separate photograph or new discovery",
+        "returning retains query, filter, order and focus",
+        "the long title is readable at this width",
+        "no horizontal overflow at 390px"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1440,
+      "states": [
+        {
+          "label": "entry",
+          "report": "evidence/archive-R1/initial-01/1440-entry/report.json",
+          "viewport": "evidence/archive-R1/initial-01/1440-entry/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1770.015625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  "#count"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-02\"]"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-07\"]"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-07\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-11\"]"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-14\"]"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-14\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-19\"]"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "filter-field-surveys",
+          "report": "evidence/archive-R1/initial-01/1440-filter-field-surveys/report.json",
+          "viewport": "evidence/archive-R1/initial-01/1440-filter-field-surveys/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 887.96875,
+              "y": 608.875,
+              "width": 16.796875,
+              "height": 16.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  ".num"
+                ],
+                [
+                  ".of"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-02\"]"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-11\"]"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-11\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-19\"]"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "search-weir",
+          "report": "evidence/archive-R1/initial-01/1440-search-weir/report.json",
+          "viewport": "evidence/archive-R1/initial-01/1440-search-weir/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 249,
+              "y": 568.4375,
+              "width": 493.03125,
+              "height": 44.765625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  ".num"
+                ],
+                [
+                  ".of"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  ".pcap"
+                ],
+                [
+                  ".id"
+                ],
+                [
+                  ".series"
+                ],
+                [
+                  ".open"
+                ],
+                [
+                  ".meta"
+                ],
+                [
+                  ".sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  ".sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  ".cond"
+                ],
+                [
+                  ".lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "empty",
+          "report": "evidence/archive-R1/initial-01/1440-empty/report.json",
+          "viewport": "evidence/archive-R1/initial-01/1440-empty/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 249,
+              "y": 568.4375,
+              "width": 493.03125,
+              "height": 44.765625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  "#count"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "detail-duplicate",
+          "report": "evidence/archive-R1/initial-01/1440-detail-duplicate/report.json",
+          "viewport": "evidence/archive-R1/initial-01/1440-detail-duplicate/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "detailTitle",
+            "testId": null,
+            "rect": {
+              "x": 248,
+              "y": 649.359375,
+              "width": 751.453125,
+              "height": 80.625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "#back > span[aria-hidden=\"true\"]"
+                ],
+                [
+                  ".detail-head > .code > .id"
+                ],
+                [
+                  ".detail-head > .code > .series"
+                ],
+                [
+                  "#detailTitle"
+                ],
+                [
+                  ".sub"
+                ],
+                [
+                  "figcaption"
+                ],
+                [
+                  "dt:nth-child(1)"
+                ],
+                [
+                  "dd:nth-child(2)"
+                ],
+                [
+                  "dt:nth-child(3)"
+                ],
+                [
+                  "dd:nth-child(4)"
+                ],
+                [
+                  "dt:nth-child(5)"
+                ],
+                [
+                  "dd:nth-child(6)"
+                ],
+                [
+                  "dt:nth-child(7)"
+                ],
+                [
+                  "dd:nth-child(8)"
+                ],
+                [
+                  "dt:nth-child(9)"
+                ],
+                [
+                  "dd:nth-child(10)"
+                ],
+                [
+                  "dt:nth-child(11)"
+                ],
+                [
+                  "dd:nth-child(12)"
+                ],
+                [
+                  ".rel > p"
+                ],
+                [
+                  ".rel > p > strong"
+                ],
+                [
+                  ".btn-quiet.btn[data-open=\"LS-02\"]"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "return",
+          "report": "evidence/archive-R1/initial-01/1440-return/report.json",
+          "viewport": "evidence/archive-R1/initial-01/1440-return/viewport.png",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 364.78125,
+              "y": 929.6875,
+              "width": 478.90625,
+              "height": 24.96875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".kicker > span:nth-child(1)"
+                ],
+                [
+                  ".plain:nth-child(3)"
+                ],
+                [
+                  ".plain:nth-child(5)"
+                ],
+                [
+                  "h1"
+                ],
+                [
+                  ".deck"
+                ],
+                [
+                  "label[for=\"q\"]"
+                ],
+                [
+                  ".glyph"
+                ],
+                [
+                  "#qHint"
+                ],
+                [
+                  "legend"
+                ],
+                [
+                  ".num"
+                ],
+                [
+                  ".of"
+                ],
+                [
+                  "#clearAll"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .code > .series"
+                ],
+                [
+                  ".open[data-open=\"LS-02\"]"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-02\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .plate > .pcap"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .id"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .code > .series"
+                ],
+                [
+                  "button[data-open=\"LS-19\"]"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(1)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .meta > .sep[aria-hidden=\"true\"]:nth-child(2)"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond"
+                ],
+                [
+                  "li[data-record=\"LS-19\"] > .rec-body > .cond > .lab"
+                ],
+                [
+                  "footer > p:nth-child(1)"
+                ],
+                [
+                  "footer > p:nth-child(2)"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        "all five declared records are shown with their facts",
+        "the matching count is shown",
+        "Series filter limits results to Field Surveys",
+        "search keeps only the matching record within the filter",
+        "an empty result set offers a clear reset",
+        "reset restores the result set",
+        "search for Coastal keeps the Field Surveys copies",
+        "detail shows LS-19 metadata, condition and the schematic disclaimer",
+        "LS-19 is not presented as a separate photograph or new discovery",
+        "returning retains query, filter, order and focus",
+        "the long title is readable at this width",
+        "no horizontal overflow at 1440px"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  ],
+  "failures": [],
+  "providerTokens": null,
+  "scope": "Automated browser/axe + natural viewport; human tests deferred",
+  "chromium": "156.0.8078.4",
+  "finishedAt": "2026-11-07T17:32:55.971Z",
+  "checks": 36
+}

@@ -1,0 +1,41 @@
+PASS initial list shows 5 records :: count=5
+PASS count text :: Showing 5 of 5 records
+PASS search "weir" -> 1 :: count=1
+PASS weir result title :: River weir cross-section — revised plate
+PASS search "craft" (series match) -> 2 :: count=2
+PASS empty state visible
+PASS empty desc mentions term :: Nothing in the catalogue matches “zzzz”. Try a shorter term or clear the series filter.
+PASS reset restores 5 :: count=5
+PASS reset clears query
+PASS Field Surveys filter -> 3 :: count=3
+PASS kiln + Field Surveys empty
+PASS reset clears series too
+PASS arrow key changes series :: checked Field Surveys
+PASS keyboard series filter applied -> 3 :: count=3
+PASS coastal -> 2 (LS-02, LS-19) :: count=2
+PASS detail visible
+PASS browse hidden
+PASS duplicate detail title :: Coastal erosion survey, figure 4 — duplicate
+PASS focus on detail heading
+PASS duplicate notice present
+PASS schematic caption not archival
+PASS condition note shown :: Duplicate of LS-02; second copy, not a different photograph
+PASS limits list :: li=4
+PASS position text :: RECORD 2 OF 2 IN CURRENT RESULTS
+PASS back shows browse
+PASS back retains query
+PASS back retains 2 results :: count=2
+PASS focus restored to opened record :: LS-19
+PASS scroll restored :: 7 -> 7
+PASS Escape closes detail
+PASS no horizontal overflow @320 :: {"sw":320,"cw":320}
+PASS no horizontal overflow @390 :: {"sw":390,"cw":390}
+PASS no horizontal overflow @1440 :: {"sw":1440,"cw":1440}
+PASS axe list violations :: none
+PASS axe detail violations :: none
+PASS axe detail incomplete :: none
+PASS focus rings via real Tab traversal :: skip:solid/3px q:solid/3px INPUT:solid/3px record-btn:solid/3px
+PASS keyboard order reaches records :: record-btn
+PASS no JS/console errors :: none
+
+SUMMARY: 39/39 passed

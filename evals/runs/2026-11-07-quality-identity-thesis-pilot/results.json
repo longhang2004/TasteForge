@@ -1,0 +1,447 @@
+{
+  "summary": "Two-prompt, four-output matched pilot. All cells cleared scoped automated acceptance. Per-dimension judgments are in report.md and the frozen reviews; no aggregate score.",
+  "cells": [
+    {
+      "id": "freight-R1",
+      "condition": "lean",
+      "verdict": "scoped automated acceptance; human tests deferred",
+      "checks": 66,
+      "states": 21,
+      "axeViolations": 0,
+      "axeIncomplete": 21,
+      "creatorCorrections": 1,
+      "report": "evidence\\freight-R1\\initial-02\\report.json",
+      "images": [
+        {
+          "state": "entry",
+          "width": 320,
+          "file": "evidence/freight-R1/initial-02/320-entry/viewport.png"
+        },
+        {
+          "state": "blocked-excursion",
+          "width": 320,
+          "file": "evidence/freight-R1/initial-02/320-blocked-excursion/viewport.png"
+        },
+        {
+          "state": "note-too-short",
+          "width": 320,
+          "file": "evidence/freight-R1/initial-02/320-note-too-short/viewport.png"
+        },
+        {
+          "state": "review",
+          "width": 320,
+          "file": "evidence/freight-R1/initial-02/320-review/viewport.png"
+        },
+        {
+          "state": "edit",
+          "width": 320,
+          "file": "evidence/freight-R1/initial-02/320-edit/viewport.png"
+        },
+        {
+          "state": "submit-failure",
+          "width": 320,
+          "file": "evidence/freight-R1/initial-02/320-submit-failure/viewport.png"
+        },
+        {
+          "state": "success",
+          "width": 320,
+          "file": "evidence/freight-R1/initial-02/320-success/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 390,
+          "file": "evidence/freight-R1/initial-02/390-entry/viewport.png"
+        },
+        {
+          "state": "blocked-excursion",
+          "width": 390,
+          "file": "evidence/freight-R1/initial-02/390-blocked-excursion/viewport.png"
+        },
+        {
+          "state": "note-too-short",
+          "width": 390,
+          "file": "evidence/freight-R1/initial-02/390-note-too-short/viewport.png"
+        },
+        {
+          "state": "review",
+          "width": 390,
+          "file": "evidence/freight-R1/initial-02/390-review/viewport.png"
+        },
+        {
+          "state": "edit",
+          "width": 390,
+          "file": "evidence/freight-R1/initial-02/390-edit/viewport.png"
+        },
+        {
+          "state": "submit-failure",
+          "width": 390,
+          "file": "evidence/freight-R1/initial-02/390-submit-failure/viewport.png"
+        },
+        {
+          "state": "success",
+          "width": 390,
+          "file": "evidence/freight-R1/initial-02/390-success/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 1440,
+          "file": "evidence/freight-R1/initial-02/1440-entry/viewport.png"
+        },
+        {
+          "state": "blocked-excursion",
+          "width": 1440,
+          "file": "evidence/freight-R1/initial-02/1440-blocked-excursion/viewport.png"
+        },
+        {
+          "state": "note-too-short",
+          "width": 1440,
+          "file": "evidence/freight-R1/initial-02/1440-note-too-short/viewport.png"
+        },
+        {
+          "state": "review",
+          "width": 1440,
+          "file": "evidence/freight-R1/initial-02/1440-review/viewport.png"
+        },
+        {
+          "state": "edit",
+          "width": 1440,
+          "file": "evidence/freight-R1/initial-02/1440-edit/viewport.png"
+        },
+        {
+          "state": "submit-failure",
+          "width": 1440,
+          "file": "evidence/freight-R1/initial-02/1440-submit-failure/viewport.png"
+        },
+        {
+          "state": "success",
+          "width": 1440,
+          "file": "evidence/freight-R1/initial-02/1440-success/viewport.png"
+        }
+      ]
+    },
+    {
+      "id": "freight-R2",
+      "condition": "candidate",
+      "verdict": "scoped automated acceptance; human tests deferred",
+      "checks": 66,
+      "states": 21,
+      "axeViolations": 0,
+      "axeIncomplete": 21,
+      "creatorCorrections": 1,
+      "report": "evidence\\freight-R2\\initial-02\\report.json",
+      "images": [
+        {
+          "state": "entry",
+          "width": 320,
+          "file": "evidence/freight-R2/initial-02/320-entry/viewport.png"
+        },
+        {
+          "state": "blocked-excursion",
+          "width": 320,
+          "file": "evidence/freight-R2/initial-02/320-blocked-excursion/viewport.png"
+        },
+        {
+          "state": "note-too-short",
+          "width": 320,
+          "file": "evidence/freight-R2/initial-02/320-note-too-short/viewport.png"
+        },
+        {
+          "state": "review",
+          "width": 320,
+          "file": "evidence/freight-R2/initial-02/320-review/viewport.png"
+        },
+        {
+          "state": "edit",
+          "width": 320,
+          "file": "evidence/freight-R2/initial-02/320-edit/viewport.png"
+        },
+        {
+          "state": "submit-failure",
+          "width": 320,
+          "file": "evidence/freight-R2/initial-02/320-submit-failure/viewport.png"
+        },
+        {
+          "state": "success",
+          "width": 320,
+          "file": "evidence/freight-R2/initial-02/320-success/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 390,
+          "file": "evidence/freight-R2/initial-02/390-entry/viewport.png"
+        },
+        {
+          "state": "blocked-excursion",
+          "width": 390,
+          "file": "evidence/freight-R2/initial-02/390-blocked-excursion/viewport.png"
+        },
+        {
+          "state": "note-too-short",
+          "width": 390,
+          "file": "evidence/freight-R2/initial-02/390-note-too-short/viewport.png"
+        },
+        {
+          "state": "review",
+          "width": 390,
+          "file": "evidence/freight-R2/initial-02/390-review/viewport.png"
+        },
+        {
+          "state": "edit",
+          "width": 390,
+          "file": "evidence/freight-R2/initial-02/390-edit/viewport.png"
+        },
+        {
+          "state": "submit-failure",
+          "width": 390,
+          "file": "evidence/freight-R2/initial-02/390-submit-failure/viewport.png"
+        },
+        {
+          "state": "success",
+          "width": 390,
+          "file": "evidence/freight-R2/initial-02/390-success/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 1440,
+          "file": "evidence/freight-R2/initial-02/1440-entry/viewport.png"
+        },
+        {
+          "state": "blocked-excursion",
+          "width": 1440,
+          "file": "evidence/freight-R2/initial-02/1440-blocked-excursion/viewport.png"
+        },
+        {
+          "state": "note-too-short",
+          "width": 1440,
+          "file": "evidence/freight-R2/initial-02/1440-note-too-short/viewport.png"
+        },
+        {
+          "state": "review",
+          "width": 1440,
+          "file": "evidence/freight-R2/initial-02/1440-review/viewport.png"
+        },
+        {
+          "state": "edit",
+          "width": 1440,
+          "file": "evidence/freight-R2/initial-02/1440-edit/viewport.png"
+        },
+        {
+          "state": "submit-failure",
+          "width": 1440,
+          "file": "evidence/freight-R2/initial-02/1440-submit-failure/viewport.png"
+        },
+        {
+          "state": "success",
+          "width": 1440,
+          "file": "evidence/freight-R2/initial-02/1440-success/viewport.png"
+        }
+      ]
+    },
+    {
+      "id": "archive-R1",
+      "condition": "lean",
+      "verdict": "scoped automated acceptance; human tests deferred",
+      "checks": 36,
+      "states": 18,
+      "axeViolations": 0,
+      "axeIncomplete": 18,
+      "creatorCorrections": 1,
+      "report": "evidence\\archive-R1\\initial-01\\report.json",
+      "images": [
+        {
+          "state": "entry",
+          "width": 320,
+          "file": "evidence/archive-R1/initial-01/320-entry/viewport.png"
+        },
+        {
+          "state": "filter-field-surveys",
+          "width": 320,
+          "file": "evidence/archive-R1/initial-01/320-filter-field-surveys/viewport.png"
+        },
+        {
+          "state": "search-weir",
+          "width": 320,
+          "file": "evidence/archive-R1/initial-01/320-search-weir/viewport.png"
+        },
+        {
+          "state": "empty",
+          "width": 320,
+          "file": "evidence/archive-R1/initial-01/320-empty/viewport.png"
+        },
+        {
+          "state": "detail-duplicate",
+          "width": 320,
+          "file": "evidence/archive-R1/initial-01/320-detail-duplicate/viewport.png"
+        },
+        {
+          "state": "return",
+          "width": 320,
+          "file": "evidence/archive-R1/initial-01/320-return/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 390,
+          "file": "evidence/archive-R1/initial-01/390-entry/viewport.png"
+        },
+        {
+          "state": "filter-field-surveys",
+          "width": 390,
+          "file": "evidence/archive-R1/initial-01/390-filter-field-surveys/viewport.png"
+        },
+        {
+          "state": "search-weir",
+          "width": 390,
+          "file": "evidence/archive-R1/initial-01/390-search-weir/viewport.png"
+        },
+        {
+          "state": "empty",
+          "width": 390,
+          "file": "evidence/archive-R1/initial-01/390-empty/viewport.png"
+        },
+        {
+          "state": "detail-duplicate",
+          "width": 390,
+          "file": "evidence/archive-R1/initial-01/390-detail-duplicate/viewport.png"
+        },
+        {
+          "state": "return",
+          "width": 390,
+          "file": "evidence/archive-R1/initial-01/390-return/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 1440,
+          "file": "evidence/archive-R1/initial-01/1440-entry/viewport.png"
+        },
+        {
+          "state": "filter-field-surveys",
+          "width": 1440,
+          "file": "evidence/archive-R1/initial-01/1440-filter-field-surveys/viewport.png"
+        },
+        {
+          "state": "search-weir",
+          "width": 1440,
+          "file": "evidence/archive-R1/initial-01/1440-search-weir/viewport.png"
+        },
+        {
+          "state": "empty",
+          "width": 1440,
+          "file": "evidence/archive-R1/initial-01/1440-empty/viewport.png"
+        },
+        {
+          "state": "detail-duplicate",
+          "width": 1440,
+          "file": "evidence/archive-R1/initial-01/1440-detail-duplicate/viewport.png"
+        },
+        {
+          "state": "return",
+          "width": 1440,
+          "file": "evidence/archive-R1/initial-01/1440-return/viewport.png"
+        }
+      ]
+    },
+    {
+      "id": "archive-R2",
+      "condition": "candidate",
+      "verdict": "scoped automated acceptance; human tests deferred",
+      "checks": 36,
+      "states": 18,
+      "axeViolations": 0,
+      "axeIncomplete": 15,
+      "creatorCorrections": 1,
+      "report": "evidence\\archive-R2\\initial-01\\report.json",
+      "images": [
+        {
+          "state": "entry",
+          "width": 320,
+          "file": "evidence/archive-R2/initial-01/320-entry/viewport.png"
+        },
+        {
+          "state": "filter-field-surveys",
+          "width": 320,
+          "file": "evidence/archive-R2/initial-01/320-filter-field-surveys/viewport.png"
+        },
+        {
+          "state": "search-weir",
+          "width": 320,
+          "file": "evidence/archive-R2/initial-01/320-search-weir/viewport.png"
+        },
+        {
+          "state": "empty",
+          "width": 320,
+          "file": "evidence/archive-R2/initial-01/320-empty/viewport.png"
+        },
+        {
+          "state": "detail-duplicate",
+          "width": 320,
+          "file": "evidence/archive-R2/initial-01/320-detail-duplicate/viewport.png"
+        },
+        {
+          "state": "return",
+          "width": 320,
+          "file": "evidence/archive-R2/initial-01/320-return/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 390,
+          "file": "evidence/archive-R2/initial-01/390-entry/viewport.png"
+        },
+        {
+          "state": "filter-field-surveys",
+          "width": 390,
+          "file": "evidence/archive-R2/initial-01/390-filter-field-surveys/viewport.png"
+        },
+        {
+          "state": "search-weir",
+          "width": 390,
+          "file": "evidence/archive-R2/initial-01/390-search-weir/viewport.png"
+        },
+        {
+          "state": "empty",
+          "width": 390,
+          "file": "evidence/archive-R2/initial-01/390-empty/viewport.png"
+        },
+        {
+          "state": "detail-duplicate",
+          "width": 390,
+          "file": "evidence/archive-R2/initial-01/390-detail-duplicate/viewport.png"
+        },
+        {
+          "state": "return",
+          "width": 390,
+          "file": "evidence/archive-R2/initial-01/390-return/viewport.png"
+        },
+        {
+          "state": "entry",
+          "width": 1440,
+          "file": "evidence/archive-R2/initial-01/1440-entry/viewport.png"
+        },
+        {
+          "state": "filter-field-surveys",
+          "width": 1440,
+          "file": "evidence/archive-R2/initial-01/1440-filter-field-surveys/viewport.png"
+        },
+        {
+          "state": "search-weir",
+          "width": 1440,
+          "file": "evidence/archive-R2/initial-01/1440-search-weir/viewport.png"
+        },
+        {
+          "state": "empty",
+          "width": 1440,
+          "file": "evidence/archive-R2/initial-01/1440-empty/viewport.png"
+        },
+        {
+          "state": "detail-duplicate",
+          "width": 1440,
+          "file": "evidence/archive-R2/initial-01/1440-detail-duplicate/viewport.png"
+        },
+        {
+          "state": "return",
+          "width": 1440,
+          "file": "evidence/archive-R2/initial-01/1440-return/viewport.png"
+        }
+      ]
+    }
+  ]
+}

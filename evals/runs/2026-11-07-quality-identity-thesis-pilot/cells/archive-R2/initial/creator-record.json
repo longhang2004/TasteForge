@@ -1,0 +1,163 @@
+{
+  "cell": "archive-R2",
+  "role": "independent UI creator",
+  "provider": "vilao",
+  "model": "chib/deepseek-v4.1-flash",
+  "startUTC": "2026-11-07T11:27:41Z",
+  "endUTC": "2026-11-07T11:41:44Z",
+  "wallClockMinutes": 14.05,
+  "budget": { "softMinutes": 8, "hardMinutes": 15, "status": "completed inside hard budget, over soft budget" },
+  "skill": {
+    "primary": "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/SKILL.md",
+    "workflowsLoaded": [
+      "resources/R2/tasteforge/workflows/create-ui.md",
+      "resources/R2/tasteforge/workflows/structure-and-revise.md"
+    ],
+    "referencesLoaded": [
+      "resources/R2/tasteforge/references/art-direction.md",
+      "resources/R2/tasteforge/references/accessibility.md",
+      "resources/R2/tasteforge/references/render-checks.md"
+    ],
+    "notLoaded": "typography, layout-composition, visual-hierarchy, effects, anti-patterns, catalog-use, reference-sources, ux-plan-template, audit-ui, redesign-ui, targeted-refinement, research-and-plan, scripts/check-ui.mjs (wrote a task-specific Playwright script instead)"
+  },
+  "designThesis": {
+    "truthTask": "A reader compares five digitised lantern-slide records, narrows them by title/series, opens one and returns to the same result context.",
+    "decisions": [
+      "Record plate size is the identity device: each schematic frame's aspect box is set from the supplied catalogue width/height (8.3x8.3, 10x8.3, 8.3x10), and the list thumbs use the same ratios.",
+      "Serif record titles against monospace accession/field labels read as a catalogue sheet rather than a photo gallery, because no archival photograph exists to lead with.",
+      "Honest evidence limits are structural, not decorative: a persistent scope note in the masthead, an inline caption on every plate, a duplicate notice on LS-19, and a 'what this record does not establish' panel."
+    ],
+    "application": "Result context (query, series, result order, scroll, focus) is retained by keeping browse DOM alive and hidden rather than re-rendering on return."
+  },
+  "rationale": "Standard create workflow, one visual system, no alternatives built because the task structure was settled by the prompt. Priority order was: correct facts and duplicate semantics > context retention and focus return > responsive comparison layout > visual identity. Identity is derived only from supplied metadata (series, medium, declared dates, plate dimensions, condition notes) and from the stated absence of archival imagery; nothing was invented about provenance, photographers, institutions, licences or conservation outcomes.",
+  "deliverable": {
+    "path": "evals/runs/2026-11-07-quality-identity-thesis-pilot/cells/archive-R2/initial/index.html",
+    "selfContained": true,
+    "bytes": 34968,
+    "lines": 856,
+    "externalRequests": "none (verified by regex scan for http(s)://, //host, @import, <link, <img, src=, fetch(, localStorage, sessionStorage: zero matches)",
+    "systemFontsOnly": true
+  },
+  "versions": [
+    {
+      "file": "versions/00.html",
+      "sha256": "a7c504a6aecd998a2469bb162c6e706e317ff4382e816196b6c5c510b90ce2f9",
+      "preservedAtUTC": "2026-11-07T11:31:09Z",
+      "note": "Byte-for-byte first runnable file, preserved before any test or revision."
+    },
+    {
+      "file": "versions/01.html",
+      "sha256": "5127333ac8890352a0f40da7406b4fb6076ed3154f7ca027167f874e012072d4",
+      "preservedAtUTC": "2026-11-07T11:39:09Z",
+      "note": "Single focused self-correction pass; identical to submitted index.html."
+    }
+  ],
+  "checksRun": [
+    {
+      "check": "Playwright 1.64.1 functional script (39 assertions) at 320/390/1440px",
+      "result": "39/39 pass on final version, exit 0",
+      "evidence": "checks/run-final.txt, checks/results.json, checks/scripts/check.cjs",
+      "covers": [
+        "initial list renders 5 records; count text 'Showing 5 of 5 records'",
+        "search by title ('weir' -> 1 correct record)",
+        "search by series term ('craft' -> 2 Craft Teaching records)",
+        "empty state visible plus reset copy naming the failed term",
+        "reset restores 5 records and clears the query",
+        "series filter Field Surveys -> 3 records",
+        "combined search+filter empty state, then reset clears series as well",
+        "keyboard radio operation (ArrowRight/ArrowLeft changes and applies series)",
+        "duplicate detail opens with 'duplicate' title, duplicate aside, verbatim condition note",
+        "schematic caption contains 'Schematic placeholder — not the archival photograph'",
+        "4-item evidence-limits list, position line 'Record 2 of 2 in current results'",
+        "back retains query, 2 results and result order; scroll restored (exact); focus restored to button[data-open=LS-19]",
+        "Escape from detail returns to browse",
+        "no horizontal overflow at 320/390/1440 (scrollWidth == clientWidth)",
+        "axe WCAG 2.0/2.1 A+AA: list 0 violations / 0 incomplete; detail 0 violations / 0 incomplete",
+        "real Tab traversal shows visible 3px focus rings on skip link, search, radio, record button",
+        "no uncaught page errors and no console errors"
+      ]
+    },
+    {
+      "check": "Keyboard end-to-end at 390px (checks/scripts/kb.cjs)",
+      "result": "pass",
+      "evidence": "checks/keyboard.txt, checks/kb-detail-390.png, checks/empty-320.png",
+      "detail": "Tab -> record button, Enter opens detail with focus on the h2 (tabindex=-1), Escape closes and restores focus to the same record button; empty-state reset button is 46px tall at 320px."
+    },
+    {
+      "check": "Manual contrast calculation on 15 authored colour pairs",
+      "result": "pass; all text pairs >= 5.09:1 (muted 5.47, accent 6.12, field 6.99, craft 6.41, placeholder 5.09, figcaption 6.91, duplicate text 10.28, checked chip 15.44)",
+      "evidence": "calculations run inline; values recorded in this record"
+    },
+    {
+      "check": "Layout geometry probes at 320/390/1000/1440px",
+      "result": "pass after correction; gutters 16px at <=520px, 24px above; list, record rows, detail h2, catalogue table and panels all inside the viewport",
+      "evidence": "checks/geometry.txt"
+    },
+    {
+      "check": "Reduced-motion preference and 200% text zoom proxy",
+      "result": "reduced motion: transitions resolve to 0s (pass). 200% text at 320px: horizontal overflow 441px vs 320px (FAIL, see failures)",
+      "evidence": "checks/zoom-motion.txt, checks/zoom200-detail.txt, checks/zoom200-320.png"
+    },
+    {
+      "check": "Source scan for external dependencies / persistence",
+      "result": "zero matches for network, import, link, img, fetch and storage APIs"
+    }
+  ],
+  "failuresFound": [
+    {
+      "finding": "axe WCAG 2.0/2.1 AA 'label-content-name-mismatch' (serious) on button[data-open=LS-02] and button[data-open=LS-19]",
+      "cause": "The record button carried an aria-label summary that did not include the visible 'Second copy of LS-02' sub-line, so the visible text was not contained in the accessible name.",
+      "fix": "Replaced the aria-label override with a visible sr-only 'Open record ' prefix inside the button, letting the accessible name come from the real visible text. Rechecked: 0 axe violations, and the duplicate's warning is now part of its accessible name.",
+      "author": "creator"
+    },
+    {
+      "finding": "Content touched the screen edge at 320 and 390px (browse records and detail panel measured x=0)",
+      "cause": "#browse and #detail ID-selector padding shorthand (padding: 44px 0 8px) overrode the .wrap horizontal gutters by specificity.",
+      "fix": "Split into padding-top/padding-bottom so .wrap keeps its 16px/24px side gutters. Rechecked: 16px gutters at 320 and 390, 24px at 1440, scrollWidth equals clientWidth at all three widths.",
+      "author": "creator"
+    },
+    {
+      "finding": "Control border --rule-strong measured 2.72:1 against paper, below the 3:1 non-text contrast guidance for control boundaries",
+      "cause": "Chosen tone was too light for the warm paper background.",
+      "fix": "Darkened to #74725F (3.86:1 on paper, 4.43:1 on surface, 4.66:1 on input fill). Affects search border, chip borders, the record-button chevron and section rules. Rechecked by calculation; not re-measured by a dedicated non-text-contrast tool.",
+      "author": "creator"
+    }
+  ],
+  "knownRemainingIssues": [
+    {
+      "issue": "At 200% text zoom in a 320px viewport the page overflows horizontally to 441px: the masthead stamp paragraph (max-width 16ch) and the 'Listed in catalogue order' line stay on one line, and the h1 does not reflow below its longest word.",
+      "severity": "reflow edge case beyond the requested 320/390/1440 support widths; content still reachable by scrolling.",
+      "status": "not fixed — one self-correction pass was already spent; recorded rather than silently dropped."
+    }
+  ],
+  "unassessed": [
+    "Human visual judgment of the rendered result (no human reviewer); my own screenshots were captured but page images cannot be opened in this model's context, so visual assessment is limited to DOM geometry, computed styles and extracted text.",
+    "Real screen-reader output (no NVDA/JAWS/VoiceOver run); accessible names and reading order were checked via DOM/axe only.",
+    "Actual 200% browser zoom (tested via a doubled root font-size proxy, not browser zoom).",
+    "Windows High Contrast / forced-colours mode.",
+    "Cross-browser rendering outside Chromium (Firefox/Safari untested; system font stacks differ per OS).",
+    "Full WCAG conformance: axe success and computed contrast do not certify the interface.",
+    "Interaction with real network-off conditions (not applicable: no network usage exists by construction)."
+  ],
+  "unavailableChecks": [
+    "No project fixture server or existing test suite existed for this artifact; pytest/jest-style project tests were not available.",
+    "Skill's optional scripts/check-ui.mjs was not used because the loopback runner only covers initial-page load, not the interaction states this task requires; a task-specific Playwright script was written instead using the repository's installed Playwright/axe."
+  ],
+  "toolCalls": null,
+  "toolCallsNote": "Not reliably countable across the harness; recorded as null rather than estimated.",
+  "tokens": {
+    "input": null,
+    "output": null,
+    "thinking": null,
+    "cacheRead": null,
+    "cacheWrite": null,
+    "total": null,
+    "reason": "Provider token counts are not exposed to the agent in this harness."
+  },
+  "cost": {
+    "currency": null,
+    "amount": null,
+    "reason": "Provider cost is not exposed to the agent in this harness."
+  },
+  "humanAcceptance": "none — no human review was performed or claimed."
+}

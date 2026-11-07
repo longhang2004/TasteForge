@@ -1,0 +1,69 @@
+{
+  "cell": "freight-R2",
+  "resource": "R2",
+  "task": "Harbor Cold Chain consignment release (fictional cold-storage co-operative)",
+  "start_utc": "2026-11-07T14:18:36Z",
+  "end_utc": "2026-11-07T14:43:00Z",
+  "submitted_file": "initial/index.html",
+  "versions": [
+    {
+      "file": "versions/00.html",
+      "sha256": "b39740903b3829fdb24e7b4c5f745f4237eeab046e36b14f696e8b0837b893a6",
+      "saved_utc": "2026-11-07T14:33:58Z",
+      "note": "First runnable file, saved byte-for-byte before any browser test or revision."
+    },
+    {
+      "file": "versions/01.html",
+      "sha256": "7ac1efe084a6dded8e9a79b9bd5e55310f943d3f24ab3aaab84756ddacf3125e",
+      "saved_utc": "2026-11-07T14:41:23Z",
+      "author": "creator (single self-correction pass)",
+      "observed_finding": "Rendered check at 320px showed document scrollWidth 358 vs clientWidth 320: the four-column readings table forced horizontal overflow on the detail state. Automated contrast/axe and all 71 behaviour assertions had already passed at 320/390/1440 before the finding.",
+      "change": "At max-width 560px the readings table becomes table-layout:fixed and hides the redundant 'Against limit' column (the same comparison is already stated in each value cell and in the verdict); padding, column widths and r-diff size adjusted. No state or fact removed.",
+      "recheck": "320/390/1440 overflow = 0px in initial, detail, review, submit-failure and success states; 71/71 behaviour assertions pass; axe 0 violations in 6 states x 2 widths; 100/100 text colour pairs at or above 4.5:1 (3:1 large)."
+    }
+  ],
+  "submitted_sha256": "7ac1efe084a6dded8e9a79b9bd5e55310f943d3f24ab3aaab84756ddacf3125e",
+  "loaded_skill_paths": [
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/SKILL.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/workflows/create-ui.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/references/render-checks.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/references/accessibility.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/references/art-direction.md"
+  ],
+  "rationale": "Standard-effort create flow. The supplied material is four declared readings against a per-consignment limit plus a weight and a dock, so the thesis is a cold-store worksheet: a compact consignment roster (weight, dock, excursion pill) beside the selected consignment's evidence, with an original labelled ordinal reading-trace schematic that plots each reading against the dashed declared-limit line. Limit breaches are shown three ways (table row state, schematic point outside the line, and a written verdict naming the reading and the margin), release is a genuinely disabled control with an adjacent explanation, and the flow is decision -> review -> simulated failure -> retry -> success with a frozen record so edit and retry keep the same facts. Changing consignment clears decision and note. Palette is cold-store teal/ice with ochre for excursions, all system fonts, no external requests. Copy states that limits are declared fixtures and no real shipment, release or food-safety determination occurred.",
+  "checks_run": [
+    "Playwright (repo node_modules) 71 assertions at 320/390/1440: no horizontal overflow, empty state, select each consignment, disabled release + named blocked reason, 4 rows and correct excursion row count, validation summary with focus move, short-note rejection, counter, review contents (consignment/weight/dock/note), edit retention, first-submit failure with recovery, facts retained after failure, retry success, success disclaimer, consignment change clears decision and note, HC-118 release available, skip link first Tab and targets #main. Result stored in evidence/results.json.",
+    "axe-core (@axe-core/playwright) WCAG 2.0/2.1 A+AA scans in 6 states (initial, selected-excursion, validation-error, review, submit-failure, success) x 320 and 1440: 0 violations, 1 incomplete (colour-contrast on the gradient body background, reviewed manually). Report in evidence/axe.json.",
+    "Computed-style contrast pass over 100 visible text/background pairs at 390px: 0 below 4.5:1 normal / 3:1 large.",
+    "Overflow probe for all five states at 320, 390 and 1440 after correction: 0px overflow everywhere.",
+    "Keyboard: skip link is first Tab stop and moves to #main; :focus-visible ring 3px solid on probe; radios, textarea, buttons native controls with labels.",
+    "Screenshots of review, failure and success at all three widths in evidence/.",
+    "Evidence regenerated after the correction pass, against the submitted index.html: screenshots (review/failure/success at 320/390/1440), evidence/results.json (71/71), evidence/axe.json (0 violations in 12 scans)."
+  ],
+  "failures_observed_and_resolved": [
+    "320px detail state overflowed (358px content in 320px): readings table four-column layout. Fixed in one correction pass (versions/01.html) and rechecked.",
+    "Two assertions in an ad-hoc second script were wrong expectations, not product defects: HC-121 has three readings above 0.0 °C (0.3, 0.2, 0.1), not two, and the script's foreground walker read inherited transparent backgrounds on the body gradient, producing a false 1.37 ratio. Both were re-tested correctly (verdict text confirms '3 of 4'; targeted contrast pass returned 0 failures)."
+  ],
+  "unavailable_or_unassessed_checks": [
+    "No real screen-reader (NVDA/VoiceOver) or assistive-technology session; ARIA/live-region behaviour reviewed from source and DOM only.",
+    "No human usability review and no acceptance decision by the operator.",
+    "axe 'incomplete' colour-contrast item on the gradient page background was not machine-verified; manual computed pairing was used instead.",
+    "Windows High Contrast / forced-colors mode untested.",
+    "Zoom beyond 200% and non-Latin text expansion not tested; layout checked at 320/390/1440 with long note and long error copy only."
+  ],
+  "tool_calls": null,
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "thinking_tokens": null,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "total_tokens": null,
+    "cost_usd": null
+  },
+  "model": {
+    "provider": "vilao",
+    "id": "chib/deepseek-v4.1-flash"
+  },
+  "human_acceptance": null
+}

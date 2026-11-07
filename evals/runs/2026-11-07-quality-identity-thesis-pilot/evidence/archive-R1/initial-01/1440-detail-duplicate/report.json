@@ -1,0 +1,91 @@
+{
+  "label": "1440-detail-duplicate",
+  "capturedAtUtc": "2026-11-07T17:32:50.680Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "document": {
+    "width": 1440,
+    "height": 1862
+  },
+  "activeElement": {
+    "tag": "H2",
+    "id": "detailTitle",
+    "testId": null,
+    "rect": {
+      "x": 248,
+      "y": 649.359375,
+      "width": 751.453125,
+      "height": 80.625,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[role=alert]",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "[role=status]",
+      "matches": 1,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "button:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h1:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h2:focus",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 248,
+          "y": 649.359375,
+          "width": 751.453125,
+          "height": 80.625,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 0
+  }
+}

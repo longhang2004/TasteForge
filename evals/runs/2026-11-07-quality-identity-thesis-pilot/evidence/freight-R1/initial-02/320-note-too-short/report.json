@@ -1,0 +1,100 @@
+{
+  "label": "320-note-too-short",
+  "capturedAtUtc": "2026-11-07T18:16:11.063Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 320,
+    "height": 740
+  },
+  "scroll": {
+    "x": 0,
+    "y": 1393
+  },
+  "document": {
+    "width": 320,
+    "height": 2249
+  },
+  "activeElement": {
+    "tag": "TEXTAREA",
+    "id": "note",
+    "testId": null,
+    "rect": {
+      "x": 31.796875,
+      "y": 520.75,
+      "width": 256.40625,
+      "height": 88.359375,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[role=alert]",
+      "matches": 2,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 31.796875,
+          "y": 619.5,
+          "width": 256.40625,
+          "height": 106.28125,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "[role=status]",
+      "matches": 2,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": -1,
+          "y": 855.421875,
+          "width": 1,
+          "height": 1,
+          "intersectsViewport": false,
+          "fullyInViewport": false
+        }
+      ]
+    },
+    {
+      "selector": "button:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h1:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h2:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 1393
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 1393
+  }
+}

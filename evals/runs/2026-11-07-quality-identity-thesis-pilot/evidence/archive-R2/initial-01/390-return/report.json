@@ -1,0 +1,100 @@
+{
+  "label": "390-return",
+  "capturedAtUtc": "2026-11-07T17:32:36.865Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scroll": {
+    "x": 0,
+    "y": 616
+  },
+  "document": {
+    "width": 390,
+    "height": 1687
+  },
+  "activeElement": {
+    "tag": "BUTTON",
+    "id": null,
+    "testId": null,
+    "rect": {
+      "x": 16,
+      "y": 585.484375,
+      "width": 358,
+      "height": 258.5625,
+      "intersectsViewport": true,
+      "fullyInViewport": false
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[role=alert]",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "[role=status]",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 16,
+          "y": 271.546875,
+          "width": 358,
+          "height": 42,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "button:focus",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 16,
+          "y": 585.484375,
+          "width": 358,
+          "height": 258.5625,
+          "intersectsViewport": true,
+          "fullyInViewport": false
+        }
+      ]
+    },
+    {
+      "selector": "h1:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h2:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 616
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 616
+  }
+}

@@ -1,0 +1,3010 @@
+{
+  "scope": "Automated browser/axe + natural viewport; human tests deferred",
+  "checks": 66,
+  "failures": [],
+  "traces": [
+    {
+      "width": 320,
+      "checks": [
+        "all four declared consignments are offered",
+        "HC-114 shows its four readings and declared limit",
+        "HC-114 states the correct excursion state",
+        "HC-118 shows its four readings and declared limit",
+        "HC-118 states the correct excursion state",
+        "HC-121 shows its four readings and declared limit",
+        "HC-121 states the correct excursion state",
+        "HC-126 shows its four readings and declared limit",
+        "HC-126 states the correct excursion state",
+        "HC-114 names the \u00e2\u02c6\u20190.4 \u00c2\u00b0C reading against its \u00e2\u02c6\u20191.0 \u00c2\u00b0C limit",
+        "Release cannot be carried through for HC-114, and is explained",
+        "Hold still reaches review, so the refusal is specific to Release",
+        "a 9-character note is rejected",
+        "a note over 120 characters is refused",
+        "review shows consignment, decision, weight, dock, excursion, note",
+        "edit retains the selection, decision and note",
+        "changing consignment clears the previous decision and note",
+        "HC-118 has no excursion, so Release is available",
+        "the first valid submit fails with a useful recovery",
+        "facts are unchanged after the failure",
+        "retry succeeds and states the recorded decision honestly",
+        "no horizontal overflow at 320px"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 2132.75,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  ".is-on > .pick__body > .pick__id"
+                ],
+                [
+                  ".is-on > .pick__body > .pick__name"
+                ],
+                [
+                  ".is-on > .pick__body > .pick__meta"
+                ],
+                [
+                  ".is-on > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "blocked-excursion",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "release-block",
+            "testId": null,
+            "rect": {
+              "x": 31.796875,
+              "y": 207.890625,
+              "width": 256.40625,
+              "height": 226.265625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1633
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "#block-title"
+                ],
+                [
+                  "#block-text"
+                ],
+                [
+                  "#release-block > .mini"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "note-too-short",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "TEXTAREA",
+            "id": "note",
+            "testId": null,
+            "rect": {
+              "x": 31.796875,
+              "y": 520.75,
+              "width": 256.40625,
+              "height": 88.359375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1393
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  "#form-error"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H1",
+            "id": "h-review",
+            "testId": null,
+            "rect": {
+              "x": 14,
+              "y": 208.703125,
+              "width": 292,
+              "height": 51.53125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  ".rv-note:nth-child(2) > h2"
+                ],
+                [
+                  "#rv-excursion"
+                ],
+                [
+                  ".rv-note:nth-child(3) > h2"
+                ],
+                [
+                  "#rv-note"
+                ],
+                [
+                  "#panel-review > .card > .sim-note"
+                ],
+                [
+                  "#btn-edit"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "d-hold",
+            "testId": null,
+            "rect": {
+              "x": 44.796875,
+              "y": 381.15625,
+              "width": 16.796875,
+              "height": 16.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1393
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "submit-failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": -520,
+              "width": 320,
+              "height": 1418.625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 520
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  ".rv-note:nth-child(2) > h2"
+                ],
+                [
+                  "#rv-excursion"
+                ],
+                [
+                  ".rv-note:nth-child(3) > h2"
+                ],
+                [
+                  "#rv-note"
+                ],
+                [
+                  "#panel-review > .card > .sim-note"
+                ],
+                [
+                  "#submit-error"
+                ],
+                [
+                  "#btn-edit"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": -520,
+              "width": 320,
+              "height": 1260.203125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 520
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  ".done-mark"
+                ],
+                [
+                  "#h-success"
+                ],
+                [
+                  "#suc-line"
+                ],
+                [
+                  ".success > .rv-note > h2"
+                ],
+                [
+                  "#suc-note"
+                ],
+                [
+                  "#suc-disclaimer"
+                ],
+                [
+                  "#btn-again"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "checks": [
+        "all four declared consignments are offered",
+        "HC-114 shows its four readings and declared limit",
+        "HC-114 states the correct excursion state",
+        "HC-118 shows its four readings and declared limit",
+        "HC-118 states the correct excursion state",
+        "HC-121 shows its four readings and declared limit",
+        "HC-121 states the correct excursion state",
+        "HC-126 shows its four readings and declared limit",
+        "HC-126 states the correct excursion state",
+        "HC-114 names the \u00e2\u02c6\u20190.4 \u00c2\u00b0C reading against its \u00e2\u02c6\u20191.0 \u00c2\u00b0C limit",
+        "Release cannot be carried through for HC-114, and is explained",
+        "Hold still reaches review, so the refusal is specific to Release",
+        "a 9-character note is rejected",
+        "a note over 120 characters is refused",
+        "review shows consignment, decision, weight, dock, excursion, note",
+        "edit retains the selection, decision and note",
+        "changing consignment clears the previous decision and note",
+        "HC-118 has no excursion, so Release is available",
+        "the first valid submit fails with a useful recovery",
+        "facts are unchanged after the failure",
+        "retry succeeds and states the recorded decision honestly",
+        "no horizontal overflow at 390px"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 1930.8125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  ".is-on > .pick__body > .pick__id"
+                ],
+                [
+                  ".is-on > .pick__body > .pick__name"
+                ],
+                [
+                  ".is-on > .pick__body > .pick__meta"
+                ],
+                [
+                  ".is-on > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "blocked-excursion",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "release-block",
+            "testId": null,
+            "rect": {
+              "x": 33.390625,
+              "y": 372.671875,
+              "width": 323.21875,
+              "height": 184.515625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1285
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "#block-title"
+                ],
+                [
+                  "#block-text"
+                ],
+                [
+                  "#release-block > .mini"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "note-too-short",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "TEXTAREA",
+            "id": "note",
+            "testId": null,
+            "rect": {
+              "x": 33.390625,
+              "y": 643.53125,
+              "width": 323.21875,
+              "height": 88.359375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1087
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  "#form-error"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H1",
+            "id": "h-review",
+            "testId": null,
+            "rect": {
+              "x": 15.59375,
+              "y": 198.75,
+              "width": 358.8125,
+              "height": 53.40625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  ".rv-note:nth-child(2) > h2"
+                ],
+                [
+                  "#rv-excursion"
+                ],
+                [
+                  ".rv-note:nth-child(3) > h2"
+                ],
+                [
+                  "#rv-note"
+                ],
+                [
+                  "#panel-review > .card > .sim-note"
+                ],
+                [
+                  "#btn-edit"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "d-hold",
+            "testId": null,
+            "rect": {
+              "x": 46.390625,
+              "y": 503.9375,
+              "width": 16.796875,
+              "height": 16.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1087
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "submit-failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": -237,
+              "width": 390,
+              "height": 1273.984375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 237
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  ".rv-note:nth-child(2) > h2"
+                ],
+                [
+                  "#rv-excursion"
+                ],
+                [
+                  ".rv-note:nth-child(3) > h2"
+                ],
+                [
+                  "#rv-note"
+                ],
+                [
+                  "#panel-review > .card > .sim-note"
+                ],
+                [
+                  "#submit-error"
+                ],
+                [
+                  "#btn-edit"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": -237,
+              "width": 390,
+              "height": 1081.015625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 237
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  ".rv-note:nth-child(2) > h2"
+                ],
+                [
+                  "#rv-excursion"
+                ],
+                [
+                  ".rv-note:nth-child(3) > h2"
+                ],
+                [
+                  "#rv-note"
+                ],
+                [
+                  "#panel-review > .card > .sim-note"
+                ],
+                [
+                  "#btn-edit"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "checks": [
+        "all four declared consignments are offered",
+        "HC-114 shows its four readings and declared limit",
+        "HC-114 states the correct excursion state",
+        "HC-118 shows its four readings and declared limit",
+        "HC-118 states the correct excursion state",
+        "HC-121 shows its four readings and declared limit",
+        "HC-121 states the correct excursion state",
+        "HC-126 shows its four readings and declared limit",
+        "HC-126 states the correct excursion state",
+        "HC-114 names the \u00e2\u02c6\u20190.4 \u00c2\u00b0C reading against its \u00e2\u02c6\u20191.0 \u00c2\u00b0C limit",
+        "Release cannot be carried through for HC-114, and is explained",
+        "Hold still reaches review, so the refusal is specific to Release",
+        "a 9-character note is rejected",
+        "a note over 120 characters is refused",
+        "review shows consignment, decision, weight, dock, excursion, note",
+        "edit retains the selection, decision and note",
+        "changing consignment clears the previous decision and note",
+        "HC-118 has no excursion, so Release is available",
+        "the first valid submit fails with a useful recovery",
+        "facts are unchanged after the failure",
+        "retry succeeds and states the recorded decision honestly",
+        "no horizontal overflow at 1440px"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1151.75,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  ".is-on > .pick__body > .pick__id"
+                ],
+                [
+                  ".is-on > .pick__body > .pick__name"
+                ],
+                [
+                  ".is-on > .pick__body > .pick__meta"
+                ],
+                [
+                  ".is-on > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "blocked-excursion",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "release-block",
+            "testId": null,
+            "rect": {
+              "x": 478.1875,
+              "y": 617.15625,
+              "width": 782.015625,
+              "height": 142.765625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 308
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .is-warn.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "#block-title"
+                ],
+                [
+                  "#block-text"
+                ],
+                [
+                  "#release-block > .mini"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "note-too-short",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "TEXTAREA",
+            "id": "note",
+            "testId": null,
+            "rect": {
+              "x": 478.1875,
+              "y": 827.78125,
+              "width": 782.015625,
+              "height": 88.359375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 152
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  "#form-error"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H1",
+            "id": "h-review",
+            "testId": null,
+            "rect": {
+              "x": 162,
+              "y": 127.34375,
+              "width": 631.140625,
+              "height": 36.09375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  ".rv-note:nth-child(2) > h2"
+                ],
+                [
+                  "#rv-excursion"
+                ],
+                [
+                  ".rv-note:nth-child(3) > h2"
+                ],
+                [
+                  "#rv-note"
+                ],
+                [
+                  "#panel-review > .card > .sim-note"
+                ],
+                [
+                  "#btn-edit"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "d-hold",
+            "testId": null,
+            "rect": {
+              "x": 886.984375,
+              "y": 858.421875,
+              "width": 16.796875,
+              "height": 16.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  "#picker > legend"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-114\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-121\"] > .pick__tag.is-warn"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+                ],
+                [
+                  "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+                ],
+                [
+                  "#ev-id"
+                ],
+                [
+                  "#ev-name"
+                ],
+                [
+                  "#ev-catch"
+                ],
+                [
+                  ".ev-facts > span:nth-child(1)"
+                ],
+                [
+                  "#ev-limit"
+                ],
+                [
+                  ".ev-facts > span:nth-child(2)"
+                ],
+                [
+                  "#ev-weight"
+                ],
+                [
+                  ".ev-facts > span:nth-child(3)"
+                ],
+                [
+                  "#ev-dock"
+                ],
+                [
+                  "#verdict-title"
+                ],
+                [
+                  "#verdict-text"
+                ],
+                [
+                  ".plot__head > h2"
+                ],
+                [
+                  ".plot__head > .mini"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(1) > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(2) > .srow__val"
+                ],
+                [
+                  ".is-over > .srow__label"
+                ],
+                [
+                  ".is-over > .srow__val"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__label"
+                ],
+                [
+                  ".srow:nth-child(4) > .srow__val"
+                ],
+                [
+                  ".key > span:nth-child(1)"
+                ],
+                [
+                  ".key > span:nth-child(2)"
+                ],
+                [
+                  ".key > span:nth-child(3)"
+                ],
+                [
+                  "#decision-fieldset > legend"
+                ],
+                [
+                  "#dec-id"
+                ],
+                [
+                  "#dec-hint"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-release > .opt__text > .opt__sub"
+                ],
+                [
+                  "#release-tag"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__label"
+                ],
+                [
+                  "#opt-hold > .opt__text > .opt__sub"
+                ],
+                [
+                  "label[for=\"note\"]"
+                ],
+                [
+                  "#note-count"
+                ],
+                [
+                  "#note-help"
+                ],
+                [
+                  "#note"
+                ],
+                [
+                  ".btn-row-note"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "submit-failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1000,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  ".rv-note:nth-child(2) > h2"
+                ],
+                [
+                  "#rv-excursion"
+                ],
+                [
+                  ".rv-note:nth-child(3) > h2"
+                ],
+                [
+                  "#rv-note"
+                ],
+                [
+                  "#panel-review > .card > .sim-note"
+                ],
+                [
+                  "#submit-error"
+                ],
+                [
+                  "#btn-edit"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1000,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand__mark"
+                ],
+                [
+                  ".done-mark"
+                ],
+                [
+                  "#h-success"
+                ],
+                [
+                  "#suc-line"
+                ],
+                [
+                  ".success > .rv-note > h2"
+                ],
+                [
+                  "#suc-note"
+                ],
+                [
+                  "#suc-disclaimer"
+                ],
+                [
+                  "#btn-again"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

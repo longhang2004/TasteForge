@@ -1,0 +1,113 @@
+{
+  "reviewer": 1,
+  "startedAtUtc": "2026-11-07T17:35:33Z",
+  "finishedAtUtc": "2026-11-07T18:20:00Z",
+  "scope": "Read in full: reviewer-instructions.md, review-packet/index.json, freight/task.md, archive/task.md, all four index.html sources (freight/A 875 lines, freight/B 1599, archive/A 727, archive/B 856) and all four checks.json (freight A and B: 66 assertions over three width traces of seven states each; archive A and B: 36 assertions over three width traces of six states each; 0 failures, no pageErrors, no external requests). Viewed the PNG renders directly (image input works and I inspected them at native size): freight entry / blocked-excursion / note-too-short / review / edit / submit-failure / success at 320, 390 and 1440 for both variants, plus both 1440 full-page entries; archive entry / filter-field-surveys / search-weir / empty / detail-duplicate / return at 320, 390 and 1440 for both, plus both 1440 full-page entries. Also parsed every PNG IHDR to confirm real dimensions and non-blank content (8-bit RGB; 320x740, 390x844, 1440x1000; full-page 1440x1152 / 1052 / 1770 / 1502). NOT opened: review-key.json, cells/, evidence/, manifest.json, protocol.md, operator.md, report.md, acceptance.json, resources/, tools/, docs/, examples/, hashes.json, and the 2026-11-02 run. I did not run either page in a browser, did not install anything, and did not use a keyboard or assistive technology; every focus, geometry and hidden-state claim below comes from checks.json fields plus reading the source, and every visual claim comes from the rendered PNGs.",
+  "imageAccess": "true — I can view the PNGs and did so; palette, type direction, composition and legibility judgments below are grounded in the actual renders rather than inferred from CSS. Two limits still apply. (1) No freight success panel appears in any captured render: all six freight success PNGs (320/390/1440 for both variants) show the review panel mid-flight — variant A reads 'Submitting…' and variant B still shows the failure alert with a live Retry button, and checks.json likewise records focus on BUTTON#retry-button there — so all freight success-state claims are derived from source and assertions, not seen. (2) axe reported an 'incomplete' color-contrast finding in every captured state except archive/B detail-duplicate; I record those as open questions and make no contrast, conformance or human-usability claim anywhere.",
+  "cases": {
+    "freight": {
+      "taskQuality": [
+        {
+          "dimension": "firstActionSalience",
+          "verdict": "A",
+          "reason": "At 320 the first viewport already holds the actionable consignment picker with per-row weight, dock and EXCURSION / WITHIN LIMIT tags (320-entry.png), while B's 320 first viewport ends at the 'Release rule' card with the roster below the fold, and A additionally pre-tags Release 'BLOCKED' and keeps a persistent Evidence→Review→Recorded rail."
+        },
+        {
+          "dimension": "decisionContextRetention",
+          "verdict": "B",
+          "reason": "Both carry selection, decision and note through edit and the simulated failure, but B's recorded view re-states the excursion state, the declared limit and all four readings ('Readings recorded with this decision'), whereas A's recorded panel keeps only decision, consignment, weight, dock and note and drops the excursion summary its own review step displayed."
+        },
+        {
+          "dimension": "errorAndRecoveryClarity",
+          "verdict": "B",
+          "reason": "B's failure state names a reference ('Simulated error: SIM-503 · release-log service unavailable · attempt 1'), says nothing was recorded, adds escalation guidance and gives a dedicated red Retry button, and B keeps the release-block reason visible whenever an excursion exists, while A shows a single sentence and exposes the reason only after Release is chosen."
+        },
+        {
+          "dimension": "responsiveAccess",
+          "verdict": "A",
+          "reason": "B's authored schematic is one 640-unit viewBox compressed into roughly 262px of content at 320, so its 10.5–12.5-unit axis and value labels render at about 4–5px and are unreadable in 320-edit.png (B also hides the 'Against limit' column below 560px, though the in-cell '+0.6 °C above limit' text survives); A's readings strip keeps every label and value as DOM text at .83rem and compresses only the track, so the evidence stays readable at 320 without relying on a second representation. B's own table below the chart still carries all four values and states in text, so the practical loss is confined to the schematic rather than to the facts."
+        },
+        {
+          "dimension": "semanticControlAndFocus",
+          "verdict": "B",
+          "reason": "checks.json records focus on H3#submit-error-title after the simulated failure at all three widths in B, but on BODY in A because A calls focus() on a <p class=\"err\"> that carries no tabindex; B also disables Release and points aria-describedby at the reason and gives its error summary anchor links to the offending fields, though A uses fieldset/legend for both groups and visible focus rings throughout."
+        }
+      ],
+      "productSpecificity": [
+        {
+          "dimension": "contentToThesis",
+          "verdict": "tie",
+          "reason": "Both derive a thesis from the supplied threshold rule rather than a stock skin — A encodes the declared limit as a dashed band boundary in an ice-cyan cold-store console with amber reserved for excursion, B as a dashed limit line in a paper workbench with mono catalogue numerals and a mounted 'Reading trace' — and both have to caption the same disclaimer, so the evidence does not separate them."
+        },
+        {
+          "dimension": "suppliedArtifactsShapeComposition",
+          "verdict": "B",
+          "reason": "B plots the supplied readings on a scale computed from their own min/max ('−2.1 to −0.4 °C'), adds a per-reading delta column ('−1.1 °C against limit', '+0.6 °C above limit'), gives a nearest-margin sentence for clear consignments and a four-cell grid of product, catch date, limit and weight, while A's strip encodes only the worst margin plus one prose 'Highest: Reading 3…' sentence."
+        },
+        {
+          "dimension": "coherentMediaTypeDirection",
+          "verdict": "tie",
+          "reason": "Each holds exactly one direction: A a dark console with one sans family, tabular numerals, 14px radii and ice/amber tokens reused across picker, strip, verdict and block; B a light workbench with serif headings, mono numerals and labels and stroke-1.8 inline icons used consistently from roster to chart to summary grid."
+        },
+        {
+          "dimension": "honestEvidenceLimits",
+          "verdict": "tie",
+          "reason": "Both name the limits where the decision is made and again on the record (A 'Simulation only…' plus 'no real shipment was moved, released or held, and no food-safety determination was made'; B rule-card fine print plus 'no dock was notified and no regulatory or customer record was created') and both caption the schematic as schematic; B additionally pre-declares that the first submit is scripted to fail, which is more transparent, but neither variant misstates a limit, so the tuple does not separate."
+        }
+      ],
+      "notes": "Strongest for A: the entry composition — picker with per-row excursion tags, weight and dock beside an evidence card whose declared limit ('at or below −1.0 °C'), limit-crossing strip and 'BLOCKED' Release tag stay legible from 320 to 1440, so the hold-when-any-excursion rule is visible before any interaction. Strongest for B: the evidence and failure panels — computed-scale trace with a dashed limit, per-reading deltas, a release-block reason that is on screen whenever an excursion exists, and a failure alert that takes focus and names an error reference. Tradeoff: A is a strict three-step wizard that walks one operator down one path; B is a persistent workbench where roster and detail sit side by side at ≥900px, so B's context is spatial and A's is sequential. Caveats on my own verdicts: decisionContextRetention is the narrowest call in this case — A does retain decision and note through edit and failure and its success panel still satisfies the brief, so the separation rests solely on the excursion summary not being carried into A's recorded view. A pre-selects HC-114 on load, which makes its first action salient but means an operator could record a decision for an unchosen consignment; I counted that against neither. I could not assess: either success panel visually (every freight success capture is mid-submit), contrast in any state (axe color-contrast 'incomplete' in all seven states at all three widths), keyboard traversal order, hover, or any screen-reader output."
+    },
+    "archive": {
+      "taskQuality": [
+        {
+          "dimension": "firstActionSalience",
+          "verdict": "tie",
+          "reason": "Both put the search field and the series filter directly above the count and the record list, so the first useful action (search, filter, or open a record) is equally obvious; A's extra always-visible 'Clear search and filter' beside the count at first load is a control-state bug, counted once under semanticControlAndFocus, not a salience difference."
+        },
+        {
+          "dimension": "decisionContextRetention",
+          "verdict": "tie",
+          "reason": "Both preserve query, filter and result order and return focus to the opened record's control (checks: return focus=BUTTON; A '2 OF 5 RECORDS' and B 'Showing 2 of 5 records — 3 hidden by search or series'), and each adds something the other lacks — A cross-navigates the duplicate pair, B restores the captured scroll offset and shows 'Record 2 of 2 in current results'."
+        },
+        {
+          "dimension": "errorAndRecoveryClarity",
+          "verdict": "tie",
+          "reason": "Both empty states name the failing query and the active series and offer a one-click reset that demonstrably restores all five records (checks: 'an empty result set offers a clear reset' and 'reset restores the result set'), A in more complete prose ('Clearing the search and series filter restores all 5 records') and B more terse ('Try a shorter term or clear the series filter'), with no separation on what happened, why, or what to do next."
+        },
+        {
+          "dimension": "responsiveAccess",
+          "verdict": "tie",
+          "reason": "checks.json records horizontalOverflow 0 at 320, 390 and 1440 for both and the long 'River weir cross-section — revised plate' title wraps without clipping in either (320-search-weir.png), so the difference is density not reachability: B keeps a 64–80px plate thumbnail beside the record text at 320 while A stacks the plate above it, and A's hyphens:auto splits 'revised' as 're-vised' where B does not."
+        },
+        {
+          "dimension": "semanticControlAndFocus",
+          "verdict": "B",
+          "reason": "A ships two source-verifiable control-state defects that B avoids — its .btn{display:inline-flex} overrides the [hidden] UA rule so 'Clear search and filter' is visible and operative at first load with nothing to clear (1440-entry.png), and resetAll('empty') focuses the empty block's h3 after renderList() has re-hidden that block, the exact hidden-subtree focus failure A's own source comment documents, while B declares [hidden]{display:none !important} and always focuses the visible search input on reset; against B, its record buttons concatenate id, series, title and all meta into one long accessible name where A's are title-length."
+        }
+      ],
+      "productSpecificity": [
+        {
+          "dimension": "contentToThesis",
+          "verdict": "tie",
+          "reason": "A enacts an epistemic thesis in page order — h1 'Teaching slides, read as records before images' followed by a 'What this catalogue does not claim' block placed before the controls and every thumbnail captioned SCHEMATIC — while B enacts the plate as physical object, drawing each thumbnail and detail plate to its supplied catalogue ratio inside dark mounts under 'Plates are drawn to each record's catalogue dimensions'; both are specific to this product and neither thesis is demonstrably less derived from the fixtures."
+        },
+        {
+          "dimension": "suppliedArtifactsShapeComposition",
+          "verdict": "A",
+          "reason": "A expresses the supplied duplicate relationship from both sides — LS-02's row carries 'HELD WITH DUPLICATE LS-19' and its detail offers 'Open duplicate record LS-19' — whereas B marks only LS-19 ('Duplicate' tag plus 'Second copy of LS-02 — not a separate photograph') and leaves LS-02's row unmarked, so the two-copies-under-one-figure fact shapes both rows of A's comparison list and only one of B's."
+        },
+        {
+          "dimension": "coherentMediaTypeDirection",
+          "verdict": "tie",
+          "reason": "Both are coherent within one direction built from the same ingredients — serif display, system sans body, mono catalogue labels, paper/ink tokens, 2px radii and hairline rules — with colour used semantically (A accent #7a4a10 and moss #3c5142; B rust #8B3A1E with distinct series colours), and neither shifts vocabulary between list and detail."
+        },
+        {
+          "dimension": "honestEvidenceLimits",
+          "verdict": "tie",
+          "reason": "Both state every required limit truthfully — no original plate, no full-resolution file, no rights statement, catalogue dates not confirmed attribution, schematic not the archival photograph, and the duplicate 'not a different photograph and not a new discovery' — A in a pre-control block plus an 'About the image on this page' panel, B in a scope line plus a per-record 'What this record does not establish' panel and per-record artNote ('Twelve-sector wheel layout only; it does not show pigment, hue or the recorded fading')."
+        }
+      ],
+      "notes": "Strongest for A: the duplicate, the hardest supplied fact, is handled from both sides with an explicit reading of the catalogue's own logic ('The catalogue holds two plates under the same figure, so both records stay listed; the date is undated and the condition note is the catalogue's own'), and its plate abstraction is deliberately non-representational so it cannot be mistaken for a photograph. Strongest for B: the list composition — ledger rows with series colour tags, thumbnails mounted and drawn to each record's catalogue ratio, a count line that states exactly what is hidden, and a return that resumes mid-page rather than jumping to the top. Tradeoff: A reads as a curated catalogue essay whose identity lives in copy and page order, B as an institutional catalogue database whose identity lives in geometry and column structure. B's own weaknesses are verbose accessible names on the record buttons and a suppressed outline on the focused detail heading (`.detail-head h2:focus{outline:none}`, on a non-interactive heading). I could not assess again: contrast in any archive state (axe color-contrast 'incomplete' everywhere except B's detail-duplicate, which reported none — an open question, not a pass), keyboard traversal order, or screen-reader output; and I did not interact with either page, so all focus behaviour above is from checks.json plus source."
+    }
+  }
+}

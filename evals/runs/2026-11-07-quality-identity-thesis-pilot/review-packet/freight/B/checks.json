@@ -1,0 +1,1780 @@
+{
+  "scope": "Automated browser/axe + natural viewport; human tests deferred",
+  "checks": 66,
+  "failures": [],
+  "traces": [
+    {
+      "width": 320,
+      "checks": [
+        "all four declared consignments are offered",
+        "HC-114 shows its four readings and declared limit",
+        "HC-114 states the correct excursion state",
+        "HC-118 shows its four readings and declared limit",
+        "HC-118 states the correct excursion state",
+        "HC-121 shows its four readings and declared limit",
+        "HC-121 states the correct excursion state",
+        "HC-126 shows its four readings and declared limit",
+        "HC-126 states the correct excursion state",
+        "HC-114 names the \u00e2\u02c6\u20190.4 \u00c2\u00b0C reading against its \u00e2\u02c6\u20191.0 \u00c2\u00b0C limit",
+        "Release cannot be carried through for HC-114, and is explained",
+        "Hold still reaches review, so the refusal is specific to Release",
+        "a 9-character note is rejected",
+        "a note over 120 characters is refused",
+        "review shows consignment, decision, weight, dock, excursion, note",
+        "edit retains the selection, decision and note",
+        "changing consignment clears the previous decision and note",
+        "HC-118 has no excursion, so Release is available",
+        "the first valid submit fails with a useful recovery",
+        "facts are unchanged after the failure",
+        "retry succeeds and states the recorded decision honestly",
+        "no horizontal overflow at 320px"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 1844.890625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "blocked-excursion",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 30,
+              "y": 327.078125,
+              "width": 260,
+              "height": 86.625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2184
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "note-too-short",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 30,
+              "y": 306.078125,
+              "width": 260,
+              "height": 127.125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2205
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 30,
+              "y": 347.171875,
+              "width": 260,
+              "height": 45.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 474
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 30,
+              "y": 344.765625,
+              "width": 260,
+              "height": 50.375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 1072
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "submit-failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H3",
+            "id": "submit-error-title",
+            "testId": null,
+            "rect": {
+              "x": 51,
+              "y": 350.765625,
+              "width": 222,
+              "height": 39,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 657
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": "retry-button",
+            "testId": null,
+            "rect": {
+              "x": 51,
+              "y": 695.640625,
+              "width": 184.390625,
+              "height": 44.5,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 670
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "checks": [
+        "all four declared consignments are offered",
+        "HC-114 shows its four readings and declared limit",
+        "HC-114 states the correct excursion state",
+        "HC-118 shows its four readings and declared limit",
+        "HC-118 states the correct excursion state",
+        "HC-121 shows its four readings and declared limit",
+        "HC-121 states the correct excursion state",
+        "HC-126 shows its four readings and declared limit",
+        "HC-126 states the correct excursion state",
+        "HC-114 names the \u00e2\u02c6\u20190.4 \u00c2\u00b0C reading against its \u00e2\u02c6\u20191.0 \u00c2\u00b0C limit",
+        "Release cannot be carried through for HC-114, and is explained",
+        "Hold still reaches review, so the refusal is specific to Release",
+        "a 9-character note is rejected",
+        "a note over 120 characters is refused",
+        "review shows consignment, decision, weight, dock, excursion, note",
+        "edit retains the selection, decision and note",
+        "changing consignment clears the previous decision and note",
+        "HC-118 has no excursion, so Release is available",
+        "the first valid submit fails with a useful recovery",
+        "facts are unchanged after the failure",
+        "retry succeeds and states the recorded decision honestly",
+        "no horizontal overflow at 390px"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 1628.078125,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "blocked-excursion",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 31.59375,
+              "y": 42.328125,
+              "width": 326.8125,
+              "height": 86.625,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2240
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "note-too-short",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 31.59375,
+              "y": 257.328125,
+              "width": 326.8125,
+              "height": 106.875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 2025
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 31.59375,
+              "y": 695.796875,
+              "width": 326.8125,
+              "height": 22.796875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 31.59375,
+              "y": 396.640625,
+              "width": 326.8125,
+              "height": 50.375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 851
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "submit-failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H3",
+            "id": "submit-error-title",
+            "testId": null,
+            "rect": {
+              "x": 52.59375,
+              "y": 402.84375,
+              "width": 288.8125,
+              "height": 39,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 435
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": "retry-button",
+            "testId": null,
+            "rect": {
+              "x": 52.59375,
+              "y": 681.40625,
+              "width": 184.390625,
+              "height": 44.5,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 435
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "checks": [
+        "all four declared consignments are offered",
+        "HC-114 shows its four readings and declared limit",
+        "HC-114 states the correct excursion state",
+        "HC-118 shows its four readings and declared limit",
+        "HC-118 states the correct excursion state",
+        "HC-121 shows its four readings and declared limit",
+        "HC-121 states the correct excursion state",
+        "HC-126 shows its four readings and declared limit",
+        "HC-126 states the correct excursion state",
+        "HC-114 names the \u00e2\u02c6\u20190.4 \u00c2\u00b0C reading against its \u00e2\u02c6\u20191.0 \u00c2\u00b0C limit",
+        "Release cannot be carried through for HC-114, and is explained",
+        "Hold still reaches review, so the refusal is specific to Release",
+        "a 9-character note is rejected",
+        "a note over 120 characters is refused",
+        "review shows consignment, decision, weight, dock, excursion, note",
+        "edit retains the selection, decision and note",
+        "changing consignment clears the previous decision and note",
+        "HC-118 has no excursion, so Release is available",
+        "the first valid submit fails with a useful recovery",
+        "facts are unchanged after the failure",
+        "retry succeeds and states the recorded decision honestly",
+        "no horizontal overflow at 1440px"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1052.4375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "blocked-excursion",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 559,
+              "y": 412.71875,
+              "width": 720,
+              "height": 68.4375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 843
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "note-too-short",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "DIV",
+            "id": "form-error-summary",
+            "testId": null,
+            "rect": {
+              "x": 559,
+              "y": 426.71875,
+              "width": 720,
+              "height": 68.4375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 829
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "review",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "review-title",
+            "testId": null,
+            "rect": {
+              "x": 163,
+              "y": 391.34375,
+              "width": 834,
+              "height": 27.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "edit",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "detail-title",
+            "testId": null,
+            "rect": {
+              "x": 559,
+              "y": 383.09375,
+              "width": 456.46875,
+              "height": 31.1875,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "text[x=\"566\"]"
+                ],
+                [
+                  "text[y=\"91.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"105.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"81.33333333333334\"]"
+                ],
+                [
+                  "text[x=\"237.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"34.66666666666666\"]"
+                ],
+                [
+                  "text[x=\"368.75\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[y=\"74.66666666666667\"]"
+                ],
+                [
+                  "text[x=\"500.25\"][font-size=\"11\"][y=\"139\"]"
+                ],
+                [
+                  "text[x=\"40\"]"
+                ],
+                [
+                  "text[x=\"44\"]"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "submit-failure",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H3",
+            "id": "submit-error-title",
+            "testId": null,
+            "rect": {
+              "x": 184,
+              "y": 457.6875,
+              "width": 796,
+              "height": 19.5,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 37
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "success",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": "retry-button",
+            "testId": null,
+            "rect": {
+              "x": 184,
+              "y": 599.5,
+              "width": 184.390625,
+              "height": 44.5,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 37
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".brand-name"
+                ],
+                [
+                  ".brand-sub"
+                ],
+                [
+                  ".header-chip"
+                ],
+                [
+                  ".header-meta > span:nth-child(2)"
+                ],
+                [
+                  ".kicker"
+                ],
+                [
+                  "#page-title"
+                ],
+                [
+                  ".lede"
+                ],
+                [
+                  ".rule-card > h2"
+                ],
+                [
+                  ".rule-card > p:nth-child(2)"
+                ],
+                [
+                  ".fine"
+                ],
+                [
+                  "footer > p"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

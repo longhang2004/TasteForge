@@ -1,0 +1,59 @@
+{
+  "note": "Post-review verification of product defects the reviewers reported, and of a harness capture-timing defect. Nothing here changes a frozen judgment; it records what the lead independently verified after unblinding.",
+  "harnessDefect": {
+    "what": "The freight success capture fired while the page was still transitioning, so no freight \"success\" render showed the settled recorded state. Both reviewers reported this independently.",
+    "cause": "The capture ran immediately after the retry click rather than after the recorded surface had settled.",
+    "fix": "Acceptance now waits for the honest disclaimer, the recorded decision, absence of any visible failure alert, and absence of \"Submitting\", then captures.",
+    "correctedEvidence": [
+      "evidence/freight-R1/initial-02/",
+      "evidence/freight-R2/initial-02/"
+    ],
+    "reviewedEvidencePreserved": [
+      "evidence/freight-R1/initial-01/",
+      "evidence/freight-R2/initial-01/"
+    ],
+    "checksUnchanged": true,
+    "explanation": "Only the capture timing changed. Assertion counts, sources and axe results are identical between initial-01 and initial-02, so the frozen judgments remain valid for the same pages."
+  },
+  "verifiedProductDefects": [
+    {
+      "cell": "archive-R1",
+      "reportedBy": [
+        "reviewer-2"
+      ],
+      "claim": "The \"Clear search and filter\" control is visible and operative at first load although nothing is filtered yet, because .btn{display:inline-flex} overrides the [hidden] UA rule.",
+      "verifiedBy": "lead",
+      "how": "Read the entry-state capture at 1440 (evidence/archive-R1/initial-01/1440-entry) and the source rules.",
+      "sourceEvidence": ".btn{display:inline-flex;...} is declared after the UA [hidden] rule applies, and the element carries the hidden attribute, so it still lays out.",
+      "result": "confirmed",
+      "severity": "task-quality/affordance defect; does not break the slice"
+    },
+    {
+      "cell": "archive-R1",
+      "reportedBy": [
+        "reviewer-2"
+      ],
+      "claim": "resetAll(\"empty\") focuses an h3 that renderList() has just re-hidden.",
+      "verifiedBy": "lead",
+      "how": "The cell source documents this exact class of failure in its own comment about a hidden subtree ignoring focus; the call order was read directly.",
+      "result": "supported by source; not separately reproduced as a rendered assertion",
+      "severity": "focus-management defect in one path"
+    },
+    {
+      "cell": "freight-R1",
+      "reportedBy": [
+        "reviewer-1",
+        "reviewer-2"
+      ],
+      "claim": "The intended focus move after a failed submission is dead code: focus() is called on a <p> with no tabindex, so focus stays on BODY.",
+      "verifiedBy": "lead",
+      "how": "checks.json records BODY as the active element in the failure and success states for freight-R1, while freight-R2 records the failure heading.",
+      "result": "confirmed",
+      "severity": "accessibility/feedback defect; axe did not flag it"
+    }
+  ],
+  "notVerified": [
+    "Composition and colour claims are visual judgments from the captures; the lead did not re-judge them, and they remain the reviewers' own assessments.",
+    "Axe color-contrast stayed \"incomplete\" in nearly every state, so no contrast claim is made by anyone."
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "cells": {
+    "freight-R1": {
+      "condition": "lean",
+      "creatorObservedStart": "2026-11-07T15:47:17Z",
+      "creatorObservedEnd": "2026-11-07T16:10:54Z",
+      "creatorObservedSeconds": 1417.0,
+      "creatorObservedMinutes": 23.6,
+      "creatorBudgetStatus": "over hard budget",
+      "firstArtifactObservedSeconds": 236.0,
+      "creatorVersions": [
+        {
+          "file": "versions/00.html",
+          "sha256": "917b9f9f11a370e13f39c2067c6da227f6790d035aae9ab0acb12ae00b95be62",
+          "saved_utc": "2026-11-07T15:51:13Z",
+          "note": "First runnable file, saved byte-for-byte before any browser test or revision."
+        },
+        {
+          "file": "versions/01.html",
+          "sha256": "c4dafded6213ca0eb302e1c8feb2fb2bfae2acfbf58a969542b473b5b21b4370",
+          "saved_utc": "2026-11-07T16:06:52Z",
+          "note": "Single focused self-correction pass (copied from 00 at 15:55:02Z, edited, finalized 16:06:52Z). Observed finding: (a) axe color-contrast came back 'incomplete' on 8 nodes because .card used a linear-gradient background so axe could not resolve the background colour; (b) the keyboard check showed no focus ring on the consignment radios (outline-style computed as 'none' under the :focus-visible rule for a small radio); (c) axe incomplete 'aria-prohibited-attr' on #release-block for aria-labelledby while the referenced visible text already sits inside it; (d) dead code in changeConsignment referenced a non-existent '#dec-announce' element and threw a TypeError on every consignment change (5 uncaught page errors in v00). Changed: moved the ambient radial gradients from body background to a fixed, z-index:-1 body::before layer so card/text backgrounds resolve to a flat colour; added .pick/.opt :focus-within surface change plus an explicit 3px ring on the focused radio; removed the redundant aria-labelledby from #release-block; removed the throwing statement and rewrote the change-consignment announcement through the live region; added syncPicker() to renderEvidence so the checked card styling follows state changes. Rechecked: full browser/axe suite re-run (27 pass / 0 fail), axe violations 0 in evidence, review and blocked-release+validation states, 0 uncaught page errors, no horizontal overflow at 320/390/1440 in all four states. ALSO: during this same pass I introduced and then fixed one regression of my own \u00e2\u20ac\u201d clearing #release-block via textContent destroyed its child title/paragraph nodes, which broke the blocked-release state and two downstream checks; that line was removed and the checks re-run clean."
+        }
+      ],
+      "creatorCorrections": 1,
+      "operatorUiCorrections": 0,
+      "loadedSkillPaths": [
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/operator.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/prompts/freight.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/SKILL.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/create-ui.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/render-checks.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/structure-and-revise.md"
+      ],
+      "loadedSkillWordProxies": {
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/operator.md": 314,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/prompts/freight.md": 475,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/SKILL.md": 582,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/create-ui.md": 271,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/render-checks.md": 358,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/structure-and-revise.md": 455
+      },
+      "loadedSkillWords": 2455,
+      "loadedSkillWordsUnresolved": [],
+      "operatorBrowserSegments": [
+        {
+          "report": "evidence\\freight-R1\\initial-01\\report.json",
+          "startedAt": "2026-11-07T17:32:03.276Z",
+          "finishedAt": "2026-11-07T17:33:29.943Z",
+          "seconds": 86.667,
+          "checks": 66,
+          "failures": []
+        },
+        {
+          "report": "evidence\\freight-R1\\initial-02\\report.json",
+          "startedAt": "2026-11-07T18:15:58.634Z",
+          "finishedAt": "2026-11-07T18:17:03.075Z",
+          "seconds": 64.441,
+          "checks": 66,
+          "failures": []
+        }
+      ],
+      "acceptanceChecks": 66,
+      "acceptanceStates": 21,
+      "axeViolations": 0,
+      "axeIncomplete": 21,
+      "providerInputTokens": null,
+      "providerOutputTokens": null,
+      "providerThinkingTokens": null,
+      "providerCacheTokens": null,
+      "billedCost": null,
+      "completeAcceptanceCycleCost": null,
+      "creatorToolCalls": null
+    },
+    "freight-R2": {
+      "condition": "candidate",
+      "creatorObservedStart": "2026-11-07T14:18:36Z",
+      "creatorObservedEnd": "2026-11-07T14:43:00Z",
+      "creatorObservedSeconds": 1464.0,
+      "creatorObservedMinutes": 24.4,
+      "creatorBudgetStatus": "over hard budget",
+      "firstArtifactObservedSeconds": 922.0,
+      "creatorVersions": [
+        {
+          "file": "versions/00.html",
+          "sha256": "b39740903b3829fdb24e7b4c5f745f4237eeab046e36b14f696e8b0837b893a6",
+          "saved_utc": "2026-11-07T14:33:58Z",
+          "note": "First runnable file, saved byte-for-byte before any browser test or revision."
+        },
+        {
+          "file": "versions/01.html",
+          "sha256": "7ac1efe084a6dded8e9a79b9bd5e55310f943d3f24ab3aaab84756ddacf3125e",
+          "saved_utc": "2026-11-07T14:41:23Z",
+          "author": "creator (single self-correction pass)",
+          "observed_finding": "Rendered check at 320px showed document scrollWidth 358 vs clientWidth 320: the four-column readings table forced horizontal overflow on the detail state. Automated contrast/axe and all 71 behaviour assertions had already passed at 320/390/1440 before the finding.",
+          "change": "At max-width 560px the readings table becomes table-layout:fixed and hides the redundant 'Against limit' column (the same comparison is already stated in each value cell and in the verdict); padding, column widths and r-diff size adjusted. No state or fact removed.",
+          "recheck": "320/390/1440 overflow = 0px in initial, detail, review, submit-failure and success states; 71/71 behaviour assertions pass; axe 0 violations in 6 states x 2 widths; 100/100 text colour pairs at or above 4.5:1 (3:1 large)."
+        }
+      ],
+      "creatorCorrections": 1,
+      "operatorUiCorrections": 0,
+      "loadedSkillPaths": [
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/SKILL.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/workflows/create-ui.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/references/render-checks.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/references/accessibility.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/references/art-direction.md"
+      ],
+      "loadedSkillWordProxies": {
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/SKILL.md": 593,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/workflows/create-ui.md": 290,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/references/render-checks.md": 358,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/references/accessibility.md": 244,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R2/tasteforge/references/art-direction.md": 723
+      },
+      "loadedSkillWords": 2208,
+      "loadedSkillWordsUnresolved": [],
+      "operatorBrowserSegments": [
+        {
+          "report": "evidence\\freight-R2\\initial-01\\report.json",
+          "startedAt": "2026-11-07T17:32:01.844Z",
+          "finishedAt": "2026-11-07T17:33:36.980Z",
+          "seconds": 95.136,
+          "checks": 66,
+          "failures": []
+        },
+        {
+          "report": "evidence\\freight-R2\\initial-02\\report.json",
+          "startedAt": "2026-11-07T18:15:58.631Z",
+          "finishedAt": "2026-11-07T18:17:10.535Z",
+          "seconds": 71.904,
+          "checks": 66,
+          "failures": []
+        }
+      ],
+      "acceptanceChecks": 66,
+      "acceptanceStates": 21,
+      "axeViolations": 0,
+      "axeIncomplete": 21,
+      "providerInputTokens": null,
+      "providerOutputTokens": null,
+      "providerThinkingTokens": null,
+      "providerCacheTokens": null,
+      "billedCost": null,
+      "completeAcceptanceCycleCost": null,
+      "creatorToolCalls": null
+    },
+    "archive-R1": {
+      "condition": "lean",
+      "creatorObservedStart": "2026-11-07T15:51:20Z",
+      "creatorObservedEnd": "2026-11-07T16:07:00Z",
+      "creatorObservedSeconds": 940.0,
+      "creatorObservedMinutes": 15.7,
+      "creatorBudgetStatus": "over hard budget",
+      "firstArtifactObservedSeconds": 312.0,
+      "creatorVersions": [
+        {
+          "file": "versions/00.html",
+          "sha256": "f60ed8a7adfa351b3e86f6358f56de42acf52f72d817dfcfb17481c870647c3b",
+          "saved_utc": "2026-11-07T15:56:32Z",
+          "note": "First runnable file, saved byte-for-byte before any browser test or revision."
+        },
+        {
+          "file": "versions/01.html",
+          "sha256": "fbc63de9d7c8b7ded5574491c7f0f1486b1fe0bc214fde629ca3a8fab65fd484",
+          "saved_utc": "2026-11-07T16:02:21Z",
+          "note": "Single focused self-correction. Observed finding: after clicking a record, document.activeElement remained BODY instead of #detailTitle (diagnostic in checks/v00/focus-after-open-finding.json; raw failing run in checks/v00/run-v00-raw.log, run-checks.mjs line 131 timed out waiting for the heading to take focus). Cause: renderDetail() called h.focus() while #detailView still carried the hidden attribute, so the focus call was silently ignored. Change: moved scroll/focus out of renderDetail() into a focusDetailTitle() helper invoked from openRecord() after listView.hidden = true and detailView.hidden = false. Rechecked: full suite re-run against 01.html, 114/114 assertions pass including 'detail heading receives focus' at 320, 390 and 1440 px; no other behaviour changed."
+        }
+      ],
+      "creatorCorrections": 1,
+      "operatorUiCorrections": 0,
+      "loadedSkillPaths": [
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/SKILL.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/create-ui.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/structure-and-revise.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/render-checks.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/accessibility.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/typography.md",
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/scripts/check-ui.mjs"
+      ],
+      "loadedSkillWordProxies": {
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/SKILL.md": 582,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/create-ui.md": 271,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/structure-and-revise.md": 455,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/render-checks.md": 358,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/accessibility.md": 244,
+        "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/typography.md": 300
+      },
+      "loadedSkillWords": 2210,
+      "loadedSkillWordsUnresolved": [],
+      "operatorBrowserSegments": [
+        {
+          "report": "evidence\\archive-R1\\initial-01\\report.json",
+          "startedAt": "2026-11-07T17:32:01.841Z",
+          "finishedAt": "2026-11-07T17:32:55.971Z",
+          "seconds": 54.13,
+          "checks": 36,
+          "failures": []
+        }
+      ],
+      "acceptanceChecks": 36,
+      "acceptanceStates": 18,
+      "axeViolations": 0,
+      "axeIncomplete": 18,
+      "providerInputTokens": null,
+      "providerOutputTokens": null,
+      "providerThinkingTokens": null,
+      "providerCacheTokens": null,
+      "billedCost": null,
+      "completeAcceptanceCycleCost": null,
+      "creatorToolCalls": null
+    },
+    "archive-R2": {
+      "condition": "candidate",
+      "creatorObservedStart": "2026-11-07T11:27:41Z",
+      "creatorObservedEnd": "2026-11-07T11:41:44Z",
+      "creatorObservedSeconds": 843.0,
+      "creatorObservedMinutes": 14.1,
+      "creatorBudgetStatus": "over soft, within hard budget",
+      "firstArtifactObservedSeconds": null,
+      "creatorVersions": [
+        {
+          "file": "versions/00.html",
+          "sha256": "a7c504a6aecd998a2469bb162c6e706e317ff4382e816196b6c5c510b90ce2f9",
+          "preservedAtUTC": "2026-11-07T11:31:09Z",
+          "note": "Byte-for-byte first runnable file, preserved before any test or revision."
+        },
+        {
+          "file": "versions/01.html",
+          "sha256": "5127333ac8890352a0f40da7406b4fb6076ed3154f7ca027167f874e012072d4",
+          "preservedAtUTC": "2026-11-07T11:39:09Z",
+          "note": "Single focused self-correction pass; identical to submitted index.html."
+        }
+      ],
+      "creatorCorrections": 1,
+      "operatorUiCorrections": 0,
+      "loadedSkillPaths": [],
+      "loadedSkillWordProxies": {},
+      "loadedSkillWords": 0,
+      "loadedSkillWordsUnresolved": [],
+      "operatorBrowserSegments": [
+        {
+          "report": "evidence\\archive-R2\\initial-01\\report.json",
+          "startedAt": "2026-11-07T17:32:02.362Z",
+          "finishedAt": "2026-11-07T17:32:56.322Z",
+          "seconds": 53.96,
+          "checks": 36,
+          "failures": []
+        }
+      ],
+      "acceptanceChecks": 36,
+      "acceptanceStates": 18,
+      "axeViolations": 0,
+      "axeIncomplete": 15,
+      "providerInputTokens": null,
+      "providerOutputTokens": null,
+      "providerThinkingTokens": null,
+      "providerCacheTokens": null,
+      "billedCost": null,
+      "completeAcceptanceCycleCost": null,
+      "creatorToolCalls": null
+    }
+  },
+  "coverage": {
+    "meaning": "Observed segments only. Start bases differ and some creator clocks begin after initial reading or launch work. These are not billed costs and not comparable complete-cycle savings.",
+    "initial": "First preserved runnable version timestamp minus the first observed creator clock; earlier work may be excluded.",
+    "creator": "Observed creator interval, including self-checks and any disclosed correction.",
+    "operator": "Each entry is one browser/check segment only; it excludes harness authoring, launcher overhead, evaluator queue time and review/finalization.",
+    "unknown": [
+      "exact resolved model/provider version and parameter count",
+      "input, output, thinking, cache-read and cache-write tokens",
+      "billed money for any cell",
+      "complete operator/evaluator tool and token totals",
+      "complete accepted-UI cost and any end-to-end saving"
+    ],
+    "overlap": "Cells ran across overlapping wall-clock windows; do not sum the intervals as total elapsed time.",
+    "budget": "Protocol declares a soft 8-minute and hard 15-minute creator budget per cell; recorded overruns are reported as overruns, not trimmed.",
+    "human": "Human/manual tests deferred; no screen-reader or real-device session was run."
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "results": [
+    {
+      "name": "each consignment renders product, limit, weight, dock and all four readings",
+      "status": "fail",
+      "detail": "HC-114 readings: [\"−2.1 °C\",\"−1.8 °C\",\"−0.4 °C\",\"−1.6 °C\"]"
+    },
+    {
+      "name": "HC-114 release is blocked with the offending reading named",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "HC-118 release is allowed (no excursion) and reaches review with correct facts",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Edit retains consignment, decision and note",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "note shorter than 10 characters is rejected with a useful message",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "note longer than 120 characters is rejected with a useful message",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "first submit fails with recovery, retry succeeds with same facts",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "changing consignment clears the previous decision and note",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "HC-121 has excursion and Hold reaches review with 61.2 kg / Dock C",
+      "status": "fail",
+      "detail": "excursion summary: 3 of 4 readings above the declared limit of at or below 0.0 °C. Highest: Reading 1 at 0.3 °C, 0.3 °C above the limit."
+    },
+    {
+      "name": "keyboard: Tab reaches the consignment radios and Space selects",
+      "status": "fail",
+      "detail": "no focus ring: {\"w\":\"3px\",\"s\":\"none\",\"c\":\"rgb(0, 0, 0)\"}"
+    },
+    {
+      "name": "keyboard: submit via Enter on the review step, and Escape-free flow",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "axe evidence view",
+      "status": "pass",
+      "detail": "violations=0 incomplete=1"
+    },
+    {
+      "name": "axe review view",
+      "status": "pass",
+      "detail": "violations=0 incomplete=1"
+    },
+    {
+      "name": "axe blocked release + validation state",
+      "status": "pass",
+      "detail": "violations=0 incomplete=2"
+    },
+    {
+      "name": "no horizontal overflow evidence @320",
+      "status": "pass",
+      "detail": "{\"doc\":320,\"inner\":320,\"body\":320}"
+    },
+    {
+      "name": "no horizontal overflow review @320",
+      "status": "pass",
+      "detail": "{\"doc\":320,\"inner\":320}"
+    },
+    {
+      "name": "no horizontal overflow submit-error @320",
+      "status": "pass",
+      "detail": "{\"doc\":320,\"inner\":320,\"errVisible\":true,\"errText\":180,\"inViewport\":true,\"rect\":{\"top\":772,\"left\":32,\"width\":256},\"scrollY\":336}"
+    },
+    {
+      "name": "no horizontal overflow success @320",
+      "status": "pass",
+      "detail": "{\"doc\":320,\"inner\":320}"
+    },
+    {
+      "name": "no horizontal overflow evidence @390",
+      "status": "pass",
+      "detail": "{\"doc\":390,\"inner\":390,\"body\":390}"
+    },
+    {
+      "name": "no horizontal overflow review @390",
+      "status": "pass",
+      "detail": "{\"doc\":390,\"inner\":390}"
+    },
+    {
+      "name": "no horizontal overflow submit-error @390",
+      "status": "pass",
+      "detail": "{\"doc\":390,\"inner\":390,\"errVisible\":true,\"errText\":180,\"inViewport\":true,\"rect\":{\"top\":827,\"left\":33,\"width\":323},\"scrollY\":157}"
+    },
+    {
+      "name": "no horizontal overflow success @390",
+      "status": "pass",
+      "detail": "{\"doc\":390,\"inner\":390}"
+    },
+    {
+      "name": "no horizontal overflow evidence @1440",
+      "status": "pass",
+      "detail": "{\"doc\":1440,\"inner\":1440,\"body\":1440}"
+    },
+    {
+      "name": "no horizontal overflow review @1440",
+      "status": "pass",
+      "detail": "{\"doc\":1440,\"inner\":1440}"
+    },
+    {
+      "name": "no horizontal overflow submit-error @1440",
+      "status": "pass",
+      "detail": "{\"doc\":1440,\"inner\":1440,\"errVisible\":true,\"errText\":180,\"inViewport\":true,\"rect\":{\"top\":548,\"left\":180,\"width\":1080},\"scrollY\":0}"
+    },
+    {
+      "name": "no horizontal overflow success @1440",
+      "status": "pass",
+      "detail": "{\"doc\":1440,\"inner\":1440}"
+    },
+    {
+      "name": "all form controls have programmatic labels",
+      "status": "fail",
+      "detail": "[\"btn-review\",\"btn-edit\",\"btn-submit\",\"btn-again\"]"
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [
+    "TypeError: Cannot set properties of null (setting 'textContent')\n    at changeConsignment (http://127.0.0.1:4317/:679:35)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:4317/:563:28)",
+    "TypeError: Cannot set properties of null (setting 'textContent')\n    at changeConsignment (http://127.0.0.1:4317/:679:35)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:4317/:563:28)",
+    "TypeError: Cannot set properties of null (setting 'textContent')\n    at changeConsignment (http://127.0.0.1:4317/:679:35)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:4317/:563:28)",
+    "TypeError: Cannot set properties of null (setting 'textContent')\n    at changeConsignment (http://127.0.0.1:4317/:679:35)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:4317/:563:28)",
+    "TypeError: Cannot set properties of null (setting 'textContent')\n    at changeConsignment (http://127.0.0.1:4317/:679:35)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:4317/:563:28)"
+  ],
+  "failedRequests": [],
+  "staticFacts": {
+    "title": "Consignment release — Harbor Cold Chain",
+    "lang": "en",
+    "externalReqs": [],
+    "consignments": [
+      "HC-114",
+      "HC-118",
+      "HC-121",
+      "HC-126"
+    ],
+    "decisions": [
+      "release",
+      "hold"
+    ],
+    "noteMaxLength": null,
+    "hasTextarea": true,
+    "headings": [
+      "H1:Check the temperature evidence, then decide",
+      "H2:HC-114",
+      "H2:Readings, oldest to newest",
+      "H3:Release blocked",
+      "H1:Review the decision before recording",
+      "H2:Excursion summary",
+      "H2:Note",
+      "H1:Hold recorded for HC-114",
+      "H2:Recorded note"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "label": "320-search-weir",
+  "capturedAtUtc": "2026-11-07T17:32:11.021Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 320,
+    "height": 740
+  },
+  "scroll": {
+    "x": 0,
+    "y": 539
+  },
+  "document": {
+    "width": 320,
+    "height": 1681
+  },
+  "activeElement": {
+    "tag": "INPUT",
+    "id": "q",
+    "testId": null,
+    "rect": {
+      "x": 16,
+      "y": 205.515625,
+      "width": 288,
+      "height": 46,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[role=alert]",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "[role=status]",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 16,
+          "y": 537.828125,
+          "width": 288,
+          "height": 42,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "button:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h1:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h2:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 539
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 539
+  }
+}

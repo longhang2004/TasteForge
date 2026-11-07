@@ -1,0 +1,296 @@
+{
+  "note": "Manual WCAG contrast computation on resolved computed colors. Axe reported color-contrast as INCOMPLETE (not violation) because the page background is a gradient it cannot resolve. This list is evidence about the sampled text/background pairs only; it is not a WCAG conformance claim.",
+  "ranAtUtc": "2026-11-07T16:04:54.033Z",
+  "target": "http://127.0.0.1:4181/index.html",
+  "pairCount": 26,
+  "failingCount": 0,
+  "state": {
+    "list": [
+      {
+        "selector": ".deck",
+        "fg": "rgb(79, 74, 64)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 7.67,
+        "passes": true
+      },
+      {
+        "selector": ".hint",
+        "fg": "rgb(79, 74, 64)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "12.8px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 7.67,
+        "passes": true
+      },
+      {
+        "selector": ".pcap",
+        "fg": "rgb(79, 74, 64)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "10.56px",
+        "fontWeight": "500",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 7.67,
+        "passes": true
+      },
+      {
+        "selector": ".meta",
+        "fg": "rgb(79, 74, 64)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "14.08px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 7.67,
+        "passes": true
+      },
+      {
+        "selector": ".cond",
+        "fg": "rgb(25, 23, 19)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "14.08px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 15.6,
+        "passes": true
+      },
+      {
+        "selector": ".kicker .plain",
+        "fg": "rgb(79, 74, 64)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "11.52px",
+        "fontWeight": "500",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 7.67,
+        "passes": true
+      },
+      {
+        "selector": ".foot p",
+        "fg": "rgb(79, 74, 64)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "12.8px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 7.67,
+        "passes": true
+      },
+      {
+        "selector": ".scope li",
+        "fg": "rgb(25, 23, 19)",
+        "bg": "rgb(234, 226, 208)",
+        "fontSize": "14.4px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 13.88,
+        "passes": true
+      },
+      {
+        "selector": ".code .series",
+        "fg": "rgb(25, 23, 19)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "12.16px",
+        "fontWeight": "500",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 15.6,
+        "passes": true
+      },
+      {
+        "selector": ".rec-title",
+        "fg": "rgb(25, 23, 19)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "19.52px",
+        "fontWeight": "600",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 15.6,
+        "passes": true
+      },
+      {
+        "selector": ".tag",
+        "fg": "rgb(60, 81, 66)",
+        "bg": "rgb(234, 226, 208)",
+        "fontSize": "11.2px",
+        "fontWeight": "600",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 6.65,
+        "passes": true
+      },
+      {
+        "selector": "h1",
+        "fg": "rgb(25, 23, 19)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "46.4px",
+        "fontWeight": "600",
+        "isLargeText": true,
+        "threshold": 3,
+        "ratio": 15.6,
+        "passes": true
+      }
+    ],
+    "detail": [
+      {
+        "selector": "#detailTitle",
+        "fg": "rgb(25, 23, 19)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "36px",
+        "fontWeight": "600",
+        "isLargeText": true,
+        "threshold": 3,
+        "ratio": 15.6,
+        "passes": true
+      },
+      {
+        "selector": ".detail-head .sub",
+        "fg": "rgb(79, 74, 64)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "15.2px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 7.67,
+        "passes": true
+      },
+      {
+        "selector": ".code .id",
+        "fg": "rgb(122, 74, 16)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "12.16px",
+        "fontWeight": "700",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 6.5,
+        "passes": true
+      },
+      {
+        "selector": "dl.spec dt",
+        "fg": "rgb(79, 74, 64)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "11.52px",
+        "fontWeight": "600",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 7.67,
+        "passes": true
+      },
+      {
+        "selector": "dl.spec dd",
+        "fg": "rgb(25, 23, 19)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "15.2px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 15.6,
+        "passes": true
+      },
+      {
+        "selector": ".condblock p",
+        "fg": "rgb(25, 23, 19)",
+        "bg": "rgb(234, 226, 208)",
+        "fontSize": "15.68px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 13.88,
+        "passes": true
+      },
+      {
+        "selector": ".condblock h3",
+        "fg": "rgb(79, 74, 64)",
+        "bg": "rgb(234, 226, 208)",
+        "fontSize": "11.84px",
+        "fontWeight": "600",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 6.83,
+        "passes": true
+      },
+      {
+        "selector": "figure.plate-large figcaption",
+        "fg": "rgb(79, 74, 64)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "12.8px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 7.67,
+        "passes": true
+      },
+      {
+        "selector": ".dupe p",
+        "fg": "rgb(25, 23, 19)",
+        "bg": "rgb(238, 227, 200)",
+        "fontSize": "14.72px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 14.03,
+        "passes": true
+      },
+      {
+        "selector": ".dupe h3",
+        "fg": "rgb(122, 74, 16)",
+        "bg": "rgb(238, 227, 200)",
+        "fontSize": "11.84px",
+        "fontWeight": "600",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 5.85,
+        "passes": true
+      },
+      {
+        "selector": ".honest p",
+        "fg": "rgb(244, 239, 227)",
+        "bg": "rgb(31, 27, 20)",
+        "fontSize": "14.4px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 14.94,
+        "passes": true
+      },
+      {
+        "selector": ".honest h3",
+        "fg": "rgb(232, 197, 138)",
+        "bg": "rgb(31, 27, 20)",
+        "fontSize": "11.84px",
+        "fontWeight": "600",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 10.44,
+        "passes": true
+      },
+      {
+        "selector": ".rel p",
+        "fg": "rgb(25, 23, 19)",
+        "bg": "rgb(244, 239, 227)",
+        "fontSize": "14.72px",
+        "fontWeight": "400",
+        "isLargeText": false,
+        "threshold": 4.5,
+        "ratio": 15.6,
+        "passes": true
+      }
+    ],
+    "skipLink": {
+      "selector": ".skip:focus",
+      "focused": "skip",
+      "fg": "rgb(244, 239, 227)",
+      "bg": "rgb(25, 23, 19)",
+      "ratio": 15.6,
+      "passes": true
+    }
+  }
+}

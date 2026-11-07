@@ -1,0 +1,113 @@
+{
+  "reviewer": 2,
+  "startedAtUtc": "2026-11-07T17:35:33Z",
+  "finishedAtUtc": "2026-11-07T18:12:09Z",
+  "scope": "Read: reviewer-instructions.md; review-packet/index.json; review-packet/freight/task.md; review-packet/archive/task.md; all four variant sources (freight/A 876 lines, freight/B 1600, archive/A 728, archive/B 857) including inline CSS and JS; all four checks.json (66 checks per variant = 22 per width for freight, 36 = 12 per width for archive, 0 page errors, 0 axe violations, horizontalOverflow 0 at 320/390/1440); IHDR dimensions of all 78 PNGs; and I opened and looked at roughly 30 renders covering entry, blocked-excursion, note-too-short, review, edit, submit-failure, success (freight) and entry, filter, search, empty, detail-duplicate, return (archive) at 320/390/1440 plus both 1440 full-page captures. Not inspected (out of bounds or absent): review-key.json, cells/, evidence/, manifest.json, protocol.md, operator.md, report.md, acceptance.json, resources/, tools/, docs/, examples/, the 2026-11-02 forward-test run. I did not run either page in a browser or install anything; all interaction behaviour is taken from checks.json assertions and the source, not from my own execution.",
+  "imageAccess": "true — I can see the PNGs and did look at them. That makes type, colour, spacing and composition judgments genuine visual readings of the captured renders, not inferences from CSS. Limits that remain: the freight 'success' captures in BOTH variants are stale — freight/A 1440- and 320-success show the in-flight 'Submitting…' state with the button disabled, and freight/B 1440/390/320-success still show the failure alert with the review panel (checks record focus on BUTTON#retry-button in the success state), so neither success screen was actually observed and I judged honesty/completeness of success from source text and assertions only. Everything about focus, scroll, overflow, axe and pass/fail comes from checks.json, not from my own browser run.",
+  "cases": {
+    "freight": {
+      "taskQuality": [
+        {
+          "dimension": "firstActionSalience",
+          "verdict": "A",
+          "reason": "A's 1440 full-page capture fits the whole task inside 1152 px (roster, HC-114 evidence, decision, note, one primary 'Continue to review') and at 320 the consignment picker starts around y=460 in the first viewport, whereas B's 320 entry spends the first ~780 px of a 1844 px page on intro and the 'Release rule' card, so the roster is below the fold before any action is possible."
+        },
+        {
+          "dimension": "decisionContextRetention",
+          "verdict": "tie",
+          "reason": "Both keep consignment, weight, dock, excursion summary and note on the review card and both re-focus the previously chosen decision on Edit (checks: A edit -> INPUT#d-hold; B edit -> H2#detail-title with the note repopulated); A holds the facts still while failing in place, B prepends a failure alert that displaces them but says 'unchanged' explicitly — no separation."
+        },
+        {
+          "dimension": "errorAndRecoveryClarity",
+          "verdict": "B",
+          "reason": "B's blocked state disables Release and gives the reason inline ('Reading 3 is -0.4 °C, which is 0.6 °C above the declared -1.0 °C limit'), its validation is a focused error summary with jump links, and its submit failure adds a simulated reference (SIM-503), escalation advice and a verified focus move to H3#submit-error-title, while A's well-worded failure leaves focus on BODY because its .focus() target is a <p> with no tabindex."
+        },
+        {
+          "dimension": "responsiveAccess",
+          "verdict": "A",
+          "reason": "A's readings remain CSS text rows (label / track / value) at 320 where B's SVG trace scales its own 640-unit viewBox labels down to a few pixels in the 320-edit capture, and B hides the 'Against limit' column below 560 px while A keeps all four reading rows and values in real text; both record horizontalOverflow 0 at all three widths."
+        },
+        {
+          "dimension": "semanticControlAndFocus",
+          "verdict": "B",
+          "reason": "B has a verified focus target in six of seven states (blocked/note errors -> DIV#form-error-summary, review -> H2#review-title, failure -> H3#submit-error-title) plus aria-describedby from Release to the block reason, aria-busy during submit and a live region; A's mark-up is sound (fieldset/legend, native radios, skip link, :focus-visible ring, focused view headings) but its intended post-failure focus move is a no-op, so checks show BODY focused in both failure and success."
+        }
+      ],
+      "productSpecificity": [
+        {
+          "dimension": "contentToThesis",
+          "verdict": "tie",
+          "reason": "A builds an ice/amber cold-store console around a plotted dashed declared-limit band ('Schematic plotted from the four supplied readings — not a live sensor feed'); B builds a dock paperwork sheet with serif headings, monospace metadata, a standing 'Release rule' card and verbal per-row comparison — both theses follow from the declared-limit rule and the four readings rather than from a generic dashboard skin."
+        },
+        {
+          "dimension": "suppliedArtifactsShapeComposition",
+          "verdict": "B",
+          "reason": "B renders each reading against the limit twice — a trace plus a four-row table carrying per-row deltas ('+0.6 °C above limit', '-1.1 °C against limit') — and ties the disabled Release control to the excursion, so the readings-vs-limit artifact drives both the layout and the emphasis; A's strip plot conveys position but states the numeric delta only once, in the verdict line."
+        },
+        {
+          "dimension": "coherentMediaTypeDirection",
+          "verdict": "A",
+          "reason": "A keeps one palette and one type voice throughout and its legend maps dot / band / limit consistently, while B reuses the failure red (--danger #8a2317) as the declared-limit dashed line and label inside the same figure where excursion is amber, giving one schematic three competing colour meanings."
+        },
+        {
+          "dimension": "honestEvidenceLimits",
+          "verdict": "B",
+          "reason": "B discloses before the operator acts that the first submission is staged ('The first submission in this demo is simulated to fail; you can retry') and on success enumerates the non-effects ('no consignment moved, no dock was notified and no regulatory or customer record was created'); A states the same limits at masthead, review and success but never says the failure is simulated."
+        }
+      ],
+      "notes": "Strongest per variant — A: the evidence surface is genuinely shaped by the fixture, with a dashed declared-limit band, a per-reading dot, an amber excursion tag in the picker and a blocked state that names reading, value, limit and margin before telling you to switch to Hold; the failure copy ('the dock link timed out before the record was written. Nothing was recorded, and your decision and note are unchanged') is the clearest single sentence in either variant. B: the control and focus architecture is the strongest in the run — disabled Release with an inline reason and aria-describedby, a focused error summary, aria-busy, live region, a visible 'Step 2 of 2', and failure copy carrying an error reference and an escalation path. Tradeoffs — A stays a one-screen form and starts from a pre-selected HC-114, so nothing is chosen by the operator; B's staged two-panel workbench costs vertical space on mobile and pushes the first action below the fold at 320. Both variants pass all 22 checks at all three widths with 0 page errors and 0 axe violations. axe 'incomplete' (reported as open questions, not passes): every freight state carries unresolved color-contrast nodes — 55-58 selectors per state in A (the whole picker body, brand mark, picker legend) versus 11-22 in B (brand text, header chip, kicker, lede, rule-card heading); I could not resolve any of them. Neither variant's success screen is actually in the packet: both 'success' PNGs show the submitting/failure state, so the success copy was judged from source only. Minor defects noted and not decisive: A wraps '42.5 kg · Dock B' onto a broken third line in the 320 picker and its no-excursion verdict reads 'limit of at or below 2.0 °C'; B's 'Review decision' vs 'Submit decision' split means the first primary button does not submit."
+    },
+    "archive": {
+      "taskQuality": [
+        {
+          "dimension": "firstActionSalience",
+          "verdict": "A",
+          "reason": "A's open affordance is an always-visible underlined title button in every row at every width, whereas B hides its only row-level cue (`.chev { display:none }` until min-width 1000 px) so at 320 and 390 nothing signals that the five rows are openable."
+        },
+        {
+          "dimension": "decisionContextRetention",
+          "verdict": "tie",
+          "reason": "Both pass the same assertion ('returning retains query, filter, order and focus') and both return focus to the row that was opened; A additionally cross-links LS-02 and LS-19 inside the record ('Open duplicate record LS-19' / 'Open record LS-02'), B additionally restores exact scroll (state.savedScroll) and shows 'Record 2 of 2 in current results'."
+        },
+        {
+          "dimension": "errorAndRecoveryClarity",
+          "verdict": "A",
+          "reason": "This family has no failure state at all, so only the empty state is judgeable: A names the query and the series and states the outcome of recovery ('Clearing the search and series filter restores all 5 records') and offers the reset twice ('Clear search and filter' in the result bar plus 'Clear search and show all 5 records' in the block), where B names the query and series and advises 'Try a shorter term or clear the series filter' with a single reset — a narrow difference."
+        },
+        {
+          "dimension": "responsiveAccess",
+          "verdict": "B",
+          "reason": "B keeps the longest title unbroken at 320 ('River weir cross-section — / revised plate') where A hyphenates it mid-word ('re- / vised plate' in the 320-search-weir capture), and B's 320 detail capture at least reaches 'Back to results' and the 'Record 2 of 2' line in the first viewport, while A's 320/390 detail capture is still the masthead and scope block (checks: A detail-duplicate focus rect y=889 at 320 and y=778 at 390 against viewports of 740/844)."
+        },
+        {
+          "dimension": "semanticControlAndFocus",
+          "verdict": "B",
+          "reason": "B makes the whole row a single button (measured 130 px tall at 1440, 310 px at 320) and supplies figure/figcaption, <article>, <aside aria-labelledby> and a role=\"img\" labelled plate; A's opener is a 25 px-high title button inside <h3> (1440 return focus rect height 24.97) with the duplicate banner as a plain div and the plate SVG aria-hidden."
+        }
+      ],
+      "productSpecificity": [
+        {
+          "dimension": "contentToThesis",
+          "verdict": "A",
+          "reason": "A derives the page's identity from the supplied evidence limits — the h1 'Teaching slides, read as records before images' and the 'What this catalogue does not claim' block lead the page — while B leads with the collection name and reduces the same limits to a single 'Scope' sentence."
+        },
+        {
+          "dimension": "suppliedArtifactsShapeComposition",
+          "verdict": "A",
+          "reason": "A carries the supplied condition notes and the duplicate linkage into the comparison surface itself ('CONDITION Emulsion lifting at one corner; not assessed further', 'HELD WITH DUPLICATE LS-19'), so condition is comparable without opening a record, where B defers condition to the detail and its column grid carries only medium, catalogue date and plate size."
+        },
+        {
+          "dimension": "coherentMediaTypeDirection",
+          "verdict": "tie",
+          "reason": "Both hold one printed-catalogue direction (serif display, sans text, monospace labels on warm paper) with schematics drawn in the same ink-and-accent stroke language — A's framed register-tick plates, B's black-mounted plates over a graph-paper tint — and nothing in the packet separates them."
+        },
+        {
+          "dimension": "honestEvidenceLimits",
+          "verdict": "A",
+          "reason": "A states the placeholder limits at four levels (scope list, per-thumb 'SCHEMATIC' caption, a dedicated dark 'About the image on this page' block denying photographic or measured reproduction, and the footer), where B's list view carries no per-item schematic label; the counterweight is that A over-reaches once by asserting 'The catalogue holds two plates under the same figure', which is not in the fixtures, while B's 'second copy of the same photograph' stays literal."
+        }
+      ],
+      "notes": "Strongest per variant — A: the identity is built from honesty rather than decoration, with the h1 thesis, the four-item 'does not claim' list, an abstract series-derived plate pattern (wavy profiles for Field Surveys, rings and rays for Craft Teaching) that cannot be mistaken for a depiction, condition and duplicate status printed in the list, and cross-links between LS-02 and LS-19 that make the duplicate relationship navigable. B: the comparison surface is the best engineered in the run — the row becomes a genuine multi-column record at 1000 px (medium / catalogue date / plate size), thumbnails are sized to each record's own catalogue dimensions with the legend 'Plates are drawn to each record's catalogue dimensions', series become a hue plus a counted chip, and the detail has a properly structured figure, a duplicate aside and a 'What this record does not establish' panel. Tradeoffs — A's detail view keeps the full masthead and scope block above the record, so opening (or returning from) a record changes nothing in the first mobile viewport; A also hyphenates a proper title mid-word at 320 and its 25 px opener is below a comfortable target size. B's disclosure is more compressed (one scope sentence at the top, date caveat held for the footer) and its list view labels no plate as schematic, relying on the page-level scope line; its art is representational (coastline section, kiln courses, weir section, colour wheel) which the artNote does disclose but which comes closer to reading as a depiction of the slide. axe 'incomplete' (open questions, not passes): colour contrast remains unresolved on every state — 58 selectors at entry falling to 13 in the empty state for A, and exactly one node for B (`.chip-n[aria-hidden=\"true\"]`, the series count numerals, plus none at all in B's detail-duplicate state which is itself a gap, not a clean pass). Both variants record 0 violations and horizontalOverflow 0 at 320/390/1440. No failure, error or decision state exists in this family, so 'errorAndRecoveryClarity' was judged on the empty state alone."
+    }
+  }
+}

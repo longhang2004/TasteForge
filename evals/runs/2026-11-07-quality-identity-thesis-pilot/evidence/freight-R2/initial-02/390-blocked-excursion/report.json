@@ -1,0 +1,100 @@
+{
+  "label": "390-blocked-excursion",
+  "capturedAtUtc": "2026-11-07T18:16:33.175Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scroll": {
+    "x": 0,
+    "y": 2240
+  },
+  "document": {
+    "width": 390,
+    "height": 3210
+  },
+  "activeElement": {
+    "tag": "DIV",
+    "id": "form-error-summary",
+    "testId": null,
+    "rect": {
+      "x": 31.59375,
+      "y": 42.328125,
+      "width": 326.8125,
+      "height": 86.625,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[role=alert]",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 31.59375,
+          "y": 42.328125,
+          "width": 326.8125,
+          "height": 86.625,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "[role=status]",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": -1,
+          "y": 969.453125,
+          "width": 1,
+          "height": 1,
+          "intersectsViewport": false,
+          "fullyInViewport": false
+        }
+      ]
+    },
+    {
+      "selector": "button:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h1:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h2:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 2240
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 2240
+  }
+}

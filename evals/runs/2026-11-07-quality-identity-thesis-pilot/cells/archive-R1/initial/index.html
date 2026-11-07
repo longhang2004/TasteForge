@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern Slide Lecture Archive — catalogue of digitised teaching slides</title>
+<style>
+  :root{
+    --paper:#f4efe3;
+    --paper-2:#eae2d0;
+    --paper-3:#faf6ec;
+    --ink:#191713;
+    --ink-2:#4f4a40;
+    --rule:#c6b99c;
+    --rule-soft:#d8cdb5;
+    --accent:#7a4a10;
+    --moss:#3c5142;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1200px 600px at 15% -10%, #fbf7ed 0%, rgba(251,247,237,0) 60%),
+      var(--paper);
+    color:var(--ink);
+    font:400 1rem/1.55 var(--sans);
+  }
+  .vh{
+    position:absolute !important;width:1px;height:1px;margin:-1px;padding:0;
+    overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+  }
+  .skip{
+    position:absolute;left:0.75rem;top:-3rem;z-index:20;
+    background:var(--ink);color:var(--paper);padding:.55rem .9rem;
+    font:600 .85rem/1.2 var(--sans);text-decoration:none;border-radius:2px;
+  }
+  .skip:focus{top:0.75rem}
+  :focus-visible{
+    outline:3px solid var(--accent);
+    outline-offset:2px;
+    border-radius:2px;
+  }
+  .wrap{max-width:64rem;margin:0 auto;padding:clamp(1rem,4vw,2.5rem)}
+  .wrap > *{min-width:0}
+
+  /* ---------- masthead ---------- */
+  .masthead{border-top:4px solid var(--ink);padding-top:clamp(1rem,2.5vw,1.6rem)}
+  .kicker{
+    display:flex;flex-wrap:wrap;gap:.5rem .75rem;align-items:baseline;
+    margin:0 0 1rem;font:600 .72rem/1.3 var(--mono);letter-spacing:.14em;
+    text-transform:uppercase;color:var(--accent);
+  }
+  .kicker .dash{color:var(--rule)}
+  .kicker .plain{color:var(--ink-2);letter-spacing:.1em;font-weight:500}
+  h1{
+    margin:0 0 .9rem;max-width:26ch;
+    font:600 clamp(1.85rem,5.2vw,2.9rem)/1.06 var(--serif);
+    letter-spacing:-.01em;text-wrap:balance;
+  }
+  .deck{
+    margin:0 0 1.15rem;max-width:60ch;color:var(--ink-2);
+    font-size:clamp(1rem,2.2vw,1.1rem);line-height:1.6;
+  }
+  .scope{
+    margin:0 0 clamp(1.25rem,3vw,2rem);padding:.85rem 1rem;
+    background:var(--paper-2);border-left:3px solid var(--moss);
+    color:var(--ink);font-size:.9rem;line-height:1.55;max-width:74ch;
+  }
+  .scope h2{margin:0 0 .35rem;font:600 .74rem/1.3 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--moss)}
+  .scope ul{margin:0;padding-left:1.1rem}
+  .scope li{margin:.15rem 0}
+  .scope strong{font-weight:600}
+
+  /* ---------- controls ---------- */
+  .controls{
+    display:grid;grid-template-columns:minmax(0,1fr);gap:1rem 1.5rem;
+    padding-bottom:1.1rem;border-bottom:1px solid var(--ink);
+  }
+  @media (min-width:44rem){
+    .controls{grid-template-columns:minmax(0,1fr) auto;align-items:end}
+  }
+  .field{min-width:0;border:0;margin:0;padding:0}
+  .field > label,.field > legend{
+    display:block;margin:0 0 .4rem;padding:0;
+    font:600 .74rem/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);
+  }
+  .searchbox{display:flex;align-items:center;border:1.5px solid var(--ink);background:var(--paper-3)}
+  .searchbox input{
+    flex:1 1 auto;min-width:0;border:0;background:transparent;color:var(--ink);
+    padding:.7rem .8rem;font:400 1rem/1.4 var(--sans);
+  }
+  .searchbox input::placeholder{color:var(--ink-2);opacity:.85}
+  .searchbox input:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+  .searchbox .glyph{
+    flex:0 0 auto;padding:0 .75rem;color:var(--ink-2);
+    font:400 1rem/1 var(--mono);border-left:1px solid var(--rule-soft);
+  }
+  .hint{margin:.35rem 0 0;font-size:.8rem;color:var(--ink-2)}
+  .series-set{
+    display:flex;flex-wrap:wrap;gap:.35rem .9rem;
+    padding:.55rem .7rem .6rem;background:var(--paper-2);
+    border:1px solid var(--rule);
+  }
+  .series-set legend{padding:0 .35rem;margin-left:-.35rem}
+  .series-opt{display:inline-flex;align-items:center;gap:.4rem;font-size:.9rem;line-height:1.3;cursor:pointer;padding:.15rem .1rem}
+  .series-opt input{accent-color:var(--accent);width:1.05rem;height:1.05rem;margin:0}
+  .series-opt .n{font:500 .78rem/1 var(--mono);color:var(--ink-2)}
+
+  /* ---------- result bar ---------- */
+  .resultbar{
+    display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:baseline;
+    justify-content:space-between;padding:.85rem 0 .6rem;
+  }
+  .count{
+    margin:0;font:600 .8rem/1.3 var(--mono);letter-spacing:.08em;
+    text-transform:uppercase;color:var(--ink);
+  }
+  .count .of{color:var(--ink-2);font-weight:500}
+  .btn{
+    display:inline-flex;align-items:center;gap:.45rem;
+    font:600 .85rem/1.2 var(--sans);color:var(--ink);
+    background:var(--paper-3);border:1.5px solid var(--ink);
+    padding:.5rem .8rem;border-radius:2px;cursor:pointer;
+  }
+  .btn:hover{background:var(--paper-2)}
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .btn-primary:hover{background:#000}
+  .btn-quiet{background:transparent;border-color:var(--rule);color:var(--ink-2);font-weight:600}
+  .btn-quiet:hover{border-color:var(--ink);color:var(--ink);background:var(--paper-3)}
+
+  /* ---------- record list ---------- */
+  .records{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+  .record{
+    display:grid;grid-template-columns:minmax(0,1fr);gap:.6rem 1.1rem;
+    padding:1.15rem 0 1.2rem;border-bottom:1px solid var(--rule);
+  }
+  @media (min-width:36rem){
+    .record{grid-template-columns:6.2rem minmax(0,1fr);align-items:start}
+  }
+  .plate{min-width:0;max-width:7.5rem}
+  .plate svg{display:block;width:100%;height:auto;border:1px solid var(--rule)}
+  .plate .pcap{
+    margin:.3rem 0 0;font:500 .66rem/1.25 var(--mono);
+    letter-spacing:.04em;color:var(--ink-2);text-transform:uppercase;
+  }
+  .rec-body{min-width:0}
+  .code{
+    display:flex;flex-wrap:wrap;gap:.35rem .7rem;align-items:baseline;
+    margin:0 0 .3rem;font:500 .76rem/1.3 var(--mono);
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);
+  }
+  .code .id{color:var(--accent);font-weight:700}
+  .code .series{color:var(--ink)}
+  .rec-title{margin:0;font:600 clamp(1.05rem,2.6vw,1.22rem)/1.28 var(--serif);overflow-wrap:anywhere;hyphens:auto}
+  .open{
+    display:inline;text-align:left;padding:0;border:0;background:none;
+    color:inherit;font:inherit;cursor:pointer;
+    text-decoration:underline;text-decoration-thickness:1px;
+    text-underline-offset:3px;text-decoration-color:var(--rule);
+  }
+  .open:hover{text-decoration-color:var(--accent);text-decoration-thickness:2px;color:#000}
+  .meta{margin:.4rem 0 0;font-size:.88rem;color:var(--ink-2);overflow-wrap:anywhere}
+  .meta .sep{color:var(--rule);padding:0 .3rem}
+  .cond{
+    margin:.55rem 0 0;max-width:74ch;font-size:.88rem;line-height:1.5;
+    color:var(--ink);overflow-wrap:anywhere;
+  }
+  .cond .lab{
+    font:600 .7rem/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-2);margin-right:.4rem;
+  }
+  .tag{
+    display:inline-block;margin:.55rem 0 0;padding:.2rem .5rem;
+    background:var(--paper-2);border:1px solid var(--rule);
+    font:600 .7rem/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;
+    color:var(--moss);overflow-wrap:anywhere;
+  }
+
+  /* ---------- empty ---------- */
+  .empty{
+    margin:1.25rem 0 0;padding:1.5rem 1.25rem;
+    background:var(--paper-2);border:1px solid var(--rule);
+  }
+  .empty h3{margin:0 0 .4rem;font:600 1.15rem/1.25 var(--serif)}
+  .empty p{margin:0 0 1rem;max-width:56ch;color:var(--ink);font-size:.92rem}
+  .empty .row{display:flex;flex-wrap:wrap;gap:.6rem}
+
+  /* ---------- detail ---------- */
+  .detail-panel{padding-top:.5rem}
+  .backrow{margin:0 0 1.1rem}
+  .detail-head{border-top:4px solid var(--ink);padding-top:1rem;margin-bottom:1.25rem}
+  .detail-head .code{margin-bottom:.5rem}
+  .detail-head h2{
+    margin:0 0 .6rem;max-width:30ch;font:600 clamp(1.5rem,4.4vw,2.25rem)/1.12 var(--serif);
+    letter-spacing:-.005em;overflow-wrap:anywhere;hyphens:auto;
+  }
+  .detail-head .sub{margin:0;color:var(--ink-2);font-size:.95rem}
+  .detail-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1.5rem 2rem;align-items:start}
+  @media (min-width:50rem){
+    .detail-grid{grid-template-columns:minmax(0,20rem) minmax(0,1fr)}
+  }
+  figure.plate-large{margin:0;min-width:0}
+  figure.plate-large svg{display:block;width:100%;height:auto;border:1px solid var(--ink);background:var(--paper-3)}
+  figure.plate-large figcaption{
+    margin:.5rem 0 0;font-size:.8rem;line-height:1.45;color:var(--ink-2);
+  }
+  .dupe{
+    margin:0 0 1.1rem;padding:.85rem 1rem;background:#eee3c8;
+    border:1px solid var(--accent);border-left-width:4px;
+  }
+  .dupe h3{margin:0 0 .3rem;font:600 .74rem/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .dupe p{margin:0;font-size:.92rem;line-height:1.5;max-width:64ch}
+  dl.spec{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:.15rem 1.25rem}
+  @media (min-width:30rem){
+    dl.spec{grid-template-columns:8.5rem minmax(0,1fr)}
+    dl.spec dd{margin-bottom:.7rem}
+  }
+  dl.spec dt{
+    font:600 .72rem/1.35 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-2);padding-top:.15rem;
+  }
+  dl.spec dd{margin:.1rem 0 .9rem;font-size:.95rem;line-height:1.5;overflow-wrap:anywhere;min-width:0}
+  .condblock{
+    margin:1.4rem 0 0;padding:1rem 1.1rem;background:var(--paper-2);
+    border:1px solid var(--rule);
+  }
+  .condblock h3{margin:0 0 .4rem;font:600 .74rem/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+  .condblock p{margin:0;font-size:.98rem;line-height:1.55;max-width:60ch;overflow-wrap:anywhere}
+  .honest{
+    margin:1.25rem 0 0;padding:1rem 1.1rem;background:#1f1b14;color:#f4efe3;
+    border-left:4px solid #c99b53;
+  }
+  .honest h3{margin:0 0 .45rem;font:600 .74rem/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#e8c58a}
+  .honest p{margin:0 0 .55rem;font-size:.9rem;line-height:1.55;max-width:66ch}
+  .honest p:last-child{margin-bottom:0}
+  .rel{margin:1.25rem 0 0;padding-top:1rem;border-top:1px solid var(--rule);font-size:.92rem;color:var(--ink)}
+  .rel p{margin:0 0 .55rem;max-width:66ch}
+  .rel .btn{margin-top:.15rem}
+  .foot{
+    margin:clamp(2rem,5vw,3rem) 0 0;padding:1rem 0 2.5rem;
+    border-top:1px solid var(--rule);font-size:.8rem;line-height:1.5;color:var(--ink-2);
+  }
+  .foot p{margin:.2rem 0;max-width:80ch}
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;animation:none !important}
+    .btn:active{transform:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#records">Skip to catalogue records</a>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="kicker">
+      <span>Lantern Slide Lecture Archive</span>
+      <span class="dash" aria-hidden="true">/</span>
+      <span class="plain">Catalogue slice</span>
+      <span class="dash" aria-hidden="true">/</span>
+      <span class="plain">5 records</span>
+    </p>
+    <h1>Teaching slides, read as records before images</h1>
+    <p class="deck">Five lantern slides held as catalogue records: two field surveys and two craft-teaching sets, plus one duplicate plate. Search the titles and series, compare the plate sizes and condition notes, then open a record to read what is actually known about it.</p>
+    <section class="scope" aria-labelledby="scope-h">
+      <h2 id="scope-h">What this catalogue does not claim</h2>
+      <ul>
+        <li>All five records are <strong>digitised from glass lantern slides</strong>. No original physical plate is available to the reader.</li>
+        <li><strong>No full-resolution file</strong> is distributed in this demo.</li>
+        <li><strong>No rights statement</strong> is supplied beyond these fixtures.</li>
+        <li>Dates are <strong>declared catalogue dates</strong>, not confirmed historical attribution.</li>
+      </ul>
+    </section>
+  </header>
+
+  <main>
+    <!-- ========== LIST VIEW ========== -->
+    <section id="listView" aria-labelledby="listHeading">
+      <h2 id="listHeading" class="vh">Search and browse records</h2>
+
+      <form class="controls" id="controls">
+        <div class="field">
+          <label for="q">Search records</label>
+          <div class="searchbox">
+            <input id="q" name="q" type="search" autocomplete="off"
+                   placeholder="Try “coastal”, “kiln” or “Craft Teaching”"
+                   aria-describedby="qHint">
+            <span class="glyph" aria-hidden="true">⌕</span>
+          </div>
+          <p class="hint" id="qHint">Matches record titles and series names.</p>
+        </div>
+
+        <fieldset class="field" id="seriesField">
+          <legend>Series</legend>
+          <div class="series-set">
+            <label class="series-opt"><input type="radio" name="series" value="All" checked> All <span class="n">5</span></label>
+            <label class="series-opt"><input type="radio" name="series" value="Field Surveys"> Field Surveys <span class="n">3</span></label>
+            <label class="series-opt"><input type="radio" name="series" value="Craft Teaching"> Craft Teaching <span class="n">2</span></label>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="resultbar">
+        <p class="count" id="count" role="status" aria-live="polite">5 records</p>
+        <button class="btn btn-quiet" type="button" id="clearAll" hidden>Clear search and filter</button>
+      </div>
+
+      <ol class="records" id="records" aria-labelledby="listHeading"></ol>
+
+      <div class="empty" id="empty" hidden>
+        <h3>No records match this search</h3>
+        <p id="emptyMsg">Nothing in this five-record slice matches your search and series filter together.</p>
+        <div class="row">
+          <button class="btn btn-primary" type="button" id="emptyReset">Clear search and show all 5 records</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DETAIL VIEW ========== -->
+    <section id="detailView" class="detail-panel" aria-labelledby="detailTitle" hidden>
+      <div class="backrow">
+        <button class="btn" type="button" id="back">
+          <span aria-hidden="true">←</span> Back to results
+        </button>
+      </div>
+      <article id="detailArticle" aria-labelledby="detailTitle"></article>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Lantern Slide Lecture Archive — a five-record catalogue slice built from the supplied fixtures only.</p>
+    <p>Images on every record are schematic placeholders drawn in HTML and SVG. They are not photographs, not the archival slides, and not measured reproductions. No rights statement is supplied for these fixtures.</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var RECORDS = [
+    {
+      id: "LS-02",
+      title: "Coastal erosion survey, figure 4",
+      series: "Field Surveys",
+      medium: "Hand-tinted glass",
+      date: "1924",
+      plate: "8.3 × 8.3 cm",
+      condition: "Emulsion lifting at one corner; not assessed further",
+      also: "LS-19"
+    },
+    {
+      id: "LS-07",
+      title: "Kiln stacking diagram",
+      series: "Craft Teaching",
+      medium: "Black-and-white glass",
+      date: "1931",
+      plate: "8.3 × 8.3 cm",
+      condition: "Two edge chips; image area intact",
+      also: null
+    },
+    {
+      id: "LS-11",
+      title: "River weir cross-section — revised plate",
+      series: "Field Surveys",
+      medium: "Black-and-white glass",
+      date: "1924",
+      plate: "10 × 8.3 cm",
+      condition: "Clean; revised plate replaces an earlier figure",
+      also: null
+    },
+    {
+      id: "LS-14",
+      title: "Dyeworks colour wheel",
+      series: "Craft Teaching",
+      medium: "Hand-tinted glass",
+      date: "1936",
+      plate: "8.3 × 10 cm",
+      condition: "Fading across the yellow sector",
+      also: null
+    },
+    {
+      id: "LS-19",
+      title: "Coastal erosion survey, figure 4 — duplicate",
+      series: "Field Surveys",
+      medium: "Hand-tinted glass",
+      date: "undated",
+      plate: "8.3 × 8.3 cm",
+      condition: "Duplicate of LS-02; second copy, not a different photograph",
+      also: "LS-02",
+      duplicateOf: "LS-02"
+    }
+  ];
+
+  var state = { q: "", series: "All", openId: null };
+  var lastOpenedId = null;
+
+  var $ = function (id) { return document.getElementById(id); };
+  var qInput = $("q");
+  var countEl = $("count");
+  var recordsEl = $("records");
+  var emptyEl = $("empty");
+  var emptyMsg = $("emptyMsg");
+  var clearAllBtn = $("clearAll");
+  var listView = $("listView");
+  var detailView = $("detailView");
+  var detailArticle = $("detailArticle");
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function plateAspect(plate) {
+    var parts = String(plate).split("×");
+    var w = parseFloat(parts[0]);
+    var h = parseFloat(parts[1]);
+    if (!isFinite(w) || !isFinite(h) || h <= 0) return 1;
+    return w / h;
+  }
+
+  /* Abstract drawn placeholder: a plate-shaped frame with register ticks and
+     a series-derived line pattern. Deliberately non-representational so it
+     cannot be mistaken for a depiction of the slide's subject. */
+  function plateSvg(rec, big) {
+    var aspect = plateAspect(rec.plate);
+    var W = 120;
+    var H = Math.round(W / aspect);
+    var pad = 9;
+    var cx = W / 2;
+    var cy = H / 2;
+    var strokes = "";
+    var i;
+    if (rec.series === "Field Surveys") {
+      for (i = 0; i < 4; i++) {
+        var y = pad + 12 + i * ((H - 2 * pad - 24) / 3);
+        strokes += '<path d="M' + (pad + 8) + ' ' + y.toFixed(1) +
+          ' C ' + (W * 0.32).toFixed(1) + ' ' + (y - 6).toFixed(1) +
+          ', ' + (W * 0.65).toFixed(1) + ' ' + (y + 7).toFixed(1) +
+          ', ' + (W - pad - 8) + ' ' + (y - 2).toFixed(1) + '" fill="none" ' +
+          'stroke="currentColor" stroke-width="' + (big ? 1.5 : 1.4) + '" opacity="0.55"/>';
+      }
+      strokes += '<path d="M' + (pad + 12) + ' ' + (H - pad - 16) +
+        ' L ' + (W - pad - 12) + ' ' + (pad + 16) + '" stroke="currentColor" ' +
+        'stroke-width="1" opacity="0.32" stroke-dasharray="3 4"/>';
+    } else {
+      var rings = big ? 4 : 3;
+      for (i = 1; i <= rings; i++) {
+        strokes += '<circle cx="' + cx + '" cy="' + cy + '" r="' +
+          (i * Math.min(W, H) * 0.11).toFixed(1) + '" fill="none" stroke="currentColor" ' +
+          'stroke-width="1.2" opacity="0.5"/>';
+      }
+      for (i = 0; i < (big ? 8 : 6); i++) {
+        var a = (Math.PI * 2 * i) / (big ? 8 : 6);
+        strokes += '<line x1="' + cx + '" y1="' + cy + '" x2="' +
+          (cx + Math.cos(a) * Math.min(W, H) * 0.42).toFixed(1) + '" y2="' +
+          (cy + Math.sin(a) * Math.min(W, H) * 0.42).toFixed(1) +
+          '" stroke="currentColor" stroke-width="0.9" opacity="0.35"/>';
+      }
+    }
+    var tick = 6;
+    var t = "";
+    t += '<path d="M' + pad + ' ' + pad + ' h' + tick + ' M' + pad + ' ' + pad + ' v' + tick + '"/>';
+    t += '<path d="M' + (W - pad) + ' ' + pad + ' h-' + tick + ' M' + (W - pad) + ' ' + pad + ' v' + tick + '"/>';
+    t += '<path d="M' + pad + ' ' + (H - pad) + ' h' + tick + ' M' + pad + ' ' + (H - pad) + ' v-' + tick + '"/>';
+    t += '<path d="M' + (W - pad) + ' ' + (H - pad) + ' h-' + tick + ' M' + (W - pad) + ' ' + (H - pad) + ' v-' + tick + '"/>';
+    return '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-hidden="true" ' +
+      'preserveAspectRatio="xMidYMid meet" style="color:' + (big ? "#7a4a10" : "#4f4a40") + ';background:#faf6ec">' +
+      '<rect x="' + pad + '" y="' + pad + '" width="' + (W - 2 * pad) + '" height="' + (H - 2 * pad) +
+      '" fill="none" stroke="#c6b99c" stroke-width="1"/>' +
+      strokes +
+      '<g stroke="#7a4a10" stroke-width="1.2" opacity="0.8" fill="none">' + t + '</g>' +
+      '</svg>';
+  }
+
+  function filtered() {
+    var q = state.q.trim().toLowerCase();
+    return RECORDS.filter(function (r) {
+      if (state.series !== "All" && r.series !== state.series) return false;
+      if (!q) return true;
+      return r.title.toLowerCase().indexOf(q) !== -1 ||
+             r.series.toLowerCase().indexOf(q) !== -1;
+    });
+  }
+
+  function countLabel(n) {
+    var total = RECORDS.length;
+    if (n === total) {
+      return n + (n === 1 ? " record" : " records");
+    }
+    return '<span class="num">' + n + "</span> <span class=\"of\">of " + total + " records</span>";
+  }
+
+  function updateCount(n) {
+    if (n === 0) {
+      countEl.textContent = "No matching records";
+    } else {
+      countEl.innerHTML = countLabel(n);
+    }
+    var active = state.q.trim() !== "" || state.series !== "All";
+    clearAllBtn.hidden = !active;
+  }
+
+  function renderList() {
+    var rows = filtered();
+    var html = "";
+    rows.forEach(function (r) {
+      var dup = r.duplicateOf
+        ? '<p class="tag">Duplicate · second copy of ' + esc(r.duplicateOf) + "</p>"
+        : "";
+      var also = r.also && !r.duplicateOf
+        ? '<p class="tag">Held with duplicate ' + esc(r.also) + "</p>"
+        : "";
+      html +=
+        '<li class="record" data-record="' + esc(r.id) + '">' +
+          '<div class="plate">' + plateSvg(r, false) +
+            '<p class="pcap">Schematic</p>' +
+          "</div>" +
+          '<div class="rec-body">' +
+            '<p class="code"><span class="id">' + esc(r.id) + "</span>" +
+              '<span class="series">' + esc(r.series) + "</span></p>" +
+            '<h3 class="rec-title"><button class="open" type="button" data-open="' + esc(r.id) + '">' +
+              esc(r.title) + '<span class="vh"> — open record ' + esc(r.id) + "</span></button></h3>" +
+            '<p class="meta">' + esc(r.medium) +
+              '<span class="sep" aria-hidden="true">·</span>Catalogue date ' +
+              (r.date === "undated" ? "undated" : esc(r.date)) +
+              '<span class="sep" aria-hidden="true">·</span>Plate ' + esc(r.plate) + "</p>" +
+            '<p class="cond"><span class="lab">Condition</span>' + esc(r.condition) + "</p>" +
+            dup + also +
+          "</div>" +
+        "</li>";
+    });
+    recordsEl.innerHTML = html;
+
+    var isEmpty = rows.length === 0;
+    recordsEl.hidden = isEmpty;
+    emptyEl.hidden = !isEmpty;
+    if (isEmpty) {
+      var bits = [];
+      if (state.q.trim()) bits.push("“" + state.q.trim() + "”");
+      if (state.series !== "All") bits.push("the " + state.series + " series");
+      emptyMsg.textContent = "Nothing in this five-record slice matches " +
+        (bits.length ? bits.join(" in ") : "these controls") +
+        ". Clearing the search and series filter restores all 5 records.";
+    }
+    updateCount(rows.length);
+  }
+
+  function renderDetail(rec) {
+    var dupe = "";
+    if (rec.duplicateOf) {
+      dupe =
+        '<div class="dupe">' +
+          "<h3>Duplicate record</h3>" +
+          "<p>This is a second copy of <strong>" + esc(rec.duplicateOf) + "</strong>, not a separate " +
+          "photograph and not a new discovery. The catalogue holds two plates under the same figure, " +
+          "so both records stay listed; the date is undated and the condition note is the catalogue's own.</p>" +
+        "</div>";
+    }
+
+    var rel = "";
+    if (rec.also && !rec.duplicateOf) {
+      rel =
+        '<div class="rel">' +
+          "<p>Held with a second copy: <strong>" + esc(rec.also) + "</strong> is a duplicate of this " +
+          "figure, not a different photograph.</p>" +
+          '<button class="btn btn-quiet" type="button" data-open="' + esc(rec.also) + '">' +
+            "Open duplicate record " + esc(rec.also) + "</button>" +
+        "</div>";
+    }
+    if (rec.duplicateOf) {
+      rel =
+        '<div class="rel">' +
+          "<p>The original record for this figure is <strong>" + esc(rec.duplicateOf) + "</strong>.</p>" +
+          '<button class="btn btn-quiet" type="button" data-open="' + esc(rec.duplicateOf) + '">' +
+            "Open record " + esc(rec.duplicateOf) + "</button>" +
+        "</div>";
+    }
+
+    detailArticle.innerHTML =
+      '<header class="detail-head">' +
+        '<p class="code"><span class="id">' + esc(rec.id) + "</span>" +
+          '<span class="series">' + esc(rec.series) + "</span></p>" +
+        '<h2 id="detailTitle" tabindex="-1">' + esc(rec.title) + "</h2>" +
+        '<p class="sub">' + esc(rec.series) + " series · " + esc(rec.medium) +
+          " · Plate " + esc(rec.plate) + "</p>" +
+      "</header>" +
+      dupe +
+      '<div class="detail-grid">' +
+        "<figure class=\"plate-large\">" +
+          plateSvg(rec, true) +
+          "<figcaption>Schematic placeholder — a drawn abstraction, not the archival photograph.</figcaption>" +
+        "</figure>" +
+        "<div>" +
+          '<dl class="spec">' +
+            "<dt>Record ID</dt><dd>" + esc(rec.id) + "</dd>" +
+            "<dt>Series</dt><dd>" + esc(rec.series) + "</dd>" +
+            "<dt>Medium</dt><dd>" + esc(rec.medium) + "</dd>" +
+            "<dt>Catalogue date</dt><dd>" +
+              (rec.date === "undated" ? "undated (no catalogue date)" : esc(rec.date) + " (catalogue)") +
+            "</dd>" +
+            "<dt>Plate size</dt><dd>" + esc(rec.plate) + "</dd>" +
+            "<dt>Held as</dt><dd>Digitised copy of a glass lantern slide; no original plate is available to the reader.</dd>" +
+          "</dl>" +
+          '<div class="condblock">' +
+            "<h3>Condition note</h3>" +
+            "<p>" + esc(rec.condition) + "</p>" +
+          "</div>" +
+          '<div class="honest">' +
+            "<h3>About the image on this page</h3>" +
+            "<p>The diagram above is a schematic placeholder drawn in this demo. It is <strong>not the " +
+            "archival lantern slide</strong>, it is not a photograph of the plate, and it is not a measured " +
+            "reproduction of its subject.</p>" +
+            "<p>No full-resolution file of any record is distributed in this demo, and no rights statement " +
+            "is supplied beyond these fixtures. The catalogue date is the declared date, not confirmed " +
+            "historical attribution.</p>" +
+          "</div>" +
+          rel +
+        "</div>" +
+      "</div>";
+
+  }
+
+  // Focus must be moved only after the detail view is visible: focusing an
+  // element inside a [hidden] subtree is silently ignored, which left focus on
+  // <body> after opening a record.
+  function focusDetailTitle() {
+    var h = $("detailTitle");
+    if (h) h.focus({ preventScroll: true });
+  }
+
+  function openRecord(id) {
+    var rec = null;
+    for (var i = 0; i < RECORDS.length; i++) {
+      if (RECORDS[i].id === id) { rec = RECORDS[i]; break; }
+    }
+    if (!rec) return;
+    lastOpenedId = id;
+    state.openId = id;
+    renderDetail(rec);
+    listView.hidden = true;
+    detailView.hidden = false;
+    window.scrollTo(0, 0);
+    focusDetailTitle();
+  }
+
+  function backToList() {
+    if (!state.openId) return;
+    state.openId = null;
+    detailView.hidden = true;
+    listView.hidden = false;
+    emptyEl.hidden = true;
+    // query, series and DOM order were never reset; restore focus to the opener
+    var target = recordsEl.querySelector('[data-open="' + lastOpenedId + '"]');
+    if (target) {
+      target.focus();
+    } else {
+      qInput.focus();
+    }
+  }
+
+  function resetAll(focusTarget) {
+    state.q = "";
+    state.series = "All";
+    qInput.value = "";
+    var radios = document.querySelectorAll('input[name="series"]');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].checked = radios[i].value === "All";
+    }
+    renderList();
+    if (focusTarget === "empty") {
+      var eh = emptyEl.querySelector("h3");
+      if (eh) {
+        eh.setAttribute("tabindex", "-1");
+        eh.focus();
+      }
+    } else {
+      qInput.focus();
+    }
+  }
+
+  // ---- events ----
+  qInput.addEventListener("input", function () {
+    state.q = qInput.value;
+    renderList();
+  });
+
+  document.getElementById("seriesField").addEventListener("change", function (e) {
+    if (e.target && e.target.name === "series") {
+      state.series = e.target.value;
+      renderList();
+    }
+  });
+
+  recordsEl.addEventListener("click", function (e) {
+    var btn = e.target.closest ? e.target.closest("[data-open]") : null;
+    if (btn) openRecord(btn.getAttribute("data-open"));
+  });
+
+  detailArticle.addEventListener("click", function (e) {
+    var btn = e.target.closest ? e.target.closest("[data-open]") : null;
+    if (btn) openRecord(btn.getAttribute("data-open"));
+  });
+
+  $("back").addEventListener("click", backToList);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && state.openId) {
+      e.preventDefault();
+      backToList();
+    }
+  });
+
+  clearAllBtn.addEventListener("click", function () { resetAll("search"); });
+
+  $("emptyReset").addEventListener("click", function () { resetAll("empty"); });
+
+  // ---- init ----
+  renderList();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+{
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "nodes": [
+        {
+          "target": [
+            ".brand__mark"
+          ],
+          "html": "<span class=\"brand__mark\" aria-hidden=\"true\">HC</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#picker > legend"
+          ],
+          "html": "<legend>Consignment</legend>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-114\"] > .pick__body > .pick__id"
+          ],
+          "html": "<span class=\"pick__id\">HC-114</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-114\"] > .pick__body > .pick__name"
+          ],
+          "html": "<span class=\"pick__name\">Line-caught mackerel</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-114\"] > .pick__body > .pick__meta"
+          ],
+          "html": "<span class=\"pick__meta\">42.5 kg · Dock B</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-114\"] > .pick__tag.is-warn"
+          ],
+          "html": "<span class=\"pick__tag is-warn\">Excursion</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-118\"] > .pick__body > .pick__id"
+          ],
+          "html": "<span class=\"pick__id\">HC-118</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-118\"] > .pick__body > .pick__name"
+          ],
+          "html": "<span class=\"pick__name\">Blue mussels</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-118\"] > .pick__body > .pick__meta"
+          ],
+          "html": "<span class=\"pick__meta\">18.0 kg · Dock A</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-118\"] > .is-ok.pick__tag"
+          ],
+          "html": "<span class=\"pick__tag is-ok\">Within limit</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-121\"] > .pick__body > .pick__id"
+          ],
+          "html": "<span class=\"pick__id\">HC-121</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-121\"] > .pick__body > .pick__name"
+          ],
+          "html": "<span class=\"pick__name\">Sea bream</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-121\"] > .pick__body > .pick__meta"
+          ],
+          "html": "<span class=\"pick__meta\">61.2 kg · Dock C</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-121\"] > .pick__tag.is-warn"
+          ],
+          "html": "<span class=\"pick__tag is-warn\">Excursion</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-126\"] > .pick__body > .pick__id"
+          ],
+          "html": "<span class=\"pick__id\">HC-126</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-126\"] > .pick__body > .pick__name"
+          ],
+          "html": "<span class=\"pick__name\">Squid</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-126\"] > .pick__body > .pick__meta"
+          ],
+          "html": "<span class=\"pick__meta\">27.4 kg · Dock A</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"pick-HC-126\"] > .is-ok.pick__tag"
+          ],
+          "html": "<span class=\"pick__tag is-ok\">Within limit</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#ev-id"
+          ],
+          "html": "<h2 class=\"ev-id\" id=\"ev-id\">HC-114</h2>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#ev-name"
+          ],
+          "html": "<p class=\"ev-name\" id=\"ev-name\">Line-caught mackerel</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#ev-catch"
+          ],
+          "html": "<p class=\"mini\" id=\"ev-catch\">Caught 2 Nov 2026</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".ev-facts > span:nth-child(1)"
+          ],
+          "html": "<span>Declared limit <b id=\"ev-limit\">at or below −1.0 °C</b></span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#ev-limit"
+          ],
+          "html": "<b id=\"ev-limit\">at or below −1.0 °C</b>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".ev-facts > span:nth-child(2)"
+          ],
+          "html": "<span>Weight <b id=\"ev-weight\">42.5 kg</b></span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#ev-weight"
+          ],
+          "html": "<b id=\"ev-weight\">42.5 kg</b>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".ev-facts > span:nth-child(3)"
+          ],
+          "html": "<span>Destination <b id=\"ev-dock\">Dock B</b></span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#ev-dock"
+          ],
+          "html": "<b id=\"ev-dock\">Dock B</b>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#verdict-title"
+          ],
+          "html": "<p class=\"verdict__title\" id=\"verdict-title\">Excursion on record</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#verdict-text"
+          ],
+          "html": "<p class=\"verdict__text\" id=\"verdict-text\">1 of 4 readings above the declared limit of at or below −1.0 °C. Highest: Reading 3 at −0.4 °C, 0.6 °C above the limit.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".plot__head > h2"
+          ],
+          "html": "<h2>Readings, oldest to newest</h2>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".plot__head > .mini"
+          ],
+          "html": "<p class=\"mini\">Schematic plotted from the four supplied readings — not a live sensor feed.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".srow:nth-child(1) > .srow__label"
+          ],
+          "html": "<span class=\"srow__label\">Reading 1</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".srow:nth-child(1) > .srow__val"
+          ],
+          "html": "<span class=\"srow__val\">−2.1 °C</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".srow:nth-child(2) > .srow__label"
+          ],
+          "html": "<span class=\"srow__label\">Reading 2</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".srow:nth-child(2) > .srow__val"
+          ],
+          "html": "<span class=\"srow__val\">−1.8 °C</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".is-over > .srow__label"
+          ],
+          "html": "<span class=\"srow__label\">Reading 3</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".is-over > .srow__val"
+          ],
+          "html": "<span class=\"srow__val\">−0.4 °C<span class=\"sr-only\"> (above the limit)</span></span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".srow:nth-child(4) > .srow__label"
+          ],
+          "html": "<span class=\"srow__label\">Reading 4</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".srow:nth-child(4) > .srow__val"
+          ],
+          "html": "<span class=\"srow__val\">−1.6 °C</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".key > span:nth-child(1)"
+          ],
+          "html": "<span><i aria-hidden=\"true\"></i>at or below the limit</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".key > span:nth-child(2)"
+          ],
+          "html": "<span><i class=\"w\" aria-hidden=\"true\"></i>above the limit</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".key > span:nth-child(3)"
+          ],
+          "html": "<span><i class=\"t\" aria-hidden=\"true\"></i>declared limit</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#decision-fieldset > legend"
+          ],
+          "html": "<legend>Decision for <span id=\"dec-id\">HC-114</span></legend>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#dec-id"
+          ],
+          "html": "<span id=\"dec-id\">HC-114</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#dec-hint"
+          ],
+          "html": "<p class=\"mini\" id=\"dec-hint\">Release is only possible when every reading is at or below the declared limit.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#opt-release > .opt__text > .opt__label"
+          ],
+          "html": "<span class=\"opt__label\">Release</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#opt-release > .opt__text > .opt__sub"
+          ],
+          "html": "<span class=\"opt__sub\">Consignment may proceed</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#release-tag"
+          ],
+          "html": "<span class=\"opt__tag\" id=\"release-tag\">Blocked</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#opt-hold > .opt__text > .opt__label"
+          ],
+          "html": "<span class=\"opt__label\">Hold</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#opt-hold > .opt__text > .opt__sub"
+          ],
+          "html": "<span class=\"opt__sub\">Stays in the cold store</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#block-title"
+          ],
+          "html": "<h3 id=\"block-title\">Release blocked</h3>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#block-text"
+          ],
+          "html": "<p id=\"block-text\">Reading 3 of 4 measures −0.4 °C, above the declared limit of at or below −1.0 °C by 0.6 °C. A consignment with any excursion must be held, not released.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#release-block > .mini"
+          ],
+          "html": "<p class=\"mini\">Switch the decision to Hold to continue. Nothing has been recorded.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "label[for=\"note\"]"
+          ],
+          "html": "<label for=\"note\">Operator note</label>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#note-count"
+          ],
+          "html": "<span class=\"note__count\" id=\"note-count\">1 / 120</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#note-help"
+          ],
+          "html": "<p class=\"mini\" id=\"note-help\">10–120 characters. Stored with the decision you record.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#note"
+          ],
+          "html": "<textarea id=\"note\" name=\"note\" rows=\"3\" aria-describedby=\"note-help note-count\" placeholder=\"What did you check, and what happens next?\" aria-invalid=\"false\"></textarea>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".btn-row-note"
+          ],
+          "html": "<p class=\"btn-row-note\">Nothing is submitted until you review and confirm.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        }
+      ]
+    }
+  ],
+  "passes": 39,
+  "inapplicable": 51
+}

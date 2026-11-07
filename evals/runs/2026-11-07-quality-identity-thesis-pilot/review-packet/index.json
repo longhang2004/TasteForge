@@ -1,0 +1,453 @@
+{
+  "createdAt": "2026-11-07T17:34:15.911693+00:00",
+  "cases": {
+    "freight": {
+      "task": "freight/task.md",
+      "variants": {
+        "A": {
+          "source": "freight/A/index.html",
+          "checks": "freight/A/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "file": "freight/A/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "blocked-excursion",
+              "file": "freight/A/320-blocked-excursion.png"
+            },
+            {
+              "width": 320,
+              "state": "note-too-short",
+              "file": "freight/A/320-note-too-short.png"
+            },
+            {
+              "width": 320,
+              "state": "review",
+              "file": "freight/A/320-review.png"
+            },
+            {
+              "width": 320,
+              "state": "edit",
+              "file": "freight/A/320-edit.png"
+            },
+            {
+              "width": 320,
+              "state": "submit-failure",
+              "file": "freight/A/320-submit-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "file": "freight/A/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "file": "freight/A/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "blocked-excursion",
+              "file": "freight/A/390-blocked-excursion.png"
+            },
+            {
+              "width": 390,
+              "state": "note-too-short",
+              "file": "freight/A/390-note-too-short.png"
+            },
+            {
+              "width": 390,
+              "state": "review",
+              "file": "freight/A/390-review.png"
+            },
+            {
+              "width": 390,
+              "state": "edit",
+              "file": "freight/A/390-edit.png"
+            },
+            {
+              "width": 390,
+              "state": "submit-failure",
+              "file": "freight/A/390-submit-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "file": "freight/A/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "file": "freight/A/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "scope": "Optional full page; not natural post-action visibility",
+              "file": "freight/A/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "blocked-excursion",
+              "file": "freight/A/1440-blocked-excursion.png"
+            },
+            {
+              "width": 1440,
+              "state": "note-too-short",
+              "file": "freight/A/1440-note-too-short.png"
+            },
+            {
+              "width": 1440,
+              "state": "review",
+              "file": "freight/A/1440-review.png"
+            },
+            {
+              "width": 1440,
+              "state": "edit",
+              "file": "freight/A/1440-edit.png"
+            },
+            {
+              "width": 1440,
+              "state": "submit-failure",
+              "file": "freight/A/1440-submit-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "file": "freight/A/1440-success.png"
+            }
+          ]
+        },
+        "B": {
+          "source": "freight/B/index.html",
+          "checks": "freight/B/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "file": "freight/B/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "blocked-excursion",
+              "file": "freight/B/320-blocked-excursion.png"
+            },
+            {
+              "width": 320,
+              "state": "note-too-short",
+              "file": "freight/B/320-note-too-short.png"
+            },
+            {
+              "width": 320,
+              "state": "review",
+              "file": "freight/B/320-review.png"
+            },
+            {
+              "width": 320,
+              "state": "edit",
+              "file": "freight/B/320-edit.png"
+            },
+            {
+              "width": 320,
+              "state": "submit-failure",
+              "file": "freight/B/320-submit-failure.png"
+            },
+            {
+              "width": 320,
+              "state": "success",
+              "file": "freight/B/320-success.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "file": "freight/B/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "blocked-excursion",
+              "file": "freight/B/390-blocked-excursion.png"
+            },
+            {
+              "width": 390,
+              "state": "note-too-short",
+              "file": "freight/B/390-note-too-short.png"
+            },
+            {
+              "width": 390,
+              "state": "review",
+              "file": "freight/B/390-review.png"
+            },
+            {
+              "width": 390,
+              "state": "edit",
+              "file": "freight/B/390-edit.png"
+            },
+            {
+              "width": 390,
+              "state": "submit-failure",
+              "file": "freight/B/390-submit-failure.png"
+            },
+            {
+              "width": 390,
+              "state": "success",
+              "file": "freight/B/390-success.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "file": "freight/B/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "scope": "Optional full page; not natural post-action visibility",
+              "file": "freight/B/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "blocked-excursion",
+              "file": "freight/B/1440-blocked-excursion.png"
+            },
+            {
+              "width": 1440,
+              "state": "note-too-short",
+              "file": "freight/B/1440-note-too-short.png"
+            },
+            {
+              "width": 1440,
+              "state": "review",
+              "file": "freight/B/1440-review.png"
+            },
+            {
+              "width": 1440,
+              "state": "edit",
+              "file": "freight/B/1440-edit.png"
+            },
+            {
+              "width": 1440,
+              "state": "submit-failure",
+              "file": "freight/B/1440-submit-failure.png"
+            },
+            {
+              "width": 1440,
+              "state": "success",
+              "file": "freight/B/1440-success.png"
+            }
+          ]
+        }
+      }
+    },
+    "archive": {
+      "task": "archive/task.md",
+      "variants": {
+        "A": {
+          "source": "archive/A/index.html",
+          "checks": "archive/A/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "file": "archive/A/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "filter-field-surveys",
+              "file": "archive/A/320-filter-field-surveys.png"
+            },
+            {
+              "width": 320,
+              "state": "search-weir",
+              "file": "archive/A/320-search-weir.png"
+            },
+            {
+              "width": 320,
+              "state": "empty",
+              "file": "archive/A/320-empty.png"
+            },
+            {
+              "width": 320,
+              "state": "detail-duplicate",
+              "file": "archive/A/320-detail-duplicate.png"
+            },
+            {
+              "width": 320,
+              "state": "return",
+              "file": "archive/A/320-return.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "file": "archive/A/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "filter-field-surveys",
+              "file": "archive/A/390-filter-field-surveys.png"
+            },
+            {
+              "width": 390,
+              "state": "search-weir",
+              "file": "archive/A/390-search-weir.png"
+            },
+            {
+              "width": 390,
+              "state": "empty",
+              "file": "archive/A/390-empty.png"
+            },
+            {
+              "width": 390,
+              "state": "detail-duplicate",
+              "file": "archive/A/390-detail-duplicate.png"
+            },
+            {
+              "width": 390,
+              "state": "return",
+              "file": "archive/A/390-return.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "file": "archive/A/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "scope": "Optional full page; not natural post-action visibility",
+              "file": "archive/A/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "filter-field-surveys",
+              "file": "archive/A/1440-filter-field-surveys.png"
+            },
+            {
+              "width": 1440,
+              "state": "search-weir",
+              "file": "archive/A/1440-search-weir.png"
+            },
+            {
+              "width": 1440,
+              "state": "empty",
+              "file": "archive/A/1440-empty.png"
+            },
+            {
+              "width": 1440,
+              "state": "detail-duplicate",
+              "file": "archive/A/1440-detail-duplicate.png"
+            },
+            {
+              "width": 1440,
+              "state": "return",
+              "file": "archive/A/1440-return.png"
+            }
+          ]
+        },
+        "B": {
+          "source": "archive/B/index.html",
+          "checks": "archive/B/checks.json",
+          "images": [
+            {
+              "width": 320,
+              "state": "entry",
+              "file": "archive/B/320-entry.png"
+            },
+            {
+              "width": 320,
+              "state": "filter-field-surveys",
+              "file": "archive/B/320-filter-field-surveys.png"
+            },
+            {
+              "width": 320,
+              "state": "search-weir",
+              "file": "archive/B/320-search-weir.png"
+            },
+            {
+              "width": 320,
+              "state": "empty",
+              "file": "archive/B/320-empty.png"
+            },
+            {
+              "width": 320,
+              "state": "detail-duplicate",
+              "file": "archive/B/320-detail-duplicate.png"
+            },
+            {
+              "width": 320,
+              "state": "return",
+              "file": "archive/B/320-return.png"
+            },
+            {
+              "width": 390,
+              "state": "entry",
+              "file": "archive/B/390-entry.png"
+            },
+            {
+              "width": 390,
+              "state": "filter-field-surveys",
+              "file": "archive/B/390-filter-field-surveys.png"
+            },
+            {
+              "width": 390,
+              "state": "search-weir",
+              "file": "archive/B/390-search-weir.png"
+            },
+            {
+              "width": 390,
+              "state": "empty",
+              "file": "archive/B/390-empty.png"
+            },
+            {
+              "width": 390,
+              "state": "detail-duplicate",
+              "file": "archive/B/390-detail-duplicate.png"
+            },
+            {
+              "width": 390,
+              "state": "return",
+              "file": "archive/B/390-return.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry",
+              "file": "archive/B/1440-entry.png"
+            },
+            {
+              "width": 1440,
+              "state": "entry-full-page",
+              "scope": "Optional full page; not natural post-action visibility",
+              "file": "archive/B/1440-entry-full-page.png"
+            },
+            {
+              "width": 1440,
+              "state": "filter-field-surveys",
+              "file": "archive/B/1440-filter-field-surveys.png"
+            },
+            {
+              "width": 1440,
+              "state": "search-weir",
+              "file": "archive/B/1440-search-weir.png"
+            },
+            {
+              "width": 1440,
+              "state": "empty",
+              "file": "archive/B/1440-empty.png"
+            },
+            {
+              "width": 1440,
+              "state": "detail-duplicate",
+              "file": "archive/B/1440-detail-duplicate.png"
+            },
+            {
+              "width": 1440,
+              "state": "return",
+              "file": "archive/B/1440-return.png"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

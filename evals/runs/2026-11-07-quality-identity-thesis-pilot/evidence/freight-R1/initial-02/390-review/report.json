@@ -1,0 +1,100 @@
+{
+  "label": "390-review",
+  "capturedAtUtc": "2026-11-07T18:16:33.029Z",
+  "scope": "Current natural viewport; no scroll or focus reset",
+  "taskBehavior": "Not established by this checkpoint",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "document": {
+    "width": 390,
+    "height": 1136
+  },
+  "activeElement": {
+    "tag": "H1",
+    "id": "h-review",
+    "testId": null,
+    "rect": {
+      "x": 15.59375,
+      "y": 198.75,
+      "width": 358.8125,
+      "height": 53.40625,
+      "intersectsViewport": true,
+      "fullyInViewport": true
+    }
+  },
+  "feedback": [
+    {
+      "selector": "[role=alert]",
+      "matches": 2,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "[role=status]",
+      "matches": 2,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": -1,
+          "y": 1135.4375,
+          "width": 1,
+          "height": 1,
+          "intersectsViewport": false,
+          "fullyInViewport": false
+        }
+      ]
+    },
+    {
+      "selector": "button:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    },
+    {
+      "selector": "h1:focus",
+      "matches": 1,
+      "layoutVisible": 1,
+      "elements": [
+        {
+          "x": 15.59375,
+          "y": 198.75,
+          "width": 358.8125,
+          "height": 53.40625,
+          "intersectsViewport": true,
+          "fullyInViewport": true
+        }
+      ]
+    },
+    {
+      "selector": "h2:focus",
+      "matches": 0,
+      "layoutVisible": 0,
+      "elements": []
+    }
+  ],
+  "geometry": {
+    "status": "pass",
+    "horizontalOverflow": 0,
+    "scope": "Document width only; no accessibility or task-quality certification"
+  },
+  "screenshots": [
+    {
+      "file": "viewport.png",
+      "scope": "Natural viewport",
+      "scroll": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "afterCaptureScroll": {
+    "x": 0,
+    "y": 0
+  }
+}

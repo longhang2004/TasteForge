@@ -1,0 +1,70 @@
+{
+  "cell": "archive-R1",
+  "resource": "R1/tasteforge",
+  "task": "Lantern Slide Lecture Archive — a runnable collection/detail slice for a fictional digitised glass-lantern-slide teaching collection: five supplied records with search, series filter, matching count, empty-state reset, record detail with full metadata, condition note and an honest schematic-placeholder statement, and back-navigation that retains query, filter, result order and restores focus to the opened record.",
+  "start_utc": "2026-11-07T15:51:20Z",
+  "end_utc": "2026-11-07T16:07:00Z",
+  "submitted_file": "initial/index.html",
+  "versions": [
+    {
+      "file": "versions/00.html",
+      "sha256": "f60ed8a7adfa351b3e86f6358f56de42acf52f72d817dfcfb17481c870647c3b",
+      "saved_utc": "2026-11-07T15:56:32Z",
+      "note": "First runnable file, saved byte-for-byte before any browser test or revision."
+    },
+    {
+      "file": "versions/01.html",
+      "sha256": "fbc63de9d7c8b7ded5574491c7f0f1486b1fe0bc214fde629ca3a8fab65fd484",
+      "saved_utc": "2026-11-07T16:02:21Z",
+      "note": "Single focused self-correction. Observed finding: after clicking a record, document.activeElement remained BODY instead of #detailTitle (diagnostic in checks/v00/focus-after-open-finding.json; raw failing run in checks/v00/run-v00-raw.log, run-checks.mjs line 131 timed out waiting for the heading to take focus). Cause: renderDetail() called h.focus() while #detailView still carried the hidden attribute, so the focus call was silently ignored. Change: moved scroll/focus out of renderDetail() into a focusDetailTitle() helper invoked from openRecord() after listView.hidden = true and detailView.hidden = false. Rechecked: full suite re-run against 01.html, 114/114 assertions pass including 'detail heading receives focus' at 320, 390 and 1440 px; no other behaviour changed."
+    }
+  ],
+  "submitted_sha256": "fbc63de9d7c8b7ded5574491c7f0f1486b1fe0bc214fde629ca3a8fab65fd484",
+  "loaded_skill_paths": [
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/SKILL.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/create-ui.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/workflows/structure-and-revise.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/render-checks.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/accessibility.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/references/typography.md",
+    "evals/runs/2026-11-07-quality-identity-thesis-pilot/resources/R1/tasteforge/scripts/check-ui.mjs"
+  ],
+  "rationale": "The supplied material is a catalogue, not a gallery: every record carries a declared catalogue date, a plate size and a condition note, and the brief explicitly withholds the archival image, full-resolution files and any rights statement. So I made records the primary reading unit and images secondary evidence of their absence. Structure: a single-page list/detail swap (no routing, since no reload persistence is required) with a search field, a radio series filter showing per-series counts, and a live matching-count line that reads '2 of 5 records' whenever a filter is active. The five rows are ordered exactly as supplied, each showing ID, series, title as the one action, medium, catalogue date, plate size and the condition note in full on the row itself — so comparing condition across records needs no opening. Detail adds the full metadata list, a dedicated condition block, and a dark high-contrast honesty panel stating the diagram is a schematic placeholder, not the archival slide, not a photograph, not a measured reproduction, with the no-rights-statement and declared-date limits restated. LS-19 is never a discovery: it is tagged 'Duplicate · second copy of LS-02' in the list, gets a dedicated duplicate notice in detail, and LS-02 cross-links back to it. Visual direction: warm paper-and-ink reading surface, serif display titles against a sans/mono utility layer, hairline rules and a numbered catalogue rhythm rather than cards or thumbnails. Placeholders are drawn per record from plate aspect ratio and series, deliberately abstract (contour lines for Field Surveys, rings for Craft Teaching) so they cannot be mistaken for depictions. Colour is used nowhere as the only signal: state changes also change text, count and control presence.",
+  "checks_run": [
+    "Playwright 1.64.1 rendered suite at 320, 390 and 1440 px (checks/run-checks.mjs, raw output checks/v01/checks-summary.json): 114/114 assertions passed, 0 failed. Per width it asserted: document scrollWidth <= clientWidth on list, empty and both detail states; all five records rendered; matching count present; long title 'River weir cross-section — revised plate' present and its detail shows 10 × 8.3 cm, 1924 and the revised-plate condition note; duplicate row present and labelled with 'duplicate' and 'LS-02'; search 'coastal' returns exactly LS-02,LS-19; search 'Craft Teaching' returns LS-07,LS-14 (series text searchable); series filter Field Surveys returns LS-02,LS-11,LS-19; count text becomes '2 of 5 records'; empty state appears and hides the list; reset control restores 5 records and clears the query; detail shows LS-19, Field Surveys, Hand-tinted glass, undated, 8.3 × 8.3 cm and the exact condition text; detail contains a schematic/not-the-archival statement; detail frames LS-19 as a second copy and not a separate/different photograph; back (clicked via keyboard Enter on the focused button) retains query, series filter and result order and returns focus to the opener button; Escape also returns and restores focus; Tab order reaches the search input, the radio group, the clear control and every record opener; the search field shows a 3px solid focus indicator; no uncaught page errors, no failed requests and no off-origin requests.",
+    "Axe (@axe-core/playwright 4.14.0) with tags wcag2a, wcag2aa, wcag21a, wcag21aa, best-practice at 320, 390 and 1440 px, on the list state and on the LS-19 detail state: 0 violations and 9 incomplete findings retained in raw form (checks/v01/checks-summary.json). All incomplete findings are color-contrast on the list (58 nodes) and on detail (28 nodes), plus one skip-link note on detail. No page has any other axe finding.",
+    "Manual WCAG contrast computation on 26 resolved text/background pairs (checks/contrast.mjs, raw output checks/contrast-manual.json), run because axe could not resolve the gradient page background: 26/26 pairs pass their threshold; lowest ratios are 5.85 (dupe heading on tinted panel) and 6.5 (record ID accent on paper), all others 6.65–15.6.",
+    "Screenshot capture of 15 states (list, empty, LS-19 detail, back-retained, LS-11 detail at each of 320/390/1440) in checks/v01/shots/; PNG header and pixel-diversity verification (checks/verify-shots.mjs, output checks/v01/shots-verification.json) confirmed all 15 at exact expected widths, non-blank, no problems.",
+    "Static structural check: single self-contained index.html, 29,207 bytes, inline <style> and inline <script> only, no <link>, no <img>, no url()/@import, no external URL, no src attribute, system font stacks only. Also asserted: all five supplied IDs, titles, condition notes, both series names, both media names, all three plate sizes, 'undated' and the three catalogue dates appear verbatim; and no invented provenance vocabulary ('photographer', 'copyright', 'public domain', 'museum', 'institution', 'licensed under') appears. Output: checks/final-verify.json, problems = []."
+  ],
+  "failures_observed_and_resolved": [
+    "REAL FAILURE (resolved in versions/01.html): after opening a record, focus did not move to the record detail — document.activeElement was BODY. Found by the automated assertion 'detail heading receives focus' timing out at 320 px. Root cause proven by a targeted diagnostic (checks/diag-focus-v00.mjs → checks/v00/focus-after-open-finding.json): h.focus() ran inside renderDetail() while #detailView still had the hidden attribute, so the call was ignored; re-focusing the same element after unhiding succeeded, isolating ordering rather than the element or tabindex. Fixed by moving scroll/reset focus after the view was unhidden. Rechecked on 01.html: the heading takes focus at all three widths and all 114 assertions pass.",
+    "TEST-HARNESS DEFECT (not a product failure, fixed in the checker): the checker's '[data-open=\"LS-02\"]' locators matched both the list opener and a cross-link button left in the hidden detail subtree, causing a Playwright strict-mode error. The page behaviour was correct; I scoped the locators to '#records [data-open=...]' and the suite passed. Recorded here for honesty rather than silently dropped.",
+    "Early checker run aborted on ERR_MODULE_NOT_FOUND for 'playwright' because ESM ignores NODE_PATH; resolved by importing the installed packages through absolute file:// URLs under examples/inventory-workbench/tools/node_modules. No packages were installed."
+  ],
+  "unavailable_or_unassessed_checks": [
+    "Visual/aesthetic judgment by me: this model has no image input, so the 15 captured PNGs were verified only structurally (correct dimensions, non-blank, pixel diversity), never visually inspected. Layout, spacing and hierarchy judgments come from rendered DOM geometry, computed styles and text extraction, not from looking at the frames.",
+    "Screen-reader announcement order and live-region timing: not exercised with NVDA/JAWS/VoiceOver. The count is a role=\"status\" aria-live=\"polite\" region and the detail heading is programmatically focused, but actual announcement was not observed.",
+    "Browser coverage: Chromium only (the single installed Playwright browser). No Firefox, WebKit, Safari or mobile device testing.",
+    "Zoom/reflow and 200% text scaling were not tested; only the three viewport widths were exercised.",
+    "Windows High Contrast / forced-colors mode, dark-scheme rendering and reduced-motion behaviour were not rendered (a prefers-reduced-motion block exists in CSS but its effect was not observed).",
+    "9 axe findings remain as incomplete, all color-contrast, plus one skip-link note; axe incomplete findings are review items that I could not fully close. My manual contrast pass covers 26 sampled pairs, not every rendered text/background combination or any non-text contrast or focus-appearance criterion.",
+    "No accessibility conformance is claimed. No human acceptance, usability study or expert review occurred.",
+    "Token, cost, thinking and cache figures were not exposed by any available tool, so those fields remain null; tool-call count was not reliably countable and remains null."
+  ],
+  "tool_calls": null,
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "thinking_tokens": null,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "total_tokens": null,
+    "cost_usd": null
+  },
+  "model": {
+    "provider": null,
+    "id": null
+  },
+  "human_acceptance": null
+}

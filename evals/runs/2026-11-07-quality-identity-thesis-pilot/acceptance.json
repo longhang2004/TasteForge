@@ -1,0 +1,90 @@
+{
+  "freight-R1": {
+    "report": "evidence\\freight-R1\\initial-02\\report.json",
+    "sourceSha256": "c4dafded6213ca0eb302e1c8feb2fb2bfae2acfbf58a969542b473b5b21b4370",
+    "condition": "lean",
+    "checks": 66,
+    "states": 21,
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "axeViolations": 0,
+    "axeIncomplete": 21,
+    "pageErrors": 0,
+    "externalRequests": 0,
+    "operatorUiCorrections": 0,
+    "creatorCorrections": 1,
+    "browser": "Chromium 156.0.8078.4",
+    "reviewedEvidence": "evidence\\freight-R1\\initial-01\\report.json",
+    "captureCorrection": "success capture re-run after reviewers reported a mid-transition frame",
+    "verdict": "scoped automated acceptance; human tests deferred"
+  },
+  "freight-R2": {
+    "report": "evidence\\freight-R2\\initial-02\\report.json",
+    "sourceSha256": "7ac1efe084a6dded8e9a79b9bd5e55310f943d3f24ab3aaab84756ddacf3125e",
+    "condition": "candidate",
+    "checks": 66,
+    "states": 21,
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "axeViolations": 0,
+    "axeIncomplete": 21,
+    "pageErrors": 0,
+    "externalRequests": 0,
+    "operatorUiCorrections": 0,
+    "creatorCorrections": 1,
+    "browser": "Chromium 156.0.8078.4",
+    "reviewedEvidence": "evidence\\freight-R2\\initial-01\\report.json",
+    "captureCorrection": "success capture re-run after reviewers reported a mid-transition frame",
+    "verdict": "scoped automated acceptance; human tests deferred"
+  },
+  "archive-R1": {
+    "report": "evidence\\archive-R1\\initial-01\\report.json",
+    "sourceSha256": "fbc63de9d7c8b7ded5574491c7f0f1486b1fe0bc214fde629ca3a8fab65fd484",
+    "condition": "lean",
+    "checks": 36,
+    "states": 18,
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "axeViolations": 0,
+    "axeIncomplete": 18,
+    "pageErrors": 0,
+    "externalRequests": 0,
+    "operatorUiCorrections": 0,
+    "creatorCorrections": 1,
+    "browser": "Chromium 156.0.8078.4",
+    "reviewedEvidence": "evidence\\archive-R1\\initial-01\\report.json",
+    "captureCorrection": null,
+    "verdict": "scoped automated acceptance; human tests deferred"
+  },
+  "archive-R2": {
+    "report": "evidence\\archive-R2\\initial-01\\report.json",
+    "sourceSha256": "5127333ac8890352a0f40da7406b4fb6076ed3154f7ca027167f874e012072d4",
+    "condition": "candidate",
+    "checks": 36,
+    "states": 18,
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "axeViolations": 0,
+    "axeIncomplete": 15,
+    "pageErrors": 0,
+    "externalRequests": 0,
+    "operatorUiCorrections": 0,
+    "creatorCorrections": 1,
+    "browser": "Chromium 156.0.8078.4",
+    "reviewedEvidence": "evidence\\archive-R2\\initial-01\\report.json",
+    "captureCorrection": null,
+    "verdict": "scoped automated acceptance; human tests deferred"
+  }
+}

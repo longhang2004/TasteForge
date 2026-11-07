@@ -1,0 +1,63 @@
+{
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "nodes": [
+        {
+          "target": [
+            ".brand__mark"
+          ],
+          "html": "<span class=\"brand__mark\" aria-hidden=\"true\">HC</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".rv-note:nth-child(2) > h2"
+          ],
+          "html": "<h2>Excursion summary</h2>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#rv-excursion"
+          ],
+          "html": "<p id=\"rv-excursion\" class=\"is-warn\">1 of 4 readings above the declared limit of at or below −1.0 °C. Highest: Reading 3 at −0.4 °C, 0.6 °C above the limit.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".rv-note:nth-child(3) > h2"
+          ],
+          "html": "<h2>Note</h2>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#rv-note"
+          ],
+          "html": "<p id=\"rv-note\">Keyboard path check: holding at dock B.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#panel-review > .card > .sim-note"
+          ],
+          "html": "<p class=\"sim-note\">Simulation only. Submitting records a placeholder entry here; no real shipment, release or food-safety determination occurs.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#btn-edit"
+          ],
+          "html": "<button type=\"button\" class=\"btn btn--ghost\" id=\"btn-edit\">Edit decision</button>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        }
+      ]
+    }
+  ],
+  "passes": 38,
+  "inapplicable": 52
+}

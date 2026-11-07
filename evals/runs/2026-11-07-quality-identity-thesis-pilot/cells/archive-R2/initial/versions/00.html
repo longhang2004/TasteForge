@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern Slide Lecture Archive — Catalogue</title>
+<style>
+  :root{
+    --paper:#E8E5DA;
+    --surface:#F7F4EC;
+    --surface-2:#EDE9DD;
+    --ink:#1A1C1A;
+    --muted:#595B53;
+    --rule:#C8C4B4;
+    --rule-strong:#8D8B7D;
+    --accent:#8B3A1E;
+    --field:#26505B;
+    --craft:#7A4117;
+    --mount:#24261F;
+    --focus:#0E5A70;
+    --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.5;
+    border-top:6px solid var(--ink);
+  }
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  @media (max-width:520px){.wrap{padding:0 16px}}
+  a{color:var(--accent)}
+  p{margin:0}
+  .sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+  }
+  .skip{
+    position:absolute;left:16px;top:-64px;z-index:50;
+    background:var(--ink);color:#fff;padding:10px 16px;border-radius:2px;
+    font-size:.9rem;text-decoration:none;
+  }
+  .skip:focus{top:16px}
+  :focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+  button{font:inherit;color:inherit}
+  button:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+
+  /* Masthead */
+  .masthead{padding:26px 0 0}
+  .topline{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding-bottom:16px;border-bottom:1px solid var(--rule-strong);
+  }
+  .brand{display:flex;align-items:center;gap:12px}
+  .mark{
+    width:30px;height:30px;flex:0 0 auto;border:1px solid var(--ink);
+    background:
+      linear-gradient(var(--ink),var(--ink)) 50% 50%/16px 16px no-repeat,
+      linear-gradient(90deg,var(--accent),var(--accent)) 50% 68%/4px 4px no-repeat;
+    box-shadow:inset 0 0 0 4px var(--paper);
+    position:relative;
+  }
+  .brand span{
+    font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;
+    text-transform:uppercase;font-weight:600;
+  }
+  .stamp{
+    font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--muted);text-align:right;
+  }
+  .masthead h1{
+    font-family:var(--serif);font-weight:600;
+    font-size:clamp(2.15rem,5.6vw,3.6rem);
+    line-height:1.02;letter-spacing:-.015em;
+    margin:30px 0 0;max-width:18ch;text-wrap:balance;
+  }
+  .lede{
+    margin-top:18px;max-width:60ch;color:var(--muted);
+    font-size:1.0625rem;line-height:1.6;
+  }
+  .scope{
+    display:flex;gap:14px;align-items:flex-start;
+    margin-top:26px;padding:14px 16px;
+    background:var(--surface);border:1px solid var(--rule);
+    border-left:3px solid var(--accent);
+  }
+  .scope-key{
+    font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--accent);font-weight:700;
+    padding-top:3px;flex:0 0 auto;
+  }
+  .scope p{font-size:.875rem;line-height:1.55;max-width:82ch;color:#3F413A}
+  @media (max-width:520px){
+    .scope{flex-direction:column;gap:6px}
+    .stamp{max-width:16ch}
+    .masthead h1{margin-top:24px}
+  }
+
+  /* Browse */
+  #browse{padding:44px 0 8px}
+  .section-head{
+    display:flex;align-items:baseline;justify-content:space-between;
+    gap:16px;border-bottom:1px solid var(--rule-strong);padding-bottom:12px;
+  }
+  .section-head h2{
+    font-family:var(--serif);font-size:1.5rem;font-weight:600;margin:0;letter-spacing:-.01em;
+  }
+  .order{
+    font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--muted);
+  }
+  .controls{
+    display:flex;flex-wrap:wrap;gap:22px 32px;align-items:flex-end;
+    padding:22px 0 18px;
+  }
+  .search{flex:1 1 320px;min-width:0}
+  .search > label{
+    display:block;font-family:var(--mono);font-size:.68rem;
+    letter-spacing:.13em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:8px;font-weight:600;
+  }
+  .input-wrap{position:relative}
+  .input-wrap svg{
+    position:absolute;left:13px;top:50%;transform:translateY(-50%);
+    width:17px;height:17px;stroke:var(--muted);fill:none;stroke-width:1.7;
+    pointer-events:none;
+  }
+  #q{
+    width:100%;min-height:46px;padding:10px 14px 10px 40px;
+    font:inherit;font-size:.95rem;color:var(--ink);
+    background:#FBFAF5;border:1px solid var(--rule-strong);border-radius:2px;
+    appearance:none;
+  }
+  #q::placeholder{color:#6B6C63}
+  #q:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-color:var(--focus)}
+  fieldset.filters{border:0;padding:0;margin:0;min-width:0}
+  fieldset.filters legend{
+    padding:0;font-family:var(--mono);font-size:.68rem;
+    letter-spacing:.13em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:8px;font-weight:600;
+  }
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{position:relative;display:inline-flex}
+  .chip input{
+    position:absolute;width:1px;height:1px;opacity:0;
+    margin:0;pointer-events:none;
+  }
+  .chip span{
+    display:inline-flex;align-items:center;gap:9px;
+    min-height:44px;padding:9px 14px;
+    background:var(--surface);border:1px solid var(--rule-strong);border-radius:2px;
+    font-size:.875rem;line-height:1.2;cursor:pointer;
+    transition:background-color .12s ease,border-color .12s ease;
+  }
+  .chip:hover span{background:#FCFAF3;border-color:var(--ink)}
+  .chip input:checked + span{background:var(--ink);border-color:var(--ink);color:#F6F3E9}
+  .chip input:focus-visible + span{outline:3px solid var(--focus);outline-offset:2px}
+  .chip-n{
+    font-family:var(--mono);font-size:.72rem;
+    color:var(--muted);padding-left:8px;border-left:1px solid var(--rule);
+  }
+  .chip input:checked + span .chip-n{color:#D9D5C7;border-left-color:#585A50}
+  .resultline{
+    display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+    gap:8px 18px;padding:13px 0;border-top:1px solid var(--rule);
+  }
+  #count{font-size:.875rem;font-weight:600}
+  #count .dim{font-weight:400;color:var(--muted)}
+  .legend-line{font-size:.78rem;color:var(--muted)}
+
+  /* Record list */
+  .records{list-style:none;margin:0 0 8px;padding:0;border-top:1px solid var(--rule)}
+  .record{border-bottom:1px solid var(--rule)}
+  .record-btn{
+    display:grid;grid-template-columns:80px minmax(0,1fr);
+    gap:16px;width:100%;padding:18px 12px;
+    background:transparent;border:0;text-align:left;cursor:pointer;
+    transition:background-color .12s ease;
+  }
+  .record-btn:hover{background:var(--surface)}
+  .record-btn:focus-visible{outline-offset:-3px;background:var(--surface)}
+  .thumb{display:flex;align-items:flex-start;justify-content:center}
+  .mount{
+    background:var(--mount);padding:5px;border-radius:1px;line-height:0;
+    box-shadow:0 1px 2px rgba(26,28,26,.22);
+  }
+  .mount svg{display:block;background:#F3EFE3}
+  .record-main{min-width:0}
+  .eyebrow{
+    display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;
+  }
+  .acc{
+    font-family:var(--mono);font-size:.7rem;letter-spacing:.09em;
+    color:var(--muted);
+  }
+  .tag{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:.68rem;letter-spacing:.05em;font-weight:600;
+    padding:2px 7px;border:1px solid currentColor;border-radius:2px;
+    line-height:1.5;
+  }
+  .tag-field{color:var(--field)}
+  .tag-craft{color:var(--craft)}
+  .tag-dup{color:var(--accent)}
+  .record-title{
+    display:block;font-family:var(--serif);font-weight:600;
+    font-size:1.14rem;line-height:1.28;margin-top:6px;
+    overflow-wrap:anywhere;text-wrap:pretty;
+  }
+  .record-sub{
+    display:block;margin-top:5px;font-size:.8rem;color:var(--accent);
+  }
+  .meta{
+    grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;
+    gap:10px 18px;margin-top:14px;
+  }
+  .meta-item{min-width:0}
+  .meta-label{
+    display:block;font-family:var(--mono);font-size:.62rem;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+    margin-bottom:2px;
+  }
+  .meta-value{display:block;font-size:.845rem;line-height:1.35;overflow-wrap:anywhere}
+  .chev{display:none;justify-self:end;color:var(--muted)}
+  .chev svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6}
+  @media (min-width:640px){
+    .record-btn{grid-template-columns:88px minmax(0,1fr);gap:20px;padding:20px 14px}
+    .meta{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 20px}
+  }
+  @media (min-width:1000px){
+    .record-btn{
+      grid-template-columns:90px minmax(0,1fr) 142px 156px 104px 106px 18px;
+      align-items:center;gap:22px;padding:20px 14px;
+    }
+    .record-main{grid-column:2}
+    .meta{display:contents}
+    .chev{display:block}
+    .record-title{font-size:1.2rem}
+  }
+  @media (max-width:400px){
+    .record-btn{grid-template-columns:64px minmax(0,1fr);gap:14px;padding:16px 8px}
+  }
+
+  /* Empty state */
+  .empty{
+    margin:8px 0 4px;padding:34px 24px;text-align:center;
+    background:var(--surface);border:1px dashed var(--rule-strong);
+  }
+  .empty h3{
+    font-family:var(--serif);font-size:1.4rem;font-weight:600;margin:0 0 8px;
+  }
+  .empty p{color:var(--muted);font-size:.92rem;max-width:48ch;margin:0 auto}
+  .empty button{
+    margin-top:18px;min-height:44px;padding:11px 18px;
+    background:var(--ink);color:#F7F4EC;border:1px solid var(--ink);
+    border-radius:2px;font-size:.9rem;font-weight:600;cursor:pointer;
+  }
+  .empty button:hover{background:#000}
+
+  /* Detail */
+  #detail{padding:28px 0 24px}
+  .detail-top{
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+    gap:12px 20px;border-bottom:1px solid var(--rule-strong);padding-bottom:14px;
+  }
+  .back{
+    display:inline-flex;align-items:center;gap:8px;
+    min-height:44px;padding:8px 2px;background:none;border:0;
+    font-size:.9rem;font-weight:600;color:var(--ink);cursor:pointer;
+    text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;
+  }
+  .back:hover{color:var(--accent)}
+  .back svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8}
+  .position{
+    font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);
+  }
+  .detail-head{padding:30px 0 8px;max-width:900px}
+  .detail-head .eyebrow{gap:10px}
+  .detail-head h2{
+    font-family:var(--serif);font-weight:600;
+    font-size:clamp(1.8rem,4.2vw,2.7rem);line-height:1.08;
+    letter-spacing:-.015em;margin:12px 0 0;overflow-wrap:anywhere;
+    text-wrap:balance;
+  }
+  .detail-head h2:focus{outline:none}
+  .detail-grid{
+    display:grid;grid-template-columns:minmax(0,1fr);
+    gap:30px;padding-top:24px;
+  }
+  @media (min-width:900px){
+    .detail-grid{grid-template-columns:minmax(0,0.92fr) minmax(0,1.08fr);gap:56px;padding-top:30px}
+  }
+  .plate-figure{margin:0}
+  .plate-mount{
+    background:var(--mount);padding:12px;border-radius:2px;
+    box-shadow:0 2px 10px rgba(26,28,26,.18);
+  }
+  .plate-svg{
+    width:100%;max-width:480px;margin:0 auto;aspect-ratio:var(--ar);
+    background:
+      radial-gradient(circle,rgba(26,28,26,.10) .8px,transparent .9px) 0 0/14px 14px,
+      #F3EFE3;
+    background-blend-mode:normal;
+    outline:1px solid rgba(255,255,255,.14);outline-offset:-1px;
+    line-height:0;
+  }
+  .plate-svg svg{display:block;width:100%;height:100%}
+  .plate-figure figcaption{
+    margin-top:14px;font-size:.855rem;line-height:1.55;color:#4A4C44;
+    padding-left:12px;border-left:2px solid var(--rule-strong);
+  }
+  .plate-figure figcaption strong{color:var(--ink)}
+  .plate-meta{
+    margin-top:14px;font-family:var(--mono);font-size:.68rem;
+    letter-spacing:.05em;color:var(--muted);text-transform:uppercase;
+  }
+  .detail-body{min-width:0}
+  .dupe{
+    background:#F5E9E2;border:1px solid #C9A797;border-left:3px solid var(--accent);
+    padding:14px 16px;margin-bottom:24px;
+  }
+  .dupe h3{
+    margin:0 0 5px;font-family:var(--mono);font-size:.68rem;
+    letter-spacing:.11em;text-transform:uppercase;color:var(--accent);
+  }
+  .dupe p{font-size:.88rem;line-height:1.55;color:#3E332D}
+  .cat{margin:0;border-top:1px solid var(--rule-strong)}
+  .cat > div{
+    display:grid;grid-template-columns:132px minmax(0,1fr);
+    gap:12px;padding:11px 0;border-bottom:1px solid var(--rule);
+  }
+  .cat dt{
+    font-family:var(--mono);font-size:.65rem;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--muted);padding-top:2px;
+  }
+  .cat dd{margin:0;font-size:.925rem;line-height:1.45;overflow-wrap:anywhere}
+  .dd-note{display:block;font-size:.75rem;color:var(--muted);margin-top:2px}
+  .panel{margin-top:26px;padding:18px 18px 16px;background:var(--surface);border:1px solid var(--rule)}
+  .panel h3{
+    margin:0 0 9px;font-family:var(--mono);font-size:.68rem;
+    letter-spacing:.11em;text-transform:uppercase;color:var(--ink);
+  }
+  .panel p{font-size:.9rem;line-height:1.6}
+  .panel .source{margin-top:9px;font-size:.76rem;color:var(--muted)}
+  .panel ul{margin:0;padding-left:18px}
+  .panel li{font-size:.86rem;line-height:1.55;margin-bottom:6px}
+  .panel li:last-child{margin-bottom:0}
+  .detail-foot{margin-top:34px;border-top:1px solid var(--rule-strong);padding-top:10px}
+  @media (max-width:560px){
+    .cat > div{grid-template-columns:104px minmax(0,1fr);gap:10px}
+    .panel{padding:16px 14px}
+  }
+
+  /* Footer */
+  .foot{
+    margin-top:52px;padding:22px 0 36px;border-top:1px solid var(--rule-strong);
+    display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between;
+    font-size:.74rem;color:var(--muted);line-height:1.6;
+  }
+  .foot p{max-width:58ch}
+  .foot .fmono{font-family:var(--mono);letter-spacing:.06em;text-transform:uppercase;font-size:.66rem}
+  [hidden]{display:none !important}
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;animation:none !important;scroll-behavior:auto !important}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to catalogue</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="topline">
+      <div class="brand">
+        <span class="mark" aria-hidden="true"></span>
+        <span>LSL Archive</span>
+      </div>
+      <p class="stamp">Catalogue demo · 5 records</p>
+    </div>
+    <h1>Lantern Slide Lecture Archive</h1>
+    <p class="lede">Digitised glass teaching slides from two lecture series. Compare the catalogue records, or open one for its plate size, medium and recorded condition.</p>
+    <div class="scope" role="note" aria-label="Scope of this demo">
+      <span class="scope-key">Scope</span>
+      <p>Images here are original schematics, not archival photographs. No original physical plate or full-resolution file is available in this demo, and no rights statement is supplied.</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap" id="browse" aria-labelledby="browse-h">
+    <div class="section-head">
+      <h2 id="browse-h">Catalogue</h2>
+      <p class="order">Listed in catalogue order</p>
+    </div>
+
+    <form class="controls" role="search" aria-label="Filter catalogue" onsubmit="return false">
+      <div class="search">
+        <label for="q">Search titles and series</label>
+        <div class="input-wrap">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5 21 21"></path></svg>
+          <input id="q" name="q" type="search" placeholder="e.g. weir, kiln, Field Surveys" autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+      <fieldset class="filters">
+        <legend>Series</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="series" value="All" checked><span>All series <span class="chip-n" aria-hidden="true">5</span></span></label>
+          <label class="chip"><input type="radio" name="series" value="Field Surveys"><span>Field Surveys <span class="chip-n" aria-hidden="true">3</span></span></label>
+          <label class="chip"><input type="radio" name="series" value="Craft Teaching"><span>Craft Teaching <span class="chip-n" aria-hidden="true">2</span></span></label>
+        </div>
+      </fieldset>
+    </form>
+
+    <div class="resultline">
+      <p id="count" role="status" aria-live="polite">Showing 5 of 5 records</p>
+      <p class="legend-line">Plates are drawn to each record’s catalogue dimensions.</p>
+    </div>
+
+    <ul class="records" id="list" aria-label="Catalogue records"></ul>
+
+    <div class="empty" id="empty" hidden>
+      <h3>No records match</h3>
+      <p id="empty-desc">Nothing in the catalogue matches the current search and series.</p>
+      <button type="button" id="reset">Clear search and series</button>
+    </div>
+  </section>
+
+  <section class="wrap" id="detail" aria-label="Record detail" hidden></section>
+</main>
+
+<footer class="wrap">
+  <div class="foot">
+    <p class="fmono">Lantern Slide Lecture Archive · demonstration catalogue</p>
+    <p>Dates are declared catalogue dates, not confirmed historical attribution. Images are schematic placeholders, not archival photographs.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var RECORDS = [
+    {
+      id: 'LS-02',
+      title: 'Coastal erosion survey, figure 4',
+      series: 'Field Surveys',
+      medium: 'Hand-tinted glass',
+      date: '1924',
+      dated: true,
+      w: 8.3, h: 8.3,
+      condition: 'Emulsion lifting at one corner; not assessed further',
+      kind: 'coast',
+      artNote: 'Coastline section with two surveyed profiles, drawn for this demo from the catalogue record.'
+    },
+    {
+      id: 'LS-07',
+      title: 'Kiln stacking diagram',
+      series: 'Craft Teaching',
+      medium: 'Black-and-white glass',
+      date: '1931',
+      dated: true,
+      w: 8.3, h: 8.3,
+      condition: 'Two edge chips; image area intact',
+      kind: 'kiln',
+      artNote: 'Kiln chamber in section with stacked courses, drawn for this demo from the catalogue record.'
+    },
+    {
+      id: 'LS-11',
+      title: 'River weir cross-section — revised plate',
+      series: 'Field Surveys',
+      medium: 'Black-and-white glass',
+      date: '1924',
+      dated: true,
+      w: 10, h: 8.3,
+      condition: 'Clean; revised plate replaces an earlier figure',
+      kind: 'weir',
+      artNote: 'Weir in cross-section with upstream and downstream water levels, drawn for this demo from the catalogue record.'
+    },
+    {
+      id: 'LS-14',
+      title: 'Dyeworks colour wheel',
+      series: 'Craft Teaching',
+      medium: 'Hand-tinted glass',
+      date: '1936',
+      dated: true,
+      w: 8.3, h: 10,
+      condition: 'Fading across the yellow sector',
+      kind: 'wheel',
+      artNote: 'Twelve-sector wheel layout only; it does not show pigment, hue or the recorded fading.'
+    },
+    {
+      id: 'LS-19',
+      title: 'Coastal erosion survey, figure 4 — duplicate',
+      series: 'Field Surveys',
+      medium: 'Hand-tinted glass',
+      date: 'Undated',
+      dated: false,
+      w: 8.3, h: 8.3,
+      condition: 'Duplicate of LS-02; second copy, not a different photograph',
+      kind: 'coast',
+      duplicateOf: 'LS-02',
+      artNote: 'Same coastline section drawing as LS-02, because this record is a duplicate rather than a separate photograph.'
+    }
+  ];
+
+  var ART = {
+    coast: {
+      w: 200, h: 200,
+      alt: 'Schematic coastline section with two surveyed profiles',
+      body:
+        '<path d="M18 56h164M18 96h164M18 136h164" stroke-dasharray="2 7" opacity=".28"/>' +
+        '<path d="M18 170h164" stroke-dasharray="7 5" opacity=".5"/>' +
+        '<path d="M18 124c26-2 48-10 72-7s20 8 26 21l7 32" stroke="#2B2E27"/>' +
+        '<path d="M136 170c18 1 34 0 46-3" stroke="#2B2E27" opacity=".8"/>' +
+        '<path d="M18 112c28-2 50-10 74-7s22 9 28 20l6 35" stroke="#8B3A1E" stroke-dasharray="5 4"/>' +
+        '<path d="M119 146l10 7M117 156l12 7M118 166l12 6" opacity=".38"/>' +
+        '<path d="M44 118l7 7M51 118l-7 7M88 109l7 7M95 109l-7 7M120 140l7 7M127 140l-7 7" opacity=".85"/>' +
+        '<path d="M150 174c4-4 8-4 12 0s8 4 12 0 8-4 12 0" opacity=".6"/>'
+    },
+    kiln: {
+      w: 200, h: 200,
+      alt: 'Schematic kiln chamber in section with stacked brick courses',
+      body:
+        '<path d="M86 44V24h28v20" stroke="#2B2E27"/>' +
+        '<rect x="42" y="44" width="116" height="126" rx="2" stroke="#2B2E27"/>' +
+        '<g fill="#DFD9C7" stroke="#2B2E27" stroke-width="1.1">' +
+          '<rect x="50" y="54" width="30" height="13"/><rect x="84" y="54" width="30" height="13"/><rect x="118" y="54" width="30" height="13"/>' +
+          '<rect x="58" y="71" width="30" height="13"/><rect x="92" y="71" width="30" height="13"/><rect x="126" y="71" width="24" height="13"/>' +
+          '<rect x="50" y="88" width="30" height="13"/><rect x="84" y="88" width="30" height="13"/><rect x="118" y="88" width="30" height="13"/>' +
+          '<rect x="58" y="105" width="30" height="13"/><rect x="92" y="105" width="30" height="13"/><rect x="126" y="105" width="24" height="13"/>' +
+          '<rect x="50" y="122" width="30" height="13"/><rect x="84" y="122" width="30" height="13"/><rect x="118" y="122" width="30" height="13"/>' +
+        '</g>' +
+        '<path d="M84 170v-18a16 16 0 0 1 32 0v18" fill="#F3EFE3" stroke="#2B2E27"/>' +
+        '<path d="M74 150c0-8 4-12 4-20M130 150c0-8-4-12-4-20" stroke="#8B3A1E" stroke-dasharray="4 4" opacity=".8"/>'
+    },
+    weir: {
+      w: 240, h: 200,
+      alt: 'Schematic weir cross-section with upstream and downstream water levels',
+      body:
+        '<path d="M18 164h204" stroke="#2B2E27"/>' +
+        '<path d="M18 152l100 10" stroke="#2B2E27" opacity=".85"/>' +
+        '<path d="M118 162V96h30v66" fill="#E2DCC8" stroke="#2B2E27"/>' +
+        '<path d="M122 162l30-28M126 162l30-28M132 162l30-28M140 162l28-26" opacity=".3"/>' +
+        '<path d="M18 96h100" stroke="#26505B" stroke-width="1.5"/>' +
+        '<path d="M148 126h74" stroke="#26505B" stroke-width="1.5"/>' +
+        '<path d="M118 97c11 8 19 17 29 29" stroke="#26505B" stroke-dasharray="4 4"/>' +
+        '<path d="M204 96v30" stroke="#2B2E27" stroke-dasharray="2 5" opacity=".55"/>' +
+        '<path d="M200 120l4 6 4-6" stroke="#2B2E27" fill="none"/>' +
+        '<path d="M26 156c4-4 8-4 12 0s8 4 12 0M170 160c4-4 8-4 12 0s8 4 12 0" opacity=".55"/>'
+    },
+    wheel: {
+      w: 200, h: 240,
+      alt: 'Schematic twelve-sector colour wheel layout',
+      body:
+        '<g transform="translate(100 120)">' +
+        '<circle r="80" stroke="#2B2E27" opacity=".55"/>' +
+        '<circle r="70" stroke="#2B2E27"/>' +
+        '<circle r="22" stroke="#2B2E27"/>' +
+        '<g stroke="#2B2E27">' +
+          '<path d="M0-70V-22M0 22v48M-70 0h48M22 0h48"/>' +
+          '<path d="M49.5-49.5 15.6-15.6M15.6 15.6 49.5 49.5M-49.5 49.5-15.6 15.6M-49.5-49.5-15.6-15.6"/>' +
+          '<path d="M60.6-35 19.1-11M35 60.6 11 19.1M-60.6 35-19.1 11M-35-60.6-11-19.1"/>' +
+        '</g>' +
+        '<g fill="#8B3A1E">' +
+          '<circle cx="0" cy="-61" r="2.4"/><circle cx="30.5" cy="-52.8" r="2.4"/>' +
+          '<circle cx="52.8" cy="-30.5" r="2.4"/><circle cx="61" cy="0" r="2.4"/>' +
+          '<circle cx="52.8" cy="30.5" r="2.4"/><circle cx="30.5" cy="52.8" r="2.4"/>' +
+          '<circle cx="0" cy="61" r="2.4"/><circle cx="-30.5" cy="52.8" r="2.4"/>' +
+          '<circle cx="-52.8" cy="30.5" r="2.4"/><circle cx="-61" cy="0" r="2.4"/>' +
+          '<circle cx="-52.8" cy="-30.5" r="2.4"/><circle cx="-30.5" cy="-52.8" r="2.4"/>' +
+        '</g>' +
+        '<path d="M0-80l-4 8h8z" fill="#8B3A1E"/>' +
+        '</g>' +
+        '<path d="M60 206h80M78 200v12M122 200v12" stroke="#2B2E27" opacity=".4"/>'
+    }
+  };
+
+  var listEl = document.getElementById('list');
+  var countEl = document.getElementById('count');
+  var emptyEl = document.getElementById('empty');
+  var emptyDesc = document.getElementById('empty-desc');
+  var detailEl = document.getElementById('detail');
+  var browseEl = document.getElementById('browse');
+  var qEl = document.getElementById('q');
+  var resetEl = document.getElementById('reset');
+
+  var state = {
+    query: '',
+    series: 'All',
+    results: [],
+    trigger: null,
+    savedScroll: 0,
+    open: false
+  };
+
+  function esc(value) {
+    return String(value).replace(/[&<>"']/g, function (ch) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
+    });
+  }
+
+  function svgMarkup(record, decorative) {
+    var art = ART[record.kind];
+    var a11y = decorative
+      ? 'aria-hidden="true" focusable="false"'
+      : 'role="img" aria-label="' + esc(art.alt) + '"';
+    return '<svg viewBox="0 0 ' + art.w + ' ' + art.h + '" ' + a11y +
+      ' stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none">' +
+      art.body + '</svg>';
+  }
+
+  function seriesClass(series) {
+    if (series === 'Field Surveys') return 'tag-field';
+    if (series === 'Craft Teaching') return 'tag-craft';
+    return '';
+  }
+
+  function tokens(query) {
+    return query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  }
+
+  function computeResults() {
+    var terms = tokens(state.query);
+    return RECORDS.filter(function (r) {
+      if (state.series !== 'All' && r.series !== state.series) return false;
+      var hay = (r.title + ' ' + r.series).toLowerCase();
+      return terms.every(function (t) { return hay.indexOf(t) !== -1; });
+    });
+  }
+
+  function plateSize(r) {
+    return r.w + ' × ' + r.h + ' cm';
+  }
+
+  function thumbDimensions(r) {
+    var ratio = r.w / r.h;
+    var long = 80;
+    if (ratio >= 1) {
+      return 'width:' + Math.round(long) + 'px;height:' + Math.round(long / ratio) + 'px';
+    }
+    return 'width:' + Math.round(long * ratio) + 'px;height:' + long + 'px';
+  }
+
+  function renderList() {
+    state.results = computeResults();
+    var results = state.results;
+
+    listEl.innerHTML = results.map(function (r) {
+      var label = 'Open record ' + r.id + ': ' + r.title + '. ' + r.series +
+        ' series, ' + r.date + ', ' + r.medium + ', plate ' + plateSize(r) + '.';
+      if (r.duplicateOf) label += ' Duplicate of ' + r.duplicateOf + '.';
+      return '<li class="record">' +
+        '<button type="button" class="record-btn" data-open="' + r.id + '" aria-label="' + esc(label) + '">' +
+          '<span class="thumb" aria-hidden="true"><span class="mount"><span style="display:block;' + thumbDimensions(r) + '">' +
+            svgMarkup(r, true) +
+          '</span></span></span>' +
+          '<span class="record-main">' +
+            '<span class="eyebrow"><span class="acc">' + r.id + '</span>' +
+              '<span class="tag ' + seriesClass(r.series) + '">' + r.series + '</span>' +
+              (r.duplicateOf ? '<span class="tag tag-dup">Duplicate</span>' : '') +
+            '</span>' +
+            '<span class="record-title">' + esc(r.title) + '</span>' +
+            (r.duplicateOf ? '<span class="record-sub">Second copy of ' + r.duplicateOf + ' — not a separate photograph</span>' : '') +
+          '</span>' +
+          '<span class="meta">' +
+            '<span class="meta-item"><span class="meta-label">Series</span><span class="meta-value">' + r.series + '</span></span>' +
+            '<span class="meta-item"><span class="meta-label">Medium</span><span class="meta-value">' + r.medium + '</span></span>' +
+            '<span class="meta-item"><span class="meta-label">Catalogue date</span><span class="meta-value">' + r.date + '</span></span>' +
+            '<span class="meta-item"><span class="meta-label">Plate size</span><span class="meta-value">' + plateSize(r) + '</span></span>' +
+          '</span>' +
+          '<span class="chev" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M7 4l6 6-6 6"/></svg></span>' +
+        '</button>' +
+      '</li>';
+    }).join('');
+
+    var n = results.length;
+    countEl.innerHTML = n === 0
+      ? 'No records match'
+      : 'Showing ' + n + ' of ' + RECORDS.length + ' records' +
+        (n !== RECORDS.length ? ' <span class="dim">— ' + (RECORDS.length - n) + ' hidden by search or series</span>' : '');
+
+    var isEmpty = n === 0;
+    listEl.hidden = isEmpty;
+    emptyEl.hidden = !isEmpty;
+    if (isEmpty) {
+      var terms = state.query.trim();
+      var parts = [];
+      if (terms) parts.push('“' + terms + '”');
+      if (state.series !== 'All') parts.push('in ' + state.series);
+      emptyDesc.textContent = parts.length
+        ? 'Nothing in the catalogue matches ' + parts.join(' ') + '. Try a shorter term or clear the series filter.'
+        : 'Nothing in the catalogue matches the current search and series.';
+    }
+  }
+
+  function detailTemplate(r) {
+    var idx = state.results.findIndex(function (x) { return x.id === r.id; });
+    var isDupe = Boolean(r.duplicateOf);
+    var dateNote = r.dated ? 'Declared catalogue date' : 'No catalogue date recorded';
+    return '' +
+      '<div class="detail-top">' +
+        '<button type="button" class="back" data-back>' +
+          '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M11 4L5 10l6 6M5 10h11"/></svg>' +
+          'Back to results' +
+        '</button>' +
+        '<p class="position">Record ' + (idx + 1) + ' of ' + state.results.length + ' in current results</p>' +
+      '</div>' +
+      '<article aria-labelledby="record-title">' +
+        '<header class="detail-head">' +
+          '<p class="eyebrow"><span class="acc">' + r.id + '</span>' +
+            '<span class="tag ' + seriesClass(r.series) + '">' + r.series + '</span>' +
+            (isDupe ? '<span class="tag tag-dup">Duplicate record</span>' : '') +
+          '</p>' +
+          '<h2 id="record-title" tabindex="-1">' + esc(r.title) + '</h2>' +
+        '</header>' +
+        '<div class="detail-grid">' +
+          '<div class="plate-col">' +
+            '<figure class="plate-figure">' +
+              '<div class="plate-mount"><div class="plate-svg" style="--ar:' + (r.w / r.h) + '">' +
+                svgMarkup(r, false) +
+              '</div></div>' +
+              '<figcaption><strong>Schematic placeholder — not the archival photograph.</strong> ' +
+                esc(r.artNote) + ' It is not a measured reproduction of the plate and does not show the recorded condition.</figcaption>' +
+            '</figure>' +
+            '<p class="plate-meta">Plate ' + plateSize(r) + ' <span>(catalogue)</span> · Digitised from a glass lantern slide</p>' +
+          '</div>' +
+          '<div class="detail-body">' +
+            (isDupe
+              ? '<aside class="dupe" aria-labelledby="dupe-h"><h3 id="dupe-h">Duplicate of ' + r.duplicateOf + '</h3>' +
+                '<p>This is the second copy of the same photograph. It is not a different photograph and not a new discovery; ' +
+                'its primary record is ' + r.duplicateOf + '. It is listed here with its own record number and an undated entry.</p></aside>'
+              : '') +
+            '<dl class="cat">' +
+              '<div><dt>Record</dt><dd>' + r.id + '</dd></div>' +
+              '<div><dt>Series</dt><dd>' + r.series + '</dd></div>' +
+              '<div><dt>Medium</dt><dd>' + r.medium + '</dd></div>' +
+              '<div><dt>Catalogue date</dt><dd>' + r.date +
+                '<span class="dd-note">' + dateNote + '</span></dd></div>' +
+              '<div><dt>Plate size</dt><dd>' + plateSize(r) + '<span class="dd-note">Catalogue dimensions of the glass plate</span></dd></div>' +
+              '<div><dt>Source</dt><dd>Digitised glass lantern slide<span class="dd-note">No original physical plate is available to the reader</span></dd></div>' +
+            '</dl>' +
+            '<section class="panel condition" aria-labelledby="cond-h">' +
+              '<h3 id="cond-h">Condition note</h3>' +
+              '<p>' + esc(r.condition) + '</p>' +
+              '<p class="source">Transcribed from the catalogue record. No further condition assessment is presented in this demo.</p>' +
+            '</section>' +
+            '<section class="panel limits" aria-labelledby="limits-h">' +
+              '<h3 id="limits-h">What this record does not establish</h3>' +
+              '<ul>' +
+                '<li>The image above is a schematic drawn for this demo, not the archival photograph.</li>' +
+                '<li>No original physical plate is available to the reader.</li>' +
+                '<li>No full-resolution file is distributed in this demo.</li>' +
+                '<li>No rights statement is supplied in this demo.</li>' +
+              '</ul>' +
+            '</section>' +
+          '</div>' +
+        '</div>' +
+        '<div class="detail-foot">' +
+          '<button type="button" class="back" data-back>' +
+            '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M11 4L5 10l6 6M5 10h11"/></svg>' +
+            'Back to results' +
+          '</button>' +
+        '</div>' +
+      '</article>';
+  }
+
+  function openRecord(id, trigger) {
+    var record = RECORDS.filter(function (r) { return r.id === id; })[0];
+    if (!record) return;
+    state.open = true;
+    state.savedScroll = window.scrollY;
+    state.trigger = trigger || null;
+    detailEl.innerHTML = detailTemplate(record);
+    browseEl.hidden = true;
+    detailEl.hidden = false;
+    window.scrollTo(0, 0);
+    var h2 = document.getElementById('record-title');
+    if (h2) h2.focus({ preventScroll: true });
+  }
+
+  function closeDetail() {
+    if (!state.open) return;
+    state.open = false;
+    detailEl.hidden = true;
+    detailEl.innerHTML = '';
+    browseEl.hidden = false;
+    var backTo = state.trigger;
+    if (backTo && document.contains(backTo)) {
+      backTo.focus({ preventScroll: true });
+    } else {
+      var first = listEl.querySelector('.record-btn');
+      if (first) first.focus({ preventScroll: true });
+    }
+    window.scrollTo(0, state.savedScroll);
+  }
+
+  function resetFilters() {
+    state.query = '';
+    state.series = 'All';
+    qEl.value = '';
+    var radios = document.querySelectorAll('input[name="series"]');
+    for (var i = 0; i < radios.length; i++) radios[i].checked = radios[i].value === 'All';
+    renderList();
+    qEl.focus();
+  }
+
+  qEl.addEventListener('input', function () {
+    state.query = qEl.value;
+    renderList();
+  });
+
+  qEl.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && qEl.value) {
+      state.query = '';
+      qEl.value = '';
+      renderList();
+    }
+  });
+
+  var radios = document.querySelectorAll('input[name="series"]');
+  for (var i = 0; i < radios.length; i++) {
+    radios[i].addEventListener('change', function () {
+      if (!this.checked) return;
+      state.series = this.value;
+      renderList();
+    });
+  }
+
+  listEl.addEventListener('click', function (e) {
+    var btn = e.target.closest('.record-btn');
+    if (!btn) return;
+    openRecord(btn.getAttribute('data-open'), btn);
+  });
+
+  detailEl.addEventListener('click', function (e) {
+    if (e.target.closest('[data-back]')) closeDetail();
+  });
+
+  resetEl.addEventListener('click', resetFilters);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && state.open) {
+      e.preventDefault();
+      closeDetail();
+    }
+  });
+
+  renderList();
+})();
+</script>
+</body>
+</html>

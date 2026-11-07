@@ -1,0 +1,140 @@
+{
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "nodes": [
+        {
+          "target": [
+            ".brand__mark"
+          ],
+          "html": "<span class=\"brand__mark\" aria-hidden=\"true\">HC</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".brand__name"
+          ],
+          "html": "<span class=\"brand__name\">Harbor Cold Chain\n          <span class=\"brand__sub\">Cold-storage co-operative · consignment release</span>\n        </span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".brand__sub"
+          ],
+          "html": "<span class=\"brand__sub\">Cold-storage co-operative · consignment release</span>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".sim-flag"
+          ],
+          "html": "<p class=\"sim-flag\"><span class=\"sim-flag__dot\" aria-hidden=\"true\"></span>Simulation · no real shipment is affected</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "li[data-step=\"1\"]"
+          ],
+          "html": "<li data-step=\"1\" data-done=\"true\"><span class=\"steps__num\" aria-hidden=\"true\">1</span>Evidence</li>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "li[data-step=\"1\"] > .steps__num[aria-hidden=\"true\"]"
+          ],
+          "html": "<span class=\"steps__num\" aria-hidden=\"true\">1</span>",
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "target": [
+            "li[data-step=\"2\"]"
+          ],
+          "html": "<li data-step=\"2\" aria-current=\"step\"><span class=\"steps__num\" aria-hidden=\"true\">2</span>Review</li>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "li[data-step=\"3\"]"
+          ],
+          "html": "<li data-step=\"3\" data-done=\"false\"><span class=\"steps__num\" aria-hidden=\"true\">3</span>Recorded</li>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "li[data-step=\"3\"] > .steps__num[aria-hidden=\"true\"]"
+          ],
+          "html": "<span class=\"steps__num\" aria-hidden=\"true\">3</span>",
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "target": [
+            "#panel-review > .panel-head > .kicker"
+          ],
+          "html": "<p class=\"kicker\">Step 2 · Review</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#h-review"
+          ],
+          "html": "<h1 id=\"h-review\" tabindex=\"-1\">Review the decision before recording</h1>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#panel-review > .panel-head > .lede"
+          ],
+          "html": "<p class=\"lede\">These are the facts that will be recorded. Edit keeps your consignment, decision and note exactly as they are.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".rv-note:nth-child(2) > h2"
+          ],
+          "html": "<h2>Excursion summary</h2>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#rv-excursion"
+          ],
+          "html": "<p id=\"rv-excursion\" class=\"is-warn\">3 of 4 readings above the declared limit of at or below 0.0 °C. Highest: Reading 1 at 0.3 °C, 0.3 °C above the limit.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".rv-note:nth-child(3) > h2"
+          ],
+          "html": "<h2>Note</h2>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#rv-note"
+          ],
+          "html": "<p id=\"rv-note\">Two readings above 0.0 °C, holding for inspection.Keyboard path check: holding at dock B.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#panel-review > .card > .sim-note"
+          ],
+          "html": "<p class=\"sim-note\">Simulation only. Submitting records a placeholder entry here; no real shipment, release or food-safety determination occurs.</p>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#btn-edit"
+          ],
+          "html": "<button type=\"button\" class=\"btn btn--ghost\" id=\"btn-edit\">Edit decision</button>",
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        }
+      ]
+    }
+  ],
+  "passes": 38,
+  "inapplicable": 52
+}

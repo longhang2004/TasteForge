@@ -1,0 +1,688 @@
+{
+  "scope": "Automated browser/axe + natural viewport; human tests deferred",
+  "checks": 36,
+  "failures": [],
+  "traces": [
+    {
+      "width": 320,
+      "checks": [
+        "all five declared records are shown with their facts",
+        "the matching count is shown",
+        "Series filter limits results to Field Surveys",
+        "search keeps only the matching record within the filter",
+        "an empty result set offers a clear reset",
+        "reset restores the result set",
+        "search for Coastal keeps the Field Surveys copies",
+        "detail shows LS-19 metadata, condition and the schematic disclaimer",
+        "LS-19 is not presented as a separate photograph or new discovery",
+        "returning retains query, filter, order and focus",
+        "the long title is readable at this width",
+        "no horizontal overflow at 320px"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 2682.640625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(1) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "filter-field-surveys",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 369.828125,
+              "width": 1,
+              "height": 1,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 539
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(2) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "search-weir",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 205.515625,
+              "width": 288,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 539
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(2) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "empty",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 205.515625,
+              "width": 288,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 539
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(2) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "detail-duplicate",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "record-title",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 805.515625,
+              "width": 288,
+              "height": 93.28125,
+              "intersectsViewport": false,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "return",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 1011.484375,
+              "width": 288,
+              "height": 310.203125,
+              "intersectsViewport": false,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 398
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(1) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "checks": [
+        "all five declared records are shown with their facts",
+        "the matching count is shown",
+        "Series filter limits results to Field Surveys",
+        "search keeps only the matching record within the filter",
+        "an empty result set offers a clear reset",
+        "reset restores the result set",
+        "search for Coastal keeps the Field Surveys copies",
+        "detail shows LS-19 metadata, condition and the schematic disclaimer",
+        "LS-19 is not presented as a separate photograph or new discovery",
+        "returning retains query, filter, order and focus",
+        "the long title is readable at this width",
+        "no horizontal overflow at 390px"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 2345.296875,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(1) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "filter-field-surveys",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 164.71875,
+              "y": 719.546875,
+              "width": 1,
+              "height": 1,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(2) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "search-weir",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 627.234375,
+              "width": 358,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(2) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "empty",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 627.234375,
+              "width": 358,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(2) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "detail-duplicate",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "record-title",
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 667.546875,
+              "width": 358,
+              "height": 93.28125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "return",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 16,
+              "y": 585.484375,
+              "width": 358,
+              "height": 258.5625,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 616
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(1) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "checks": [
+        "all five declared records are shown with their facts",
+        "the matching count is shown",
+        "Series filter limits results to Field Surveys",
+        "search keeps only the matching record within the filter",
+        "an empty result set offers a clear reset",
+        "reset restores the result set",
+        "search for Coastal keeps the Field Surveys copies",
+        "detail shows LS-19 metadata, condition and the schematic disclaimer",
+        "LS-19 is not presented as a separate photograph or new discovery",
+        "returning retains query, filter, order and focus",
+        "the long title is readable at this width",
+        "no horizontal overflow at 1440px"
+      ],
+      "pageErrors": [],
+      "states": [
+        {
+          "label": "entry",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BODY",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 1501.59375,
+              "intersectsViewport": true,
+              "fullyInViewport": false
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(1) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "filter-field-surveys",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 920.03125,
+              "y": 564.71875,
+              "width": 1,
+              "height": 1,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(2) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "search-weir",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 164,
+              "y": 582.71875,
+              "width": 575.3125,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(2) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "empty",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "INPUT",
+            "id": "q",
+            "testId": null,
+            "rect": {
+              "x": 164,
+              "y": 582.71875,
+              "width": 575.3125,
+              "height": 46,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(2) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "detail-duplicate",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "H2",
+            "id": "record-title",
+            "testId": null,
+            "rect": {
+              "x": 164,
+              "y": 576.71875,
+              "width": 900,
+              "height": 93.3125,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "label": "return",
+          "geometry": {
+            "status": "pass",
+            "horizontalOverflow": 0,
+            "scope": "Document width only; no accessibility or task-quality certification"
+          },
+          "focus": {
+            "tag": "BUTTON",
+            "id": null,
+            "testId": null,
+            "rect": {
+              "x": 164,
+              "y": 826.71875,
+              "width": 1112,
+              "height": 130,
+              "intersectsViewport": true,
+              "fullyInViewport": true
+            }
+          },
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                [
+                  ".chip:nth-child(1) > span > .chip-n[aria-hidden=\"true\"]"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
