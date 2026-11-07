@@ -31,11 +31,17 @@ for cell in sys.argv[1:]:
     index = base / "index.html"
     if index.exists():
         actual = hashlib.sha256(index.read_bytes()).hexdigest()
+        # Records use different schemas; a missing declared hash is reported as
+        # absent rather than as a mismatch, because the bytes are what matter and
+        # their identity is checked against the last kept version below.
         declared = record.get("submitted_sha256")
-        status = "ok" if actual == declared else "MISMATCH"
-        if actual != declared:
-            codes = 1
-        print(f"  index.html: {status} {actual[:16]}")
+        if declared is None:
+            print(f"  index.html: no declared hash in record {actual[:16]}")
+        else:
+            status = "ok" if actual == declared else "MISMATCH"
+            if actual != declared:
+                codes = 1
+            print(f"  index.html: {status} {actual[:16]}")
         # Byte identity with the last kept version is what the protocol requires.
         last = record["versions"][-1]["file"]
         same = (base / last).read_bytes() == index.read_bytes()
