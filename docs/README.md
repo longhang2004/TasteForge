@@ -11,6 +11,7 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 - [Reference-led UX planning](reference-led-design.md): research real product/pattern sources, compare task structures before visual treatments, and understand what the current CLI does and does not automate.
 - [Offline reference catalog](reference-catalog.md): 642 attributed records, seeded external style inspiration, task-tagged template observations, baseline review gates, and reproducible ingestion.
 - [Composition field guide](../examples/composition-library/README.md): twelve original relationship cards, source observations, schematic previews and conditional inspiration selection.
+- [Composition continuation and integration review](composition-continuation-review.md): final matched pilot, review decisions, technical checks and remaining scope.
 - [Typography expansion](typography-expansion.md): six additional font families/pairs, pinned OFL files, sampled glyph/loading checks and known language limits.
 - [Effect and layout research](effects-research.md): inspected Colorion, Codrops, layout and native-animation sources; purpose-based skill guidance and original runnable studies.
 - [Surface purpose and targeted refinement](impeccable-informed-workflow.md): Impeccable-informed concepts, scoped edits, intentional exceptions, an annotated evidence gallery and a bounded independent forward-test.

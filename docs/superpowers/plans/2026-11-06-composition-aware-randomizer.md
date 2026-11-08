@@ -29,17 +29,17 @@ Files: `packages/knowledge/src/data/compositions.json`, `packages/knowledge/src/
 
 Dataset interface: `{schemaVersion:'1.0',version,reviewedAt,sources,entries}`. Sources carry `id,title,url,pinnedUrl,revision,path,inputSha256,license,licenseUrl,observed,notObserved,rights`; no copied source text. Entries carry `id,title,group` (work/commerce/reading/exploration), `family,tasks,tags,density,complexity,suitableFor,avoid,anatomy,narrow,states,artDirection,tradeoff,sourceIds`. Lists of fit/avoid statements are curator advice, not automatic factual prerequisites. Maintain references for at least three independent source families beyond the existing Bootstrap observations. Use only genuinely inspected sources.
 
-- [ ] Curate approximately twelve distinct information relationships; preserve positive/negative fit and observed versus proposed behavior.
-- [ ] Build schematic anatomy previews, filters and source/terms details, linking existing runnable studies. Show typography specimens from Task 2 without blocking if delivery is unavailable.
-- [ ] Validate source/hash bindings and gallery accessibility, widths, filters/empty/reset and keyboard paths; capture evidence.
+- [x] Curate approximately twelve distinct information relationships; preserve positive/negative fit and observed versus proposed behavior.
+- [x] Build schematic anatomy previews, filters and source/terms details, linking existing runnable studies. Show typography specimens from Task 2 without blocking if delivery is unavailable.
+- [x] Validate source/hash bindings and gallery accessibility, widths, filters/empty/reset and keyboard paths; capture evidence.
 
 ### 2. Review typography gaps
 
 Files: `packages/knowledge/src/data/knowledge.json`, `examples/composition-library/fonts/`, typography evidence/notes. Keep the existing strict font-pair schema. Add only a small reviewed set (target six new families/pairs if justified), associate them with appropriate existing styles, and bump knowledge data version. Do not change the package/release version.
 
-- [ ] Inspect pinned Google Fonts metadata, exact font-file hashes, language coverage and family licenses; retain required notices with gallery-only files.
-- [ ] Exercise sample Vietnamese glyphs and actual browser loading/fallback; distinguish metadata/cmap/render checks from full script conformance.
-- [ ] Verify added pairs are reachable, system-only/fixed-font constraints remain strict and packed generation uses metadata without fetching fonts.
+- [x] Inspect pinned Google Fonts metadata, exact font-file hashes, language coverage and family licenses; retain required notices with gallery-only files.
+- [x] Exercise sample Vietnamese glyphs and actual browser loading/fallback; distinguish metadata/cmap/render checks from full script conformance.
+- [x] Verify added pairs are reachable, system-only/fixed-font constraints remain strict and packed generation uses metadata without fetching fonts.
 
 ### 3. Implement explainable composition-first inspiration and skill routing
 
@@ -47,21 +47,25 @@ Files: knowledge composition schema/export; core `references.ts`; focused tests;
 
 `inspire` keeps existing fields and adds `selectionVersion`, `compositionLibraryVersion`, per-pack `composition` (entry or null), visual family and selection explanations/limits. Optional injected composition data enables real empty/reorder/filter tests. Compositions are selected by task, density and complexity; relevance uses brief/query metadata. Avoid repeating a composition while eligible alternatives remain. Style sampling keeps source-size balancing and adds a soft repeat-family penalty; labels/weights are disclosed. Legacy `template` remains separately attributed and may be null.
 
-- [ ] Write/run failing behavior tests for additive composition selection, null pools, task/constraint preservation, deterministic reordered data and diversity behavior.
-- [ ] Implement the smallest schema/selector changes; run focused and full checks.
-- [ ] Update on-demand references to explain content→relationship→treatment→type roles, preserving proportional workflows and one creator. No mandatory browsing/plan/prototype for Fast.
+- [x] Write/run failing behavior tests for additive composition selection, null pools, task/constraint preservation, deterministic reordered data and diversity behavior.
+- [x] Implement the smallest schema/selector changes; run focused and full checks.
+- [x] Update on-demand references to explain content→relationship→treatment→type roles, preserving proportional workflows and one creator. No mandatory browsing/plan/prototype for Fast.
 
 ### 4. Freeze and run two-brief/four-output pilot, review and deliver
 
 Files: new `evals/runs/2026-11-06-composition-randomizer-pilot/`, docs, Linear evidence links.
 
-- [ ] Freeze exact beta.2 baseline and candidate manifests, two new tasks/fixtures/assets, provider/tool budget and matched acceptance checks before creators. Trial must actually expose the compared reference resources; record retrieval usage.
-- [ ] Retain four fresh first outputs and any one-pass corrections, browser evidence and observable creator/check/correction resources.
-- [ ] Obtain independent randomized-label task/specificity judgments, freeze before unblinding and retain disagreements/limits.
-- [ ] Run repository/package/skill/gallery checks and final independent branch review. Fix demonstrated blockers, report remaining limits, update LON-99/LON-109 without closing broader work, commit/push a reviewable branch/PR. No merge/release.
+- [x] Freeze exact beta.2 baseline and candidate manifests, two new tasks/fixtures/assets, provider/tool budget and matched acceptance checks before creators. Trial must actually expose the compared reference resources; record retrieval usage.
+- [x] Retain four fresh first outputs and any one-pass corrections, browser evidence and observable creator/check/correction resources.
+- [x] Obtain independent randomized-label task/specificity judgments, freeze before unblinding and retain disagreements/limits.
+- [x] Run repository/package/skill/gallery checks and final independent branch review. Fix demonstrated blockers, report remaining limits, update LON-99/LON-109 without closing broader work, commit/push a reviewable branch/PR. No merge/release.
 
 ## Progress
 
 - Baseline: fetched origin/main `98e1ebb18c9eb7f14887b095c86c66e3009b130f`; clean original checkout on `codex/opencode-vilao-ui-smoke`. Created independent `codex/composition-aware-randomizer` from main. No AGENTS.md found; user-supplied terminal instructions apply.
 - Ruling: use the clean current checkout and a dedicated branch; no extra worktree or global settings are needed.
 - Baseline verification: pending.
+
+## Continuation — 8 November 2026
+
+Resumed checkpoint378a53c. Four inherited corrections match handoff snapshots; zero frozen-input drift, no new UI generation/source edits. Matched-v3:306 assertions/96 natural states, zero failures,84 axe incomplete records retained. Two independent AGY/Gemini reviews were hash-frozen before unblinding; report/gallery/resources preserve ties, disagreement and unknown costs. Full57 tests/check and offline packed smoke, gallery25 checks and offline provenance/font/skill checks passed. Raw evidence is excluded from formatting with bytes preserved. README/CLI/knowledge-version migration wording updated. Final public-source review found no demonstrated blocker; separate local helper review found packet binding, fixed with a failing-then-passing negative control. See docs/composition-continuation-review.md for PR2/3 decisions, review limits and deferred broader scope. Delivery is a reviewable branch/PR; no merge/release.

@@ -1,0 +1,40 @@
+
+> tasteforge-workspace@0.2.0-beta.2 check /tmp/tasteforge-lon99-20261108
+> pnpm build && pnpm typecheck && pnpm lint && pnpm format:check && vitest run
+
+
+> tasteforge-workspace@0.2.0-beta.2 build /tmp/tasteforge-lon99-20261108
+> pnpm -r build
+
+Scope: 3 of 4 workspace projects
+packages/knowledge build$ tsc -p tsconfig.json
+packages/knowledge build: Done
+packages/core build$ tsc -p tsconfig.json
+packages/core build: Done
+packages/cli build$ tsc -p tsconfig.json && node scripts/prepare.mjs
+packages/cli build: Done
+
+> tasteforge-workspace@0.2.0-beta.2 typecheck /tmp/tasteforge-lon99-20261108
+> pnpm -r typecheck && tsc -p tests/tsconfig.json
+
+Scope: 3 of 4 workspace projects
+packages/knowledge typecheck$ tsc -p tsconfig.json --noEmit
+packages/knowledge typecheck: Done
+packages/core typecheck$ tsc -p tsconfig.json --noEmit
+packages/core typecheck: Done
+packages/cli typecheck$ tsc -p tsconfig.json --noEmit
+packages/cli typecheck: Done
+
+> tasteforge-workspace@0.2.0-beta.2 lint /tmp/tasteforge-lon99-20261108
+> eslint . --max-warnings 0
+
+
+> tasteforge-workspace@0.2.0-beta.2 format:check /tmp/tasteforge-lon99-20261108
+> prettier --check .
+
+Checking formatting...
+[warn] examples/.tasteforge/design-dna.json
+[warn] examples/.tasteforge/tokens.css
+[warn] Code style issues found in 2 files. Run Prettier with --write to fix.
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

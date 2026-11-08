@@ -1,0 +1,2208 @@
+{
+  "browser": "156.0.8078.4",
+  "summary": {
+    "passed": 87,
+    "failed": 0,
+    "harnessErrors": 0,
+    "pageErrors": 0,
+    "remoteRequests": 0
+  },
+  "checks": [
+    {
+      "width": 1440,
+      "name": "initial: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 0,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "initial: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 1440,
+      "name": "empty: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 0,
+        "active": {
+          "tag": "INPUT",
+          "name": ""
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "queue empty and restore",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "supplied proof and facts",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "paper switch clamps and announces",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid copies \"\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid copies \"0\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid copies \"-1\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid copies \"1.5\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid copies \"61\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 0,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "invalid: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 1440,
+      "name": "invalid value remains invalid through paper change",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "review shows chosen fact and sheet consequence",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "review: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 165,
+        "active": {
+          "tag": "H2",
+          "name": "Review this proof"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "review: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 1440,
+      "name": "edit retains copies/paper",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "first failure is announced and retry offered",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "failure: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 165,
+        "active": {
+          "tag": "BUTTON",
+          "name": "Retry approval"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "failure: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 1440,
+      "name": "retry succeeds with retained proof",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "success: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 165,
+        "active": {
+          "tag": "H2",
+          "name": "Proof approved"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "success: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 1440,
+      "name": "edit clears stale success",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "return retains queue filters",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "retained-return: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 0,
+        "active": {
+          "tag": "BUTTON",
+          "name": "Open P-104"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "keyboard approval and failure/retry",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "keyboard-outcome: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 165,
+        "active": {
+          "tag": "H2",
+          "name": "Proof approved"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "initial: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 0,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "initial: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 390,
+      "name": "empty: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 0,
+        "active": {
+          "tag": "INPUT",
+          "name": ""
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "queue empty and restore",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "supplied proof and facts",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "paper switch clamps and announces",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid copies \"\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid copies \"0\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid copies \"-1\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid copies \"1.5\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid copies \"61\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 489,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "invalid: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 390,
+      "name": "invalid value remains invalid through paper change",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "review shows chosen fact and sheet consequence",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "review: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 522,
+        "active": {
+          "tag": "H2",
+          "name": "Review this proof"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "review: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 390,
+      "name": "edit retains copies/paper",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "first failure is announced and retry offered",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "failure: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 541,
+        "active": {
+          "tag": "BUTTON",
+          "name": "Retry approval"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "failure: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 390,
+      "name": "retry succeeds with retained proof",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "success: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 541,
+        "active": {
+          "tag": "H2",
+          "name": "Proof approved"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "success: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 390,
+      "name": "edit clears stale success",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "return retains queue filters",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "retained-return: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 0,
+        "active": {
+          "tag": "BUTTON",
+          "name": "Open P-104"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "keyboard approval and failure/retry",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "keyboard-outcome: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 541,
+        "active": {
+          "tag": "H2",
+          "name": "Proof approved"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "initial: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 0,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "initial: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 320,
+      "name": "empty: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 0,
+        "active": {
+          "tag": "INPUT",
+          "name": ""
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "queue empty and restore",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "supplied proof and facts",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "paper switch clamps and announces",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid copies \"\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid copies \"0\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid copies \"-1\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid copies \"1.5\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid copies \"61\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 145,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "invalid: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 320,
+      "name": "invalid value remains invalid through paper change",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "review shows chosen fact and sheet consequence",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "review: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 604,
+        "active": {
+          "tag": "H2",
+          "name": "Review this proof"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "review: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 320,
+      "name": "edit retains copies/paper",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "first failure is announced and retry offered",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "failure: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 604,
+        "active": {
+          "tag": "BUTTON",
+          "name": "Retry approval"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "failure: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 320,
+      "name": "retry succeeds with retained proof",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "success: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 604,
+        "active": {
+          "tag": "H2",
+          "name": "Proof approved"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "success: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 320,
+      "name": "edit clears stale success",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "return retains queue filters",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "retained-return: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 0,
+        "active": {
+          "tag": "BUTTON",
+          "name": "Open P-104"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "keyboard approval and failure/retry",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "keyboard-outcome: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 586,
+        "active": {
+          "tag": "H2",
+          "name": "Proof approved"
+        }
+      }
+    }
+  ],
+  "captures": [
+    {
+      "width": 1440,
+      "state": "initial",
+      "file": "1440-initial.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 0,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "empty",
+      "file": "1440-empty.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 0,
+      "active": {
+        "tag": "INPUT",
+        "name": ""
+      }
+    },
+    {
+      "width": 1440,
+      "state": "invalid",
+      "file": "1440-invalid.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 0,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "review",
+      "file": "1440-review.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 165,
+      "active": {
+        "tag": "H2",
+        "name": "Review this proof"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "failure",
+      "file": "1440-failure.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 165,
+      "active": {
+        "tag": "BUTTON",
+        "name": "Retry approval"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "success",
+      "file": "1440-success.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 165,
+      "active": {
+        "tag": "H2",
+        "name": "Proof approved"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "retained-return",
+      "file": "1440-retained-return.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 0,
+      "active": {
+        "tag": "BUTTON",
+        "name": "Open P-104"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "keyboard-outcome",
+      "file": "1440-keyboard-outcome.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 165,
+      "active": {
+        "tag": "H2",
+        "name": "Proof approved"
+      }
+    },
+    {
+      "width": 390,
+      "state": "initial",
+      "file": "390-initial.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 0,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+      }
+    },
+    {
+      "width": 390,
+      "state": "empty",
+      "file": "390-empty.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 0,
+      "active": {
+        "tag": "INPUT",
+        "name": ""
+      }
+    },
+    {
+      "width": 390,
+      "state": "invalid",
+      "file": "390-invalid.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 489,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+      }
+    },
+    {
+      "width": 390,
+      "state": "review",
+      "file": "390-review.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 522,
+      "active": {
+        "tag": "H2",
+        "name": "Review this proof"
+      }
+    },
+    {
+      "width": 390,
+      "state": "failure",
+      "file": "390-failure.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 541,
+      "active": {
+        "tag": "BUTTON",
+        "name": "Retry approval"
+      }
+    },
+    {
+      "width": 390,
+      "state": "success",
+      "file": "390-success.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 541,
+      "active": {
+        "tag": "H2",
+        "name": "Proof approved"
+      }
+    },
+    {
+      "width": 390,
+      "state": "retained-return",
+      "file": "390-retained-return.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 0,
+      "active": {
+        "tag": "BUTTON",
+        "name": "Open P-104"
+      }
+    },
+    {
+      "width": 390,
+      "state": "keyboard-outcome",
+      "file": "390-keyboard-outcome.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 541,
+      "active": {
+        "tag": "H2",
+        "name": "Proof approved"
+      }
+    },
+    {
+      "width": 320,
+      "state": "initial",
+      "file": "320-initial.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 0,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+      }
+    },
+    {
+      "width": 320,
+      "state": "empty",
+      "file": "320-empty.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 0,
+      "active": {
+        "tag": "INPUT",
+        "name": ""
+      }
+    },
+    {
+      "width": 320,
+      "state": "invalid",
+      "file": "320-invalid.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 145,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to main content\nShiftPress.The proof desk\n\n\nQueue / production proofsA good place to start.Find a job, check its proof, and make every sheet count.03Jobs i"
+      }
+    },
+    {
+      "width": 320,
+      "state": "review",
+      "file": "320-review.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 604,
+      "active": {
+        "tag": "H2",
+        "name": "Review this proof"
+      }
+    },
+    {
+      "width": 320,
+      "state": "failure",
+      "file": "320-failure.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 604,
+      "active": {
+        "tag": "BUTTON",
+        "name": "Retry approval"
+      }
+    },
+    {
+      "width": 320,
+      "state": "success",
+      "file": "320-success.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 604,
+      "active": {
+        "tag": "H2",
+        "name": "Proof approved"
+      }
+    },
+    {
+      "width": 320,
+      "state": "retained-return",
+      "file": "320-retained-return.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 0,
+      "active": {
+        "tag": "BUTTON",
+        "name": "Open P-104"
+      }
+    },
+    {
+      "width": 320,
+      "state": "keyboard-outcome",
+      "file": "320-keyboard-outcome.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 586,
+      "active": {
+        "tag": "H2",
+        "name": "Proof approved"
+      }
+    }
+  ],
+  "axe": [
+    {
+      "width": 1440,
+      "state": "initial",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "width": 1440,
+      "state": "invalid",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"current\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"ledger\" aria-label=\"Sheet consumption\">",
+              "target": [
+                ".ledger"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "state": "review",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"current\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "state": "failure",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"current\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "state": "success",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"current\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "state": "initial",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "width": 390,
+      "state": "invalid",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"current\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"ledger\" aria-label=\"Sheet consumption\">",
+              "target": [
+                ".ledger"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "state": "review",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"current\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "state": "failure",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"current\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "state": "success",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"current\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "state": "initial",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "width": 320,
+      "state": "invalid",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"current\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"ledger\" aria-label=\"Sheet consumption\">",
+              "target": [
+                ".ledger"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "state": "review",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"current\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "state": "failure",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"current\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "state": "success",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof progress\"><span class=\"\">01 / Inspect &amp; adjust</span><span aria-hidden=\"true\">\u2014</span><span class=\"current\">02 / Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">\u2190</span>",
+              "target": [
+                "#back > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "remoteRequests": []
+}

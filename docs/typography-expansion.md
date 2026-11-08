@@ -2,6 +2,8 @@
 
 Knowledge data **0.1.1** adds six pairs and six families to the existing 32 pairs. Existing pair IDs, objects, language claims and system delivery options are preserved. Existing styles gain specific compatible pair IDs; their ranking and filters are unchanged. Package/release versions are unchanged.
 
+Design DNA records bind a knowledge version. DNA generated against `0.1.0` is deliberately rejected by `0.1.1`; review and regenerate it using the original brief, direction and seed with explicit overwrite authorization. The expanded eligible pool may change the selected pair. Maintained `examples/generated` bundles were regenerated this way, while historical frozen evaluation artifacts remain unchanged. The engine and DNA schema stay at `0.1.0`.
+
 The gap was limited type roles: most existing pairs recombine a small set of neutral sans and book serifs. These additions offer optical-size editorial type, expressive commerce titles, a width-variable information sans, narrower practical sans, a friendly English utility face and a sturdy slab serif. These are editorial choices, not measured reading-speed or task-quality improvements.
 
 | Pair                | Added role and associated styles                                                                                        | Reviewed languages                                              |

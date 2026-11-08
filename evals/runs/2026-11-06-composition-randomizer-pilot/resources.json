@@ -23,22 +23,127 @@
       "providerUsage": "unknown",
       "billedCost": "unknown",
       "initialArchivedAt": "2026-11-06T09:37:21.493462+00:00",
-      "correctionDispatchedAt": "2026-11-06T09:46:09.289374+00:00"
+      "correctionDispatchedAt": "2026-11-06T09:46:09.289374+00:00",
+      "correctedArchivedAt": "2026-11-08T16:28:31.478228+00:00"
     },
     "proofdesk-candidate": {
       "dispatchedAt": "2026-11-06T09:37:21.653862+00:00",
       "providerUsage": "unknown",
       "billedCost": "unknown",
       "initialArchivedAt": "2026-11-06T09:44:06.041540+00:00",
-      "correctionDispatchedAt": "2026-11-06T09:48:49.722939+00:00"
+      "correctionDispatchedAt": "2026-11-06T09:48:49.722939+00:00",
+      "correctedArchivedAt": "2026-11-08T16:28:35.452495+00:00"
     },
     "cabinet-baseline": {
       "dispatchedAt": "2026-11-06T09:37:21.653909+00:00",
       "providerUsage": "unknown",
       "billedCost": "unknown",
       "initialArchivedAt": "2026-11-06T09:45:32.747366+00:00",
-      "correctionDispatchedAt": "2026-11-06T09:48:49.722983+00:00"
+      "correctionDispatchedAt": "2026-11-06T09:48:49.722983+00:00",
+      "correctedArchivedAt": "2026-11-08T16:28:27.168624+00:00"
     }
   },
-  "implementationUsageLimitInterruption": "Before pilot dispatch; outside measured pilot span."
+  "implementationUsageLimitInterruption": "Before pilot dispatch; outside measured pilot span.",
+  "continuation20261108": {
+    "scope": "Archive inherited corrections, matched-v3 checks, independent AGY reviews and reporting. Original Codex creator usage/billing remains unknown; delayed archive timestamps are not generation duration.",
+    "checks": {
+      "proofdesk-baseline": {
+        "report": "evidence/proofdesk-baseline/corrected/matched-v3/report.json",
+        "sourceSha256": "62b36789a6106477fedae6a027bb0c295b18672a53d0cde64ff7b62cbc52a048",
+        "harnessSha256": "2c1f4b7b7426f0f21b7ddefdbbe366f20a464bc36bd1a643abab6af268b62bc7",
+        "passed": 87,
+        "failed": 0,
+        "harnessErrors": 0,
+        "pageErrors": 0,
+        "remoteRequests": 0,
+        "states": 24,
+        "axeViolations": 0,
+        "axeIncomplete": 18,
+        "startedAt": "2026-11-08T16:29:14.981Z",
+        "finishedAt": "2026-11-08T16:29:53.454Z"
+      },
+      "proofdesk-candidate": {
+        "report": "evidence/proofdesk-candidate/corrected/matched-v3/report.json",
+        "sourceSha256": "ab60237232f5a89e1a5625c144321e0cabcff75146c2aeac2143e293bfa878fc",
+        "harnessSha256": "2c1f4b7b7426f0f21b7ddefdbbe366f20a464bc36bd1a643abab6af268b62bc7",
+        "passed": 87,
+        "failed": 0,
+        "harnessErrors": 0,
+        "pageErrors": 0,
+        "remoteRequests": 0,
+        "states": 24,
+        "axeViolations": 0,
+        "axeIncomplete": 24,
+        "startedAt": "2026-11-08T16:29:55.420Z",
+        "finishedAt": "2026-11-08T16:30:27.422Z"
+      },
+      "cabinet-baseline": {
+        "report": "evidence/cabinet-baseline/corrected/matched-v3/report.json",
+        "sourceSha256": "a29a4b5583bb3e44f36ffe3394a7e54855904af709a736a07457e89368fdcdc5",
+        "harnessSha256": "2c1f4b7b7426f0f21b7ddefdbbe366f20a464bc36bd1a643abab6af268b62bc7",
+        "passed": 66,
+        "failed": 0,
+        "harnessErrors": 0,
+        "pageErrors": 0,
+        "remoteRequests": 0,
+        "states": 24,
+        "axeViolations": 0,
+        "axeIncomplete": 24,
+        "startedAt": "2026-11-08T16:29:14.947Z",
+        "finishedAt": "2026-11-08T16:29:53.491Z"
+      },
+      "cabinet-candidate": {
+        "report": "evidence/cabinet-candidate/corrected/matched-v3/report.json",
+        "sourceSha256": "63976e2538797be4ac9658990ab4060c3077fbc0fee1df9ce446ef46684fb441",
+        "harnessSha256": "2c1f4b7b7426f0f21b7ddefdbbe366f20a464bc36bd1a643abab6af268b62bc7",
+        "passed": 66,
+        "failed": 0,
+        "harnessErrors": 0,
+        "pageErrors": 0,
+        "remoteRequests": 0,
+        "states": 24,
+        "axeViolations": 0,
+        "axeIncomplete": 18,
+        "startedAt": "2026-11-08T16:29:55.403Z",
+        "finishedAt": "2026-11-08T16:30:33.824Z"
+      }
+    },
+    "reviewers": [
+      {
+        "host": "AGY CLI Windows 1.4.12 via Ubuntu WSL",
+        "requestedModel": "gemini-3.8-flash-high",
+        "effort": "high",
+        "startedAt": "2026-11-08T16:33:04.843897+00:00",
+        "finishedAt": "2026-11-08T16:38:30.222879+00:00",
+        "elapsedSeconds": 325.366,
+        "usage": {
+          "input_tokens": 186882,
+          "output_tokens": 26510,
+          "thinking_tokens": 20195,
+          "cache_read_tokens": 1781151,
+          "total_tokens": 213392
+        },
+        "conversationId": "030a413b-52c5-485d-93c6-0b83cd868436"
+      },
+      {
+        "host": "AGY CLI Windows 1.4.12 via Ubuntu WSL",
+        "requestedModel": "gemini-3.8-flash-high",
+        "effort": "high",
+        "startedAt": "2026-11-08T16:33:06.741337+00:00",
+        "finishedAt": "2026-11-08T16:37:51.154656+00:00",
+        "elapsedSeconds": 284.4,
+        "usage": {
+          "input_tokens": 163248,
+          "output_tokens": 24223,
+          "thinking_tokens": 18701,
+          "cache_read_tokens": 1112517,
+          "total_tokens": 187471
+        },
+        "conversationId": "521ffb46-af79-4c19-8ceb-a09a09541115"
+      }
+    ],
+    "providerUsageInterpretation": "AGY CLI reported categories are retained verbatim, not normalized or added to original creator costs. Exact backend/cache semantics, verified billing, parent/operator totals and full acceptance-cycle cost remain unknown.",
+    "interruption": "Quota pause between 2026-11-06 corrections and 2026-11-08 acceptance; exclude unavailable interval from active-work claims.",
+    "globalSettingsChanged": false
+  }
 }

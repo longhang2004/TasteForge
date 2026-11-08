@@ -17,7 +17,7 @@ The beta.2 skill uses [proportional workflows](docs/lean-workflows.md): Fast for
 | Purpose             | UI/UX design guidance and reproducible design decisions for AI coding agents                          |
 | Interfaces          | Portable Agent Skill, `tasteforge` CLI, and TypeScript packages                                       |
 | Commands            | `init`, `suggest`, `generate`, `audit`, `catalog`, `inspire`                                          |
-| Design knowledge    | 20 style profiles, 32 font pairings, and 20 color palettes in versioned JSON                          |
+| Design knowledge    | 20 style profiles, 38 font pairings, and 20 color palettes in versioned JSON                          |
 | External references | 172 style documents/rows, 357 contextual rule records, 113 template/structure records                 |
 | Generated artifacts | `design-dna.json`, semantic `tokens.css`, and project `DESIGN.md`                                     |
 | Static audit scope  | CSS declarations and literal JSX/TSX styles; verified source conditions, heuristics, and review items |
@@ -72,7 +72,7 @@ body {
 }
 ```
 
-Fonts are **not downloaded or bundled**. Load appropriately licensed font files yourself or use the provided fallbacks. Font metadata documents Latin/Vietnamese subset declarations; actual loading, diacritics, layout shifts, and fallback coverage need verification on the target platform. System-only pairs are available for English; Vietnamese system coverage is deliberately unverified.
+The generator and knowledge package **do not download or bundle fonts**. Load appropriately licensed font files yourself or use the provided fallbacks. The separate composition gallery includes six locally licensed specimens for demonstration. Font metadata documents Latin/Vietnamese subset declarations; actual loading, diacritics, layout shifts, and fallback coverage need verification on the target platform. System-only pairs are available for English; Vietnamese system coverage is deliberately unverified.
 
 ## Brief and design constraints
 
