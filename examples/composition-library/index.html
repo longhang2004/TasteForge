@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Composition field guide · TasteForge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.mjs"></script>
+  </head>
+  <body>
+    <a class="skip" href="#guide">Skip to compositions</a>
+    <header class="masthead">
+      <a href="../README.md">TasteForge</a>
+      <nav aria-label="Guide sections">
+        <a href="#guide">Compositions</a><a href="#type">Type specimens</a
+        ><a href="#evidence">Sources & limits</a>
+      </nav>
+    </header>
+    <main>
+      <header class="intro">
+        <h1>Composition<br />field guide.</h1>
+        <div class="intro-note">
+          <p class="lead">Choose the relationship.<br />Then choose its expression.</p>
+          <p>
+            Twelve original studies in how information belongs together: evidence beside a decision,
+            options before commitment, notes within reach of a claim.
+          </p>
+          <p>
+            These are schematic anatomy previews. Their state and narrow-screen advice is proposed
+            unless explicitly marked observed. They are not twelve tested product flows.
+          </p>
+        </div>
+      </header>
+      <section id="guide" aria-labelledby="guide-title">
+        <div class="section-heading">
+          <h2 id="guide-title">Find a useful relationship</h2>
+          <p id="version">Loading library…</p>
+        </div>
+        <form id="filters" class="filters" role="search" aria-label="Filter compositions">
+          <fieldset>
+            <legend>Kind of work</legend>
+            <div class="group-controls">
+              <button type="button" data-group="all" aria-pressed="true">All</button>
+              <button type="button" data-group="work" aria-pressed="false">Work</button>
+              <button type="button" data-group="commerce" aria-pressed="false">Commerce</button>
+              <button type="button" data-group="reading" aria-pressed="false">Reading</button>
+              <button type="button" data-group="exploration" aria-pressed="false">
+                Exploration
+              </button>
+            </div>
+          </fieldset>
+          <label
+            >Task<select id="task">
+              <option value="all">Every indexed task</option>
+            </select></label
+          >
+          <label class="query-label"
+            >Find words<input
+              type="search"
+              id="query"
+              placeholder="e.g. evidence, options, records"
+          /></label>
+          <button type="reset" class="reset">Reset filters</button>
+        </form>
+        <p id="result-count" role="status" aria-live="polite"></p>
+        <div id="load-error" hidden>
+          <h3>The library could not load</h3>
+          <p>
+            Serve the repository over HTTP, then retry. You can also inspect the
+            <a href="../../packages/knowledge/src/data/compositions.json">composition data</a>.
+          </p>
+          <button type="button" id="retry">Retry loading</button>
+        </div>
+        <div id="empty" hidden>
+          <h3>No relationship matches these filters.</h3>
+          <p>
+            Try a broader word or another task. Empty coverage is useful evidence; a nearby pattern
+            may still be a poor fit.
+          </p>
+          <button type="button" id="empty-reset">Show all compositions</button>
+        </div>
+        <div id="entries" class="entries"></div>
+        <noscript
+          ><p>
+            Enable JavaScript to filter and inspect this guide, or read the
+            <a href="../../packages/knowledge/src/data/compositions.json"
+              >complete original dataset</a
+            >.
+          </p></noscript
+        >
+      </section>
+      <section id="type" aria-labelledby="type-title" class="type-section">
+        <div class="section-heading">
+          <h2 id="type-title">Type has a job, too</h2>
+          <p>Local, licensed specimens</p>
+        </div>
+        <p class="measure">
+          A reading voice and an annotation voice serve different content. These files demonstrate
+          reviewed additions; metadata and sampled glyph checks do not establish full language or
+          shaping quality. Each specimen reports whether its own font file loaded.
+        </p>
+        <p id="font-status" role="status">Loading font specimens…</p>
+        <div id="specimens"></div>
+      </section>
+      <section id="evidence" aria-labelledby="evidence-title" class="evidence-section">
+        <div class="section-heading">
+          <h2 id="evidence-title">Observed, proposed, untested</h2>
+          <p>Reviewed 6 November 2026</p>
+        </div>
+        <div class="evidence-intro">
+          <p>
+            <strong>Observed:</strong> exact pinned source text and MIT notices were read. Three
+            independent families expand the earlier Bootstrap-heavy sample. This library contains
+            original observations, separate from the 642 imported reference records.
+          </p>
+          <p>
+            <strong>Proposed:</strong> anatomy, fit, treatment, narrow behavior and states are
+            curator advice. Upstream source code was not installed, executed or rendered. No copied
+            upstream code, prose, brand or image assets appear here.
+          </p>
+          <p>
+            <strong>Untested:</strong> task completion, human usability and production readiness.
+            The existing
+            <a href="../composition-studies/index.html">four runnable paired studies</a> exercise
+            specific actions; they do not validate every card in this guide.
+          </p>
+        </div>
+        <p>
+          <a href="source-manifest.json">Exact source and license hashes</a> ·
+          <a href="README.md">Scope and browser evidence</a>
+        </p>
+        <div id="sources"></div>
+      </section>
+    </main>
+    <footer>
+      <p>TasteForge · Original composition library, 2026.11.06.1</p>
+      <a href="#guide">Return to compositions</a>
+    </footer>
+  </body>
+</html>

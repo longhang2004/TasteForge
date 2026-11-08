@@ -1,0 +1,63 @@
+{
+  "product": "ShiftPress — proof desk",
+  "scope": "Fictional local demonstration; approval records locally and does not print, charge or send a job.",
+  "papers": [
+    {
+      "id": "cotton",
+      "name": "Cotton White",
+      "availableSheets": 120
+    },
+    {
+      "id": "kraft",
+      "name": "Kraft",
+      "availableSheets": 60
+    },
+    {
+      "id": "recycled",
+      "name": "Recycled White",
+      "availableSheets": 0
+    }
+  ],
+  "jobs": [
+    {
+      "id": "P-104",
+      "title": "Mưa cuối phố",
+      "format": "A3 / 297 × 420 mm",
+      "ink": "Ultramarine",
+      "due": "14:00",
+      "status": "Needs proof",
+      "copies": 80,
+      "paper": "cotton",
+      "asset": "proof-blue.svg"
+    },
+    {
+      "id": "P-105",
+      "title": "Trường sáng thứ Bảy",
+      "format": "A4 / 210 × 297 mm",
+      "ink": "Vermilion",
+      "due": "16:30",
+      "status": "Needs proof",
+      "copies": 40,
+      "paper": "kraft",
+      "asset": "proof-red.svg"
+    },
+    {
+      "id": "P-106",
+      "title": "Đường về xưởng",
+      "format": "A3 / 297 × 420 mm",
+      "ink": "Graphite",
+      "due": "Tomorrow 09:00",
+      "status": "Approved",
+      "copies": 25,
+      "paper": "cotton",
+      "asset": "proof-black.svg"
+    }
+  ],
+  "rules": [
+    "One copy consumes one sheet; remaining sheets = selected paper availableSheets minus copies. The local preview does not decrement shared stock.",
+    "Copies must be an integer from1 through selected paper availability. Empty,0,negative,fractional or above-stock values cannot reach approval.",
+    "Recycled White is visibly unavailable and cannot be chosen.",
+    "Changing paper when a valid quantity exceeds its stock clamps to that stock and announces the change. Other invalid input retains feedback; never show an apparently valid stale total.",
+    "First approval attempt fails; retry succeeds. Keep job, paper and copies through review/edit/failure/retry. Editing clears old success. Return to queue preserves query/status filters and selection."
+  ]
+}

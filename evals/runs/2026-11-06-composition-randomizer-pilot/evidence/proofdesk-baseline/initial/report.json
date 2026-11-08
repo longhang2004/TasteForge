@@ -1,0 +1,2288 @@
+{
+  "cell": "proofdesk-baseline",
+  "stage": "initial",
+  "startedAt": "2026-11-06T09:37:48.083Z",
+  "sourceSha256": "9fdb1f094a15bd44c8269fd0db3e965d2bf5ab6c80578fb36284fefffb626a23",
+  "checks": [
+    {
+      "width": 1440,
+      "name": "initial: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 0,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\nFrom queue to signed-off proofPrint queue 03Check the artwork. Set the run.Approve with the paper i"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "initial: axe violations",
+      "pass": false,
+      "count": 2
+    },
+    {
+      "width": 1440,
+      "name": "empty: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 0,
+        "active": {
+          "tag": "INPUT",
+          "name": ""
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "queue empty and restore",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "supplied proof and facts",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "paper switch clamps and announces",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid copies \"\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid copies \"0\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid copies \"-1\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid copies \"1.5\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid copies \"61\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "invalid: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 260,
+        "active": {
+          "tag": "INPUT",
+          "name": ""
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "invalid: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 1440,
+      "name": "invalid value remains invalid through paper change",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "review shows chosen fact and sheet consequence",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "review: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 177,
+        "active": {
+          "tag": "H2",
+          "name": "Review proof"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "review: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 1440,
+      "name": "edit retains copies/paper",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "first failure is announced and retry offered",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /fail|could not|couldn't|try again/i. Input:\n\n'Recording your local approval… Copies adjusted to 60 because Kraft has 60 sheets available.'\n"
+    },
+    {
+      "width": 1440,
+      "name": "failure: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 177,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "failure: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 1440,
+      "name": "retry succeeds with retained proof",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "success: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 177,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "success: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 1440,
+      "name": "edit clears stale success",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /approved locally|proof approved|successfully approved/i. Input:\n\n' Available sheets120Sheets for this run26Remaining sheets94 P-104 approved locally. 25 copies on Cotton White.'\n"
+    },
+    {
+      "width": 1440,
+      "name": "return retains queue filters",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "name": "retained-return: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 0,
+        "active": {
+          "tag": "H1",
+          "name": "Print queue 03"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "name": "keyboard approval and failure/retry",
+      "pass": false,
+      "error": "Error: Keyboard target not reached in bounded tab traversal"
+    },
+    {
+      "width": 1440,
+      "name": "keyboard-outcome: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 1440,
+        "document": 1440,
+        "scrollY": 0,
+        "active": {
+          "tag": "A",
+          "name": "Skip to proof desk"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "initial: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 0,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\nFrom queue to signed-off proofPrint queue 03Check the artwork. Set the run.Approve with the paper i"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "initial: axe violations",
+      "pass": false,
+      "count": 2
+    },
+    {
+      "width": 390,
+      "name": "empty: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 0,
+        "active": {
+          "tag": "INPUT",
+          "name": ""
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "queue empty and restore",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "supplied proof and facts",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "paper switch clamps and announces",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid copies \"\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid copies \"0\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid copies \"-1\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid copies \"1.5\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid copies \"61\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "invalid: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 701,
+        "active": {
+          "tag": "INPUT",
+          "name": ""
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "invalid: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 390,
+      "name": "invalid value remains invalid through paper change",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "review shows chosen fact and sheet consequence",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "review: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 0,
+        "active": {
+          "tag": "H2",
+          "name": "Review proof"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "review: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 390,
+      "name": "edit retains copies/paper",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "first failure is announced and retry offered",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /fail|could not|couldn't|try again/i. Input:\n\n'Recording your local approval… Copies adjusted to 60 because Kraft has 60 sheets available.'\n"
+    },
+    {
+      "width": 390,
+      "name": "failure: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 567,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "failure: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 390,
+      "name": "retry succeeds with retained proof",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "success: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 567,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "success: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 390,
+      "name": "edit clears stale success",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /approved locally|proof approved|successfully approved/i. Input:\n\n' Available sheets120Sheets for this run26Remaining sheets94 P-104 approved locally. 25 copies on Cotton White.'\n"
+    },
+    {
+      "width": 390,
+      "name": "return retains queue filters",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "name": "retained-return: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 0,
+        "active": {
+          "tag": "H1",
+          "name": "Print queue 03"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "name": "keyboard approval and failure/retry",
+      "pass": false,
+      "error": "Error: Keyboard target not reached in bounded tab traversal"
+    },
+    {
+      "width": 390,
+      "name": "keyboard-outcome: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 390,
+        "document": 390,
+        "scrollY": 0,
+        "active": {
+          "tag": "A",
+          "name": "Skip to proof desk"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "initial: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 0,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\nFrom queue to signed-off proofPrint queue 03Check the artwork. Set the run.Approve with the paper i"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "initial: axe violations",
+      "pass": false,
+      "count": 2
+    },
+    {
+      "width": 320,
+      "name": "empty: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 0,
+        "active": {
+          "tag": "INPUT",
+          "name": ""
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "queue empty and restore",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "supplied proof and facts",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "paper switch clamps and announces",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid copies \"\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid copies \"0\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid copies \"-1\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid copies \"1.5\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid copies \"61\" cannot approve",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "invalid: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 733,
+        "active": {
+          "tag": "INPUT",
+          "name": ""
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "invalid: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 320,
+      "name": "invalid value remains invalid through paper change",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "review shows chosen fact and sheet consequence",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "review: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 0,
+        "active": {
+          "tag": "H2",
+          "name": "Review proof"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "review: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 320,
+      "name": "edit retains copies/paper",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "first failure is announced and retry offered",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /fail|could not|couldn't|try again/i. Input:\n\n'Recording your local approval… Copies adjusted to 60 because Kraft has 60 sheets available.'\n"
+    },
+    {
+      "width": 320,
+      "name": "failure: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 562,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "failure: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 320,
+      "name": "retry succeeds with retained proof",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "success: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 562,
+        "active": {
+          "tag": "BODY",
+          "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "success: axe violations",
+      "pass": true,
+      "count": 0
+    },
+    {
+      "width": 320,
+      "name": "edit clears stale success",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /approved locally|proof approved|successfully approved/i. Input:\n\n' Available sheets120Sheets for this run26Remaining sheets94 P-104 approved locally. 25 copies on Cotton White.'\n"
+    },
+    {
+      "width": 320,
+      "name": "return retains queue filters",
+      "pass": true
+    },
+    {
+      "width": 320,
+      "name": "retained-return: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 0,
+        "active": {
+          "tag": "H1",
+          "name": "Print queue 03"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "name": "keyboard approval and failure/retry",
+      "pass": false,
+      "error": "Error: Keyboard target not reached in bounded tab traversal"
+    },
+    {
+      "width": 320,
+      "name": "keyboard-outcome: horizontal overflow",
+      "pass": true,
+      "geometry": {
+        "viewport": 320,
+        "document": 320,
+        "scrollY": 0,
+        "active": {
+          "tag": "A",
+          "name": "Skip to proof desk"
+        }
+      }
+    }
+  ],
+  "captures": [
+    {
+      "width": 1440,
+      "state": "initial",
+      "file": "1440-initial.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 0,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\nFrom queue to signed-off proofPrint queue 03Check the artwork. Set the run.Approve with the paper i"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "empty",
+      "file": "1440-empty.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 0,
+      "active": {
+        "tag": "INPUT",
+        "name": ""
+      }
+    },
+    {
+      "width": 1440,
+      "state": "invalid",
+      "file": "1440-invalid.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 260,
+      "active": {
+        "tag": "INPUT",
+        "name": ""
+      }
+    },
+    {
+      "width": 1440,
+      "state": "review",
+      "file": "1440-review.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 177,
+      "active": {
+        "tag": "H2",
+        "name": "Review proof"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "failure",
+      "file": "1440-failure.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 177,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "success",
+      "file": "1440-success.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 177,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "retained-return",
+      "file": "1440-retained-return.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 0,
+      "active": {
+        "tag": "H1",
+        "name": "Print queue 03"
+      }
+    },
+    {
+      "width": 1440,
+      "state": "keyboard-outcome",
+      "file": "1440-keyboard-outcome.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 1440,
+      "document": 1440,
+      "scrollY": 0,
+      "active": {
+        "tag": "A",
+        "name": "Skip to proof desk"
+      }
+    },
+    {
+      "width": 390,
+      "state": "initial",
+      "file": "390-initial.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 0,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\nFrom queue to signed-off proofPrint queue 03Check the artwork. Set the run.Approve with the paper i"
+      }
+    },
+    {
+      "width": 390,
+      "state": "empty",
+      "file": "390-empty.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 0,
+      "active": {
+        "tag": "INPUT",
+        "name": ""
+      }
+    },
+    {
+      "width": 390,
+      "state": "invalid",
+      "file": "390-invalid.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 701,
+      "active": {
+        "tag": "INPUT",
+        "name": ""
+      }
+    },
+    {
+      "width": 390,
+      "state": "review",
+      "file": "390-review.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 0,
+      "active": {
+        "tag": "H2",
+        "name": "Review proof"
+      }
+    },
+    {
+      "width": 390,
+      "state": "failure",
+      "file": "390-failure.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 567,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+      }
+    },
+    {
+      "width": 390,
+      "state": "success",
+      "file": "390-success.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 567,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+      }
+    },
+    {
+      "width": 390,
+      "state": "retained-return",
+      "file": "390-retained-return.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 0,
+      "active": {
+        "tag": "H1",
+        "name": "Print queue 03"
+      }
+    },
+    {
+      "width": 390,
+      "state": "keyboard-outcome",
+      "file": "390-keyboard-outcome.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 390,
+      "document": 390,
+      "scrollY": 0,
+      "active": {
+        "tag": "A",
+        "name": "Skip to proof desk"
+      }
+    },
+    {
+      "width": 320,
+      "state": "initial",
+      "file": "320-initial.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 0,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\nFrom queue to signed-off proofPrint queue 03Check the artwork. Set the run.Approve with the paper i"
+      }
+    },
+    {
+      "width": 320,
+      "state": "empty",
+      "file": "320-empty.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 0,
+      "active": {
+        "tag": "INPUT",
+        "name": ""
+      }
+    },
+    {
+      "width": 320,
+      "state": "invalid",
+      "file": "320-invalid.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 733,
+      "active": {
+        "tag": "INPUT",
+        "name": ""
+      }
+    },
+    {
+      "width": 320,
+      "state": "review",
+      "file": "320-review.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 0,
+      "active": {
+        "tag": "H2",
+        "name": "Review proof"
+      }
+    },
+    {
+      "width": 320,
+      "state": "failure",
+      "file": "320-failure.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 562,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+      }
+    },
+    {
+      "width": 320,
+      "state": "success",
+      "file": "320-success.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 562,
+      "active": {
+        "tag": "BODY",
+        "name": "Skip to proof desk\nSShiftPress/Proof deskLocal demonstration\n← Back to queueP-104   /   Due 14:00Mưa cuối phốNeeds proof01   Inspect & adjust02   Review & appro"
+      }
+    },
+    {
+      "width": 320,
+      "state": "retained-return",
+      "file": "320-retained-return.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 0,
+      "active": {
+        "tag": "H1",
+        "name": "Print queue 03"
+      }
+    },
+    {
+      "width": 320,
+      "state": "keyboard-outcome",
+      "file": "320-keyboard-outcome.png",
+      "framing": "natural viewport; no scroll/focus reset",
+      "viewport": 320,
+      "document": 320,
+      "scrollY": 0,
+      "active": {
+        "tag": "A",
+        "name": "Skip to proof desk"
+      }
+    }
+  ],
+  "axe": [
+    {
+      "width": 1440,
+      "state": "initial",
+      "violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the order of headings is semantically correct",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "heading-order",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Heading order invalid"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<h3 lang=\"vi\">Mưa cuối phố</h3>",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > h3"
+              ],
+              "failureSummary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" data-open=\"P-104\" aria-label=\"Open P-104\">Open job <span aria-hidden=\"true\">↗</span></button>",
+              "target": [
+                "button[data-open=\"P-104\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" data-open=\"P-105\" aria-label=\"Open P-105\">Open job <span aria-hidden=\"true\">↗</span></button>",
+              "target": [
+                "button[data-open=\"P-105\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" data-open=\"P-106\" aria-label=\"Open P-106\">Open job <span aria-hidden=\"true\">↗</span></button>",
+              "target": [
+                "button[data-open=\"P-106\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">↳</span>",
+              "target": [
+                ".queue-note > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "state": "invalid",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"active\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">→</span>",
+              "target": [
+                ".primary > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "state": "review",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"active\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "state": "failure",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"active\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "state": "success",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"active\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "state": "initial",
+      "violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the order of headings is semantically correct",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "heading-order",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Heading order invalid"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<h3 lang=\"vi\">Mưa cuối phố</h3>",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > h3"
+              ],
+              "failureSummary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" data-open=\"P-104\" aria-label=\"Open P-104\">Open job <span aria-hidden=\"true\">↗</span></button>",
+              "target": [
+                "button[data-open=\"P-104\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" data-open=\"P-105\" aria-label=\"Open P-105\">Open job <span aria-hidden=\"true\">↗</span></button>",
+              "target": [
+                "button[data-open=\"P-105\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" data-open=\"P-106\" aria-label=\"Open P-106\">Open job <span aria-hidden=\"true\">↗</span></button>",
+              "target": [
+                "button[data-open=\"P-106\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">↳</span>",
+              "target": [
+                ".queue-note > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#69705f",
+                    "bgColor": "#eeeee5",
+                    "contrastRatio": 4.4,
+                    "fontSize": "17.3pt (23px)",
+                    "fontWeight": "normal",
+                    "messageKey": "shortTextContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<aside class=\"stock\" aria-label=\"Paper availability\">",
+                      "target": [
+                        "aside"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element content is too short to determine if it is actual text content"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<div class=\"stock-qty mono unavailable\">0<small>unavailable</small></div>",
+              "target": [
+                ".unavailable"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "state": "invalid",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"active\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">→</span>",
+              "target": [
+                ".primary > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "state": "review",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"active\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "state": "failure",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"active\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "state": "success",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"active\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "state": "initial",
+      "violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the order of headings is semantically correct",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "heading-order",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Heading order invalid"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "moderate",
+              "html": "<h3 lang=\"vi\">Mưa cuối phố</h3>",
+              "target": [
+                "article:nth-child(1) > div:nth-child(2) > h3"
+              ],
+              "failureSummary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" data-open=\"P-104\" aria-label=\"Open P-104\">Open job <span aria-hidden=\"true\">↗</span></button>",
+              "target": [
+                "button[data-open=\"P-104\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" data-open=\"P-105\" aria-label=\"Open P-105\">Open job <span aria-hidden=\"true\">↗</span></button>",
+              "target": [
+                "button[data-open=\"P-105\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" data-open=\"P-106\" aria-label=\"Open P-106\">Open job <span aria-hidden=\"true\">↗</span></button>",
+              "target": [
+                "button[data-open=\"P-106\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">↳</span>",
+              "target": [
+                ".queue-note > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#69705f",
+                    "bgColor": "#eeeee5",
+                    "contrastRatio": 4.4,
+                    "fontSize": "17.3pt (23px)",
+                    "fontWeight": "normal",
+                    "messageKey": "shortTextContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<aside class=\"stock\" aria-label=\"Paper availability\">",
+                      "target": [
+                        "aside"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element content is too short to determine if it is actual text content"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<div class=\"stock-qty mono unavailable\">0<small>unavailable</small></div>",
+              "target": [
+                ".unavailable"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "state": "invalid",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"active\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">→</span>",
+              "target": [
+                ".primary > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "state": "review",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"active\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "state": "failure",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"active\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "state": "success",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "help": "Elements must only use permitted ARIA attributes",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "data": {
+                    "role": null,
+                    "nodeName": "div",
+                    "messageKey": "noRoleSingular",
+                    "prohibited": [
+                      "aria-label"
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+                }
+              ],
+              "impact": "serious",
+              "html": "<div class=\"steps\" aria-label=\"Proof workflow\"><span class=\"\">01 &nbsp; Inspect &amp; adjust</span><span class=\"rule\" aria-hidden=\"true\"></span><span class=\"active\">02 &nbsp; Review &amp; approve</span></div>",
+              "target": [
+                ".steps"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "remoteRequests": [],
+  "harnessErrors": [],
+  "browser": "156.0.8078.4",
+  "finishedAt": "2026-11-06T09:38:16.079Z",
+  "summary": {
+    "passed": 75,
+    "failed": 12,
+    "harnessErrors": 0,
+    "pageErrors": 0,
+    "remoteRequests": 0
+  }
+}

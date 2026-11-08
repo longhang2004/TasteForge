@@ -83,6 +83,47 @@ describe('attributed offline reference catalog', () => {
 });
 
 describe('task-aware seeded reference exploration', () => {
+  it('provides distinct task compositions before reference treatments and retains provenance', () => {
+    const result = inspire(defaultBrief, { task: 'commerce', seed: 42, count: 3 });
+    expect(result).toHaveProperty('selectionVersion');
+    expect(result).toHaveProperty('compositionLibraryVersion');
+    expect(result.inspirations).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          composition: expect.objectContaining({ tasks: expect.arrayContaining(['commerce']) }),
+          fit: expect.objectContaining({ visualFamily: expect.any(String) }),
+        }),
+      ]),
+    );
+    const ids = result.inspirations.map((p) => p.composition?.id);
+    expect(ids.every(Boolean)).toBe(true);
+    expect(new Set(ids).size).toBe(3);
+    expect(result.compositionSources.length).toBeGreaterThan(0);
+    for (const pack of result.inspirations) {
+      expect(
+        pack.composition?.sourceIds.every((id) =>
+          result.compositionSources.some((s) => s.id === id),
+        ),
+      ).toBe(true);
+    }
+  });
+  it('returns null compositions for unavailable task or hard-constraint pools without relaxing the brief', () => {
+    const empty = {
+      task: 'commerce',
+      compositionLibrary: {
+        schemaVersion: '1.0',
+        version: 'test-empty',
+        reviewedAt: '2026-11-06',
+        sources: [],
+        entries: [],
+      },
+    };
+    const result = inspire(defaultBrief, empty);
+    expect(result.inspirations.every((p) => p.composition === null)).toBe(true);
+    expect(result.limitations.some((s) => s.includes('No eligible composition'))).toBe(true);
+    expect(result.requiredGates).toEqual(requiredGates);
+    expect(result.constraints).toEqual(defaultBrief.existingConstraints);
+  });
   it('routes task pages before theme names and honors operational avoid guidance', () => {
     const dashboard = listReferences({ kind: 'template', task: 'dashboard', limit: 100 });
     expect(dashboard.entries.length).toBeGreaterThan(0);

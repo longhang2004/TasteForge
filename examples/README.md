@@ -1,5 +1,7 @@
 # Examples
 
+[Composition field guide](composition-library/README.md) adds twelve original schematic composition cards, fit/tradeoff/source details and local licensed typography specimens. It teaches information relationships; it is separate from the runnable studies and fresh evaluation outputs.
+
 [Composition studies](composition-studies/README.md) provides four runnable conventional/adapted pairs: operational work, commerce decision, editorial reading and collection exploration. Each uses shared declared fixtures, original licensed diagrams, natural-state evidence and explicit tradeoffs. These authored teaching cases are separate from the [fresh quality/identity pilot](../evals/runs/2026-11-02-quality-identity-forward-test/README.md).
 
 [Annotated design gallery](design-gallery/README.md) presents three actual inventory repairs and one structural tradeoff, with authored notes, original-image/trace links and scope/hash checks. It illustrates context-sensitive decisions rather than aesthetic bans.

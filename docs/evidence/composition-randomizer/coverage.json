@@ -1,0 +1,115 @@
+{
+  "catalogVersion": "2026.11.01.2",
+  "compositionVersion": "2026.11.06.1",
+  "legacyHtmlObservationRecords": 79,
+  "legacyHtmlOriginFamilies": {
+    "adminlte": 35,
+    "StartBootstrap": 44
+  },
+  "newOriginalCards": 12,
+  "newInspectedInputRecords": 13,
+  "newIndependentRepositoryFamilies": [
+    "https://github.com/shadcn-ui/ui",
+    "https://github.com/vercel/commerce",
+    "https://github.com/withastro/starlight"
+  ],
+  "exactRepeatedAnatomyArrays": 0,
+  "taskCoverage": [
+    {
+      "task": "marketing",
+      "legacySourceTemplates": 45,
+      "newOriginalCards": 0,
+      "defaultMediumComplexityCards": 0,
+      "structuralFamilies": []
+    },
+    {
+      "task": "dashboard",
+      "legacySourceTemplates": 30,
+      "newOriginalCards": 2,
+      "defaultMediumComplexityCards": 1,
+      "structuralFamilies": [
+        "overview-drilldown",
+        "ruled-ledger"
+      ]
+    },
+    {
+      "task": "commerce",
+      "legacySourceTemplates": 4,
+      "newOriginalCards": 4,
+      "defaultMediumComplexityCards": 4,
+      "structuralFamilies": [
+        "object-decision-sheet",
+        "option-decision-stack",
+        "query-result-grid",
+        "weighted-assortment"
+      ]
+    },
+    {
+      "task": "form",
+      "legacySourceTemplates": 19,
+      "newOriginalCards": 1,
+      "defaultMediumComplexityCards": 1,
+      "structuralFamilies": [
+        "paired-workbench"
+      ]
+    },
+    {
+      "task": "portfolio",
+      "legacySourceTemplates": 5,
+      "newOriginalCards": 2,
+      "defaultMediumComplexityCards": 2,
+      "structuralFamilies": [
+        "choice-directory",
+        "query-result-grid"
+      ]
+    },
+    {
+      "task": "editorial",
+      "legacySourceTemplates": 5,
+      "newOriginalCards": 1,
+      "defaultMediumComplexityCards": 1,
+      "structuralFamilies": [
+        "annotated-reading"
+      ]
+    },
+    {
+      "task": "documentation",
+      "legacySourceTemplates": 2,
+      "newOriginalCards": 4,
+      "defaultMediumComplexityCards": 4,
+      "structuralFamilies": [
+        "choice-directory",
+        "document-map",
+        "hierarchical-index",
+        "numbered-procedure"
+      ]
+    },
+    {
+      "task": "learning",
+      "legacySourceTemplates": 0,
+      "newOriginalCards": 3,
+      "defaultMediumComplexityCards": 3,
+      "structuralFamilies": [
+        "annotated-reading",
+        "choice-directory",
+        "numbered-procedure"
+      ]
+    },
+    {
+      "task": "booking",
+      "legacySourceTemplates": 1,
+      "newOriginalCards": 1,
+      "defaultMediumComplexityCards": 1,
+      "structuralFamilies": [
+        "option-decision-stack"
+      ]
+    }
+  ],
+  "limits": [
+    "Source observations and original cards are different evidence types; counts are not pooled into a quality/diversity score.",
+    "Thirteen file records represent three repositories, not thirteen independent systems.",
+    "Exact array duplication is a narrow metadata check; related patterns can still overlap semantically.",
+    "New cards codify and extend planning relationships already described in skill references; twelve cards do not mean twelve previously unseen UX archetypes.",
+    "Marketing remains unindexed; default complexity excludes high-complexity summary work. Narrow/recovery advice remains proposed, not upstream rendered evidence."
+  ]
+}

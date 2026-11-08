@@ -1,0 +1,737 @@
+{
+  "schemaVersion": "1.0",
+  "version": "2026.11.06.1",
+  "reviewedAt": "2026-11-06",
+  "sources": [
+    {
+      "id": "shadcn-task-page",
+      "title": "shadcn-ui/ui / page.tsx",
+      "url": "https://github.com/shadcn-ui/ui",
+      "pinnedUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/app/(app)/examples/tasks/page.tsx",
+      "revision": "8a3536678a528cc012b9e62484290e79d0be410f",
+      "path": "apps/v4/app/(app)/examples/tasks/page.tsx",
+      "inputSha256": "be5290055ce3f89acc3189d774f343724f364953bbf00bdfbcbe7133e02388e6",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/shadcn-ui/ui/8a3536678a528cc012b9e62484290e79d0be410f/LICENSE.md",
+      "observed": [
+        "Task heading and table are grouped in a desktop region.",
+        "The narrow region contains screenshots rather than the interactive table."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "shadcn-task-table",
+      "title": "shadcn-ui/ui / data-table.tsx",
+      "url": "https://github.com/shadcn-ui/ui",
+      "pinnedUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/app/(app)/examples/tasks/components/data-table.tsx",
+      "revision": "8a3536678a528cc012b9e62484290e79d0be410f",
+      "path": "apps/v4/app/(app)/examples/tasks/components/data-table.tsx",
+      "inputSha256": "916d3e0263c24138e84712e2deb94853bb6882d702312082979ab3273a0eb682",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/shadcn-ui/ui/8a3536678a528cc012b9e62484290e79d0be410f/LICENSE.md",
+      "observed": [
+        "Toolbar precedes table; pagination follows it.",
+        "Sorting, row selection, filters and visibility are represented as state; a no-results row spans the columns."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "shadcn-playground",
+      "title": "shadcn-ui/ui / page.tsx",
+      "url": "https://github.com/shadcn-ui/ui",
+      "pinnedUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/app/(app)/examples/playground/page.tsx",
+      "revision": "8a3536678a528cc012b9e62484290e79d0be410f",
+      "path": "apps/v4/app/(app)/examples/playground/page.tsx",
+      "inputSha256": "7b17e7a194d53104e02e0d72d4c73fa3d78e03bd3dcfe2d048441de6da04d13f",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/shadcn-ui/ui/8a3536678a528cc012b9e62484290e79d0be410f/LICENSE.md",
+      "observed": [
+        "Edit mode places input and instructions beside an output region at large widths.",
+        "Mode and model controls occupy a separate rail; submit follows the work area.",
+        "The narrow page region uses screenshots."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "shadcn-dashboard",
+      "title": "shadcn-ui/ui / page.tsx",
+      "url": "https://github.com/shadcn-ui/ui",
+      "pinnedUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/registry/new-york-v4/blocks/dashboard-01/page.tsx",
+      "revision": "8a3536678a528cc012b9e62484290e79d0be410f",
+      "path": "apps/v4/registry/new-york-v4/blocks/dashboard-01/page.tsx",
+      "inputSha256": "042f13bbb8c0033e4546232b6767f83349ec29db3b2bcd93a07291ff549b6a65",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/shadcn-ui/ui/8a3536678a528cc012b9e62484290e79d0be410f/LICENSE.md",
+      "observed": [
+        "Sidebar and site header frame a sequence of summary cards, chart region and data table."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "commerce-product",
+      "title": "vercel/commerce / page.tsx",
+      "url": "https://github.com/vercel/commerce",
+      "pinnedUrl": "https://github.com/vercel/commerce/blob/f7521d57d29f0eb3d23c1399cf9bb299d61fcd21/app/product/[handle]/page.tsx",
+      "revision": "f7521d57d29f0eb3d23c1399cf9bb299d61fcd21",
+      "path": "app/product/[handle]/page.tsx",
+      "inputSha256": "da24480e99ef304869977357a3bc2ffa89bf9ca347fd2dd00d3900b4c63960a0",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/vercel/commerce/f7521d57d29f0eb3d23c1399cf9bb299d61fcd21/license.md",
+      "observed": [
+        "Gallery and product description use a wide two-column relationship with a larger gallery share.",
+        "The layout stacks before the large breakpoint; related products follow the main product."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "commerce-description",
+      "title": "vercel/commerce / product-description.tsx",
+      "url": "https://github.com/vercel/commerce",
+      "pinnedUrl": "https://github.com/vercel/commerce/blob/f7521d57d29f0eb3d23c1399cf9bb299d61fcd21/components/product/product-description.tsx",
+      "revision": "f7521d57d29f0eb3d23c1399cf9bb299d61fcd21",
+      "path": "components/product/product-description.tsx",
+      "inputSha256": "78bdda5b5498262b319405573aeb457b2436b850dc5dbb2894684a019b8fa9e2",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/vercel/commerce/f7521d57d29f0eb3d23c1399cf9bb299d61fcd21/license.md",
+      "observed": [
+        "Title and price precede variant selection; description and add-to-cart follow.",
+        "The description is conditional on supplied product content."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "commerce-featured",
+      "title": "vercel/commerce / three-items.tsx",
+      "url": "https://github.com/vercel/commerce",
+      "pinnedUrl": "https://github.com/vercel/commerce/blob/f7521d57d29f0eb3d23c1399cf9bb299d61fcd21/components/grid/three-items.tsx",
+      "revision": "f7521d57d29f0eb3d23c1399cf9bb299d61fcd21",
+      "path": "components/grid/three-items.tsx",
+      "inputSha256": "16748f8a8923353535f39df873fccaefb6ada0f86f3b5784386d767f9418ed98",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/vercel/commerce/f7521d57d29f0eb3d23c1399cf9bb299d61fcd21/license.md",
+      "observed": [
+        "Three featured products form one large tile and two smaller tiles at medium widths.",
+        "The component returns no grid when fewer than three products are present."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "commerce-search",
+      "title": "vercel/commerce / page.tsx",
+      "url": "https://github.com/vercel/commerce",
+      "pinnedUrl": "https://github.com/vercel/commerce/blob/f7521d57d29f0eb3d23c1399cf9bb299d61fcd21/app/search/page.tsx",
+      "revision": "f7521d57d29f0eb3d23c1399cf9bb299d61fcd21",
+      "path": "app/search/page.tsx",
+      "inputSha256": "0cb921097630effcd6197d84599b1a505485769451be8c2b8c42b7e43ebfe0c2",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/vercel/commerce/f7521d57d29f0eb3d23c1399cf9bb299d61fcd21/license.md",
+      "observed": [
+        "Query-specific result count or no-match text precedes the product grid.",
+        "A populated grid changes from one to two to three columns with width."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "starlight-page",
+      "title": "withastro/starlight / Page.astro",
+      "url": "https://github.com/withastro/starlight",
+      "pinnedUrl": "https://github.com/withastro/starlight/blob/63c2707a71486c92f404099b4225ff654651fcf5/packages/starlight/src/components/Page.astro",
+      "revision": "63c2707a71486c92f404099b4225ff654651fcf5",
+      "path": "packages/starlight/src/components/Page.astro",
+      "inputSha256": "8d227618ada6e4090e0a15ecfa3fe748e780341e9be3ab28c189f19b968bac74",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/withastro/starlight/63c2707a71486c92f404099b4225ff654651fcf5/LICENSE",
+      "observed": [
+        "Header, optional sidebar and optional right sidebar frame the document.",
+        "Title, notices, main content and footer occur in document order.",
+        "Anchor scroll padding accounts for navigation and mobile contents height."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "starlight-sidebar",
+      "title": "withastro/starlight / Sidebar.astro",
+      "url": "https://github.com/withastro/starlight",
+      "pinnedUrl": "https://github.com/withastro/starlight/blob/63c2707a71486c92f404099b4225ff654651fcf5/packages/starlight/src/components/Sidebar.astro",
+      "revision": "63c2707a71486c92f404099b4225ff654651fcf5",
+      "path": "packages/starlight/src/components/Sidebar.astro",
+      "inputSha256": "50457bf038b0084b823682817215844cf15c75e7ed8cd75f593695bf4bbb027a",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/withastro/starlight/63c2707a71486c92f404099b4225ff654651fcf5/LICENSE",
+      "observed": [
+        "Sidebar data is passed to a sublist component through a persistence wrapper.",
+        "A separate mobile footer is included."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "starlight-toc",
+      "title": "withastro/starlight / TableOfContents.astro",
+      "url": "https://github.com/withastro/starlight",
+      "pinnedUrl": "https://github.com/withastro/starlight/blob/63c2707a71486c92f404099b4225ff654651fcf5/packages/starlight/src/components/TableOfContents.astro",
+      "revision": "63c2707a71486c92f404099b4225ff654651fcf5",
+      "path": "packages/starlight/src/components/TableOfContents.astro",
+      "inputSha256": "f2e3d982c6e6333a6da68269c9e5866d753a421018eff835b183d4900f11b392",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/withastro/starlight/63c2707a71486c92f404099b4225ff654651fcf5/LICENSE",
+      "observed": [
+        "A named navigation region contains the on-page heading list when contents data exists.",
+        "Heading level bounds are passed to the contents element."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "starlight-card-grid",
+      "title": "withastro/starlight / CardGrid.astro",
+      "url": "https://github.com/withastro/starlight",
+      "pinnedUrl": "https://github.com/withastro/starlight/blob/63c2707a71486c92f404099b4225ff654651fcf5/packages/starlight/src/user-components/CardGrid.astro",
+      "revision": "63c2707a71486c92f404099b4225ff654651fcf5",
+      "path": "packages/starlight/src/user-components/CardGrid.astro",
+      "inputSha256": "b34c2ab22a3acb16966c44e4e52eeae20544aef11780d959af7b76a04c6d51ec",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/withastro/starlight/63c2707a71486c92f404099b4225ff654651fcf5/LICENSE",
+      "observed": [
+        "The grid uses one column below 50rem and two above it.",
+        "An optional stagger shifts alternating items at the wider breakpoint."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    },
+    {
+      "id": "starlight-steps",
+      "title": "withastro/starlight / Steps.astro",
+      "url": "https://github.com/withastro/starlight",
+      "pinnedUrl": "https://github.com/withastro/starlight/blob/63c2707a71486c92f404099b4225ff654651fcf5/packages/starlight/src/user-components/Steps.astro",
+      "revision": "63c2707a71486c92f404099b4225ff654651fcf5",
+      "path": "packages/starlight/src/user-components/Steps.astro",
+      "inputSha256": "7dcd40a8cf7eee92c852dcb84a2679c477181319a5b20168ae672d1ce2f37ff6",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/withastro/starlight/63c2707a71486c92f404099b4225ff654651fcf5/LICENSE",
+      "observed": [
+        "A numbered list connects steps with a vertical guide.",
+        "Step markers and first-child alignment are adjusted for text and headings."
+      ],
+      "notObserved": [
+        "Upstream code was read as text, not installed, executed or rendered.",
+        "Runtime accessibility, task completion, loading, failure recovery and narrow interaction quality were not verified.",
+        "The original treatment and proposed adaptation below are curator decisions, not upstream validation."
+      ],
+      "rights": "Original observations only; no upstream code, prose, branding, images or other assets are distributed in this dataset. Repository MIT terms do not establish separate asset rights."
+    }
+  ],
+  "entries": [
+    {
+      "id": "work-comparison-ledger",
+      "title": "Comparison ledger",
+      "group": "work",
+      "family": "ruled-ledger",
+      "tasks": ["dashboard"],
+      "tags": ["records", "inventory", "triage", "comparison"],
+      "density": "dense",
+      "complexity": "medium",
+      "suitableFor": [
+        "Repeated records with shared units and fields.",
+        "Operators need to scan several candidates before choosing one."
+      ],
+      "avoid": [
+        "Image-led discovery with few comparable fields.",
+        "Hiding required values behind hover or selection."
+      ],
+      "anatomy": [
+        "Scope and query",
+        "Shared column headings",
+        "Aligned record rows",
+        "Selection context",
+        "Pagination and result count"
+      ],
+      "narrow": "Proposed: keep the identity field with each labelled record; expose detail in a dedicated view when the table cannot fit. Preserve query and selected record on return.",
+      "states": [
+        "Proposed: zero results with clear filters",
+        "Proposed: selected row and retained return",
+        "Proposed: loading and retry without losing scope"
+      ],
+      "artDirection": [
+        "Align quantities and units on a ruled baseline because comparisons depend on shared measures.",
+        "Use one restrained status accent; identity and numbers retain the strongest type hierarchy."
+      ],
+      "tradeoff": "Dense rows increase comparison capacity but leave little room for descriptive or visual differences. A focused list/detail view can reduce narrow-screen scanning.",
+      "sourceIds": ["shadcn-task-page", "shadcn-task-table"]
+    },
+    {
+      "id": "work-input-output",
+      "title": "Input / result bench",
+      "group": "work",
+      "family": "paired-workbench",
+      "tasks": ["form"],
+      "tags": ["editor", "parameters", "preview", "input", "output"],
+      "density": "balanced",
+      "complexity": "medium",
+      "suitableFor": [
+        "An authored input is evaluated or transformed into a reviewable result.",
+        "A small number of parameters qualify the same action."
+      ],
+      "avoid": [
+        "Unrelated monitoring metrics.",
+        "Irreversible actions without a separate review step."
+      ],
+      "anatomy": [
+        "Named task and saved configuration",
+        "Input and instructions",
+        "Result region",
+        "Secondary parameter rail",
+        "Submit and history"
+      ],
+      "narrow": "Proposed: stack input, parameters, submit and result in task order. Keep the submitted input available when a result or error appears; do not copy the upstream screenshot-only narrow treatment.",
+      "states": [
+        "Proposed: pristine input",
+        "Proposed: pending result with retained input",
+        "Proposed: invalid input and local explanation",
+        "Proposed: failed submission and retry"
+      ],
+      "artDirection": [
+        "Give input and result equal reading width because users compare the transformation.",
+        "Set parameters in a quieter labelled rail so their density does not compete with authored text."
+      ],
+      "tradeoff": "Paired regions support comparison but can demand too much horizontal space. A simple form with a separate result page is often clearer for infrequent work.",
+      "sourceIds": ["shadcn-playground"]
+    },
+    {
+      "id": "work-summary-evidence",
+      "title": "Summary to evidence",
+      "group": "work",
+      "family": "overview-drilldown",
+      "tasks": ["dashboard"],
+      "tags": ["overview", "metrics", "trend", "records"],
+      "density": "balanced",
+      "complexity": "high",
+      "suitableFor": [
+        "A summary raises a question that a trend and underlying records can answer.",
+        "A team revisits the same stable measures over time."
+      ],
+      "avoid": [
+        "Decorative metrics that do not connect to actionable evidence.",
+        "Time-critical queues where a large overview delays the next item."
+      ],
+      "anatomy": [
+        "Persistent scope navigation",
+        "Small set of summary measures",
+        "Time-series context",
+        "Underlying records",
+        "Record detail and return"
+      ],
+      "narrow": "Proposed: retain scope before measures, then chart and records in reading order. Reduce chart detail rather than shrinking labels; expose its values as readable text.",
+      "states": [
+        "Proposed: changed time scope",
+        "Proposed: missing or delayed data",
+        "Proposed: drilldown and retained scope",
+        "Proposed: fetch failure and retry"
+      ],
+      "artDirection": [
+        "Share unit labels and number formatting across summary, trend and records to make the evidence relationship visible.",
+        "Use a single highlight for the selected period, keeping surrounding data quiet enough to compare."
+      ],
+      "tradeoff": "A summary makes periodic review faster but adds a layer between operator and record. Its added complexity needs a real decision that the overview supports.",
+      "sourceIds": ["shadcn-dashboard"]
+    },
+    {
+      "id": "commerce-object-conditions",
+      "title": "Object beside conditions",
+      "group": "commerce",
+      "family": "object-decision-sheet",
+      "tasks": ["commerce"],
+      "tags": ["product", "gallery", "specification", "purchase"],
+      "density": "spacious",
+      "complexity": "medium",
+      "suitableFor": [
+        "A single object needs both close visual inspection and explicit purchase conditions.",
+        "Differences in scale, material or fit affect the decision."
+      ],
+      "avoid": [
+        "Invented product imagery or unverified specifications.",
+        "Long unrelated content between the price and action."
+      ],
+      "anatomy": [
+        "Object views and honest captions",
+        "Title and price",
+        "Options and availability",
+        "Description and specifications",
+        "Purchase action",
+        "Related objects"
+      ],
+      "narrow": "Proposed: show a useful object view, then title, price, options and complete conditions. Keep captions with images and make the purchase action reachable without a fixed overlay covering content.",
+      "states": [
+        "Proposed: unavailable option",
+        "Proposed: changed price and complete total",
+        "Proposed: invalid combination",
+        "Proposed: add failure and retry"
+      ],
+      "artDirection": [
+        "Give the object more area only when its visible details answer a buying question; label schematics as schematics.",
+        "Connect ruled specifications to the options and complete cost so the visual object and purchase conditions stay one decision."
+      ],
+      "tradeoff": "An object-led sheet can communicate material and construction but delay fit and action. A familiar compact product page is equally valid when imagery provides little additional evidence.",
+      "sourceIds": ["commerce-product", "commerce-description"]
+    },
+    {
+      "id": "commerce-option-sequence",
+      "title": "Options before commitment",
+      "group": "commerce",
+      "family": "option-decision-stack",
+      "tasks": ["commerce", "booking"],
+      "tags": ["options", "variants", "availability", "total"],
+      "density": "balanced",
+      "complexity": "medium",
+      "suitableFor": [
+        "A finite set of options changes availability or the final commitment.",
+        "Customers need to inspect conditions before confirming."
+      ],
+      "avoid": [
+        "Assuming a booking engine, taxes or validation exist because a product component has options.",
+        "Hiding a changed total until after submission."
+      ],
+      "anatomy": [
+        "Item identity and base price",
+        "Required option groups",
+        "Availability and option explanation",
+        "Complete total and terms",
+        "Reviewable commitment"
+      ],
+      "narrow": "Proposed: keep required groups in one vertical order. Place each error beside its group and present the updated total before the action; preserve valid choices after failure.",
+      "states": [
+        "Proposed: no selection",
+        "Proposed: incompatible or unavailable choice",
+        "Proposed: total update",
+        "Proposed: validation and retained retry"
+      ],
+      "artDirection": [
+        "Use explicit group labels and quiet separators because option dependency matters more than a dramatic layout.",
+        "Give the complete total and commitment a shared typographic level so the cost is read with the action."
+      ],
+      "tradeoff": "A linear stack makes dependencies legible but can become long. Complex bookings may need a staged flow with a persistent review summary; that behavior was not observed upstream.",
+      "sourceIds": ["commerce-description"]
+    },
+    {
+      "id": "commerce-featured-assortment",
+      "title": "Featured assortment",
+      "group": "commerce",
+      "family": "weighted-assortment",
+      "tasks": ["commerce"],
+      "tags": ["assortment", "featured", "curation", "browse"],
+      "density": "spacious",
+      "complexity": "low",
+      "suitableFor": [
+        "A curator has a defensible reason to feature one of three objects.",
+        "All displayed objects have meaningful supplied imagery and prices."
+      ],
+      "avoid": [
+        "Equal-weight comparisons where one large tile would imply an unsupported ranking.",
+        "Missing products or placeholder imagery used to complete the shape."
+      ],
+      "anatomy": [
+        "One featured object",
+        "Two supporting objects",
+        "Identity and price on each",
+        "Direct path to object details"
+      ],
+      "narrow": "Observed grid stacks at small widths. Proposed: preserve an intentional featured-first order and repeat identity/price on each item without relying on overlay contrast.",
+      "states": [
+        "Proposed: fewer than three available objects",
+        "Proposed: image unavailable with honest text fallback",
+        "Proposed: detail and retained browse return"
+      ],
+      "artDirection": [
+        "Use unequal image area only when editorial priority is real, while keeping the same identity and price treatment.",
+        "Choose crops that preserve the distinguishing product feature; a larger tile must not merely magnify empty background."
+      ],
+      "tradeoff": "A weighted assortment creates an editorial lead at the cost of equal comparison. A regular grid is preferable when customers must compare peers.",
+      "sourceIds": ["commerce-featured"]
+    },
+    {
+      "id": "reading-document-map",
+      "title": "Document with two maps",
+      "group": "reading",
+      "family": "document-map",
+      "tasks": ["documentation"],
+      "tags": ["documentation", "navigation", "reference", "contents"],
+      "density": "balanced",
+      "complexity": "medium",
+      "suitableFor": [
+        "A large reference corpus needs both cross-document navigation and in-page wayfinding.",
+        "Readers often arrive directly at a specific section."
+      ],
+      "avoid": [
+        "Short articles that gain little from two navigation regions.",
+        "Overlong navigation that dominates the reading column."
+      ],
+      "anatomy": [
+        "Corpus navigation",
+        "Page title and notices",
+        "Main reading column",
+        "On-page section map",
+        "Related or next document"
+      ],
+      "narrow": "Proposed: collapse corpus navigation into a named menu and place a compact section index before the article. Anchor destinations need visible headings and navigation-aware scroll space.",
+      "states": [
+        "Proposed: direct section entry",
+        "Proposed: current page and section",
+        "Proposed: missing translation notice",
+        "Proposed: menu close and focus return"
+      ],
+      "artDirection": [
+        "Limit prose width while giving navigation smaller, quieter type because the article remains the primary object.",
+        "Differentiate corpus labels from local headings through alignment and spacing, rather than competing color systems."
+      ],
+      "tradeoff": "Two maps improve orientation in a large corpus but consume width and attention. A single contents list is often sufficient for a small guide.",
+      "sourceIds": ["starlight-page", "starlight-sidebar", "starlight-toc"]
+    },
+    {
+      "id": "reading-procedure-thread",
+      "title": "Procedure thread",
+      "group": "reading",
+      "family": "numbered-procedure",
+      "tasks": ["documentation", "learning"],
+      "tags": ["steps", "procedure", "instruction", "sequence"],
+      "density": "balanced",
+      "complexity": "low",
+      "suitableFor": [
+        "Actions must happen in order and each has local explanation or evidence.",
+        "A reader benefits from returning to a named step."
+      ],
+      "avoid": [
+        "Unordered concepts presented as steps purely for decoration.",
+        "Implying completion tracking from a numbered document."
+      ],
+      "anatomy": [
+        "Outcome and prerequisites",
+        "Ordered step headings",
+        "Local instruction and example",
+        "Expected result per step",
+        "Next action or recovery"
+      ],
+      "narrow": "Proposed: keep markers outside the readable text measure and examples inside their step. Long code or tables need their own labelled overflow region.",
+      "states": [
+        "Proposed: direct link to a step",
+        "Proposed: prerequisite missing",
+        "Proposed: unexpected result and recovery guidance",
+        "Proposed: completed document with next action"
+      ],
+      "artDirection": [
+        "Use numbers because order changes the outcome; connect markers lightly enough that they do not overpower instructions.",
+        "Give examples and expected results a consistent inset because users compare what they did with what should happen."
+      ],
+      "tradeoff": "A procedure makes order explicit but can hide the larger conceptual model. Include context when a reader must choose among methods rather than follow one.",
+      "sourceIds": ["starlight-steps"]
+    },
+    {
+      "id": "reading-evidence-margin",
+      "title": "Reading with evidence margin",
+      "group": "reading",
+      "family": "annotated-reading",
+      "tasks": ["editorial", "learning"],
+      "tags": ["article", "evidence", "caption", "notes"],
+      "density": "spacious",
+      "complexity": "medium",
+      "suitableFor": [
+        "A claim needs a nearby diagram, source or qualification.",
+        "Readers alternate between narrative and close inspection."
+      ],
+      "avoid": [
+        "Decorative margin fragments with no relationship to the prose.",
+        "Unsupported claims disguised as authoritative annotations."
+      ],
+      "anatomy": [
+        "Article title and scope",
+        "Narrative sections",
+        "Anchored evidence figure",
+        "Caption and uncertainty",
+        "Section map and reading return"
+      ],
+      "narrow": "Proposed adaptation: place each evidence figure and note immediately after its referenced paragraph when a margin cannot fit. Keep caption, source and limitation with the figure.",
+      "states": [
+        "Proposed: anchor to evidence",
+        "Proposed: saved place and resumed reading",
+        "Proposed: unavailable evidence with explanation",
+        "Proposed: clear saved place"
+      ],
+      "artDirection": [
+        "Use a distinct reading face for prose and a restrained annotation style because narrative and evidence have different roles.",
+        "Anchor every margin note to a named figure or claim; spacing makes the correspondence visible without invented ornament."
+      ],
+      "tradeoff": "The upstream source supports a reading column and local map, not evidence annotations or saved-place behavior. The proposed margin increases inspection space but interrupts narrative rhythm.",
+      "sourceIds": ["starlight-page", "starlight-toc"]
+    },
+    {
+      "id": "exploration-query-results",
+      "title": "Query and result field",
+      "group": "exploration",
+      "family": "query-result-grid",
+      "tasks": ["commerce", "portfolio"],
+      "tags": ["search", "query", "results", "collection"],
+      "density": "balanced",
+      "complexity": "medium",
+      "suitableFor": [
+        "A query reduces a collection of visually distinguishable objects.",
+        "Each result has a meaningful identity and detail destination."
+      ],
+      "avoid": [
+        "Attribute-heavy records that are easier to compare in rows.",
+        "Inferring faceted filtering or retained scroll from a search page alone."
+      ],
+      "anatomy": [
+        "Query and scope",
+        "Result count with active query",
+        "Consistent result field",
+        "No-match explanation and reset",
+        "Object detail and return"
+      ],
+      "narrow": "Observed grid reduces to one column. Proposed: retain the query and count before results; restore query and a useful return location after detail.",
+      "states": [
+        "Proposed: active query",
+        "Observed in source: no results message",
+        "Proposed: clear query and reset",
+        "Proposed: loading, failure and retained return"
+      ],
+      "artDirection": [
+        "Keep identity and the distinguishing attribute in the same position on every result because the eye scans repeated roles.",
+        "Use equal visual area for peer objects so ranking comes from labelled relevance rather than accidental size."
+      ],
+      "tradeoff": "A grid supports visual discovery but exposes fewer comparable attributes. An indexed list can be better for material, dimension or date comparison.",
+      "sourceIds": ["commerce-search"]
+    },
+    {
+      "id": "exploration-hierarchy-path",
+      "title": "Hierarchy with current path",
+      "group": "exploration",
+      "family": "hierarchical-index",
+      "tasks": ["documentation"],
+      "tags": ["corpus", "hierarchy", "navigation", "directory"],
+      "density": "dense",
+      "complexity": "medium",
+      "suitableFor": [
+        "A stable collection has meaningful parent-child relationships.",
+        "A visitor needs to know both the current item and nearby alternatives."
+      ],
+      "avoid": [
+        "Inventing taxonomy for a small flat collection.",
+        "Deep trees whose collapsed state hides the current item."
+      ],
+      "anatomy": [
+        "Named collection",
+        "Grouped navigation",
+        "Current item and ancestor context",
+        "Item summary or content",
+        "Nearby destinations"
+      ],
+      "narrow": "Proposed: expose the current path before content and put the full collection in a named expandable region. Restore focus to its trigger on close.",
+      "states": [
+        "Proposed: current item",
+        "Proposed: open and collapsed groups",
+        "Proposed: direct deep-link entry",
+        "Proposed: missing destination and recovery"
+      ],
+      "artDirection": [
+        "Use indentation only for real ancestry; pair it with group labels so hierarchy remains understandable without spatial cues.",
+        "Reserve stronger weight for the current destination, leaving siblings readable and comparable."
+      ],
+      "tradeoff": "The inspected wrapper delegates hierarchy rendering to another component; group behavior and keyboard handling were not verified. A flat alphabetical index is often faster for known-item lookup.",
+      "sourceIds": ["starlight-sidebar", "starlight-page"]
+    },
+    {
+      "id": "exploration-choice-index",
+      "title": "Choice index",
+      "group": "exploration",
+      "family": "choice-directory",
+      "tasks": ["documentation", "learning", "portfolio"],
+      "tags": ["directory", "routes", "topics", "comparison"],
+      "density": "balanced",
+      "complexity": "low",
+      "suitableFor": [
+        "Several peer routes can be distinguished by concise purpose and audience.",
+        "Visitors choose what to inspect next rather than complete a transaction."
+      ],
+      "avoid": [
+        "Identical vague descriptions that do not help a choice.",
+        "Staggering layout when strict row comparison matters."
+      ],
+      "anatomy": [
+        "Collection scope",
+        "Peer route titles",
+        "Purpose and distinguishing fact",
+        "Direct destination link",
+        "Alternative discovery path"
+      ],
+      "narrow": "Observed grid becomes one column. Proposed: preserve a stable source order and use the same descriptive fields for each route; avoid a stagger when it breaks comparison.",
+      "states": [
+        "Proposed: normal route selection",
+        "Proposed: unavailable route labelled in place",
+        "Proposed: filtered empty state and reset",
+        "Proposed: retained return context"
+      ],
+      "artDirection": [
+        "Use a compact title and one useful distinction per destination because the visitor is comparing routes, not reading full articles.",
+        "Keep repeated entries on a common baseline; reserve any asymmetry for real editorial priority."
+      ],
+      "tradeoff": "The source provides a grid container, not search, destination copy or state handling. A plain linked list is more efficient when titles alone distinguish the choices.",
+      "sourceIds": ["starlight-card-grid"]
+    }
+  ]
+}
