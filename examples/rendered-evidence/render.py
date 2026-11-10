@@ -155,7 +155,7 @@ def _sheet(data, findings):
         if rect is not None:
             x, y, w, h = rect
             regions.append(f'<rect data-finding="{fid}" x="{x}" y="{y}" width="{w}" height="{h}"/>')
-            regions.append(f'<text x="{x + 4}" y="{y + 16}">{fid}</text>')
+            regions.append(f'<text x="{x + 4}" y="{y + 16}">{_esc(fid)}</text>')
         location = "Authored region: " + fid if rect else "No region asserted; text evidence only."
         body = "".join(f'<p><strong>{field.capitalize()}:</strong> {_esc(finding[field])}</p>'
                        for field in PROSE if field != "title")
@@ -234,7 +234,7 @@ footer{margin-top:32px;border-top:1px solid #bac4cd;padding-top:16px}::selection
 </style></head><body><div class="page"><header><h1>Rendered evidence</h1>
 <p>Two kinds of work stay separate: checking exact artifact bytes and judging what an observation means.</p>
 <p class="meta">Optional, authored snapshot example. No automatic defect or conformance score.</p>
-<p class="meta">Declared source revision: <code>''' + revision + '''</code></p></header>
+<p class="meta">Declared source revision: <code>''' + _esc(revision) + '''</code></p></header>
 <main><input id="regions" type="checkbox" checked aria-describedby="region-help"><label for="regions">Show authored regions</label>
 <p id="region-help" class="meta">Toggle the marks to inspect the unchanged capture. Source-only notes have no region.</p>
 ''' + sheets + '''</main><footer><p class="meta">File bytes matched the supplied hashes during generation. This does not establish freshness, semantic truth, accessibility or user outcomes. No scripts or automatic network requests.</p></footer>

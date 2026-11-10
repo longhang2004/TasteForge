@@ -1,5 +1,7 @@
 # 15 — Future RFCs and dependency-aware work packages
 
+WP-D follow-through: [RFC 16 and controlled prototype](../2026-11-10-rendered-evidence-design.md) are available in [draft PR #7](https://github.com/longhang2004/TasteForge/pull/7). See the [implementation record](../../../research/2026-11-10-rendered-evidence/report.md) for verified scope and limits. Production integration remains a proposal.
+
 Date: 2026-11-10. Status: roadmap proposals, not implementation commitments; part of [programme design 08](../2026-11-10-evidence-led-quality-design.md). Issue states are planning context checked on this date and must be refreshed before execution.
 
 ## 1. Sequence and independent tracks

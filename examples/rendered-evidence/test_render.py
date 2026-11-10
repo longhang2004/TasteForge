@@ -108,6 +108,14 @@ class RendererTests(unittest.TestCase):
         self.assertIn("12", text)  # The recorded natural scroll, not an assumed zero.
         self.assertNotIn(str(self.root), text)
 
+    def test_zero_findings_is_unassessed_instead_of_a_clean_bill(self):
+        self.document["findings"] = []
+        result = self.run_renderer()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        text = (self.root / "out/view.html").read_text()
+        self.assertEqual(Tags(text).regions, [])
+        self.assertIn("No authored observations; no UX assessment implied.", text)
+
     def test_same_inputs_produce_identical_output_in_different_new_files(self):
         self.assertEqual(self.run_renderer(output="one.html").returncode, 0)
         self.assertEqual(self.run_renderer(output="two.html").returncode, 0)
@@ -248,7 +256,7 @@ class RendererTests(unittest.TestCase):
         self.document["captures"][0]["source"] = self.asset("source.html")
         self.rejected(trace="source.html")
         self.document["padding"] = "x" * (256 * 1024)
-        self.rejected(trace="annotations.json")
+        self.rejected(trace="Input exceeds byte limit: annotations.json")
 
     def test_existing_output_is_preserved_and_linked_parents_are_refused(self):
         existing = self.root / "existing.html"
@@ -263,6 +271,12 @@ class RendererTests(unittest.TestCase):
         self.assertEqual(result.returncode, 2)
         self.assertIn("link", result.stderr)
         self.assertFalse((self.root / "actual/new.html").exists())
+        (self.root / "container/child").mkdir(parents=True)
+        (self.root / "container/alias-output").symlink_to(self.root / "actual", target_is_directory=True)
+        result = self.run_renderer(output="container/child/../alias-output/through-dot.html")
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("link", result.stderr)
+        self.assertFalse((self.root / "actual/through-dot.html").exists())
 
     def test_missing_nested_output_parent_does_not_hide_a_linked_ancestor(self):
         (self.root / "actual").mkdir()

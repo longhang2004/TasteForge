@@ -32,7 +32,7 @@ One Impeccable detector pass reported three warnings: two zero-inset capture sta
 
 Repository build, typecheck, lint and formatting checks passed, with **57/57** Node tests. The unchanged historical pilot verified **110 frozen inputs, 8 review files, 782 artifacts and 4 accepted cells**. The optional Python suite is a separate CI step across the existing Node 20/22/24/26 matrix. Package/runtime files are unchanged; no local package smoke repeat was needed, and CI retains its package smoke step.
 
-The independent review and final integrity freeze are pending in this implementation checkpoint and will be recorded before delivery.
+The final post-review Python suite passes **22/22**. It adds the zero-finding boundary, checks the exact manifest byte-limit error, and exercises a linked output path containing `..`. Two explicit escaping calls leave the generated HTML byte-identical to the browser-confirmed page; that viewer evidence remains applicable. The final run integrity index binds the delivered implementation/input bytes and retained records.
 
 ## AGY use and primary-agent responsibility
 
@@ -46,6 +46,8 @@ Only publicly published, pinned repository snapshots were sent to AGY. The task-
 The 628-line candidate was syntax-inspected as inert source and was not executed or integrated verbatim. It missed linked-parent/read-cap/output guards, exact image/report-directory association and the single global toggle, and its viewer needed simplification. The primary agent wrote the focused implementation, added demonstrated boundary cases and ran all checks. Draft generation is recorded as drafting assistance, not successful implementation.
 
 CLI version was 1.5.3. Raw usage differs by model/provider; cache/thinking counters are retained without normalizing them into money or savings. No billing export or matched baseline exists. The [resources record](resources.json) and raw invocations are the accounting source of truth.
+
+The fresh review covered public commit `dda28f8b24e6d1c24a653be6e093f4e9cc302916`, requested `claude-opus-4-6-thinking`, and took 147.076 s. It found no Critical/Important findings and five Minor findings. It was source-scoped: the reviewer did not execute tests or inspect PNGs. Its assessment approved this optional prototype scope, with no merge performed. The [disposition](review-disposition.md) records the primary agent's verification and bounded changes. The final renderer differs by two defensive escaping calls, without changing output; tests and the delivery-index exclusion were strengthened separately. No further feature or UI redesign was introduced after the confirmed browser pass.
 
 ## Limits and follow-up
 

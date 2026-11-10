@@ -1,6 +1,6 @@
 # Rendered evidence RFC implementation plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans for this bounded RFC/prototype. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans for this bounded RFC/prototype. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Make the existing source/capture/runtime distinction inspectable through a reviewed RFC and a local authored-annotation example.
 
@@ -32,8 +32,8 @@
 
 **Interfaces:** RFC 16 fixes provisional record fields, renderer signatures, limits and failure semantics consumed by Task 2.
 
-- [ ] Publish a draft design snapshot on the new branch, then ask one fresh AGY builder reviewer for material unanswered planning questions, using only that public snapshot.
-- [ ] Resolve ordinary builder questions in the RFC/ledger; keep production decisions proposed.
+- [x] Publish a draft design snapshot on the new branch, then ask one fresh AGY builder reviewer for material unanswered planning questions, using only that public snapshot.
+- [x] Resolve ordinary builder questions in the RFC/ledger; keep production decisions proposed.
 
 ## Task 2: Build the controlled example with tests first
 
@@ -41,10 +41,10 @@
 
 **Interfaces:** `render(document: dict, root: pathlib.Path) -> str`; `write_new(output: pathlib.Path, html: str) -> None`; CLI as in RFC 16. The input format is `tasteforge.rendered-evidence.prototype.v1`.
 
-- [ ] Write CLI-oriented unittest scenarios for deterministic valid output, escaping, exact hashes/report association, identifiers/coordinates, path aliases/limits and output preservation. Run them against the missing renderer and observe assertion failures for the expected missing behavior.
-- [ ] Implement the minimal renderer and rerun the same cases to green. Test actual files and hashes; no hashing/filesystem mocks.
-- [ ] Populate two captures/four authored findings from exact existing images/source/reports, including recorded scroll and honest unknowns.
-- [ ] Generate a new local HTML artifact. Document the command, implemented scope and future contracts. Expected: self-contained images, native toggle and companion text; no public runtime/package change.
+- [x] Write CLI-oriented unittest scenarios for deterministic valid output, escaping, exact hashes/report association, identifiers/coordinates, path aliases/limits and output preservation. Run them against the missing renderer and observe assertion failures for the expected missing behavior.
+- [x] Implement the minimal renderer and rerun the same cases to green. Test actual files and hashes; no hashing/filesystem mocks.
+- [x] Populate two captures/four authored findings from exact existing images/source/reports, including recorded scroll and honest unknowns.
+- [x] Generate a new local HTML artifact. Document the command, implemented scope and future contracts. Expected: self-contained images, native toggle and companion text; no public runtime/package change.
 
 ## Task 3: Verify and deliver the RFC
 
@@ -52,10 +52,10 @@
 
 **Interfaces:** Consume Task 2's validated HTML/JSON. Viewer checks do not replay the captured apps.
 
-- [ ] Use existing Playwright/axe at 320/390/1440 and one high-DPR context. Check overlay scaling, keyboard toggle, source-only text, viewport reflow, remote requests/page errors and reported accessibility results. Inspect actual screenshots.
-- [ ] Run prototype unittests, repository checks and old pilot integrity verification. Expected: relevant checks pass; 782 old artifacts remain unchanged. No package smoke repeat unless package/runtime files actually change.
-- [ ] Obtain one fresh independent AGY review of a pinned public implementation snapshot; address demonstrated important gaps in one bounded pass and retain all attempts/unknowns.
-- [ ] Deliver a separate draft PR stacked on PR #6. Update LON-105 and spec navigation with public links; keep production adoption separate and preserve the managed worktree.
+- [x] Use existing Playwright/axe at 320/390/1440 and one high-DPR context. Check overlay scaling, keyboard toggle, source-only text, viewport reflow, remote requests/page errors and reported accessibility results. Inspect actual screenshots.
+- [x] Run prototype unittests, repository checks and old pilot integrity verification. Expected: relevant checks pass; 782 old artifacts remain unchanged. No package smoke repeat unless package/runtime files actually change.
+- [x] Obtain one fresh independent AGY review of a pinned public implementation snapshot; address demonstrated important gaps in one bounded pass and retain all attempts/unknowns.
+- [x] Deliver a separate draft PR stacked on PR #6. Update LON-105 and spec navigation with public links; keep production adoption separate and preserve the managed worktree.
 
 ## Execution record
 

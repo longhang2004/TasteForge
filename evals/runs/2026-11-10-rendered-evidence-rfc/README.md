@@ -11,4 +11,6 @@ See the [implementation report](../../../docs/research/2026-11-10-rendered-evide
 - `impeccable.json`: one detector pass, with contextual disposition in the report.
 - `verify.py`, `integrity.json`: delivery file set and implementation/input hashes. Run `python3 evals/runs/2026-11-10-rendered-evidence-rfc/verify.py` from the repository root.
 
-These viewer checks do not replay or certify the applications shown in the screenshots. Hashes establish bytes, not semantic truth, freshness or user outcomes. Final independent review records are appended before the delivery index is frozen.
+`review` and `public-review` retain the fresh independent source-scoped review of public commit `dda28f8b`; the [disposition](../../../docs/research/2026-11-10-rendered-evidence/review-disposition.md) assesses its five Minor findings. `tests-post-review.log` records the final 22/22 suite, and `resource-ledger.json` preserves all three AGY attempts.
+
+These viewer checks do not replay or certify the applications shown in the screenshots. Hashes establish bytes, not semantic truth, freshness or user outcomes. The delivery index was frozen after appending independent review records; its code/input bindings describe the final delivery, not the earlier review checkpoint.

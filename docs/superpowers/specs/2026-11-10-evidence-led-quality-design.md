@@ -2,6 +2,8 @@
 
 Date: 2026-11-10. Status: draft specification for review. Scope: future design and evaluation work; implementation is not authorized by this document alone.
 
+WP-D now has a concrete [RFC 16 and controlled prototype](2026-11-10-rendered-evidence-design.md), delivered for review in [draft PR #7](https://github.com/longhang2004/TasteForge/pull/7). The [implementation record](../../research/2026-11-10-rendered-evidence/report.md) separates verified viewer behavior from historical app evidence and unassessed claims; production adoption remains proposed.
+
 ## 1. Direction and decision boundary
 
 The owner asked to prioritize existing reviews and public information, reduce dependence on recruiting people for manual A/B tests, and write substantial specifications for later work. This is the approved planning direction. Detailed thresholds, record formats and work packages below are proposed design decisions, not claims of an implemented system or measured improvement.

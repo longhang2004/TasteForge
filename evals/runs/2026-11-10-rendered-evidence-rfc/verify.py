@@ -9,7 +9,7 @@ run = Path(__file__).resolve().parent
 root = run.parents[2]
 digest = lambda path: hashlib.sha256(path.read_bytes()).hexdigest()
 files = {str(p.relative_to(run)): digest(p) for p in sorted(run.rglob("*"))
-         if p.is_file() and p.name != "integrity.json" and "__pycache__" not in p.parts}
+         if p.is_file() and p != run / "integrity.json" and "__pycache__" not in p.parts}
 names = ["examples/rendered-evidence/render.py", "examples/rendered-evidence/test_render.py",
          "examples/rendered-evidence/annotations.json"]
 annotations = json.loads((root / names[-1]).read_text())

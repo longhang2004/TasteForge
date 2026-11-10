@@ -45,6 +45,28 @@
       "role": "implement",
       "raw": "evals/runs/2026-11-10-rendered-evidence-rfc/implement",
       "inputScope": "pinned public repository snapshot only"
+    },
+    {
+      "requestedModel": "claude-opus-4-6-thinking",
+      "effort": null,
+      "cliVersion": "1.5.4",
+      "startedAt": "2026-11-10T08:54:15.759749+00:00",
+      "finishedAt": "2026-11-10T08:56:43.008183+00:00",
+      "elapsedSeconds": 147.076,
+      "exitCode": 0,
+      "status": "SUCCESS",
+      "usage": {
+        "input_tokens": 50307,
+        "output_tokens": 5392,
+        "thinking_tokens": 0,
+        "cache_read_tokens": 111522,
+        "total_tokens": 55699
+      },
+      "duration_seconds": 136.4374208,
+      "num_turns": 1,
+      "role": "independent-source-review",
+      "raw": "evals/runs/2026-11-10-rendered-evidence-rfc/review",
+      "inputScope": "pinned public repository snapshot only"
     }
   ],
   "billing": "unavailable",
@@ -54,5 +76,20 @@
   "viewerBrowser": "156.0.8078.4",
   "python": "3.10.12",
   "freshDependencyInstalls": 0,
-  "finalReview": "pending"
+  "finalReview": {
+    "publicCommit": "dda28f8b24e6d1c24a653be6e093f4e9cc302916",
+    "critical": 0,
+    "important": 0,
+    "minor": 5,
+    "scope": "source only; no test execution or PNG inspection",
+    "disposition": "review-disposition.md"
+  },
+  "finalVerification": {
+    "pythonTests": 22,
+    "repositoryTests": 57,
+    "viewerChecks": 28,
+    "axeViolations": 0,
+    "axeIncompleteRuleRecords": 4,
+    "userStudy": false
+  }
 }
