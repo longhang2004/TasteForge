@@ -1,0 +1,79 @@
+{
+  "recordType": "tasteforge.copy-state.resources.v1",
+  "recordedAt": "2026-11-10",
+  "attempts": [
+    {
+      "startedAt": "2026-11-10T04:46:04.224480+00:00",
+      "finishedAt": "2026-11-10T04:48:34.167812+00:00",
+      "cliVersion": "1.5.4",
+      "host": "Windows AGY through Ubuntu WSL",
+      "requestedModel": "gemini-3.8-flash-high",
+      "effort": "high",
+      "exitCode": 0,
+      "status": "SUCCESS",
+      "elapsedSeconds": 149.817,
+      "duration_seconds": 141.1380124,
+      "num_turns": 1,
+      "usage": {
+        "input_tokens": 48035,
+        "output_tokens": 16087,
+        "thinking_tokens": 10205,
+        "cache_read_tokens": 0,
+        "total_tokens": 64122
+      },
+      "budget": {
+        "printTimeoutSeconds": 600,
+        "operatorTimeoutSeconds": 625
+      },
+      "packet": {
+        "case-design.md": "2fcaa66f5cbe1542762d4280573b400ad9c02b0aa37818752fd18061a19bf6e5",
+        "copy-state-design.md": "e1d8d918496024935fa55e63e48f26b6bbdaa0ecb25ebe14ca9eab8053afe934",
+        "source-spec.md": "fdca1a57c2ed48b2a89e39e5ae8158a5e484a9c9b56de6a8521a3808c08e5b88"
+      },
+      "role": "secondary public-source curation",
+      "rawRecordHashes": {
+        "invocation.json": "a98f735c6fa9640a2473b87e7ea5ff2bf7d878e27417691107531c023757d8d8",
+        "response.md": "a5bf9c584878acdb6e56d6c4bdbce712fd14bb5895d962bc513bba9a62fa165a",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.json": "f239419eaca36348a70fa0a3f193f790babca3a26a26682e4f704ff26221552b"
+      }
+    }
+  ],
+  "usageInterpretation": "Original AGY category names/units retained verbatim. Provider/cache semantics, verified billing and normalized parent/operator totals are unknown; categories are not added into a new billable total.",
+  "parentAgentUsage": null,
+  "newUiGenerations": 0,
+  "newRecruitedParticipants": 0,
+  "claim": "No measured cost-saving or generation-quality improvement claim.",
+  "rawRecordRetention": "Complete curation streams are retained locally in the original checkout ignored .tmp/copy-state-20261110/curation directory; hashes bind those bytes. They are not required to use the skill.",
+  "validationAttempts": [
+    {
+      "command": "pnpm check",
+      "exitCode": 1,
+      "failureKind": "Windows Git archive CRLF conversion; unrelated baseline formatting",
+      "startedAt": null,
+      "elapsedSeconds": null,
+      "logSha256": "561b2809c96aadcccb0a0ae20c77ed36f0d4a755da4e61131fca32ccbadb882a"
+    },
+    {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "startedAt": "2026-11-10T05:02:42.073641+00:00",
+      "finishedAt": "2026-11-10T05:04:02.898697+00:00",
+      "elapsedSeconds": 80.825,
+      "logSha256": "b9701883aad91736261a63b7a0d0576651d713d1ff797b27c0a58b1c70a39257"
+    },
+    {
+      "command": "pnpm pack:smoke",
+      "exitCode": 0,
+      "startedAt": "2026-11-10T05:04:02.903366+00:00",
+      "finishedAt": "2026-11-10T05:04:18.949601+00:00",
+      "elapsedSeconds": 16.046,
+      "logSha256": "7caa5ef89a6a1d4217b310822fec83b6ca0148c5d8a33fee8f00fa4fe7affa8e"
+    }
+  ],
+  "skillPackageCheck": {
+    "sourceBuiltPackedSkillFiles": 24,
+    "byteEquality": true,
+    "researchCorpusExcluded": true
+  }
+}

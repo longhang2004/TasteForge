@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Add on-demand copy/state coherence guidance with contextual counterexamples, a source-linked research bank and a scoped retrospective of retained artifacts; preserve Fast effort and distinguish available review evidence from new user studies.
 - Add twelve original composition cards, a source-attributed field guide and composition-first seeded inspiration with disclosed task/density/complexity exclusions and soft visual-family diversity. The imported catalog remains 642 records from 18 sources.
 - Expand knowledge data to `0.1.1` with six reviewed font pairs (38 total), licensed gallery specimens and sampled language/delivery evidence. Regenerate maintained examples with their existing context/direction/seed; retain historical frozen runs and package/engine/DNA versions.
 - Preserve raw composition-randomizer evidence during formatting checks.
