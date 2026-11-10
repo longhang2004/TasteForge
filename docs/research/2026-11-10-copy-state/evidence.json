@@ -1,0 +1,78 @@
+{
+  "recordType": "tasteforge.copy-state.retrospective.v1",
+  "baselineCommit": "79820b58088245c32902d85cb0b2f14abd967aad",
+  "historicalPilotCommit": "6e1a91621176be699c3b41c19da6574b91e701f2",
+  "recordedAt": "2026-11-10",
+  "evidenceLanes": ["E0-source-synthesis", "E1-retrospective-inspection"],
+  "selection": "Two existing task families, including the baseline condition, six preselected retained captures; no rerender or new behavior execution.",
+  "files": [
+    {
+      "path": "evals/runs/2026-11-06-composition-randomizer-pilot/outputs/proofdesk-baseline/corrected/index.html",
+      "role": "historical-ui-source",
+      "sha256": "62b36789a6106477fedae6a027bb0c295b18672a53d0cde64ff7b62cbc52a048"
+    },
+    {
+      "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/proofdesk-baseline/corrected/matched-v3/report.json",
+      "role": "historical-check-record",
+      "sha256": "81058f89b8e0a2035ff5185548a79b200964ca587506088dd197bf8f4b3a4951"
+    },
+    {
+      "path": "evals/runs/2026-11-06-composition-randomizer-pilot/outputs/cabinet-candidate/corrected/index.html",
+      "role": "historical-ui-source",
+      "sha256": "63976e2538797be4ac9658990ab4060c3077fbc0fee1df9ce446ef46684fb441"
+    },
+    {
+      "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/cabinet-candidate/corrected/matched-v3/report.json",
+      "role": "historical-check-record",
+      "sha256": "a5c8e1e4fb4c4608add3a117a1c1b1711e54956f9f7f8e9a1a94f70bd7cff5f4"
+    },
+    {
+      "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/proofdesk-baseline/corrected/matched-v3/320-initial.png",
+      "role": "retained-capture",
+      "sha256": "8f908ea5f10bb21bc9a0cfcda0de7b498b7bb1b7b8da2b7552000e0fbf37ada4",
+      "width": 320,
+      "height": 900
+    },
+    {
+      "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/proofdesk-baseline/corrected/matched-v3/320-failure.png",
+      "role": "retained-capture",
+      "sha256": "45652afd009ffd77e376fe9b5b7a5a21f863f1461827aa7e1dce4603cb9107d7",
+      "width": 320,
+      "height": 900
+    },
+    {
+      "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/proofdesk-baseline/corrected/matched-v3/1440-empty.png",
+      "role": "retained-capture",
+      "sha256": "a2731c12cf02bd0fd1ec5bd4ba757521226bb461138e2acc7c41bcfa188afede",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/cabinet-candidate/corrected/matched-v3/320-initial.png",
+      "role": "retained-capture",
+      "sha256": "0664d8f5564243619ab9e02a11f8170b8e439b66ae36b3218d591db6adb06e8b",
+      "width": 320,
+      "height": 900
+    },
+    {
+      "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/cabinet-candidate/corrected/matched-v3/320-empty.png",
+      "role": "retained-capture",
+      "sha256": "494567711c26a075f582a2d23bc0f036a87189d9c9246c4fb4c7ac2f8ef6849a",
+      "width": 320,
+      "height": 900
+    },
+    {
+      "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/cabinet-candidate/corrected/matched-v3/1440-detail.png",
+      "role": "retained-capture",
+      "sha256": "889b821fe114a80db9f73619449df1dc737559ac77521f4a4a5d538d7eb1955a",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "limitations": [
+    "Selected artifacts are not representative or new samples.",
+    "No fresh generation, A/B study, behavior replay or recruited human study.",
+    "Visual inspection is by the integrating AI agent; original checks retain their historical scope.",
+    "New guidance efficacy, user comprehension, full accessibility and full Vietnamese coverage remain unassessed."
+  ]
+}
