@@ -1,0 +1,56 @@
+...F................
+======================================================================
+FAIL: test_boolean_runtime_viewport_is_not_treated_as_an_integer (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 184, in test_boolean_runtime_viewport_is_not_treated_as_an_integer
+    self.rejected(trace="viewport")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 93, in rejected
+    self.assertEqual(result.returncode, 2, result.stdout + result.stderr)
+AssertionError: 0 != 2 : Wrote verified-byte snapshot: /tmp/tmp8iejvgf3/out/view.html
+
+
+======================================================================
+FAIL: test_non_string_capture_references_are_rejected_without_a_traceback (test_render.RendererTests) (value=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 176, in test_non_string_capture_references_are_rejected_without_a_traceback
+    result = self.rejected(document, trace="captureId")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 93, in rejected
+    self.assertEqual(result.returncode, 2, result.stdout + result.stderr)
+AssertionError: 1 != 2 : Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py", line 274, in <module>
+    raise SystemExit(main())
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py", line 264, in main
+    page = render(document, root)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py", line 212, in render
+    findings = _findings(document["findings"], captures)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py", line 121, in _findings
+    if finding["captureId"] not in captures:
+TypeError: unhashable type: 'list'
+
+
+======================================================================
+FAIL: test_non_string_capture_references_are_rejected_without_a_traceback (test_render.RendererTests) (value={})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 176, in test_non_string_capture_references_are_rejected_without_a_traceback
+    result = self.rejected(document, trace="captureId")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 93, in rejected
+    self.assertEqual(result.returncode, 2, result.stdout + result.stderr)
+AssertionError: 1 != 2 : Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py", line 274, in <module>
+    raise SystemExit(main())
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py", line 264, in main
+    page = render(document, root)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py", line 212, in render
+    findings = _findings(document["findings"], captures)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py", line 121, in _findings
+    if finding["captureId"] not in captures:
+TypeError: unhashable type: 'dict'
+
+
+----------------------------------------------------------------------
+Ran 21 tests in 12.488s
+
+FAILED (failures=3)

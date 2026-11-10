@@ -1,5 +1,9 @@
 # Keep hash-bound evidence and generated snapshots byte-identical across checkouts.
 evals/runs/** -text
+# Renderer code/input bytes are bound by the rendered-evidence delivery index.
+examples/rendered-evidence/** text eol=lf
+# Keep raw review streams and command logs verbatim, including trailing newlines.
+evals/runs/2026-11-10-rendered-evidence-rfc/** whitespace=-blank-at-eol,-blank-at-eof
 evals/runs/**/reviews/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 examples/*/evidence/** -text
 examples/composition-studies/brief-freeze.json -text
