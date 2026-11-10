@@ -47,7 +47,7 @@ Keep the kind separate from `decision`: `keep`, `adapt`, `remove`, `unassessed`.
 
 The provisional JSON format is `tasteforge.rendered-evidence.prototype.v1`. It is separate from DNA `1.0` and from the proposed research registries in spec 13. It is not a stable public interchange API or a claim of Web Annotation conformance.
 
-Top-level fields are `format`, `sourceRevision`, `captures`, `findings`. Unknown fields and unsupported versions are rejected by the prototype, rather than silently discarded.
+Top-level fields are `format`, `sourceRevision`, `captures`, `findings`. `sourceRevision` is a 40-character lowercase hexadecimal provenance label; the offline renderer does not authenticate Git history. Unknown fields and unsupported versions are rejected by the prototype, rather than silently discarded.
 
 Each capture has:
 
@@ -61,7 +61,7 @@ The actual report supplies browser version, framing, scroll Y and active-element
 
 Each finding has `id`, `captureId`, `kind`, `title`, `observation`, `consequence`, `applicability`, `decision`, `recheck`, `limits`, `sourceHint`, `rect`. `sourceHint` is text or null. `rect` is either null or `[x, y, width, height]` in **capture-image pixels**. The other prose fields are nonempty strings; `limits` is a nonempty string explaining the remaining scope. Finding IDs are unique and every `captureId` must exist.
 
-The small prototype caps are four captures, eight findings, a 256 KiB input manifest, and 2 MiB per referenced file. Text fields are at most 4096 characters. These are operating choices for a controlled example, not production CLI scan limits or research-derived optimal budgets.
+The small prototype caps are one to four captures, zero to eight findings, a 256 KiB input manifest, and 2 MiB per referenced file. PNG dimensions must be positive with at most 16 million pixels. Text fields are at most 4096 characters. These are operating choices for a controlled example, not production CLI scan limits or research-derived optimal budgets. Zero findings means no authored observations, not zero defects.
 
 ## 6. Coordinates, scaling and stale targets
 
