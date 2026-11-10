@@ -15,4 +15,5 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm check
+      - run: python3 -m unittest discover -s examples/rendered-evidence -p "test_*.py"
       - run: pnpm pack:smoke

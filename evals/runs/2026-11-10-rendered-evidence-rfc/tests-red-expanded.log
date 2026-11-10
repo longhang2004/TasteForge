@@ -1,0 +1,344 @@
+FFFFFFFFFFFFFF
+======================================================================
+FAIL: test_absolute_traversal_and_linked_assets_are_not_read (test_render.RendererTests) (path='../outside.png')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 176, in test_absolute_traversal_and_linked_assets_are_not_read
+    self.rejected(document, trace="path")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'path' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_absolute_traversal_and_linked_assets_are_not_read (test_render.RendererTests) (path='/tmp/tmp74aj9_co/capture.png')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 176, in test_absolute_traversal_and_linked_assets_are_not_read
+    self.rejected(document, trace="path")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'path' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_absolute_traversal_and_linked_assets_are_not_read (test_render.RendererTests) (path='a\\capture.png')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 176, in test_absolute_traversal_and_linked_assets_are_not_read
+    self.rejected(document, trace="path")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'path' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_absolute_traversal_and_linked_assets_are_not_read (test_render.RendererTests) (link_kind='symbolic')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 187, in test_absolute_traversal_and_linked_assets_are_not_read
+    self.rejected(document, trace="link")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'link' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_absolute_traversal_and_linked_assets_are_not_read (test_render.RendererTests) (link_kind='hard')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 187, in test_absolute_traversal_and_linked_assets_are_not_read
+    self.rejected(document, trace="link")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'link' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_authored_text_is_escaped_instead_of_executed_as_markup (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 120, in test_authored_text_is_escaped_instead_of_executed_as_markup
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 2 != 0 : /usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory
+
+
+======================================================================
+FAIL: test_bool_fractional_negative_and_outside_rectangles_are_rejected (test_render.RendererTests) (rect=[True, 0, 1, 1])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 161, in test_bool_fractional_negative_and_outside_rectangles_are_rejected
+    self.rejected(document, trace="visible")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'visible' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_bool_fractional_negative_and_outside_rectangles_are_rejected (test_render.RendererTests) (rect=[0.5, 0, 1, 1])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 161, in test_bool_fractional_negative_and_outside_rectangles_are_rejected
+    self.rejected(document, trace="visible")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'visible' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_bool_fractional_negative_and_outside_rectangles_are_rejected (test_render.RendererTests) (rect=[-1, 0, 1, 1])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 161, in test_bool_fractional_negative_and_outside_rectangles_are_rejected
+    self.rejected(document, trace="visible")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'visible' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_bool_fractional_negative_and_outside_rectangles_are_rejected (test_render.RendererTests) (rect=[0, 0, 0, 1])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 161, in test_bool_fractional_negative_and_outside_rectangles_are_rejected
+    self.rejected(document, trace="visible")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'visible' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_bool_fractional_negative_and_outside_rectangles_are_rejected (test_render.RendererTests) (rect=[0, 0, 2, 1])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 161, in test_bool_fractional_negative_and_outside_rectangles_are_rejected
+    self.rejected(document, trace="visible")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'visible' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_capture_and_finding_count_caps_are_enforced_before_asset_reads (test_render.RendererTests) (field='captures')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 224, in test_capture_and_finding_count_caps_are_enforced_before_asset_reads
+    self.rejected(document, trace=field)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'captures' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_capture_and_finding_count_caps_are_enforced_before_asset_reads (test_render.RendererTests) (field='findings')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 224, in test_capture_and_finding_count_caps_are_enforced_before_asset_reads
+    self.rejected(document, trace=field)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'findings' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_capture_pixels_are_not_reinterpreted_as_css_viewport_pixels (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 132, in test_capture_pixels_are_not_reinterpreted_as_css_viewport_pixels
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 2 != 0 : /usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory
+
+
+======================================================================
+FAIL: test_capture_state_and_filename_must_match_one_report_entry (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 154, in test_capture_state_and_filename_must_match_one_report_entry
+    self.rejected(document, trace="fixture")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'fixture' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_correct_hashes_do_not_authorize_a_wrong_source_report_join (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 149, in test_correct_hashes_do_not_authorize_a_wrong_source_report_join
+    self.rejected(trace="source")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'source' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_dangling_output_link_is_preserved_without_creating_its_target (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 266, in test_dangling_output_link_is_preserved_without_creating_its_target
+    self.assertIn("dangling.html", result.stderr)
+AssertionError: 'dangling.html' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_dot_path_components_are_not_silently_normalized (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 217, in test_dot_path_components_are_not_silently_normalized
+    self.rejected(document, trace="path")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'path' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_duplicate_and_unresolved_ids_are_rejected (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 166, in test_duplicate_and_unresolved_ids_are_rejected
+    self.rejected(document, trace="visible")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'visible' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_existing_output_is_preserved_and_linked_parents_are_refused (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 243, in test_existing_output_is_preserved_and_linked_parents_are_refused
+    self.assertIn("existing.html", result.stderr)
+AssertionError: 'existing.html' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_hash_matching_non_png_is_not_presented_as_an_image (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 229, in test_hash_matching_non_png_is_not_presented_as_an_image
+    self.rejected(trace="PNG")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'PNG' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_linked_input_parent_is_rejected_even_for_a_regular_leaf (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 212, in test_linked_input_parent_is_rejected_even_for_a_regular_leaf
+    self.rejected(document, trace="link")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'link' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_manifest_and_asset_byte_limits_prevent_output (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 234, in test_manifest_and_asset_byte_limits_prevent_output
+    self.rejected(trace="source.html")
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'source.html' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_missing_nested_output_parent_does_not_hide_a_linked_ancestor (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 257, in test_missing_nested_output_parent_does_not_hide_a_linked_ancestor
+    self.assertIn("link", result.stderr)
+AssertionError: 'link' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_same_inputs_produce_identical_output_in_different_new_files (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 112, in test_same_inputs_produce_identical_output_in_different_new_files
+    self.assertEqual(self.run_renderer(output="one.html").returncode, 0)
+AssertionError: 2 != 0
+
+======================================================================
+FAIL: test_stale_image_source_and_report_each_block_output (test_render.RendererTests) (asset='capture.png')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 141, in test_stale_image_source_and_report_each_block_output
+    self.rejected(trace=name)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'capture.png' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_stale_image_source_and_report_each_block_output (test_render.RendererTests) (asset='source.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 141, in test_stale_image_source_and_report_each_block_output
+    self.rejected(trace=name)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'source.html' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_stale_image_source_and_report_each_block_output (test_render.RendererTests) (asset='report.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 141, in test_stale_image_source_and_report_each_block_output
+    self.rejected(trace=name)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'report.json' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_unknown_format_fields_and_overlong_text_are_rejected (test_render.RendererTests) (trace='format')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 204, in test_unknown_format_fields_and_overlong_text_are_rejected
+    self.rejected(document, trace=trace)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'format' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_unknown_format_fields_and_overlong_text_are_rejected (test_render.RendererTests) (trace='extra')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 204, in test_unknown_format_fields_and_overlong_text_are_rejected
+    self.rejected(document, trace=trace)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'extra' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_unknown_format_fields_and_overlong_text_are_rejected (test_render.RendererTests) (trace='extra')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 204, in test_unknown_format_fields_and_overlong_text_are_rejected
+    self.rejected(document, trace=trace)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'extra' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_unknown_format_fields_and_overlong_text_are_rejected (test_render.RendererTests) (trace='extra')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 204, in test_unknown_format_fields_and_overlong_text_are_rejected
+    self.rejected(document, trace=trace)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'extra' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_unknown_format_fields_and_overlong_text_are_rejected (test_render.RendererTests) (trace='title')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 204, in test_unknown_format_fields_and_overlong_text_are_rejected
+    self.rejected(document, trace=trace)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'title' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_unknown_format_fields_and_overlong_text_are_rejected (test_render.RendererTests) (trace='sourceHint')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 204, in test_unknown_format_fields_and_overlong_text_are_rejected
+    self.rejected(document, trace=trace)
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 94, in rejected
+    self.assertIn(trace, result.stderr)
+AssertionError: 'sourceHint' not found in "/usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory\n"
+
+======================================================================
+FAIL: test_valid_snapshot_is_self_contained_and_source_only_has_no_region (test_render.RendererTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/test_render.py", line 100, in test_valid_snapshot_is_self_contained_and_source_only_has_no_region
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 2 != 0 : /usr/bin/python3: can't open file '/mnt/c/Users/hi/.codex/worktrees/copy-state-coherence/TasteForge/examples/rendered-evidence/render.py': [Errno 2] No such file or directory
+
+
+----------------------------------------------------------------------
+Ran 19 tests in 2.200s
+
+FAILED (failures=35)

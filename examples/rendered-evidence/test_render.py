@@ -168,6 +168,21 @@ class RendererTests(unittest.TestCase):
         document["findings"][0]["captureId"] = "missing"
         self.rejected(document, trace="missing")
 
+    def test_non_string_capture_references_are_rejected_without_a_traceback(self):
+        for value in [[], {}, True, None]:
+            with self.subTest(value=value):
+                document = copy.deepcopy(self.document)
+                document["findings"][0]["captureId"] = value
+                result = self.rejected(document, trace="captureId")
+                self.assertNotIn("Traceback", result.stderr)
+
+    def test_boolean_runtime_viewport_is_not_treated_as_an_integer(self):
+        report = json.loads((self.root / "report.json").read_text())
+        report["captures"][0]["viewport"] = True
+        (self.root / "report.json").write_text(json.dumps(report))
+        self.document["captures"][0]["report"] = self.asset("report.json")
+        self.rejected(trace="viewport")
+
     def test_absolute_traversal_and_linked_assets_are_not_read(self):
         for name in ["../outside.png", str(self.root / "capture.png"), "a\\capture.png"]:
             with self.subTest(path=name):
@@ -195,11 +210,26 @@ class RendererTests(unittest.TestCase):
             (lambda d: d["captures"][0].update(extra=True), "extra"),
             (lambda d: d["findings"][0].update(extra=True), "extra"),
             (lambda d: d["findings"][0].update(title="x" * 4097), "title"),
+            (lambda d: d["findings"][0].update(sourceHint="x" * 4097), "sourceHint"),
+            (lambda d: d["findings"][0].pop("rect"), "rect"),
         ]:
             with self.subTest(trace=trace):
                 document = copy.deepcopy(self.document)
                 mutate(document)
                 self.rejected(document, trace=trace)
+
+    def test_linked_input_parent_is_rejected_even_for_a_regular_leaf(self):
+        (self.root / "actual-assets").mkdir()
+        (self.root / "actual-assets/capture.png").write_bytes(PNG)
+        (self.root / "linked-assets").symlink_to(self.root / "actual-assets", target_is_directory=True)
+        document = copy.deepcopy(self.document)
+        document["captures"][0]["image"]["path"] = "linked-assets/capture.png"
+        self.rejected(document, trace="link")
+
+    def test_dot_path_components_are_not_silently_normalized(self):
+        document = copy.deepcopy(self.document)
+        document["captures"][0]["image"]["path"] = "./capture.png"
+        self.rejected(document, trace="path")
 
     def test_capture_and_finding_count_caps_are_enforced_before_asset_reads(self):
         for field, count in [("captures", 5), ("findings", 9)]:
@@ -233,6 +263,24 @@ class RendererTests(unittest.TestCase):
         self.assertEqual(result.returncode, 2)
         self.assertIn("link", result.stderr)
         self.assertFalse((self.root / "actual/new.html").exists())
+
+    def test_missing_nested_output_parent_does_not_hide_a_linked_ancestor(self):
+        (self.root / "actual").mkdir()
+        (self.root / "alias-output").symlink_to(self.root / "actual", target_is_directory=True)
+        result = self.run_renderer(output="alias-output/missing/view.html")
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("link", result.stderr)
+        self.assertFalse((self.root / "actual/missing").exists())
+
+    def test_dangling_output_link_is_preserved_without_creating_its_target(self):
+        output = self.root / "dangling.html"
+        target = self.root / "must-not-create.html"
+        output.symlink_to(target)
+        result = self.run_renderer(output="dangling.html")
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("dangling.html", result.stderr)
+        self.assertTrue(output.is_symlink())
+        self.assertFalse(target.exists())
 
 
 if __name__ == "__main__":
