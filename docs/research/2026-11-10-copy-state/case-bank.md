@@ -1,6 +1,6 @@
 # Contextual copy/state case bank
 
-Date: 2026-11-10. Revision: 1. Status: curated and checked for use as review questions; product outcomes remain unmeasured. Sources: [ledger S01–S10](source-ledger.md). Related [retrospective observations](retrospective.md) identify actual retained artifacts separately.
+Date: 2026-11-10. Revision: 1. Lifecycle status: `reviewed` for every case CS01–CS12, for use as contextual review questions; none is adopted as a universal rule. Product outcomes remain unmeasured. Sources: [ledger S01–S10](source-ledger.md). Related [retrospective observations](retrospective.md) identify actual retained artifacts separately.
 
 ## How to use this bank
 

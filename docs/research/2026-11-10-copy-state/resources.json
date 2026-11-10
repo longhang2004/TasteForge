@@ -37,6 +37,89 @@
         "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "stdout.json": "f239419eaca36348a70fa0a3f193f790babca3a26a26682e4f704ff26221552b"
       }
+    },
+    {
+      "startedAt": "2026-11-10T05:07:14.187574+00:00",
+      "finishedAt": "2026-11-10T05:07:20.458026+00:00",
+      "cliVersion": "1.5.4",
+      "host": "Windows AGY through Ubuntu WSL",
+      "requestedModel": "claude-opus-4-6-thinking",
+      "effort": "high",
+      "exitCode": 1,
+      "status": "ERROR",
+      "elapsedSeconds": 6.043,
+      "duration_seconds": 0,
+      "num_turns": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "cache_read_tokens": 0,
+        "total_tokens": 0
+      },
+      "budget": {
+        "printTimeoutSeconds": 600,
+        "operatorTimeoutSeconds": 625
+      },
+      "packet": {
+        "changes.patch": "b82714d2874bf29a687fa596c7695cc78e8a46e5faa2bdcef86d96119aeae1df",
+        "checks-summary.md": "dee4061cd023d575deda6396563db419147b17e77a9c9a58609534a3c8c16271",
+        "current-entry.md": "673f25a0f94fa69f34ab65599662ff41936c764a299c24e9aabb57d399aa6684",
+        "manifest.json": "bdee456da01490a90d905c2660330bc009081d209c90c10b7e50352fdd9159b2",
+        "requirements.md": "f6f7246ccd581e08ef2c64828777ff3cafcc0b32018324278fd0d7933272f074",
+        "retained-ui-source.md": "f04c8e8c051b83ef1cf3c2eeb4d775b9ef5a74e7c26234c45671d5047cbe33e4"
+      },
+      "role": "independent public-snapshot review",
+      "rawRecordHashes": {
+        "invocation.json": "ca6be665ede0b8c495c24c6b7c07fc4b7a8fdf8240725dc8bfecc8a8113e0973",
+        "response.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "stderr.txt": "5c7fcbecf8ef646f0c6283e5d933c3570f57fd9c7176cb2952cde2a05ed26054",
+        "stdout.json": "c9db5456d09730282c79cf99c99210170ece1fdb8b18e5232a39c099f7476874"
+      },
+      "failureKind": "CLI rejected --effort high for selected Claude model before substantive review"
+    },
+    {
+      "startedAt": "2026-11-10T05:08:36.322038+00:00",
+      "finishedAt": "2026-11-10T05:12:05.215057+00:00",
+      "cliVersion": "1.5.4",
+      "host": "Windows AGY through Ubuntu WSL",
+      "requestedModel": "claude-opus-4-6-thinking",
+      "effort": null,
+      "exitCode": 0,
+      "status": "SUCCESS",
+      "elapsedSeconds": 208.751,
+      "duration_seconds": 200.8446162,
+      "num_turns": 1,
+      "usage": {
+        "input_tokens": 72655,
+        "output_tokens": 6496,
+        "thinking_tokens": 0,
+        "cache_read_tokens": 186335,
+        "total_tokens": 79151
+      },
+      "budget": {
+        "printTimeoutSeconds": 600,
+        "operatorTimeoutSeconds": 625
+      },
+      "packet": {
+        "changes.patch": "b82714d2874bf29a687fa596c7695cc78e8a46e5faa2bdcef86d96119aeae1df",
+        "checks-summary.md": "dee4061cd023d575deda6396563db419147b17e77a9c9a58609534a3c8c16271",
+        "current-entry.md": "673f25a0f94fa69f34ab65599662ff41936c764a299c24e9aabb57d399aa6684",
+        "manifest.json": "bdee456da01490a90d905c2660330bc009081d209c90c10b7e50352fdd9159b2",
+        "requirements.md": "f6f7246ccd581e08ef2c64828777ff3cafcc0b32018324278fd0d7933272f074",
+        "retained-ui-source.md": "f04c8e8c051b83ef1cf3c2eeb4d775b9ef5a74e7c26234c45671d5047cbe33e4"
+      },
+      "role": "independent public-snapshot review",
+      "rawRecordHashes": {
+        "invocation.json": "bf9cc3107ebdc9844ac94d6c6c9f50906a8c7ea0ef83bb151aa0af8a827e7ee5",
+        "response.md": "971640147fc2f334f11c7dcc82656e49027dc1b6a2265a9f2793a068ad093608",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.json": "9748f870f4e13b4e044123be3e78d6441e6a200cefc6d61bc1043522660d4aa0"
+      },
+      "reviewedCommit": "5956a1731938bebdb13912d9c625c502a7bd8b43",
+      "scope": "Source/spec review and four qualitative hypothetical applications; no images or behavior execution",
+      "packetUnchangedAfterReview": true,
+      "readCountSelfReported": 8
     }
   ],
   "usageInterpretation": "Original AGY category names/units retained verbatim. Provider/cache semantics, verified billing and normalized parent/operator totals are unknown; categories are not added into a new billable total.",
@@ -44,7 +127,7 @@
   "newUiGenerations": 0,
   "newRecruitedParticipants": 0,
   "claim": "No measured cost-saving or generation-quality improvement claim.",
-  "rawRecordRetention": "Complete curation streams are retained locally in the original checkout ignored .tmp/copy-state-20261110/curation directory; hashes bind those bytes. They are not required to use the skill.",
+  "rawRecordRetention": "Complete raw streams retained locally in the original checkout ignored .tmp/copy-state-20261110/{curation,review,review-compatible}; hashes bind those bytes. The presentation file normalizes Markdown formatting.",
   "validationAttempts": [
     {
       "command": "pnpm check",

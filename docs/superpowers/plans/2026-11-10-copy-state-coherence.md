@@ -58,8 +58,8 @@
 - [x] Preselect proofdesk-baseline and cabinet-candidate, including the conventional baseline, with six retained captures: proofdesk 320 initial/failure and 1440 empty; cabinet 320 initial/empty and 1440 detail. Inspect the actual images and relevant source/check records; retain actual hashes and widths/states. Expected: no historical mutation, new UI generation or recruited participants.
 - [x] Record keep/adapt/remove/unassessed findings without editing old fixtures.
 - [x] Run `pnpm check`, `pnpm pack:smoke`, skill validation, source/package skill byte comparison and the historical pilot integrity verifier in a Linux validation copy with cached dependencies. Expected: passing relevant checks and unchanged historical bindings.
-- [ ] Obtain one fresh independent whole-increment review, preferably AGY over a published pinned snapshot. Address demonstrated important gaps in one bounded correction pass and recheck changed files.
-- [ ] Commit and deliver a separate draft PR stacked on the spec branch, with public implementation navigation in Linear as appropriate. No merge or release.
+- [x] Obtain one fresh independent whole-increment review, preferably AGY over a published pinned snapshot. Address demonstrated important gaps in one bounded correction pass and recheck changed files.
+- [x] Commit and deliver a separate draft PR stacked on the spec branch, with public implementation navigation in Linear as appropriate. No merge or release.
 
 ## Execution decisions
 

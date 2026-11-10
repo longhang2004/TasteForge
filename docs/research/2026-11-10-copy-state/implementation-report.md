@@ -1,6 +1,6 @@
 # Copy/state coherence increment — implementation record
 
-Date: 2026-11-10. Status: implementation and technical verification complete; independent review pending. Design: [programme 08](../../superpowers/specs/2026-11-10-evidence-led-quality-design.md), WP-A/B. Baseline: `79820b58088245c32902d85cb0b2f14abd967aad`.
+Date: 2026-11-10. Status: implementation and scoped verification complete; draft PR #6 available for review. Design: [programme 08](../../superpowers/specs/2026-11-10-evidence-led-quality-design.md), WP-A/B. Baseline: `79820b58088245c32902d85cb0b2f14abd967aad`.
 
 ## Delivered scope
 
@@ -37,7 +37,14 @@ The primary agent integrated the dependent prose/routing changes to limit fresh 
 - Skill validation passed. All 24 skill files match source, build copy and actual CLI tarball bytes; the research corpus is excluded.
 - Local links and ten selected evidence hashes passed. Historical verification preserved 110 frozen input bindings, eight review records and 782 final artifacts across four accepted cells.
 - A first validation archive produced 161 baseline formatting warnings because Windows Git archive applied CRLF conversion. A command-local `core.autocrlf=false` archive was verified against raw Git blob bytes; the corrected Linux copy passed. No unrelated repository files were reformatted.
-- A fresh independent review remains pending before final delivery; no visual/user benefit is inferred from the technical results.
+- [Fresh independent AGY review](independent-review.md): spec alignment Pass; quality Pass with minor notes; no Critical/Important findings. Four qualitative application answers align with the guidance; no matched trial or human result is claimed.
+- The first Opus review invocation rejected an unsupported effort flag (6.043 seconds, no substantive review); one compatible retry completed in 208.751 seconds. Both attempts and original reported usage categories remain in resources.
+- All six review packet files retained identical membership/bytes. The final skill/routing bytes match the reviewed public snapshot; a later addendum clarifies shared case lifecycle and records review metadata.
+- Minor/limited observations: retry-lifetime copy is a future optional fixture change; broader rendered/accessibility/native-language checks remain unassessed. The external reviewer inspected no images. No visual/user benefit is inferred from technical or AI-review results.
+
+## Delivery
+
+[Draft PR #6](https://github.com/longhang2004/TasteForge/pull/6) is stacked on the specification branch from PR #5. Linear specs 08 and 11 link to the implementation record. The managed worktree is preserved for PR feedback; no merge or release occurred.
 
 ## Next decision
 
