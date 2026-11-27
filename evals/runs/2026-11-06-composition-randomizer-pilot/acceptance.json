@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-11-08T16:43:37.082198+00:00",
+  "scope": "Matched corrected outputs at 320/390/1440; task/keyboard/focus/axe/geometry checks. Not human usability or accessibility conformance.",
+  "cells": {
+    "proofdesk-baseline": {
+      "report": "evidence/proofdesk-baseline/corrected/matched-v3/report.json",
+      "sourceSha256": "62b36789a6106477fedae6a027bb0c295b18672a53d0cde64ff7b62cbc52a048",
+      "harnessSha256": "2c1f4b7b7426f0f21b7ddefdbbe366f20a464bc36bd1a643abab6af268b62bc7",
+      "passed": 87,
+      "failed": 0,
+      "harnessErrors": 0,
+      "pageErrors": 0,
+      "remoteRequests": 0,
+      "states": 24,
+      "axeViolations": 0,
+      "axeIncomplete": 18,
+      "startedAt": "2026-11-08T16:29:14.981Z",
+      "finishedAt": "2026-11-08T16:29:53.454Z"
+    },
+    "proofdesk-candidate": {
+      "report": "evidence/proofdesk-candidate/corrected/matched-v3/report.json",
+      "sourceSha256": "ab60237232f5a89e1a5625c144321e0cabcff75146c2aeac2143e293bfa878fc",
+      "harnessSha256": "2c1f4b7b7426f0f21b7ddefdbbe366f20a464bc36bd1a643abab6af268b62bc7",
+      "passed": 87,
+      "failed": 0,
+      "harnessErrors": 0,
+      "pageErrors": 0,
+      "remoteRequests": 0,
+      "states": 24,
+      "axeViolations": 0,
+      "axeIncomplete": 24,
+      "startedAt": "2026-11-08T16:29:55.420Z",
+      "finishedAt": "2026-11-08T16:30:27.422Z"
+    },
+    "cabinet-baseline": {
+      "report": "evidence/cabinet-baseline/corrected/matched-v3/report.json",
+      "sourceSha256": "a29a4b5583bb3e44f36ffe3394a7e54855904af709a736a07457e89368fdcdc5",
+      "harnessSha256": "2c1f4b7b7426f0f21b7ddefdbbe366f20a464bc36bd1a643abab6af268b62bc7",
+      "passed": 66,
+      "failed": 0,
+      "harnessErrors": 0,
+      "pageErrors": 0,
+      "remoteRequests": 0,
+      "states": 24,
+      "axeViolations": 0,
+      "axeIncomplete": 24,
+      "startedAt": "2026-11-08T16:29:14.947Z",
+      "finishedAt": "2026-11-08T16:29:53.491Z"
+    },
+    "cabinet-candidate": {
+      "report": "evidence/cabinet-candidate/corrected/matched-v3/report.json",
+      "sourceSha256": "63976e2538797be4ac9658990ab4060c3077fbc0fee1df9ce446ef46684fb441",
+      "harnessSha256": "2c1f4b7b7426f0f21b7ddefdbbe366f20a464bc36bd1a643abab6af268b62bc7",
+      "passed": 66,
+      "failed": 0,
+      "harnessErrors": 0,
+      "pageErrors": 0,
+      "remoteRequests": 0,
+      "states": 24,
+      "axeViolations": 0,
+      "axeIncomplete": 18,
+      "startedAt": "2026-11-08T16:29:55.403Z",
+      "finishedAt": "2026-11-08T16:30:33.824Z"
+    }
+  },
+  "totalPassed": 306,
+  "totalStates": 96,
+  "totalAxeIncomplete": 84,
+  "corrections": "All four sources exactly match the 2026-11-07 handoff working snapshots. No UI edits or new generation in continuation.",
+  "reviewFreeze": "reviews/freeze.json",
+  "deliveryGalleryReport": "evidence/delivery-gallery-2026-11-08-04/report.json"
+}

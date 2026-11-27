@@ -1,0 +1,98 @@
+{
+  "format": "tasteforge.rendered-evidence.prototype.v1",
+  "sourceRevision": "ee88336f3a08a4874133fa9ea77c1359cf1a37ad",
+  "captures": [
+    {
+      "id": "cabinet-empty",
+      "state": "empty",
+      "viewportWidth": 320,
+      "image": {
+        "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/cabinet-candidate/corrected/matched-v3/320-empty.png",
+        "sha256": "494567711c26a075f582a2d23bc0f036a87189d9c9246c4fb4c7ac2f8ef6849a"
+      },
+      "source": {
+        "path": "evals/runs/2026-11-06-composition-randomizer-pilot/outputs/cabinet-candidate/corrected/index.html",
+        "sha256": "63976e2538797be4ac9658990ab4060c3077fbc0fee1df9ce446ef46684fb441"
+      },
+      "report": {
+        "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/cabinet-candidate/corrected/matched-v3/report.json",
+        "sha256": "a5c8e1e4fb4c4608add3a117a1c1b1711e54956f9f7f8e9a1a94f70bd7cff5f4"
+      }
+    },
+    {
+      "id": "proofdesk-failure",
+      "state": "failure",
+      "viewportWidth": 320,
+      "image": {
+        "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/proofdesk-baseline/corrected/matched-v3/320-failure.png",
+        "sha256": "45652afd009ffd77e376fe9b5b7a5a21f863f1461827aa7e1dce4603cb9107d7"
+      },
+      "source": {
+        "path": "evals/runs/2026-11-06-composition-randomizer-pilot/outputs/proofdesk-baseline/corrected/index.html",
+        "sha256": "62b36789a6106477fedae6a027bb0c295b18672a53d0cde64ff7b62cbc52a048"
+      },
+      "report": {
+        "path": "evals/runs/2026-11-06-composition-randomizer-pilot/evidence/proofdesk-baseline/corrected/matched-v3/report.json",
+        "sha256": "81058f89b8e0a2035ff5185548a79b200964ca587506088dd197bf8f4b3a4951"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "reset-visible",
+      "captureId": "cabinet-empty",
+      "kind": "rendered-observation",
+      "title": "A reset is visible in this filtered state",
+      "observation": "The retained image shows SC-06, Aluminium, zero panels found, and the top Reset filters control.",
+      "consequence": "The visible recovery route can be kept; a zero-match filter is not an empty collection.",
+      "applicability": "This exact cabinet empty-state capture at the recorded width and scroll.",
+      "decision": "keep",
+      "recheck": "After a UI change, inspect the reached filter state and execute its actual reset.",
+      "limits": "An authored region is not a computed element box or a user-comprehension result.",
+      "sourceHint": "Top reset control; supporting source hint #reset, not a live selector query.",
+      "rect": [12, 451, 296, 174]
+    },
+    {
+      "id": "source-only-reset",
+      "captureId": "cabinet-empty",
+      "kind": "source-fact",
+      "title": "The lower reset is a source fact only",
+      "observation": "The bound HTML also declares empty-reset inside the empty block. This annotation assigns no visible region to it.",
+      "consequence": "Source presence alone does not establish current viewport visibility; the top reset is a separate observation.",
+      "applicability": "The bound HTML source; no live DOM element was queried.",
+      "decision": "unassessed",
+      "recheck": "If that lower control matters, inspect its reached scroll/focus state or collect a new checkpoint.",
+      "limits": "No conclusion about the lower control's reachability or occlusion is established by this source-only note.",
+      "sourceHint": "id=empty-reset inside id=empty; display-only source context.",
+      "rect": null
+    },
+    {
+      "id": "recorded-retry",
+      "captureId": "proofdesk-failure",
+      "kind": "historical-runtime",
+      "title": "An earlier run recorded failure and retry feedback",
+      "observation": "The bound prior report records the check 'first failure is announced and retry offered' as passing at width 320. The image is its retained failure state.",
+      "consequence": "This connects a named historical check to context; it does not claim the target app was executed again now.",
+      "applicability": "The matched-v3 source/report pair and this failure capture, recorded at scroll Y 562.",
+      "decision": "keep",
+      "recheck": "For changed source, execute the real failure/retry behavior and record new evidence.",
+      "limits": "The rectangle is authored failure/retry context. A screenshot cannot prove announcement or the complete interaction.",
+      "sourceHint": "report.checks: first failure is announced and retry offered; no new behavior replay.",
+      "rect": [38, 560, 244, 222]
+    },
+    {
+      "id": "lifetime-note",
+      "captureId": "proofdesk-failure",
+      "kind": "contextual-judgment",
+      "title": "Lifetime wording remains a scoped craft note",
+      "observation": "The source retains paper/copies in a JavaScript draft object. 'Kept for this retry' could make the existing local scope more precise than 'saved'.",
+      "consequence": "Consider a future copy-only refinement while preserving choices, retry/edit actions and the local-demo disclosure.",
+      "applicability": "A wording judgment about the bound demonstration, not a claim that an account save failed.",
+      "decision": "adapt",
+      "recheck": "If edited later, confirm the actual persistence lifetime and failure/edit/retry contract.",
+      "limits": "No data-loss defect, measured misunderstanding or improvement effect was established. The historical fixture is unchanged.",
+      "sourceHint": "const drafts and approve(); supporting source facts only.",
+      "rect": null
+    }
+  ]
+}

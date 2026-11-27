@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-10",
+  "scope": "RFC and controlled static viewer; no fresh target-app A/B",
+  "attempts": [
+    {
+      "requestedModel": "gemini-3.8-flash-high",
+      "effort": "high",
+      "cliVersion": "1.5.4",
+      "startedAt": "2026-11-10T07:52:30.753695+00:00",
+      "finishedAt": "2026-11-10T07:55:31.879912+00:00",
+      "elapsedSeconds": 181.032,
+      "exitCode": 0,
+      "status": "SUCCESS",
+      "usage": {
+        "input_tokens": 41119,
+        "output_tokens": 22294,
+        "thinking_tokens": 21235,
+        "cache_read_tokens": 0,
+        "total_tokens": 63413
+      },
+      "duration_seconds": 170.6080634,
+      "num_turns": 1,
+      "role": "builder",
+      "raw": "evals/runs/2026-11-10-rendered-evidence-rfc/builder",
+      "inputScope": "pinned public repository snapshot only"
+    },
+    {
+      "requestedModel": "claude-sonnet-4-6",
+      "effort": null,
+      "cliVersion": "1.5.4",
+      "startedAt": "2026-11-10T08:09:05.965070+00:00",
+      "finishedAt": "2026-11-10T08:11:28.557136+00:00",
+      "elapsedSeconds": 142.479,
+      "exitCode": 0,
+      "status": "SUCCESS",
+      "usage": {
+        "input_tokens": 31131,
+        "output_tokens": 8852,
+        "thinking_tokens": 0,
+        "cache_read_tokens": 54328,
+        "total_tokens": 39983
+      },
+      "duration_seconds": 132.2221329,
+      "num_turns": 1,
+      "role": "implement",
+      "raw": "evals/runs/2026-11-10-rendered-evidence-rfc/implement",
+      "inputScope": "pinned public repository snapshot only"
+    },
+    {
+      "requestedModel": "claude-opus-4-6-thinking",
+      "effort": null,
+      "cliVersion": "1.5.4",
+      "startedAt": "2026-11-10T08:54:15.759749+00:00",
+      "finishedAt": "2026-11-10T08:56:43.008183+00:00",
+      "elapsedSeconds": 147.076,
+      "exitCode": 0,
+      "status": "SUCCESS",
+      "usage": {
+        "input_tokens": 50307,
+        "output_tokens": 5392,
+        "thinking_tokens": 0,
+        "cache_read_tokens": 111522,
+        "total_tokens": 55699
+      },
+      "duration_seconds": 136.4374208,
+      "num_turns": 1,
+      "role": "independent-source-review",
+      "raw": "evals/runs/2026-11-10-rendered-evidence-rfc/review",
+      "inputScope": "pinned public repository snapshot only"
+    }
+  ],
+  "billing": "unavailable",
+  "normalizedCost": null,
+  "savingsClaim": null,
+  "primaryAgentUsage": "not separately attributable",
+  "viewerBrowser": "156.0.8078.4",
+  "python": "3.10.12",
+  "freshDependencyInstalls": 0,
+  "finalReview": {
+    "publicCommit": "dda28f8b24e6d1c24a653be6e093f4e9cc302916",
+    "critical": 0,
+    "important": 0,
+    "minor": 5,
+    "scope": "source only; no test execution or PNG inspection",
+    "disposition": "review-disposition.md"
+  },
+  "finalVerification": {
+    "pythonTests": 22,
+    "repositoryTests": 57,
+    "viewerChecks": 28,
+    "axeViolations": 0,
+    "axeIncompleteRuleRecords": 4,
+    "userStudy": false
+  }
+}

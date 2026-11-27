@@ -1,0 +1,61 @@
+
+> tasteforge-workspace@0.2.0-beta.2 check /var/tmp/tasteforge-composition-20261106
+> pnpm build && pnpm typecheck && pnpm lint && pnpm format:check && vitest run
+
+
+> tasteforge-workspace@0.2.0-beta.2 build /var/tmp/tasteforge-composition-20261106
+> pnpm -r build
+
+Scope: 3 of 4 workspace projects
+packages/knowledge build$ tsc -p tsconfig.json
+packages/knowledge build: Done
+packages/core build$ tsc -p tsconfig.json
+packages/core build: Done
+packages/cli build$ tsc -p tsconfig.json && node scripts/prepare.mjs
+packages/cli build: Done
+
+> tasteforge-workspace@0.2.0-beta.2 typecheck /var/tmp/tasteforge-composition-20261106
+> pnpm -r typecheck && tsc -p tests/tsconfig.json
+
+Scope: 3 of 4 workspace projects
+packages/knowledge typecheck$ tsc -p tsconfig.json --noEmit
+packages/knowledge typecheck: Done
+packages/core typecheck$ tsc -p tsconfig.json --noEmit
+packages/core typecheck: Done
+packages/cli typecheck$ tsc -p tsconfig.json --noEmit
+packages/cli typecheck: Done
+
+> tasteforge-workspace@0.2.0-beta.2 lint /var/tmp/tasteforge-composition-20261106
+> eslint . --max-warnings 0
+
+
+> tasteforge-workspace@0.2.0-beta.2 format:check /var/tmp/tasteforge-composition-20261106
+> prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!
+
+ RUN  v3.2.7 /var/tmp/tasteforge-composition-20261106
+
+ ✓ tests/core.test.ts (16 tests) 960ms
+   ✓ deterministic controlled exploration > low creativity concentrates on more relevant candidates across seeds  611ms
+ ✓ tests/references.test.ts (11 tests) 1299ms
+ ✓ tests/compositions.test.ts (3 tests) 477ms
+ ✓ tests/typography.test.ts (8 tests) 295ms
+ ✓ tests/cli.test.ts (9 tests) 20353ms
+   ✓ CLI integration and exit contract > reads the external catalog and samples attributed inspiration without writing project artifacts  4964ms
+   ✓ CLI integration and exit contract > initializes, loads context, suggests, generates, and audits example source  3696ms
+   ✓ CLI integration and exit contract > previews without any filesystem writes  1015ms
+   ✓ CLI integration and exit contract > never silently overwrites initialized or generated artifacts  2100ms
+   ✓ CLI integration and exit contract > rejects linked output directories and files, including with force  908ms
+   ✓ CLI integration and exit contract > refuses path traversal and symlink reads outside the project  890ms
+   ✓ CLI integration and exit contract > returns readable errors for malformed briefs, unknown directions, and invalid options  3114ms
+   ✓ CLI integration and exit contract > fails on malformed sources and can explicitly report without failing  2706ms
+   ✓ CLI integration and exit contract > refuses concurrent writes and malformed persisted DNA  955ms
+ ✓ tests/audit.test.ts (10 tests) 164ms
+
+ Test Files  6 passed (6)
+      Tests  57 passed (57)
+   Start at  16:25:31
+   Duration  23.25s (transform 1.20s, setup 0ms, collect 6.27s, tests 23.55s, environment 2ms, prepare 953ms)
+

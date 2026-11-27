@@ -68,6 +68,18 @@ The original evaluation runs and frozen snapshots remain unchanged. Their result
 
 An independent [planning-only probe](../evals/runs/2026-11-01-catalog-probe/README.md) used catalog `2026.11.01.1` and exposed unsuitable 404/marketing pairings and an ignored operational avoid statement. The raw outputs are preserved. Catalog `2026.11.01.2` routes error/auth pages before their enclosing theme name, scopes landing patterns to marketing, and applies the operational avoid rule above. Regression checks and an exact-brief operator rerun assess that correction; no UI-quality gain is claimed.
 
+## Original composition library and selection update
+
+The imported catalog above remains **642 records / 18 sources**, version `2026.11.01.2`. A separate original [composition library](../examples/composition-library/README.md), version `2026.11.06.1`, adds twelve planning cards across work, commerce, reading and exploration. Thirteen pinned source-file observations from shadcn-ui/ui, Vercel Commerce and Astro Starlight add three independent families beyond the Bootstrap-heavy HTML subset. Original summaries, source hashes, observed/proposed limits and asset terms remain distinct from imported full text. Schematic previews are not twelve validated task flows.
+
+`inspire` now selects eligible compositions first, using indexed task, fixed density and complexity, then samples reference treatments with source-size balancing and a soft known-visual-family repeat penalty. It returns additive `selectionVersion`, `compositionLibraryVersion`, `compositionSources`, `compositionExclusions`, and a `composition` or null per inspiration. Existing `template` continues to mean the separately attributed source observation. Suitable/avoid conditions and content requirements need curator/agent interpretation; neither a task tag nor a joint pack proves the treatment fits the composition.
+
+Composition relevance uses the same brief/query metadata overlap heuristic. Sampling balances structural-family size, avoids repeats while eligible alternatives remain, then recycles the selected set if more style samples were requested. An empty task/density/complexity pool returns null and reasons. Marketing intentionally has no composition coverage in this first pack. Existing protected-system, restricted-direction, style-risk/complexity and ten-gate behavior remains.
+
+Selection version `2026.11.06.1` labels eight coarse visual families from explicit title terms (brutalist, translucent, tactile, nostalgic, organic, editorial, technical and minimal). Each prior selected member of a known family multiplies its remaining sampling weights by `0.4`. Unclassified titles receive no family penalty. These are disclosed editorial labels, not measured similarity or proof of uniqueness. Keep catalog, composition-library and selection versions with the seed; results can change across versions.
+
+The [typography review](typography-expansion.md) separately adds six reviewed font pairs to the validated local knowledge metadata, bringing it to 38 pairs while retaining 20 style profiles. Fixed language, font delivery and pair constraints still apply. Gallery-only OFL files are not bundled into the knowledge package or downloaded by generation.
+
 ## Rebuild and extend
 
 Maintainers can reproduce the snapshot with Python 3 and GitHub CLI (`gh`, or `gh.exe` in this Windows/WSL setup):

@@ -1,0 +1,291 @@
+{
+  "browser": "156.0.8078.4",
+  "scope": "Actual Chromium FontFace load and CDP per-node platform font mappings at regular 400; local-only requests.",
+  "limitations": "Single Chromium/Linux host; glyph counts reflect shaping and may compose NFD input. No proof of full scripts, all weights, other engines/OS, or visual quality.",
+  "loaded": [
+    {
+      "id": "newsreader",
+      "status": "loaded",
+      "fontFaceCheck": true
+    },
+    {
+      "id": "fraunces",
+      "status": "loaded",
+      "fontFaceCheck": true
+    },
+    {
+      "id": "archivo",
+      "status": "loaded",
+      "fontFaceCheck": true
+    },
+    {
+      "id": "barlow",
+      "status": "loaded",
+      "fontFaceCheck": true
+    },
+    {
+      "id": "figtree",
+      "status": "loaded",
+      "fontFaceCheck": true
+    },
+    {
+      "id": "bitter",
+      "status": "loaded",
+      "fontFaceCheck": true
+    }
+  ],
+  "renderMappings": [
+    {
+      "id": "newsreader",
+      "language": "en",
+      "fonts": [
+        {
+          "familyName": "Newsreader 16pt",
+          "postScriptName": "Newsreader16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 130
+        }
+      ]
+    },
+    {
+      "id": "newsreader",
+      "language": "vi",
+      "fonts": [
+        {
+          "familyName": "Newsreader 16pt",
+          "postScriptName": "Newsreader16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 181
+        }
+      ]
+    },
+    {
+      "id": "newsreader",
+      "language": "vi-decomposed",
+      "fonts": [
+        {
+          "familyName": "Newsreader 16pt",
+          "postScriptName": "Newsreader16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 181
+        }
+      ]
+    },
+    {
+      "id": "fraunces",
+      "language": "en",
+      "fonts": [
+        {
+          "familyName": "Fraunces",
+          "postScriptName": "Fraunces-9ptBlack",
+          "isCustomFont": true,
+          "glyphCount": 130
+        }
+      ]
+    },
+    {
+      "id": "fraunces",
+      "language": "vi",
+      "fonts": [
+        {
+          "familyName": "Fraunces",
+          "postScriptName": "Fraunces-9ptBlack",
+          "isCustomFont": true,
+          "glyphCount": 181
+        }
+      ]
+    },
+    {
+      "id": "fraunces",
+      "language": "vi-decomposed",
+      "fonts": [
+        {
+          "familyName": "Fraunces",
+          "postScriptName": "Fraunces-9ptBlack",
+          "isCustomFont": true,
+          "glyphCount": 181
+        }
+      ]
+    },
+    {
+      "id": "archivo",
+      "language": "en",
+      "fonts": [
+        {
+          "familyName": "Archivo SemiBold",
+          "postScriptName": "Archivo-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 130
+        }
+      ]
+    },
+    {
+      "id": "archivo",
+      "language": "vi",
+      "fonts": [
+        {
+          "familyName": "Archivo SemiBold",
+          "postScriptName": "Archivo-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 181
+        }
+      ]
+    },
+    {
+      "id": "archivo",
+      "language": "vi-decomposed",
+      "fonts": [
+        {
+          "familyName": "Archivo SemiBold",
+          "postScriptName": "Archivo-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 181
+        }
+      ]
+    },
+    {
+      "id": "barlow",
+      "language": "en",
+      "fonts": [
+        {
+          "familyName": "Barlow",
+          "postScriptName": "Barlow-Regular",
+          "isCustomFont": true,
+          "glyphCount": 130
+        }
+      ]
+    },
+    {
+      "id": "barlow",
+      "language": "vi",
+      "fonts": [
+        {
+          "familyName": "Barlow",
+          "postScriptName": "Barlow-Regular",
+          "isCustomFont": true,
+          "glyphCount": 181
+        }
+      ]
+    },
+    {
+      "id": "barlow",
+      "language": "vi-decomposed",
+      "fonts": [
+        {
+          "familyName": "Barlow",
+          "postScriptName": "Barlow-Regular",
+          "isCustomFont": true,
+          "glyphCount": 181
+        }
+      ]
+    },
+    {
+      "id": "figtree",
+      "language": "en",
+      "fonts": [
+        {
+          "familyName": "Figtree Light",
+          "postScriptName": "Figtree-Light",
+          "isCustomFont": true,
+          "glyphCount": 130
+        }
+      ]
+    },
+    {
+      "id": "figtree",
+      "language": "vi",
+      "fonts": [
+        {
+          "familyName": "Figtree Light",
+          "postScriptName": "Figtree-Light",
+          "isCustomFont": true,
+          "glyphCount": 141
+        },
+        {
+          "familyName": "DejaVu Serif",
+          "postScriptName": "DejaVuSerif",
+          "isCustomFont": false,
+          "glyphCount": 71
+        }
+      ]
+    },
+    {
+      "id": "figtree",
+      "language": "vi-decomposed",
+      "fonts": [
+        {
+          "familyName": "Figtree Light",
+          "postScriptName": "Figtree-Light",
+          "isCustomFont": true,
+          "glyphCount": 141
+        },
+        {
+          "familyName": "DejaVu Serif",
+          "postScriptName": "DejaVuSerif",
+          "isCustomFont": false,
+          "glyphCount": 71
+        }
+      ]
+    },
+    {
+      "id": "bitter",
+      "language": "en",
+      "fonts": [
+        {
+          "familyName": "Bitter Thin",
+          "postScriptName": "Bitter-Thin",
+          "isCustomFont": true,
+          "glyphCount": 130
+        }
+      ]
+    },
+    {
+      "id": "bitter",
+      "language": "vi",
+      "fonts": [
+        {
+          "familyName": "Bitter Thin",
+          "postScriptName": "Bitter-Thin",
+          "isCustomFont": true,
+          "glyphCount": 181
+        }
+      ]
+    },
+    {
+      "id": "bitter",
+      "language": "vi-decomposed",
+      "fonts": [
+        {
+          "familyName": "Bitter Thin",
+          "postScriptName": "Bitter-Thin",
+          "isCustomFont": true,
+          "glyphCount": 181
+        }
+      ]
+    }
+  ],
+  "viewports": [
+    {
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  ],
+  "requests": [
+    "/specimens.json",
+    "/newsreader/Newsreader%5Bopsz,wght%5D.ttf",
+    "/fraunces/Fraunces%5BSOFT,WONK,opsz,wght%5D.ttf",
+    "/archivo/Archivo%5Bwdth,wght%5D.ttf",
+    "/barlow/Barlow-Regular.ttf",
+    "/figtree/Figtree%5Bwght%5D.ttf",
+    "/bitter/Bitter%5Bwght%5D.ttf"
+  ],
+  "unexpectedFallback": []
+}
