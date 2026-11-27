@@ -10,6 +10,8 @@ The beta.2 skill uses [proportional workflows](docs/lean-workflows.md): Fast for
 
 [Documentation](docs/README.md) · [CLI reference](docs/cli.md) · [Agent Skill](skills/tasteforge/SKILL.md) · [Releases](https://github.com/longhang2004/TasteForge/releases)
 
+Ask the skill to research a specific design decision, such as how visitors should browse a textile archive when some objects lack photographs. Its [design evidence guide](skills/tasteforge/references/design-evidence.md) explains how to find published studies, firsthand discussion and design-system examples on the live web. A bundled Python helper can search four public indexes without API keys. The [research record](docs/research/2026-11-27-design-preferences.md) shows how the evidence changed three design briefs.
+
 ## TasteForge at a glance
 
 | Property            | Details                                                                                               |

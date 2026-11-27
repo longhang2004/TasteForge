@@ -33,7 +33,15 @@ try {
     const files = command('tar', ['-tzf', archive]);
     assert(files.includes('package/dist/index.js'));
     assert(files.includes('package/LICENSE'));
-    if (short === 'cli') assert(files.includes('package/skills/tasteforge/SKILL.md'));
+    if (short === 'cli') {
+      for (const asset of [
+        'SKILL.md',
+        'references/design-evidence.md',
+        'scripts/find-design-evidence.py',
+      ]) {
+        assert(files.split('\n').includes(`package/skills/tasteforge/${asset}`), asset);
+      }
+    }
     if (short === 'knowledge') {
       assert(files.includes('package/dist/data/knowledge.json'));
       assert(files.includes('package/dist/data/references.json'));

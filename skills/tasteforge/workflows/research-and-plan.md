@@ -8,6 +8,8 @@ Name the primary action, facts needed together, consequence of error, return/edi
 
 ## Retrieve enough evidence
 
+When the brief asks for people's visual preferences, a creative direction or a broad internet survey, follow [design evidence discovery](../references/design-evidence.md). It includes live search queries, public indexes, counterexamples and ways to turn a finding into an observable design decision.
+
 Inspect user-provided references first. When browsing is available and permitted, search for the task plus interaction pattern. Prefer an actual flow or official pattern guide for behavior; a marketing image or brand analysis supports different observations. [Source pointers](../references/reference-sources.md) are optional discovery aids, not a reading list.
 
 Retrieve a small relevant sample, read the exact useful material and stop when the decision is informed. Existing evidence may suffice; one strong source can be enough. For offline discovery use [catalog use](../references/catalog-use.md), inspecting metadata before selected full records. Do not ingest a whole catalog or repeatedly sample after choosing a suitable direction.

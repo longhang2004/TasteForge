@@ -1,0 +1,29 @@
+[
+  {
+    "id": "booking",
+    "decision": "Use three separate text inputs for the known birth date (4 May 1998) and an availability calendar or list for selecting inspection slot P17 (21 June 2027), persisting the selection in URL or session state across navigation.",
+    "sourceUrl": "https://design-system.service.gov.uk/patterns/dates/",
+    "observed": "Choosing an appointment from availability can justify a calendar picker with text-entry options, whereas entering a known date warrants structured text fields.",
+    "counterexample": "If inspection slots have unconstrained open booking rather than discrete availability, standard date text inputs would be appropriate for both.",
+    "check": "Enter '04', '05', '1998' into the birth date text fields and select slot P17 on 21 June 2027; open the slot details view, navigate back, and verify slot P17 on 21 June 2027 remains selected.",
+    "unmeasured": "Whether applicants experience lower cognitive effort or report greater trust in the booking process."
+  },
+  {
+    "id": "trail",
+    "decision": "Provide a landmark-anchored map pin and an accessible keyboard-navigable list, syncing both to record T04 with the name Pine Loop and length 2.6 km.",
+    "sourceUrl": "https://planning.data.tfl.gov.uk/Travel%20Plans%20for%20London%202025/Promo%20toolkit/Legible%20London%20system%20architecture.pdf",
+    "observed": "The sign architecture pairs visible landmark beacons, location identity, and directional maps across reading scales, requiring accessible text alternatives alongside spatial cues.",
+    "counterexample": "If visitors navigate exclusively via numeric reference codes on text-only devices without spatial map recognition.",
+    "check": "1. Click the landmark map pin for Pine Loop and verify it displays record T04 with 2.6 km. 2. Focus and activate record T04 in the keyboard route list; verify it highlights Pine Loop and displays 2.6 km.",
+    "unmeasured": "Whether visitors feel more oriented or navigate the physical trail with fewer errors."
+  },
+  {
+    "id": "tariff",
+    "decision": "Display an adjacent textual summary below the chart that renders region R3, effective date 1 April, and rate 24 cents/kWh persistently without relying on hover.",
+    "sourceUrl": "https://service-manual.ons.gov.uk/data-visualisation/guidance/annotations",
+    "observed": "Chart events can be annotated at data points, but essential information including event, date, and unit must survive narrow layouts via nearby text.",
+    "counterexample": "If the chart is only viewed on wide desktop displays with mouse hover and ample canvas space for direct inline annotations.",
+    "check": "Resize viewport to 320 CSS pixels, select region R3, and inspect the adjacent summary; verify the text shows the 1 April tariff of 24 cents/kWh without hover.",
+    "unmeasured": "Whether readers comprehend the tariff change faster or perceive the presentation as visually clearer."
+  }
+]
