@@ -44,6 +44,8 @@ Begin with one existing artifact and one named question. Cancel a general annota
 
 ## 4. WP-E: effects chosen for a task
 
+[RFC 17](../2026-11-27-task-aware-motion.md) works through the Grid/List choice with the existing Effects Lab, a static fallback and measured switch costs.
+
 Motion may clarify sequence, status, spatial change or direct manipulation; it may also slow reading or distract. The RFC should define purpose, trigger, duration/easing where useful, interruption behavior, keyboard/pointer equivalents, reduced-motion fallback and a measurable performance budget appropriate to the actual product.
 
 Static content and actions remain usable without the enhancement. Preserve truth: an animation cannot imply completed persistence, real-time presence or verified progress when none exists. Do not add a motion quota or a package of fashionable effects to make a design appear distinctive.
