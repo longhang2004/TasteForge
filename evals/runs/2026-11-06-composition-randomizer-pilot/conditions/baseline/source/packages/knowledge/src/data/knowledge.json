@@ -1,0 +1,1787 @@
+{
+  "schemaVersion": "1.0",
+  "version": "0.1.0",
+  "styles": [
+    {
+      "id": "swiss-editorial",
+      "name": "Swiss Editorial",
+      "summary": "A disciplined grid with a decisive typographic lead.",
+      "productTypes": ["publication", "portfolio", "commerce"],
+      "industries": ["media", "culture", "fashion"],
+      "audienceTags": ["readers", "professionals"],
+      "personalities": ["precise", "confident", "restrained"],
+      "density": "balanced",
+      "complexity": "medium",
+      "distinctiveness": 0.7,
+      "fontPairIds": ["inter-inter", "source-serif-sans", "inter-source", "system-serif"],
+      "paletteIds": ["ink-paper", "cobalt-chalk", "mono-light"],
+      "layout": [
+        "Use asymmetric columns with aligned edges.",
+        "Let one headline establish the entry point."
+      ],
+      "guidance": [
+        "Use a clear grid rather than decorative containers.",
+        "Use captions and rules to connect related content."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "international-typographic",
+      "name": "International Typographic",
+      "summary": "Neutral type and systematic alignment make the content structure visible.",
+      "productTypes": ["publication", "service", "dashboard"],
+      "industries": ["public", "education", "technology"],
+      "audienceTags": ["professionals", "general"],
+      "personalities": ["precise", "neutral", "rational"],
+      "density": "balanced",
+      "complexity": "low",
+      "distinctiveness": 0.5,
+      "fontPairIds": ["inter-inter", "source-source", "noto-noto", "system-sans"],
+      "paletteIds": ["mono-light", "slate-blue", "cobalt-chalk"],
+      "layout": [
+        "Align headings and body to shared tracks.",
+        "Use consistent label and heading roles."
+      ],
+      "guidance": [
+        "Create hierarchy through scale, weight, and space.",
+        "Use color only for structural emphasis."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "quiet-luxury",
+      "name": "Quiet Luxury",
+      "summary": "Restrained composition puts material and product evidence ahead of effects.",
+      "productTypes": ["commerce", "portfolio", "publication"],
+      "industries": ["fashion", "hospitality", "culture"],
+      "audienceTags": ["buyers", "readers"],
+      "personalities": ["refined", "calm", "premium"],
+      "density": "spacious",
+      "complexity": "medium",
+      "distinctiveness": 0.6,
+      "fontPairIds": ["lora-inter", "literata-inter", "noto-serif-inter", "system-serif"],
+      "paletteIds": ["bone-oxblood", "ink-paper", "rose-stone"],
+      "layout": [
+        "Give product imagery generous space.",
+        "Keep purchase information near the product."
+      ],
+      "guidance": [
+        "Use fewer stronger images.",
+        "Avoid light gray copy that trades readability for restraint."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "neo-brutalism",
+      "name": "Neo-Brutalism",
+      "summary": "Bold edges and explicit structure create a direct graphic voice.",
+      "productTypes": ["portfolio", "marketing", "community"],
+      "industries": ["culture", "creative", "technology"],
+      "audienceTags": ["creators", "enthusiasts"],
+      "personalities": ["bold", "playful", "direct"],
+      "density": "balanced",
+      "complexity": "medium",
+      "distinctiveness": 0.9,
+      "fontPairIds": ["space-inter", "space-plex", "manrope-inter", "system-sans"],
+      "paletteIds": ["yellow-ink", "cobalt-chalk", "mono-light"],
+      "layout": [
+        "Use strong alignment and visible boundaries.",
+        "Keep primary tasks conventional."
+      ],
+      "guidance": [
+        "Use bold borders selectively.",
+        "Keep reading text quiet and controls recognizable."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "technical-minimalism",
+      "name": "Technical Minimalism",
+      "summary": "Quiet surfaces and precise labels support technical work.",
+      "productTypes": ["tool", "dashboard", "documentation"],
+      "industries": ["technology", "fintech", "science"],
+      "audienceTags": ["experts", "professionals"],
+      "personalities": ["precise", "rational", "restrained"],
+      "density": "dense",
+      "complexity": "low",
+      "distinctiveness": 0.4,
+      "fontPairIds": ["plex-plex", "mono-plex", "plex-inter", "system-sans"],
+      "paletteIds": ["slate-blue", "carbon-lime", "ocean-tool"],
+      "layout": [
+        "Group related commands tightly.",
+        "Align numerical columns and persistent labels."
+      ],
+      "guidance": [
+        "Use density to reduce scanning travel.",
+        "Explain state without decorative status widgets."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "data-dense-enterprise",
+      "name": "Data-Dense Enterprise",
+      "summary": "High information density with stable navigation and explicit state.",
+      "productTypes": ["dashboard", "tool", "service"],
+      "industries": ["fintech", "healthcare", "technology"],
+      "audienceTags": ["experts", "operators", "professionals"],
+      "personalities": ["trustworthy", "precise", "neutral"],
+      "density": "dense",
+      "complexity": "medium",
+      "distinctiveness": 0.3,
+      "fontPairIds": ["inter-inter", "plex-source", "source-source", "system-sans"],
+      "paletteIds": ["slate-blue", "navy-sand", "mono-light"],
+      "layout": ["Keep filters adjacent to results.", "Use tables for comparable records."],
+      "guidance": [
+        "Offer density controls if workflows differ.",
+        "Prioritize error prevention over graphic novelty."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "contemporary-editorial",
+      "name": "Contemporary Editorial",
+      "summary": "A flexible publication rhythm alternates feature and supporting material.",
+      "productTypes": ["publication", "portfolio", "marketing"],
+      "industries": ["media", "culture", "education"],
+      "audienceTags": ["readers", "creators"],
+      "personalities": ["expressive", "thoughtful", "confident"],
+      "density": "balanced",
+      "complexity": "medium",
+      "distinctiveness": 0.8,
+      "fontPairIds": ["source-serif-inter", "lora-source", "literata-source", "system-serif"],
+      "paletteIds": ["plum-cream", "ink-paper", "berry-snow"],
+      "layout": [
+        "Alternate feature and compact story blocks.",
+        "Maintain a stable reading measure."
+      ],
+      "guidance": [
+        "Make content priorities explicit.",
+        "Use art direction to explain stories rather than fill space."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "playful-modular",
+      "name": "Playful Modular",
+      "summary": "Friendly reusable modules communicate progression and exploration.",
+      "productTypes": ["education", "community", "marketing"],
+      "industries": ["education", "creative", "entertainment"],
+      "audienceTags": ["students", "families", "beginners"],
+      "personalities": ["playful", "warm", "optimistic"],
+      "density": "balanced",
+      "complexity": "medium",
+      "distinctiveness": 0.8,
+      "fontPairIds": ["manrope-vietnam", "manrope-source", "space-vietnam", "system-sans"],
+      "paletteIds": ["indigo-study", "berry-snow", "yellow-ink"],
+      "layout": [
+        "Make module order communicate a sequence.",
+        "Keep control placement predictable."
+      ],
+      "guidance": [
+        "Reserve play for feedback and emphasis.",
+        "Keep reward cues secondary to learning progress."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "modern-institutional",
+      "name": "Modern Institutional",
+      "summary": "Clear navigation and measured hierarchy support trustworthy services.",
+      "productTypes": ["service", "publication", "education"],
+      "industries": ["public", "healthcare", "education"],
+      "audienceTags": ["general", "seniors", "professionals"],
+      "personalities": ["trustworthy", "calm", "inclusive"],
+      "density": "balanced",
+      "complexity": "low",
+      "distinctiveness": 0.4,
+      "fontPairIds": ["noto-serif-sans", "noto-serif-vietnam", "source-source", "system-serif"],
+      "paletteIds": ["navy-sand", "teal-clinic", "slate-blue"],
+      "layout": [
+        "Lead with service tasks and eligibility.",
+        "Use descriptive headings and predictable navigation."
+      ],
+      "guidance": [
+        "Prefer explicit language over brand slogans.",
+        "Make help and error recovery visible."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "japanese-inspired-minimalism",
+      "name": "Japanese-Inspired Minimalism",
+      "summary": "Restrained composition balances empty space and material detail; not a substitute for cultural research.",
+      "productTypes": ["portfolio", "commerce", "publication"],
+      "industries": ["culture", "craft", "hospitality"],
+      "audienceTags": ["readers", "buyers"],
+      "personalities": ["calm", "refined", "thoughtful"],
+      "density": "spacious",
+      "complexity": "medium",
+      "distinctiveness": 0.7,
+      "fontPairIds": ["noto-serif-inter", "literata-noto", "lora-inter", "system-serif"],
+      "paletteIds": ["ink-paper", "bone-oxblood", "forest-mist"],
+      "layout": [
+        "Balance quiet areas with a clear focal object.",
+        "Keep content order logical on narrow screens."
+      ],
+      "guidance": [
+        "Avoid treating a culture as a decoration kit.",
+        "Support actual languages with separately validated fonts."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "organic-modern",
+      "name": "Organic Modern",
+      "summary": "Warm colors and natural content create approachable contemporary interfaces.",
+      "productTypes": ["commerce", "marketing", "community"],
+      "industries": ["environment", "hospitality", "wellness"],
+      "audienceTags": ["buyers", "general"],
+      "personalities": ["warm", "calm", "natural"],
+      "density": "spacious",
+      "complexity": "low",
+      "distinctiveness": 0.6,
+      "fontPairIds": ["lora-vietnam", "manrope-noto", "lora-inter", "system-serif"],
+      "paletteIds": ["terracotta", "forest-mist", "rose-stone"],
+      "layout": [
+        "Use image-led sections tied to real content.",
+        "Keep irregular shapes outside task-critical controls."
+      ],
+      "guidance": [
+        "Use warmth without reducing contrast.",
+        "Prefer material evidence over ornamental blobs."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "high-contrast-monochrome",
+      "name": "High-Contrast Monochrome",
+      "summary": "Strong value contrast and typographic structure carry the visual system.",
+      "productTypes": ["portfolio", "tool", "publication"],
+      "industries": ["creative", "technology", "culture"],
+      "audienceTags": ["creators", "professionals"],
+      "personalities": ["bold", "precise", "direct"],
+      "density": "balanced",
+      "complexity": "low",
+      "distinctiveness": 0.7,
+      "fontPairIds": ["inter-inter", "space-source", "mono-plex", "system-sans"],
+      "paletteIds": ["mono-light", "mono-dark", "cobalt-chalk"],
+      "layout": [
+        "Use a small number of type scales.",
+        "Separate sections through rhythm and rules."
+      ],
+      "guidance": [
+        "Test borders and focus on both themes.",
+        "Keep color-independent status labels."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "retro-computing",
+      "name": "Retro Computing",
+      "summary": "Computing references establish a nostalgic tool voice without copying old usability failures.",
+      "productTypes": ["tool", "portfolio", "community"],
+      "industries": ["technology", "entertainment", "creative"],
+      "audienceTags": ["enthusiasts", "experts"],
+      "personalities": ["playful", "technical", "nostalgic"],
+      "density": "dense",
+      "complexity": "medium",
+      "distinctiveness": 0.9,
+      "fontPairIds": ["mono-plex", "plex-mono", "space-plex", "system-sans"],
+      "paletteIds": ["amber-terminal", "carbon-lime", "mono-dark"],
+      "layout": [
+        "Use compact command and result regions.",
+        "Provide modern keyboard and touch behavior."
+      ],
+      "guidance": [
+        "Keep monospaced paragraphs short.",
+        "Use readable sizes rather than imitating low-resolution text."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "soft-utility",
+      "name": "Soft Utility",
+      "summary": "Gentle surfaces and clear task order make everyday work approachable.",
+      "productTypes": ["service", "education", "dashboard"],
+      "industries": ["healthcare", "education", "wellness"],
+      "audienceTags": ["general", "beginners", "seniors"],
+      "personalities": ["calm", "warm", "inclusive"],
+      "density": "balanced",
+      "complexity": "low",
+      "distinctiveness": 0.3,
+      "fontPairIds": ["vietnam-vietnam", "noto-noto", "manrope-noto", "system-sans"],
+      "paletteIds": ["teal-clinic", "slate-blue", "rose-stone"],
+      "layout": [
+        "Show one primary action per task group.",
+        "Use proximity before adding containers."
+      ],
+      "guidance": [
+        "Make validation clear and recoverable.",
+        "Do not use softness as a reason for weak contrast."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "experimental-typography",
+      "name": "Experimental Typography",
+      "summary": "Expressive display typography creates a focal identity around a stable reading layer.",
+      "productTypes": ["portfolio", "marketing", "publication"],
+      "industries": ["creative", "culture", "fashion"],
+      "audienceTags": ["creators", "enthusiasts"],
+      "personalities": ["expressive", "bold", "experimental"],
+      "density": "spacious",
+      "complexity": "high",
+      "distinctiveness": 1,
+      "fontPairIds": ["space-inter", "space-vietnam", "literata-inter", "system-serif"],
+      "paletteIds": ["cobalt-chalk", "berry-snow", "violet-graphite"],
+      "layout": [
+        "Limit experiments to short display passages.",
+        "Keep reading and interaction order stable."
+      ],
+      "guidance": [
+        "Never distort essential labels.",
+        "Provide resilient wrapping and overflow behavior."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "civic-clarity",
+      "name": "Civic Clarity",
+      "summary": "Task language and visible service paths reduce uncertainty.",
+      "productTypes": ["service", "documentation", "education"],
+      "industries": ["public", "healthcare", "education"],
+      "audienceTags": ["general", "seniors", "beginners"],
+      "personalities": ["inclusive", "trustworthy", "direct"],
+      "density": "balanced",
+      "complexity": "low",
+      "distinctiveness": 0.3,
+      "fontPairIds": ["source-source", "noto-noto", "vietnam-vietnam", "system-sans"],
+      "paletteIds": ["navy-sand", "teal-clinic", "mono-light"],
+      "layout": [
+        "Start with the user task and required documents.",
+        "Keep help close to the relevant field."
+      ],
+      "guidance": [
+        "Use plain language and realistic error examples.",
+        "Show progress without inventing completion metrics."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "scientific-instrument",
+      "name": "Scientific Instrument",
+      "summary": "Measurement, provenance, and compact controls organize evidence-driven work.",
+      "productTypes": ["tool", "dashboard", "documentation"],
+      "industries": ["science", "healthcare", "technology"],
+      "audienceTags": ["experts", "operators"],
+      "personalities": ["technical", "precise", "rational"],
+      "density": "dense",
+      "complexity": "medium",
+      "distinctiveness": 0.6,
+      "fontPairIds": ["plex-inter", "mono-plex", "plex-source", "system-sans"],
+      "paletteIds": ["ocean-tool", "copper-blue", "slate-blue"],
+      "layout": [
+        "Align units with values and label axes.",
+        "Separate configuration, evidence, and interpretation."
+      ],
+      "guidance": [
+        "Show uncertainty and missing data explicitly.",
+        "Use color scales only with accessible legends."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "warm-commerce",
+      "name": "Warm Commerce",
+      "summary": "Product truth, clear purchase options, and warm typography support considered buying.",
+      "productTypes": ["commerce", "marketing"],
+      "industries": ["retail", "craft", "hospitality"],
+      "audienceTags": ["buyers", "general"],
+      "personalities": ["warm", "trustworthy", "refined"],
+      "density": "balanced",
+      "complexity": "low",
+      "distinctiveness": 0.5,
+      "fontPairIds": ["lora-source", "manrope-inter", "source-serif-vietnam", "system-serif"],
+      "paletteIds": ["terracotta", "bone-oxblood", "ink-paper"],
+      "layout": [
+        "Keep price, variants, and delivery near purchase.",
+        "Use comparison-friendly product lists."
+      ],
+      "guidance": [
+        "Use honest imagery and practical detail.",
+        "Make fees and returns easy to find."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "learning-studio",
+      "name": "Learning Studio",
+      "summary": "Clear progression and focused study regions reduce cognitive load.",
+      "productTypes": ["education", "service", "community"],
+      "industries": ["education", "science"],
+      "audienceTags": ["students", "beginners", "teachers"],
+      "personalities": ["optimistic", "inclusive", "thoughtful"],
+      "density": "balanced",
+      "complexity": "low",
+      "distinctiveness": 0.5,
+      "fontPairIds": ["vietnam-vietnam", "source-serif-sans", "manrope-source", "system-serif"],
+      "paletteIds": ["indigo-study", "navy-sand", "forest-mist"],
+      "layout": [
+        "Separate instruction, practice, and feedback.",
+        "Use a quiet reading column beside optional tools."
+      ],
+      "guidance": [
+        "Reward understanding with actionable feedback.",
+        "Keep course progress factual."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    },
+    {
+      "id": "gallery-led",
+      "name": "Gallery Led",
+      "summary": "Work samples and well-edited captions lead a quiet presentation frame.",
+      "productTypes": ["portfolio", "commerce", "publication"],
+      "industries": ["creative", "culture", "fashion"],
+      "audienceTags": ["creators", "buyers", "readers"],
+      "personalities": ["refined", "expressive", "confident"],
+      "density": "spacious",
+      "complexity": "medium",
+      "distinctiveness": 0.8,
+      "fontPairIds": ["literata-source", "space-source", "lora-inter", "system-serif"],
+      "paletteIds": ["mono-light", "ink-paper", "plum-cream"],
+      "layout": [
+        "Let image sequence tell a deliberate story.",
+        "Keep captions and navigation consistently placed."
+      ],
+      "guidance": [
+        "Document dimensions and context where useful.",
+        "Use descriptive alternatives and avoid hover-only details."
+      ],
+      "motion": [
+        "Use short transitions to communicate state changes, not to delay tasks.",
+        "Honor prefers-reduced-motion and provide immediate feedback."
+      ],
+      "avoid": [
+        "Do not substitute decorative novelty for task clarity.",
+        "Do not apply this direction over an established design system without explicit redesign intent."
+      ]
+    }
+  ],
+  "fontPairs": [
+    {
+      "id": "inter-inter",
+      "heading": {
+        "family": "Inter",
+        "stack": "\"Inter\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Inter",
+        "stack": "\"Inter\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "One neutral family; hierarchy comes from size and weight."
+    },
+    {
+      "id": "plex-plex",
+      "heading": {
+        "family": "IBM Plex Sans",
+        "stack": "\"IBM Plex Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "IBM Plex Sans",
+        "stack": "\"IBM Plex Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "One technical sans family for coherent task interfaces."
+    },
+    {
+      "id": "source-source",
+      "heading": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Open text shapes for long forms and navigation."
+    },
+    {
+      "id": "vietnam-vietnam",
+      "heading": {
+        "family": "Be Vietnam Pro",
+        "stack": "\"Be Vietnam Pro\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/bevietnampro/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Be Vietnam Pro",
+        "stack": "\"Be Vietnam Pro\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/bevietnampro/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Consistent Vietnamese-first text rhythm."
+    },
+    {
+      "id": "noto-noto",
+      "heading": {
+        "family": "Noto Sans",
+        "stack": "\"Noto Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/notosans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Noto Sans",
+        "stack": "\"Noto Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/notosans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Consistent text and controls with explicit subset selection."
+    },
+    {
+      "id": "manrope-inter",
+      "heading": {
+        "family": "Manrope",
+        "stack": "\"Manrope\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/manrope/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Inter",
+        "stack": "\"Inter\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Geometric headings with neutral body text."
+    },
+    {
+      "id": "space-inter",
+      "heading": {
+        "family": "Space Grotesk",
+        "stack": "\"Space Grotesk\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/spacegrotesk/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Inter",
+        "stack": "\"Inter\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Distinctive headings anchored by restrained body text."
+    },
+    {
+      "id": "plex-mono",
+      "heading": {
+        "family": "IBM Plex Sans",
+        "stack": "\"IBM Plex Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "IBM Plex Mono",
+        "stack": "\"IBM Plex Mono\", Consolas, monospace",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/ibmplexmono/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Technical headings and compact code labels; use mono body only for short technical copy."
+    },
+    {
+      "id": "mono-plex",
+      "heading": {
+        "family": "IBM Plex Mono",
+        "stack": "\"IBM Plex Mono\", Consolas, monospace",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/ibmplexmono/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "IBM Plex Sans",
+        "stack": "\"IBM Plex Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Monospaced headings cue tools; sans body preserves reading speed."
+    },
+    {
+      "id": "source-serif-sans",
+      "heading": {
+        "family": "Source Serif 4",
+        "stack": "\"Source Serif 4\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourceserif4/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Editorial headings and practical supporting text."
+    },
+    {
+      "id": "lora-inter",
+      "heading": {
+        "family": "Lora",
+        "stack": "\"Lora\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/lora/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Inter",
+        "stack": "\"Inter\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Expressive reading headings balanced with quiet navigation."
+    },
+    {
+      "id": "literata-noto",
+      "heading": {
+        "family": "Literata",
+        "stack": "\"Literata\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/literata/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Noto Sans",
+        "stack": "\"Noto Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/notosans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Reading-focused serif with neutral interface text."
+    },
+    {
+      "id": "noto-serif-sans",
+      "heading": {
+        "family": "Noto Serif",
+        "stack": "\"Noto Serif\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/notoserif/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Noto Sans",
+        "stack": "\"Noto Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/notosans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Institutional serif headings and clear forms."
+    },
+    {
+      "id": "source-serif-inter",
+      "heading": {
+        "family": "Source Serif 4",
+        "stack": "\"Source Serif 4\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourceserif4/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Inter",
+        "stack": "\"Inter\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Contrast between publication tone and utility text."
+    },
+    {
+      "id": "lora-source",
+      "heading": {
+        "family": "Lora",
+        "stack": "\"Lora\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/lora/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Warm headings with unobtrusive body text."
+    },
+    {
+      "id": "manrope-vietnam",
+      "heading": {
+        "family": "Manrope",
+        "stack": "\"Manrope\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/manrope/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Be Vietnam Pro",
+        "stack": "\"Be Vietnam Pro\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/bevietnampro/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Rounded geometric headings and Vietnamese interface text."
+    },
+    {
+      "id": "space-vietnam",
+      "heading": {
+        "family": "Space Grotesk",
+        "stack": "\"Space Grotesk\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/spacegrotesk/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Be Vietnam Pro",
+        "stack": "\"Be Vietnam Pro\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/bevietnampro/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Distinctive display rhythm with text designed for Vietnamese."
+    },
+    {
+      "id": "literata-source",
+      "heading": {
+        "family": "Literata",
+        "stack": "\"Literata\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/literata/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Book-like titles with readable support text."
+    },
+    {
+      "id": "noto-serif-vietnam",
+      "heading": {
+        "family": "Noto Serif",
+        "stack": "\"Noto Serif\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/notoserif/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Be Vietnam Pro",
+        "stack": "\"Be Vietnam Pro\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/bevietnampro/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Formal titles with approachable multilingual controls."
+    },
+    {
+      "id": "plex-inter",
+      "heading": {
+        "family": "IBM Plex Sans",
+        "stack": "\"IBM Plex Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Inter",
+        "stack": "\"Inter\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Technical tone with neutral body texture."
+    },
+    {
+      "id": "manrope-source",
+      "heading": {
+        "family": "Manrope",
+        "stack": "\"Manrope\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/manrope/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Friendly geometry with open body shapes."
+    },
+    {
+      "id": "space-plex",
+      "heading": {
+        "family": "Space Grotesk",
+        "stack": "\"Space Grotesk\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/spacegrotesk/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "IBM Plex Sans",
+        "stack": "\"IBM Plex Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Display contrast for developer products."
+    },
+    {
+      "id": "lora-vietnam",
+      "heading": {
+        "family": "Lora",
+        "stack": "\"Lora\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/lora/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Be Vietnam Pro",
+        "stack": "\"Be Vietnam Pro\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/bevietnampro/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Warm editorial titles and Vietnamese support copy."
+    },
+    {
+      "id": "literata-inter",
+      "heading": {
+        "family": "Literata",
+        "stack": "\"Literata\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/literata/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Inter",
+        "stack": "\"Inter\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Publication voice with neutral data and navigation."
+    },
+    {
+      "id": "source-serif-vietnam",
+      "heading": {
+        "family": "Source Serif 4",
+        "stack": "\"Source Serif 4\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourceserif4/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Be Vietnam Pro",
+        "stack": "\"Be Vietnam Pro\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/bevietnampro/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Formal reading titles with localized interface text."
+    },
+    {
+      "id": "noto-serif-inter",
+      "heading": {
+        "family": "Noto Serif",
+        "stack": "\"Noto Serif\", Georgia, serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/notoserif/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Inter",
+        "stack": "\"Inter\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Measured serif hierarchy with utility body text."
+    },
+    {
+      "id": "inter-source",
+      "heading": {
+        "family": "Inter",
+        "stack": "\"Inter\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/inter/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Restrained headings and text-focused body shapes."
+    },
+    {
+      "id": "plex-source",
+      "heading": {
+        "family": "IBM Plex Sans",
+        "stack": "\"IBM Plex Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Technical headings with text-friendly body proportions."
+    },
+    {
+      "id": "manrope-noto",
+      "heading": {
+        "family": "Manrope",
+        "stack": "\"Manrope\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/manrope/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Noto Sans",
+        "stack": "\"Noto Sans\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/notosans/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Friendly display with neutral text for utility products."
+    },
+    {
+      "id": "space-source",
+      "heading": {
+        "family": "Space Grotesk",
+        "stack": "\"Space Grotesk\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/spacegrotesk/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "stack": "\"Source Sans 3\", Arial, sans-serif",
+        "languages": ["en", "vi"],
+        "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/METADATA.pb",
+        "coverageNote": "Latin and Vietnamese subsets listed in upstream metadata, checked 2026-10-31. Load the correct subset; test diacritics at actual weights and line heights. Fallback glyph coverage varies by OS."
+      },
+      "delivery": "optional-web",
+      "rationale": "Characterful titles without making paragraphs decorative."
+    },
+    {
+      "id": "system-sans",
+      "heading": {
+        "family": "system-ui",
+        "stack": "system-ui, Arial, sans-serif",
+        "languages": ["en"],
+        "source": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
+        "coverageNote": "Generic family selection is OS-dependent. Vietnamese coverage is unverified and excluded from hard language compatibility; validate target systems before extending it."
+      },
+      "body": {
+        "family": "system-ui",
+        "stack": "system-ui, Arial, sans-serif",
+        "languages": ["en"],
+        "source": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
+        "coverageNote": "Generic family selection is OS-dependent. Vietnamese coverage is unverified and excluded from hard language compatibility; validate target systems before extending it."
+      },
+      "delivery": "system",
+      "rationale": "Use installed fonts without a network or font-file dependency; validate metrics and glyphs on target systems."
+    },
+    {
+      "id": "system-serif",
+      "heading": {
+        "family": "serif",
+        "stack": "Georgia, serif",
+        "languages": ["en"],
+        "source": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
+        "coverageNote": "Generic family selection is OS-dependent. Vietnamese coverage is unverified and excluded from hard language compatibility; validate target systems before extending it."
+      },
+      "body": {
+        "family": "serif",
+        "stack": "Georgia, serif",
+        "languages": ["en"],
+        "source": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
+        "coverageNote": "Generic family selection is OS-dependent. Vietnamese coverage is unverified and excluded from hard language compatibility; validate target systems before extending it."
+      },
+      "delivery": "system",
+      "rationale": "Use installed fonts without a network or font-file dependency; validate metrics and glyphs on target systems."
+    }
+  ],
+  "palettes": [
+    {
+      "id": "ink-paper",
+      "name": "Ink on Paper",
+      "mode": "light",
+      "colors": {
+        "background": "#faf9f6",
+        "foreground": "#20201e",
+        "surface": "#ffffff",
+        "muted": "#585851",
+        "accent": "#234734",
+        "onAccent": "#ffffff",
+        "border": "#b5b5ac"
+      },
+      "rationale": "Warm paper and forest accents support publication hierarchy."
+    },
+    {
+      "id": "slate-blue",
+      "name": "Slate Blue",
+      "mode": "light",
+      "colors": {
+        "background": "#f8fafc",
+        "foreground": "#172033",
+        "surface": "#ffffff",
+        "muted": "#4b5563",
+        "accent": "#2048a0",
+        "onAccent": "#ffffff",
+        "border": "#94a3b8"
+      },
+      "rationale": "Cool neutrals separate task structure from primary actions."
+    },
+    {
+      "id": "bone-oxblood",
+      "name": "Bone and Oxblood",
+      "mode": "light",
+      "colors": {
+        "background": "#faf6ee",
+        "foreground": "#2d2222",
+        "surface": "#ffffff",
+        "muted": "#685252",
+        "accent": "#7e263a",
+        "onAccent": "#ffffff",
+        "border": "#baa99a"
+      },
+      "rationale": "Warm restraint for considered commerce and cultural work."
+    },
+    {
+      "id": "cobalt-chalk",
+      "name": "Cobalt and Chalk",
+      "mode": "light",
+      "colors": {
+        "background": "#fffef9",
+        "foreground": "#151515",
+        "surface": "#ffffff",
+        "muted": "#505050",
+        "accent": "#173ca4",
+        "onAccent": "#ffffff",
+        "border": "#a3a3a3"
+      },
+      "rationale": "Strong action contrast against an almost neutral field."
+    },
+    {
+      "id": "carbon-lime",
+      "name": "Carbon and Lime",
+      "mode": "dark",
+      "colors": {
+        "background": "#151a18",
+        "foreground": "#f0f4ec",
+        "surface": "#222b25",
+        "muted": "#b6c4b9",
+        "accent": "#cae871",
+        "onAccent": "#17200d",
+        "border": "#687c6c"
+      },
+      "rationale": "High-signal accent on quiet dark tool surfaces."
+    },
+    {
+      "id": "plum-cream",
+      "name": "Plum and Cream",
+      "mode": "light",
+      "colors": {
+        "background": "#fcf7ee",
+        "foreground": "#2e2032",
+        "surface": "#ffffff",
+        "muted": "#67516c",
+        "accent": "#64345f",
+        "onAccent": "#ffffff",
+        "border": "#b9a5b7"
+      },
+      "rationale": "Warm literary character with clear text contrast."
+    },
+    {
+      "id": "navy-sand",
+      "name": "Navy and Sand",
+      "mode": "light",
+      "colors": {
+        "background": "#f7f4ed",
+        "foreground": "#162c40",
+        "surface": "#ffffff",
+        "muted": "#4f6070",
+        "accent": "#164e63",
+        "onAccent": "#ffffff",
+        "border": "#a2afb8"
+      },
+      "rationale": "Trust-oriented palette for public and financial services."
+    },
+    {
+      "id": "mono-light",
+      "name": "Monochrome Light",
+      "mode": "light",
+      "colors": {
+        "background": "#ffffff",
+        "foreground": "#171717",
+        "surface": "#f5f5f5",
+        "muted": "#525252",
+        "accent": "#262626",
+        "onAccent": "#ffffff",
+        "border": "#a3a3a3"
+      },
+      "rationale": "Hierarchy through type and spacing before color."
+    },
+    {
+      "id": "mono-dark",
+      "name": "Monochrome Dark",
+      "mode": "dark",
+      "colors": {
+        "background": "#171717",
+        "foreground": "#fafafa",
+        "surface": "#262626",
+        "muted": "#c5c5c5",
+        "accent": "#ededed",
+        "onAccent": "#171717",
+        "border": "#737373"
+      },
+      "rationale": "Restrained dark surfaces with a bright action treatment."
+    },
+    {
+      "id": "terracotta",
+      "name": "Terracotta Field",
+      "mode": "light",
+      "colors": {
+        "background": "#fff8f0",
+        "foreground": "#36251d",
+        "surface": "#ffffff",
+        "muted": "#6a5144",
+        "accent": "#8f3e27",
+        "onAccent": "#ffffff",
+        "border": "#bea18e"
+      },
+      "rationale": "Earthy tones complement content about craft and material."
+    },
+    {
+      "id": "teal-clinic",
+      "name": "Teal Clinic",
+      "mode": "light",
+      "colors": {
+        "background": "#f4faf9",
+        "foreground": "#16302e",
+        "surface": "#ffffff",
+        "muted": "#44625f",
+        "accent": "#11645e",
+        "onAccent": "#ffffff",
+        "border": "#8aacaa"
+      },
+      "rationale": "Clear utility color for care and service workflows."
+    },
+    {
+      "id": "forest-mist",
+      "name": "Forest Mist",
+      "mode": "light",
+      "colors": {
+        "background": "#f5f8ef",
+        "foreground": "#203322",
+        "surface": "#ffffff",
+        "muted": "#50634e",
+        "accent": "#2c5737",
+        "onAccent": "#ffffff",
+        "border": "#9caf98"
+      },
+      "rationale": "Natural restraint for environmental and outdoor contexts."
+    },
+    {
+      "id": "amber-terminal",
+      "name": "Amber Terminal",
+      "mode": "dark",
+      "colors": {
+        "background": "#181611",
+        "foreground": "#fff3d2",
+        "surface": "#282319",
+        "muted": "#cfbf98",
+        "accent": "#f2bf5e",
+        "onAccent": "#211906",
+        "border": "#897850"
+      },
+      "rationale": "Terminal-inspired contrast; reserve amber for useful signals."
+    },
+    {
+      "id": "berry-snow",
+      "name": "Berry Snow",
+      "mode": "light",
+      "colors": {
+        "background": "#fffbfd",
+        "foreground": "#322035",
+        "surface": "#ffffff",
+        "muted": "#6a506c",
+        "accent": "#8d285c",
+        "onAccent": "#ffffff",
+        "border": "#bea0b3"
+      },
+      "rationale": "Expressive accent for friendly content and membership."
+    },
+    {
+      "id": "indigo-study",
+      "name": "Indigo Study",
+      "mode": "light",
+      "colors": {
+        "background": "#f7f8ff",
+        "foreground": "#202443",
+        "surface": "#ffffff",
+        "muted": "#525979",
+        "accent": "#423e97",
+        "onAccent": "#ffffff",
+        "border": "#a5a9ca"
+      },
+      "rationale": "Measured academic color for learning progression."
+    },
+    {
+      "id": "ocean-tool",
+      "name": "Ocean Tool",
+      "mode": "dark",
+      "colors": {
+        "background": "#10212d",
+        "foreground": "#eaf5ff",
+        "surface": "#193244",
+        "muted": "#abc8da",
+        "accent": "#7ed0ef",
+        "onAccent": "#102531",
+        "border": "#648ca3"
+      },
+      "rationale": "Dark technical canvas with readable controls."
+    },
+    {
+      "id": "yellow-ink",
+      "name": "Yellow Ink",
+      "mode": "light",
+      "colors": {
+        "background": "#fffef4",
+        "foreground": "#25220d",
+        "surface": "#ffffff",
+        "muted": "#605a32",
+        "accent": "#6c5400",
+        "onAccent": "#ffffff",
+        "border": "#b4ab77"
+      },
+      "rationale": "Warm graphic character while keeping text legible."
+    },
+    {
+      "id": "rose-stone",
+      "name": "Rose Stone",
+      "mode": "light",
+      "colors": {
+        "background": "#faf7f6",
+        "foreground": "#382a2a",
+        "surface": "#ffffff",
+        "muted": "#6c5555",
+        "accent": "#8c3947",
+        "onAccent": "#ffffff",
+        "border": "#bca3a3"
+      },
+      "rationale": "Soft background with firm text and action contrast."
+    },
+    {
+      "id": "violet-graphite",
+      "name": "Violet Graphite",
+      "mode": "dark",
+      "colors": {
+        "background": "#1d1926",
+        "foreground": "#f6efff",
+        "surface": "#30283c",
+        "muted": "#c9b9dc",
+        "accent": "#cbb2fa",
+        "onAccent": "#271840",
+        "border": "#88759e"
+      },
+      "rationale": "Violet as a purposeful accent rather than ambient decoration."
+    },
+    {
+      "id": "copper-blue",
+      "name": "Copper Blue",
+      "mode": "light",
+      "colors": {
+        "background": "#f5f8fa",
+        "foreground": "#21323e",
+        "surface": "#ffffff",
+        "muted": "#4f6676",
+        "accent": "#784129",
+        "onAccent": "#ffffff",
+        "border": "#9daeb9"
+      },
+      "rationale": "Warm accent within a precise neutral technical field."
+    }
+  ],
+  "principles": [
+    {
+      "id": "visual-hierarchy",
+      "title": "Visual hierarchy",
+      "why": "Relative emphasis tells people where to begin.",
+      "when": "Any view with competing content.",
+      "poor": "Every heading uses the same weight and size.",
+      "improved": "Make the task heading dominant; keep metadata quieter but readable."
+    },
+    {
+      "id": "information-architecture",
+      "title": "Information architecture",
+      "why": "Grouping by user intent reduces search effort.",
+      "when": "Navigation, catalogs, settings.",
+      "poor": "Put billing under a vague Miscellaneous tab.",
+      "improved": "Group invoices, payment methods, and plans under Billing."
+    },
+    {
+      "id": "gestalt-grouping",
+      "title": "Gestalt grouping",
+      "why": "Proximity and similarity imply relationships.",
+      "when": "Forms, tables, and repeated controls.",
+      "poor": "Equal gaps inside and between all form sections.",
+      "improved": "Use smaller gaps inside a group and larger gaps between groups."
+    },
+    {
+      "id": "typography-hierarchy",
+      "title": "Typography hierarchy",
+      "why": "Stable text roles make scanning predictable.",
+      "when": "Reading and task interfaces.",
+      "poor": "Random sizes for each section.",
+      "improved": "Use body, label, subheading, and heading roles with consistent line heights."
+    },
+    {
+      "id": "grid-composition",
+      "title": "Grid and composition",
+      "why": "Shared alignments reduce visual work.",
+      "when": "Layouts that mix media and text.",
+      "poor": "Cards and headings drift to unrelated edges.",
+      "improved": "Align primary regions to a grid that collapses in reading order."
+    },
+    {
+      "id": "spacing-rhythm",
+      "title": "Spacing and rhythm",
+      "why": "Repeated intervals clarify structure.",
+      "when": "Any repeated content.",
+      "poor": "Use arbitrary margins on each item.",
+      "improved": "Use a small spacing scale and intentional exceptions for emphasis."
+    },
+    {
+      "id": "color-contrast",
+      "title": "Color and contrast",
+      "why": "Color carries meaning only when people can distinguish it.",
+      "when": "Text, controls, status and data.",
+      "poor": "Use pale gray labels or red alone for errors.",
+      "improved": "Use sufficient luminance contrast plus an error label and icon when useful."
+    },
+    {
+      "id": "affordance-feedback",
+      "title": "Affordances and feedback",
+      "why": "People need to know what is actionable and what happened.",
+      "when": "All interactive controls.",
+      "poor": "Clickable text looks identical to plain text; saving is silent.",
+      "improved": "Use recognizable controls with focus, pending, success, and error states."
+    },
+    {
+      "id": "cognitive-load",
+      "title": "Cognitive load",
+      "why": "Visible structure reduces memory demands.",
+      "when": "Complex workflows.",
+      "poor": "Make users remember IDs across pages.",
+      "improved": "Keep relevant context visible and show recognition-friendly choices."
+    },
+    {
+      "id": "progressive-disclosure",
+      "title": "Progressive disclosure",
+      "why": "Secondary detail should not block the primary task.",
+      "when": "Advanced settings and dense tools.",
+      "poor": "Show every rare option above the main action.",
+      "improved": "Expose common controls first and label an accessible advanced section."
+    },
+    {
+      "id": "responsive-design",
+      "title": "Responsive design",
+      "why": "Content and tasks must survive changes in available space.",
+      "when": "Every screen size and zoom level.",
+      "poor": "Shrink a desktop dashboard into unreadable columns.",
+      "improved": "Reflow by priority; allow purposeful table scrolling with visible labels."
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility",
+      "why": "Semantic structure and robust interaction widen access.",
+      "when": "All user interfaces.",
+      "poor": "A div acts as a button and loses keyboard access.",
+      "improved": "Use a button, visible focus, meaningful label, and appropriate disabled behavior."
+    },
+    {
+      "id": "interaction-states",
+      "title": "Interaction states",
+      "why": "A complete state model prevents ambiguity and dead ends.",
+      "when": "Async, forms, navigation.",
+      "poor": "Design only a successful populated screen.",
+      "improved": "Provide empty, loading, error, partial, disabled, and success states."
+    },
+    {
+      "id": "motion",
+      "title": "Motion and reduced motion",
+      "why": "Movement can explain continuity but can also distract or harm.",
+      "when": "Transitions, feedback, orientation.",
+      "poor": "Looping decorations run beside a reading task.",
+      "improved": "Use brief purposeful transitions and remove nonessential motion on request."
+    },
+    {
+      "id": "content-first",
+      "title": "Content-first design",
+      "why": "Real content exposes structural needs that filler hides.",
+      "when": "Early composition and localization.",
+      "poor": "Design around three identical short placeholder headings.",
+      "improved": "Use realistic long titles, empty data, errors, and translated text."
+    },
+    {
+      "id": "consistency-differentiation",
+      "title": "Consistency versus differentiation",
+      "why": "Stable interaction patterns let distinctive content remain usable.",
+      "when": "Brand expression and component systems.",
+      "poor": "Invent a new checkout interaction to appear unique.",
+      "improved": "Keep checkout familiar and express identity through content and composition."
+    }
+  ],
+  "antiPatterns": [
+    {
+      "id": "generic-saas",
+      "title": "Generic SaaS composition",
+      "description": "Interchangeable hero, logo strip, cards, and CTA regardless of product.",
+      "why": "It hides the actual user decision.",
+      "acceptableWhen": "The sequence genuinely answers buyer questions.",
+      "detection": "Human review against product goals and content.",
+      "alternative": "Lead with task evidence and a product-specific narrative.",
+      "limitation": "Composition alone cannot establish poor quality."
+    },
+    {
+      "id": "decorative-gradients",
+      "title": "Decorative gradient repetition",
+      "description": "Many gradients compete without encoding information.",
+      "why": "It dilutes hierarchy and may obscure text.",
+      "acceptableWhen": "Gradients express a coherent brand or data relationship.",
+      "detection": "Static count is a heuristic; inspect the rendered view.",
+      "alternative": "Use quieter surfaces and one purposeful emphasis.",
+      "limitation": "Source count does not show simultaneous visibility."
+    },
+    {
+      "id": "decorative-glass",
+      "title": "Decorative glassmorphism",
+      "description": "Translucent panels are used without a layering purpose.",
+      "why": "Background variation can damage contrast and focus.",
+      "acceptableWhen": "Layering communicates a meaningful spatial relationship.",
+      "detection": "Review transparency and backdrop effects in context.",
+      "alternative": "Use opaque surfaces or controlled backgrounds.",
+      "limitation": "Rendered backgrounds are required for contrast conclusions."
+    },
+    {
+      "id": "feature-card-grids",
+      "title": "Repetitive feature-card grids",
+      "description": "Different information is forced into identical tiles.",
+      "why": "Equal weight hides sequence and priority.",
+      "acceptableWhen": "Items are genuinely comparable and independent.",
+      "detection": "Inspect repeated components and content relationships.",
+      "alternative": "Use editorial hierarchy, lists, or comparison tables.",
+      "limitation": "Repeated components are not automatically a problem."
+    },
+    {
+      "id": "pill-overuse",
+      "title": "Excessive pills",
+      "description": "Most surfaces and controls use fully rounded shapes.",
+      "why": "Categories and actions become hard to distinguish.",
+      "acceptableWhen": "Chips and short related filters benefit from the shape.",
+      "detection": "Review shape semantics and density.",
+      "alternative": "Assign shapes to roles with a small radius scale.",
+      "limitation": "A numeric radius cannot determine appropriateness."
+    },
+    {
+      "id": "weak-type",
+      "title": "Weak typography hierarchy",
+      "description": "Text roles are indistinct or arbitrary.",
+      "why": "Scanning becomes slow and meaning is unclear.",
+      "acceptableWhen": "Quiet hierarchy suits a simple linear reading task.",
+      "detection": "Count declared families and inspect role consistency.",
+      "alternative": "Use stable roles with deliberate contrast in scale or weight.",
+      "limitation": "Static declarations cannot reveal the actual hierarchy."
+    },
+    {
+      "id": "generic-copy",
+      "title": "Generic hero copy",
+      "description": "Claims such as unlock your potential replace concrete value.",
+      "why": "Users cannot tell what the product does.",
+      "acceptableWhen": "A campaign line is paired with clear explanatory copy.",
+      "detection": "Human review: identify audience, task, outcome, and evidence.",
+      "alternative": "Name the user, action, and useful result.",
+      "limitation": "No universal phrase list proves copy is poor."
+    },
+    {
+      "id": "spacing-drift",
+      "title": "Inconsistent spacing",
+      "description": "Unrelated values accumulate without structural meaning.",
+      "why": "Groups become ambiguous and maintenance harder.",
+      "acceptableWhen": "Optical corrections or content constraints need exceptions.",
+      "detection": "Compare declared values to project tokens.",
+      "alternative": "Use tokens and record justified exceptions.",
+      "limitation": "A hardcoded value may be a deliberate exception."
+    },
+    {
+      "id": "arbitrary-animation",
+      "title": "Arbitrary animation",
+      "description": "Movement repeats without explaining state or continuity.",
+      "why": "It increases distraction and can delay tasks.",
+      "acceptableWhen": "Animation clarifies a transition or rewards an explicit action.",
+      "detection": "Review animation purpose and reduced-motion behavior.",
+      "alternative": "Use direct feedback with an accessible static alternative.",
+      "limitation": "A source-level audit cannot determine perceived distraction."
+    },
+    {
+      "id": "visual-noise",
+      "title": "Visual noise",
+      "description": "Too many competing borders, icons, colors, and effects.",
+      "why": "The primary task loses salience.",
+      "acceptableWhen": "Dense signals support an expert monitoring workflow.",
+      "detection": "Rendered review with a task-based scan.",
+      "alternative": "Remove redundant encodings and group related signals.",
+      "limitation": "Expert tools may require high information density."
+    },
+    {
+      "id": "dashboard-density",
+      "title": "Poor dashboard density",
+      "description": "Tiles consume space while useful comparable data is hidden.",
+      "why": "Users travel farther and cannot compare records.",
+      "acceptableWhen": "A small number of summary indicators supports triage.",
+      "detection": "Review decisions supported per viewport.",
+      "alternative": "Use tables, trends, units, and purposeful filters.",
+      "limitation": "Density is task-dependent, not a maximum-content contest."
+    },
+    {
+      "id": "fake-metrics",
+      "title": "Meaningless metrics",
+      "description": "Fabricated or context-free numbers imply evidence.",
+      "why": "They mislead decisions and erode trust.",
+      "acceptableWhen": "Clearly labeled sample data demonstrates a concept.",
+      "detection": "Verify provenance, period, denominator, and meaning.",
+      "alternative": "Use real sourced metrics or explicitly marked examples.",
+      "limitation": "Source syntax cannot establish factual accuracy."
+    },
+    {
+      "id": "icon-misuse",
+      "title": "Inappropriate icons",
+      "description": "Unfamiliar or decorative icons replace clear labels.",
+      "why": "Meaning becomes guesswork, especially across cultures.",
+      "acceptableWhen": "Familiar icons accompany text or labeled controls.",
+      "detection": "Review accessible names and user recognition.",
+      "alternative": "Use descriptive labels and consistent icon semantics.",
+      "limitation": "Recognition requires audience context."
+    },
+    {
+      "id": "responsive-failure",
+      "title": "Weak responsive behavior",
+      "description": "Fixed layouts clip tasks or hide essential controls.",
+      "why": "Small screens and zoomed views become unusable.",
+      "acceptableWhen": "A data table needs controlled horizontal scrolling.",
+      "detection": "Inspect actual narrow viewports, zoom, and long translations.",
+      "alternative": "Reflow content priorities and preserve task access.",
+      "limitation": "Breakpoints in source do not prove responsive quality."
+    }
+  ]
+}

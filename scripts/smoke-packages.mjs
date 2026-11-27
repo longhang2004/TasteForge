@@ -37,6 +37,8 @@ try {
     if (short === 'knowledge') {
       assert(files.includes('package/dist/data/knowledge.json'));
       assert(files.includes('package/dist/data/references.json'));
+      assert(files.includes('package/dist/data/compositions.json'));
+      assert(files.includes('package/dist/compositions.js'));
       assert(files.includes('package/reference-lock.json'));
       assert(files.includes('package/third-party/volt.LICENSE.txt'));
       assert(files.includes('package/third-party/promax.LICENSE.txt'));
@@ -92,12 +94,30 @@ try {
   );
   assert.equal(inspiration.inspirations.length, 3);
   assert(inspiration.inspirations.every((p) => p.template?.tasks.includes('commerce')));
+  assert(inspiration.inspirations.every((p) => p.composition?.tasks.includes('commerce')));
+  assert.equal(new Set(inspiration.inspirations.map((p) => p.composition.id)).size, 3);
+  assert(inspiration.compositionSources.every((s) => s.revision.length === 40));
   assert.equal(inspiration.requiredGates.length, 10);
   await writeFile(path.join(project, 'view.css'), '.x { color: #aaa; background: #fff; }');
   const audit = JSON.parse(cli('audit', '--path', 'view.css', '--format', 'json'));
   assert(audit.findings.some((finding) => finding.ruleId === 'contrast-pair'));
+  await writeFile(path.join(project, 'entry.css'), '@import "tokens.css"; @import "consumer.css";');
+  await writeFile(path.join(project, 'tokens.css'), ':root { --fg: #aaa; }');
+  await writeFile(
+    path.join(project, 'consumer.css'),
+    '.x { color: var(--fg); background: white; }',
+  );
+  const resolved = JSON.parse(
+    cli('audit', '--path', 'entry.css', '--resolve-imports', '--format', 'json'),
+  );
+  assert.equal(resolved.resolution.status, 'complete');
+  const pair = resolved.findings.find(
+    (finding) => finding.ruleId === 'contrast-pair' && finding.file === 'consumer.css',
+  );
+  assert(pair?.provenance.some((origin) => origin.file === 'tokens.css'));
+  assert.deepEqual(pair.entries, ['entry.css']);
   console.log(
-    'Packed knowledge/core/CLI with attributed reference data installed offline; init → suggest → generate → catalog → inspire → audit passed.',
+    'Packed knowledge/core/CLI with attributed reference data installed offline; init → suggest → generate → catalog → inspire → audit and opt-in import provenance passed.',
   );
 } catch (error) {
   if (error.stderr) process.stderr.write(error.stderr);

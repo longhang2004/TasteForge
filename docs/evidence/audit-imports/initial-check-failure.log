@@ -1,0 +1,41 @@
+
+> tasteforge-workspace@0.2.0-beta.2 check /var/tmp/tasteforge-audit-imports-20261103
+> pnpm build && pnpm typecheck && pnpm lint && pnpm format:check && vitest run
+
+
+> tasteforge-workspace@0.2.0-beta.2 build /var/tmp/tasteforge-audit-imports-20261103
+> pnpm -r build
+
+Scope: 3 of 4 workspace projects
+packages/knowledge build$ tsc -p tsconfig.json
+packages/knowledge build: Done
+packages/core build$ tsc -p tsconfig.json
+packages/core build: Done
+packages/cli build$ tsc -p tsconfig.json && node scripts/prepare.mjs
+packages/cli build: Done
+
+> tasteforge-workspace@0.2.0-beta.2 typecheck /var/tmp/tasteforge-audit-imports-20261103
+> pnpm -r typecheck && tsc -p tests/tsconfig.json
+
+Scope: 3 of 4 workspace projects
+packages/knowledge typecheck$ tsc -p tsconfig.json --noEmit
+packages/knowledge typecheck: Done
+packages/core typecheck$ tsc -p tsconfig.json --noEmit
+packages/core typecheck: Done
+packages/cli typecheck$ tsc -p tsconfig.json --noEmit
+packages/cli typecheck: Done
+
+> tasteforge-workspace@0.2.0-beta.2 lint /var/tmp/tasteforge-audit-imports-20261103
+> eslint . --max-warnings 0
+
+
+/var/tmp/tasteforge-audit-imports-20261103/packages/core/src/audit-project.ts
+  71:5  error  Unexpected control character(s) in regular expression: \x00, \x1f  no-control-regex
+
+/var/tmp/tasteforge-audit-imports-20261103/scripts/measure-audit-imports.mjs
+  46:61  error  'Buffer' is not defined  no-undef
+
+✖ 2 problems (2 errors, 0 warnings)
+
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

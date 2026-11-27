@@ -29,12 +29,18 @@ export default tseslint.config(
       'examples/design-gallery/tools/check.mjs',
       'examples/composition-studies/*.mjs',
       'examples/composition-studies/tools/check.mjs',
+      'examples/composition-library/app.mjs',
+      'examples/composition-library/check.mjs',
+      'examples/composition-library/fonts/browser-check.mjs',
     ],
     languageOptions: {
       globals: {
         document: 'readonly',
         window: 'readonly',
         fetch: 'readonly',
+        FontFace: 'readonly',
+        Option: 'readonly',
+        getComputedStyle: 'readonly',
         DOMParser: 'readonly',
         URLSearchParams: 'readonly',
         innerWidth: 'readonly',

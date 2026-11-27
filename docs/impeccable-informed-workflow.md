@@ -26,6 +26,14 @@ The gallery includes successful retained choices, not a collection of banned app
 
 This teaching approach was informed by [Impeccable's annotated examples](https://impeccable.style/slop/). Its pages describe deliberately exaggerated examples and distinguish source, browser and design-review evidence. The TasteForge gallery uses only this repository's actual artifacts and original explanations. Its overlays are authored, not output from a new browser detector. Neither source's illustrative gallery establishes representative-user outcomes.
 
+## Composition and typography increment — 6 November 2026
+
+The next original adaptation focuses on a content-supported visual thesis: first identify the relationship, then make image/caption, type roles, density and spacing carry it together. The on-demand [art-direction reference](../skills/tasteforge/references/art-direction.md) now connects this decision to a [twelve-card composition field guide](../examples/composition-library/README.md) and [reviewed typography specimens](typography-expansion.md). It preserves familiar controls and justified existing fonts, including ones an aesthetic detector might flag.
+
+This follows the useful distinction in Impeccable's [new-work guidance](https://github.com/pbakaus/impeccable/blob/main/skill/reference/new-work.md) and [typeset playbook](https://github.com/pbakaus/impeccable/blob/main/skill/reference/typeset.md), inspected 6 November 2026: a coherent direction is supported by the surface's purpose and actual content; typography includes roles, script, stress and delivery. These are dated mutable source links. TasteForge's prose/cards are original; no upstream engine, catalog images or Apache-licensed playbook text is distributed. The locally available Impeccable 4.3.1 context loader was run read-only for this research; it identified package directories without product/design context, so no product UI/context files, hooks or settings were created.
+
+The skill entry stays unchanged. Fast does not acquire mandatory research, a new plan, alternative prototypes or a new creator. Normal rendered critique remains separate from mechanical checks; a narrow correction is scoped to demonstrated evidence. The new selection labels and enlarged library are hypotheses to assess in fresh matched outputs, not evidence of stronger product identity by themselves.
+
 ## Provenance and scope
 
 One [independent source-only forward-test](../evals/runs/2026-11-01-surface-refinement-probe/README.md) preserves the exact request, raw response and frozen skill. It demonstrates scoped use of the new purpose/edit guidance: fixed choices and meaningful repeated amounts were retained, duplicate help was consolidated, and local-record semantics remained explicit. It produced no UI or human-outcome evidence. Gallery browser checks separately exercise the viewer; they do not rerun or re-score its captured inventory designs.

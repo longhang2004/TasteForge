@@ -12,4 +12,6 @@ The bundled web-font metadata lists Latin and Vietnamese subsets from upstream G
 
 Generated CSS names optional fonts but does not fetch them. Self-host appropriately licensed files or deliberately configure delivery; retain a generic fallback. Check layout shifts and line wrapping before and after loading. System fallbacks depend on the OS and installed fonts; their Vietnamese coverage is not certified. For scripts outside the catalog, preserve a validated project font or research coverage before claiming support.
 
-Font sources and limitations are stored with each knowledge entry. Typeface pairing is editorial judgment. No font files or third-party descriptions are included in TasteForge.
+Font sources and limitations are stored with each knowledge entry. Typeface pairing is editorial judgment. The knowledge package includes no font binaries or third-party descriptions.
+
+The repository's optional composition-library gallery includes separately licensed font specimens for inspecting a small reviewed expansion. Those files are gallery assets, not downloaded by the generator or installed on the host. A family label or metadata subset is not proof that the exact delivered file/weight supports the text: retain the glyph/loading evidence and any combining-mark or fallback limits. Choose a new family only when it fills a product role the existing system does not already serve.

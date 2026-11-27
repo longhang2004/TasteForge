@@ -1,0 +1,69 @@
+
+> tasteforge-workspace@0.2.0-beta.2 check /var/tmp/tasteforge-audit-imports-20261103
+> pnpm build && pnpm typecheck && pnpm lint && pnpm format:check && vitest run
+
+
+> tasteforge-workspace@0.2.0-beta.2 build /var/tmp/tasteforge-audit-imports-20261103
+> pnpm -r build
+
+Scope: 3 of 4 workspace projects
+packages/knowledge build$ tsc -p tsconfig.json
+packages/knowledge build: Done
+packages/core build$ tsc -p tsconfig.json
+packages/core build: Done
+packages/cli build$ tsc -p tsconfig.json && node scripts/prepare.mjs
+packages/cli build: Done
+
+> tasteforge-workspace@0.2.0-beta.2 typecheck /var/tmp/tasteforge-audit-imports-20261103
+> pnpm -r typecheck && tsc -p tests/tsconfig.json
+
+Scope: 3 of 4 workspace projects
+packages/knowledge typecheck$ tsc -p tsconfig.json --noEmit
+packages/knowledge typecheck: Done
+packages/core typecheck$ tsc -p tsconfig.json --noEmit
+packages/core typecheck: Done
+packages/cli typecheck$ tsc -p tsconfig.json --noEmit
+packages/cli typecheck: Done
+
+> tasteforge-workspace@0.2.0-beta.2 lint /var/tmp/tasteforge-audit-imports-20261103
+> eslint . --max-warnings 0
+
+
+> tasteforge-workspace@0.2.0-beta.2 format:check /var/tmp/tasteforge-audit-imports-20261103
+> prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!
+
+ RUN  v3.2.7 /var/tmp/tasteforge-audit-imports-20261103
+
+ ✓ tests/audit-imports.test.ts (19 tests) 821ms
+   ✓ bounded static stylesheet audit > enforces supplied file, edge, definition and UTF-8 byte budgets  466ms
+ ✓ tests/core.test.ts (16 tests) 2037ms
+   ✓ deterministic controlled exploration > low creativity concentrates on more relevant candidates across seeds  1342ms
+ ✓ tests/references.test.ts (9 tests) 1495ms
+ ✓ tests/audit-imports-cli.test.ts (7 tests) 29075ms
+   ✓ opt-in import audit CLI > loads project-local imports beyond the selected entry and preserves default JSON/exit behavior  7359ms
+   ✓ opt-in import audit CLI > keeps missing, remote, conditional, excluded and escaping imports visible as review  7797ms
+   ✓ opt-in import audit CLI > rejects original symlink directory/file components and hardlinked imports  7155ms
+   ✓ opt-in import audit CLI > refuses a FIFO before opening an imported stylesheet  1550ms
+   ✓ opt-in import audit CLI > allows explicit generated-token imports without requiring generated DNA  1527ms
+   ✓ opt-in import audit CLI > leaves JSX/TSX source audit intact and never executes module imports  1740ms
+   ✓ opt-in import audit CLI > returns a narrow-path error on over-budget selected CSS roots  1938ms
+ ✓ tests/cli.test.ts (9 tests) 40193ms
+   ✓ CLI integration and exit contract > reads the external catalog and samples attributed inspiration without writing project artifacts  6807ms
+   ✓ CLI integration and exit contract > initializes, loads context, suggests, generates, and audits example source  6789ms
+   ✓ CLI integration and exit contract > previews without any filesystem writes  1678ms
+   ✓ CLI integration and exit contract > never silently overwrites initialized or generated artifacts  4144ms
+   ✓ CLI integration and exit contract > rejects linked output directories and files, including with force  2248ms
+   ✓ CLI integration and exit contract > refuses path traversal and symlink reads outside the project  2499ms
+   ✓ CLI integration and exit contract > returns readable errors for malformed briefs, unknown directions, and invalid options  8021ms
+   ✓ CLI integration and exit contract > fails on malformed sources and can explicitly report without failing  6488ms
+   ✓ CLI integration and exit contract > refuses concurrent writes and malformed persisted DNA  1515ms
+ ✓ tests/audit.test.ts (10 tests) 220ms
+
+ Test Files  6 passed (6)
+      Tests  70 passed (70)
+   Start at  12:42:39
+   Duration  54.84s (transform 1.71s, setup 0ms, collect 8.60s, tests 73.84s, environment 3ms, prepare 1.20s)
+

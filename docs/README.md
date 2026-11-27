@@ -10,6 +10,9 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 - [Proportional UI workflows](lean-workflows.md): Fast/Standard/Explore effort, compact context, source-grounded copy and optional natural-state browser checkpoints.
 - [Reference-led UX planning](reference-led-design.md): research real product/pattern sources, compare task structures before visual treatments, and understand what the current CLI does and does not automate.
 - [Offline reference catalog](reference-catalog.md): 642 attributed records, seeded external style inspiration, task-tagged template observations, baseline review gates, and reproducible ingestion.
+- [Composition field guide](../examples/composition-library/README.md): twelve original relationship cards, source observations, schematic previews and conditional inspiration selection.
+- [Composition continuation and integration review](composition-continuation-review.md): final matched pilot, review decisions, technical checks and remaining scope.
+- [Typography expansion](typography-expansion.md): six additional font families/pairs, pinned OFL files, sampled glyph/loading checks and known language limits.
 - [Effect and layout research](effects-research.md): inspected Colorion, Codrops, layout and native-animation sources; purpose-based skill guidance and original runnable studies.
 - [Surface purpose and targeted refinement](impeccable-informed-workflow.md): Impeccable-informed concepts, scoped edits, intentional exceptions, an annotated evidence gallery and a bounded independent forward-test.
 - [GitHub releases](https://github.com/longhang2004/TasteForge/releases): tagged source, built package archives, standalone skill ZIP, checksums, and release notes. The npm packages are not yet published.
@@ -30,6 +33,7 @@ TasteForge is an open-source Agent Skill and deterministic TypeScript CLI for UI
 ## Understand and extend TasteForge
 
 - [Architecture and determinism](architecture.md): package boundaries, hard filtering, scoring, seeded sampling, DNA consistency, and filesystem reliability.
+- [Bounded CSS import audit](audit-imports-rfc.md): opt-in entry contexts, token provenance, supported syntax and conservative unresolved states; [validation evidence](audit-imports-validation.md).
 - [Knowledge extension guide](extending-knowledge.md): schemas, style compatibility, font language evidence, palette constraints, and versioning.
 - [Contributing](../CONTRIBUTING.md): local development, checks, contribution scope, and source/licensing expectations.
 - [Evaluation methodology and recorded runs](../evals/README.md): ten benchmark prompts, the full evaluation rubric, and an eight-UI exploratory pilot with screenshots and anonymous AI reviews. A replicated full benchmark has not been completed.

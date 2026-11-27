@@ -9,6 +9,8 @@ Choose the smallest useful move:
 - **Adapt to context:** fix reading order, intrinsic sizing/wrapping or control reachability; preserve selected identity, inputs, filters and recovery.
 - **Adjust emphasis:** rebalance competing elements while keeping brand choices, status distinctions and useful imagery. No color/font/card quota applies.
 
+For a copy or secondary-state issue, select the relevant [copy/state check](../references/copy-and-state-coherence.md); a settled correction needs only that check, not a new research or planning stage.
+
 For each consequential finding retain **target/state/width → evidence → consequence → edit → recheck** in existing notes or the final report. For visual critique, record task observations before reconciling source/detector findings when practical; disclose actual scope if findings were already seen. Heuristics alone do not require a fix.
 
 Make the correction and recheck the affected states. Include minimum supported width for responsive work; check another width when shared rules could regress. Use [rendered checks](structure-and-revise.md#render-the-chosen-task-then-edit) for task/state testing, and [browser checkpoints](../references/render-checks.md) when existing tools help. Capture natural post-action scroll/focus; optional full-page evidence is a different scope.

@@ -1,0 +1,17 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "result": "failed before font loading",
+      "observed": "page.goto: Download is starting while navigating to /specimens.json",
+      "cause": "Transient test server served the JSON document as application/octet-stream.",
+      "correction": "Serve the local manifest document as application/json. Font bytes remain font/ttf."
+    },
+    {
+      "attempt": 2,
+      "result": "passed",
+      "observed": "Six FontFaces loaded locally; 18 sample nodes have recorded CDP platform font mappings; no overflow at 320/390/1440.",
+      "limits": "Fraunces decomposed sample used its custom font on this Chromium host despite missing direct combining cmap mappings; Figtree Vietnamese showed DejaVu Serif fallback."
+    }
+  ]
+}

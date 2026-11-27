@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-11-08T16:28:22.647298+00:00",
+  "checkpoint": "378a53c24ee079c1a785501d4a734810ec9a8c2e",
+  "cells": {
+    "cabinet-baseline": {
+      "inputDrift": [],
+      "snapshotDrift": [],
+      "correctedAlreadyArchived": false
+    },
+    "cabinet-candidate": {
+      "inputDrift": [],
+      "snapshotDrift": [],
+      "correctedAlreadyArchived": false
+    },
+    "proofdesk-baseline": {
+      "inputDrift": [],
+      "snapshotDrift": [],
+      "correctedAlreadyArchived": true
+    },
+    "proofdesk-candidate": {
+      "inputDrift": [],
+      "snapshotDrift": [],
+      "correctedAlreadyArchived": false
+    }
+  },
+  "rule": "Resume existing corrections; no regeneration or source edits before matched-v3 checks."
+}
