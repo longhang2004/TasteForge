@@ -11,6 +11,8 @@ Make the interface serve its user's task. Preserve the existing system and factu
 
 These are workflow effort levels, not CLI flags or new brief/DNA fields. Respect the user's requested depth.
 
+For a research or specification request about visual preferences, originality or UX, start with [design evidence discovery](references/design-evidence.md). Use the live web to investigate the decision and deliver the requested findings or spec, including an observable acceptance check for each proposed direction.
+
 | Effort                 | Choose when                                                                         | Starting workflow                                                                                                                                 |
 | ---------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Fast**               | A bounded copy, component, focus or responsive correction; the structure is settled | [Targeted refinement](workflows/targeted-refinement.md), or [audit](workflows/audit-ui.md) for review                                             |
