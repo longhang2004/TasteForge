@@ -162,9 +162,7 @@ export async function run(argv: string[]): Promise<number> {
     );
   program
     .command('inspire')
-    .description(
-      'Sample external style references with task-matched structures and fixed review gates',
-    )
+    .description('Sample task compositions and external style references with fixed review gates')
     .requiredOption(
       '--task <task>',
       'marketing, dashboard, commerce, form, portfolio, editorial, documentation, learning, or booking',
@@ -190,7 +188,7 @@ export async function run(argv: string[]): Promise<number> {
         output(
           report,
           format,
-          `Reference inspiration (${report.catalogVersion}), task ${report.task}, seed ${report.seed}.\n${report.inspirations.map((p, i) => `${i + 1}. ${p.style.title} (${p.style.id})\n   Structure: ${p.template?.id ?? 'No indexed task match'}\n   Read: tasteforge catalog ${p.style.id} --format json`).join('\n\n')}\n\nAlways apply ${report.requiredGates.length} review gates; ${report.rules.length} contextual rule references selected.\n${report.requiredGates.map((g) => `- ${g.id}: ${g.check}`).join('\n')}\n\n${report.limitations.join('\n')}`,
+          `Reference inspiration (${report.catalogVersion}; selection ${report.selectionVersion}), task ${report.task}, seed ${report.seed}.\n${report.inspirations.map((p, i) => `${i + 1}. ${p.style.title} (${p.style.id})\n   Composition: ${p.composition?.title ?? 'No eligible composition'}\n   Source structure: ${p.template?.id ?? 'No indexed task match'}\n   Visual family: ${p.fit.visualFamily}; repeat multiplier ${p.fit.familyRepeatPenalty}\n   Read: tasteforge catalog ${p.style.id} --format json`).join('\n\n')}\n\nAlways apply ${report.requiredGates.length} review gates; ${report.rules.length} contextual rule references selected.\n${report.requiredGates.map((g) => `- ${g.id}: ${g.check}`).join('\n')}\n\n${report.limitations.join('\n')}`,
         );
       },
     );

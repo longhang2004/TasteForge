@@ -1,0 +1,57 @@
+
+ RUN  v3.2.7 /mnt/c/Users/hi/src/personal_repos/TasteForge
+
+ ❯ tests/references.test.ts (11 tests | 2 failed) 1780ms
+   ✓ attributed offline reference catalog > binds every entry to a pinned licensed input and verifies content and notices  326ms
+   ✓ attributed offline reference catalog > rejects duplicate IDs, dangling sources and duplicate references 194ms
+   ✓ attributed offline reference catalog > searches, paginates and discloses full text and license on explicit lookup  302ms
+   × task-aware seeded reference exploration > provides distinct task compositions before reference treatments and retains provenance 71ms
+     → expected { Object (mode, catalogVersion, ...) } to have property "selectionVersion"
+   × task-aware seeded reference exploration > returns null compositions for unavailable task or hard-constraint pools without relaxing the brief 45ms
+     → expected false to be true // Object.is equality
+   ✓ task-aware seeded reference exploration > routes task pages before theme names and honors operational avoid guidance 117ms
+   ✓ task-aware seeded reference exploration > reproduces complete packs independent of input order and changes across seeds 207ms
+   ✓ task-aware seeded reference exploration > keeps every baseline gate across seeds and sample counts, while filtering retired/high-risk/known complex styles 263ms
+   ✓ task-aware seeded reference exploration > never substitutes a different task when the catalog has no matching template 97ms
+   ✓ task-aware seeded reference exploration > preserves impossible generator constraints as explicitly unverified inspiration rather than fabricating tokens 88ms
+   ✓ task-aware seeded reference exploration > protects existing systems and restricted direction pools, and rejects invalid options 62ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/references.test.ts > task-aware seeded reference exploration > provides distinct task compositions before reference treatments and retains provenance
+AssertionError: expected { Object (mode, catalogVersion, ...) } to have property "selectionVersion"
+ ❯ tests/references.test.ts:88:20
+     86|   it('provides distinct task compositions before reference treatments …
+     87|     const result = inspire(defaultBrief, { task: 'commerce', seed: 42,…
+     88|     expect(result).toHaveProperty('selectionVersion');
+       |                    ^
+     89|     expect(result).toHaveProperty('compositionLibraryVersion');
+     90|     expect(result.inspirations).toEqual(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/references.test.ts > task-aware seeded reference exploration > returns null compositions for unavailable task or hard-constraint pools without relaxing the brief
+AssertionError: expected false to be true // Object.is equality
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- true[39m
+[31m+ false[39m
+
+ ❯ tests/references.test.ts:112:70
+    110|     };
+    111|     const result = inspire(defaultBrief, empty);
+    112|     expect(result.inspirations.every((p) => p.composition === null)).t…
+       |                                                                      ^
+    113|     expect(result.limitations.some((s) => s.includes('No eligible comp…
+    114|     expect(result.requiredGates).toEqual(requiredGates);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 9 passed (11)
+   Start at  10:51:29
+   Duration  22.78s (transform 2.71s, setup 0ms, collect 10.41s, tests 1.78s, environment 0ms, prepare 6.94s)
+

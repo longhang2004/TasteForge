@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "width": 320,
+      "sections": 4,
+      "links": 16,
+      "captures": 96,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "width": 390,
+      "sections": 4,
+      "links": 16,
+      "captures": 96,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "width": 1440,
+      "sections": 4,
+      "links": 16,
+      "captures": 96,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "harnessNote": "Offscreen lazy images are requested eagerly only to check asset existence; no source UI or frozen capture changed. Initial lazy-load timeout retained separately.",
+  "geometry": {
+    "viewport": 1440,
+    "document": 1440,
+    "outside": []
+  }
+}

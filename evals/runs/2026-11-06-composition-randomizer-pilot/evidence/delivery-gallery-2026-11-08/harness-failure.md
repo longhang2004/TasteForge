@@ -1,0 +1,7 @@
+# Delivery-gallery harness correction
+
+The first delivery-gallery check stopped before recording its first width: `page.waitForFunction: Timeout 30000ms exceeded` at the wait for all images to complete. This is a manually retained excerpt from the observed tool result, not a full raw log; the original empty `report.json` is preserved.
+
+The report gallery intentionally lazy-loads screenshots below the viewport. Opening details does not make every offscreen image load. The second harness requests those images eagerly for the separate asset-existence check, without changing HTML source, frozen pilot captures, viewport scroll or focus. Its new evidence directory is `../delivery-gallery-2026-11-08-02/`. This is a harness correction, not a pilot UI defect or additional creator correction.
+
+The subsequent check exposed an actual report-gallery heading overflow at 320px. The retained geometry attempt `../delivery-gallery-2026-11-08-03/` measured document width466 and h1 scroll width442 in a272px content box. Adding `overflow-wrap:anywhere` to the report gallery's inherited text style corrected this without hiding content; the follow-up measured document width320 and no overflowing elements. The gallery and its generator were changed; the four pilot UIs and frozen packet were untouched. Final attempt `../delivery-gallery-2026-11-08-04/` passed all three widths,96 image loads,16 links, zero page/external-request errors and zero axe violations.

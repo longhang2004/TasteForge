@@ -2,7 +2,7 @@
 
 High information density with stable navigation and explicit state.
 
-Engine 0.1.0; knowledge 0.1.0; seed 42.
+Engine 0.1.0; knowledge 0.1.1; seed 42.
 
 ## Context
 

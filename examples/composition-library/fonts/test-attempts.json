@@ -1,0 +1,13 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "scope": "Parent integrated composition and typography focused tests",
+      "result": "21 passed, 1 failed",
+      "observed": "The typography system-only test requested 20 directions while the default maximum complexity was medium; only 19 styles correctly met the hard filter.",
+      "correction": "The test brief explicitly permits high complexity when requesting all 20 styles. No production filter behavior changed.",
+      "rawLogAtCheckTime": "/tmp/tasteforge-composition-green.log",
+      "verification": "Parent will rerun integrated tests after the test-only correction."
+    }
+  ]
+}
