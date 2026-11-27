@@ -1,0 +1,635 @@
+{
+  "model": "glm",
+  "pass": "corrected",
+  "startedAt": "2026-11-03T07:27:29.828Z",
+  "sourceSha256": "55b15e108d80a91f02c56250735d026020074bc959f16eecfa893c82b650309f",
+  "assertions": [
+    {
+      "label": "1440: displayed over-limit quantity clamps on lower-stock switch",
+      "pass": true,
+      "details": {
+        "quantity": "2",
+        "feedback": "\n\nQuantity reduced to 2 — Iron has 2 in stock."
+      }
+    },
+    {
+      "label": "1440: exceptional clamp announced",
+      "pass": true,
+      "details": "\n\nQuantity reduced to 2 — Iron has 2 in stock."
+    },
+    {
+      "label": "1440: exceptional clamp shows USD 90",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 2 available for Iron.\n\nItem subtotal\n$84.00\nShipping (flat)\n$6.00\nTotal\n$90.00\nAdd to simulated cart\n\nQuantity reduced to 2 — Iron has 2 in stock.\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "1440: Tab reaches native glaze group",
+      "pass": true
+    },
+    {
+      "label": "1440: ArrowRight selects Iron",
+      "pass": true
+    },
+    {
+      "label": "1440: ArrowRight skips disabled Ash",
+      "pass": true
+    },
+    {
+      "label": "1440: Tab reaches quantity",
+      "pass": true
+    },
+    {
+      "label": "1440: keyboard enters quantity 2",
+      "pass": true
+    },
+    {
+      "label": "1440: Tab reaches add action",
+      "pass": true
+    },
+    {
+      "label": "1440: Enter produces recoverable first failure",
+      "pass": true,
+      "details": "\nCould not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.\n"
+    },
+    {
+      "label": "1440: keyboard failure retains quantity",
+      "pass": true
+    },
+    {
+      "label": "1440: retry reachable with Tab",
+      "pass": true
+    },
+    {
+      "label": "1440: Enter retry names selection/quantity/total",
+      "pass": true,
+      "details": "\n\nAdded to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment."
+    },
+    {
+      "label": "390: displayed over-limit quantity clamps on lower-stock switch",
+      "pass": true,
+      "details": {
+        "quantity": "2",
+        "feedback": "\n\nQuantity reduced to 2 — Iron has 2 in stock."
+      }
+    },
+    {
+      "label": "390: exceptional clamp announced",
+      "pass": true,
+      "details": "\n\nQuantity reduced to 2 — Iron has 2 in stock."
+    },
+    {
+      "label": "390: exceptional clamp shows USD 90",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 2 available for Iron.\n\nItem subtotal\n$84.00\nShipping (flat)\n$6.00\nTotal\n$90.00\nAdd to simulated cart\n\nQuantity reduced to 2 — Iron has 2 in stock.\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "390: Tab reaches native glaze group",
+      "pass": true
+    },
+    {
+      "label": "390: ArrowRight selects Iron",
+      "pass": true
+    },
+    {
+      "label": "390: ArrowRight skips disabled Ash",
+      "pass": true
+    },
+    {
+      "label": "390: Tab reaches quantity",
+      "pass": true
+    },
+    {
+      "label": "390: keyboard enters quantity 2",
+      "pass": true
+    },
+    {
+      "label": "390: Tab reaches add action",
+      "pass": true
+    },
+    {
+      "label": "390: Enter produces recoverable first failure",
+      "pass": true,
+      "details": "\nCould not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.\n"
+    },
+    {
+      "label": "390: keyboard failure retains quantity",
+      "pass": true
+    },
+    {
+      "label": "390: retry reachable with Tab",
+      "pass": true
+    },
+    {
+      "label": "390: Enter retry names selection/quantity/total",
+      "pass": true,
+      "details": "\n\nAdded to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment."
+    },
+    {
+      "label": "320: displayed over-limit quantity clamps on lower-stock switch",
+      "pass": true,
+      "details": {
+        "quantity": "2",
+        "feedback": "\n\nQuantity reduced to 2 — Iron has 2 in stock."
+      }
+    },
+    {
+      "label": "320: exceptional clamp announced",
+      "pass": true,
+      "details": "\n\nQuantity reduced to 2 — Iron has 2 in stock."
+    },
+    {
+      "label": "320: exceptional clamp shows USD 90",
+      "pass": true,
+      "details": "KILN NOTES\n\nFICTIONAL DEMO\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nSPECIFICATIONS\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nMaterial\nStoneware\nCare\nHand-wash; do not use on a stovetop.\nSHIPPING & RETURNS\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\nUnused items may be returned within 14 days; buyer pays return postage.\nBuild your order\n\nUSD 42.00 each\n\nGLAZE\nSand\n4 in stock\nIron\n2 in stock\nAsh\nSOLD OUT\nQUANTITY\n\nWhole cups only. Up to 2 available for Iron.\n\nItem subtotal\n$84.00\nShipping (flat)\n$6.00\nTotal\n$90.00\nAdd to simulated cart\n\nQuantity reduced to 2 — Iron has 2 in stock.\n\nSimulated cart — no real order is placed and no payment is taken.\n\nKiln Notes is a fictional brand; this page is a UI demo with no real store behind it."
+    },
+    {
+      "label": "320: Tab reaches native glaze group",
+      "pass": true
+    },
+    {
+      "label": "320: ArrowRight selects Iron",
+      "pass": true
+    },
+    {
+      "label": "320: ArrowRight skips disabled Ash",
+      "pass": true
+    },
+    {
+      "label": "320: Tab reaches quantity",
+      "pass": true
+    },
+    {
+      "label": "320: keyboard enters quantity 2",
+      "pass": true
+    },
+    {
+      "label": "320: Tab reaches add action",
+      "pass": true
+    },
+    {
+      "label": "320: Enter produces recoverable first failure",
+      "pass": true,
+      "details": "\nCould not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.\n"
+    },
+    {
+      "label": "320: keyboard failure retains quantity",
+      "pass": true
+    },
+    {
+      "label": "320: retry reachable with Tab",
+      "pass": true
+    },
+    {
+      "label": "320: Enter retry names selection/quantity/total",
+      "pass": true,
+      "details": "\n\nAdded to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment."
+    }
+  ],
+  "captures": [
+    {
+      "width": 1440,
+      "state": "invalid-to-iron",
+      "file": "1440-invalid-to-iron.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 342.53125,
+          "bottom": 360.921875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Quantity reduced to 2 — Iron has 2 in stock.",
+            "top": 781.0625,
+            "bottom": 826.25,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "state": "keyboard-failure",
+      "file": "1440-keyboard-failure.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "P",
+          "id": "panel-alert",
+          "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantit",
+          "top": 581.390625,
+          "bottom": 695.015625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.",
+            "top": 581.390625,
+            "bottom": 695.015625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "state": "keyboard-success",
+      "file": "1440-keyboard-success.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 714.28125,
+          "bottom": 766.671875,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 570.1875,
+            "bottom": 570.1875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Added to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment.",
+            "top": 781.0625,
+            "bottom": 871.875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "invalid-to-iron",
+      "file": "390-invalid-to-iron.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1763,
+        "scrollY": 368,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 704.96875,
+          "bottom": 723.359375,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 946.546875,
+            "bottom": 946.546875,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Quantity reduced to 2 — Iron has 2 in stock.",
+            "top": 1157.421875,
+            "bottom": 1225.421875,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "keyboard-failure",
+      "file": "390-keyboard-failure.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1834,
+        "scrollY": 632,
+        "scrollX": 0,
+        "focus": {
+          "tag": "P",
+          "id": "panel-alert",
+          "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantit",
+          "top": 693.75,
+          "bottom": 830.1875,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 682.546875,
+            "bottom": 682.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.",
+            "top": 693.75,
+            "bottom": 830.1875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "keyboard-success",
+      "file": "390-keyboard-success.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1808,
+        "scrollY": 908,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 550.640625,
+          "bottom": 603.03125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 406.546875,
+            "bottom": 406.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Added to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment.",
+            "top": 617.421875,
+            "bottom": 731.046875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "invalid-to-iron",
+      "file": "320-invalid-to-iron.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1836,
+        "scrollY": 420,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "",
+          "text": "",
+          "top": 718.9375,
+          "bottom": 737.328125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 967.65625,
+            "bottom": 967.65625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Quantity reduced to 2 — Iron has 2 in stock.",
+            "top": 1178.53125,
+            "bottom": 1246.53125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "keyboard-failure",
+      "file": "320-keyboard-failure.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1953,
+        "scrollY": 684,
+        "scrollX": 0,
+        "focus": {
+          "tag": "P",
+          "id": "panel-alert",
+          "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantit",
+          "top": 714.859375,
+          "bottom": 896.921875,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 703.65625,
+            "bottom": 703.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Could not add to the simulated cart — the simulated checkout did not respond. Your choices are kept (glaze Sand, quantity 2). Press “Add to simulated cart” again to retry.",
+            "top": 714.859375,
+            "bottom": 896.921875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "keyboard-success",
+      "file": "320-keyboard-success.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1904,
+        "scrollY": 1004,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 527.75,
+          "bottom": 580.140625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 383.65625,
+            "bottom": 383.65625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "Added to simulated cart: 2 × Sand pouring cups — total $90.00 ($84.00 + $6.00 shipping). No real order or payment.",
+            "top": 594.53125,
+            "bottom": 730.96875,
+            "inViewport": true
+          }
+        ]
+      }
+    }
+  ],
+  "finishedAt": "2026-11-03T07:27:37.079Z",
+  "durationMs": 7249.185734999999,
+  "passed": 39,
+  "failed": 0
+}

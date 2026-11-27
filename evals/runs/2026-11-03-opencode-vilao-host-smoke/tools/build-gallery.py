@@ -1,0 +1,27 @@
+"""Build a static review index from recorded results, without rewriting evidence."""
+import html
+import json
+from pathlib import Path
+
+root=Path(__file__).resolve().parents[1]
+resources=json.loads((root/'resources.json').read_text())
+cards=[]
+for name,record in zip(['deepseek','glm'],resources['models']):
+    snapshot='corrected' if (root/'outputs'/name/'corrected').exists() else 'initial'
+    first=record['initialBrowserAcceptance'];final=record['finalBrowserAcceptance'];follow=record['finalFollowUp'];invalid=record['finalInvalidSwitch']
+    correction=record['correction'];timing=f"Creator {record['generation']['durationSeconds']:.3f} s"
+    if isinstance(correction,dict):timing+=f" + correction {correction['durationSeconds']:.3f} s"
+    cards.append(f'''<article><h2>{html.escape(record['model'])}</h2><p>{timing}</p>
+<p><strong>Final automated checks:</strong> {final['passed']}/{final['passed']+final['failed']} common assertions, {follow['passed']}/{follow['passed']+follow['failed']} targeted assertions, {invalid['passed']}/{invalid['passed']+invalid['failed']} invalid-switch cases.</p>
+<p><a href="outputs/{name}/{snapshot}/index.html">Open runnable {snapshot} UI</a> · <a href="outputs/{name}/initial/index.html">Original completed creator UI</a> · <a href="outputs/{name}/{snapshot}/creator-notes.md">Creator notes</a></p>
+<figure><a href="evidence/{name}-{snapshot}/390-initial.png"><img src="evidence/{name}-{snapshot}/390-initial.png" alt="Unchanged 390 by 900 initial viewport capture of {name} {snapshot} UI" width="390" height="900"></a><figcaption>390 × 900 viewport, unchanged capture. <a href="evidence/{name}-{snapshot}/1440-initial.png">1440 wide</a> · <a href="evidence/{name}-{snapshot}/320-initial.png">320 narrow</a></figcaption></figure>
+<p><a href="evidence/{name}-{snapshot}/320-failure.png">Natural failure viewport</a> · <a href="evidence/{name}-{snapshot}/320-success.png">Natural success viewport</a> · <a href="evidence/{name}-{snapshot}-follow-up/320-keyboard-success.png">Keyboard retry</a></p>
+<p><a href="evidence/{name}-{snapshot}/report.json">Common task / axe report</a> · <a href="evidence/{name}-{snapshot}-follow-up/report.json">Targeted trace</a> · <a href="reviews/{name}-independent.txt">Independent AI observations</a></p></article>''')
+text='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TasteForge — Native OpenCode / Vilao smoke</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f5f6f7;color:#18212b;font:16px/1.5 system-ui,sans-serif}main{max-width:1240px;margin:auto;padding:clamp(16px,4vw,48px)}h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15}h2{font-size:1.05rem;overflow-wrap:anywhere}a{color:#184e91;text-underline-offset:3px}a:focus-visible{outline:3px solid #7c3b0c;outline-offset:3px}.notice{padding:16px;border-left:4px solid #4b637a;background:#e9eff4}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}article{min-width:0;padding:20px;border:1px solid #cad1d7;background:white}figure{margin:20px 0}img{display:block;max-width:100%;height:auto;max-height:640px;object-fit:contain;object-position:top left}figcaption{font-size:.88rem;margin-top:8px}footer{margin-top:32px;border-top:1px solid #cad1d7;padding-top:20px}@media(max-width:760px){.grid{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}</style>
+<main><header><p>TasteForge · 3 November 2026 · LON-95</p><h1>Native OpenCode / Vilao UI host smoke</h1><p>Two configured gateway models, one shared maintained commerce brief, both using the released TasteForge beta.2 skill. Sequential calls; no fallback.</p><p><a href="README.md">Findings and reproduction</a> · <a href="protocol.md">Pre-generation protocol</a> · <a href="resources.json">Recorded resource categories</a></p></header>
+<p class="notice">This is an unblinded automated/AI host and task smoke. It has no unassisted condition, held-out brief or human usability test. Passing checks does not establish accessibility conformance, general product distinctiveness, a model winner or skill-effect/cost savings.</p>
+<p>Original GLM passed the first common checks, then independent review exposed a quantity/clamp and stale-total branch. The original failure, one same-model correction and corrected evidence remain separate. Both final task slices retain familiar controls and content-grounded, moderately specific object-sheet treatments.</p><section class="grid" aria-label="Runnable outputs and evidence">'''+''.join(cards)+'''</section>
+<footer><p>The schematic and fictional facts come from the repository's maintained MIT-licensed composition fixture. It is not a product photograph or a real store. Screenshots retain original focus/scroll; no capture was retouched.</p><p>Reported model cost is zero in telemetry; verified billing and full end-to-end resource cost are unknown. Read the resource scope before comparing numbers. Human/manual tests remain deferred.</p></footer></main></html>'''
+(root/'index.html').write_text(text)
+print('Built static gallery from recorded final reports.')

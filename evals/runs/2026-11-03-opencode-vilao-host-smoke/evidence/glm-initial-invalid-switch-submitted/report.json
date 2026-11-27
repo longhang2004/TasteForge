@@ -1,0 +1,673 @@
+{
+  "model": "glm",
+  "pass": "initial",
+  "scenario": "invalid entry -> glaze switch -> attempted submit",
+  "startedAt": "2026-11-03T07:25:11.119Z",
+  "sourceSha256": "62349c6f19aa144b38d4b04439d82765633711f63e0ffac8d16d2fa03aa7e651",
+  "observations": [
+    {
+      "width": 1440,
+      "value": "",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter a quantity — whole cups from 1 up to 2.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "1440-empty.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 491.953125,
+          "bottom": 536.34375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter a quantity — whole cups from 1 up to 2.",
+            "top": 570.1875,
+            "bottom": 592.515625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "value": "0",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Quantity must be at least 1 — enter 1 or more.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "1440-0.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 491.953125,
+          "bottom": 536.34375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Quantity must be at least 1 — enter 1 or more.",
+            "top": 570.1875,
+            "bottom": 592.515625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "value": "-1",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Quantity must be at least 1 — enter 1 or more.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "1440--1.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 491.953125,
+          "bottom": 536.34375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Quantity must be at least 1 — enter 1 or more.",
+            "top": 570.1875,
+            "bottom": 592.515625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "value": "1.5",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "1440-1-5.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1101,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 491.953125,
+          "bottom": 536.34375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.",
+            "top": 570.1875,
+            "bottom": 614.84375,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "value": "",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter a quantity — whole cups from 1 up to 2.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "390-empty.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1731,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 456.3125,
+          "bottom": 500.703125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter a quantity — whole cups from 1 up to 2.",
+            "top": 534.546875,
+            "bottom": 579.203125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "value": "0",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Quantity must be at least 1 — enter 1 or more.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "390-0.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1731,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 456.3125,
+          "bottom": 500.703125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Quantity must be at least 1 — enter 1 or more.",
+            "top": 534.546875,
+            "bottom": 579.203125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "value": "-1",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Quantity must be at least 1 — enter 1 or more.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "390--1.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1731,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 456.3125,
+          "bottom": 500.703125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Quantity must be at least 1 — enter 1 or more.",
+            "top": 534.546875,
+            "bottom": 579.203125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "value": "1.5",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "390-1-5.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 1731,
+        "scrollY": 780,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 456.3125,
+          "bottom": 500.703125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.",
+            "top": 534.546875,
+            "bottom": 579.203125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "value": "",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter a quantity — whole cups from 1 up to 2.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "320-empty.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1804,
+        "scrollY": 853,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 435.359375,
+          "bottom": 479.75,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter a quantity — whole cups from 1 up to 2.",
+            "top": 534.65625,
+            "bottom": 579.3125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "value": "0",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Quantity must be at least 1 — enter 1 or more.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "320-0.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1804,
+        "scrollY": 853,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 435.359375,
+          "bottom": 479.75,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Quantity must be at least 1 — enter 1 or more.",
+            "top": 534.65625,
+            "bottom": 579.3125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "value": "-1",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Quantity must be at least 1 — enter 1 or more.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "320--1.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1804,
+        "scrollY": 853,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 435.359375,
+          "bottom": 479.75,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Quantity must be at least 1 — enter 1 or more.",
+            "top": 534.65625,
+            "bottom": 579.3125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "value": "1.5",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.\n\n",
+      "total": "$48.00",
+      "unavailableTotal": false,
+      "pass": false,
+      "file": "320-1-5.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 1827,
+        "scrollY": 853,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "qty",
+          "text": "",
+          "top": 435.359375,
+          "bottom": 479.75,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Whole cups only — enter a number without decimals, such as 1, 2, 3 or 4.",
+            "top": 534.65625,
+            "bottom": 601.640625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": null,
+            "text": "",
+            "top": 0,
+            "bottom": 0,
+            "inViewport": false
+          }
+        ]
+      }
+    }
+  ],
+  "finishedAt": "2026-11-03T07:25:25.343Z",
+  "durationMs": 14221.984966,
+  "passed": 0,
+  "failed": 12
+}

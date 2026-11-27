@@ -1,0 +1,37 @@
+{
+  "brand": "Kiln Notes",
+  "fictional": true,
+  "name": "Pouring cup",
+  "description": "A handleless pouring cup with a small spout.",
+  "price": 42,
+  "currency": "USD",
+  "capacity": "280 ml",
+  "dimensions": "9 cm wide × 8 cm tall",
+  "material": "Stoneware",
+  "care": "Hand-wash; do not use on a stovetop.",
+  "shipping": 6,
+  "delivery": "Flat USD 6 shipping in this fictional checkout; no delivery date is promised.",
+  "returns": "Unused items may be returned within 14 days; buyer pays return postage.",
+  "quantityMin": 1,
+  "quantityMax": 4,
+  "variants": [
+    {
+      "name": "Sand",
+      "stock": 4,
+      "color": "#c7a77b"
+    },
+    {
+      "name": "Iron",
+      "stock": 2,
+      "color": "#61574e"
+    },
+    {
+      "name": "Ash",
+      "stock": 0,
+      "color": "#a5aaa2"
+    }
+  ],
+  "asset": "assets/pouring-cup.svg",
+  "caption": "Original schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.",
+  "behavior": "Choose a glaze and whole quantity within 1–4 and available stock. Show item subtotal, shipping and total beside Add to simulated cart. First valid add fails recoverably; retry succeeds without losing choices. Success identifies glaze, quantity and total. No payment or real order."
+}

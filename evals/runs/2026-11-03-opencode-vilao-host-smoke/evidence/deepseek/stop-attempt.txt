@@ -1,0 +1,18 @@
+Owned-process preflight observed these native opencode.exe processes:
+[{"ProcessId":38660,"ParentProcessId":35612,"Name":"opencode.exe"},{"ProcessId":4924,"ParentProcessId":38660,"Name":"opencode.exe"}]
+
+After the creator had run over 16 minutes with continued source edits, the parent
+attempted to stop only this standalone client/server tree. The client completed
+naturally before the stop command executed. The guard then returned:
+
+Expected exactly one owned standalone UI client; no process stopped.
+At C:\Users\hi\src\personal_repos\TasteForge\.tmp\owned-vilao-process.ps1:11 char:29
++ ... nt -ne 1) { throw 'Expected exactly one owned standalone UI client; n ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Expected exactl...rocess stopped.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Expected exactly one owned standalone UI client; no process stopped.
+
+The stop command exited 1. The model wrapper independently recorded exitCode 0
+and durationSeconds 1005.654. This is a completed model attempt, not an interrupted
+one. No Desktop/shared service or owned process was stopped. The contemplated
+time cap was post-hoc and is not a preregistered latency/quality threshold.

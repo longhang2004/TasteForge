@@ -5,6 +5,7 @@ The ten prompts in `prompts.json` cover two cases each in fintech, education, e-
 ## Recorded exploratory runs
 
 - [6–8 November 2026 composition/randomizer pilot](runs/2026-11-06-composition-randomizer-pilot/report.md): two new fictional briefs/four preserved outputs, inherited scoped corrections, 306 assertions/96 natural states and two independently frozen AGY screenshot/source reviews. Separate task quality/product specificity, ties/disagreement, axe incomplete and resource gaps; not a general efficacy or full-cycle savings claim. [Gallery](runs/2026-11-06-composition-randomizer-pilot/index.html).
+- [3 November 2026 native OpenCode / Vilao host smoke](runs/2026-11-03-opencode-vilao-host-smoke/README.md): two configured models, exact beta.2 ZIP discovery/invocation, two maintained commerce UIs, independent task/product-specificity observations and browser/keyboard acceptance. Preserves a GLM quantity-state defect, one same-session correction, parent diagnostic corrections and separate resource categories. No held-out/unassisted condition, model winner or human-usability claim.
 
 - [3 November 2026 beta.2 hardening/native host smoke](runs/2026-11-03-beta2-hardening/README.md): one actual native Windows Codex repo-skill ZIP invocation, a bounded maintenance correction of a supplied fixture, separate browser regression checks and release-helper review. Preserves the original invalid-total finding and raw startup error; not a fresh paired efficacy trial or all-host certification.
 

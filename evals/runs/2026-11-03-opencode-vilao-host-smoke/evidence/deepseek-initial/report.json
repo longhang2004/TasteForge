@@ -1,0 +1,3792 @@
+{
+  "model": "deepseek",
+  "pass": "initial",
+  "startedAt": "2026-11-03T06:57:17.424Z",
+  "sourceSha256": "8fac8c11b9d274f83c32cc4d09828124ec088caf340a92d3c4e4e79c2991a48c",
+  "assertions": [
+    {
+      "label": "1440 initial: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n  \n    \n      \n        Kiln Notes\n        Fictional product study\n      \n\n      \n        Stoneware · 280 ml\n        Pou",
+          "top": 0,
+          "bottom": 1390.5625,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440 initial: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "1440: initial total USD 48",
+      "pass": true
+    },
+    {
+      "label": "1440: supplied material, capacity and care visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\n✓\nIron\n2 available\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nSand: 4 available\n−\n+\n\nWhole numbers 1–4. Sand has 4 available.\n\nItem subtotal\nSand × 1 · USD 42.00 each\nUSD 42.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 48.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "1440: supplied return period and postage visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\n✓\nIron\n2 available\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nSand: 4 available\n−\n+\n\nWhole numbers 1–4. Sand has 4 available.\n\nItem subtotal\nSand × 1 · USD 42.00 each\nUSD 42.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 48.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "1440: simulation is disclosed",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\n✓\nIron\n2 available\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nSand: 4 available\n−\n+\n\nWhole numbers 1–4. Sand has 4 available.\n\nItem subtotal\nSand × 1 · USD 42.00 each\nUSD 42.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 48.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "1440: provided image loaded",
+      "pass": true
+    },
+    {
+      "label": "1440: sold-out Ash unavailable",
+      "pass": true
+    },
+    {
+      "label": "1440: Sand 3 total USD 132",
+      "pass": true
+    },
+    {
+      "label": "1440: lower-stock switch clamps to 2",
+      "pass": true
+    },
+    {
+      "label": "1440: clamp announced",
+      "pass": true
+    },
+    {
+      "label": "1440: Iron 2 total USD 90",
+      "pass": true
+    },
+    {
+      "label": "1440 clamp: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-iron",
+          "text": "",
+          "top": 562.890625,
+          "bottom": 563.890625,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Quantity changed from 3 to 2 to match available Iron stock.",
+            "top": 813.625,
+            "bottom": 866.71875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1029.359375,
+            "bottom": 1029.359375,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1029.359375,
+            "bottom": 1029.359375,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440: invalid \"\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter a quantity. Use a whole number from 1 to 4 for Sand (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "1440: invalid \"\" cannot succeed",
+      "pass": true,
+      "details": "Enter a quantity. Use a whole number from 1 to 4 for Sand (4 available).\n\n\n"
+    },
+    {
+      "label": "1440: invalid \"0\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "1440: invalid \"0\" cannot succeed",
+      "pass": true,
+      "details": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n"
+    },
+    {
+      "label": "1440: invalid \"-1\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "1440: invalid \"-1\" cannot succeed",
+      "pass": true,
+      "details": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n"
+    },
+    {
+      "label": "1440: invalid \"1.5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "1440: invalid \"1.5\" cannot succeed",
+      "pass": true,
+      "details": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).\n\n\n"
+    },
+    {
+      "label": "1440 fractional-invalid: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 246,
+          "bottom": 290,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgb(162, 60, 39) 0px 0px 0px 1px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).",
+            "top": 322.625,
+            "bottom": 381.90625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 381.90625,
+            "bottom": 381.90625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 544.546875,
+            "bottom": 544.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 544.546875,
+            "bottom": 544.546875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440 fractional-invalid: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "1440: invalid \"5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Choose 4 or fewer for Sand. 4 available; the limit is 4 per add.\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "1440: invalid \"5\" cannot succeed",
+      "pass": true,
+      "details": "Choose 4 or fewer for Sand. 4 available; the limit is 4 per add.\n\n\n"
+    },
+    {
+      "label": "1440: first valid attempt fails recoverably",
+      "pass": true,
+      "details": "\n\n\nSimulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again."
+    },
+    {
+      "label": "1440: quantity retained after failure",
+      "pass": true
+    },
+    {
+      "label": "1440: total retained after failure",
+      "pass": true
+    },
+    {
+      "label": "1440 failure: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 601.828125,
+          "bottom": 651.828125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 485.265625,
+            "bottom": 485.265625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Simulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again.",
+            "top": 485.265625,
+            "bottom": 585.828125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440 failure: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "1440: retry succeeds with glaze, quantity and total",
+      "pass": true,
+      "details": "\n\nAdded to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.\n"
+    },
+    {
+      "label": "1440 success: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 601.828125,
+          "bottom": 651.828125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Added to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.",
+            "top": 485.265625,
+            "bottom": 585.828125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 585.828125,
+            "bottom": 585.828125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440 success: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "1440: editing clears stale success",
+      "pass": true,
+      "details": "\n\n\n"
+    },
+    {
+      "label": "1440: edited total USD 48",
+      "pass": true
+    },
+    {
+      "label": "1440 edited: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 246,
+          "bottom": 290,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 476.265625,
+            "bottom": 476.265625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 476.265625,
+            "bottom": 476.265625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440 keyboard-add: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 492.265625,
+          "bottom": 542.265625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 476.265625,
+            "bottom": 476.265625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 476.265625,
+            "bottom": 476.265625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "1440: Tab reaches simulated cart action",
+      "pass": true
+    },
+    {
+      "label": "390 initial: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n  \n    \n      \n        Kiln Notes\n        Fictional product study\n      \n\n      \n        Stoneware · 280 ml\n        Pou",
+          "top": 0,
+          "bottom": 2052.96875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1294.484375,
+            "bottom": 1294.484375,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1294.484375,
+            "bottom": 1294.484375,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1457.125,
+            "bottom": 1457.125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1457.125,
+            "bottom": 1457.125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "390 initial: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "390: initial total USD 48",
+      "pass": true
+    },
+    {
+      "label": "390: supplied material, capacity and care visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\n✓\nIron\n2 available\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nSand: 4 available\n−\n+\n\nWhole numbers 1–4. Sand has 4 available.\n\nItem subtotal\nSand × 1 · USD 42.00 each\nUSD 42.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 48.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "390: supplied return period and postage visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\n✓\nIron\n2 available\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nSand: 4 available\n−\n+\n\nWhole numbers 1–4. Sand has 4 available.\n\nItem subtotal\nSand × 1 · USD 42.00 each\nUSD 42.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 48.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "390: simulation is disclosed",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\n✓\nIron\n2 available\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nSand: 4 available\n−\n+\n\nWhole numbers 1–4. Sand has 4 available.\n\nItem subtotal\nSand × 1 · USD 42.00 each\nUSD 42.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 48.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "390: provided image loaded",
+      "pass": true
+    },
+    {
+      "label": "390: sold-out Ash unavailable",
+      "pass": true
+    },
+    {
+      "label": "390: Sand 3 total USD 132",
+      "pass": true
+    },
+    {
+      "label": "390: lower-stock switch clamps to 2",
+      "pass": true
+    },
+    {
+      "label": "390: clamp announced",
+      "pass": true
+    },
+    {
+      "label": "390: Iron 2 total USD 90",
+      "pass": true
+    },
+    {
+      "label": "390 clamp: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2115,
+        "scrollY": 359,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-iron",
+          "text": "",
+          "top": 693.75,
+          "bottom": 694.75,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 935.484375,
+            "bottom": 935.484375,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Quantity changed from 3 to 2 to match available Iron stock.",
+            "top": 944.484375,
+            "bottom": 997.578125,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1160.21875,
+            "bottom": 1160.21875,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1160.21875,
+            "bottom": 1160.21875,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "390: invalid \"\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter a quantity. Use a whole number from 1 to 4 for Sand (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "390: invalid \"\" cannot succeed",
+      "pass": true,
+      "details": "Enter a quantity. Use a whole number from 1 to 4 for Sand (4 available).\n\n\n"
+    },
+    {
+      "label": "390: invalid \"0\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "390: invalid \"0\" cannot succeed",
+      "pass": true,
+      "details": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n"
+    },
+    {
+      "label": "390: invalid \"-1\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "390: invalid \"-1\" cannot succeed",
+      "pass": true,
+      "details": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n"
+    },
+    {
+      "label": "390: invalid \"1.5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "390: invalid \"1.5\" cannot succeed",
+      "pass": true,
+      "details": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).\n\n\n"
+    },
+    {
+      "label": "390 fractional-invalid: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2121,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 178.859375,
+          "bottom": 222.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgb(162, 60, 39) 0px 0px 0px 1px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).",
+            "top": 255.484375,
+            "bottom": 314.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 314.765625,
+            "bottom": 314.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 477.40625,
+            "bottom": 477.40625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 477.40625,
+            "bottom": 477.40625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "390 fractional-invalid: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "390: invalid \"5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Choose 4 or fewer for Sand. 4 available; the limit is 4 per add.\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "390: invalid \"5\" cannot succeed",
+      "pass": true,
+      "details": "Choose 4 or fewer for Sand. 4 available; the limit is 4 per add.\n\n\n"
+    },
+    {
+      "label": "390: first valid attempt fails recoverably",
+      "pass": true,
+      "details": "\n\n\nSimulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again."
+    },
+    {
+      "label": "390: quantity retained after failure",
+      "pass": true
+    },
+    {
+      "label": "390: total retained after failure",
+      "pass": true
+    },
+    {
+      "label": "390 failure: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2163,
+        "scrollY": 623,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 959.6875,
+          "bottom": 1009.6875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 671.484375,
+            "bottom": 671.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 671.484375,
+            "bottom": 671.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 843.125,
+            "bottom": 843.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Simulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again.",
+            "top": 843.125,
+            "bottom": 943.6875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "390 failure: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "390: retry succeeds with glaze, quantity and total",
+      "pass": true,
+      "details": "\n\nAdded to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.\n"
+    },
+    {
+      "label": "390 success: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2183,
+        "scrollY": 1158,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 445.328125,
+          "bottom": 495.328125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 136.484375,
+            "bottom": 136.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 136.484375,
+            "bottom": 136.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Added to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.",
+            "top": 308.125,
+            "bottom": 429.328125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 429.328125,
+            "bottom": 429.328125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "390 success: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "390: editing clears stale success",
+      "pass": true,
+      "details": "\n\n\n"
+    },
+    {
+      "label": "390: edited total USD 48",
+      "pass": true
+    },
+    {
+      "label": "390 edited: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 1153,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 73.859375,
+          "bottom": 117.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 141.484375,
+            "bottom": 141.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 141.484375,
+            "bottom": 141.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 304.125,
+            "bottom": 304.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 304.125,
+            "bottom": 304.125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "390 keyboard-add: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 425.125,
+          "bottom": 475.125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 246.484375,
+            "bottom": 246.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 246.484375,
+            "bottom": 246.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 409.125,
+            "bottom": 409.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 409.125,
+            "bottom": 409.125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "390: Tab reaches simulated cart action",
+      "pass": true
+    },
+    {
+      "label": "320 initial: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n  \n    \n      \n        Kiln Notes\n        Fictional product study\n      \n\n      \n        Stoneware · 280 ml\n        Pou",
+          "top": 0,
+          "bottom": 2168.9375,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1371.875,
+            "bottom": 1371.875,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1371.875,
+            "bottom": 1371.875,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1550.28125,
+            "bottom": 1550.28125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1550.28125,
+            "bottom": 1550.28125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "320 initial: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "320: initial total USD 48",
+      "pass": true
+    },
+    {
+      "label": "320: supplied material, capacity and care visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\n✓\nIron\n2 available\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nSand: 4 available\n−\n+\n\nWhole numbers 1–4. Sand has 4 available.\n\nItem subtotal\nSand × 1 · USD 42.00 each\nUSD 42.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 48.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "320: supplied return period and postage visible",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\n✓\nIron\n2 available\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nSand: 4 available\n−\n+\n\nWhole numbers 1–4. Sand has 4 available.\n\nItem subtotal\nSand × 1 · USD 42.00 each\nUSD 42.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 48.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "320: simulation is disclosed",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\n✓\nIron\n2 available\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nSand: 4 available\n−\n+\n\nWhole numbers 1–4. Sand has 4 available.\n\nItem subtotal\nSand × 1 · USD 42.00 each\nUSD 42.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 48.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "320: provided image loaded",
+      "pass": true
+    },
+    {
+      "label": "320: sold-out Ash unavailable",
+      "pass": true
+    },
+    {
+      "label": "320: Sand 3 total USD 132",
+      "pass": true
+    },
+    {
+      "label": "320: lower-stock switch clamps to 2",
+      "pass": true
+    },
+    {
+      "label": "320: clamp announced",
+      "pass": true
+    },
+    {
+      "label": "320: Iron 2 total USD 90",
+      "pass": true
+    },
+    {
+      "label": "320 clamp: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2213,
+        "scrollY": 419,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-iron",
+          "text": "",
+          "top": 676.125,
+          "bottom": 677.125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 935.25,
+            "bottom": 935.25,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Quantity changed from 3 to 2 to match available Iron stock.",
+            "top": 944.25,
+            "bottom": 997.34375,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1175.75,
+            "bottom": 1175.75,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1175.75,
+            "bottom": 1175.75,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "label": "320: invalid \"\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter a quantity. Use a whole number from 1 to 4 for Sand (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "320: invalid \"\" cannot succeed",
+      "pass": true,
+      "details": "Enter a quantity. Use a whole number from 1 to 4 for Sand (4 available).\n\n\n"
+    },
+    {
+      "label": "320: invalid \"0\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "320: invalid \"0\" cannot succeed",
+      "pass": true,
+      "details": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n"
+    },
+    {
+      "label": "320: invalid \"-1\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "320: invalid \"-1\" cannot succeed",
+      "pass": true,
+      "details": "Enter at least 1. Sand accepts 1–4 (4 available).\n\n\n"
+    },
+    {
+      "label": "320: invalid \"1.5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "320: invalid \"1.5\" cannot succeed",
+      "pass": true,
+      "details": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).\n\n\n"
+    },
+    {
+      "label": "320 fractional-invalid: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2242,
+        "scrollY": 1126,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 160.625,
+          "bottom": 204.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgb(162, 60, 39) 0px 0px 0px 1px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).",
+            "top": 254.875,
+            "bottom": 334.796875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 334.796875,
+            "bottom": 334.796875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 497.4375,
+            "bottom": 497.4375,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 497.4375,
+            "bottom": 497.4375,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "320 fractional-invalid: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "320: invalid \"5\" gets feedback",
+      "pass": true,
+      "details": {
+        "message": "Choose 4 or fewer for Sand. 4 available; the limit is 4 per add.\n\n\n",
+        "constraint": {
+          "invalid": true,
+          "valid": true,
+          "message": ""
+        }
+      }
+    },
+    {
+      "label": "320: invalid \"5\" cannot succeed",
+      "pass": true,
+      "details": "Choose 4 or fewer for Sand. 4 available; the limit is 4 per add.\n\n\n"
+    },
+    {
+      "label": "320: first valid attempt fails recoverably",
+      "pass": true,
+      "details": "\n\n\nSimulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again."
+    },
+    {
+      "label": "320: quantity retained after failure",
+      "pass": true
+    },
+    {
+      "label": "320: total retained after failure",
+      "pass": true
+    },
+    {
+      "label": "320 failure: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2299,
+        "scrollY": 1126,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 570.484375,
+          "bottom": 620.484375,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 433.28125,
+            "bottom": 433.28125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Simulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again.",
+            "top": 433.28125,
+            "bottom": 554.484375,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "320 failure: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "320: retry succeeds with glaze, quantity and total",
+      "pass": true,
+      "details": "\n\nAdded to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.\n"
+    },
+    {
+      "label": "320 success: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2320,
+        "scrollY": 1126,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 591.125,
+          "bottom": 641.125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Added to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.",
+            "top": 433.28125,
+            "bottom": 575.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 575.125,
+            "bottom": 575.125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "320 success: axe has no violations",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "320: editing clears stale success",
+      "pass": true,
+      "details": "\n\n\n"
+    },
+    {
+      "label": "320: edited total USD 48",
+      "pass": true
+    },
+    {
+      "label": "320 edited: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 1126,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 160.625,
+          "bottom": 204.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 424.28125,
+            "bottom": 424.28125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 424.28125,
+            "bottom": 424.28125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "320 keyboard-add: no horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 1141,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 425.28125,
+          "bottom": 475.28125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 230.875,
+            "bottom": 230.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 230.875,
+            "bottom": 230.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 409.28125,
+            "bottom": 409.28125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 409.28125,
+            "bottom": 409.28125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "320: Tab reaches simulated cart action",
+      "pass": true
+    },
+    {
+      "label": "No browser script errors",
+      "pass": true,
+      "details": []
+    },
+    {
+      "label": "No external asset/network attempts",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "captures": [
+    {
+      "width": 1440,
+      "state": "initial",
+      "file": "1440-initial.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n  \n    \n      \n        Kiln Notes\n        Fictional product study\n      \n\n      \n        Stoneware · 280 ml\n        Pou",
+          "top": 0,
+          "bottom": 1390.5625,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "state": "clamp",
+      "file": "1440-clamp.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-iron",
+          "text": "",
+          "top": 562.890625,
+          "bottom": 563.890625,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Quantity changed from 3 to 2 to match available Iron stock.",
+            "top": 813.625,
+            "bottom": 866.71875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1029.359375,
+            "bottom": 1029.359375,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1029.359375,
+            "bottom": 1029.359375,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "state": "fractional-invalid",
+      "file": "1440-fractional-invalid.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 246,
+          "bottom": 290,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgb(162, 60, 39) 0px 0px 0px 1px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).",
+            "top": 322.625,
+            "bottom": 381.90625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 381.90625,
+            "bottom": 381.90625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 544.546875,
+            "bottom": 544.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 544.546875,
+            "bottom": 544.546875,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "state": "failure",
+      "file": "1440-failure.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 601.828125,
+          "bottom": 651.828125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 485.265625,
+            "bottom": 485.265625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Simulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again.",
+            "top": 485.265625,
+            "bottom": 585.828125,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "state": "success",
+      "file": "1440-success.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 601.828125,
+          "bottom": 651.828125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Added to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.",
+            "top": 485.265625,
+            "bottom": 585.828125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 585.828125,
+            "bottom": 585.828125,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "state": "edited",
+      "file": "1440-edited.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 246,
+          "bottom": 290,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 476.265625,
+            "bottom": 476.265625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 476.265625,
+            "bottom": 476.265625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "state": "keyboard-add",
+      "file": "1440-keyboard-add.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 492.265625,
+          "bottom": 542.265625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 476.265625,
+            "bottom": 476.265625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 476.265625,
+            "bottom": 476.265625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "initial",
+      "file": "390-initial.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n  \n    \n      \n        Kiln Notes\n        Fictional product study\n      \n\n      \n        Stoneware · 280 ml\n        Pou",
+          "top": 0,
+          "bottom": 2052.96875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1294.484375,
+            "bottom": 1294.484375,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1294.484375,
+            "bottom": 1294.484375,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1457.125,
+            "bottom": 1457.125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1457.125,
+            "bottom": 1457.125,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "state": "clamp",
+      "file": "390-clamp.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2115,
+        "scrollY": 359,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-iron",
+          "text": "",
+          "top": 693.75,
+          "bottom": 694.75,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 935.484375,
+            "bottom": 935.484375,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Quantity changed from 3 to 2 to match available Iron stock.",
+            "top": 944.484375,
+            "bottom": 997.578125,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1160.21875,
+            "bottom": 1160.21875,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1160.21875,
+            "bottom": 1160.21875,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "fractional-invalid",
+      "file": "390-fractional-invalid.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2121,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 178.859375,
+          "bottom": 222.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgb(162, 60, 39) 0px 0px 0px 1px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).",
+            "top": 255.484375,
+            "bottom": 314.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 314.765625,
+            "bottom": 314.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 477.40625,
+            "bottom": 477.40625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 477.40625,
+            "bottom": 477.40625,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "state": "failure",
+      "file": "390-failure.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2163,
+        "scrollY": 623,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 959.6875,
+          "bottom": 1009.6875,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 671.484375,
+            "bottom": 671.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 671.484375,
+            "bottom": 671.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 843.125,
+            "bottom": 843.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Simulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again.",
+            "top": 843.125,
+            "bottom": 943.6875,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "state": "success",
+      "file": "390-success.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2183,
+        "scrollY": 1158,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 445.328125,
+          "bottom": 495.328125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 136.484375,
+            "bottom": 136.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 136.484375,
+            "bottom": 136.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Added to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.",
+            "top": 308.125,
+            "bottom": 429.328125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 429.328125,
+            "bottom": 429.328125,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 390,
+      "state": "edited",
+      "file": "390-edited.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 1153,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 73.859375,
+          "bottom": 117.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 141.484375,
+            "bottom": 141.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 141.484375,
+            "bottom": 141.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 304.125,
+            "bottom": 304.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 304.125,
+            "bottom": 304.125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "keyboard-add",
+      "file": "390-keyboard-add.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 425.125,
+          "bottom": 475.125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 246.484375,
+            "bottom": 246.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 246.484375,
+            "bottom": 246.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 409.125,
+            "bottom": 409.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 409.125,
+            "bottom": 409.125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "initial",
+      "file": "320-initial.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n  \n    \n      \n        Kiln Notes\n        Fictional product study\n      \n\n      \n        Stoneware · 280 ml\n        Pou",
+          "top": 0,
+          "bottom": 2168.9375,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1371.875,
+            "bottom": 1371.875,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1371.875,
+            "bottom": 1371.875,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1550.28125,
+            "bottom": 1550.28125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1550.28125,
+            "bottom": 1550.28125,
+            "inViewport": false
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 320,
+      "state": "clamp",
+      "file": "320-clamp.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2213,
+        "scrollY": 419,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-iron",
+          "text": "",
+          "top": 676.125,
+          "bottom": 677.125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 935.25,
+            "bottom": 935.25,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Quantity changed from 3 to 2 to match available Iron stock.",
+            "top": 944.25,
+            "bottom": 997.34375,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1175.75,
+            "bottom": 1175.75,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1175.75,
+            "bottom": 1175.75,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "fractional-invalid",
+      "file": "320-fractional-invalid.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2242,
+        "scrollY": 1126,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 160.625,
+          "bottom": 204.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgb(162, 60, 39) 0px 0px 0px 1px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Use a whole number, not a fraction. Sand accepts 1–4 (4 available).",
+            "top": 254.875,
+            "bottom": 334.796875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 334.796875,
+            "bottom": 334.796875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 497.4375,
+            "bottom": 497.4375,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 497.4375,
+            "bottom": 497.4375,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 320,
+      "state": "failure",
+      "file": "320-failure.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2299,
+        "scrollY": 1126,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 570.484375,
+          "bottom": 620.484375,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 433.28125,
+            "bottom": 433.28125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Simulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again.",
+            "top": 433.28125,
+            "bottom": 554.484375,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 320,
+      "state": "success",
+      "file": "320-success.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2320,
+        "scrollY": 1126,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 591.125,
+          "bottom": 641.125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Added to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.",
+            "top": 433.28125,
+            "bottom": 575.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 575.125,
+            "bottom": 575.125,
+            "inViewport": true
+          }
+        ]
+      },
+      "violations": []
+    },
+    {
+      "width": 320,
+      "state": "edited",
+      "file": "320-edited.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 1126,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 160.625,
+          "bottom": 204.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 245.875,
+            "bottom": 245.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 424.28125,
+            "bottom": 424.28125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 424.28125,
+            "bottom": 424.28125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "keyboard-add",
+      "file": "320-keyboard-add.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 1141,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 425.28125,
+          "bottom": 475.28125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 230.875,
+            "bottom": 230.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 230.875,
+            "bottom": 230.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 409.28125,
+            "bottom": 409.28125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 409.28125,
+            "bottom": 409.28125,
+            "inViewport": true
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "remote": [],
+  "keyboard": [
+    {
+      "width": 1440,
+      "step": 1,
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-sand",
+          "text": "",
+          "top": 502.890625,
+          "bottom": 503.890625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "step": 2,
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "decrease",
+          "text": "−",
+          "top": 737,
+          "bottom": 781,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "step": 3,
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 737,
+          "bottom": 781,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "step": 4,
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "increase",
+          "text": "+",
+          "top": 737,
+          "bottom": 781,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 967.265625,
+            "bottom": 967.265625,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "step": 5,
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 492.265625,
+          "bottom": 542.265625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 476.265625,
+            "bottom": 476.265625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 476.265625,
+            "bottom": 476.265625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "step": 1,
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 543,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-sand",
+          "text": "",
+          "top": 449.75,
+          "bottom": 450.75,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 751.484375,
+            "bottom": 751.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 751.484375,
+            "bottom": 751.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 914.125,
+            "bottom": 914.125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 914.125,
+            "bottom": 914.125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "step": 2,
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 543,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "decrease",
+          "text": "−",
+          "top": 683.859375,
+          "bottom": 727.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 751.484375,
+            "bottom": 751.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 751.484375,
+            "bottom": 751.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 914.125,
+            "bottom": 914.125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 914.125,
+            "bottom": 914.125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "step": 3,
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 543,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 683.859375,
+          "bottom": 727.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 751.484375,
+            "bottom": 751.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 751.484375,
+            "bottom": 751.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 914.125,
+            "bottom": 914.125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 914.125,
+            "bottom": 914.125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "step": 4,
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 543,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "increase",
+          "text": "+",
+          "top": 683.859375,
+          "bottom": 727.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 751.484375,
+            "bottom": 751.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 751.484375,
+            "bottom": 751.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 914.125,
+            "bottom": 914.125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 914.125,
+            "bottom": 914.125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "step": 5,
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2053,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 425.125,
+          "bottom": 475.125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 246.484375,
+            "bottom": 246.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 246.484375,
+            "bottom": 246.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 409.125,
+            "bottom": 409.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 409.125,
+            "bottom": 409.125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "step": 1,
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 586,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-sand",
+          "text": "",
+          "top": 449.125,
+          "bottom": 450.125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 785.875,
+            "bottom": 785.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 785.875,
+            "bottom": 785.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 964.28125,
+            "bottom": 964.28125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 964.28125,
+            "bottom": 964.28125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "step": 2,
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 586,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "decrease",
+          "text": "−",
+          "top": 700.625,
+          "bottom": 744.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 785.875,
+            "bottom": 785.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 785.875,
+            "bottom": 785.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 964.28125,
+            "bottom": 964.28125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 964.28125,
+            "bottom": 964.28125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "step": 3,
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 586,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 700.625,
+          "bottom": 744.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 785.875,
+            "bottom": 785.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 785.875,
+            "bottom": 785.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 964.28125,
+            "bottom": 964.28125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 964.28125,
+            "bottom": 964.28125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "step": 4,
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 586,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "increase",
+          "text": "+",
+          "top": 700.625,
+          "bottom": 744.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 785.875,
+            "bottom": 785.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 785.875,
+            "bottom": 785.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 964.28125,
+            "bottom": 964.28125,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 964.28125,
+            "bottom": 964.28125,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "step": 5,
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2169,
+        "scrollY": 1141,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 425.28125,
+          "bottom": 475.28125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 230.875,
+            "bottom": 230.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 230.875,
+            "bottom": 230.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 409.28125,
+            "bottom": 409.28125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 409.28125,
+            "bottom": 409.28125,
+            "inViewport": true
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Automated task/axe/geometry observations; no human testing or conformance claim.",
+  "chromium": "156.0.8078.4",
+  "finishedAt": "2026-11-03T06:57:49.965Z",
+  "durationMs": 32540.970033999998,
+  "passed": 116,
+  "failed": 0
+}

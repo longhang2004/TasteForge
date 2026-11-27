@@ -1,0 +1,14 @@
+Bounded review by the same independent, unblinded AI reviewer.
+
+Patch addresses the concrete 5→Iron finding. It classifies qty.value at glaze
+change, clamps any positive integer above selected cap, synchronizes input/totals,
+clears obsolete validation and announces the adjustment. Invalid empty/nonpositive/
+fractional input now remains visible with actionable error and unavailable
+subtotal/total; this removes the stale-quote issue.
+
+No new concrete blocker found in this diff. Ordinary first-failure/retry state
+machine is unchanged. Deferred validation before submit is not a DeepSeek defect.
+
+Advisory image/spec/terms-before-controls ordering and natural narrow retry
+visibility remain unchanged; no broader layout/identity inference from this state
+fix. Browser recheck belongs to the parent's evidence.

@@ -1,0 +1,769 @@
+{
+  "model": "deepseek",
+  "pass": "initial",
+  "scenario": "invalid entry -> glaze switch -> attempted submit",
+  "startedAt": "2026-11-03T07:24:52.179Z",
+  "sourceSha256": "8fac8c11b9d274f83c32cc4d09828124ec088caf340a92d3c4e4e79c2991a48c",
+  "observations": [
+    {
+      "width": 1440,
+      "value": "",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter a quantity. Use a whole number from 1 to 2 for Iron (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "1440-empty.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 246,
+          "bottom": 290,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter a quantity. Use a whole number from 1 to 2 for Iron (2 available).",
+            "top": 313.625,
+            "bottom": 354.90625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 354.90625,
+            "bottom": 354.90625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 517.546875,
+            "bottom": 517.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 517.546875,
+            "bottom": 517.546875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "value": "0",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter at least 1. Iron accepts 1–2 (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "1440-0.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 246,
+          "bottom": 290,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter at least 1. Iron accepts 1–2 (2 available).",
+            "top": 313.625,
+            "bottom": 334.265625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 334.265625,
+            "bottom": 334.265625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 496.90625,
+            "bottom": 496.90625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 496.90625,
+            "bottom": 496.90625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "value": "-1",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter at least 1. Iron accepts 1–2 (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "1440--1.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 246,
+          "bottom": 290,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter at least 1. Iron accepts 1–2 (2 available).",
+            "top": 313.625,
+            "bottom": 334.265625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 334.265625,
+            "bottom": 334.265625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 496.90625,
+            "bottom": 496.90625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 496.90625,
+            "bottom": 496.90625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "value": "1.5",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Use a whole number, not a fraction. Iron accepts 1–2 (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "1440-1-5.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 246,
+          "bottom": 290,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Use a whole number, not a fraction. Iron accepts 1–2 (2 available).",
+            "top": 313.625,
+            "bottom": 354.90625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 354.90625,
+            "bottom": 354.90625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 517.546875,
+            "bottom": 517.546875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 517.546875,
+            "bottom": 517.546875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "value": "",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter a quantity. Use a whole number from 1 to 2 for Iron (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "390-empty.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2121,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 178.859375,
+          "bottom": 222.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgb(162, 60, 39) 0px 0px 0px 1px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter a quantity. Use a whole number from 1 to 2 for Iron (2 available).",
+            "top": 255.484375,
+            "bottom": 314.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 314.765625,
+            "bottom": 314.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 477.40625,
+            "bottom": 477.40625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 477.40625,
+            "bottom": 477.40625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "value": "0",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter at least 1. Iron accepts 1–2 (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "390-0.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2094,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 178.859375,
+          "bottom": 222.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter at least 1. Iron accepts 1–2 (2 available).",
+            "top": 246.484375,
+            "bottom": 287.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 287.765625,
+            "bottom": 287.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 450.40625,
+            "bottom": 450.40625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 450.40625,
+            "bottom": 450.40625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "value": "-1",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter at least 1. Iron accepts 1–2 (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "390--1.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2094,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 178.859375,
+          "bottom": 222.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter at least 1. Iron accepts 1–2 (2 available).",
+            "top": 246.484375,
+            "bottom": 287.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 287.765625,
+            "bottom": 287.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 450.40625,
+            "bottom": 450.40625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 450.40625,
+            "bottom": 450.40625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "value": "1.5",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Use a whole number, not a fraction. Iron accepts 1–2 (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "390-1-5.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2094,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 178.859375,
+          "bottom": 222.859375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Use a whole number, not a fraction. Iron accepts 1–2 (2 available).",
+            "top": 246.484375,
+            "bottom": 287.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 287.765625,
+            "bottom": 287.765625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 450.40625,
+            "bottom": 450.40625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 450.40625,
+            "bottom": 450.40625,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "value": "",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter a quantity. Use a whole number from 1 to 2 for Iron (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "320-empty.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2197,
+        "scrollY": 1108,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 178.625,
+          "bottom": 222.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter a quantity. Use a whole number from 1 to 2 for Iron (2 available).",
+            "top": 246.25,
+            "bottom": 308.171875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 308.171875,
+            "bottom": 308.171875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 470.8125,
+            "bottom": 470.8125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 470.8125,
+            "bottom": 470.8125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "value": "0",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter at least 1. Iron accepts 1–2 (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "320-0.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2177,
+        "scrollY": 1108,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 178.625,
+          "bottom": 222.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter at least 1. Iron accepts 1–2 (2 available).",
+            "top": 246.25,
+            "bottom": 287.53125,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 287.53125,
+            "bottom": 287.53125,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 450.171875,
+            "bottom": 450.171875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 450.171875,
+            "bottom": 450.171875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "value": "-1",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Enter at least 1. Iron accepts 1–2 (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "320--1.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2177,
+        "scrollY": 1108,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 178.625,
+          "bottom": 222.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Enter at least 1. Iron accepts 1–2 (2 available).",
+            "top": 246.25,
+            "bottom": 287.53125,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 287.53125,
+            "bottom": 287.53125,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 450.171875,
+            "bottom": 450.171875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 450.171875,
+            "bottom": 450.171875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "value": "1.5",
+      "retained": true,
+      "invalid": true,
+      "feedback": "Use a whole number, not a fraction. Iron accepts 1–2 (2 available).\n\n\n",
+      "total": "—",
+      "unavailableTotal": true,
+      "pass": true,
+      "file": "320-1-5.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2177,
+        "scrollY": 1108,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "quantity",
+          "text": "",
+          "top": 178.625,
+          "bottom": 222.625,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px inset"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Use a whole number, not a fraction. Iron accepts 1–2 (2 available).",
+            "top": 246.25,
+            "bottom": 287.53125,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 287.53125,
+            "bottom": 287.53125,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 450.171875,
+            "bottom": 450.171875,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 450.171875,
+            "bottom": 450.171875,
+            "inViewport": true
+          }
+        ]
+      }
+    }
+  ],
+  "finishedAt": "2026-11-03T07:25:07.443Z",
+  "durationMs": 15262.187291,
+  "passed": 12,
+  "failed": 0
+}

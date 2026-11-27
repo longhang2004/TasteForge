@@ -1,0 +1,707 @@
+{
+  "model": "deepseek",
+  "pass": "initial",
+  "startedAt": "2026-11-03T07:17:05.817Z",
+  "sourceSha256": "8fac8c11b9d274f83c32cc4d09828124ec088caf340a92d3c4e4e79c2991a48c",
+  "assertions": [
+    {
+      "label": "1440: displayed over-limit quantity clamps on lower-stock switch",
+      "pass": true,
+      "details": {
+        "quantity": "2",
+        "feedback": "\nQuantity changed from 5 to 2 to match available Iron stock.\n\n"
+      }
+    },
+    {
+      "label": "1440: exceptional clamp announced",
+      "pass": true,
+      "details": "\nQuantity changed from 5 to 2 to match available Iron stock.\n\n"
+    },
+    {
+      "label": "1440: exceptional clamp shows USD 90",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\nIron\n2 available\n✓\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nIron: 2 available\n−\n+\n\nWhole numbers 1–2. Iron has 2 available.\n\nQuantity changed from 5 to 2 to match available Iron stock.\n\nItem subtotal\nIron × 2 · USD 42.00 each\nUSD 84.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 90.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "1440: Tab reaches native glaze group",
+      "pass": true
+    },
+    {
+      "label": "1440: ArrowRight selects Iron",
+      "pass": true
+    },
+    {
+      "label": "1440: ArrowRight skips disabled Ash",
+      "pass": true
+    },
+    {
+      "label": "1440: Tab reaches quantity",
+      "pass": true
+    },
+    {
+      "label": "1440: keyboard enters quantity 2",
+      "pass": true
+    },
+    {
+      "label": "1440: Tab reaches add action",
+      "pass": true
+    },
+    {
+      "label": "1440: Enter produces recoverable first failure",
+      "pass": true,
+      "details": "\n\n\nSimulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again."
+    },
+    {
+      "label": "1440: keyboard failure retains quantity",
+      "pass": true
+    },
+    {
+      "label": "1440: retry reachable with Tab",
+      "pass": true
+    },
+    {
+      "label": "1440: Enter retry names selection/quantity/total",
+      "pass": true,
+      "details": "\n\nAdded to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.\n"
+    },
+    {
+      "label": "390: displayed over-limit quantity clamps on lower-stock switch",
+      "pass": true,
+      "details": {
+        "quantity": "2",
+        "feedback": "\nQuantity changed from 5 to 2 to match available Iron stock.\n\n"
+      }
+    },
+    {
+      "label": "390: exceptional clamp announced",
+      "pass": true,
+      "details": "\nQuantity changed from 5 to 2 to match available Iron stock.\n\n"
+    },
+    {
+      "label": "390: exceptional clamp shows USD 90",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\nIron\n2 available\n✓\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nIron: 2 available\n−\n+\n\nWhole numbers 1–2. Iron has 2 available.\n\nQuantity changed from 5 to 2 to match available Iron stock.\n\nItem subtotal\nIron × 2 · USD 42.00 each\nUSD 84.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 90.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "390: Tab reaches native glaze group",
+      "pass": true
+    },
+    {
+      "label": "390: ArrowRight selects Iron",
+      "pass": true
+    },
+    {
+      "label": "390: ArrowRight skips disabled Ash",
+      "pass": true
+    },
+    {
+      "label": "390: Tab reaches quantity",
+      "pass": true
+    },
+    {
+      "label": "390: keyboard enters quantity 2",
+      "pass": true
+    },
+    {
+      "label": "390: Tab reaches add action",
+      "pass": true
+    },
+    {
+      "label": "390: Enter produces recoverable first failure",
+      "pass": true,
+      "details": "\n\n\nSimulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again."
+    },
+    {
+      "label": "390: keyboard failure retains quantity",
+      "pass": true
+    },
+    {
+      "label": "390: retry reachable with Tab",
+      "pass": true
+    },
+    {
+      "label": "390: Enter retry names selection/quantity/total",
+      "pass": true,
+      "details": "\n\nAdded to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.\n"
+    },
+    {
+      "label": "320: displayed over-limit quantity clamps on lower-stock switch",
+      "pass": true,
+      "details": {
+        "quantity": "2",
+        "feedback": "\nQuantity changed from 5 to 2 to match available Iron stock.\n\n"
+      }
+    },
+    {
+      "label": "320: exceptional clamp announced",
+      "pass": true,
+      "details": "\nQuantity changed from 5 to 2 to match available Iron stock.\n\n"
+    },
+    {
+      "label": "320: exceptional clamp shows USD 90",
+      "pass": true,
+      "details": "KILN NOTES\n\nFictional product study\n\nSTONEWARE · 280 ML\n\nPouring cup\n\nA handleless pouring cup with a small spout.\n\nUSD 42.00\nplus flat USD 6.00 shipping\n\nIMAGE NOTE\nOriginal schematic illustration of the pouring cup; not a photograph or evidence of glaze texture.\nPRODUCT RECORD\nMaterial\nStoneware\nCapacity\n280 ml\nDimensions\n9 cm wide × 8 cm tall\nChoose and add\n\nPick a glaze and a whole quantity. Stock is checked before the simulated add.\n\nGLAZE\nSand\n4 available\nIron\n2 available\n✓\nAsh\nSOLD OUT\n\nStock is listed per glaze. Color chips are flat color references, not a photograph of fired glaze.\n\nQUANTITY\nIron: 2 available\n−\n+\n\nWhole numbers 1–2. Iron has 2 available.\n\nQuantity changed from 5 to 2 to match available Iron stock.\n\nItem subtotal\nIron × 2 · USD 42.00 each\nUSD 84.00\nFlat shipping\nUSD 6.00\nTotal\nUSD 90.00\n\nAdd to simulated cart\n\nSimulated cart. No real order is placed and no payment is taken.\n\nCARE, RETURNS AND SHIPPING\nCARE\nHand-wash; do not use on a stovetop.\nRETURNS\nUnused items may be returned within 14 days; buyer pays return postage.\nSHIPPING\nFlat USD 6 shipping in this fictional checkout; no delivery date is promised.\n\nKiln Notes is a fictional product. This page is a simulated cart interaction: it cannot place a real order or take payment."
+    },
+    {
+      "label": "320: Tab reaches native glaze group",
+      "pass": true
+    },
+    {
+      "label": "320: ArrowRight selects Iron",
+      "pass": true
+    },
+    {
+      "label": "320: ArrowRight skips disabled Ash",
+      "pass": true
+    },
+    {
+      "label": "320: Tab reaches quantity",
+      "pass": true
+    },
+    {
+      "label": "320: keyboard enters quantity 2",
+      "pass": true
+    },
+    {
+      "label": "320: Tab reaches add action",
+      "pass": true
+    },
+    {
+      "label": "320: Enter produces recoverable first failure",
+      "pass": true,
+      "details": "\n\n\nSimulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again."
+    },
+    {
+      "label": "320: keyboard failure retains quantity",
+      "pass": true
+    },
+    {
+      "label": "320: retry reachable with Tab",
+      "pass": true
+    },
+    {
+      "label": "320: Enter retry names selection/quantity/total",
+      "pass": true,
+      "details": "\n\nAdded to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.\n"
+    }
+  ],
+  "captures": [
+    {
+      "width": 1440,
+      "state": "invalid-to-iron",
+      "file": "1440-invalid-to-iron.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 0,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-iron",
+          "text": "",
+          "top": 562.890625,
+          "bottom": 563.890625,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 804.625,
+            "bottom": 804.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Quantity changed from 5 to 2 to match available Iron stock.",
+            "top": 813.625,
+            "bottom": 866.71875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1029.359375,
+            "bottom": 1029.359375,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1029.359375,
+            "bottom": 1029.359375,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "state": "keyboard-failure",
+      "file": "1440-keyboard-failure.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 601.828125,
+          "bottom": 651.828125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 485.265625,
+            "bottom": 485.265625,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Simulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again.",
+            "top": 485.265625,
+            "bottom": 585.828125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "state": "keyboard-success",
+      "file": "1440-keyboard-success.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1391,
+        "scrollY": 491,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 601.828125,
+          "bottom": 651.828125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 313.625,
+            "bottom": 313.625,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Added to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.",
+            "top": 485.265625,
+            "bottom": 585.828125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 585.828125,
+            "bottom": 585.828125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "invalid-to-iron",
+      "file": "390-invalid-to-iron.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2115,
+        "scrollY": 359,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-iron",
+          "text": "",
+          "top": 693.75,
+          "bottom": 694.75,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 935.484375,
+            "bottom": 935.484375,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Quantity changed from 5 to 2 to match available Iron stock.",
+            "top": 944.484375,
+            "bottom": 997.578125,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1160.21875,
+            "bottom": 1160.21875,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1160.21875,
+            "bottom": 1160.21875,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "keyboard-failure",
+      "file": "390-keyboard-failure.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2163,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 534.6875,
+          "bottom": 584.6875,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 246.484375,
+            "bottom": 246.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 246.484375,
+            "bottom": 246.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 418.125,
+            "bottom": 418.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Simulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again.",
+            "top": 418.125,
+            "bottom": 518.6875,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "state": "keyboard-success",
+      "file": "390-keyboard-success.png",
+      "geometry": {
+        "width": 390,
+        "height": 900,
+        "scrollWidth": 390,
+        "scrollHeight": 2183,
+        "scrollY": 1048,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 555.328125,
+          "bottom": 605.328125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 246.484375,
+            "bottom": 246.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 246.484375,
+            "bottom": 246.484375,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Added to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.",
+            "top": 418.125,
+            "bottom": 539.328125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 539.328125,
+            "bottom": 539.328125,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "invalid-to-iron",
+      "file": "320-invalid-to-iron.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2213,
+        "scrollY": 419,
+        "scrollX": 0,
+        "focus": {
+          "tag": "INPUT",
+          "id": "glaze-iron",
+          "text": "",
+          "top": 676.125,
+          "bottom": 677.125,
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 935.25,
+            "bottom": 935.25,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Quantity changed from 5 to 2 to match available Iron stock.",
+            "top": 944.25,
+            "bottom": 997.34375,
+            "inViewport": false
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 1175.75,
+            "bottom": 1175.75,
+            "inViewport": false
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 1175.75,
+            "bottom": 1175.75,
+            "inViewport": false
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "keyboard-failure",
+      "file": "320-keyboard-failure.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2299,
+        "scrollY": 1141,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 555.484375,
+          "bottom": 605.484375,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 230.875,
+            "bottom": 230.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 230.875,
+            "bottom": 230.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 418.28125,
+            "bottom": 418.28125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "Simulated cart attempt failed. Nothing was added and no payment was taken. Your selection is unchanged: Sand, quantity 2. Try again.",
+            "top": 418.28125,
+            "bottom": 539.484375,
+            "inViewport": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "state": "keyboard-success",
+      "file": "320-keyboard-success.png",
+      "geometry": {
+        "width": 320,
+        "height": 900,
+        "scrollWidth": 320,
+        "scrollHeight": 2320,
+        "scrollY": 1141,
+        "scrollX": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Add to simulated cart",
+          "top": 576.125,
+          "bottom": 626.125,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none"
+        },
+        "live": [
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 230.875,
+            "bottom": 230.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "",
+            "top": 230.875,
+            "bottom": 230.875,
+            "inViewport": true
+          },
+          {
+            "role": "status",
+            "ariaLive": "polite",
+            "text": "Added to the simulated cart: Sand glaze, quantity 2, total USD 90.00 (USD 84.00 item plus USD 6.00 flat shipping). No real order was placed and no payment was taken.",
+            "top": 418.28125,
+            "bottom": 560.125,
+            "inViewport": true
+          },
+          {
+            "role": "alert",
+            "ariaLive": null,
+            "text": "",
+            "top": 560.125,
+            "bottom": 560.125,
+            "inViewport": true
+          }
+        ]
+      }
+    }
+  ],
+  "finishedAt": "2026-11-03T07:17:14.325Z",
+  "durationMs": 8502.911226,
+  "passed": 39,
+  "failed": 0
+}
