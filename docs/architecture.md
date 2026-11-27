@@ -38,6 +38,8 @@ Imported documents do not satisfy the generator's font/palette/density contracts
 
 ## Static audit
 
+The opt-in pure `auditProject` API accepts explicit CSS source strings and stylesheet roots. It builds a bounded local `@import` graph, resolves conservative entry-specific custom-property contexts, preserves declaration locations and adds provenance without changing the strict legacy finding schema. Only the CLI collects files. Unsupported graphs/bindings stay review; source numeric pairs never establish computed browser styles. See the [resolution contract](audit-imports-rfc.md).
+
 PostCSS parses CSS declaration scopes; TypeScript parses JSX/TSX syntax and literal inline style objects. The implementation never imports or executes audited files. Source findings establish only the stated condition. Literal pairs may be mathematically verified without establishing the effective rendered pair; gradient/card/family counts are contextual heuristics.
 
 The parser does not provide a DOM, full cascade, inherited styles, imported utility definitions, or screen rendering. Unsupported expressions become review items where recognized. All source files are bounded and processed in stable order. The CLI injects generated DNA tokens when available; CSS files can resolve unconditional top-level `:root` declarations in that same file.

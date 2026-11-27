@@ -1,0 +1,42 @@
+Development failure excerpts captured from terminal output, 2026-11-03.
+These are excerpts, not complete logs of every exploratory invocation.
+Historical evaluation runs were not edited.
+
+1. Initial adjacency guard did not compile: callback node was already narrowed.
+
+packages/core build: src/audit-project.ts(170,77): error TS2367: This comparison appears to be unintentional because the types '"function"' and '"space"' have no overlap.
+packages/core build: src/audit-project.ts(170,106): error TS2367: This comparison appears to be unintentional because the types '"function"' and '"comment"' have no overlap.
+packages/core build: src/audit-project.ts(170,138): error TS2367: This comparison appears to be unintentional because the types '"function"' and '"div"' have no overlap.
+packages/core build: src/audit-project.ts(171,22): error TS2345: Argument of type 'Node | undefined' is not assignable to parameter of type 'FunctionNode | undefined'.
+packages/core build: src/audit-project.ts(171,52): error TS2345: Argument of type 'Node | undefined' is not assignable to parameter of type 'FunctionNode | undefined'.
+
+Correction: use the parser's full Node union for adjacent nodes.
+
+2. Independent escaped-at-keyword regression failed after the first guard.
+
+ FAIL  tests/audit-imports.test.ts > bounded static stylesheet audit > reviews escaped at-rule names and selected CSS Modules without proving variable pairs
+AssertionError: expected 'complete' to be 'partial' // Object.is equality
+
+Expected: "partial"
+Received: "complete"
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  1 failed | 24 passed (25)
+   Start at  12:36:57
+   Duration  23.94s (transform 504ms, setup 0ms, collect 2.83s, tests 23.03s, environment 1ms, prepare 364ms)
+
+Parser inspection (actual output):
+name: 'im', params: '\\70ort \\"tokens.css\\"', raws: { before: '', between: '', afterName: '' }
+name: 'prop', params: '\\65rty --fg', raws: { before: '', between: ' ', afterName: '', after: '' }
+
+Correction: PostCSS may split escaped at-keywords into name and params;
+escaped at-rule headers conservatively make the context incomplete.
+
+Additional review findings were corrected before final acceptance:
+- Escaped property names could hide a binding and incorrectly activate fallback.
+- Adjacent substituted tokens could be joined into a new valid color.
+- Uppercase VAR() could be mistaken for a literal font stack.
+- Unused fallbacks inside custom-property definitions still create dependency
+  cycles and must contain valid var() references.
+Each has a regression in tests/audit-imports.test.ts. These observations do not
+imply that any complete CSS runtime grammar/cascade has been implemented.

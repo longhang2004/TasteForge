@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "command": "node scripts/measure-audit-imports.mjs",
+  "measuredAt": "2026-11-03T05:43:54.242Z",
+  "environment": {
+    "node": "v24.22.0",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 5 5600H with Radeon Graphics"
+  },
+  "graph": {
+    "files": 128,
+    "imports": 127,
+    "entries": 1,
+    "inputUtf8Bytes": 13443,
+    "findings": 252
+  },
+  "limits": {
+    "files": 256,
+    "imports": 1024,
+    "importDepth": 16,
+    "aliasDepth": 16,
+    "fileBytes": 2000000,
+    "totalBytes": 16000000,
+    "definitions": 5000,
+    "declarations": 20000,
+    "findings": 2000,
+    "valueLength": 4096,
+    "provenance": 32,
+    "contexts": 512
+  },
+  "measurementsMs": {
+    "firstInvocationExcludingModuleLoad": 208.86,
+    "subsequentInvocations": [
+      113.392,
+      107.091,
+      106.501,
+      87.732,
+      61.82,
+      58.467,
+      103.555
+    ]
+  },
+  "scope": "In-process core parsing, resolution and report creation; excludes module/process startup, CLI filesystem reads, agent generation/review/corrections and human acceptance.",
+  "endToEndCost": "unknown",
+  "billingCost": "unknown"
+}
